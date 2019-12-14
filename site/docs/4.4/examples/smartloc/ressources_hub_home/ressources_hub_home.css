@@ -17,6 +17,12 @@ header
     background-color: #F9DCA5;
 }
 
+header nav a
+{
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
 .searchbar
 {
     width: 100%;

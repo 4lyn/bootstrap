@@ -1,0 +1,49 @@
+.button
+{
+    cursor: pointer;
+    text-decoration: none !important;
+    z-index: 10;
+}
+
+header .button
+{
+    border: 1px solid black;
+}
+
+.card
+{
+    overflow: hidden;
+    z-index: 0;
+    border: none;
+    border-radius: none;
+}
+
+.shapes
+{
+    position: absolute;
+}
+
+.shapes:nth-of-type(1)
+{
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+    z-index: -2;
+}
+
+.shapes:nth-of-type(2)
+{
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+.mathieu-description p
+{
+    margin: 0;
+}
+.mathieu-description p:first-child
+{
+    font-size: 1.1rem;
+}
