@@ -45,6 +45,12 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+$smartloc-gray:    #F4F4F4 !default;
+$smartloc-purple:  #A896D8 !default;
+$smartloc-yellow:  #F9DCA5 !default;
+$smartloc-pink:    #EBB9C2 !default;
+$smartloc-green:    #7ECD82 !default;
+
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
@@ -66,13 +72,15 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $smartloc-purple !default;
+$secondary:     $smartloc-green !default;
+$tertiary:      $smartloc-yellow !default;
+$quarantary:    $smartloc-pink !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $smartloc-gray !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
