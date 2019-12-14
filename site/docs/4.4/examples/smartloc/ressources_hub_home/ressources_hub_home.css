@@ -70,3 +70,32 @@ main
 {
     font-size: 0.8em;
 }
+
+/* DOCUMENTS */
+
+.document-choice
+{
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.document-choice p:first-of-type
+{
+    border-radius: 25px 0 0 25px;
+}
+.document-choice p:last-of-type
+{
+    border-radius: 0px 25px 25px 0;
+}
+
+.document-choice p:nth-child(2)
+{
+    border-left : 2px solid black;
+    border-right : 2px solid black;
+}
+
+.active
+{
+    background-color: black;
+    color: white;
+}
