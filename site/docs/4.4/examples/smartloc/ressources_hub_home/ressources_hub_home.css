@@ -30,9 +30,14 @@ header
 
 .search_icon
 {
-    right: 20px;
     top: 20%;
+    right: 0;
     width: 50px;
+}
+
+.search_icon img
+{
+    width: 50%;
 }
 
 .shapes
@@ -48,7 +53,17 @@ main
     background-color: #f4f4f4;
 }
 
+section
+{
+    margin-top: 4rem;
+}
+
 /* Categories */
+
+.categories img
+{
+    width: 50%;
+}
 
 .card-top
 {
