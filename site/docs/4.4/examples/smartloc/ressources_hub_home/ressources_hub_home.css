@@ -47,6 +47,8 @@ main
     background-color: #f4f4f4;
 }
 
+/* Categories */
+
 .card-top
 {
     border-bottom: 2px dashed #dee2e6 !important;
@@ -55,4 +57,16 @@ main
 .links a
 {
     margin-bottom: 5px;
+}
+
+/* Articles */
+
+.article-description p:first-child
+{
+    font-weight: 500;
+}
+
+.article-description p:last-child
+{
+    font-size: 0.8em;
 }
