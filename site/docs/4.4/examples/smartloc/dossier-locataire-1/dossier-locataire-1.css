@@ -1,3 +1,5 @@
+/* HEADER */
+
 .button
 {
     cursor: pointer;
@@ -9,6 +11,8 @@ header .button
 {
     border: 1px solid black;
 }
+
+/* MAIN */
 
 .card
 {
