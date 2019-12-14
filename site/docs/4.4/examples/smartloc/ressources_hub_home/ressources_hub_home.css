@@ -8,6 +8,8 @@ body
     width: 100%;
 }
 
+/* HEADER */
+
 header
 {
     width: 100%;
@@ -32,8 +34,25 @@ header
     top: 15%;
 }
 
-.illusatration
+.shapes
 {
     bottom:0;
     right: 0; 
+}
+
+/* MAIN */
+
+main
+{
+    background-color: #f4f4f4;
+}
+
+.card-top
+{
+    border-bottom: 2px dashed #dee2e6 !important;
+}
+
+.links a
+{
+    margin-bottom: 5px;
 }
