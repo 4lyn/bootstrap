@@ -10,10 +10,10 @@ extra_css: "dossier-locataire-2.css"
         <div class="container">
             <nav class="site-header pt-4 row flex-nowrap justify-content-between align-items-center">
                 <img src="../../../assets/img/smartloc/logos/logo.png" class="logo col-sm-2 col-5">
-                <div class="col-lg-5 col-8 row flex-nowrap justify-content-between align-items-center">
-                    <a href="" class="text-dark d-none d-sm-block">Aide</a>
-                    <a href="" class="button py-2 px-4 text-dark rounded">Parler à un conseiller</a>
-                    <a href="" class="button py-2 px-4 text-white bg-dark rounded">Connexion</a>
+                <div class="menu row flex-nowrap align-items-center">
+                    <a href="" class="ml-3 text-dark d-none d-sm-block">Aide</a>
+                    <a href="" class="ml-3 button py-2 px-3 text-dark rounded">Parler à un conseiller</a>
+                    <a href="" class="ml-3 button py-2 px-4 text-white bg-dark rounded">Connexion</a>
                 </div>
             </nav>
         </div>
@@ -50,54 +50,52 @@ extra_css: "dossier-locataire-2.css"
                 <div class="col-sm-8 pl-0">
                     <!-- FIRST FRAME -->
                     <div class="bg-white py-4 px-4 mb-4">
-                        <div class="col-sm-6">
+                        <div class="mb-3">
+                                <p>Le locataire est-il sur les lieux ?</p>
+                                <form class="col-sm-4 pl-0 mt-3 d-flex flex-row">
+                                    <label class="bool-button mr-2">
+                                        <input  type="radio" checked="checked" name="radio">
+                                        <span class="py-2 px-3">Oui</span>
+                                    </label>
+                                    <label class="bool-button">
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="py-2 px-3">Non</span>
+                                    </label>
+                                </form>
+                            </div>
                             <div class="mb-3">
-                                    <span>Le locataire est-il sur les lieux ?</span>
-                                    <form class="col-sm-4 pl-0 mt-2 d-flex flex-row">
-                                        <label class="bool-button mr-2">
-                                            <input  type="radio" checked="checked" name="radio">
-                                            <span class="py-1 px-2">Oui</span>
-                                        </label>
-                                        <label class="bool-button">
-                                            <input type="radio" checked="checked" name="radio">
-                                            <span class="py-1 px-2">Non</span>
-                                        </label>
-                                    </form>
-                                </div>
-                                <div class="mb-3">
-                                    <span>Avez vous eu un incident de paiement sur les 6 premiers mois ?</span>
-                                    <form class="col-sm-4 pl-0 mt-2 d-flex flex-row">
-                                        <label class="bool-button mr-2">
-                                            <input  type="radio" checked="checked" name="radio">
-                                            <span class="py-1 px-2">Oui</span>
-                                        </label>
-                                        <label class="bool-button">
-                                            <input type="radio" checked="checked" name="radio">
-                                            <span class="py-1 px-2">Non</span>
-                                        </label>
-                                    </form>
-                                </div>
-                                <div class="mb-3 w-100">
-                                    <span>Le locataire est dans les lieux depuis</span>
-                                    <div class="dropdown mt-2 w-100">
-                                        <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Moins de 14 jours
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="">Moins d'un mois</a>
-                                            <a class="dropdown-item" href="">Moins de 6 mois</a>
-                                            <a class="dropdown-item" href="">Moins d'un an</a>
-                                        </div>
+                                <span>Avez vous eu un incident de paiement sur les 6 premiers mois ?</span>
+                                <form class="col-sm-4 pl-0 mt-3 d-flex flex-row">
+                                    <label class="bool-button mr-2">
+                                        <input  type="radio" checked="checked" name="radio">
+                                        <span class="py-2 px-3">Oui</span>
+                                    </label>
+                                    <label class="bool-button">
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="py-2 px-3">Non</span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="mb-3 w-50">
+                                <span>Le locataire est dans les lieux depuis</span>
+                                <div class="dropdown mt-2 w-100">
+                                    <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Moins de 14 jours
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="">Moins d'un mois</a>
+                                        <a class="dropdown-item" href="">Moins de 6 mois</a>
+                                        <a class="dropdown-item" href="">Moins d'un an</a>
                                     </div>
                                 </div>
-                        </div>
+                            </div>
                     </div>
         
                     <!-- SECONDE FRAME -->
                     <div class="bg-white py-4 px-4">
-                        <div class="col-sm-6">
-                            <span class="h3 mb-2">Locataire 1</span>
-                            <div class="mb-3 w-100">
+                        <div class="pb-4">
+                            <h3 class="mb-2">Locataire 1</h3>
+                            <div class="mt-3 w-50">
                                 <span>Statut du locataire</span>
                                 <div class="dropdown w-100 mt-2">
                                     <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -110,8 +108,10 @@ extra_css: "dossier-locataire-2.css"
                                     </div>
                                 </div>
                             </div>
-                            <span class="h3 mb-2">Garant 1</span>
-                            <div class="mb-3 w-100">
+                        </div>
+                        <div class="pb-4">
+                            <h3 class="mb-2">Garant 1</h3>
+                            <div class="mt-3 w-50">
                                 <span>Statut du locataire</span>
                                 <div class="dropdown w-100 mt-2">
                                     <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -124,7 +124,7 @@ extra_css: "dossier-locataire-2.css"
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-3 w-100">
+                            <div class="mt-3 w-50">
                                 <span>Revenu du garant net AVANT retenu à la source</span>
                                 <div class="dropdown w-100 mt-2">
                                     <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -137,7 +137,7 @@ extra_css: "dossier-locataire-2.css"
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-3 w-100">
+                            <div class="mt-3 w-50">
                                 <span>Loyer + charges</span>
                                 <div class="dropdown w-100 mt-2">
                                     <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -150,9 +150,9 @@ extra_css: "dossier-locataire-2.css"
                                     </div>
                                 </div>
                             </div>
-        
-                            <a href="" class="py-5 font-weight-bold text-dark">+ Ajouter un locataire</a>
                         </div>
+    
+                        <a href="" class="py-5 font-weight-bold text-dark">+ Ajouter un locataire</a>
                     </div>
         
                     <!-- FORN BUTTONS -->
@@ -167,23 +167,23 @@ extra_css: "dossier-locataire-2.css"
                     <p class="h4 font-weight-bold">Nos Astuces</p>
                     <div class="mt-3">
                         <p class="h6 font-weight-bold">Eligibilité des candidats</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fuga quae pariatur et magnam. <a>Ullam et quisquam</a></p>
+                        <p>Ces questions vont vous permettre de déterminer rapidement et sans engagement si vos candidats sont éligibles à l'assurance loyer impayé. Plus d'infos sur les critères locataire sur notre page <a>assurance loyer impayé.</a></p>
                     </div>
                     <div class="mt-3">
                         <p class="h6 font-weight-bold">Souscription sans carence</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fuga quae pariatur et magnam. Ullam et quisquam. Laborum fuga quae pariatur et magnam. Ullam et quisquam</p>
+                        <p>Si vous souscrivez au plus tard 14 jours après l'entrée dans les lieux, la garantie s'appliquera sans carence (période probatoire).</p>
                     </div>
                     <div class="mt-3">
                         <p class="h6 font-weight-bold">Solvabilité nécéssaire</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fuga quae pariatur et magnam. Ullam et quisquam. Laborum fuga quae pariatur et magnam. Ullam et quisquam</p>
+                        <p>Les locataires en place depuis moins de 6 mois doivent rentrer dans les critères de solvabilité. Vous devez considérer leur situation à la signature du bail.</p>
                     </div>
                     <div class="mt-3">
                         <p class="h6 font-weight-bold">Limite de garants</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Il ne peut y avoir qu'un seul garant par étudiant.</p>
                     </div>
                     <div class="mt-3">
                         <p class="h6 font-weight-bold">Définition revenu salariés</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fuga quae pariatur et magnam. Ullam et quisquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fuga quae pariatur et magnam. Ullam et quisquam</p>
+                        <p>Salaire net à payer avant retenue à la source, hors heures supplémentaires ou primes non contractuelles. Retenez donc le revenu d'un bulletin sans primes et heures supplémentaires ou si nécessaire retenez le revenu brut contractuel en haut de la fiche de paie et retranchez 24%. <br>On considère les revenus AVANT retenue à la source pour l'impôt sur le revenu.</p>
                     </div>
                 </aside>
             </div>
