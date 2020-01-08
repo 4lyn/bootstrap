@@ -39,6 +39,12 @@ header .button
 
 /* RENTING FILE SECTION */
 
+form input, select
+{
+    height: 48px !important;
+}
+
+
 .chose-file span
 {
     padding-bottom: 1rem;
@@ -70,6 +76,19 @@ header .button
 .form-buttons .button
 {
     border: 1px solid black;
+}
+
+.money-input
+{
+    height: 48px;
+}
+
+.money-input span
+{
+    font-weight: bold;
+    top:50%;
+    transform: translateY(-50%);
+    right: 16px;
 }
 
 /* ASIDE */
