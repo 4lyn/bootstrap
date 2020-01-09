@@ -36,9 +36,10 @@ header .button
 /* RENTING FILE SECTION */
 
 /* INPUT DE TEXTE */
-form .input-text
+form input, select
 {
     height: 48px !important;
+    border: 1.5px solid #D3D3D3 !important;
 }
 
 .chose-file span
@@ -87,6 +88,20 @@ form .input-text
 .form-buttons .button
 {
     border: 1px solid black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1.5px solid #D3D3D3;
+    display: inline-block;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 44px;
+    padding: 0px 35px 0px 35px;
 }
 
 /* ASIDE */

@@ -50,87 +50,105 @@ extra_css: "dossier-locataire-3.css"
             <div class="d-flex flex-row w-100">
                     <form class="col-sm-8 pl-0">
                         <!-- PREMIER FORM -->
-                        <div class="bg-white py-4 px-4 mb-4">
-                            <!-- INPUT DE TEXT -->
-                            <div class="form-group">
-                                <h3 class="my-3">Justificatif locataire 1</h3>
-                                <p>CDI Hors période d'essai</p>
-                                <div class="mt-3 w-50">
-                                    <label>Nom du locataire</label>
-                                    <input class="form-control input-text" type="text" placeholder="Optionel">
+                        <div class="pl-2">
+                            <div class="bg-white py-4 px-4 mb-4">
+                                <!-- INPUT DE TEXT -->
+                                <div class="form-group">
+                                    <h3 class="my-3">Justificatif locataire 1</h3>
+                                    <p>CDI Hors période d'essai</p>
+                                    <div class="mt-3 w-50">
+                                        <label>Nom du locataire</label>
+                                        <input class="form-control pl-3 input-text" type="text" placeholder="Optionel">
+                                    </div>
+                                    <div class="mt-3 w-50">
+                                        <label>Email du locataire</label>
+                                        <input type="email" class="form-control pl-3 input-text" placeholder="Optionel">
+                                    </div>
+                                    <div class="mt-3 w-50">
+                                        <label>Commentaires</label>
+                                        <input type="email" class="form-control pl-3 text-area" placeholder="Optionel">
+                                    </div>
                                 </div>
-                                <div class="mt-3 w-50">
-                                    <label>Email du locataire</label>
-                                    <input type="email" class="form-control input-text" placeholder="Optionel">
+                                <!-- ENSEMBLE DES CHECKBOXES -->
+                                <div class="form-group bg-light px-4 py-3 rounded">
+                                    <span class="font-weight-bold">Justificatifs à fournir</span>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                        <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
+                                    </div>
                                 </div>
-                                <div class="mt-3 w-50">
-                                    <label>Commentaires</label>
-                                    <input type="email" class="form-control text-area" placeholder="Optionel">
+                                <!-- ZONE UPLOAD -->
+                                <div class="form-group px-4 py-4 rounded zone-uploads">
+                                    <span class="font-weight-bold">Uploads</span>
+                                    <div class="mt-3">
+                                        <span class="d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
+                                        <label class="custom-file-upload mt-2" for="file-input">Parcourir</label>
+                                        <span class="ml-3">Aucun fichier choisi</span>
+                                        <input class="form-control pl-3-file" type="file" id="file-input">
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="d-block">2. Ce fichier contient (plusieurs choix possible)</span>
+                                        <select class="custom-select pl-3 mt-2 col-sm-8">
+                                            <option>Optionel</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="d-block">3. J’ajoute le fichier</span>
+                                        <a href="" class="d-block button py-3 px-3 text-dark bg-primary rounded font-weight-bold mt-2 col-sm-5 text-center">Ajouter mon fichier</a>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- ENSEMBLE DES CHECKBOXES -->
-                            <div class="form-group bg-light px-4 py-3 rounded">
-                                <span class="font-weight-bold">Justificatifs à fournir</span>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                    <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                    <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                    <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                    <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                    <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
-                                    <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
-                                </div>
-                                <div class="custom-control custom-checkbox mt-2">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                    <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
-                                </div>
-                            </div>
-                            <!-- ZONE UPLOAD -->
-                            <div class="form-group px-4 py-3 rounded zone-uploads">
-                                <span class="font-weight-bold">Uploads</span>
-                                <div class="mt-3 w-50">
-                                    <label>Choisir un fichier (.pdf ou .jpg)</label>
-                                    <input class="form-control-file input-text" type="file" placeholder="Parcourir">
-                                </div>
-                                <div class="mt-3 w-50">
-                                    <label>Ce fichier contient (plusieurs choix possible)</label>
-                                    <select class="form-control mt-2 w-100">
-                                        <option>Optionel</option>
-                                        <option></option>
-                                        <option></option>
-                                        <option></option>
-                                    </select>
-                                </div>
-                                <div class="mt-3 w-50">
-                                    <label>J’ajoute le fichier</label>
-                                    <a href="" class="d-block button py-3 px-4 text-dark bg-primary rounded font-weight-bold">Ajouter mon fichier</a>
+                        </div>
+
+                        <div class="pl-2">
+                            <div class="bg-white mt-4">
+                                <div class="px-5 py-4 d-flex justify-content-between align-items-center">
+                                    <h3 class="my-3">Justificatifs complémentaires</h3>
+                                    <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.25 1.311L12.53 12.03C12.4604 12.0997 12.3778 12.1549 12.2869 12.1926C12.1959 12.2304 12.0984 12.2498 12 12.2498C11.9016 12.2498 11.8041 12.2304 11.7131 12.1926C11.6222 12.1549 11.5396 12.0997 11.47 12.03L0.75 1.311" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
                                 </div>
                             </div>
                         </div>
             
                         <!-- FORM BOUTTONS -->
-                        <div class="form-buttons mt-4 d-flex justify-content-end">
-                            <button href="" class="bg-light button py-3 px-4 text-dark rounded mr-3" type="submit">Sauvegarder mes infos</button>
-                            <a href="" class="button py-3 px-4 text-white bg-dark rounded">Lancer le test à nouveau</a>
+                        <div class="d-flex justify-content-between align-items-center flex-row mt-4">
+                            <span class="font-weight-bold align-self-center">< Étape précédente</span>
+                            <div class="form-buttons d-flex justify-content-end">
+                                <button href="" class="bg-light button py-3 px-4 text-dark rounded mr-3" type="submit">Sauvegarder mes infos</button>
+                                <a href="" class="button py-3 px-4 text-white bg-dark rounded">Lancer le test à nouveau</a>
+                            </div>
                         </div>
                     </form>
 
@@ -145,6 +163,7 @@ extra_css: "dossier-locataire-3.css"
                     </div>
                 </aside>
             </div>
+
         </div>
     </main>
 </body>

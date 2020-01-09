@@ -38,6 +38,7 @@ header .button
 form input, select
 {
     height: 48px !important;
+    border: 1.5px solid #D3D3D3 !important;
 }
 
 
