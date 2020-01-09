@@ -1,0 +1,169 @@
+---
+layout: examples
+title: dossier locataire 5
+extra_css: "dossier-locataire-5.css"
+---
+
+
+<body class="bg-light">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="site-header pt-4 row flex-nowrap justify-content-between align-items-center">
+                <img src="../../../assets/img/smartloc/logos/logo.png" class="logo col-sm-2 col-5">
+                <div class="menu row flex-nowrap align-items-center">
+                    <a href="" class="ml-3 text-dark d-none d-sm-block">Aide</a>
+                    <a href="" class="ml-3 button py-2 px-3 text-dark rounded">Parler à un conseiller</a>
+                    <a href="" class="ml-3 button py-2 px-4 text-white bg-dark rounded">Connexion</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <!-- TOP NAV -->
+            <div class="top-nav d-flex flex-row col-sm-10 justify-content-between pl-0">
+                <div class="nav-active d-flex flex-row align-items-center col-sm-4 pl-0">
+                    <img class="top-icon" src="../../../assets/img/smartloc/icons/silhouette.png" alt="">
+                    <span class="font-weight-bold ml-2">1. Information des candidats</span>
+                </div>
+                <div class="nav-active d-flex flex-row align-items-center col-sm-4">
+                    <img class="top-icon" src="../../../assets/img/smartloc/icons/file.png" alt="">
+                    <span class="font-weight-bold ml-2">2. Dépots des justificatifs</span>
+                </div>
+                <div class="d-flex flex-row align-items-center col-sm-4">
+                    <img class="top-icon" src="../../../assets/img/smartloc/icons/folder.png" alt="">
+                    <span class="font-weight-bold ml-2">3. Récupération du dossier</span>
+                </div>
+            </div>
+
+            <!-- RENTING FILE SECTION  -->
+            <div class="mt-4">
+                <h1 class="mb-4">Dossier de locataire</h1>
+                <div class="chose-file mb-5">
+                    <span>Dossier 1</span>
+                    <span>+ Ajouter un dossier</span>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-row w-100">
+                    <form class="col-sm-8 pl-0">
+                        <!-- PREMIER FORM -->
+                        <div class="bg-white pl-2">
+                            <div class="ml-2 py-4 px-4 mb-4">
+                                <!-- INPUT DE TEXT -->
+                                <div class="form-group">
+                                    <h3 class="mt-3 mb-0">Justificatif locataire 1</h3>
+                                    <p>CDI Hors période d'essai</p>
+                                    <div class="mt-3 w-50">
+                                        <label>Nom du locataire</label>
+                                        <input class="form-control pl-3 input-text" type="text" placeholder="Optionel">
+                                    </div>
+                                    <div class="mt-3 w-50">
+                                        <label>Email du locataire</label>
+                                        <input type="email" class="form-control pl-3 input-text" placeholder="Optionel">
+                                    </div>
+                                    <div class="mt-3 w-50">
+                                        <label>Commentaires</label>
+                                        <input type="email" class="form-control pl-3 text-area" placeholder="Optionel">
+                                    </div>
+                                </div>
+                                <!-- ENSEMBLE DES CHECKBOXES -->
+                                <div class="form-group bg-light px-4 py-3 rounded">
+                                    <span class="font-weight-bold">Justificatifs à fournir</span>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                        <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
+                                    </div>
+                                </div>
+                                <!-- ZONE UPLOAD -->
+                                <div class="form-group px-4 py-4 rounded zone-uploads">
+                                    <span class="font-weight-bold">Uploads</span>
+                                    <div class="mt-3">
+                                        <span class="d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
+                                        <label class="custom-file-upload mt-2" for="file-input">Parcourir</label>
+                                        <span class="ml-3">Aucun fichier choisi</span>
+                                        <input class="form-control pl-3-file" type="file" id="file-input">
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="d-block">2. Ce fichier contient (plusieurs choix possible)</span>
+                                        <select class="custom-select pl-3 mt-2 col-sm-8">
+                                            <option>Optionel</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="d-block">3. J’ajoute le fichier</span>
+                                        <a href="" class="d-block button py-3 text-dark bg-primary rounded font-weight-bold mt-2 col-sm-5 text-center">Ajouter mon fichier</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white pl-2">
+                            <div class="ml-2 mt-4">
+                                <div class="px-4 py-4 d-flex justify-content-between align-items-center">
+                                    <h3 class="my-3">Justificatifs complémentaires</h3>
+                                    <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.25 1.311L12.53 12.03C12.4604 12.0997 12.3778 12.1549 12.2869 12.1926C12.1959 12.2304 12.0984 12.2498 12 12.2498C11.9016 12.2498 11.8041 12.2304 11.7131 12.1926C11.6222 12.1549 11.5396 12.0997 11.47 12.03L0.75 1.311" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- FORM BOUTTONS -->
+                        <div class="d-flex justify-content-between align-items-center flex-row mt-4">
+                            <span class="font-weight-bold align-self-center">< Étape précédente</span>
+                            <div class="form-buttons d-flex justify-content-end">
+                                <button href="" class="bg-light button py-3 px-4 text-dark rounded mr-3" type="submit">Sauvegarder mes infos</button>
+                                <a href="" class="button py-3 px-4 text-white bg-dark rounded">Lancer le test à nouveau</a>
+                            </div>
+                        </div>
+                    </form>
+
+                <!-- ASIDE -->
+                <aside class="col-sm-4 d-flex flex-column">
+                    <p class="h4 font-weight-bold">Nos Astuces</p>
+                    <div class="mt-3">
+                        <p class="h6 font-weight-bold">Aide sur les justificatifs de revenus complémentaires</p>
+                        <p>1. Pour les APL il est important de transmettre une simulation sur le logement futur et non une attestation passée. 
+                        <br><br>
+                        2. Pour les revenus locatifs il est nécessaire de transmettre le bail et un document prouvant la propriété de chaque bien constituant le revenu foncier.</a></p>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </main>
+</body>

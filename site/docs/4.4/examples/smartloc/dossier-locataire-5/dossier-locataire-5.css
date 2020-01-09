@@ -1,0 +1,117 @@
+*
+{
+    font-family: Roobert;
+}
+
+/* HEADER */
+
+
+.button
+{
+    cursor: pointer;
+    text-decoration: none !important;
+    z-index: 10;
+}
+
+header .button
+{
+    border: 1px solid black;
+}
+
+.top-icon
+{
+    width: 8%;
+}
+
+.top-nav div
+{
+    opacity: 0.2;
+}
+
+.nav-active
+{
+    opacity: 1 !important;
+}
+
+/* RENTING FILE SECTION */
+
+/* INPUT DE TEXTE */
+form input, select
+{
+    height: 48px !important;
+    border: 1.5px solid #D3D3D3 !important;
+}
+
+.chose-file span
+{
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.chose-file span:first-child
+{
+    border-bottom: solid 2px black;
+}
+
+.text-area
+{
+    height: 120px !important;
+    padding-bottom: 88px;
+}
+
+/* ZONE CHECKBOXES */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    background-color: black!important;
+    box-shadow: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+
+/* ZONE UPLOAD */
+.zone-uploads
+{
+    border: 1px dashed rgba(128, 128, 128, 0.44);
+}
+
+.form-buttons .button
+{
+    border: 1px solid black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1.5px solid #D3D3D3;
+    display: inline-block;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 44px;
+    padding: 0px 35px 0px 35px;
+}
+
+/* ASIDE */
+
+aside div>p:first-child
+{
+    font-size: 18px;
+}
+
+aside div>p:last-child
+{
+    font-size: 14px;
+}
