@@ -48,35 +48,91 @@ extra_css: "dossier-locataire-3.css"
             </div>
             
             <div class="d-flex flex-row w-100">
-                <div class="col-sm-8 pl-0">
-                    <!-- SECONDE FRAME -->
-                    <div class="bg-white py-4 px-4">
-                        <div class="pb-4">
-                            <h3 class="mb-2">Locataire 1</h3>
-                            <div class="mt-3 w-50">
-                                <span>Statut du locataire</span>
-                                <div class="dropdown w-100 mt-2">
-                                    <button class="btn w-100 dropdown-toggle border d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Étudiant / Alternant
-                                    </button>
-                                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="">Salarié</a>
-                                        <a class="dropdown-item" href="">Entrepreneur</a>
-                                        <a class="dropdown-item" href="">Retraité</a>
-                                    </div>
+                    <form class="col-sm-8 pl-0">
+                        <!-- PREMIER FORM -->
+                        <div class="bg-white py-4 px-4 mb-4">
+                            <!-- INPUT DE TEXT -->
+                            <div class="form-group">
+                                <h3 class="my-3">Justificatif locataire 1</h3>
+                                <p>CDI Hors période d'essai</p>
+                                <div class="mt-3 w-50">
+                                    <label>Nom du locataire</label>
+                                    <input class="form-control input-text" type="text" placeholder="Optionel">
+                                </div>
+                                <div class="mt-3 w-50">
+                                    <label>Email du locataire</label>
+                                    <input type="email" class="form-control input-text" placeholder="Optionel">
+                                </div>
+                                <div class="mt-3 w-50">
+                                    <label>Commentaires</label>
+                                    <input type="email" class="form-control text-area" placeholder="Optionel">
+                                </div>
+                            </div>
+                            <!-- ENSEMBLE DES CHECKBOXES -->
+                            <div class="form-group bg-light px-4 py-3 rounded">
+                                <span class="font-weight-bold">Justificatifs à fournir</span>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                    <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                    <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                    <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                    <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                    <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
+                                </div>
+                            </div>
+                            <!-- ZONE UPLOAD -->
+                            <div class="form-group px-4 py-3 rounded zone-uploads">
+                                <span class="font-weight-bold">Uploads</span>
+                                <div class="mt-3 w-50">
+                                    <label>Choisir un fichier (.pdf ou .jpg)</label>
+                                    <input class="form-control-file input-text" type="file" placeholder="Parcourir">
+                                </div>
+                                <div class="mt-3 w-50">
+                                    <label>Ce fichier contient (plusieurs choix possible)</label>
+                                    <select class="form-control mt-2 w-100">
+                                        <option>Optionel</option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <div class="mt-3 w-50">
+                                    <label>J’ajoute le fichier</label>
+                                    <a href="" class="d-block button py-3 px-4 text-dark bg-primary rounded font-weight-bold">Ajouter mon fichier</a>
                                 </div>
                             </div>
                         </div>
-    
-                        <a href="" class="py-5 font-weight-bold text-dark">+ Ajouter un locataire</a>
-                    </div>
-        
-                    <!-- FORN BUTTONS -->
-                    <div class="form-buttons mt-4 d-flex justify-content-end">
-                        <a href="" class="button py-3 px-4 text-dark rounded mr-3">Sauvegarder mes infos</a>
-                        <a href="" class="button py-3 px-4 text-white bg-dark rounded">Lancer le test à nouveau</a>
-                    </div>
-                </div>
+            
+                        <!-- FORM BOUTTONS -->
+                        <div class="form-buttons mt-4 d-flex justify-content-end">
+                            <button href="" class="bg-light button py-3 px-4 text-dark rounded mr-3" type="submit">Sauvegarder mes infos</button>
+                            <a href="" class="button py-3 px-4 text-white bg-dark rounded">Lancer le test à nouveau</a>
+                        </div>
+                    </form>
 
                 <!-- ASIDE -->
                 <aside class="col-sm-4 d-flex flex-column">
