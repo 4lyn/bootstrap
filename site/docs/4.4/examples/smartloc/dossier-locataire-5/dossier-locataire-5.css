@@ -48,60 +48,22 @@ form input, select
     margin-right: 2rem;
 }
 
-.chose-file span:first-child
+.illustrated-input
 {
-    border-bottom: solid 2px black;
+    height: 48px;
 }
 
-.text-area
+.illustrated-input svg
 {
-    height: 120px !important;
-    padding-bottom: 88px;
-}
-
-/* ZONE CHECKBOXES */
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    background-color: black!important;
-    box-shadow: none !important;
-}
-
-.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
-}
-.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
-}
-.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
-}
-
-/* ZONE UPLOAD */
-.zone-uploads
-{
-    border: 1px dashed rgba(128, 128, 128, 0.44);
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
 }
 
 .form-buttons .button
 {
     border: 1px solid black;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.custom-file-upload {
-    border: 1.5px solid #D3D3D3;
-    display: inline-block;
-    height: 48px;
-    cursor: pointer;
-    border-radius: 4px;
-    line-height: 44px;
-    padding: 0px 35px 0px 35px;
 }
 
 /* ASIDE */

@@ -70,22 +70,22 @@ form input, select
     font-weight: 600;
 }
 
-.form-buttons .button
-{
-    border: 1px solid black;
-}
-
-.money-input
+.illustrated-input
 {
     height: 48px;
 }
 
-.money-input span
+.illustrated-input span
 {
     font-weight: bold;
     top:50%;
     transform: translateY(-50%);
     right: 16px;
+}
+
+.form-buttons .button
+{
+    border: 1px solid black;
 }
 
 /* ASIDE */

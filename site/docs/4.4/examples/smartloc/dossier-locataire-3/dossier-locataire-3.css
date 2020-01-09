@@ -85,11 +85,6 @@ form input, select
     border: 1px dashed rgba(128, 128, 128, 0.44);
 }
 
-.form-buttons .button
-{
-    border: 1px solid black;
-}
-
 input[type="file"] {
     display: none;
 }
@@ -102,6 +97,11 @@ input[type="file"] {
     border-radius: 4px;
     line-height: 44px;
     padding: 0px 35px 0px 35px;
+}
+
+.form-buttons .button
+{
+    border: 1px solid black;
 }
 
 /* ASIDE */
