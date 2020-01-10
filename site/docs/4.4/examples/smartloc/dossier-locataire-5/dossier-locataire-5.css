@@ -35,6 +35,17 @@ header .button
 
 /* RENTING FILE SECTION */
 
+.chose-file span
+{
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.chose-file span:first-child
+{
+    border-bottom: solid 2px black;
+}
+
 /* INPUT DE TEXTE */
 form input, select
 {

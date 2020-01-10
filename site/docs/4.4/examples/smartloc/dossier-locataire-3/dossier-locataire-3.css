@@ -35,13 +35,6 @@ header .button
 
 /* RENTING FILE SECTION */
 
-/* INPUT DE TEXTE */
-form input, select
-{
-    height: 48px !important;
-    border: 1.5px solid #D3D3D3 !important;
-}
-
 .chose-file span
 {
     padding-bottom: 1rem;
@@ -51,6 +44,13 @@ form input, select
 .chose-file span:first-child
 {
     border-bottom: solid 2px black;
+}
+
+/* INPUT DE TEXTE */
+form input, select
+{
+    height: 48px !important;
+    border: 1.5px solid #D3D3D3 !important;
 }
 
 .text-area
