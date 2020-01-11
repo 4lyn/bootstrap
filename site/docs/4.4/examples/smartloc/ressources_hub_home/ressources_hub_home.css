@@ -3,19 +3,7 @@
     font-family: Roobert;
 }
 
-body
-{
-    width: 100%;
-}
-
 /* HEADER */
-
-header
-{
-    width: 100%;
-    height: 400px;
-    background-color: #F9DCA5;
-}
 
 header nav a
 {
@@ -25,7 +13,6 @@ header nav a
 
 .searchbar
 {
-    width: 100%;
     bottom:0;
     left: 0; 
     right: 0;
@@ -41,11 +28,6 @@ header nav a
     width: 50px;
 }
 
-.search_icon img
-{
-    width: 50%;
-}
-
 .shapes
 {
     bottom:0;
@@ -54,43 +36,11 @@ header nav a
 
 /* MAIN */
 
-main
-{
-    background-color: #f4f4f4;
-}
-
-section
-{
-    margin-top: 4rem;
-}
-
 /* Categories */
-
-.categories img
-{
-    width: 50%;
-}
 
 .card-top
 {
     border-bottom: 2px dashed #dee2e6 !important;
-}
-
-.links a
-{
-    margin-bottom: 5px;
-}
-
-/* Articles */
-
-.article-description p:first-child
-{
-    font-weight: 500;
-}
-
-.article-description p:last-child
-{
-    font-size: 0.8em;
 }
 
 /* DOCUMENTS */
@@ -116,7 +66,7 @@ section
     border-right : 2px solid black;
 }
 
-.active
+.active  /* classe pour le js */
 {
     background-color: black;
     color: white;
@@ -124,18 +74,9 @@ section
 
 /* CONTACT */
 
-.contact-section
-{
-    padding: 5% 0 5% 0;
-}
-.contact-section div
+.contact-section div div
 {
     z-index: 10;
-}
-
-.contact-section img
-{
-    position: absolute;
 }
 
 .contact-section img:first-of-type
@@ -164,30 +105,6 @@ section
 }
 
 /* FOOTER */
-
-footer
-{
-    padding: 0 10% 0 10%;
-    font-size: 0.9rem;
-}
-
-.smart-logo-white
-{
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-}
-
-footer .right-part a
-{
-    color: white !important;
-    margin-bottom: 5%; 
-}
-
-footer .top-part a
-{
-    font-weight: bold;
-}
 
 .line
 {
