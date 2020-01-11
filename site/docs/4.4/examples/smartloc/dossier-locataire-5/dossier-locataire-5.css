@@ -55,6 +55,7 @@ form input, select
 {
     font-weight: bold;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 16px;
 }
