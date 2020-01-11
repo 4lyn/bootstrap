@@ -33,13 +33,7 @@ header .button
     opacity: 1 !important;
 }
 
-/* RENTING FILE SECTION */
-
-.chose-file span
-{
-    padding-bottom: 1rem;
-    margin-right: 2rem;
-}
+/* SECTION CONTITUTION DOSSIER */
 
 .chose-file span:first-child
 {
