@@ -5,7 +5,6 @@
 
 /* HEADER */
 
-
 .button
 {
     cursor: pointer;
@@ -33,7 +32,7 @@ header .button
     opacity: 1 !important;
 }
 
-/* RENTING FILE SECTION */
+/* SECTION CONTITUTION DOSSIER */
 
 form input, select
 {
@@ -41,11 +40,17 @@ form input, select
     border: 1.5px solid #D3D3D3 !important;
 }
 
-
-.chose-file span
+.illustrated-input
 {
-    padding-bottom: 1rem;
-    margin-right: 2rem;
+    height: 48px;
+}
+
+.illustrated-input span
+{
+    font-weight: bold;
+    top:50%;
+    transform: translateY(-50%);
+    right: 16px;
 }
 
 .chose-file span:first-child
@@ -68,19 +73,6 @@ form input, select
     background-color: #fff;
     border-radius: 20px;
     font-weight: 600;
-}
-
-.illustrated-input
-{
-    height: 48px;
-}
-
-.illustrated-input span
-{
-    font-weight: bold;
-    top:50%;
-    transform: translateY(-50%);
-    right: 16px;
 }
 
 .form-button-stroke
