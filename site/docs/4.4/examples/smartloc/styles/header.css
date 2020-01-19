@@ -1,0 +1,40 @@
+/* HEADER */
+
+header
+{
+    height : 40px;
+    margin: 40px 0 60px 0;
+}
+
+header .container
+{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header .logo
+{
+    max-width: 13%;
+}
+
+.headerButtonsContainer
+{
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 42%;
+}
+
+.headerButtonsContainer a 
+{
+    margin-left: 16px;
+    text-decoration: none !important;
+}
+
+.headerButtonsContainer a:first-child
+{
+    color: black !important;
+}

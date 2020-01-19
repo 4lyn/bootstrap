@@ -7,46 +7,44 @@ extra_css: "dossier-locataire-1.css"
 <body class="bg-light">
     <!-- HEADER -->
     <header>
-        <div class="pt-3 pb-2 container">
-            <nav class="site-header pt-4 row flex-nowrap justify-content-between align-items-center">
-                <img src="../../../assets/img/smartloc/logos/logo.png" class="logo col-sm-2 col-5">
-                <div class="col-lg-5 col-8 row flex-nowrap justify-content-between align-items-center">
-                    <a href="" class="text-dark d-none d-sm-block">Aide</a>
-                    <a href="" class="button py-2 px-4 text-dark rounded">Parler à un conseiller</a>
-                    <a href="" class="button py-2 px-4 text-white bg-dark rounded">Connexion</a>
-                </div>
-            </nav>
+        <div class="container">
+            <img src="../../../assets/img/smartloc/logos/logo.png" class="logo">
+            <div class="headerButtonsContainer">
+                <a href="">Aide</a>
+                <a href="" class="btn btn-outline-dark">Parler à un conseiller</a>
+                <a href="" class="btn btn-dark">Connexion</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="container py-5">
+        <div class="container">
             <!-- CARD -->
-            <div class="frame position-relative bg-white d-flex flex-row">
-                <div class="position-relative col-sm-5 py-5 px-5">
+            <div class="frame">
+                <div class="frameLeftPart">
                     <div class="w-75">
-                        <p class="h3 font-weight-bold mb-5">Bienvenue sur notre outil de constitution et de validation du dossier locataire</p>
-                        <a href="" class="button py-3 px-4 text-white bg-dark rounded">Démarrer le dossier locataire</a>
+                        <h3 class="mb-4">Bienvenue sur notre outil de constitution et de validation du dossier locataire</h3>
+                        <a href="" class="btn btn-dark py-3 px-4 mt-2">Démarrer le dossier locataire</a>
                     </div>
-                    <img class="position-absolute shapes" src="../../../assets/img/smartloc/illustrations/rond-jaune.png" alt="">
-                    <img class="position-absolute shapes" src="../../../assets/img/smartloc/illustrations/couronne-rose.png" alt="">
+                    <img class="shapes" src="../../../assets/img/smartloc/illustrations/rond-jaune.png" alt="">
+                    <img class="shapes" src="../../../assets/img/smartloc/illustrations/couronne-rose.png" alt="">
                 </div>
-                <div class="col-sm-7 py-5 px-5 border-left">
-                    <div class="col-sm-6 pl-0 d-flex flex-row mb-4 align-items-center">
-                        <img class="h-50" src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                        <div class="mathieu-description d-flex flex-column align-items-around pl-3">
-                            <p class="m-0 font-weight-bold">Mathieu Chantalat</p>
+                <div class="frameRightPart border-left">
+                    <div class="mathieuContainer">
+                        <img class="h-50" src="../../../assets/img/smartloc/photos/Image.png" alt="Mathieu Chantalat photo">
+                        <div class="mathieuDescription">
+                            <h5 class="m-0">Mathieu Chantalat</h5>
                             <p class="m-0">Directeur Immobilier</p>
                         </div>
                     </div>
                     <div>
                         <p class="font-weight-bold">Sur cette page vous allez pouvoir:</p>
-                        <ul class="pl-3">
+                        <ul class="ml-3">
                             <li>évaluer l'éligibilité des candidats à l'assurance loyer impayé</li>
                             <li>ajouter et valider les justificatifs</li>
                             <li>récupérer un dossier pdf vous permettant de souscrire</li>
                         </ul>
-                        <p>En cas de questions ou de problèmes notre équipe est disponible à tout moment sur le chat ou par mail à equipe@smartloc</p>
+                        <p>En cas de questions ou de problèmes notre équipe est disponible à tout moment sur le chat ou par mail à equipe@smartloc.fr</p>
                     </div>
                 </div>
             </div>

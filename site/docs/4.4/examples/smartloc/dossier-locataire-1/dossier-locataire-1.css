@@ -1,28 +1,59 @@
-*
-{
-    font-family: Roobert;
-}
+@import "../styles/smartloc.css";
 
-/* HEADER */
-
-.button
-{
-    cursor: pointer;
-    text-decoration: none !important;
-    z-index: 10;
-}
-
-header .button
-{
-    border: 1px solid black;
-}
 
 /* MAIN */
 
 .frame
 {
+    background-color: white;
     overflow: hidden;
     z-index: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.frameLeftPart
+{
+    position: relative;
+    padding: 55px 0 55px 40px;
+    max-width: 41%;
+}
+
+.frameLeftPart h3 
+{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.frameRightPart
+{
+    padding: 55px 56px 55px 56px;
+}
+
+.mathieuContainer
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.mathieuDescription
+{
+    font-size: 1.2em;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mathieuDescription p:first-child
+{
+    font-weight: bold;
+}
+
+.shapes
+{
+    position: absolute;
 }
 
 .shapes:nth-of-type(1)
@@ -39,9 +70,4 @@ header .button
     left: 0;
     z-index: -1;
     width: 50%;
-}
-
-.mathieu-description p
-{
-    font-size: 1.2rem;
 }

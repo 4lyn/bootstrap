@@ -1,0 +1,13 @@
+@import "./header.css";
+
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+
+*
+{
+    font-family: 'Archivo', sans-serif;
+}
+
+a.btn
+{
+    text-decoration: none !important;
+}

@@ -1,21 +1,5 @@
-*
-{
-    font-family: Roobert;
-}
+@import "../styles/smartloc.css";
 
-/* HEADER */
-
-.button
-{
-    cursor: pointer;
-    text-decoration: none !important;
-    z-index: 10;
-}
-
-header .button
-{
-    border: 1px solid black;
-}
 
 .top-icon
 {

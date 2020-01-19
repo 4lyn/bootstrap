@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo&display=swap");
+* {
+  font-family: 'Archivo', sans-serif;
+}
+
+/* HEADER */
+header {
+  height: 40px;
+  margin: 40px 0 60px 0;
+}
+
+header .container {
+  height: inherit;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none !important;
+  z-index: 10;
+}
+
+header .button {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=smartloc.css.map */
