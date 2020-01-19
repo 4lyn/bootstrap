@@ -4,170 +4,156 @@ title: dossier locataire 2
 extra_css: "dossier-locataire-2.css"
 ---
 
-<body class="bg-light">
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav class="pt-4 row flex-nowrap justify-content-between align-items-center">
-                <img src="../../../assets/img/smartloc/logos/logo.png" class="logo col-sm-2 col-5">
-                <div class="menu row flex-nowrap align-items-center">
-                    <a href="" class="ml-3 text-dark d-none d-sm-block">Aide</a>
-                    <a href="" class="ml-3 button py-2 px-3 text-dark rounded">Parler à un conseiller</a>
-                    <a href="" class="ml-3 button py-2 px-4 text-white bg-dark rounded">Connexion</a>
-                </div>
-            </nav>
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <img src="../../../assets/img/smartloc/logos/logo.png" class="logo">
+        <div class="headerButtonsContainer">
+            <a href="">Aide</a>
+            <a href="" class="btn btn-outline-dark">Parler à un conseiller</a>
+            <a href="" class="btn btn-dark">Connexion</a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <div class="container py-5">
-            <!-- TOP NAV -->
-            <div class="top-nav d-flex flex-row col-sm-10 justify-content-between pl-0">
-                <div class="nav-active d-flex flex-row align-items-center col-sm-4 pl-0">
-                    <img class="top-icon" src="../../../assets/img/smartloc/icons/silhouette.png" alt="">
-                    <span class="font-weight-bold ml-2">1. Information des candidats</span>
-                </div>
-                <div class="d-flex flex-row align-items-center col-sm-4">
-                    <img class="top-icon" src="../../../assets/img/smartloc/icons/file.png" alt="">
-                    <span class="font-weight-bold ml-2">2. Dépots des justificatifs</span>
-                </div>
-                <div class="d-flex flex-row align-items-center col-sm-4">
-                    <img class="top-icon" src="../../../assets/img/smartloc/icons/folder.png" alt="">
-                    <span class="font-weight-bold ml-2">3. Récupération du dossier</span>
-                </div>
-            </div>
-
-            <!-- RENTING FILE SECTION  -->
-            <div class="mt-4">
-                <h1 class="mb-4">Dossier de locataire</h1>
-                <div class="chose-file mb-5">
-                    <span class="pb-3 mr-4">Dossier 1</span>
-                    <span class="pb-3 mr-4">+ Ajouter un dossier</span>
-                </div>
-            </div>
-            
-            <!-- FRAME DE FORM -->
-            <div class="d-flex flex-row w-100">
-                <form class="col-sm-8 pl-0">
-                    <!-- PREMIER FORM -->
-                    <div class="bg-white pl-3">
-                        <div class="ml-2 py-4 px-4 mb-4">
-                            <div class="form-group mt-2">
-                                <p>Le locataire est-il sur les lieux ?</p>
-                                <div class="col-sm-4 pl-0 mt-3 d-flex flex-row">
-                                    <label class="bool-button mr-2">
-                                        <input  type="radio" checked="checked" name="radio1">
-                                        <span class="py-2 px-3">Oui</span>
-                                    </label>
-                                    <label class="bool-button">
-                                        <input type="radio" checked="checked" name="radio1">
-                                        <span class="py-2 px-3">Non</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <span>Avez vous eu un incident de paiement sur les 6 premiers mois ?</span>
-                                <div class="col-sm-4 pl-0 mt-3 d-flex flex-row">
-                                    <label class="bool-button mr-2">
-                                        <input  type="radio" checked="checked" name="radio2">
-                                        <span class="py-2 px-3">Oui</span>
-                                    </label>
-                                    <label class="bool-button">
-                                        <input type="radio" checked="checked" name="radio2">
-                                        <span class="py-2 px-3">Non</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="mb-0">Le locataire est dans les lieux depuis</label>
-                                <select class="d-block custom-select pl-3 mt-2 w-50">
-                                    <option>Moins de 14 jours</option>
-                                    <option>Moins d'un mois</option>
-                                    <option>Moins de 6 mois</option>
-                                    <option>Moins d'un an</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- DEUXIEME FORM -->
-                    <div class="bg-white pl-3">
-                        <div class="ml-2 py-4 px-4">
-                            <div class="form-group">
-                                <h3 class="my-3">Locataire 1</h3>
-                                <div class="mt-3">
-                                    <label class="mb-0">Statut du locataire</label>
-                                    <select class="d-block custom-select pl-3 mt-2 w-50">
-                                        <option>Étudiant / Alternant</option>
-                                        <option>Salarié</option>
-                                        <option>Entrepreneur</option>
-                                        <option>Retraité</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <h3 class="my-4">Garant 1</h3>
-                                <div>
-                                    <label class="mb-0">Statut du locataire</label>
-                                    <select class="d-block custom-select pl-3 mt-2 w-50">
-                                        <option>Étudiant / Alternant</option>
-                                        <option>Salarié</option>
-                                        <option>Entrepreneur</option>
-                                        <option>Retraité</option>
-                                    </select>
-                                </div>
-                                <div class="mt-3">
-                                    <label>Revenu du garant net AVANT retenu à la source</label>
-                                    <div class="position-relative illustrated-input w-50">
-                                        <input class="form-control pl-3 position-absolute" type="text">
-                                        <span class="position-absolute">€/mois</span>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <label>Loyer + charges</label>
-                                    <div class="position-relative illustrated-input w-50">
-                                        <input class="form-control pl-3 position-absolute" type="text">
-                                        <span class="position-absolute">€/mois</span>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <a href="" class="py-5 font-weight-bold text-dark">+ Ajouter un locataire</a>
-                        </div>
-                    </div>
-        
-                    <!-- FORM BUTTONS -->
-                    <div class="mt-4 d-flex justify-content-end">
-                        <button href="" class="form-button-stroke bg-light button py-3 px-4 text-dark rounded mr-3" type="submit">Sauvegarder mes infos</button>
-                        <a href="" class="button py-3 px-4 text-white bg-dark rounded">Lancer le test à nouveau</a>
-                    </div>
-                </form>
-
-                <!-- ASIDE -->
-                <aside class="col-sm-4 d-flex flex-column">
-                    <p class="h4 font-weight-bold">Nos Astuces</p>
-                    <div>
-                        <p class="my-3 h6 font-weight-bold">Eligibilité des candidats</p>
-                        <p>Ces questions vont vous permettre de déterminer rapidement et sans engagement si vos candidats sont éligibles à l'assurance loyer impayé. Plus d'infos sur les critères locataire sur notre page <a>assurance loyer impayé.</a></p>
-                    </div>
-                    <div>
-                        <p class="my-3 h6 font-weight-bold">Souscription sans carence</p>
-                        <p>Si vous souscrivez au plus tard 14 jours après l'entrée dans les lieux, la garantie s'appliquera sans carence (période probatoire).</p>
-                    </div>
-                    <div>
-                        <p class="my-3 h6 font-weight-bold">Solvabilité nécéssaire</p>
-                        <p>Les locataires en place depuis moins de 6 mois doivent rentrer dans les critères de solvabilité. Vous devez considérer leur situation à la signature du bail.</p>
-                    </div>
-                    <div>
-                        <p class="my-3 h6 font-weight-bold">Limite de garants</p>
-                        <p>Il ne peut y avoir qu'un seul garant par étudiant.</p>
-                    </div>
-                    <div>
-                        <p class="my-3 h6 font-weight-bold">Définition revenu salariés</p>
-                        <p>Salaire net à payer avant retenue à la source, hors heures supplémentaires ou primes non contractuelles. Retenez donc le revenu d'un bulletin sans primes et heures supplémentaires ou si nécessaire retenez le revenu brut contractuel en haut de la fiche de paie et retranchez 24%. <br>On considère les revenus AVANT retenue à la source pour l'impôt sur le revenu.</p>
-                    </div>
-                </aside>
-            </div>
+<main>
+    <!-- TOP NAV -->
+    <div class="topNav">
+        <div class="navActive">
+            <img src="../../../assets/img/smartloc/icons/silhouette.png" alt="">
+            <span>1. Information des candidats</span>
         </div>
-    </main>
-</body>
+        <div>
+            <img src="../../../assets/img/smartloc/icons/file.png" alt="">
+            <span>2. Dépots des justificatifs</span>
+        </div>
+        <div>
+            <img src="../../../assets/img/smartloc/icons/folder.png" alt="">
+            <span>3. Récupération du dossier</span>
+        </div>
+    </div>
+
+    <!-- RENTING FILE SECTION  -->
+    <h1 class="titreDossierLocataire">Dossier de locataire</h1>
+    <div class="choseFile">
+        <span>Dossier 1</span>
+        <span>+ Ajouter un dossier</span>
+    </div>
+
+    <div class="mainContainer">
+        <!-- FRAME DE FORM -->
+        <form>
+            <!-- PREMIERE SECTION -->
+            <div class="formSection">
+                <div class="form-group">
+                    <span>Le locataire est-il sur les lieux ?</span>
+                    <div class="booleanRadioButtonsConatiner">
+                        <label>
+                            <input type="radio" checked="checked" name="radio1">
+                            <div>Oui</div>
+                        </label>
+                        <label>
+                            <input type="radio" checked="checked" name="radio1">
+                            <div>Non</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span>Avez vous eu un incident de paiement sur les 6 premiers mois ?</span>
+                    <div class="booleanRadioButtonsConatiner">
+                        <label>
+                            <input type="radio" checked="checked" name="radio2">
+                            <div>Oui</div>
+                        </label>
+                        <label>
+                            <input type="radio" checked="checked" name="radio2">
+                            <div>Non</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span>Le locataire est dans les lieux depuis</span>
+                    <select class="custom-select">
+                        <option>Moins de 14 jours</option>
+                        <option>Moins d'un mois</option>
+                        <option>Moins de 6 mois</option>
+                        <option>Moins d'un an</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- DEUXIEME SECTION -->
+            <div class="formSection">
+                <h3>Locataire 1</h3>
+                <div class="form-group">
+                    <span>Statut du locataire</span>
+                    <select class="custom-select">
+                        <option>Étudiant / Alternant</option>
+                        <option>Salarié</option>
+                        <option>Entrepreneur</option>
+                        <option>Retraité</option>
+                    </select>
+                </div>
+                <h3>Garant 1</h3>
+                <div class="form-group">
+                    <span>Statut du locataire</span>
+                    <select class="custom-select">
+                        <option>Étudiant / Alternant</option>
+                        <option>Salarié</option>
+                        <option>Entrepreneur</option>
+                        <option>Retraité</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span>Revenu du garant net AVANT retenu à la source</span>
+                    <div class="illustratedInput">
+                        <input class="form-control" type="text">
+                        <span>€/mois</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span>Loyer + charges</span>
+                    <div class="illustratedInput">
+                        <input class="form-control" type="text">
+                        <span>€/mois</span>
+                    </div>
+                </div>
+
+                <a href="" class="addLocataire">+ Ajouter un locataire</a>
+            </div>
+
+            <!-- FORM BUTTONS -->
+            <div class="bottomFormButtons">
+                <button href="" class="btn btn-outline-dark py-3 px-4" type="submit">Sauvegarder mes infos</button>
+                <a href="" class="btn btn-dark py-3 px-4">Lancer le test à nouveau</a>
+            </div>
+        </form>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Nos Astuces</h3>
+            <div>
+                <h4>Eligibilité des candidats</h4>
+                <p>Ces questions vont vous permettre de déterminer rapidement et sans engagement si vos candidats sont éligibles à l'assurance loyer impayé. Plus d'infos sur les critères locataire sur notre page <a href="">assurance loyer impayé.</a></p>
+            </div>
+            <div>
+                <h4>Souscription sans carence</h4>
+                <p>Si vous souscrivez au plus tard 14 jours après l'entrée dans les lieux, la garantie s'appliquera sans carence (période probatoire).</p>
+            </div>
+            <div>
+                <h4>Solvabilité nécéssaire</h4>
+                <p>Les locataires en place depuis moins de 6 mois doivent rentrer dans les critères de solvabilité. Vous devez considérer leur situation à la signature du bail.</p>
+            </div>
+            <div>
+                <h4>Limite de garants</h4>
+                <p>Il ne peut y avoir qu'un seul garant par étudiant.</p>
+            </div>
+            <div>
+                <h4>Définition revenu salariés</h4>
+                <p>Salaire net à payer avant retenue à la source, hors heures supplémentaires ou primes non contractuelles. Retenez donc le revenu d'un bulletin sans primes et heures supplémentaires ou si nécessaire retenez le revenu brut contractuel en haut de la fiche de paie et retranchez 24%. <br>On considère les revenus AVANT retenue à la source pour l'impôt sur le revenu.</p>
+            </div>
+        </aside>
+
+        
+    </div>
+</main>

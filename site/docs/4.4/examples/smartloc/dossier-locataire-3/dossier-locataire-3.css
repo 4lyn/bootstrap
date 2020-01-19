@@ -34,11 +34,6 @@ header .button
 
 /* SECTION CONTITUTION DOSSIER */
 
-.chose-file span:first-child
-{
-    border-bottom: solid 2px black;
-}
-
 /* INPUT DE TEXTE */
 form input, select
 {

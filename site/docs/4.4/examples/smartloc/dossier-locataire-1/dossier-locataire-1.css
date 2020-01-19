@@ -13,22 +13,21 @@
     flex-direction: row;
 }
 
+h2
+{
+    margin-bottom: 32px;
+}
+
 .frameLeftPart
 {
     position: relative;
-    padding: 55px 0 55px 40px;
+    padding: 39px 0 60px 40px;
     max-width: 41%;
-}
-
-.frameLeftPart h3 
-{
-    font-weight: bold;
-    font-size: 32px;
 }
 
 .frameRightPart
 {
-    padding: 55px 56px 55px 56px;
+    padding: 55px 56px 60px 56px;
 }
 
 .mathieuContainer
@@ -40,15 +39,16 @@
 
 .mathieuDescription
 {
-    font-size: 1.2em;
     margin-left: 12px;
     display: flex;
     flex-direction: column;
 }
 
-.mathieuDescription p:first-child
+
+.listContainer p
 {
-    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 6px;
 }
 
 .shapes
