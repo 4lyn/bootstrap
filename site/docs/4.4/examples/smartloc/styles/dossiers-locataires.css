@@ -74,7 +74,7 @@ form
 
 .formSection
 {
-    padding: 30px 0px 40px 40px;
+    padding: 30px 40px 35px 40px;
     margin-bottom: 32px;
     background-color: white;
     border-radius: 4px;
@@ -137,27 +137,26 @@ form
 
 /* Inputs de formulaire */
 
-.illustratedInput
-{
-    position: relative;
-}
-
-.illustratedInput, .custom-select
+.form-control
 {
     width: 50% !important;
     height: 48px !important;
     display: block !important;
-}
-
-.illustratedInput input, .custom-select
-{
-    height: 48px !important;
     padding-left: 16px !important;
     border: 1.5px solid #D3D3D3 !important;
 }
 
-.illustratedInput input
+.illustratedInput
 {
+    position: relative;
+    width: 50%;
+    height: 48px;
+    display: block;
+}
+
+.illustratedInput .form-control
+{
+    width: 100% !important;
     position: absolute;
 }
 
@@ -173,7 +172,7 @@ form
 {
     display: inline-block;
     margin-top: 32px;
-    color: black !important;
+    color: black;
     font-weight: bold;
 }
 
@@ -182,12 +181,40 @@ form
 .bottomFormButtons
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.bottomFormButtons span
+{
+    font-weight: bold;
+    align-self: center;
 }
 
 .bottomFormButtons button
 {
     margin-right : 16px;
+}
+
+.bottomFormButtons.withoutStepBack
+{
+    
+    justify-content: flex-end;
+}
+
+/* BOUTONS A CHANGER DANS BOOTTRAP */
+
+
+.largeButton
+{
+    min-width: 200px;
+    height: 56px;
+    font-weight: bold;
+}
+
+.veryLargeButton
+{
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* ASIDE */

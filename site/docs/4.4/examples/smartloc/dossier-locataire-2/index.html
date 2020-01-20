@@ -6,13 +6,11 @@ extra_css: "dossier-locataire-2.css"
 
 <!-- HEADER -->
 <header>
-    <div class="container">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logo">
-        <div class="headerButtonsContainer">
-            <a href="">Aide</a>
-            <a href="" class="btn btn-outline-dark">Parler à un conseiller</a>
-            <a href="" class="btn btn-dark">Connexion</a>
-        </div>
+    <img src="../../../assets/img/smartloc/logos/logo.png" class="logo">
+    <div class="headerButtonsContainer">
+        <a href="">Aide</a>
+        <a href="" class="btn btn-outline-dark">Parler à un conseiller</a>
+        <a href="" class="btn btn-dark">Connexion</a>
     </div>
 </header>
 
@@ -73,7 +71,7 @@ extra_css: "dossier-locataire-2.css"
                 </div>
                 <div class="form-group">
                     <span>Le locataire est dans les lieux depuis</span>
-                    <select class="custom-select">
+                    <select class="custom-select form-control">
                         <option>Moins de 14 jours</option>
                         <option>Moins d'un mois</option>
                         <option>Moins de 6 mois</option>
@@ -87,7 +85,7 @@ extra_css: "dossier-locataire-2.css"
                 <h3>Locataire 1</h3>
                 <div class="form-group">
                     <span>Statut du locataire</span>
-                    <select class="custom-select">
+                    <select class="custom-select form-control">
                         <option>Étudiant / Alternant</option>
                         <option>Salarié</option>
                         <option>Entrepreneur</option>
@@ -97,7 +95,7 @@ extra_css: "dossier-locataire-2.css"
                 <h3>Garant 1</h3>
                 <div class="form-group">
                     <span>Statut du locataire</span>
-                    <select class="custom-select">
+                    <select class="custom-select form-control">
                         <option>Étudiant / Alternant</option>
                         <option>Salarié</option>
                         <option>Entrepreneur</option>
@@ -123,9 +121,9 @@ extra_css: "dossier-locataire-2.css"
             </div>
 
             <!-- FORM BUTTONS -->
-            <div class="bottomFormButtons">
-                <button href="" class="btn btn-outline-dark py-3 px-4" type="submit">Sauvegarder mes infos</button>
-                <a href="" class="btn btn-dark py-3 px-4">Lancer le test à nouveau</a>
+            <div class="bottomFormButtons withoutStepBack">
+                <button href="" class="btn btn-outline-dark largeButton" type="submit">Sauvegarder mes infos</button>
+                <button href="" class="btn btn-dark largeButton veryLargeButton" style="width: auto">Lancer le test à nouveau</button>
             </div>
         </form>
 
@@ -154,6 +152,6 @@ extra_css: "dossier-locataire-2.css"
             </div>
         </aside>
 
-        
+
     </div>
 </main>
