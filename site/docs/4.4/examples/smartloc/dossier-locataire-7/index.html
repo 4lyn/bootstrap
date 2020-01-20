@@ -5,31 +5,32 @@ extra_css: "dossier-locataire-7.css"
 ---
 
 
-<body>
-    <div class="container pt-5">
-        <form class="col-sm-8 m-auto pl-0">
-            <div class="bg-white pl-2">
-                <div class="ml-2 py-4 px-4">
-                    <h3 class="mt-3">Veuillez vérifier les points suivants</h3>
-                    <p>CDI Hors période d'essai</p>
-                    <div class="form-group">
-                        <div class="custom-control custom-checkbox mt-2">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">aucun candidat n'est diplomate </label>
-                        </div>
-                        <div class="custom-control custom-checkbox mt-2">
-                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                            <label class="custom-control-label" for="customCheck2">aucun candidat ou garant n'est domicilié fiscalement à l'étranger ni dans les DOM</label>
-                        </div>
-                        <div class="custom-control custom-checkbox mt-2">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                            <label class="custom-control-label" for="customCheck3">le bail envisagé n'est pas un bail de colocation non solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
-                        </div>
+<div class="modal fade modalToShow" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>Veuillez vérifier les points suivants</h3>
+                <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
+                <div class="mt-3 mb-2">
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">aucun candidat n'est diplomate </label>
                     </div>
-                    <p>Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN français.</p>
-                    <button type="submit" class="col-sm-4 button py-3 text-white bg-dark rounded mb-3 mt-2">Valider</button>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">aucun candidat ou garant n'est domicilié fiscalement à l'étranger ni dans les DOM</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">le bail envisagé n'est pas un bail de colocation non solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
+                    </div>
                 </div>
+                <p class="mb-4">Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN français.</p>
+                <button class="btn btn-dark largeButton" data-dismiss="modal">Valider</button>
             </div>
-        </form>
+        </div>
     </div>
-</body>
+</div>

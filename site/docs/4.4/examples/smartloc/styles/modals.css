@@ -1,0 +1,33 @@
+.modalToShow
+{
+    opacity: 1 !important; 
+    display: block !important;
+}
+
+.modalToShow .modal-dialog
+{
+    transform: none !important; 
+}
+
+.modal-dialog
+{
+    max-width: 736px !important;
+}
+
+.modal-content
+{
+    position: relative;
+    border: none !important;
+}
+
+.modal-body
+{
+    padding: 30px 40px 35px 40px;
+}
+
+.modal-content .close
+{
+    position: absolute;
+    top: 23.5px;
+    right: 23.5px;
+}

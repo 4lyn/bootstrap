@@ -1,6 +1,19 @@
 @import "../styles/smartloc.css";
 
-/* INPUT DE TEXTE */
+/* ZONE CHECKBOXES */
+
+.checkBoxesContainer
+{
+    background-color: #F4F4F4;
+    padding: 24px;
+    margin: 32px 0px 32px 0px;
+    border-radius: 4px;
+}
+
+.checkBoxesContainer div
+{
+    margin-top: 8px
+}
 
 /* ZONE UPLOAD */
 

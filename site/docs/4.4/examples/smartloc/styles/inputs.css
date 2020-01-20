@@ -138,18 +138,6 @@
 
 /* Zone checkboxes */
 
-.checkBoxesContainer
-{
-    background-color: #F4F4F4;
-    padding: 24px;
-    margin: 32px 0px 32px 0px;
-    border-radius: 4px;
-}
-
-.checkBoxesContainer div
-{
-    margin-top: 8px
-}
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     border: 1px solid rgba(0, 0, 0, 0.112);
