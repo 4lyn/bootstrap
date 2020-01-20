@@ -1,0 +1,172 @@
+/* Boutons oui/non violets */
+
+.booleanRadioButtonsConatiner
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.booleanRadioButtonsConatiner label
+{
+    margin-bottom: 0px !important;
+}
+
+.booleanRadioButtonsConatiner label:first-child
+{
+    margin-right: 16px;
+}
+
+.booleanRadioButtonsConatiner label input[type="radio"]{
+    display: none;
+}
+
+.booleanRadioButtonsConatiner label input:checked + div{
+    background: #A896D8;
+    border: 1px solid #A896D8;
+    font-weight: 600;
+}
+
+.booleanRadioButtonsConatiner label input + div{
+    width: 64px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 52px;
+    font-weight: 600;
+}
+
+/* Inputs dans le formulaire */
+
+.form-control
+{
+    width: 50% !important;
+    height: 48px !important;
+    display: block !important;
+    padding-left: 16px !important;
+    border: 1.5px solid #D3D3D3 !important;
+}
+
+.illustratedInput
+{
+    position: relative;
+    width: 50%;
+    height: 48px;
+    display: block;
+}
+
+.illustratedInput .form-control
+{
+    width: 100% !important;
+    position: absolute;
+}
+
+.illustratedInput span, .illustratedInput svg
+{
+    position: absolute;
+    font-weight: bold;
+    line-height: 48px;
+    height: 48px;
+    right: 16px;
+}
+
+.addLocataire
+{
+    display: inline-block;
+    margin-top: 32px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Inputs fin de formulaire - Submit et autre */
+
+.bottomFormButtons
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomFormButtons span
+{
+    font-weight: bold;
+    align-self: center;
+}
+
+.bottomFormButtons button
+{
+    margin-right : 16px;
+}
+
+.bottomFormButtons.withoutStepBack
+{
+    
+    justify-content: flex-end;
+}
+
+/* Boutons natifs bootstrap modifiés*/
+
+
+.largeButton
+{
+    min-width: 200px;
+    height: 56px;
+    font-weight: bold;
+}
+
+.veryLargeButton
+{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Boutons d'upload custom */
+
+.customFileUploadContainer input[type="file"] {
+    display: none !important;
+}
+
+.customFileUploadContainer .customFileUpload {
+    height: 48px;
+    padding: 0px 35px 0px 35px;
+    line-height: 44px;
+    display: inline-block;
+    border: 1.5px solid #D3D3D3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Zone checkboxes */
+
+.checkBoxesContainer
+{
+    background-color: #F4F4F4;
+    padding: 24px;
+    margin: 32px 0px 32px 0px;
+    border-radius: 4px;
+}
+
+.checkBoxesContainer div
+{
+    margin-top: 8px
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    background-color: black!important;
+    box-shadow: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+

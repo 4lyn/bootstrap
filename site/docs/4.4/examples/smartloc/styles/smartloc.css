@@ -1,4 +1,6 @@
 @import "./header.css";
+@import "./alert.css";
+@import "./inputs.css";
 @import "./dossiers-locataires.css";
 
 @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
