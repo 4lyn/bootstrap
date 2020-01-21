@@ -1,14 +1,3 @@
-.modalToShow
-{
-    opacity: 1 !important; 
-    display: block !important;
-}
-
-.modalToShow .modal-dialog
-{
-    transform: none !important; 
-}
-
 .modal-dialog
 {
     max-width: 736px !important;
@@ -18,6 +7,11 @@
 {
     position: relative;
     border: none !important;
+}
+
+.modal-content button.close
+{
+    z-index: 2000;
 }
 
 .modal-body
