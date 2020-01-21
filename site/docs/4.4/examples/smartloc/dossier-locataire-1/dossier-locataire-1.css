@@ -9,7 +9,9 @@
     overflow: hidden;
     z-index: 0;
     position: relative;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
@@ -32,7 +34,9 @@ h2
 
 .mathieuContainer
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin-bottom: 32px;
 }
@@ -40,7 +44,9 @@ h2
 .mathieuDescription
 {
     margin-left: 12px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 

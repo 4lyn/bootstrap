@@ -50,6 +50,7 @@ $smartloc-purple:  #a896d8 !default;
 $smartloc-yellow:  #f9dca5 !default;
 $smartloc-pink:    #ebb9c2 !default;
 $smartloc-green:    #7ecd82 !default;
+$smartloc-red:    #EBB9B9 !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -76,10 +77,10 @@ $primary:       $smartloc-purple !default;
 $secondary:     $smartloc-green !default;
 $tertiary:      $smartloc-yellow !default;
 $quarantary:    $smartloc-pink !default;
-$success:       $green !default;
+$success:       $smartloc-green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        $smartloc-red !default;
 $light:         $smartloc-gray !default;
 $dark:          $black !default;
 

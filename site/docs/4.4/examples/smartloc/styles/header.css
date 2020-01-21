@@ -6,8 +6,11 @@ header
     margin-top: 40px;
     margin-bottom: 60px;
     padding: 0px 160px 0px 160px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center; 
 }
 
@@ -19,8 +22,11 @@ header .logo
 .headerButtonsContainer
 {
     height: inherit;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -ms-flex-align: center;
     align-items: center;
     width: 42%;
 }

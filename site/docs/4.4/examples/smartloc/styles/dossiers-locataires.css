@@ -1,6 +1,8 @@
 .mainContainer
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
@@ -11,8 +13,11 @@
     width: 75%;
     font-size: 18px;
     margin-bottom: 45px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -24,8 +29,11 @@
 .topNav div
 {
     opacity: 0.2;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -101,7 +109,9 @@ form
 aside 
 {
     width: 30%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -109,7 +119,6 @@ aside h3, aside h4
 {
     margin-bottom: 16px;
 }
-
 
 aside p
 {

@@ -2,7 +2,9 @@
 
 .booleanRadioButtonsConatiner
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
@@ -83,23 +85,28 @@
 
 .bottomFormButtons
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .bottomFormButtons span
 {
     font-weight: bold;
+    -ms-flex-item-align: center;
     align-self: center;
 }
 
 .bottomFormButtons button
 {
-    margin-right : 16px;
+    margin-left : 16px;
 }
 
 .bottomFormButtons.withoutStepBack
 {
+    
+    -ms-flex-pack: end;
     
     justify-content: flex-end;
 }
@@ -116,8 +123,11 @@
 
 .veryLargeButton
 {
+    min-width: 312px;
     padding-left: 24px;
     padding-right: 24px;
+    height: 56px;
+    font-weight: bold;
 }
 
 /* Boutons d'upload custom */

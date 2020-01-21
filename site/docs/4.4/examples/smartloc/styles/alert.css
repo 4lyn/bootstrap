@@ -1,16 +1,17 @@
 .alert
 {
     padding: 32px;
-    background-color: #EBB9B9;
     color: black !important;
 }
 
 .alertInfo
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 24px;
 }
 
 .alertInfo span

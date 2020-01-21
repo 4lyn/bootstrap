@@ -1,78 +1,20 @@
-*
+@import "../styles/smartloc.css";
+
+.formSection h3
 {
-    font-family: Roobert;
+    margin-bottom: 8px;
 }
 
-/* HEADER */
-
-.button
+.formSection button
 {
-    cursor: pointer;
-    text-decoration: none !important;
-    z-index: 10;
+    margin-top: 8px;
 }
 
-header .button
+.nextStepsSection h3
 {
-    border: 1px solid black;
+    margin-bottom: 0px;
 }
-
-.top-icon
+.nextStepsSection p
 {
-    width: 8%;
-}
-
-.top-nav div
-{
-    opacity: 0.2;
-}
-
-.nav-active
-{
-    opacity: 1 !important;
-}
-
-/* RENTING FILE SECTION */
-
-.chose-file span:first-child
-{
-    border-bottom: solid 2px black;
-}
-
-/* INPUT DE TEXTE */
-form input, select
-{
-    height: 48px !important;
-    border: 1.5px solid #D3D3D3 !important;
-}
-
-.illustrated-input
-{
-    height: 48px;
-}
-
-.illustrated-input svg
-{
-    font-weight: bold;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 16px;
-}
-
-.form-button-stroke
-{
-    border: 1px solid black;
-}
-
-/* ASIDE */
-
-aside div>p:first-child
-{
-    font-size: 18px;
-}
-
-aside div>p:last-child
-{
-    font-size: 14px;
+    margin-top: 8px;
 }
