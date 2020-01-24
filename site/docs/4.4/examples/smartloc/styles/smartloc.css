@@ -1,5 +1,4 @@
 @import "./header.css";
-@import "./alert.css";
 @import "./inputs.css";
 @import "./modals.css";
 @import "./dossiers-locataires.css";
@@ -10,7 +9,6 @@
 {
     font-family: 'Archivo', sans-serif;
 }
-
 
 h1, h2, h3, h4, h5, h6
 {

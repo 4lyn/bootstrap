@@ -4,16 +4,34 @@
 
 .alert {
   position: relative;
+  color: black !important;
   padding: $alert-padding-y $alert-padding-x;
   margin-bottom: $alert-margin-bottom;
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
+
+  &>p{
+    &:first-of-type{
+      margin-top: 24px;
+    }
+    &:last-of-type{
+      margin-bottom: 0px;
+    }
+  }
 }
 
 // Headings for larger alerts
 .alert-heading {
   // Specified to prevent conflicts of changing $headings-color
   color: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  span{
+    margin-left: 16px;
+    font-weight: bold;
+  }
 }
 
 // Provide class for links that match alerts

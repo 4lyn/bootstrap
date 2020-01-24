@@ -5261,14 +5261,34 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
+  color: black !important;
+  padding: 2rem 2rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
 
+.alert > p:first-of-type {
+  margin-top: 24px;
+}
+
+.alert > p:last-of-type {
+  margin-bottom: 24px;
+}
+
 .alert-heading {
   color: inherit;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.alert-heading span {
+  margin-left: 16px;
+  font-weight: bold;
 }
 
 .alert-link {
@@ -5276,14 +5296,14 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-dismissible {
-  padding-right: 4rem;
+  padding-right: 5.5rem;
 }
 
 .alert-dismissible .close {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.75rem 1.25rem;
+  padding: 2rem 2rem;
   color: inherit;
 }
 
