@@ -5945,7 +5945,7 @@ a.close.disabled {
 
 .modal-dialog {
   position: relative;
-  width: auto;
+  max-width: 736px;
   margin: 0.5rem;
   pointer-events: none;
 }
@@ -6035,9 +6035,15 @@ a.close.disabled {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+}
+
+.modal-content .close {
+  z-index: 2000;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .modal-backdrop {
@@ -6085,7 +6091,7 @@ a.close.disabled {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 2.25rem 2.5rem;
 }
 
 .modal-footer {
@@ -6097,7 +6103,7 @@ a.close.disabled {
   align-items: center;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 0.75rem;
+  padding: 2.25rem 2.5rem-0.25rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
@@ -6117,7 +6123,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 800px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
