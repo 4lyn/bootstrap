@@ -44,10 +44,6 @@
 .form-control
 {
     width: 50% !important;
-    height: 48px !important;
-    display: block !important;
-    padding-left: 16px !important;
-    border: 1.5px solid #D3D3D3 !important;
 }
 
 .illustratedInput
@@ -105,9 +101,7 @@
 
 .bottomFormButtons.withoutStepBack
 {
-    
     -ms-flex-pack: end;
-    
     justify-content: flex-end;
 }
 
