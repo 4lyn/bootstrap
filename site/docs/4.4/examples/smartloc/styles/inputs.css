@@ -15,7 +15,7 @@
 
 .booleanRadioButtonsConatiner label:first-child
 {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .booleanRadioButtonsConatiner label input[type="radio"]{
@@ -29,10 +29,10 @@
 }
 
 .booleanRadioButtonsConatiner label input + div{
-    width: 64px;
-    height: 40px;
+    width: 4rem;
+    height: 2.5rem;
     text-align: center;
-    line-height: 40px;
+    line-height: 2.5rem;
     border: 1px solid black;
     background-color: #fff;
     border-radius: 52px;
@@ -50,7 +50,7 @@
 {
     position: relative;
     width: 50%;
-    height: 48px;
+    height: 3rem;
     display: block;
 }
 
@@ -64,15 +64,15 @@
 {
     position: absolute;
     font-weight: bold;
-    line-height: 48px;
-    height: 48px;
-    right: 16px;
+    line-height: 3rem;
+    height: 3rem;
+    right: 1rem;
 }
 
 .addLocataire
 {
     display: inline-block;
-    margin-top: 32px;
+    margin-top: 2rem;
     color: black;
     font-weight: bold;
 }
@@ -96,32 +96,13 @@
 
 .bottomFormButtons button
 {
-    margin-left : 16px;
+    margin-left : 1rem;
 }
 
 .bottomFormButtons.withoutStepBack
 {
     -ms-flex-pack: end;
     justify-content: flex-end;
-}
-
-/* Boutons natifs bootstrap modifiés*/
-
-
-.largeButton
-{
-    min-width: 200px;
-    height: 56px;
-    font-weight: bold;
-}
-
-.veryLargeButton
-{
-    min-width: 312px;
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 56px;
-    font-weight: bold;
 }
 
 /* Boutons d'upload custom */
@@ -131,8 +112,8 @@
 }
 
 .customFileUploadContainer .customFileUpload {
-    height: 48px;
-    padding: 0px 35px 0px 35px;
+    height: 3rem;
+    padding: 0px 2.25rem 0px 2.25rem;
     line-height: 44px;
     display: inline-block;
     border: 1.5px solid #D3D3D3;

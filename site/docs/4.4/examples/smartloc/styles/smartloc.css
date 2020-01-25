@@ -17,32 +17,32 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 
 h2
 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 h3
 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 h4
 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 
 h5
 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 body
@@ -51,6 +51,6 @@ body
 }
 
 main{
-    padding: 0px 160px 150px 160px;
+    padding: 0px 10rem 10rem 10rem;
     width: 100%;
 }

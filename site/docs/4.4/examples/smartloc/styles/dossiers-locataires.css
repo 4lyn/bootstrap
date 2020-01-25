@@ -11,8 +11,8 @@
 .topNav
 {
     width: 75%;
-    font-size: 18px;
-    margin-bottom: 45px;
+    font-size: 1.125rem;
+    margin-bottom: 2.75rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -23,7 +23,7 @@
 
 .topNav img
 {
-    width: 24px;
+    width: 1.5rem;
 }
 
 .topNav div
@@ -45,25 +45,25 @@
 .topNav span
 {
     font-weight: bold;
-    margin-left: 8px;
+    margin-left: .5rem;
 }
 
 /* HAUT DU DOCUMENT permanant */
 
 .titreDossierLocataire
 {
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem;
 }
 
 .choseFile
 {
-    margin-bottom: 52px;
+    margin-bottom: 3.25rem;
 }
 
 .choseFile span
 {
     padding-bottom: 20px;
-    margin-right: 24px;
+    margin-right: 1.5rem;
 }
 
 .choseFile span:first-child
@@ -76,27 +76,27 @@
 form
 {
     width: 70%;
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 
 .formSection
 {
-    padding: 30px 40px 35px 40px;
-    margin-bottom: 32px;
+    padding: 2rem 2.5rem 2.125rem 2.5rem;
+    margin-bottom: 2rem;
     background-color: white;
     border-radius: 4px;
 }
 
 .form-group span
 {
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     display: inline-block;
 }
 
 .formSection h3
 {
-    margin-top: 30px;
-    margin-bottom: 24px;
+    margin-top: 1.875rem;
+    margin-bottom: 2rem;
 }
 
 .formSection h3:first-of-type
@@ -117,11 +117,11 @@ aside
 
 aside h3, aside h4
 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 aside p
 {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: .875rem;
+    line-height: 2rem;
 }

@@ -7,7 +7,7 @@
 .btn {
   display: inline-block;
   font-family: $btn-font-family;
-  font-weight: $btn-font-weight;
+  font-weight: bold;
   color: $body-color;
   text-align: center;
   white-space: $btn-white-space;
@@ -17,6 +17,7 @@
   background-color: transparent;
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  min-width: 12.5rem;
   @include transition($btn-transition);
 
   @include hover() {
@@ -108,10 +109,14 @@ fieldset:disabled a.btn {
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  min-width: 19.5rem;
+  font-weight: bold;
 }
 
 .btn-sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  font-weight: normal;
+  min-width: unset;
 }
 
 

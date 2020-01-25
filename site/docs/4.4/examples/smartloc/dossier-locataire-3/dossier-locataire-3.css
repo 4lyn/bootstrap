@@ -5,14 +5,14 @@
 .checkBoxesContainer
 {
     background-color: #F4F4F4;
-    padding: 24px;
-    margin: 32px 0px 32px 0px;
+    padding: 1.5rem;
+    margin: 2rem 0px 2rem 0px;
     border-radius: 4px;
 }
 
 .checkBoxesContainer div
 {
-    margin-top: 8px
+    margin-top: .5rem;
 }
 
 /* ZONE UPLOAD */
@@ -20,7 +20,7 @@
 .zoneUploads
 {
     border: 1px dashed rgba(128, 128, 128, 0.44);
-    padding: 24px;
+    padding: 2rem;
     border-radius: 4px;
 }
 

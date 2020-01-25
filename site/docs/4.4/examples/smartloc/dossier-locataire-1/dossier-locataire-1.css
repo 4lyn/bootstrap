@@ -17,19 +17,19 @@
 
 h2
 {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .frameLeftPart
 {
     position: relative;
-    padding: 39px 0 60px 40px;
+    padding: 2.5rem 0 3.75rem 2.5rem;
     max-width: 41%;
 }
 
 .frameRightPart
 {
-    padding: 55px 56px 60px 56px;
+    padding: 3.5rem 3.5rem 3.75rem 3.5rem;
 }
 
 .mathieuContainer
@@ -38,12 +38,12 @@ h2
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .mathieuDescription
 {
-    margin-left: 12px;
+    margin-left: .75rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -53,8 +53,8 @@ h2
 
 .listContainer p
 {
-    line-height: 24px;
-    margin-bottom: 6px;
+    line-height: 1.5rem;
+    margin-bottom: .375rem;
 }
 
 .shapes
