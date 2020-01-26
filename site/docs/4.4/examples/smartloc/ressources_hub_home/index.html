@@ -6,247 +6,244 @@ extra_css: "ressources_hub_home.css"
 
 <!-- HEADER -->
 
-<header class="w-100 bg-tertiary">
-    <div class="container position-relative pt-4 pb-5 h-100">
-        <nav class="site-header py-3 row flex-nowrap justify-content-between align-items-center">
-            <img src="../../../assets/img/smartloc/logos/logo.png" class="logo col-sm-2 col-5">
-            <div class="col-lg-8 col-8 row flex-nowrap justify-content-between px-5">
-                <a href="" class="text-dark d-none d-sm-block">Gestion locative</a>
-                <a href="" class="text-dark d-none d-sm-block">Bail</a>
-                <a href="" class="text-dark d-none d-sm-block">Assurance</a>
-                <a href="" class="text-dark d-none d-sm-block">Ressources</a>
-                <a href="" class="text-dark d-none d-sm-block">Tarifs</a>
-                <a href="" class="text-dark font-weight-bold">Mon compte</a>
-                <a href="" class="text-dark font-weight-bold">Contact</a>
-            </div>
-        </nav>
-    
-        <h1 class="py-5 my-4 row col-lg-5 font-weight-bold">Bienvenue sur notre hub de ressources.</h1>
-        <div class="searchbar w-100 position-absolute">
-            <div class="position-relative d-flex align-items-center">
-                <input class="form-control py-4" type="text" name="Recherche" placeholder="Recherche">
-                <a href="#" class="search_icon position-absolute"><img src="../../../assets/img/smartloc/icons/search.png" class="w-50"></a>
-            </div>
+<header>
+    <nav>
+        <img src="../../../assets/img/smartloc/logos/logo.png" class="logo">
+        <div class="headerLinksContainer">
+            <a href="">Gestion locative</a>
+            <a href="">Bail</a>
+            <a href="">Assurance</a>
+            <a href="">Ressources</a>
+            <a href="">Tarifs</a>
+            <a href="" class="font-weight-bold">Mon compte</a>
+            <a href="" class="font-weight-bold">Contact</a>
         </div>
+    </nav>
 
-        <img src="../../../assets/img/smartloc/illustrations/shapes.png" class="shapes position-absolute">
+    <h1>Bienvenue sur notre hub de ressources.</h1>
+    <div class="searchBar">
+        <form class="form-inline">
+            <input class="form-control" type="search" placeholder="Recherche" aria-label="Recherche">
+            <button class="searchIcon">
+            </button>
+        </form>
     </div>
+
+    <img src="../../../assets/img/smartloc/illustrations/shapes.png" class="shapes">
 </header>
 
 <!-- MAIN -->
 
-<main class="py-4 bg-light">
-    <div class="container">
-        <!-- CATEGORIES -->
-        <section class="categories pt-4 mt-5">
-            <h2 class="font-weight-bold">Catégories</h2>
-            <div class="row pt-3 mt-4">
-                <div class="col-sm-3">
-                    <div class="bg-white rounded">
-                        <div class="card-top py-3 px-3 w-100 h-40">
-                            <img class="py-3 w-50" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
-                            <h5>Assurance</h5>
-                        </div>
-                        <div class="py-3 px-3 w-100 d-flex flex-column">
-                            <a class="text-dark mb-2" href="">Critères</a>
-                            <a class="text-dark mb-2" href="">Souscription</a>
-                            <a class="text-dark mb-2" href="">En cas d'impayés</a>
-                            <a class="text-dark mb-2" href="">Garanties et tarifs</a>
-                            <a class="text-primary" href="">Voir tout</a>
-                        </div>
-                    </div>
+<main>
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Catégories</h2>
+        <div class="cardsContainer">
+            <div class="card">
+                <div class="card-header">
+                    <img src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                    <h3 class="card-title">Assurance</h3>
                 </div>
-                <div class="col-sm-3">
-                    <div class="bg-white rounded">
-                        <div class="card-top py-3 px-3 w-100 h-40">
-                            <img class="py-3 w-50" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
-                            <h5>Bail</h5>
-                        </div>
-                        <div class="py-3 px-3 w-100 d-flex flex-column">
-                            <a class="text-dark mb-2" href="">Types de contrats</a>
-                            <a class="text-dark mb-2" href="">Définitions du logement</a>
-                            <a class="text-dark mb-2" href="">Définitions du bail</a>
-                            <a class="text-dark mb-2" href="">Clauses</a>
-                            <a class="text-primary" href="">Voir tout</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="bg-white rounded">
-                        <div class="card-top py-3 px-3 w-100 h-40">
-                            <img class="py-3 w-50" src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
-                            <h5>Gestion</h5>
-                        </div>
-                        <div class="py-3 px-3 w-100 d-flex flex-column">
-                            <a class="text-dark mb-2" href="">Réparations</a>
-                            <a class="text-dark mb-2" href="">Échéances importantes</a>
-                            <a class="text-dark mb-2" href="">Juridique</a>
-                            <a class="text-dark mb-2" href="">Autres</a>
-                            <a class="text-primary" href="">Voir tout</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="bg-white rounded">
-                        <div class="card-top py-3 px-3 w-100 h-40">
-                            <img class="py-3 w-50" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
-                            <h5>Inv. locatif</h5>
-                        </div>
-                        <div class="py-3 px-3 w-100 d-flex flex-column">
-                            <a class="text-dark mb-2" href="">Fiscalité</a>
-                            <a class="text-dark mb-2" href="">Zone</a>
-                            <a class="text-dark mb-2" href="">Optimisation des charges</a>
-                            <a class="text-dark mb-2" href="">Dispositifs</a>
-                            <a class="text-primary" href="">Voir tout</a>
-                        </div>
-                    </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="">Critères</a></li>
+                        <li class="list-group-item"><a href="">Souscription</a></li>
+                        <li class="list-group-item"><a href="">En cas d'impayés</a></li>
+                        <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
+                        <li class="list-group-item"><a href="">Voir tout</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+            <div class="card">
+                <div class="card-header">
+                    <img src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                    <h3 class="card-title">Assurance</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="">Critères</a></li>
+                        <li class="list-group-item"><a href="">Souscription</a></li>
+                        <li class="list-group-item"><a href="">En cas d'impayés</a></li>
+                        <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
+                        <li class="list-group-item"><a href="">Voir tout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
+                    <h3 class="card-title">Assurance</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="">Critères</a></li>
+                        <li class="list-group-item"><a href="">Souscription</a></li>
+                        <li class="list-group-item"><a href="">En cas d'impayés</a></li>
+                        <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
+                        <li class="list-group-item"><a href="">Voir tout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
+                    <h3 class="card-title">Assurance</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="">Critères</a></li>
+                        <li class="list-group-item"><a href="">Souscription</a></li>
+                        <li class="list-group-item"><a href="">En cas d'impayés</a></li>
+                        <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
+                        <li class="list-group-item"><a href="">Voir tout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ARTICLES -->
-        <section class="articles pt-5 mt-5">
-            <h2 class="font-weight-bold">Derniers articles</h2>
-            <div class="row pt-3 mt-4">
-                <div class="col-sm-4">
-                    <div class="pl-4 pr-4 p-2 bg-white rounded">
-                        <div class="py-3 d-flex justify-content-between align-items-center">
-                            <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                            <span>Novembre 2019</span>
-                        </div>
-                        <div class="pb-2">
-                            <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
-                        </div>
+    <!-- ARTICLES -->
+    <section class="articles pt-5 mt-5">
+        <h2 class="font-weight-bold">Derniers articles</h2>
+        <div class="row pt-3 mt-4">
+            <div class="col-sm-4">
+                <div class="pl-4 pr-4 p-2 bg-white rounded">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
+                        <span>Novembre 2019</span>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="pl-4 pr-4 p-2 bg-white rounded">
-                        <div class="py-3 d-flex justify-content-between align-items-center">
-                            <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                            <span>Novembre 2019</span>
-                        </div>
-                        <div class="pb-2">
-                            <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="pl-4 pr-4 p-2 bg-white rounded">
-                        <div class="py-3 d-flex justify-content-between align-items-center">
-                            <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                            <span>Novembre 2019</span>
-                        </div>
-                        <div class="pb-2">
-                            <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4 col-sm-4">
-                    <div class="pl-4 pr-4 p-2 bg-white rounded">
-                        <div class="py-3 d-flex justify-content-between align-items-center">
-                            <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                            <span>Novembre 2019</span>
-                        </div>
-                        <div class="pb-2">
-                            <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4 col-sm-4">
-                    <div class="pl-4 pr-4 p-2 bg-white rounded">
-                        <div class="py-3 d-flex justify-content-between align-items-center">
-                            <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                            <span>Novembre 2019</span>
-                        </div>
-                        <div class="pb-2">
-                            <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4 col-sm-4">
-                    <div class="pl-4 pr-4 p-2 bg-white rounded">
-                        <div class="py-3 d-flex justify-content-between align-items-center">
-                            <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
-                            <span>Novembre 2019</span>
-                        </div>
-                        <div class="pb-2">
-                            <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
-                        </div>
+                    <div class="pb-2">
+                        <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
                     </div>
                 </div>
             </div>
-        </section>   
-            
-        <!-- DOCUMENTS -->
-        <section class="documents pt-5 mt-5">
-            <p class="d-flex justify-content-center h2 font-weight-bold"> Les fiches et documents clés</p>
-            <div class="document-choice my-5 w-75 mx-auto d-flex flex-row justify-content-between align-items-center">
-                <p class="doc-nav-item py-2 px-4 d-flex justify-content-center col-4 h-100 mb-0">Bail</p>
-                <p class="doc-nav-item py-2 px-4 d-flex justify-content-center col-4 h-100 mb-0">Assurance</p>
-                <p class="doc-nav-item py-2 px-4 d-flex justify-content-center col-4 h-100 mb-0">Gestion locative</p>
+            <div class="col-sm-4">
+                <div class="pl-4 pr-4 p-2 bg-white rounded">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
+                        <span>Novembre 2019</span>
+                    </div>
+                    <div class="pb-2">
+                        <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+                    </div>
+                </div>
             </div>
+            <div class="col-sm-4">
+                <div class="pl-4 pr-4 p-2 bg-white rounded">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
+                        <span>Novembre 2019</span>
+                    </div>
+                    <div class="pb-2">
+                        <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 col-sm-4">
+                <div class="pl-4 pr-4 p-2 bg-white rounded">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
+                        <span>Novembre 2019</span>
+                    </div>
+                    <div class="pb-2">
+                        <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 col-sm-4">
+                <div class="pl-4 pr-4 p-2 bg-white rounded">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
+                        <span>Novembre 2019</span>
+                    </div>
+                    <div class="pb-2">
+                        <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 col-sm-4">
+                <div class="pl-4 pr-4 p-2 bg-white rounded">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <img src="../../../assets/img/smartloc/photos/Image.png" alt="">
+                        <span>Novembre 2019</span>
+                    </div>
+                    <div class="pb-2">
+                        <p class="text-capitalize pr-2 h4 font-weight-bold">Lorem ipsum dolor sit amet, consectetur ...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+        
+    <!-- DOCUMENTS -->
+    <section class="documents pt-5 mt-5">
+        <p class="d-flex justify-content-center h2 font-weight-bold"> Les fiches et documents clés</p>
+        <div class="document-choice my-5 w-75 mx-auto d-flex flex-row justify-content-between align-items-center">
+            <p class="doc-nav-item py-2 px-4 d-flex justify-content-center col-4 h-100 mb-0">Bail</p>
+            <p class="doc-nav-item py-2 px-4 d-flex justify-content-center col-4 h-100 mb-0">Assurance</p>
+            <p class="doc-nav-item py-2 px-4 d-flex justify-content-center col-4 h-100 mb-0">Gestion locative</p>
+        </div>
 
-            <div class="row mb-5">
-                <div class="col-sm-6 mt-3">
-                    <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
-                        <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
-                        <span class="font-weight-bold">Titre du document</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-3">
-                    <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
-                        <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
-                        <span class="font-weight-bold">Titre du document</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-3">
-                    <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
-                        <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
-                        <span class="font-weight-bold">Titre du document</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-3">
-                    <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
-                        <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
-                        <span class="font-weight-bold">Titre du document</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-3">
-                    <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
-                        <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
-                        <span class="font-weight-bold">Titre du document</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-3">
-                    <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
-                        <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
-                        <span class="font-weight-bold">Titre du document</span>
-                    </div>
+        <div class="row mb-5">
+            <div class="col-sm-6 mt-3">
+                <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
+                    <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
+                    <span class="font-weight-bold">Titre du document</span>
                 </div>
             </div>
-            <a href="" class="text-primary d-flex justify-content-center">Voir plus de fiches / documents clés</a>
-        </section>
+            <div class="col-sm-6 mt-3">
+                <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
+                    <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
+                    <span class="font-weight-bold">Titre du document</span>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-3">
+                <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
+                    <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
+                    <span class="font-weight-bold">Titre du document</span>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-3">
+                <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
+                    <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
+                    <span class="font-weight-bold">Titre du document</span>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-3">
+                <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
+                    <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
+                    <span class="font-weight-bold">Titre du document</span>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-3">
+                <div class="d-flex justify-content-start bg-white rounded align-items-center border py-2">
+                    <div class="col-sm-1 d-flex justify-content-center align-items-center px-0 ml-2"><img class="file-icon w-50" src="../../../assets/img/smartloc/icons/file.png" alt=""></div>
+                    <span class="font-weight-bold">Titre du document</span>
+                </div>
+            </div>
+        </div>
+        <a href="" class="text-primary d-flex justify-content-center">Voir plus de fiches / documents clés</a>
+    </section>
 
-        <!-- CONTACT -->
-        <section class="contact-section py-5 my-4">
-            <div class="bg-quarantary w-100 position-relative py-5">
-                <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/rond-violet.png" alt="">
-                <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/carre-jaune.png" alt="">
-                <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/couronne-vert.png" alt="">
-                <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/carre-noir.png" alt="">
-                <div class="d-flex flex-column align-items-center my-3 py-5">
-                    <p class="h2 py-3 col-sm-6 mb-3 text-center font-weight-bold">Vous ne trouvez pas ce qu'il vous faut ? Contactez nous !</p>
-                    <a href="" class="py-3 px-5 text-white bg-dark rounded">Contactez un conseiller</a>
-                </div>
+    <!-- CONTACT -->
+    <section class="contact-section py-5 my-4">
+        <div class="bg-quarantary w-100 position-relative py-5">
+            <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/rond-violet.png" alt="">
+            <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/carre-jaune.png" alt="">
+            <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/couronne-vert.png" alt="">
+            <img class="position-absolute" src="../../../assets/img/smartloc/illustrations/carre-noir.png" alt="">
+            <div class="d-flex flex-column align-items-center my-3 py-5">
+                <p class="h2 py-3 col-sm-6 mb-3 text-center font-weight-bold">Vous ne trouvez pas ce qu'il vous faut ? Contactez nous !</p>
+                <a href="" class="py-3 px-5 text-white bg-dark rounded">Contactez un conseiller</a>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </main>
 
 <!-- FOOTER -->
