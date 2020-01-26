@@ -1,3 +1,47 @@
+/* HEADER */
+
+header
+{
+    height : 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3.75rem;
+    padding: 0px 10rem 0px 10rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+
+header .logo
+{
+    max-width: 13%;
+}
+
+.headerButtonsContainer
+{
+    height: inherit;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 42%;
+}
+
+.headerButtonsContainer a 
+{
+    margin-left: 1rem;
+    text-decoration: none !important;
+}
+
+.headerButtonsContainer a:first-child
+{
+    color: black !important;
+}
+
 .mainContainer
 {
     display: -ms-flexbox;
