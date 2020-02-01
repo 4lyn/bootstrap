@@ -46,6 +46,10 @@
     width: 50% !important;
 }
 
+textarea{
+    resize: none;
+}
+
 .illustratedInput
 {
     position: relative;
