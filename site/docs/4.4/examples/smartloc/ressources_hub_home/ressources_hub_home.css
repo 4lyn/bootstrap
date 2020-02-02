@@ -1,4 +1,5 @@
 @import "../styles/smartloc.css";
+@import "../styles/footer.css";
 
 /* HEADER */
 
@@ -274,14 +275,3 @@ section h2{
     right: 0;
     width:30%;
 }
-
-/* FOOTER */
-
-.line
-{
-    width: 100%;
-    height: 1px;
-    margin: 3rem 0 3rem 0;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
