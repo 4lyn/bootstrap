@@ -11,7 +11,7 @@
 
   @include hover() {
     color: color-yiq($hover-background);
-    @include gradient-bg($hover-background);
+    background-color: rgba($background, .8);
     border-color: $hover-border;
   }
 

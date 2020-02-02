@@ -116,8 +116,11 @@ section h2{
 .articles .cardTop{
     padding-top: .5rem;
     padding-bottom: 1rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -134,9 +137,13 @@ section h2{
     height: 3rem;
     margin: auto;
     margin-bottom: 6rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border: 2px solid black;
     border-radius: 25px;
@@ -148,6 +155,9 @@ section h2{
     line-height: 3rem;
     margin-bottom: 0;
     text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -193,8 +203,11 @@ section h2{
     margin-top: 4.5rem;
     padding: 30% auto;
     position: relative;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #EBB9C2;
 }
@@ -202,9 +215,14 @@ section h2{
 .contact div
 {
     width: 45%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: center;
     align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     z-index: 10;
 }
@@ -264,7 +282,9 @@ section h2{
 
     .cardsContainer
     {
+        -ms-flex-line-pack: center;
         align-content: center;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }

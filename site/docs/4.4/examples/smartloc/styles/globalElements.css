@@ -21,6 +21,7 @@ nav .logo
     height: inherit;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
@@ -40,8 +41,11 @@ footer{
     width: 100%;
     height: 32rem;
     padding: 3.75rem 10rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: white;
     background-color: black;
@@ -53,7 +57,9 @@ footer a{
 
 .footerLeft{
     width: 12.5%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -72,15 +78,20 @@ footer a{
 
 .footerRight{
     width: 75%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .footerRight .topPart{
     width: 55%;
     max-height: 6rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
 }
 .footerRight .topPart a{
@@ -91,7 +102,9 @@ footer a{
 
 .footerRight .bottomPart{
     max-height: 12rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
 }
 
@@ -118,6 +131,7 @@ footer .line.first{
     footer{
         height: auto;
         padding: 3.75rem 5rem;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
