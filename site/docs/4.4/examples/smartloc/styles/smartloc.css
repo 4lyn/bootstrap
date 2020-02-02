@@ -47,7 +47,16 @@ body
     background-color: #F4F4F4;
 }
 
-main{
+main, header, footer
+{
     padding: 0px 10rem 10rem 10rem;
     width: 100%;
+}
+
+@media (max-width: 1000px)
+{
+    main, header, footer
+    {
+        padding: 0px 5rem 5rem 5rem;
+    }
 }
