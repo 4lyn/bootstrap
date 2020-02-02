@@ -34,14 +34,14 @@
     @include box-shadow($custom-control-indicator-checked-box-shadow);
   }
 
-  &:focus ~ .custom-control-label::before {
-    // the mixin is not used here to make sure there is feedback
-    @if $enable-shadows {
-      box-shadow: $input-box-shadow, $input-focus-box-shadow;
-    } @else {
-      box-shadow: $custom-control-indicator-focus-box-shadow;
-    }
-  }
+  // &:focus ~ .custom-control-label::before {
+  //   // the mixin is not used here to make sure there is feedback
+  //   @if $enable-shadows {
+  //     box-shadow: $input-box-shadow, $input-focus-box-shadow;
+  //   } @else {
+  //     box-shadow: $custom-control-indicator-focus-box-shadow;
+  //   }
+  // }
 
   &:focus:not(:checked) ~ .custom-control-label::before {
     border-color: $custom-control-indicator-focus-border-color;
@@ -235,11 +235,11 @@
   &:focus {
     border-color: $custom-select-focus-border-color;
     outline: 0;
-    @if $enable-shadows {
-      box-shadow: $custom-select-box-shadow, $custom-select-focus-box-shadow;
-    } @else {
-      box-shadow: $custom-select-focus-box-shadow;
-    }
+    // @if $enable-shadows {
+    //   box-shadow: $custom-select-box-shadow, $custom-select-focus-box-shadow;
+    // } @else {
+    //   box-shadow: $custom-select-focus-box-shadow;
+    // }
 
     &::-ms-value {
       // For visual consistency with other platforms/browsers,
@@ -315,7 +315,7 @@
 
   &:focus ~ .custom-file-label {
     border-color: $custom-file-focus-border-color;
-    box-shadow: $custom-file-focus-box-shadow;
+    // box-shadow: $custom-file-focus-box-shadow;
   }
 
   // Use [disabled] and :disabled to work around https://github.com/twbs/bootstrap/issues/28247
@@ -388,9 +388,9 @@
 
     // Pseudo-elements must be split across multiple rulesets to have an effect.
     // No box-shadow() mixin for focus accessibility.
-    &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
-    &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
-    &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }
+    // &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
+    // &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
+    // &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }
   }
 
   &::-moz-focus-outer {
