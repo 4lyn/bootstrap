@@ -8,8 +8,8 @@ extra_css: "ressources-hub-categories.css"
 
 <header>
     <nav>
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logo">
-        <div class="headerLinksContainer">
+        <img src="../../../assets/img/smartloc/logos/logo.png" class="header__logo">
+        <div class="header__linksContainer">
             <a href="">Gestion locative</a>
             <a href="">Bail</a>
             <a href="">Assurance</a>
@@ -19,28 +19,33 @@ extra_css: "ressources-hub-categories.css"
             <a href="" class="font-weight-bold">Contact</a>
         </div>
     </nav>
-    <a href="">Ressources</a>><a href="">Catégories</a>
-    <h1>Gestion</h1>
-    <div class="searchBar">
+    <div class="header__titling">
+        <a href="">Ressources </a> > <a href=""> Catégories</a>
+        <h1>Gestion</h1>
+    </div>
+    <div class="header__searchBar">
         <form class="form-inline">
             <input class="form-control" type="search" placeholder="Recherche" aria-label="Recherche">
-            <button class="searchIcon">
+            <button class="header__searchBar__icon">
             </button>
         </form>
     </div>
 
-    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="shapes">
+    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="header__illustration">
 </header>
 
 <!-- MAIN -->
 
 <main>
     <!-- SOUS CATEGORIES -->
-    <section>
+    <section class="sectionSubCategories">
         <h2>Sous-catégories</h2>
+        <div>
+
+        </div>
     </section>
     <!-- CATEGORIES -->
-    <section class="categories">
+    <section class="sectionCategories">
         <h2>Autre catégories</h2>
         <div class="cardsContainer">
             <div class="card">
@@ -92,7 +97,7 @@ extra_css: "ressources-hub-categories.css"
     </section>
 
     <!-- CONTACT -->
-    <div class="contact">
+    <div class="sectionContact">
         <img src="../../../assets/img/smartloc/illustrations/rond-violet.png" alt="">
         <img src="../../../assets/img/smartloc/illustrations/carre-jaune.png" alt="">
         <img src="../../../assets/img/smartloc/illustrations/couronne-vert.png" alt="">
@@ -106,7 +111,7 @@ extra_css: "ressources-hub-categories.css"
 
 <!-- FOOTER -->
 <footer>
-    <div class="footerLeft">
+    <div class="footer__containerLeft">
         <img class="whiteLogo" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
         <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
         <div>
@@ -114,8 +119,8 @@ extra_css: "ressources-hub-categories.css"
             <img src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
         </div>
     </div>
-    <div class="line first"></div>
-    <div class="footerRight">
+    <div class="footer__line--responsive"></div>
+    <div class="footer__containerRight">
         <div class="topPart">
                 <a href="">Gestion locative</a>
                 <a href="">Bail</a>
@@ -126,7 +131,7 @@ extra_css: "ressources-hub-categories.css"
                 <a href="">A propos</a>
                 <a href="">Partenaires</a>
         </div>
-        <div class="line"></div>
+        <div class="footer__line"></div>
         <div class="bottomPart">
             <a href="">Modèle de bail numérique</a>
             <a href="">Signature électronique</a>

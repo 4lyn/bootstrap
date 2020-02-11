@@ -49,14 +49,22 @@ body
 
 main, header, footer
 {
-    padding: 0px 10rem 10rem 10rem;
+    padding: 0px 10rem;
     width: 100%;
+}
+
+main{
+    padding-bottom: 10rem;
 }
 
 @media (max-width: 1000px)
 {
     main, header, footer
     {
-        padding: 0px 5rem 5rem 5rem;
+        padding: 0px 5rem;
+    }
+
+    main{
+        padding-bottom: 5rem;
     }
 }

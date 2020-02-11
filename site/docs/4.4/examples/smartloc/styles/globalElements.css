@@ -11,12 +11,12 @@ header nav{
     align-items: center;
 }
 
-nav .logo
+.header__logo
 {
     width: 140px;
 }
 
-.headerLinksContainer
+.header__linksContainer
 {
     height: inherit;
     display: -ms-flexbox;
@@ -27,7 +27,7 @@ nav .logo
     align-items: center;
 }
 
-header nav a
+.header__linksContainer a
 {
     margin-left: 2rem;
     cursor: pointer;
@@ -40,7 +40,8 @@ header nav a
 footer{
     width: 100%;
     height: 32rem;
-    padding: 3.75rem 10rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -55,7 +56,7 @@ footer a{
     color: white !important;
 }
 
-.footerLeft{
+.footer__containerLeft{
     width: 12.5%;
     display: -ms-flexbox;
     display: flex;
@@ -63,20 +64,20 @@ footer a{
     flex-direction: column;
 }
 
-.footerLeft .whiteLogo{
+.footer__containerLeft .whiteLogo{
     width: 140px;
 }
 
-.footerLeft a{
+.footer__containerLeft a{
     margin: 1rem 0;
 }
 
-.footerLeft div img{
+.footer__containerLeft div img{
     width: 1rem;
     margin-right: 1rem;
 }
 
-.footerRight{
+.footer__containerRight{
     width: 75%;
     display: -ms-flexbox;
     display: flex;
@@ -86,7 +87,7 @@ footer a{
     justify-content: space-between;
 }
 
-.footerRight .topPart{
+.footer__containerRight .topPart{
     width: 55%;
     max-height: 6rem;
     display: -ms-flexbox;
@@ -94,13 +95,13 @@ footer a{
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
 }
-.footerRight .topPart a{
+.footer__containerRight .topPart a{
     margin-bottom: .5rem;
     margin-right: 5.75rem;
     font-weight: bold;
 }
 
-.footerRight .bottomPart{
+.footer__containerRight .bottomPart{
     max-height: 12rem;
     display: -ms-flexbox;
     display: flex;
@@ -108,13 +109,13 @@ footer a{
     flex-flow: column wrap;
 }
 
-.footerRight .bottomPart a{
+.footer__containerRight .bottomPart a{
     margin-bottom: .5rem;
     margin-right: 12.25rem;
     font-weight: bold;
 }
 
-footer .line
+.footer__line
 {
     width: 100%;
     min-width: 850px;
@@ -122,7 +123,7 @@ footer .line
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-footer .line.first{
+.footer__line--responsive{
     display: none;
 }
 
@@ -135,18 +136,18 @@ footer .line.first{
         flex-direction: column;
     }
 
-    footer>div:not(.footerRight), .footerRight>div:not(.bottomPart){
+    footer>div:not(.footer__containerRight), .footer__containerRight>div:not(.bottomPart){
         margin-bottom: 2.5rem;
     }
 
-    .footerRight{
+    .footer__containerRight{
         width: 100%;
     }
-    .footerLeft{
+    .footer__containerLeft{
         width: 20%;
     }
 
-    footer .line.first{
+    .footer__line--responsive{
         display: block;
     }
 }

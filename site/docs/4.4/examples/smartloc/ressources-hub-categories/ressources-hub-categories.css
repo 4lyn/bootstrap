@@ -6,17 +6,24 @@
 header{
     position: relative;
     width: 100%;
-    height: 25rem;
     padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
     background-color: #F9DCA5;
 }
 
-header h1{
-    width: 40%;
-    margin-top: 6rem;
+.header__titling{
+    margin: 3.875rem 0 0 0;
 }
 
-.searchBar
+.header__titling a{
+    color:black;
+}
+
+.header__titling h1{
+    margin: 1rem 0 0 0;
+}
+
+.header__searchBar
 {
     width: 100%;
     padding: 0 10rem;
@@ -30,16 +37,16 @@ header h1{
 
 /* ajouter a bootstrap */
 
-.searchBar>form{
+.header__searchBar>form{
     position: relative;
 }
 
-.searchBar input{
+.header__searchBar input{
     width: 100% !important;
     border-width: 1px;
 }
 
-.searchIcon
+.header__searchBar__icon
 {
     width: 1rem;
     height: 1rem;
@@ -56,12 +63,12 @@ header h1{
     background-size: cover; 
 }
 
-.shapes
+.header__illustration
 {
-    width: 50%; 
+    height: 50%; 
     position: absolute;
     bottom:0;
-    right: 10rem; 
+    right: 20%; 
 }
 
 /* MAIN */
@@ -80,7 +87,7 @@ section h2{
 }
 
 .cardsContainer{
-    width: 100%;
+    width: 75%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -91,20 +98,19 @@ section h2{
 
 /* Categories */
 
-.categories .card{
+.sectionCategories .card{
     width: 16rem;
     margin-top: 2rem;
     border: none;
 }
 
-.categories .card img{
+.sectionCategories .card img{
     width: 50%;
 }
 
-
 /* CONTACT */
 
-.contact
+.sectionContact
 {
     width: 100%;
     height: 28rem;
@@ -120,7 +126,7 @@ section h2{
     background-color: #EBB9C2;
 }
 
-.contact div
+.sectionContact div
 {
     width: 45%;
     display: -ms-flexbox;
@@ -135,33 +141,33 @@ section h2{
     z-index: 10;
 }
 
-.contact img{
+.sectionContact img{
     position: absolute;
 }
 
-.contact h2{
+.sectionContact h2{
     margin-bottom: 2.5rem;
 }
 
-.contact img:first-of-type
+.sectionContact img:first-of-type
 {
     top: 0;
     left: 0;
     width:20%;
 }
-.contact img:nth-of-type(2)
+.sectionContact img:nth-of-type(2)
 {
     top: 0;
     right: 2%;
     width:30%;
 }
-.contact img:nth-of-type(3)
+.contsectionContactact img:nth-of-type(3)
 {
     bottom: 0;
     left: 5%;
     width:25%;
 }
-.contact img:nth-of-type(4)
+.sectionContact img:nth-of-type(4)
 {
     bottom: 0;
     right: 0;
@@ -183,7 +189,7 @@ section h2{
         display: none;
     }
 
-    .searchBar
+    .header__searchBar
     {
         padding: 0 5rem;
     }

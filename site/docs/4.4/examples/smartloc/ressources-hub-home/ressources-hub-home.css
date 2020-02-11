@@ -6,8 +6,8 @@
 header{
     position: relative;
     width: 100%;
-    height: 25rem;
     padding-top: 2.5rem;
+    padding-bottom: 8rem;
     background-color: #F9DCA5;
 }
 
@@ -16,7 +16,7 @@ header h1{
     margin-top: 6rem;
 }
 
-.searchBar
+.header__searchBar
 {
     width: 100%;
     padding: 0 10rem;
@@ -30,16 +30,16 @@ header h1{
 
 /* ajouter a bootstrap */
 
-.searchBar>form{
+.header__searchBar>form{
     position: relative;
 }
 
-.searchBar input{
+.header__searchBar input{
     width: 100% !important;
     border-width: 1px;
 }
 
-.searchIcon
+.header__searchBar__icon
 {
     width: 1rem;
     height: 1rem;
@@ -91,29 +91,29 @@ section h2{
 
 /* Categories */
 
-.categories .card{
+.sectionCategories .card{
     width: 16rem;
     margin-top: 2rem;
     border: none;
 }
 
-.categories .card img{
+.sectionCategories .card img{
     width: 50%;
 }
 
 /* ARTICLES */
 
-.articles .card{
+.sectionArticles .card{
     max-width: 22rem;
     margin-top: 2rem;
     border: none;
 }
 
-.articles .card p{
+.sectionArticles .card p{
     margin-bottom: 0;
 }
 
-.articles .cardTop{
+.sectionArticles .cardTop{
     padding-top: .5rem;
     padding-bottom: 1rem;
     display: -ms-flexbox;
@@ -126,12 +126,12 @@ section h2{
 
 /* DOCUMENTS */
 
-.documents h2{
+.sectionDocuments h2{
     width: 100%;
     text-align: center;
 }
 
-.documentChoiceNav
+.documents__menu
 {
     width: 75%;
     height: 3rem;
@@ -149,7 +149,7 @@ section h2{
     border-radius: 25px;
 }
 
-.docNavItem{
+.documentsMenu__item{
     width: 33.3333%;
     height: inherit;
     line-height: 3rem;
@@ -161,16 +161,16 @@ section h2{
     user-select: none;
 }
 
-.docNavItem:first-of-type
+.documentsMenu__item:first-of-type
 {
     border-radius: 25px 0 0 25px;
 }
-.docNavItem:last-of-type
+.documentsMenu__item:last-of-type
 {
     border-radius: 0px 25px 25px 0;
 }
 
-.docNavItem:nth-child(2)
+.documentsMenu__item:nth-child(2)
 {
     border-left : 2px solid black;
     border-right : 2px solid black;
@@ -182,13 +182,13 @@ section h2{
     color: white;
 }
 
-.documents .card{
+.sectionDocuments .card{
     width: 48.5%;
     margin-top: 1rem;
     font-weight: bold;
 }
 
-.fileIcon{
+.card__fileIcon{
     width: 1.5rem;
     margin-right: .25rem;
 }
@@ -196,7 +196,7 @@ section h2{
 
 /* CONTACT */
 
-.contact
+.sectionContact
 {
     width: 100%;
     height: 28rem;
@@ -212,7 +212,7 @@ section h2{
     background-color: #EBB9C2;
 }
 
-.contact div
+.sectionContact div
 {
     width: 45%;
     display: -ms-flexbox;
@@ -227,33 +227,33 @@ section h2{
     z-index: 10;
 }
 
-.contact img{
+.sectionContact img{
     position: absolute;
 }
 
-.contact h2{
+.sectionContact h2{
     margin-bottom: 2.5rem;
 }
 
-.contact img:first-of-type
+.sectionContact img:first-of-type
 {
     top: 0;
     left: 0;
     width:20%;
 }
-.contact img:nth-of-type(2)
+.sectionContact img:nth-of-type(2)
 {
     top: 0;
     right: 2%;
     width:30%;
 }
-.contact img:nth-of-type(3)
+.sectionContact img:nth-of-type(3)
 {
     bottom: 0;
     left: 5%;
     width:25%;
 }
-.contact img:nth-of-type(4)
+.sectionContact img:nth-of-type(4)
 {
     bottom: 0;
     right: 0;
@@ -275,7 +275,7 @@ section h2{
         display: none;
     }
 
-    .searchBar
+    .header__searchBar
     {
         padding: 0 5rem;
     }
