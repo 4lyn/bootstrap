@@ -1,6 +1,17 @@
 @import "../styles/smartloc.css";
 @import "../styles/globalElements.css";
 
+body
+{
+    background-color: #F4F4F4;
+}
+
+main
+{
+    padding: 10rem;
+    padding-top: 0;
+}
+
 /* HEADER */
 
 header{
@@ -73,16 +84,16 @@ header{
 
 /* MAIN */
 
-section{
+div[class^="section"]{
     margin-top: 6.5rem;
 }
 
 /* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
-section>div[class$="Container"]{
+div[class^="section"]>div[class$="Container"]{
     margin-top: -2rem;
 }
 
-section h2{
+div[class^="section"] h2{
     margin-bottom: 2.5rem;
 }
 
@@ -161,7 +172,7 @@ section h2{
     right: 2%;
     width:30%;
 }
-.contsectionContactact img:nth-of-type(3)
+.sectionContact img:nth-of-type(3)
 {
     bottom: 0;
     left: 5%;

@@ -1,3 +1,14 @@
+body
+{
+    background-color: #F4F4F4;
+}
+
+main
+{
+    padding: 10rem;
+    padding-top: 0;
+}
+
 /* HEADER */
 
 header
@@ -14,7 +25,7 @@ header
     align-items: center; 
 }
 
-header .logo
+.header__logo
 {
     max-width: 13%;
 }

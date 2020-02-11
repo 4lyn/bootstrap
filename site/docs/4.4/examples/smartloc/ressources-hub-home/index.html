@@ -36,7 +36,7 @@ extra_css: "ressources-hub-home.css"
 
 <main>
     <!-- CATEGORIES -->
-    <section class="sectionCategories">
+    <div class="sectionCategories">
         <h2>Catégories</h2>
         <div class="cardsContainer">
             <div class="card">
@@ -100,10 +100,10 @@ extra_css: "ressources-hub-home.css"
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- ARTICLES -->
-    <section class="sectionArticles">
+    <div class="sectionArticles">
         <h2>Derniers articles</h2>
         <div class="cardsContainer">
             <div class="card">
@@ -179,10 +179,10 @@ extra_css: "ressources-hub-home.css"
                 </div>
             </div>
         </div>
-    </section>   
+    </div>   
         
     <!-- DOCUMENTS -->
-    <section class="sectionDocuments">
+    <div class="sectionDocuments">
         <h2> Les fiches et documents clés</h2>
         <div class="documents__menu">
             <p class="documentsMenu__item">Bail</p>
@@ -229,7 +229,7 @@ extra_css: "ressources-hub-home.css"
             </div>
         </div>
         <a href="" class="mt-5 text-primary d-flex justify-content-center">Voir plus de fiches / documents clés</a>
-    </section>
+    </div>
 
     <!-- CONTACT -->
     <div class="sectionContact">
@@ -285,15 +285,15 @@ extra_css: "ressources-hub-home.css"
 
 
 <script>
-    let docNavItem = document.querySelectorAll('.docNavItem');
-    docNavItem[0].classList.add('active');
+    let docMenuItems = document.querySelectorAll('.documentsMenu__item');
+    docMenuItems[0].classList.add('active');
 
-    for (let i = 0; i < docNavItem.length; i++) {
-        docNavItem[i].onclick=()=>{
-            for (let i = 0; i < docNavItem.length; i++) {
-                docNavItem[i].classList.remove('active');
+    for (let i = 0; i < docMenuItems.length; i++) {
+        docMenuItems[i].onclick=()=>{
+            for (let i = 0; i < docMenuItems.length; i++) {
+                docMenuItems[i].classList.remove('active');
             }
-            docNavItem[i].classList.add('active');
+            docMenuItems[i].classList.add('active');
         }
     }
 </script>

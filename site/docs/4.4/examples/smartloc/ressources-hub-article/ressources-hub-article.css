@@ -1,2 +1,82 @@
 @import "../styles/smartloc.css";
 @import "../styles/globalElements.css";
+
+body
+{
+    background-color: #F4F4F4;
+}
+
+/* changer le nom de frame */
+.frame{
+    height: 2000px;
+    background-color: #fff;
+    padding: 144px;
+    padding-top: 118px;
+}
+
+/* .test{
+    height: 500px;
+    background-color: blue;
+} */
+
+/* HEADER */
+
+header{
+    position: relative;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 8rem;
+}
+
+header h1{
+    width: 40%;
+    margin-top: 6rem;
+}
+
+/* MAIN */
+
+div[class^="section"]{
+    margin-top: 6.5rem;
+}
+
+/* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
+div[class^="section"]>div[class$="Container"]{
+    margin-top: -2rem;
+}
+
+div[class^="section"] h2{
+    margin-bottom: 2.5rem;
+}
+
+.cardsContainer{
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+/* ARTICLES */
+
+.sectionArticles .card{
+    max-width: 22rem;
+    margin-top: 2rem;
+    border: none;
+}
+
+.sectionArticles .card p{
+    margin-bottom: 0;
+}
+
+.sectionArticles .cardTop{
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}

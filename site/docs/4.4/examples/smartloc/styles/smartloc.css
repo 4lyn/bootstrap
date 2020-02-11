@@ -42,20 +42,17 @@ h5
     line-height: 1.5rem;
 }
 
-body
-{
-    background-color: #F4F4F4;
+main{
+    width: 100%;
+    padding-bottom: 10rem;
 }
 
-main, header, footer
+section, header, footer
 {
     padding: 0px 10rem;
     width: 100%;
 }
 
-main{
-    padding-bottom: 10rem;
-}
 
 @media (max-width: 1000px)
 {
