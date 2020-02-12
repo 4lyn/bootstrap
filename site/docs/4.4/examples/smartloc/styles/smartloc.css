@@ -49,16 +49,29 @@ main{
 
 section, header, footer
 {
-    padding: 0px 10rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
     width: 100%;
 }
 
+ul
+{
+    list-style: none;
+}
+
+ul li::before
+{
+    content: "\2022";
+    color: black;
+    margin-right: .25rem;
+}
 
 @media (max-width: 1000px)
 {
-    main, header, footer
+    section, header, footer
     {
-        padding: 0px 5rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
     }
 
     main{

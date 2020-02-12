@@ -6,19 +6,6 @@ body
     background-color: #F4F4F4;
 }
 
-/* changer le nom de frame */
-.frame{
-    height: 2000px;
-    background-color: #fff;
-    padding: 144px;
-    padding-top: 118px;
-}
-
-/* .test{
-    height: 500px;
-    background-color: blue;
-} */
-
 /* HEADER */
 
 header{
@@ -57,7 +44,8 @@ header{
 {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: end;
+    width: max-content;
+    margin-left: auto;
 }
 
 .titling__author img
@@ -69,20 +57,24 @@ header{
 
 /* MAIN */
 
-div[class^="section"]{
+div[class^="section"]
+{
     margin-top: 6.5rem;
 }
 
 /* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
-div[class^="section"]>div[class$="Container"]{
+div[class^="section"]>div[class$="Container"]
+{
     margin-top: -2rem;
 }
 
-div[class^="section"] h2{
+div[class^="section"] h2
+{
     margin-bottom: 2.5rem;
 }
 
-.cardsContainer{
+.cardsContainer
+{
     width: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -92,19 +84,62 @@ div[class^="section"] h2{
     flex-flow: row wrap;
 }
 
-/* ARTICLES */
+/* ARTICLE */
 
-.sectionArticles .card{
+/* changer le nom de frame */
+.article__frame
+{
+    background-color: #fff;
+    padding: 144px;
+    padding-top: 118px;
+}
+
+.article__frame h3
+{
+    margin-bottom: 1.5rem;
+}
+
+.article__frame h2
+{
+    margin-bottom: 2rem;
+}
+
+[class^="frame__subElement"] /* permet de selectionner toutes les div de la famille subelements */
+{
+    margin-bottom: 2.5rem;
+}
+
+.frame__subElement--summary
+{
+    background-color: #F4F4F4;
+    padding: 2rem 2.5rem;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.frame__subElement--doubleImage
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* PROPOSITION ARTICLES */
+
+.sectionArticles .card
+{
     max-width: 22rem;
     margin-top: 2rem;
     border: none;
 }
 
-.sectionArticles .card p{
+.sectionArticles .card p
+{
     margin-bottom: 0;
 }
 
-.sectionArticles .cardTop{
+.sectionArticles .cardTop
+{
     padding-top: .5rem;
     padding-bottom: 1rem;
     display: -ms-flexbox;
