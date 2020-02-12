@@ -22,16 +22,19 @@ header{
     background-color: #F9DCA5;
 }
 
-.header__titling{
+.header__titling
+{
     margin: 3.875rem 0 0 0;
 }
 
-.header__titling a{
+.header__titling a
+{
     color:black;
 }
 
-.header__titling h1{
-    margin: 1rem 0 0 0;
+.header__titling h1
+{
+    margin: .5rem 0 0 0;
 }
 
 .header__searchBar
@@ -48,11 +51,13 @@ header{
 
 /* ajouter a bootstrap */
 
-.header__searchBar>form{
+.header__searchBar>form
+{
     position: relative;
 }
 
-.header__searchBar input{
+.header__searchBar input
+{
     width: 100% !important;
     border-width: 1px;
 }
@@ -84,20 +89,24 @@ header{
 
 /* MAIN */
 
-div[class^="section"]{
+div[class^="section"]
+{
     margin-top: 6.5rem;
 }
 
 /* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
-div[class^="section"]>div[class$="Container"]{
+div[class^="section"]>div[class$="Container"]
+{
     margin-top: -2rem;
 }
 
-div[class^="section"] h2{
+div[class^="section"] h2
+{
     margin-bottom: 2.5rem;
 }
 
-.cardsContainer{
+.cardsContainer
+{
     width: 75%;
     display: -ms-flexbox;
     display: flex;
@@ -109,7 +118,8 @@ div[class^="section"] h2{
 
 /* Categories */
 
-.sectionCategories .card{
+.sectionCategories .card
+{
     width: 16rem;
     margin-top: 2rem;
     border: none;
@@ -152,11 +162,13 @@ div[class^="section"] h2{
     z-index: 10;
 }
 
-.sectionContact img{
+.sectionContact img
+{
     position: absolute;
 }
 
-.sectionContact h2{
+.sectionContact h2
+{
     margin-bottom: 2.5rem;
 }
 
