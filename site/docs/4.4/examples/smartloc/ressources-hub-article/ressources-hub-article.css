@@ -57,41 +57,25 @@ header{
 
 /* MAIN */
 
-div[class^="section"]
+section
 {
-    margin-top: 6.5rem;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
 }
 
-/* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
-div[class^="section"]>div[class$="Container"]
+/* SECTION ARTICLE */
+
+section.article
 {
-    margin-top: -2rem;
+    padding-top: 0;
 }
 
-div[class^="section"] h2
-{
-    margin-bottom: 2.5rem;
-}
-
-.cardsContainer
-{
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
-/* ARTICLE */
-
-/* changer le nom de frame */
 .article__frame
 {
     background-color: #fff;
     padding: 144px;
     padding-top: 118px;
+    margin-bottom: 8.5rem;
 }
 
 .article__frame h3
@@ -104,7 +88,7 @@ div[class^="section"] h2
     margin-bottom: 2rem;
 }
 
-[class^="frame__subElement"] /* permet de selectionner toutes les div de la famille subelements */
+[class^="frame__subElement"] /* permet de selectionner toutes les div de la famille subElements */
 {
     margin-bottom: 2.5rem;
 }
@@ -124,21 +108,39 @@ div[class^="section"] h2
     justify-content: space-between;
 }
 
-/* PROPOSITION ARTICLES */
+/* PROPOSITION AUTRES ARTICLES */
 
-.sectionArticles .card
+/* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
+
+.articlesSuggestion__cardsContainer
+{
+    margin-top: -2rem;
+}
+
+.articlesSuggestion__cardsContainer
+{
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.articlesSuggestion__cardsContainer .card
 {
     max-width: 22rem;
     margin-top: 2rem;
     border: none;
 }
 
-.sectionArticles .card p
+.articlesSuggestion__cardsContainer .card p
 {
     margin-bottom: 0;
 }
 
-.sectionArticles .cardTop
+.articlesSuggestion__cardsContainer .cardTop
 {
     padding-top: .5rem;
     padding-bottom: 1rem;
@@ -148,4 +150,46 @@ div[class^="section"] h2
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+}
+
+/* SECTION EXPERT TROIS CARDS */
+
+section.expertsCards
+{
+    background-color: #fff;
+}
+
+section.expertsCards>div
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.expertsPanels__card
+{
+    width: 352px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.expertsPanels__card:nth-of-type(0)
+{
+    background: left -5% bottom 10% no-repeat url("");
+}
+
+.expertsPanels__card img
+{
+    width: 25%;
+    margin-bottom: .5rem;
+}
+
+.expertsPanels__card h4
+{
+    text-align: center;
 }
