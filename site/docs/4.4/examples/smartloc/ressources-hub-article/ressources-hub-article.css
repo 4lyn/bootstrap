@@ -15,7 +15,7 @@ header{
     padding-bottom: 5rem;
 }
 
-.header__titling{
+.header_titling{
     margin: 3.875rem 0 0 0;
     display: flex;
     flex-direction: row;
@@ -23,15 +23,15 @@ header{
     align-items: center;
 }
 
-.header__titling a{
+.header_titling a{
     color:black;
 }
 
-.header__titling h1{
+.header_titling h1{
     margin: .5rem 0 0 0;
 }
 
-.titling__author
+.titling_author
 {
     flex-basis: 30%;
     display: flex;
@@ -40,7 +40,7 @@ header{
     justify-content: flex-end;
 }
 
-.titling__author p
+.titling_author p
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -48,7 +48,7 @@ header{
     margin-left: auto;
 }
 
-.titling__author img
+.titling_author img
 {
     width: 48px;
     height: 48px;
@@ -70,7 +70,7 @@ section.article
     padding-top: 0;
 }
 
-.article__frame
+.article_frame
 {
     background-color: #fff;
     padding: 144px;
@@ -78,22 +78,27 @@ section.article
     margin-bottom: 8.5rem;
 }
 
-.article__frame h3
+.article_frame h3
 {
     margin-bottom: 1.5rem;
 }
 
-.article__frame h2
+.article_frame h2
 {
     margin-bottom: 2rem;
 }
 
-[class^="frame__subElement"] /* permet de selectionner toutes les div de la famille subElements */
+[class^="frame_subElement"] /* permet de selectionner toutes les div de la famille subElements */
 {
     margin-bottom: 2.5rem;
 }
 
-.frame__subElement--summary
+.article_frame img
+{
+    width: 100%;
+}
+
+.frame_subElement_summary
 {
     background-color: #F4F4F4;
     padding: 2rem 2.5rem;
@@ -101,23 +106,33 @@ section.article
     font-weight: bold;
 }
 
-.frame__subElement--doubleImage
+.frame_subElement_doubleImage
 {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
+}
+
+.frame_subElement_doubleImage img
+{
+    width: 47.5%
+}
+
+img.tweetImg
+{
+    width: 75%;
 }
 
 /* PROPOSITION AUTRES ARTICLES */
 
 /* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
 
-.articlesSuggestion__cardsContainer
+.articlesSuggestion_cardsContainer
 {
     margin-top: -2rem;
 }
 
-.articlesSuggestion__cardsContainer
+.articlesSuggestion_cardsContainer
 {
     width: 100%;
     display: -ms-flexbox;
@@ -128,19 +143,19 @@ section.article
     flex-flow: row wrap;
 }
 
-.articlesSuggestion__cardsContainer .card
+.articlesSuggestion_cardsContainer .card
 {
     max-width: 22rem;
     margin-top: 2rem;
     border: none;
 }
 
-.articlesSuggestion__cardsContainer .card p
+.articlesSuggestion_cardsContainer .card p
 {
     margin-bottom: 0;
 }
 
-.articlesSuggestion__cardsContainer .cardTop
+.articlesSuggestion_cardsContainer .cardTop
 {
     padding-top: .5rem;
     padding-bottom: 1rem;
@@ -159,14 +174,14 @@ section.expertsCards
     background-color: #fff;
 }
 
-section.expertsCards>div
+.expertsCards_cardsContainer
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.expertsPanels__card
+.expertsCards_card
 {
     width: 352px;
     height: 256px;
@@ -174,22 +189,133 @@ section.expertsCards>div
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
     border-radius: 4px;
 }
 
-.expertsPanels__card:nth-of-type(0)
+.expertsCards_card:nth-of-type(1)
 {
-    background: left -5% bottom 10% no-repeat url("");
+    background: left 0 bottom 0 / 30% no-repeat url("../../../assets/img/smartloc/illustrations/background_card_1.png") #f4f4f4;
+}
+.expertsCards_card:nth-of-type(2)
+{
+    background: left 0 bottom 0 / 50% no-repeat url("../../../assets/img/smartloc/illustrations/background_card_2.png") #f4f4f4;
+}
+.expertsCards_card:nth-of-type(3)
+{
+    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/background_card_3.png") #f4f4f4;
 }
 
-.expertsPanels__card img
+.expertsCard_illustration
 {
-    width: 25%;
+    width: 96px;
     margin-bottom: .5rem;
 }
 
-.expertsPanels__card h4
+.expertsCards_card h4
 {
     text-align: center;
+}
+
+/* SECTION VIOLETTE ILLUSTREE */
+
+.smartlocHelp
+{
+    width: 100%;
+    height: 28rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #A896D8;
+}
+
+.smartlocHelp div
+{
+    width: 45%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 10;
+}
+
+.smartlocHelp img{
+    position: absolute;
+}
+
+.smartlocHelp h2{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.smartlocHelp img:first-of-type
+{
+    top: 0;
+    left: 2%;
+    width: 25%;
+}
+.smartlocHelp img:nth-of-type(2)
+{
+    top: 0;
+    right: 5%;
+    width: 20%;
+}
+.smartlocHelp img:nth-of-type(3)
+{
+    bottom: 0;
+    left: 5%;
+    width: 25%;
+}
+.smartlocHelp img:nth-of-type(4)
+{
+    bottom: 0;
+    right: 5%;
+    width: 25%;
+}
+
+/* SECTION CONTACT EXPERTS */
+
+.expertsContact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expertsContact div
+{
+    margin-top: 4rem;
+}
+
+.expertsContact h1
+{
+    width: 28rem;
+    text-align: center;
+}
+
+.expertsContact_images
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.expertsContact_images img
+{
+    width: 15%;
+    min-width: 6.5rem;
+    margin: 0 1.25rem; 
+}
+
+.expertsContact_links a
+{
+    margin: 0 8px;
 }
