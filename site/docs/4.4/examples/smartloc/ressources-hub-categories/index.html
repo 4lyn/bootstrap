@@ -38,19 +38,19 @@ extra_css: "ressources-hub-categories.css"
 
 <main>
     <!-- SOUS CATEGORIES -->
-    <div class="sectionSubCategories">
-        <h2>Sous-catégories</h2>
+    <section class="sectionSubCategories">
+        <h2 class="section_title">Sous-catégories</h2>
         <div>
 
         </div>
-    </div>
+    </section>
     <!-- CATEGORIES -->
-    <div class="sectionCategories">
-        <h2>Autre catégories</h2>
-        <div class="cardsContainer">
-            <div class="card">
+    <section class="sectionCategories">
+        <h2 class="section_title">Autre catégories</h2>
+        <div class="cardsContainer w-75">
+            <div class="card categoriesCard">
                 <div class="card-header">
-                    <img src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                    <img class="categoriesCard_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
                     <h3 class="card-title">Assurance</h3>
                 </div>
                 <div class="card-body">
@@ -63,9 +63,9 @@ extra_css: "ressources-hub-categories.css"
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div class="card categoriesCard">
                 <div class="card-header">
-                    <img src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                    <img class="categoriesCard_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
                     <h3 class="card-title">Bail</h3>
                 </div>
                 <div class="card-body">
@@ -78,9 +78,9 @@ extra_css: "ressources-hub-categories.css"
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div class="card categoriesCard">
                 <div class="card-header">
-                    <img src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
+                    <img class="categoriesCard_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
                     <h3 class="card-title">Inv. locatif	</h3>
                 </div>
                 <div class="card-body">
@@ -94,57 +94,59 @@ extra_css: "ressources-hub-categories.css"
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- CONTACT -->
-    <div class="sectionContact">
-        <img src="../../../assets/img/smartloc/illustrations/rond-violet.png" alt="">
-        <img src="../../../assets/img/smartloc/illustrations/carre-jaune.png" alt="">
-        <img src="../../../assets/img/smartloc/illustrations/couronne-vert.png" alt="">
-        <img src="../../../assets/img/smartloc/illustrations/carre-noir.png" alt="">
-        <div>
-            <h2>Vous ne trouvez pas ce qu'il vous faut ? Contactez nous !</h2>
-            <a href="" class="btn btn-dark" style="padding-left: 3rem; padding-right: 3rem;">Contactez un conseiller</a>
+    <section class="sectionContact">
+        <div class="contactConseiller">
+            <img src="../../../assets/img/smartloc/illustrations/shapes/rond-violet.png" alt="">
+            <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
+            <img src="../../../assets/img/smartloc/illustrations/shapes/couronne-vert.png" alt="">
+            <img src="../../../assets/img/smartloc/illustrations/shapes/carre-noir.png" alt="">
+            <div class="contactConseiller_content">
+                <h2 class="contactConseiller_title">Vous ne trouvez pas ce qu'il vous faut ? Contactez nous !</h2>
+                <a href="" class="btn btn-dark" style="padding-left: 3rem; padding-right: 3rem;">Contactez un conseiller</a>
+            </div>
         </div>
-    </div>
+    </section>
 </main>
 
 <!-- FOOTER -->
 <footer>
-    <div class="footer__containerLeft">
-        <img class="whiteLogo" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
-        <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
-        <div>
-            <img src="../../../assets/img/smartloc/icons/twitter.png" alt="">
-            <img src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+        <div class="footer_containerLeft">
+            <img class="whiteLogo" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
+            <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
+            <div>
+                <img src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                <img src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+            </div>
         </div>
-    </div>
-    <div class="footer__line--responsive"></div>
-    <div class="footer__containerRight">
-        <div class="topPart">
-                <a href="">Gestion locative</a>
-                <a href="">Bail</a>
-                <a href="">Assurance</a>
-                <a href="">Ressources</a>
-                <a href="">Tarifs</a>
-                <a href="">Blog</a>
-                <a href="">A propos</a>
-                <a href="">Partenaires</a>
+        <div class="footer_line footer_line_responsive"></div>
+        <div class="footer_containerRight">
+            <div class="footer_topPart">
+                    <a href="">Gestion locative</a>
+                    <a href="">Bail</a>
+                    <a href="">Assurance</a>
+                    <a href="">Ressources</a>
+                    <a href="">Tarifs</a>
+                    <a href="">Blog</a>
+                    <a href="">A propos</a>
+                    <a href="">Partenaires</a>
+            </div>
+            <div class="footer_line"></div>
+            <div class="footer_bottomPart">
+                <a href="">Modèle de bail numérique</a>
+                <a href="">Signature électronique</a>
+                <a href="">Etat des lieux</a>
+                <a href="">Acte de caution</a>
+                <a href="">Validation dossier locataire</a>
+                <a href="">Caution bancaire</a>
+                <a href="">Recouvrement et expulsion locataire</a>
+                <a href="">Fiscalité immobilière</a>
+                <a href="">Echéance importantes</a>
+                <a href="">Contentieux locataire</a>
+                <a href="">Assistance technique</a>
+            </div>
         </div>
-        <div class="footer__line"></div>
-        <div class="bottomPart">
-            <a href="">Modèle de bail numérique</a>
-            <a href="">Signature électronique</a>
-            <a href="">Etat des lieux</a>
-            <a href="">Acte de caution</a>
-            <a href="">Validation dossier locataire</a>
-            <a href="">Caution bancaire</a>
-            <a href="">Recouvrement et expulsion locataire</a>
-            <a href="">Fiscalité immobilière</a>
-            <a href="">Echéance importantes</a>
-            <a href="">Contentieux locataire</a>
-            <a href="">Assistance technique</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 

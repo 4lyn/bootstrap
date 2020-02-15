@@ -1,5 +1,5 @@
 @import "../styles/smartloc.css";
-@import "../styles/globalElements.css";
+@import "../styles/site-reccurent-elements.css";
 
 body
 {
@@ -103,7 +103,7 @@ section.article
     margin-bottom: 2.5rem;
 }
 
-.article_frame img
+.article_photo
 {
     width: 100%;
 }
@@ -136,213 +136,12 @@ img.tweetImg
 }
 
 
-/* PROPOSITION AUTRES ARTICLES */
+/* SUGGESTION D'ARTICLES */
 
-/* Permet de remonter le parent et permettre un margin top sur les div enfants pour eviter mauvais reponsive */
 
-.articlesSuggestion_cardsContainer
-{
-    margin-top: -2rem;
-}
+/* SECTION AIDE DE SEXPERTS */
 
-.articlesSuggestion_cardsContainer
-{
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
-.articlesSuggestion_cardsContainer .card
-{
-    max-width: 22rem;
-    margin-top: 2rem;
-    border: none;
-}
-
-.articlesSuggestion_cardsContainer .card p
-{
-    margin-bottom: 0;
-}
-
-.articlesSuggestion_cardsContainer .cardTop
-{
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-/* SECTION EXPERT TROIS CARDS */
-
-section.expertsCards
+.expertsHelp
 {
     background-color: #fff;
-}
-
-.expertsCards_cardsContainer
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.expertsCards_card
-{
-    width: 352px;
-    height: 256px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-.expertsCards_card:nth-of-type(1)
-{
-    background: left 0 bottom 0 / 30% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_1.png") #f4f4f4;
-}
-.expertsCards_card:nth-of-type(2)
-{
-    background: left 0 bottom 0 / 50% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_2.png") #f4f4f4;
-}
-.expertsCards_card:nth-of-type(3)
-{
-    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_3.png") #f4f4f4;
-}
-
-.expertsCard_illustration
-{
-    width: 96px;
-    margin-bottom: .5rem;
-}
-
-.expertsCards_card h4
-{
-    text-align: center;
-}
-
-/* SECTION VIOLETTE ILLUSTREE */
-
-.smartlocHelp
-{
-    width: 100%;
-    height: 28rem;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #A896D8;
-}
-
-.smartlocHelp div
-{
-    width: 45%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 10;
-}
-
-.smartlocHelp img{
-    position: absolute;
-}
-
-.smartlocHelp h2{
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-
-.smartlocHelp img:first-of-type
-{
-    top: 0;
-    left: 2%;
-    width: 25%;
-}
-.smartlocHelp img:nth-of-type(2)
-{
-    top: 0;
-    right: 5%;
-    width: 20%;
-}
-.smartlocHelp img:nth-of-type(3)
-{
-    bottom: 0;
-    left: 5%;
-    width: 25%;
-}
-.smartlocHelp img:nth-of-type(4)
-{
-    bottom: 0;
-    right: 5%;
-    width: 25%;
-}
-
-/* SECTION CONTACT EXPERTS */
-
-.expertsContact
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #fff;
-}
-
-.expertsContact div
-{
-    margin-top: 4rem;
-}
-
-.expertsContact h1
-{
-    width: 28rem;
-    text-align: center;
-}
-
-.expertsContact_images
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.expertsContact_images img
-{
-    width: 15%;
-    min-width: 6.5rem;
-    margin: 0 1.25rem; 
-}
-
-.expertsContact_links a
-{
-    margin: 0 8px;
 }

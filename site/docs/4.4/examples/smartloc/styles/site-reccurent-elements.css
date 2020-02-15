@@ -1,0 +1,600 @@
+/* HEADER */
+
+header
+{
+    width: 100%;
+}
+
+header nav
+{
+    width: 100%;
+    height : 2.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header_logo
+{
+    width: 140px;
+}
+
+.header_linksContainer
+{
+    height: inherit;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header_linksContainer a
+{
+    margin-left: 2rem;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+/* FOOTER */
+
+footer
+{
+    width: 100%;
+    height: 32rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+
+footer a
+{
+    color: white !important;
+}
+
+.footer_containerLeft
+{
+    width: 12.5%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.footer_containerLeft .whiteLogo
+{
+    width: 140px;
+}
+
+.footer_containerLeft a
+{
+    margin: 1rem 0;
+}
+
+.footer_containerLeft div img
+{
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.footer_containerRight
+{
+    width: 75%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer_topPart
+{
+    width: 55%;
+    max-height: 6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+.footer_topPart a
+{
+    margin-bottom: .5rem;
+    margin-right: 5.75rem;
+    font-weight: bold;
+}
+
+.footer_bottomPart
+{
+    max-height: 12rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+.footer_bottomPart a
+{
+    margin-bottom: .5rem;
+    margin-right: 12.25rem;
+    font-weight: bold;
+}
+
+.footer_line
+{
+    width: 100%;
+    min-width: 850px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer_line_responsive
+{
+    display: none;
+}
+
+/* ALERTES-ADVICE */
+
+.alert-advice_italicText
+{
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+/* ENCADRÉ PUSH */
+
+.article_illustratedPush
+{
+    width: 100%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.illustratedPush_backgroundImage
+{
+    position: absolute;
+}
+.illustratedPush_backgroundImage:nth-of-type(1)
+{
+    width: auto;
+    height: 95%;
+    left: 0;
+    bottom: 0;
+}
+.illustratedPush_backgroundImage:nth-of-type(2)
+{
+    width: auto;
+    height: 60%;
+    right: 0;
+    bottom: 0;
+}
+.push_purple 
+{
+    background-color: #A896D8;
+}
+.push_yellow 
+{
+    background-color: #F9DCA5;
+}
+
+/* CARDS */
+
+.cardsContainer
+{
+    margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.card
+{
+    margin-top: 2rem; /* Applique un margin top sur les cards pour eviter mauvais reponsive */
+}
+
+.smallCard
+{
+    font-weight: bold;
+}
+
+.smallCard_icon
+{
+    width: 1.5rem;
+    margin-right: .25rem;
+}
+
+/* CARDS DE CATEGORIES */
+
+.categoriesCard
+{
+    width: 16rem;
+    border: none;
+}
+
+.categoriesCard_illustration
+{
+    width: 50%;
+}
+
+/* CARDS AIDE DES EXPERTS */
+
+.expertsCard
+{
+    width: 352px;
+    height: 256px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.expertsCard_illustration
+{
+    width: 96px;
+    margin-bottom: .5rem;
+}
+
+.expertsCard h4
+{
+    text-align: center;
+}
+
+.bail_card
+{
+    background: left 0 bottom 0 / 30% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_1.png") #f4f4f4;
+}
+.gestion_card
+{
+    background: left 0 bottom 0 / 50% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_2.png") #f4f4f4;
+}
+.assurance_card
+{
+    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_3.png") #f4f4f4;
+}
+
+/* SECTION CONTACT EXPERTS */
+
+.expertsContact
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.expertsContact div
+{
+    margin-top: 4rem;
+}
+
+.expertsContact h1
+{
+    width: 28rem;
+    text-align: center;
+}
+
+.expertsContact_images
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.expertsContact_images img
+{
+    width: 15%;
+    min-width: 6.5rem;
+    margin: 0 1.25rem; 
+}
+
+.expertsContact_links a
+{
+    margin: 0 8px;
+}
+
+/* CARDS PROPOSITION D'ARTICLES A LIRE */
+
+.articlesCard
+{
+    max-width: 22rem;
+    border: none;
+}
+
+.articlesCard_infos
+{
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.articlesCard_preview p
+{
+    margin-bottom: 0;
+}
+
+
+/* SECTION "DEMARRER" VIOLETTE AVEC SHAPES  */
+
+.smartlocHelp
+{
+    width: 100%;
+    height: 28rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #A896D8;
+}
+
+.smartlocHelp_content
+{
+    width: 45%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 10;
+}
+
+.smartlocHelp img{
+    position: absolute;
+}
+
+.smartlocHelp_content h2{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.smartlocHelp img:first-of-type
+{
+    top: 0;
+    left: 2%;
+    width: 25%;
+}
+.smartlocHelp img:nth-of-type(2)
+{
+    top: 0;
+    right: 5%;
+    width: 20%;
+}
+.smartlocHelp img:nth-of-type(3)
+{
+    bottom: 0;
+    left: 5%;
+    width: 25%;
+}
+.smartlocHelp img:nth-of-type(4)
+{
+    bottom: 0;
+    right: 5%;
+    width: 25%;
+}
+
+/* SECTION CONTACT CONSEILLER ROSE */
+
+.contactConseiller
+{
+    width: 100%;
+    height: 28rem;
+    padding: 30% auto;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #EBB9C2;
+}
+
+.contactConseiller_content
+{
+    width: 45%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 10;
+}
+
+
+.contactConseiller_title
+{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.contactConseiller img
+{
+    position: absolute;
+}
+
+.contactConseiller img:first-of-type
+{
+    top: 0;
+    left: 0;
+    width:20%;
+}
+.contactConseiller img:nth-of-type(2)
+{
+    top: 0;
+    right: 2%;
+    width:30%;
+}
+.contactConseiller img:nth-of-type(3)
+{
+    bottom: 0;
+    left: 5%;
+    width:25%;
+}
+.contactConseiller img:nth-of-type(4)
+{
+    bottom: 0;
+    right: 0;
+    width:30%;
+}
+
+
+/* SECTION SMALL CARDS DOCUMENTS AVEC MENU NOIR */
+
+.sectionDocuments .section_title
+{
+    width: 100%;
+    text-align: center;
+}
+
+.sectionDocuments .blackMenu
+{
+    width: 75%;
+    height: 3rem;
+    margin: auto;
+    margin-bottom: 6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.sectionDocuments .blackMenu_item
+{
+    width: 33.3333%;
+    height: inherit;
+    line-height: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sectionDocuments .blackMenu_item:first-of-type
+{
+    border-radius: 25px 0 0 25px;
+}
+.sectionDocuments .blackMenu_item:last-of-type
+{
+    border-radius: 0px 25px 25px 0;
+}
+
+.sectionDocuments .blackMenu_item:nth-child(2)
+{
+    border-left : 2px solid black;
+    border-right : 2px solid black;
+}
+
+.sectionDocuments .blackMenu_item_active  /* classe pour le js */
+{
+    background-color: black;
+    color: white;
+}
+
+.sectionDocuments .smallCard
+{
+    width: 48.5%;
+    margin-top: 1rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px)
+{
+    .cardsContainer
+    {
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    footer
+    {
+        height: auto;
+        padding: 3.75rem 5rem;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    footer>div:not(.footer__containerRight), .footer_containerRight>div:not(.bottomPart)
+    {
+        margin-bottom: 2.5rem;
+    }
+
+    .footer_containerRight
+    {
+        width: 100%;
+    }
+    .footer_containerLeft
+    {
+        width: 20%;
+    }
+
+    .footer_line_responsive
+    {
+        display: block;
+    }
+}
+
