@@ -2121,7 +2121,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(1rem + 1px);
   padding-bottom: calc(1rem + 1px);
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -2161,7 +2161,7 @@ select.form-control:focus::-ms-value {
 .form-control-lg {
   height: calc(1.5em + 2rem + 2px);
   padding: 1rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -2996,7 +2996,7 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 1rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.3rem;
   min-width: 19.5rem;
@@ -3581,7 +3581,7 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 1rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -3840,7 +3840,7 @@ input[type="button"].btn-block {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .custom-file {
@@ -4196,10 +4196,10 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4245,7 +4245,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4908,7 +4908,7 @@ input[type="button"].btn-block {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 

@@ -17,9 +17,13 @@ header{
 
 .header_article_titling{
     margin: 3.875rem 0 0 0;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -33,10 +37,15 @@ header{
 
 .header_article_infos
 {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -44,6 +53,8 @@ header{
 {
     margin-top: 0;
     margin-bottom: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin-left: auto;
 }
@@ -108,8 +119,10 @@ section.article
 
 .frame_subElement_doubleImage
 {
+    display: -ms-flexbox;
     display: flex;
     /* flex-direction: row; */
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -176,8 +189,11 @@ section.expertsCards
 
 .expertsCards_cardsContainer
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -185,9 +201,13 @@ section.expertsCards
 {
     width: 352px;
     height: 256px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border-radius: 4px;
 }
@@ -285,8 +305,11 @@ section.expertsCards
 
 .expertsContact
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: center;
     align-items: center;
     background-color: #fff;
 }
@@ -304,8 +327,11 @@ section.expertsCards
 
 .expertsContact_images
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
