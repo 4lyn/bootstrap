@@ -14,6 +14,7 @@
     &:first-of-type{
       margin-top: 24px;
     }
+
     &:last-of-type{
       margin-bottom: 0px;
     }
@@ -23,18 +24,25 @@
 .alert-advice {
   position: relative;
   display: flex;
-  align-items: center;
   align-items: flex-start;
   color: black !important;
   padding: $alert-padding-y $alert-padding-x;
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
 
-  p:last-of-type{
-    margin-bottom: 0;
-  }
-  .advice-title{
-    margin-bottom: 1rem;
+  .advice-info{
+    *:last-child{
+      margin-bottom: 0;
+    }
+    
+    .advice-title{
+      margin-bottom: 1rem;
+    }
+    
+    a{
+      color: black;
+      text-decoration: underline;
+    }
   }
 
   .advice-illustration{
@@ -42,10 +50,38 @@
     margin-right: 2.5rem;
   }
 
-  a{
-    color: black;
-    text-decoration: underline;
+}
+
+.alert-notice {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  color: black !important;
+  background-color: #F4F4F4;
+  padding: $alert-padding-y $alert-padding-x;
+  border-left: 8px solid;
+  @include border-radius($alert-border-radius);
+
+  .notice-info{
+    *:last-child{
+      margin-bottom: 0;
+    }
+
+    .notice-title{
+      margin-bottom: 1rem;
+    }
+
+    a{
+      color: black;
+      text-decoration: underline;
+    }
   }
+
+  .notice-illustration{
+    width: 7rem;
+    margin-right: 2.5rem;
+  }
+
 }
 
 // Headings for larger alerts
@@ -98,5 +134,13 @@
 @each $color, $value in $theme-colors {
   .alert-#{$color} {
     @include alert-variant(theme-color-level($color), theme-color-level($color), theme-color-level($color));
+  }
+  
+  .alert-advice-#{$color} {
+    @include alert-variant(theme-color-level($color), theme-color-level($color), theme-color-level($color));
+  }
+  
+  .alert-notice-#{$color} {
+    border-color: theme-color($color);
   }
 }
