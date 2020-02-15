@@ -15,7 +15,7 @@ header{
     padding-bottom: 5rem;
 }
 
-.header_titling{
+.header_article_titling{
     margin: 3.875rem 0 0 0;
     display: flex;
     flex-direction: row;
@@ -23,15 +23,15 @@ header{
     align-items: center;
 }
 
-.header_titling a{
+.header_article_titling a{
     color:black;
 }
 
-.header_titling h1{
+.header_article_titling h1{
     margin: .5rem 0 0 0;
 }
 
-.titling_author
+.header_article_infos
 {
     flex-basis: 30%;
     display: flex;
@@ -40,7 +40,7 @@ header{
     justify-content: flex-end;
 }
 
-.titling_author p
+.header_article_infos p
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -48,7 +48,7 @@ header{
     margin-left: auto;
 }
 
-.titling_author img
+.header_article_infos img
 {
     width: 48px;
     height: 48px;
@@ -288,6 +288,7 @@ section.expertsCards
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
 }
 
 .expertsContact div
