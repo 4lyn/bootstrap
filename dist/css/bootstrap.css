@@ -5132,6 +5132,38 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-bottom: 0px;
 }
 
+.alert-advice {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  color: black !important;
+  padding: 2rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-advice p:last-of-type {
+  margin-bottom: 0;
+}
+
+.alert-advice .advice-title {
+  margin-bottom: 1rem;
+}
+
+.alert-advice .advice-illustration {
+  width: 7rem;
+  margin-right: 2.5rem;
+}
+
+.alert-advice a {
+  color: black;
+  text-decoration: underline;
+}
+
 .alert-heading {
   color: inherit;
   display: -ms-flexbox;
@@ -5145,6 +5177,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert-heading span {
   margin-left: 16px;
   font-weight: bold;
+}
+
+.alert-heading a {
+  color: black;
+  text-decoration: underline;
 }
 
 .alert-link {

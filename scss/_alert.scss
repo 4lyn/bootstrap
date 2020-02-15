@@ -20,6 +20,34 @@
   }
 }
 
+.alert-advice {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  color: black !important;
+  padding: $alert-padding-y $alert-padding-x;
+  border: $alert-border-width solid transparent;
+  @include border-radius($alert-border-radius);
+
+  p:last-of-type{
+    margin-bottom: 0;
+  }
+  .advice-title{
+    margin-bottom: 1rem;
+  }
+
+  .advice-illustration{
+    width: 7rem;
+    margin-right: 2.5rem;
+  }
+
+  a{
+    color: black;
+    text-decoration: underline;
+  }
+}
+
 // Headings for larger alerts
 .alert-heading {
   // Specified to prevent conflicts of changing $headings-color
@@ -31,6 +59,11 @@
   span{
     margin-left: 16px;
     font-weight: bold;
+  }
+
+  a{
+    color: black;
+    text-decoration: underline;
   }
 }
 
