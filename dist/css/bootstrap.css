@@ -5353,14 +5353,14 @@ a.badge-dark:focus, a.badge-dark.focus {
   -ms-flex-align: start;
   align-items: flex-start;
   color: black !important;
-  background-color: #F4F4F4;
+  background-color: #fff;
   padding: 2rem 2rem;
   border-left: 8px solid;
   border-radius: 0.25rem;
 }
 
 .alert-notice .notice-info *:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .alert-notice .notice-info .notice-title {

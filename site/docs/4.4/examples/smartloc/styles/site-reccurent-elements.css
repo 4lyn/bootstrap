@@ -1,11 +1,7 @@
-/* HEADER */
+/************* HEADER *************/
 
-header
-{
-    width: 100%;
-}
-
-header nav
+/* header nav menu classique, toutes pages sauf dossiers locataires */
+.header_classicNav
 {
     width: 100%;
     height : 2.5rem;
@@ -17,12 +13,7 @@ header nav
     align-items: center;
 }
 
-.header_logo
-{
-    width: 140px;
-}
-
-.header_linksContainer
+.header_classicNav_linksContainer
 {
     height: inherit;
     display: -ms-flexbox;
@@ -33,7 +24,7 @@ header nav
     align-items: center;
 }
 
-.header_linksContainer a
+.header_classicNav_linksContainer a
 {
     margin-left: 2rem;
     cursor: pointer;
@@ -41,7 +32,168 @@ header nav
     color: black !important;
 }
 
-/* FOOTER */
+/* header d'articles */
+.headerArticle_titling{
+    margin: 3.875rem 0 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.headerArticle_titling a{
+    color:black;
+}
+
+.headerArticle_titling h1{
+    margin: .5rem 0 0 0;
+}
+
+.headerArticle_infos
+{
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.headerArticle_infos p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+}
+
+.headerArticle_infos img
+{
+    width: 48px;
+    height: 48px;
+    margin-left: .5rem;
+}
+
+/* headerSteps : header des pages bail, gestion locative, assuranceloyer impayé */
+.headerSteps_titling
+{
+    margin-top: 7.5rem;
+    margin-bottom: 10rem; 
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.headerSteps_illustration
+{
+    width: 330px;
+    height: 304px;
+    margin: 0 10%;
+}
+
+
+.headerSteps_infos, .headerSteps_step, .headerSteps_steps_container, .headerSteps_stickyNav
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.headerSteps_infos
+{
+    margin-bottom: 8rem;
+}
+
+.headerSteps_infos_title
+{
+    min-width: 16rem;
+}
+
+.headerSteps_infos_content
+{
+    margin-left: 2rem;
+}
+
+.headerSteps_infos_content ul li
+{
+    line-height: 1.5rem;
+    margin-bottom: .375rem;
+}
+
+.headerSteps_steps_container
+{
+    margin-bottom: 3.5rem;
+}
+
+.headerSteps_step
+{
+    width: 255px;
+    height: 120px;
+    padding: 0 1.75rem;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.headerSteps_step_number
+{
+    font-size: 72px;
+    font-family: Roobert;
+}
+
+.headerSteps_step h5
+{
+    width: 125px;
+    margin-bottom: 0;
+}
+
+/* stickynav du headersteps avec bouton demarrer */
+.headerSteps .stickyNav_item_container
+{
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}   
+
+.headerSteps .stickyNav_item_container span
+{
+    padding-bottom: 20px;
+    margin-right: 1.5rem;
+}
+
+.headerSteps .stickyNav_item_container span:first-child
+{
+    border-bottom: solid 2px black;
+}
+
+.headerSteps .stickyNav_button
+{
+    width: 176px;
+    height: 32px;
+    padding: .25rem 0;
+}
+
+
+/************* FOOTER *************/
 
 footer
 {
@@ -145,8 +297,10 @@ footer a
     display: none;
 }
 
-/* ALERTES-ADVICE */
+/************* OBJETS RECCURENTS SUR LE SITE *************/
 
+/* alertes-advice, messages de conseil du même style que les alertes */
+/* coeur du composant ajouté au code source de bootstrap sous le nom de alerte-advice, étant une alerte modifée, au côté de alerte-notice qui en est une variante */
 .alert-advice_italicText
 {
     font-size: 1.125rem;
@@ -154,9 +308,8 @@ footer a
     font-style: italic;
 }
 
-/* ENCADRÉ PUSH */
-
-.article_illustratedPush
+/* encadré push, encadrés de couleur avec shapes en background pour la promotion du service smartloc */
+.framePromotion
 {
     width: 100%;
     position: relative;
@@ -171,49 +324,137 @@ footer a
     text-align: center;
 }
 
-.illustratedPush_backgroundImage
+.framePromotion_backgroundImage
 {
     position: absolute;
 }
-.illustratedPush_backgroundImage:nth-of-type(1)
+.framePromotion_backgroundImage:nth-of-type(1)
 {
     width: auto;
     height: 95%;
     left: 0;
     bottom: 0;
 }
-.illustratedPush_backgroundImage:nth-of-type(2)
+.framePromotion_backgroundImage:nth-of-type(2)
 {
     width: auto;
     height: 60%;
     right: 0;
     bottom: 0;
 }
-.push_purple 
+.framePromotion_purple 
 {
     background-color: #A896D8;
 }
-.push_yellow 
+.framePromotion_yellow 
 {
     background-color: #F9DCA5;
 }
 
-/* CARDS */
+/* encadré rose et shapes colorées de contact de conseiller avec bouton "contacter un conseiller" */
+.frameContactConseiller
+{
+    width: 100%;
+    height: 28rem;
+    padding: 30% auto;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #EBB9C2;
+}
 
-.cardsContainer
+.frameContactConseiller_content
+{
+    width: 45%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 10;
+}
+
+
+.frameContactConseiller_title
+{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.frameContactConseiller img
+{
+    position: absolute;
+}
+
+.frameContactConseiller img:first-of-type
+{
+    top: 0;
+    left: 0;
+    width:20%;
+}
+.frameContactConseiller img:nth-of-type(2)
+{
+    top: 0;
+    right: 2%;
+    width:30%;
+}
+.frameContactConseiller img:nth-of-type(3)
+{
+    bottom: 0;
+    left: 5%;
+    width:25%;
+}
+.frameContactConseiller img:nth-of-type(4)
+{
+    bottom: 0;
+    right: 0;
+    width:30%;
+}
+
+/************* CARDS *************/
+
+/* container des cards présent sur l'ensemble du site */
+.cardsContainer_row
 {
     margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
-.card
+.cardsContainer_column
+{
+    margin-top: -2rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* permet de selectionner n'importe quel objet de type card, meme les non-bootstrap, qui sont à l'intérieur de n'importe quel cardsContainer*/
+.cardsContainer_row .card, .cardsContainer_column .card
 {
     margin-top: 2rem; /* Applique un margin top sur les cards pour eviter mauvais reponsive */
+}
+
+/* petites cards sur une seule ligne avec un icone */
+/* ecrase le margin original pour l'adapter aux petites cards */
+.smallCardsContainer
+{
+    margin-top: -1rem;
+}
+
+.smallCardsContainer .smallCard
+{
+    margin-top: 1rem;
 }
 
 .smallCard
@@ -227,8 +468,7 @@ footer a
     margin-right: .25rem;
 }
 
-/* CARDS DE CATEGORIES */
-
+/* cards de categorie, present sur pages hub home et hub categories */
 .categoriesCard
 {
     width: 16rem;
@@ -240,95 +480,7 @@ footer a
     width: 50%;
 }
 
-/* CARDS AIDE DES EXPERTS */
-
-.expertsCard
-{
-    width: 352px;
-    height: 256px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-.expertsCard_illustration
-{
-    width: 96px;
-    margin-bottom: .5rem;
-}
-
-.expertsCard h4
-{
-    text-align: center;
-}
-
-.bail_card
-{
-    background: left 0 bottom 0 / 30% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_1.png") #f4f4f4;
-}
-.gestion_card
-{
-    background: left 0 bottom 0 / 50% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_2.png") #f4f4f4;
-}
-.assurance_card
-{
-    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_3.png") #f4f4f4;
-}
-
-/* SECTION CONTACT EXPERTS */
-
-.expertsContact
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #fff;
-}
-
-.expertsContact div
-{
-    margin-top: 4rem;
-}
-
-.expertsContact h1
-{
-    width: 28rem;
-    text-align: center;
-}
-
-.expertsContact_images
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.expertsContact_images img
-{
-    width: 15%;
-    min-width: 6.5rem;
-    margin: 0 1.25rem; 
-}
-
-.expertsContact_links a
-{
-    margin: 0 8px;
-}
-
-/* CARDS PROPOSITION D'ARTICLES A LIRE */
-
+/* cards d'articles a lire */
 .articlesCard
 {
     max-width: 22rem;
@@ -353,9 +505,126 @@ footer a
 }
 
 
-/* SECTION "DEMARRER" VIOLETTE AVEC SHAPES  */
 
-.smartlocHelp
+/************* SECTIONS RECCURENTES SUR LE SITE *************/
+
+/* permet de selectionner toutes les div subElements sauf la derniere */
+.section_subElement:not(:last-child) 
+{
+    margin-bottom: 2.5rem;
+}
+/* permet de retirer un eventuel margin bottom non désiré a la fin d'un subElement */
+.section_subElement>*:last-child
+{
+    margin-bottom: 0;
+}
+
+.section_content
+{
+    margin-left: 2rem;
+}
+
+/* permet de donner une taille absolument constente et eviter les resizes automatiques */
+.section_sideTitle
+{
+    max-width: 16rem;
+    min-width: 16rem;
+}
+
+/* section accompagnement des experts sur bail, gestion et assurance */
+.expertsHelp h1
+{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.expertsHelpCard
+{
+    width: 352px;
+    height: 256px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: none;
+}
+
+.expertsHelpCard_illustration
+{
+    width: 96px;
+    margin-bottom: .5rem;
+}
+
+.expertsHelpCard h4
+{
+    text-align: center;
+}
+
+.bail_card
+{
+    background: left 0 bottom 0 / 30% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_1.png") #f4f4f4;
+}
+.gestion_card
+{
+    background: left 0 bottom 0 / 50% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_2.png") #f4f4f4;
+}
+.assurance_card
+{
+    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_3.png") #f4f4f4;
+}
+
+
+/* section de contact des experts pour vous aider */
+.sectionExpertsContact
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.sectionExpertsContact div
+{
+    margin-top: 4rem;
+}
+
+.sectionExpertsContact h1
+{
+    width: 28rem;
+    text-align: center;
+}
+
+.sectionExpertsContact_images
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.sectionExpertsContact_images img
+{
+    width: 15%;
+    min-width: 6.5rem;
+    margin: 0 1.25rem; 
+}
+
+.sectionExpertsContact_links a
+{
+    margin: 0 8px;
+}
+
+/* section violette avec shapes et bouton demarrer  */
+.sectionSmartlocHelp
 {
     width: 100%;
     height: 28rem;
@@ -369,7 +638,7 @@ footer a
     background-color: #A896D8;
 }
 
-.smartlocHelp_content
+.sectionSmartlocHelp_content
 {
     width: 45%;
     display: -ms-flexbox;
@@ -384,112 +653,41 @@ footer a
     z-index: 10;
 }
 
-.smartlocHelp img{
+.sectionSmartlocHelp img{
     position: absolute;
 }
 
-.smartlocHelp_content h2{
+.sectionSmartlocHelp_content h2{
     margin-bottom: 2.5rem;
     text-align: center;
 }
 
-.smartlocHelp img:first-of-type
+.sectionSmartlocHelp img:first-of-type
 {
     top: 0;
     left: 2%;
     width: 25%;
 }
-.smartlocHelp img:nth-of-type(2)
+.sectionSmartlocHelp img:nth-of-type(2)
 {
     top: 0;
     right: 5%;
     width: 20%;
 }
-.smartlocHelp img:nth-of-type(3)
+.sectionSmartlocHelp img:nth-of-type(3)
 {
     bottom: 0;
     left: 5%;
     width: 25%;
 }
-.smartlocHelp img:nth-of-type(4)
+.sectionSmartlocHelp img:nth-of-type(4)
 {
     bottom: 0;
     right: 5%;
     width: 25%;
 }
 
-/* SECTION CONTACT CONSEILLER ROSE */
-
-.contactConseiller
-{
-    width: 100%;
-    height: 28rem;
-    padding: 30% auto;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #EBB9C2;
-}
-
-.contactConseiller_content
-{
-    width: 45%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 10;
-}
-
-
-.contactConseiller_title
-{
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-
-.contactConseiller img
-{
-    position: absolute;
-}
-
-.contactConseiller img:first-of-type
-{
-    top: 0;
-    left: 0;
-    width:20%;
-}
-.contactConseiller img:nth-of-type(2)
-{
-    top: 0;
-    right: 2%;
-    width:30%;
-}
-.contactConseiller img:nth-of-type(3)
-{
-    bottom: 0;
-    left: 5%;
-    width:25%;
-}
-.contactConseiller img:nth-of-type(4)
-{
-    bottom: 0;
-    right: 0;
-    width:30%;
-}
-
-
-/* SECTION SMALL CARDS DOCUMENTS AVEC MENU NOIR */
-
+/* section contenant smallcards de documents, avec menu nav noir */
 .sectionDocuments .section_title
 {
     width: 100%;
@@ -551,15 +749,14 @@ footer a
 .sectionDocuments .smallCard
 {
     width: 48.5%;
-    margin-top: 1rem;
 }
 
 
-/* RESPONSIVE */
+/*********** RESPONSIVE ************/
 
 @media (max-width: 750px)
 {
-    .cardsContainer
+    .cardsContainer_row
     {
         -ms-flex-line-pack: center;
         align-content: center;

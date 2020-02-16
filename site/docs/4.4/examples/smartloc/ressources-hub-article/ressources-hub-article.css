@@ -10,59 +10,7 @@ body
 
 header{
     position: relative;
-    padding-top: 2.5rem;
     padding-bottom: 5rem;
-}
-
-.header_article_titling{
-    margin: 3.875rem 0 0 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.header_article_titling a{
-    color:black;
-}
-
-.header_article_titling h1{
-    margin: .5rem 0 0 0;
-}
-
-.header_article_infos
-{
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.header_article_infos p
-{
-    margin-top: 0;
-    margin-bottom: 0;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-left: auto;
-}
-
-.header_article_infos img
-{
-    width: 48px;
-    height: 48px;
-    margin-left: .5rem;
 }
 
 /* MAIN */
@@ -88,19 +36,14 @@ section.article
     margin-bottom: 8.5rem;
 }
 
-.subElement_subTitle
+.article_subTitle
 {
     margin-bottom: 1.5rem;
 }
 
-.subElement_title
+.article_title
 {
     margin-bottom: 2rem;
-}
-
-[class^="frame_subElement"]:not(:last-child) /* permet de selectionner toutes les div de la famille subElements sauf la derniere */
-{
-    margin-bottom: 2.5rem;
 }
 
 .article_photo
@@ -108,7 +51,7 @@ section.article
     width: 100%;
 }
 
-.frame_subElement_summary
+.article_summary
 {
     background-color: #F4F4F4;
     padding: 2rem 2.5rem;
@@ -116,12 +59,12 @@ section.article
     font-weight: bold;
 }
 
-.frame_subElement_summary ul
+.article_summary ul
 {
     padding-left: 1rem;
 }
 
-.frame_subElement_doubleImage
+.article_doubleImage
 {
     display: -ms-flexbox;
     display: flex;
@@ -130,7 +73,7 @@ section.article
     justify-content: space-between;
 }
 
-.frame_subElement_doubleImage img
+.article_doubleImage img
 {
     width: 47.5%
 }
@@ -140,13 +83,8 @@ img.tweetImg
     width: 75%;
 }
 
-
-/* SUGGESTION D'ARTICLES */
-
-
 /* SECTION AIDE DE SEXPERTS */
-
-.expertsHelp
+.sectionExpertsHelp
 {
     background-color: #fff;
 }

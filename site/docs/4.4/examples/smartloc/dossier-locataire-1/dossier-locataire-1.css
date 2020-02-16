@@ -50,13 +50,6 @@ h2
     flex-direction: column;
 }
 
-
-.styled_list li
-{
-    line-height: 1.5rem;
-    margin-bottom: .375rem;
-}
-
 .shapes
 {
     position: absolute;

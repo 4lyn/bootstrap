@@ -7,10 +7,10 @@ extra_css: "bail.css"
 
 <!-- HEADER -->
 
-<header>
-    <nav>
+<header class="headerSteps">
+    <nav class="header_classicNav">
         <img src="../../../assets/img/smartloc/logos/logo.png" class="header_logo">
-        <div class="header_linksContainer">
+        <div class="header_classicNav_linksContainer">
             <a href="">Gestion locative</a>
             <a href="">Bail</a>
             <a href="">Assurance</a>
@@ -20,32 +20,33 @@ extra_css: "bail.css"
             <a href="" class="font-weight-bold">Contact</a>
         </div>
     </nav>
-    <div class="header_titling">
+
+    <div class="headerSteps_titling">
         <div>
             <h1 class="mb-3">Bail de location et modèle de contrat de location vide ou meublé 2019.</h1>
             <p style="font-size: 1.125rem; margin-bottom: 0;">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna.</p>
             <a href="" class="btn btn-dark" style="width: 272px; margin-top: 2rem">Démarrer mon bail</a>
         </div>
-        <img class="header_illustration" src="../../../assets/img/smartloc/illustrations/notes_illustrated.png" alt="">
+        <img class="headerSteps_illustration" src="../../../assets/img/smartloc/illustrations/notes_illustrated.png" alt="">
     </div>
-    <div class="header_infos">
-        <h2>Comment ça marche ?</h2>
-        <div class="header_infos_content">
-            <div class="header_steps_container">
-                <div class="header_step">
-                    <span class="header_step_number">1</span>
+    <div class="headerSteps_infos">
+        <h2 class="headerSteps_infos_title">Comment ça marche ?</h2>
+        <div class="headerSteps_infos_content">
+            <div class="headerSteps_steps_container">
+                <div class="headerSteps_step">
+                    <span class="headerSteps_step_number">1</span>
                     <h5>Remplissez votre bail avec notre outil en ligne</h5>
                 </div>
-                <div class="header_step">
-                    <span class="header_step_number">2</span>
+                <div class="headerSteps_step">
+                    <span class="headerSteps_step_number">2</span>
                     <h5>Votre bail est sauvegardé et modifiable</h5>
                 </div>
-                <div class="header_step">
-                    <span class="header_step_number">3</span>
+                <div class="headerSteps_step">
+                    <span class="headerSteps_step_number">3</span>
                     <h5>Récupérez votre bail de location au format pdf</h5>
                 </div>
             </div>
-            <h3 class="mb-4">Le modèle de bail est-il à jour des dernières lois ?</h3>
+            <h3>Le modèle de bail est-il à jour des dernières lois ?</h3>
             <p>Le bail de location respecte un contrat type défini par décret en Conseil d'Etat (source du décret).</p>
             <p>Smartloc vous permet d'utiliser le seul modèle de bail de location légal obligatoire s'appliquant à tout nouveau contrat de location depuis 2014 :</p>
             <ul class="styled_list">
@@ -56,7 +57,7 @@ extra_css: "bail.css"
             <p>Si vous utilisez un ancien modèle il est possible que vous omettiez des mentions obligatoires. En utilisant notre modèle vous êtes certain d'utiliser un contrat à jour des dernières lois.</p>
         </div>
     </div>
-    <div class="header_stickyNav">
+    <div class="headerSteps_stickyNav">
         <div class="stickyNav_item_container">
             <span>Annexes</span>
             <span>Modèles</span>
@@ -70,7 +71,132 @@ extra_css: "bail.css"
 <!-- MAIN -->
 
 <main>
-    <section class="sectionBailAnnexe">
-        
+    <section class="sectionBailAnnexe bg-light">
+        <h2 class="section_sideTitle">Quelles annexes du bail de location sont fournies ?</h2>
+        <div class="section_content">
+            <div class="section_subElement">
+                <p>En location vide ou meublée, de nombreuses annexes sont obligatoires; notre module de rédaction automatique vous fournit toutes celles nécessaires et vous permet d'ajouter celles en votre possession : Etat des lieux, Notice d’information, Acte de caution solidaire.</p>
+                <div class="alert-notice alert-notice-primary">
+                    <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
+                    <div class="notice-info">
+                        <h3 class="notice-title">L’état des lieux</h3>
+                        <span>L'état des lieux que nous vous fournissons est un modèle pdf vous permettant de réaliser l'état des lieux d'entrée et de sortie sur le même document. C'est le système le plus simple que vous pourrez compléter par d'éventuelles photos.</span>
+                        <div class="card smallCard mt-4">
+                            <div class="card-body">
+                                <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>L’état des lieux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert-notice alert-notice-quarantary">
+                    <img src="../../../assets/img/smartloc/illustrations/bouclier.png" class="notice-illustration" alt="">
+                    <div class="notice-info">
+                        <h3 class="notice-title">La notice d’information</h3>
+                        <span>La notice d'information que nous vous fournissons est une annexe obligatoire définie par décret. Elle résume les principales dispositions réglementaires régissant le bail loi 89 et remplace donc en pratique les conditions générales que vous aviez peut être l'habitude d'utiliser sur vos anciens modèles.</span>
+                        <div class="card smallCard mt-4">
+                            <div class="card-body">
+                                <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>La notice d’information</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert-notice alert-notice-tertiary">
+                    <img src="../../../assets/img/smartloc/illustrations/notes.png" class="notice-illustration" alt="">
+                    <div class="notice-info">
+                        <h3 class="notice-title">L’acte de caution solidaire</h3>
+                        <span>L'acte de caution solidaire que nous vous fournissons est une annexe optionnelle à utiliser uniquement si vous prenez un garant. Elle répond à des exigences formelles très strictes sur les informations à rappeler. Néanmoins depuis le 25 novembre 2018 les mentions manuscrites du garant ne sont plus obligatoires, nous vous fournissons donc un modèle allégé conforme à la nouvelle loi ELAN.</span>
+                        <div class="card smallCard mt-4">
+                            <div class="card-body">
+                                <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>L’acte de caution solidaire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secion_subElement">
+                <h3>Autres annexes disponibles</h3>
+                <div class="cardsContainer_column smallCardsContainer">
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Diagnostics (DPE, Plomb, ERNT)</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Extrait du réglement de copropriété</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Liste des charges récupérables</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Bail parking séparé</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Inventaire des meubles</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Avenant au bail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sectionModeleBail">
+        <h2 class="section_sideTitle">Quel modèle  de bail choisir ?</h2>
+        <div class="section_content">
+            <div class="section_subElement">
+                <p>Notre module en ligne vous permet de remplir le bail de location d'une résidence principale d'habitation, louée vide ou meublée à une personne physique.</p>
+                <p>Nous distinguons ensuite plusieurs types d'occupation :</p>
+                <ul class="styled_list">
+                    <li>le bail standard : pour un bien loué en entier à une personne seule.</li>
+                    <li>le bail de colocation unique : vous louez un bien en entier, à plusieurs locataires, quelque soit leur régime matrimonial, avec ou sans clause de solidarité.</li>
+                    <li>le bail de colocation individuel : vous louez plusieurs chambres dans un logement, avec des baux distincts pour chaque chambre.</li>
+                    <li>le bail étudiant : vous louez à un étudiant pour une durée de 9 mois non renouvelable. Uniquement possible en location meublée. C'est un bail optionnel, vous pouvez choisir un bail standard pour un étudiant.</li>
+                    <li>le bail mixte professionnel : vous louez à une personne physique profession libérale, qui souhaite exercer son activité dans une partie du logement.</li>
+                </ul>
+                <p>Ces modèles de bail de location entre particuliers ne doivent pas être utilisés dans d'autres cas : si le logement est loué pour un logement de fonction via une société, pour une résidence secondaire ou pour un bail commercial. Dans ces trois cas nous vous fournissons des modèles séparés :</p>
+            </div>
+            <div class="section_subElement">
+                <div class="cardsContainer_column smallCardsContainer">
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Bail société en logement de fonction</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Bail résidence secondaire</span>
+                        </div>
+                    </div>
+                    <div class="card smallCard">
+                        <div class="card-body">
+                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span>Bail commercial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>

@@ -15,8 +15,6 @@ main
 
 header{
     position: relative;
-    width: 100%;
-    padding-top: 2.5rem;
     padding-bottom: 8rem;
     background-color: #F9DCA5;
 }
@@ -110,13 +108,5 @@ section
     .header__searchBar
     {
         padding: 0 5rem;
-    }
-
-    .cardsContainer
-    {
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -ms-flex-direction: column;
-        flex-direction: column;
     }
 }

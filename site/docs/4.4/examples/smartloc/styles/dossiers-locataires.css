@@ -14,7 +14,6 @@ main
 header
 {
     height : 2.5rem;
-    margin-top: 2.5rem;
     margin-bottom: 3.75rem;
     padding: 0px 10rem 0px 10rem;
     display: -ms-flexbox;
@@ -25,12 +24,7 @@ header
     align-items: center; 
 }
 
-.header__logo
-{
-    max-width: 13%;
-}
-
-.headerButtonsContainer
+.headerDossiers_buttonsContainer
 {
     height: inherit;
     display: -ms-flexbox;
@@ -42,13 +36,13 @@ header
     width: 42%;
 }
 
-.headerButtonsContainer a 
+.headerDossiers_buttonsContainer a 
 {
     margin-left: 1rem;
     text-decoration: none !important;
 }
 
-.headerButtonsContainer a:first-child
+.headerDossiers_buttonsContainer a:first-child
 {
     color: black !important;
 }

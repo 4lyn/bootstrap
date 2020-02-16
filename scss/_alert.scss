@@ -57,14 +57,14 @@
   display: flex;
   align-items: flex-start;
   color: black !important;
-  background-color: #F4F4F4;
+  background-color: #fff;
   padding: $alert-padding-y $alert-padding-x;
   border-left: 8px solid;
   @include border-radius($alert-border-radius);
 
   .notice-info{
     *:last-child{
-      margin-bottom: 0;
+      margin-bottom: 0 !important; 
     }
 
     .notice-title{
