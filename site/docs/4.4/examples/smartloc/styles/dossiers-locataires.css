@@ -13,9 +13,7 @@ main
 
 header
 {
-    height : 2.5rem;
     margin-bottom: 3.75rem;
-    padding: 0px 10rem 0px 10rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
