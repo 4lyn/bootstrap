@@ -116,6 +116,11 @@ section.article
     font-weight: bold;
 }
 
+.frame_subElement_summary ul
+{
+    padding-left: 1rem;
+}
+
 .frame_subElement_doubleImage
 {
     display: -ms-flexbox;

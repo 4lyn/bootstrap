@@ -1,0 +1,98 @@
+@import "../styles/smartloc.css";
+@import "../styles/site-reccurent-elements.css";
+
+header
+{
+    width: 100%;
+    padding-top: 2.5rem;
+}
+
+.header_titling
+{
+    margin-top: 7.5rem;
+    margin-bottom: 10rem; 
+    display: flex;
+    flex-direction: row;
+}
+
+.header_illustration
+{
+    width: 330px;
+    height: 304px;
+    margin: 0 10%;
+}
+
+.header_infos, .header_step, .header_steps_container, .header_stickyNav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_infos
+{
+    margin-bottom: 8rem;
+}
+
+.header_infos_content
+{
+    margin-left: 4rem;
+}
+
+.header_infos_content ul li
+{
+    line-height: 1.5rem;
+    margin-bottom: .375rem;
+}
+
+.header_steps_container
+{
+    margin-bottom: 3.5rem;
+}
+
+.header_step
+{
+    width: 255px;
+    height: 120px;
+    padding: 0 1.75rem;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.header_step_number
+{
+    font-size: 72px;
+    font-family: Roobert;
+}
+
+.header_step h5
+{
+    width: 125px;
+    margin-bottom: 0;
+}
+
+.stickyNav_item_container
+{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+}   
+
+.stickyNav_item_container span
+{
+    padding-bottom: 20px;
+    margin-right: 1.5rem;
+}
+
+.stickyNav_item_container span:first-child
+{
+    border-bottom: solid 2px black;
+}
+
+.stickyNav_button
+{
+    width: 176px;
+    height: 32px;
+    padding: .25rem 0;
+}
