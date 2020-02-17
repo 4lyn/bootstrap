@@ -59,9 +59,16 @@ main{
 
 section, header, footer
 {
+    position: relative;
     padding-right: 10rem;
     padding-left: 10rem;
     width: 100%;
+}
+
+section 
+{
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
 }
 
 ul

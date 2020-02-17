@@ -493,9 +493,6 @@ footer a
 
 .page_section
 {
-    position: relative;
-    padding-bottom: 136px;
-    padding-top: 136px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -630,7 +627,7 @@ footer a
 }
 
 /* section accompagnement des experts sur bail, gestion et assurance */
-.expertsHelp h1
+.sectionExpertsHelp h1
 {
     margin-bottom: 5rem;
     text-align: center;
@@ -724,8 +721,9 @@ footer a
 /* section violette avec shapes et bouton demarrer  */
 .sectionSmartlocHelp
 {
-    width: 100%;
-    height: 28rem;
+    width: 100%;    
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
     position: relative;
     display: -ms-flexbox;
     display: flex;

@@ -15,17 +15,12 @@ header{
 
 /* MAIN */
 
-section
-{
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
-}
-
 /* SECTION ARTICLE */
 
 section.article
 {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .article_frame
@@ -33,7 +28,6 @@ section.article
     background-color: #fff;
     padding: 144px;
     padding-top: 118px;
-    margin-bottom: 8.5rem;
 }
 
 .article_photo

@@ -87,21 +87,17 @@ header{
 
 /* MAIN */
 
+/* padding de sections des pages hub home et hub categorie differents du reste du site */
 section
 {
-    margin-top: 6.5rem;
+    padding-top: 6.5rem;
+    padding-bottom: 0;
 }
 
 .section_title
 {
     margin-bottom: 2.5rem;
 }
-
-.sectionContact
-{
-    margin-top: 4.5rem;
-}
-
 
 /* responsive */
 
