@@ -59,8 +59,18 @@
   color: black !important;
   background-color: #fff;
   padding: $alert-padding-y $alert-padding-x;
-  border-left: 8px solid;
+  border: $alert-border-width solid rgba(0, 0, 0, 0.1);
   @include border-radius($alert-border-radius);
+
+  &::before {
+    position: absolute;
+    top: -$alert-border-width;
+    bottom: -$alert-border-width;
+    left: -$alert-border-width;
+    content: "";
+    @include border-left-radius($alert-border-radius);
+    width: 8px;
+  }
 
   .notice-info{
     *:last-child{
@@ -80,6 +90,10 @@
   .notice-illustration{
     width: 7rem;
     margin-right: 2.5rem;
+
+    img{
+      width: 100%;
+    }
   }
 
 }
@@ -141,6 +155,8 @@
   }
   
   .alert-notice-#{$color} {
-    border-color: theme-color($color);
+    &::before {
+      background-color: theme-color($color);
+    }
   }
 }

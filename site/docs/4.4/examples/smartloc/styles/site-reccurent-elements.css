@@ -95,11 +95,21 @@
     flex-direction: row;
 }
 
-.headerSteps_illustration
+.headerSteps_titling_text
 {
-    width: 330px;
-    height: 304px;
-    margin: 0 10%;
+    min-width: 50%;
+}
+
+.headerSteps_titling_illustration
+{
+    max-width: 25%;
+    min-width: 25%;
+    margin: 0px 12.5%;
+}
+.headerSteps_titling_illustration img
+{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -141,8 +151,8 @@
 
 .headerSteps_step
 {
-    width: 255px;
-    height: 120px;
+    width: 31%;
+    height: 7.5rem;
     padding: 0 1.75rem;
     -ms-flex-align: center;
     align-items: center;
@@ -152,11 +162,12 @@
 
 .headerSteps_step_number
 {
-    font-size: 72px;
+    margin-right: 1.5rem;
+    font-size: 4.5rem;
     font-family: Roobert;
 }
 
-.headerSteps_step h5
+.headerSteps_step_text
 {
     width: 125px;
     margin-bottom: 0;
@@ -396,6 +407,7 @@ footer a
     margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -404,7 +416,9 @@ footer a
 .cardsContainer_column
 {
     margin-top: -2rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
 }
 
@@ -477,9 +491,26 @@ footer a
 
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
 
-section
+.page_section
 {
     position: relative;
+    padding-bottom: 136px;
+    padding-top: 136px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.page_section_content
+{
+    margin-left: 2rem;
+}
+
+.page_section_sideTitle
+{
+    max-width: 16rem;  /* permet de donner une taille absolument constente */
+    min-width: 16rem;  /* et eviter les resizes automatiques */
 }
 
 /* permet de selectionner toutes les div subElements sauf la derniere */
@@ -498,27 +529,22 @@ section
     margin-bottom: 1em
 }
 
-.section_content
-{
-    margin-left: 2rem;
-}
-
-.section_sideTitle
-{
-    max-width: 16rem;  /* permet de donner une taille absolument constente */
-    min-width: 16rem;  /* et eviter les resizes automatiques */
-}
-
 /* stickynav haut d'ecran avec bouton demarrer */
 .stickyTopNav
 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 0 10rem;
     padding-top: .875rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #fff;
     z-index: 20;
@@ -537,6 +563,9 @@ section
 
 .stickyTopNav_item
 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     padding-bottom: 20px;
     margin-right: 1.5rem;
     color: black;
@@ -564,13 +593,16 @@ section
 .stickyTopNav_jumper
 {
     position: absolute;
-    top: -4rem;
+    top: -3rem;
 }
 
 /* stickynav sur le cote d'une section */
 .stickySideNav
 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    position: -webkit-sticky;
     position: sticky;
     top: 6rem;
 }

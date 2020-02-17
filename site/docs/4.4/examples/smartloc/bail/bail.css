@@ -1,16 +1,6 @@
 @import "../styles/smartloc.css";
 @import "../styles/site-reccurent-elements.css";
 
-section
-{
-    padding-bottom: 136px;
-    padding-top: 136px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
 .sectionBailAnnexe .alert-notice
 {
     margin-top: 2rem;

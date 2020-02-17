@@ -1,0 +1,25 @@
+@import "../styles/smartloc.css";
+@import "../styles/site-reccurent-elements.css";
+
+.fonctionnalite
+{
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.fonctionnalite img
+{
+    width: 3.5rem;
+    margin-bottom: .875rem;
+}
+
+.sectionUsage .alert-notice
+{
+    margin-top: 2rem;
+}
