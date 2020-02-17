@@ -404,6 +404,7 @@ footer a
 /* container des cards présent sur l'ensemble du site */
 .cardsContainer_row
 {
+    width: calc(100% + 2rem);
     margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
     display: -ms-flexbox;
     display: flex;
@@ -415,6 +416,7 @@ footer a
 
 .cardsContainer_column
 {
+    width: calc(100% + 2rem);
     margin-top: -2rem;
     display: -ms-flexbox;
     display: flex;
@@ -422,17 +424,16 @@ footer a
     flex-flow: column wrap;
 }
 
-/* permet de selectionner n'importe quel objet de type card, meme les non-bootstrap, qui sont à l'intérieur de n'importe quel cardsContainer*/
 .cardsContainer_row .card, .cardsContainer_column .card
 {
     margin-top: 2rem; /* Applique un margin top sur les cards pour eviter mauvais reponsive */
+    margin-right: 2rem;
 }
 
 /* petites cards sur une seule ligne avec un icone */
-/* ecrase le margin original pour l'adapter aux petites cards */
 .smallCardsContainer
 {
-    margin-top: -1rem;
+    margin-top: -1rem; /* ecrase le margin original pour l'adapter aux petites cards */
 }
 
 .smallCardsContainer .smallCard
@@ -451,46 +452,11 @@ footer a
     margin-right: .25rem;
 }
 
-/* cards de categorie, present sur pages hub home et hub categories */
-.categoriesCard
-{
-    width: 16rem;
-    border: none;
-}
-
-.categoriesCard_illustration
-{
-    width: 50%;
-}
-
-/* cards d'articles a lire */
-.articlesCard
-{
-    max-width: 22rem;
-    border: none;
-}
-
-.articlesCard_infos
-{
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.articlesCard_preview p
-{
-    margin-bottom: 0;
-}
-
 
 
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
 
+/* style de section general */
 .page_section
 {
     display: -ms-flexbox;
@@ -506,19 +472,19 @@ footer a
 
 .page_section_sideTitle
 {
-    max-width: 16rem;  /* permet de donner une taille absolument constente */
-    min-width: 16rem;  /* et eviter les resizes automatiques */
+    max-width: 16rem;     /* permet de donner une taille absolument constente */
+    min-width: 16rem;     /* et eviter les resizes automatiques */
 }
 
-/* permet de selectionner toutes les div subElements sauf la derniere */
+
 .section_subElement:not(:last-child) 
 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem; /* permet de selectionner toutes les div subElements sauf la derniere */
 }
-/* permet de retirer un eventuel margin bottom non désiré a la fin d'un subElement */
+
 .section_subElement>*:last-child
 {
-    margin-bottom: 0;
+    margin-bottom: 0; /* permet de retirer un eventuel margin bottom non désiré a la fin d'un subElement */
 }
 
 .subElement_title
@@ -526,7 +492,7 @@ footer a
     margin-bottom: 1em
 }
 
-/* stickynav haut d'ecran avec bouton demarrer */
+/* stickynav en haut d'ecran avec bouton demarrer */
 .stickyTopNav
 {
     height: -webkit-fit-content;
@@ -593,6 +559,7 @@ footer a
     top: -3rem;
 }
 
+
 /* stickynav sur le cote d'une section */
 .stickySideNav
 {
@@ -619,12 +586,85 @@ footer a
     color:black;
 }
 
-/* permet, au moment du saut dans la page grace a l'ID, que la stickyNav ne cache pas le nom de partie */
+
 .stickySideNav_jumper
 {
-    position: absolute;
-    top: -5rem;
+    position: absolute;  /* permet, au moment du saut dans la page */
+    top: -5rem;          /* grace a l'ID, que la stickyNav ne cache pas le nom de partie */
 }
+
+
+/* section categorie, present sur pages hub home et hub categories */
+.categoriesCard
+{
+    flex: 1 1 20%;
+    min-width: 15rem;
+    max-width: 23.5rem;
+    border: none;
+}
+
+.categoriesCard_illustration
+{
+    width: 50%;
+}
+
+.categoriesCard .card-body
+{
+    width: max-content;
+}
+
+
+/* section suggestion d'articles */
+.articlesCard
+{
+    flex: 1 1 30%;
+    width: calc(100% - 2rem);
+    border: none;
+}
+
+.articlesCard_infos
+{
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.articlesCard_preview p
+{
+    margin-bottom: 0;
+}
+
+
+/* section temoignages */
+.sectionTemoignages
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sectionTemoignages h1
+{
+    text-align: center;
+    margin-bottom: 6.5rem;
+}
+
+.temoignageCard
+{
+    flex: 1 1 30%;
+    padding: 2rem;
+    border: none;
+    background-color: #f4f4f4;
+}
+
 
 /* section accompagnement des experts sur bail, gestion et assurance */
 .sectionExpertsHelp h1
@@ -635,8 +675,10 @@ footer a
 
 .expertsHelpCard
 {
-    width: 352px;
-    height: 256px;
+    position: relative;
+    width: calc(100% - 2rem);
+    min-height: 16rem;
+    flex: 1 1 30%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -645,6 +687,7 @@ footer a
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    background-color: #f4f4f4;
     border: none;
 }
 
@@ -659,17 +702,28 @@ footer a
     text-align: center;
 }
 
-.bail_card
+.expertsHelpCard_background
 {
-    background: left 0 bottom 0 / 30% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_1.png") #f4f4f4;
+    position: absolute;
 }
-.gestion_card
+
+.bail_card .expertsHelpCard_background
 {
-    background: left 0 bottom 0 / 50% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_2.png") #f4f4f4;
+    left:0;
+    bottom: 0;
+    height: 45%;
 }
-.assurance_card
+.gestion_card .expertsHelpCard_background
 {
-    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_card_3.png") #f4f4f4;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+}
+.assurance_card .expertsHelpCard_background
+{
+    right: 0;
+    bottom: 0;
+    height: 50%;
 }
 
 
@@ -682,18 +736,17 @@ footer a
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fff;
-}
-
-.sectionExpertsContact div
-{
-    margin-top: 4rem;
 }
 
 .sectionExpertsContact h1
 {
     width: 28rem;
     text-align: center;
+}
+
+.sectionExpertsContact_images, .sectionExpertsContact_links
+{
+    margin-top: 4rem;
 }
 
 .sectionExpertsContact_images
@@ -844,7 +897,8 @@ footer a
 
 .sectionDocuments .smallCard
 {
-    width: 48.5%;
+    flex: 1 1 45%;
+    width: calc(100% - 2rem);
 }
 
 

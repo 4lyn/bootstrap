@@ -52,6 +52,11 @@ h5
     font-size: 1rem;
     line-height: 1.5rem;
 }
+h6
+{
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
 
 main{
     width: 100%;
