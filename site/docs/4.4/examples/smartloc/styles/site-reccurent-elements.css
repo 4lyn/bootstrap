@@ -103,7 +103,7 @@
 }
 
 
-.headerSteps_infos, .headerSteps_step, .headerSteps_steps_container, .headerSteps_stickyNav
+.headerSteps_infos, .headerSteps_step, .headerSteps_steps_container
 {
     display: -ms-flexbox;
     display: flex;
@@ -161,37 +161,6 @@
     width: 125px;
     margin-bottom: 0;
 }
-
-/* stickynav du headersteps avec bouton demarrer */
-.headerSteps .stickyNav_item_container
-{
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}   
-
-.headerSteps .stickyNav_item_container span
-{
-    padding-bottom: 20px;
-    margin-right: 1.5rem;
-}
-
-.headerSteps .stickyNav_item_container span:first-child
-{
-    border-bottom: solid 2px black;
-}
-
-.headerSteps .stickyNav_button
-{
-    width: 176px;
-    height: 32px;
-    padding: .25rem 0;
-}
-
 
 /************* FOOTER *************/
 
@@ -508,6 +477,11 @@ footer a
 
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
 
+section
+{
+    position: relative;
+}
+
 /* permet de selectionner toutes les div subElements sauf la derniere */
 .section_subElement:not(:last-child) 
 {
@@ -519,16 +493,108 @@ footer a
     margin-bottom: 0;
 }
 
+.subElement_title
+{
+    margin-bottom: 1em
+}
+
 .section_content
 {
     margin-left: 2rem;
 }
 
-/* permet de donner une taille absolument constente et eviter les resizes automatiques */
 .section_sideTitle
 {
-    max-width: 16rem;
-    min-width: 16rem;
+    max-width: 16rem;  /* permet de donner une taille absolument constente */
+    min-width: 16rem;  /* et eviter les resizes automatiques */
+}
+
+/* stickynav haut d'ecran avec bouton demarrer */
+.stickyTopNav
+{
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    padding: 0 10rem;
+    padding-top: .875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 20;
+}
+
+ .stickyTopNav_linkContainer
+{
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}   
+
+.stickyTopNav_item
+{
+    padding-bottom: 20px;
+    margin-right: 1.5rem;
+    color: black;
+    transition: .1s ease-in-out;
+}
+.stickyTopNav_item:hover
+{
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.493);
+}
+
+.stickyTopNav_item_active
+{
+    border-bottom: solid 2px black;
+}
+
+.stickyTopNav_button
+{
+    width: 176px;
+    height: 32px;
+    padding: .25rem 0;
+}
+
+.stickyTopNav_jumper
+{
+    position: absolute;
+    top: -4rem;
+}
+
+/* stickynav sur le cote d'une section */
+.stickySideNav
+{
+    height: fit-content;
+    position: sticky;
+    top: 6rem;
+}
+
+.stickySideNav_item
+{
+    color: rgba(0, 0, 0, 0.6);
+    transition: .1s ease-in-out;
+}
+.stickySideNav_item:hover
+{
+    color: black;
+    text-decoration: none;
+}
+.stickySideNav_item_active
+{
+    color:black;
+}
+
+/* permet, au moment du saut dans la page grace a l'ID, que la stickyNav ne cache pas le nom de partie */
+.stickySideNav_jumper
+{
+    position: absolute;
+    top: -5rem;
 }
 
 /* section accompagnement des experts sur bail, gestion et assurance */
