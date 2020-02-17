@@ -594,6 +594,34 @@ footer a
 }
 
 
+/* items drop down */
+.dropDownItem
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.dropDownHead
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropDownHead_icon_open
+{
+    display: block;
+}
+.dropDownHead_icon_close
+{
+    display: none;
+}
+
+
 /* section categorie, present sur pages hub home et hub categories */
 .categoriesCard
 {

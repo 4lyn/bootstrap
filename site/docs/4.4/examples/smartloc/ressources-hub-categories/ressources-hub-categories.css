@@ -99,6 +99,48 @@ section
     margin-bottom: 2.5rem;
 }
 
+
+/* sous categories drop down */
+.subCategories_dropDown
+{
+    height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
+    padding: 0 1.5rem;
+    line-height: 2rem;
+    border-radius: .25rem;
+    background-color: #fff;
+}
+
+.subCategories_dropDown:not(:first-child)
+{
+    margin-top: 1.5rem;
+}
+
+.subCategories_dropDown .dropDownHead
+{
+    padding: 1.25rem 0;
+}
+
+.subCategories_dropDown .dropDownContent
+{
+    padding-bottom: 1.5rem;
+}
+
+.subCategories_dropDown .dropDownContent p
+{
+    width: 100%;
+    padding-bottom: 1.125rem;
+    border-bottom: 1px dashed black;
+    text-overflow: ellipsis;  /* permet d'eviter le retour a la ligne */
+    overflow: hidden;
+    white-space: nowrap;
+}
+.subCategories_dropDown .dropDownContent p:last-child
+{
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 /* responsive */
 
 @media (max-width: 750px)

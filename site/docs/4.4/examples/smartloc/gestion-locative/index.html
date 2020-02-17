@@ -389,11 +389,15 @@ extra_css: "gestion-locative.css"
 
     let set_active = function(items, jumpers, className)
     {
-        window.addEventListener('scroll', () => {
-            for (let i = 0; i < items.length; i++) {
+        window.addEventListener('scroll', () => 
+        {
+            for (let i = 0; i < items.length; i++) 
+            {
                 let posY = jumpers[i].getBoundingClientRect().top+window.scrollY
-                if (window.pageYOffset>(posY-5)) {
-                    for (let j = 0; j < items.length; j++) {
+                if (window.pageYOffset>(posY-5)) 
+                {
+                    for (let j = 0; j < items.length; j++) 
+                    {
                         items[j].classList.remove(className+'_active');
                     }
                     items[i].classList.add(className+'_active');
