@@ -663,6 +663,50 @@ footer a
     padding: 2rem;
     border: none;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.temoignage_bottomContainer h6
+{
+    margin-bottom: 1.125rem
+}
+
+.temoignage_avisVerifPicture
+{
+    width: 170px;
+    margin-top: 5.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.temoignage_partenairesPicContainer
+{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.temoignage_partenairesPicContainer img{
+    width: auto;
+    height: 48px;
+}
+
+.temoignage_shape
+{
+    position: absolute;
+}
+.temoignage_shape.couronneNoir
+{
+    left: -20px;
+    bottom: 90px;
+}
+.temoignage_shape.rondJaune
+{
+    top: 20px;
+    right: -90px;
 }
 
 
