@@ -149,6 +149,106 @@ extra_css: "gestion-locative.css"
         <div class="stickyTopNav_jumper" id="questions"></div>
         <h2 class="page_section_sideTitle">Vos questions</h2>
         <div class="page_section_content">
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Gérez vous les encaissements ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p>Non les loyers sont directement encaissés par le propriétaire pour des raisons de coût et de simplicté. Si les loyers sont correctement payés il vous suffit de transférer la quittance que nous vous envoyons au locataire. En cas de retard ou d'impayés, notre outil vous guide pas à pas sur les démarches à effectuer, que vous ayez ou non pris notre garantie loyer impayé.</p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Comment fonctionne l'envoi des quittances ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Que se passe-t-il en cas d'impayés ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Gérez-vous la recherche du locataire ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Vérifiez-vous les dossiers des locataires ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Rédigez-vous le bail ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Est-ce que vous vous occupez de la déclaration fiscale ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Comment fonctionne l'assistance ? Peut-on vous appeler ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Comment sont gérés les incidents techniques ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
+            <div class="question_dropDown dropDownItem">
+                <div class="dropDownHead">
+                    <span>Proposez-vous d'autres assurances que la garantie loyer impayé ?</span>
+                    <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                </div>
+                <div class="dropDownContent">
+                    <p></p>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -382,6 +482,7 @@ extra_css: "gestion-locative.css"
 
 <!-- SCRIPT -->
 <script>
+    // STICKY TOP NAV
     let stickyTopNav_items = document.querySelectorAll('.stickyTopNav_item');
     stickyTopNav_items[0].classList.add('stickyTopNav_item_active');
 
@@ -407,4 +508,36 @@ extra_css: "gestion-locative.css"
     }
 
     set_active(stickyTopNav_items, stickyTopNav_jumpers, "stickyTopNav_item")
+
+    // QUESTIONS DROPDOWN
+    let dropDown_items = document.querySelectorAll(".dropDownItem");
+        let dropDown_heads = document.querySelectorAll(".dropDownHead");
+        let dropDown_contents = document.querySelectorAll(".dropDownContent");
+        let dropDown_icon_open = document.querySelectorAll(".dropDownHead_icon_open");
+        let dropDown_icon_close = document.querySelectorAll(".dropDownHead_icon_close");
+    
+        for (let i = 0; i < dropDown_heads.length; i++) 
+        {
+            let toggle = false;
+            let dropHeight = dropDown_contents[i].offsetHeight + dropDown_items[i].offsetHeight;
+            dropDown_heads[i].addEventListener('click', () => 
+            {
+                if (toggle) 
+                {
+                    dropDown_items[i].style.height = dropDown_heads[i].offsetHeight+"px";
+                    dropDown_icon_open[i].style.display = "block";
+                    dropDown_icon_close[i].style.display = "none";
+                    toggle = false;
+                }
+                else
+                {
+                    dropDown_items[i].style.height = dropHeight+"px";
+                    dropDown_icon_open[i].style.display = "none";
+                    dropDown_icon_close[i].style.display = "block";
+                    toggle = true;
+                };
+    
+            });
+        };
+
 </script>

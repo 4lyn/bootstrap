@@ -622,6 +622,24 @@ footer a
 }
 
 
+/* section de question */
+.question_dropDown
+{
+    height: 50px;
+    margin-top: 2rem;
+    border-bottom: 1px dashed black;
+}
+.question_dropDown:first-child
+{
+    margin: 0;
+}
+
+.question_dropDown .dropDownHead
+{
+    padding-bottom: 1.5rem;
+}
+
+
 /* section categorie, present sur pages hub home et hub categories */
 .categoriesCard
 {
