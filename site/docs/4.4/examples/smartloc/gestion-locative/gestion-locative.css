@@ -19,6 +19,11 @@
     margin-bottom: .875rem;
 }
 
+.sectionUsage .section_subElement:not(:first-of-type) .subElement_title
+{
+    padding-top: 1.5rem;
+}
+
 .sectionUsage .alert-notice
 {
     margin-top: 2rem;

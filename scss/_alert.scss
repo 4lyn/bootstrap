@@ -10,6 +10,10 @@
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
 
+  p, ul {
+    margin-bottom: .5rem;
+  }
+
   &>p{
     &:first-of-type{
       margin-top: 24px;
@@ -45,11 +49,15 @@
     }
   }
 
-  .advice-illustration{
-    width: 7rem;
-    margin-right: 2.5rem;
+  p, ul {
+    margin-bottom: .5rem;
   }
 
+  .advice-illustration{
+    max-width: 7rem;
+    min-width: 7rem;
+    margin-right: 2.5rem;
+  }
 }
 
 .alert-notice {
@@ -72,30 +80,34 @@
     width: 8px;
   }
 
-  .notice-info{
-    *:last-child{
+  .notice-info {
+    *:last-child {
       margin-bottom: 0 !important; 
     }
 
-    .notice-title{
+    .notice-title {
       margin-bottom: 1rem;
     }
 
-    a{
+    a {
       color: black;
       text-decoration: underline;
     }
-  }
 
-  .notice-illustration{
-    width: 7rem;
-    margin-right: 2.5rem;
+    p, ul {
+      margin-bottom: .5rem;
+    }
 
-    img{
-      width: 100%;
+    li {
+      margin-bottom: 0;
     }
   }
 
+  .notice-illustration {
+    max-width: 7rem;
+    min-width: 7rem;
+    margin-right: 2.5rem;
+  }
 }
 
 // Headings for larger alerts
@@ -106,7 +118,7 @@
   align-items: center;
   flex-direction: row;
 
-  span{
+  span {
     margin-left: 16px;
     font-weight: bold;
   }

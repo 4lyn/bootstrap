@@ -5308,6 +5308,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   border-radius: 0.25rem;
 }
 
+.alert p, .alert ul {
+  margin-bottom: .5rem;
+}
+
 .alert > p:first-of-type {
   margin-top: 24px;
 }
@@ -5341,8 +5345,13 @@ a.badge-dark:focus, a.badge-dark.focus {
   text-decoration: underline;
 }
 
+.alert-advice p, .alert-advice ul {
+  margin-bottom: .5rem;
+}
+
 .alert-advice .advice-illustration {
-  width: 7rem;
+  max-width: 7rem;
+  min-width: 7rem;
   margin-right: 2.5rem;
 }
 
@@ -5383,13 +5392,18 @@ a.badge-dark:focus, a.badge-dark.focus {
   text-decoration: underline;
 }
 
-.alert-notice .notice-illustration {
-  width: 7rem;
-  margin-right: 2.5rem;
+.alert-notice .notice-info p, .alert-notice .notice-info ul {
+  margin-bottom: .5rem;
 }
 
-.alert-notice .notice-illustration img {
-  width: 100%;
+.alert-notice .notice-info li {
+  margin-bottom: 0;
+}
+
+.alert-notice .notice-illustration {
+  max-width: 7rem;
+  min-width: 7rem;
+  margin-right: 2.5rem;
 }
 
 .alert-heading {
