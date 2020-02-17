@@ -639,13 +639,6 @@ footer a
     padding-bottom: 1.5rem;
 }
 
-/* .question_dropDown .dropDownContent p
-{
-    text-overflow: ellipsis; 
-    overflow: hidden;
-    white-space: nowrap;
-} */
-
 
 /* section categorie, present sur pages hub home et hub categories */
 .categoriesCard
@@ -727,14 +720,15 @@ footer a
 
 .temoignage_avisVerifPicture
 {
-    width: 170px;
+    width: 11rem;
     margin-top: 5.5rem;
     margin-bottom: 2.5rem;
 }
 
 .temoignage_partenairesPicContainer
 {
-    width: 80%;
+    width: 90%;
+    padding: 0 10rem;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -745,6 +739,7 @@ footer a
 .temoignage_partenairesPicContainer img{
     width: auto;
     height: 48px;
+    filter: grayscale(100%);
 }
 
 .temoignage_shape
@@ -753,13 +748,15 @@ footer a
 }
 .temoignage_shape.couronneNoir
 {
-    left: -20px;
-    bottom: 90px;
+    height: 20rem;
+    left: 0;
+    bottom: 5rem;
 }
 .temoignage_shape.rondJaune
 {
-    top: 20px;
-    right: -90px;
+    height: 20rem;
+    right: 0;
+    top: 0;
 }
 
 
