@@ -639,6 +639,13 @@ footer a
     padding-bottom: 1.5rem;
 }
 
+/* .question_dropDown .dropDownContent p
+{
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
 
 /* section categorie, present sur pages hub home et hub categories */
 .categoriesCard

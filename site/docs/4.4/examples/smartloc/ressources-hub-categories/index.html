@@ -214,9 +214,10 @@ extra_css: "ressources-hub-categories.css"
     for (let i = 0; i < dropDown_heads.length; i++) 
     {
         let toggle = false;
-        let dropHeight = dropDown_contents[i].offsetHeight + dropDown_items[i].offsetHeight;
+        
         dropDown_heads[i].addEventListener('click', () => 
         {
+            let dropHeight = dropDown_contents[i].offsetHeight + dropDown_items[i].offsetHeight;
             if (toggle) 
             {
                 dropDown_items[i].style.height = dropDown_heads[i].offsetHeight+"px";
@@ -231,7 +232,12 @@ extra_css: "ressources-hub-categories.css"
                 dropDown_icon_close[i].style.display = "block";
                 toggle = true;
             };
-
+        });
+        window.addEventListener('resize', ()=> {
+            dropDown_items[i].style.height = dropDown_heads[i].offsetHeight+"px";
+            dropDown_icon_open[i].style.display = "block";
+            dropDown_icon_close[i].style.display = "none";
+            toggle = false;
         });
     };
 </script>
