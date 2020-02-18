@@ -100,6 +100,18 @@ ul.styled_list li::before
     margin-right: .25rem;
 }
 
+
+@media screen and (min-width: 420px) {
+    html {
+        font-size: calc(10px + 6 * ((100vw - 420px) / 1020));
+    }
+}
+@media screen and (max-width: 420px) {
+    html {
+        font-size: calc(8px + 8 * ((100vw - 420px) / 1020));
+    }
+}
+
 @media (max-width: 1000px)
 {
     section, header, footer
