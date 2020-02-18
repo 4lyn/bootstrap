@@ -33,7 +33,7 @@
 }
 
 /* header d'articles */
-.headerArticle_titling{
+.header_articleTitling{
     margin: 3.875rem 0 0 0;
     display: -ms-flexbox;
     display: flex;
@@ -45,15 +45,15 @@
     align-items: center;
 }
 
-.headerArticle_titling a{
+.header_articleTitling a{
     color:black;
 }
 
-.headerArticle_titling h1{
+.header_articleTitling h1{
     margin: .5rem 0 0 0;
 }
 
-.headerArticle_infos
+.header_articleTitling_infos
 {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
@@ -67,7 +67,7 @@
     justify-content: flex-end;
 }
 
-.headerArticle_infos p
+.header_articleTitling_infos p
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -77,15 +77,15 @@
     margin-left: auto;
 }
 
-.headerArticle_infos img
+.header_articleTitling_infos img
 {
     width: 48px;
     height: 48px;
     margin-left: .5rem;
 }
 
-/* headerSteps : header des pages bail, gestion locative, assuranceloyer impayé */
-.headerSteps_titling
+/* header classic avec titre, bouton, illustration */
+.header_classicTitling
 {
     margin-top: 7.5rem;
     margin-bottom: 10rem; 
@@ -95,25 +95,25 @@
     flex-direction: row;
 }
 
-.headerSteps_titling_text
+.header_classicTitling_text
 {
     min-width: 50%;
 }
 
-.headerSteps_titling_illustration
+.header_classicTitling_illustration
 {
     max-width: 25%;
     min-width: 25%;
     margin: 0px 12.5%;
 }
-.headerSteps_titling_illustration img
+.header_classicTitling_illustration img
 {
     width: 100%;
     height: auto;
 }
 
-
-.headerSteps_infos, .headerSteps_step, .headerSteps_steps_container
+/* headerSteps : header des pages bail, gestion locative, assuranceloyer impayé */
+.header_steps, .header_steps_step, .header_steps_head
 {
     display: -ms-flexbox;
     display: flex;
@@ -123,33 +123,33 @@
     justify-content: space-between;
 }
 
-.headerSteps_infos
+.header_steps
 {
     margin-bottom: 8rem;
 }
 
-.headerSteps_infos_title
+.header_steps_title
 {
     min-width: 16rem;
 }
 
-.headerSteps_infos_content
+.header_steps_content
 {
     margin-left: 2rem;
 }
 
-.headerSteps_infos_content ul li
+.header_steps_content ul li
 {
     line-height: 1.5rem;
     margin-bottom: .375rem;
 }
 
-.headerSteps_steps_container
+.header_steps_head
 {
     margin-bottom: 3.5rem;
 }
 
-.headerSteps_step
+.header_steps_step
 {
     width: 31%;
     height: 7.5rem;
@@ -160,14 +160,14 @@
     border-radius: 4px;
 }
 
-.headerSteps_step_number
+.header_steps_step_number
 {
     margin-right: 1.5rem;
     font-size: 4.5rem;
     font-family: Roobert;
 }
 
-.headerSteps_step_text
+.header_steps_step_text
 {
     width: 125px;
     margin-bottom: 0;
