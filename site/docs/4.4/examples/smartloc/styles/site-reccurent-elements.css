@@ -134,8 +134,8 @@
 
 .header_articleTitling_infos img
 {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     margin-left: .5rem;
 }
 
@@ -172,12 +172,14 @@
 
 .header_classicTitling_linkContainer .header_classicTitling_button
 {
+    display: inline;
     margin-top: 0;
     margin-right: 2rem;
 }
 
 .header_classicTitling_button
 {
+    display: block;
     width: 17rem;
     margin-top: 2rem;
 }
@@ -199,7 +201,7 @@
 {
     width: auto;
     height: 18rem;
-    padding: 0px 15%;
+    padding: 0 15%;
 }
 .header_classicTitling_illustration img
 {
@@ -264,7 +266,7 @@
 
 .header_steps_step_text
 {
-    width: 125px;
+    width: 7.75rem;
     margin-bottom: 0;
 }
 
@@ -302,7 +304,7 @@ footer a
 
 .footer_containerLeft .whiteLogo
 {
-    width: 140px;
+    width: 8.75rem;
 }
 
 .footer_containerLeft a
@@ -362,7 +364,6 @@ footer a
 .footer_line
 {
     width: 100%;
-    min-width: 850px;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -457,6 +458,10 @@ footer a
     z-index: 10;
 }
 
+.frameContactConseiller_button
+{
+    width: 17rem;
+}
 
 .frameContactConseiller_title
 {
@@ -532,7 +537,7 @@ footer a
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding-bottom: 20px;
+    padding-bottom: 1.125rem;
     margin-right: 1.5rem;
     color: black;
     transition: .1s ease-in-out;
@@ -551,8 +556,8 @@ footer a
 
 .stickyTopNav_button
 {
-    width: 176px;
-    height: 32px;
+    width: 11rem;
+    height: 2rem;
     padding: .25rem 0;
 }
 
@@ -588,7 +593,6 @@ footer a
 {
     color:black;
 }
-
 
 .stickySideNav_jumper
 {
@@ -630,8 +634,8 @@ footer a
 /* container des cards présent sur l'ensemble du site */
 .cardsContainer_row
 {
-    width: calc(100% + 2rem);
-    margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
+    width: calc(100% + 2rem);   /* Permet d'agrandir et remonter le container ainsi permettre */
+    margin-top: -2rem;          /*  un margin top sur les cards enfants pour eviter mauvais reponsive */
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -719,10 +723,65 @@ footer a
 }
 
 
+/* section services proposés sur la homepage */
+.sectionServices
+{
+    padding-bottom: 0;
+}
+
+.serviceContainer
+{
+    height: 26.5rem;
+    padding: 0 4rem;
+    margin-top: 8.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.serviceContainer:first-child
+{
+    margin-top: 0;
+}
+
+.service_name
+{
+    font-size: .825rem;
+    font-family: Roobert;
+}
+
+.serviceContainer_content
+{
+    width: 40%;
+}
+
+.service_featureList
+{
+    margin: 1.5rem 0;
+}
+
+.service_featureList li
+{
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.service_featureList img
+{
+    margin-right: 12px;
+}
+
+.service_picture
+{
+    width: 50%;
+    height: auto;
+}
+
 /* section de question */
 .question_dropDown
 {
-    height: 50px;
+    height: 3.125rem;
     margin-top: 2rem;
     border-bottom: 1px dashed black;
 }
@@ -758,6 +817,11 @@ footer a
 
 
 /* section suggestion d'articles */
+.sesectionArticlesSuggestion h2
+{
+    margin-bottom: 2.5rem;
+}
+
 .articlesCard
 {
     flex: 1 1 30%;
@@ -977,6 +1041,7 @@ footer a
 
 .sectionExpertsContact_links a
 {
+    width: 16rem;;
     margin: 0 8px;
 }
 
@@ -1020,6 +1085,10 @@ footer a
     text-align: center;
 }
 
+.sectionSmartlocHelp_content a{
+    width: 17rem;
+}
+
 .sectionSmartlocHelp img:first-of-type
 {
     top: 0;
@@ -1049,6 +1118,7 @@ footer a
 .sectionDocuments .section_title
 {
     width: 100%;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -1057,7 +1127,7 @@ footer a
     width: 75%;
     height: 3rem;
     margin: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1066,7 +1136,7 @@ footer a
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    border: 2px solid black;
+    border: .125rem solid black;
     border-radius: 25px;
 }
 
@@ -1094,8 +1164,8 @@ footer a
 
 .sectionDocuments .blackMenu_item:nth-child(2)
 {
-    border-left : 2px solid black;
-    border-right : 2px solid black;
+    border-left : .125rem solid black;
+    border-right : .125rem solid black;
 }
 
 .sectionDocuments .blackMenu_item_active  /* classe pour le js */

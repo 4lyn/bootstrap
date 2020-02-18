@@ -15,7 +15,7 @@ header
 
 .header_logo
 {
-    width: 140px;
+    width: 8.75rem;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -82,18 +82,18 @@ ul
     padding-left: 0;
 }
 
-.styled_list ul
+.list_dotted ul
 {
     margin-top: .375rem;
 }
 
-.styled_list li
+.list_dotted li
 {
     line-height: 1.5rem;
     margin-bottom: .375rem;
 }
 
-ul.styled_list li::before
+ul.list_dotted li::before
 {
     content: "\2022";
     color: black;
