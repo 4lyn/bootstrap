@@ -151,9 +151,35 @@
     align-items: center;
 }
 
-.header_classicTitling_text
+.header_classicTitling_content
 {
     min-width: 45%;
+    max-width: 45%;
+}
+
+.header_classicTitling_text
+{
+    font-size: 1.125rem; 
+}
+
+.header_classicTitling_linkContainer
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.header_classicTitling_linkContainer .header_classicTitling_button
+{
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+.header_classicTitling_button
+{
+    width: 17rem;
+    margin-top: 2rem;
 }
 
 .header_classicTitling_photo
@@ -173,7 +199,7 @@
 {
     width: auto;
     height: 18rem;
-    margin: 0px 12.5%;
+    padding: 0px 15%;
 }
 .header_classicTitling_illustration img
 {
