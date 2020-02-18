@@ -142,29 +142,43 @@
 /* header classic avec titre, bouton, illustration */
 .header_classicTitling
 {
-    margin-top: 7.5rem;
-    margin-bottom: 10rem; 
+    padding-top: 7.5rem;
+    padding-bottom: 10rem; 
     display: -ms-flexbox; 
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
+    align-items: center;
 }
 
 .header_classicTitling_text
 {
-    min-width: 50%;
+    min-width: 45%;
+}
+
+.header_classicTitling_photo
+{
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.header_classicTitling_photo img
+{
+    height: auto;
+    width: 100%;
 }
 
 .header_classicTitling_illustration
 {
-    max-width: 25%;
-    min-width: 25%;
+    width: auto;
+    height: 18rem;
     margin: 0px 12.5%;
 }
 .header_classicTitling_illustration img
 {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 /* headerSteps : header des pages bail, gestion locative, assuranceloyer impayé */
@@ -813,7 +827,7 @@ footer a
 
 .temoignage_partenairesPicContainer img{
     width: auto;
-    height: 48px;
+    height: 3rem;
     filter: grayscale(100%);
 }
 

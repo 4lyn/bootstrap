@@ -1,3 +1,13 @@
 @import "../styles/smartloc.css";
 @import "../styles/site-reccurent-elements.css";
 
+header
+{
+    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_header_home.svg") #A896D8;
+}
+
+.header_classicTitling
+{
+    padding-top: 72px;
+    padding-bottom: 104px; 
+}
