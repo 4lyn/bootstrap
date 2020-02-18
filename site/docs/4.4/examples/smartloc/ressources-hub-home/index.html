@@ -6,7 +6,7 @@ extra_css: "ressources-hub-home.css"
 
 <!-- HEADER -->
 
-<header>
+<header class="headerHub">
     <nav class="header_classicNav">
         <img src="../../../assets/img/smartloc/logos/logo.png" class="header_logo">
         <div class="header_classicNav_linksContainer">
@@ -20,24 +20,25 @@ extra_css: "ressources-hub-home.css"
         </div>
     </nav>
 
-    <h1>Bienvenue sur notre hub de ressources.</h1>
-    <div class="header_searchBar">
+    <h1 class="headerHub_titling">Bienvenue sur notre hub de ressources.</h1>
+
+    <div class="headerHub_searchBar">
         <form class="form-inline">
             <input class="form-control" type="search" placeholder="Recherche" aria-label="Recherche">
-            <button class="header_searchBar_icon">
+            <button class="headerHub_searchBar_icon">
             </button>
         </form>
     </div>
 
-    <img src="../../../assets/img/smartloc/illustrations/shapes/shapes.png" class="header_shapes">
+    <img src="../../../assets/img/smartloc/illustrations/shapes/shapes.png" class="headerHub_illustration">
 </header>
 
 <!-- MAIN -->
 
 <main>
     <!-- SECTION CATEGORIES -->
-    <section class="sectionCategories">
-        <h2 class="section_title">Catégories</h2>
+    <section class="sectionCategories sectionHub">
+        <h2 class="sectionHub_title">Catégories</h2>
         <div class="cardsContainer_row">
             <div class="card categoriesCard">
                 <div class="card-header">
@@ -103,8 +104,8 @@ extra_css: "ressources-hub-home.css"
     </section>
 
     <!-- SECTION ARTICLES -->
-    <section class="sectionArticlesSuggestion">
-        <h2 class="section_title">Derniers articles</h2>
+    <section class="sectionArticlesSuggestion sectionHub">
+        <h2 class="sectionHub_title">Derniers articles</h2>
         <div class="cardsContainer_row">
             <div class="card articlesCard">
                 <div class="card-body">
@@ -182,8 +183,8 @@ extra_css: "ressources-hub-home.css"
     </section>   
         
     <!-- SECTION DOCUMENTS -->
-    <section class="sectionDocuments">
-        <h2 class="section_title"> Les fiches et documents clés</h2>
+    <section class="sectionDocuments sectionHub">
+        <h2 class="section_title sectionHub_title"> Les fiches et documents clés</h2>
         <div class="blackMenu">
             <p class="blackMenu_item">Bail</p>
             <p class="blackMenu_item">Assurance</p>
@@ -232,7 +233,7 @@ extra_css: "ressources-hub-home.css"
     </section>
 
     <!-- SECTION CONTACT -->
-    <section class="sectionContact">
+    <section class="sectionContact sectionHub">
         <div class="frameContactConseiller">
             <img src="../../../assets/img/smartloc/illustrations/shapes/rond-violet.png" alt="">
             <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">

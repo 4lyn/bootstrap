@@ -32,6 +32,61 @@
     color: black !important;
 }
 
+
+/* header ressource hub home et categories */
+.headerHub
+{
+    background-color: #F9DCA5;
+}
+
+.headerHub_illustration
+{
+    position: absolute;
+    bottom:0;
+}
+
+.headerHub_searchBar
+{
+    width: 100%;
+    padding: 0 10rem;
+    position: absolute;
+    bottom:0;
+    left: 0; 
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    z-index: 10;
+}
+
+/* ajouter a bootstrap */
+.headerHub_searchBar>form
+{
+    position: relative;
+}
+
+.headerHub_searchBar input
+{
+    width: 100% !important;
+    border-width: 1px;
+}
+
+.headerHub_searchBar_icon
+{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    background-image: url(../../../assets/img/smartloc/icons/search.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+
 /* header d'articles */
 .header_articleTitling{
     margin: 3.875rem 0 0 0;
@@ -399,98 +454,6 @@ footer a
     width:30%;
 }
 
-/************* CARDS *************/
-
-/* container des cards présent sur l'ensemble du site */
-.cardsContainer_row
-{
-    width: calc(100% + 2rem);
-    margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
-.cardsContainer_column
-{
-    width: calc(100% + 2rem);
-    margin-top: -2rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-}
-
-.cardsContainer_row .card, .cardsContainer_column .card
-{
-    margin-top: 2rem; /* Applique un margin top sur les cards pour eviter mauvais reponsive */
-    margin-right: 2rem;
-}
-
-/* petites cards sur une seule ligne avec un icone */
-.smallCardsContainer
-{
-    margin-top: -1rem; /* ecrase le margin original pour l'adapter aux petites cards */
-}
-
-.smallCardsContainer .smallCard
-{
-    margin-top: 1rem;
-}
-
-.smallCard
-{
-    font-weight: bold;
-}
-
-.smallCard_icon
-{
-    width: 1.5rem;
-    margin-right: .25rem;
-}
-
-
-
-/************* SECTIONS RECCURENTES SUR LE SITE *************/
-
-/* style de section general */
-.page_section
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
-.page_section_content
-{
-    margin-left: 2rem;
-}
-
-.page_section_sideTitle
-{
-    max-width: 16rem;     /* permet de donner une taille absolument constente */
-    min-width: 16rem;     /* et eviter les resizes automatiques */
-}
-
-
-.section_subElement:not(:last-child) 
-{
-    margin-bottom: 2.5rem; /* permet de selectionner toutes les div subElements sauf la derniere */
-}
-
-.section_subElement>*:last-child
-{
-    margin-bottom: 0; /* permet de retirer un eventuel margin bottom non désiré a la fin d'un subElement */
-}
-
-.subElement_title
-{
-    margin-bottom: 1em
-}
 
 /* stickynav en haut d'ecran avec bouton demarrer */
 .stickyTopNav
@@ -622,6 +585,100 @@ footer a
 }
 
 
+/************* CARDS *************/
+
+/* container des cards présent sur l'ensemble du site */
+.cardsContainer_row
+{
+    width: calc(100% + 2rem);
+    margin-top: -2rem; /* Permet de remonter le container et permettre un margin top sur les cards enfants pour eviter mauvais reponsive */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.cardsContainer_column
+{
+    width: calc(100% + 2rem);
+    margin-top: -2rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+.cardsContainer_row .card, .cardsContainer_column .card
+{
+    margin-top: 2rem; /* Applique un margin top sur les cards pour eviter mauvais reponsive */
+    margin-right: 2rem;
+}
+
+
+/* petites cards sur une seule ligne avec un icone */
+.smallCardsContainer
+{
+    margin-top: -1rem; /* ecrase le margin original pour l'adapter aux petites cards */
+}
+
+.smallCardsContainer .smallCard
+{
+    margin-top: 1rem;
+}
+
+.smallCard
+{
+    font-weight: bold;
+}
+
+.smallCard_icon
+{
+    width: 1.5rem;
+    margin-right: .25rem;
+}
+
+
+
+/************* SECTIONS RECCURENTES SUR LE SITE *************/
+
+/* style de section general */
+.page_section
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.page_section_content
+{
+    margin-left: 2rem;
+}
+
+.page_section_sideTitle
+{
+    max-width: 16rem;     /* permet de donner une taille absolument constente */
+    min-width: 16rem;     /* et eviter les resizes automatiques */
+}
+
+.section_subElement:not(:last-child) 
+{
+    margin-bottom: 2.5rem; /* permet de selectionner toutes les div subElements sauf la derniere */
+}
+
+.section_subElement>*:last-child
+{
+    margin-bottom: 0; /* permet de retirer un eventuel margin bottom non désiré a la fin d'un subElement */
+}
+
+.subElement_title
+{
+    margin-bottom: 1em
+}
+
+
 /* section de question */
 .question_dropDown
 {
@@ -683,6 +740,24 @@ footer a
 .articlesCard_preview p
 {
     margin-bottom: 0;
+}
+
+
+/* sections des pages hub home et categories */
+.sectionHub
+{
+    padding-top: 6.5rem;   /* padding de sections des pages hub home */
+    padding-bottom: 0;     /* et hub categorie differents du reste du site */
+    background-color: #F4F4F4;
+}
+.sectionHub:last-child
+{
+    padding-bottom: 10rem;
+}
+
+.sectionHub_title
+{
+    margin-bottom: 2.5rem;
 }
 
 
@@ -934,7 +1009,6 @@ footer a
 .sectionDocuments .section_title
 {
     width: 100%;
-    margin-bottom: 2.5rem;
     text-align: center;
 }
 

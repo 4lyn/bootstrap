@@ -1,104 +1,36 @@
 @import "../styles/smartloc.css";
 @import "../styles/site-reccurent-elements.css";
 
-body
-{
-    background-color: #F4F4F4;
-}
-
-main
-{
-    padding-bottom: 10rem;
-}
-
 /* HEADER */
 
-header{
-    position: relative;
-    width: 100%;
+.headerHub
+{
     padding-bottom: 3.75rem;
-    background-color: #F9DCA5;
 }
 
-.header_titling
+.headerHub_titling
 {
     margin: 3.875rem 0 0 0;
 }
 
-.header_titling a
+.headerHub_titling a
 {
     color:black;
 }
 
-.header_titling h1
+.headerHub_titling h1
 {
     margin: .5rem 0 0 0;
 }
 
-.header_searchBar
-{
-    width: 100%;
-    padding: 0 10rem;
-    position: absolute;
-    bottom:0;
-    left: 0; 
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
-    z-index: 10;
-}
 
-/* ajouter a bootstrap */
-
-.header_searchBar>form
+.headerHub_illustration
 {
-    position: relative;
-}
-
-.header_searchBar input
-{
-    width: 100% !important;
-    border-width: 1px;
-}
-
-.header_searchBar_icon
-{
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 1rem;
-    border: none;
-    background-color: transparent;
-    background-image: url(../../../assets/img/smartloc/icons/search.png);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-
-.header_illustration
-{
-    height: 50%; 
-    position: absolute;
-    bottom:0;
+    height: 50%;
     right: 20%; 
 }
 
 /* MAIN */
-
-/* padding de sections des pages hub home et hub categorie differents du reste du site */
-section
-{
-    padding-top: 6.5rem;
-    padding-bottom: 0;
-}
-
-.section_title
-{
-    margin-bottom: 2.5rem;
-}
-
 
 /* sous categories drop down */
 .subCategories_dropDown
@@ -153,7 +85,7 @@ section
         display: none;
     }
 
-    .header_searchBar
+    .headerHub_searchBar
     {
         padding: 0 5rem;
     }
