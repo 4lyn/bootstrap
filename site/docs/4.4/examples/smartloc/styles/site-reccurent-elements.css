@@ -934,6 +934,7 @@ footer a
 .sectionDocuments .section_title
 {
     width: 100%;
+    margin-bottom: 2.5rem;
     text-align: center;
 }
 
