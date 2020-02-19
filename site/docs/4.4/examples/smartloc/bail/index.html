@@ -23,9 +23,9 @@ extra_css: "bail.css"
 
     <div class="header_classicTitling">
         <div class="header_classicTitling_content">
-            <h1 class="mb-3">Bail de location et modèle de contrat de location vide ou meublé 2019.</h1>
-            <span class="header_classicTitling_text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna.</span>
-            <a href="" class="btn btn-dark header_classicTitling_button">Démarrer mon bail</a>
+            <h1 class="header_classicTitling_title">Bail de location et modèle de contrat de location vide ou meublé 2019.</h1>
+            <span class="header_classicTitling_subTitle">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna.</span>
+            <a href="" class="btn btn-dark header_classicTitling_button">Démarrer</a>
         </div>
         <div class="header_classicTitling_illustration">
             <img src="../../../assets/img/smartloc/illustrations/notes_illustrated.png" alt="">
@@ -285,13 +285,13 @@ extra_css: "bail.css"
     <section class="page_section sectionGuide">
         <div class="stickyTopNav_jumper" id="guide"></div>
         <div class="page_section_sideTitle">
-            <h2 class="subElement_title">Guide</h2>
+            <h2 class="stickySideNav_title">Guide</h2>
             <div class="stickySideNav">
-                <h4><a href="#duree" class="stickySideNav_item">Durée</a></h4>
-                <h4><a href="#loyer" class="stickySideNav_item">Loyer</a></h4>
-                <h4><a href="#charges" class="stickySideNav_item">Charges</a></h4>
-                <h4><a href="#depot" class="stickySideNav_item">Dépôt de garantie</a></h4>
-                <h4><a href="#clauses" class="stickySideNav_item">Clauses</a></h4>
+                <h4><a href="#guide_duree" class="stickySideNav_item">Durée</a></h4>
+                <h4><a href="#guide_loyer" class="stickySideNav_item">Loyer</a></h4>
+                <h4><a href="#guide_charges" class="stickySideNav_item">Charges</a></h4>
+                <h4><a href="#guide_depot" class="stickySideNav_item">Dépôt de garantie</a></h4>
+                <h4><a href="#guide_clauses" class="stickySideNav_item">Clauses</a></h4>
             </div>
         </div>
 
@@ -304,7 +304,7 @@ extra_css: "bail.css"
             </div>
 
             <div class="section_subElement">
-                <div id="duree" class="stickySideNav_jumper"></div>
+                <div id="guide_duree" class="stickySideNav_jumper"></div>
                 <h3 class="subElement_title">Durée du bail de location</h3>
                 <h4>En location vide</h4>
                 <p>La durée du bail est de 3 ans, 6 ans si le bailleur n'est pas une personne physique ou une SCI familiale.</p>
@@ -352,7 +352,7 @@ extra_css: "bail.css"
             </div>
 
             <div class="section_subElement">
-                <div id="loyer" class="stickySideNav_jumper"></div>
+                <div id="guide_loyer" class="stickySideNav_jumper"></div>
                 <h3 class="subElement_title">Loyer du contrat de location</h3>
                 <h4>En location vide</h4>
                 <p>Le loyer est habituellement payé mensuellement mais vous êtes libre de fixer la fréquence de paiement (trimestriellement ou annuellement par exemple).</p>
@@ -400,7 +400,7 @@ extra_css: "bail.css"
             </div>
 
             <div class="section_subElement">
-                <div id="charges" class="stickySideNav_jumper"></div>
+                <div id="guide_charges" class="stickySideNav_jumper"></div>
                 <h3 class="subElement_title">Charges du contrat de location</h3>
                 <h4>Quelles charges locatives récupérer ?</h4>
                 <p>Les charges que vous allez pouvoir récupérer auprès du locataires sont définies par un décret qui fixe une liste exhaustive et limitative. En copopriété il faut donc savoir que vous ne pourrez pas récupérer toutes vos charges de coproprité, en général le relevé annuel précise la part locataire (entre 50% et 75% des charges totales).</p>
@@ -438,7 +438,7 @@ extra_css: "bail.css"
             </div>
 
             <div class="section_subElement">
-                <div id="depot" class="stickySideNav_jumper"></div>
+                <div id="guide_depot" class="stickySideNav_jumper"></div>
                 <h3 class="subElement_title">Dépôt de garantie et honoraires</h3>
                 <p>Il est par ailleurs nécessaire de préciser dans le bail de location le dépôt de garantie qui est d'un mois de loyer hors charges maximum en location vide, 2 mois de loyer hors charges maximum en location meublée.</p>
                 <p>Enfin si vous passez par un intermédiaire professionnel pour réaliser les visites ou l'état des lieux, ce dernier devra indiquer dans le bail le montant de ses honoraires imputables à chaque partie, ainsi que les plafonds réglementaires applicables.</p>
@@ -460,7 +460,7 @@ extra_css: "bail.css"
             </div>
 
             <div class="section_subElement">
-                <div id="clauses" class="stickySideNav_jumper"></div>
+                <div id="guide_clauses" class="stickySideNav_jumper"></div>
                 <h3 class="subElement_title">Clauses du bail de location</h3>
                 <p>Même si elles ne sont pas prévues par défaut, nous vous proposons dans notre module de création automatique d'insérer par défaut une clause résolutoire et une clause de solidarité en cas de colocation.</p>
                 <p>La clause résolutoire est une clause qui permet de résilier le bail de location automatiquement en cas d'impayés, une fois passé un délai de deux mois après qu'un commandement de payer ait été délivré par huissier. Cette clause est primordiale notamment si vous souhaitez souscrire à une assurance loyer impayé car elle permet de grandement accélérer la procédure d'expulsion du locataire.</p>
@@ -537,6 +537,7 @@ extra_css: "bail.css"
 
 <!-- SCRIPT -->
 <script>
+    // NAV AVEC JUMP DANS LA PAGE
     let stickySideNav_items = document.querySelectorAll('.stickySideNav_item');
     stickySideNav_items[0].classList.add('stickySideNav_item_active');
     
@@ -550,8 +551,9 @@ extra_css: "bail.css"
     {
         window.addEventListener('scroll', () => {
             for (let i = 0; i < items.length; i++) {
-                let posY = jumpers[i].getBoundingClientRect().top+window.scrollY
-                if (window.pageYOffset>(posY-5)) {
+                let jumperPosition = jumpers[i].getBoundingClientRect().top+window.scrollY
+                if (window.pageYOffset>jumperPosition) 
+                {
                     for (let j = 0; j < items.length; j++) {
                         items[j].classList.remove(className+'_active');
                     }

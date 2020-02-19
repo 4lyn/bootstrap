@@ -22,8 +22,8 @@ extra_css: "gestion-locative.css"
 
     <div class="header_classicTitling">
         <div class="header_classicTitling_content">
-            <h1 class="mb-3">Gestion locative en <br> ligne pour particuliers indépendants</h1>
-            <span class="header_classicTitling_text">Economisez 50€/mois en honoraires de gestion
+            <h1 class="header_classicTitling_title">Gestion locative en <br> ligne pour particuliers indépendants</h1>
+            <span class="header_classicTitling_subTitle">Economisez 50€/mois en honoraires de gestion
                     en mettant votre location sous pilote automatique.</span>
             <div class="header_classicTitling_linkContainer">
                 <a href="" class="btn btn-dark header_classicTitling_button">Démarrer</a>
@@ -483,23 +483,21 @@ extra_css: "gestion-locative.css"
 
 <!-- SCRIPT -->
 <script>
-    // STICKY TOP NAV
+    // NAV AVEC JUMP DANS LA PAGE
     let stickyTopNav_items = document.querySelectorAll('.stickyTopNav_item');
     stickyTopNav_items[0].classList.add('stickyTopNav_item_active');
 
     let stickyTopNav_jumpers = document.querySelectorAll('.stickyTopNav_jumper');
+    let stickySideNav_jumpers = document.querySelectorAll('.stickySideNav_jumper');
 
     let set_active = function(items, jumpers, className)
     {
-        window.addEventListener('scroll', () => 
-        {
-            for (let i = 0; i < items.length; i++) 
-            {
-                let posY = jumpers[i].getBoundingClientRect().top+window.scrollY
-                if (window.pageYOffset>(posY-5)) 
+        window.addEventListener('scroll', () => {
+            for (let i = 0; i < items.length; i++) {
+                let jumperPosition = jumpers[i].getBoundingClientRect().top+window.scrollY
+                if (window.pageYOffset>jumperPosition) 
                 {
-                    for (let j = 0; j < items.length; j++) 
-                    {
+                    for (let j = 0; j < items.length; j++) {
                         items[j].classList.remove(className+'_active');
                     }
                     items[i].classList.add(className+'_active');

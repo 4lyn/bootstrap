@@ -17,7 +17,7 @@ header{
 
 /* SECTION ARTICLE */
 
-section.article
+ .sectionArticle
 {
     padding-top: 0;
     padding-bottom: 0;
@@ -37,7 +37,6 @@ section.article
 
 .article_summary
 {
-    background-color: #F4F4F4;
     padding: 2rem 2.5rem;
     line-height: 32px;
     font-weight: bold;
@@ -52,7 +51,6 @@ section.article
 {
     display: -ms-flexbox;
     display: flex;
-    /* flex-direction: row; */
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -65,10 +63,4 @@ section.article
 img.tweetImg
 {
     width: 75%;
-}
-
-/* SECTION AIDE DE SEXPERTS */
-.sectionExpertsHelp
-{
-    background-color: #fff;
 }

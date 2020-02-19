@@ -82,6 +82,13 @@ ul
     padding-left: 0;
 }
 
+ul.list_checked li::before
+{
+    content: "✔";
+    color: black;
+    margin-right: .25rem;
+}
+
 .list_dotted ul
 {
     margin-top: .375rem;

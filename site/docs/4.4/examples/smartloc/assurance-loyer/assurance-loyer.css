@@ -1,0 +1,41 @@
+@import "../styles/smartloc.css";
+@import "../styles/site-reccurent-elements.css";
+
+.sectionConditions .frame_grey
+{
+    padding: 1.5rem 2rem;
+}
+
+.sectionImpayes .stats_container
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sectionImpayes .stats_container h3 
+{
+    margin-right: 1.5rem;
+}
+
+.sectionImpayes .stats_container p
+{
+    margin-bottom: 0;
+}
+
+.sectionDoc .section_subElement
+{
+    margin-bottom: 2rem;
+}
+
+.sectionFAQ .stickySideNav a
+{
+    color: rgba(0, 0, 0, 0.6);
+    transition: .1s ease-in-out;
+}
+.sectionFAQ .stickySideNav a:hover
+{
+    color: black;
+    text-decoration: none;
+}

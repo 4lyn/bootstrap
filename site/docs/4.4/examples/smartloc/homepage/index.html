@@ -20,9 +20,9 @@ extra_css: "homepage.css"
 
     <div class="header_classicTitling">
         <div class="header_classicTitling_content">
-            <h1 class="mb-3">Sécurisez et optimisez 
+            <h1 class="header_classicTitling_title">Sécurisez et optimisez 
                     votre investissement locatif partout en France</h1>
-            <span class="header_classicTitling_text">Smartloc, une équipe d'experts et des outils puissants pour vous aider à gérer votre location sans agence.</span>
+            <span class="header_classicTitling_subTitle">Smartloc, une équipe d'experts et des outils puissants pour vous aider à gérer votre location sans agence.</span>
             <a href="" class="btn btn-dark header_classicTitling_button">Créez votre espace de gestion</a>
         </div>
         <div class="header_classicTitling_photo">
@@ -321,15 +321,15 @@ extra_css: "homepage.css"
 <!-- SCRIPT -->
 <script>
     // MENU NOIR 
-    let docMenuItems = document.querySelectorAll('.blackMenu_item');
-    docMenuItems[0].classList.add('blackMenu_item_active');
+    let blackMenu_items = document.querySelectorAll('.blackMenu_item');
+    blackMenu_items[0].classList.add('blackMenu_item_active');
 
-    for (let i = 0; i < docMenuItems.length; i++) {
-        docMenuItems[i].onclick=()=>{
-            for (let i = 0; i < docMenuItems.length; i++) {
-                docMenuItems[i].classList.remove('blackMenu_item_active');
+    for (let i = 0; i < blackMenu_items.length; i++) {
+        blackMenu_items[i].onclick=()=>{
+            for (let i = 0; i < blackMenu_items.length; i++) {
+                blackMenu_items[i].classList.remove('blackMenu_item_active');
             }
-            docMenuItems[i].classList.add('blackMenu_item_active');
+            blackMenu_items[i].classList.add('blackMenu_item_active');
         }
     }
 

@@ -289,15 +289,15 @@ extra_css: "ressources-hub-home.css"
 
 <!-- SCRIPT -->
 <script>
-    let docMenuItems = document.querySelectorAll('.blackMenu_item');
-    docMenuItems[0].classList.add('blackMenu_item_active');
+    let blackMenu_items = document.querySelectorAll('.blackMenu_item');
+    blackMenu_items[0].classList.add('blackMenu_item_active');
 
-    for (let i = 0; i < docMenuItems.length; i++) {
-        docMenuItems[i].onclick=()=>{
-            for (let i = 0; i < docMenuItems.length; i++) {
-                docMenuItems[i].classList.remove('blackMenu_item_active');
+    for (let i = 0; i < blackMenu_items.length; i++) {
+        blackMenu_items[i].onclick=()=>{
+            for (let i = 0; i < blackMenu_items.length; i++) {
+                blackMenu_items[i].classList.remove('blackMenu_item_active');
             }
-            docMenuItems[i].classList.add('blackMenu_item_active');
+            blackMenu_items[i].classList.add('blackMenu_item_active');
         }
     }
 </script>
