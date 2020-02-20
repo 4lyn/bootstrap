@@ -9,6 +9,14 @@ main
     padding-top: 0;
 }
 
+.progression_line
+{
+    height: .25rem;
+    position: absolute;
+    top:0;
+    background-color: black;
+}
+
 /* HEADER */
 
 header

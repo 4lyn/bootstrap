@@ -1,6 +1,11 @@
 @import "../styles/smartloc.css";
 @import "../styles/dossiers-locataires.css";
 
+.progression_line
+{
+    width: 66%;
+}
+
 /* ZONE CHECKBOXES */
 
 .checkBoxesContainer
