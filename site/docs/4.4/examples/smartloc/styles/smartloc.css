@@ -12,11 +12,6 @@ header
     padding-top: 2.5rem;
 }
 
-.header_logo
-{
-    width: 8.75rem;
-}
-
 h1, h2, h3, h4, h5, h6
 {
     font-weight: bold;

@@ -8,9 +8,9 @@ extra_css: "bail.css"
 <!-- HEADER -->
 
 <header class="headerSteps">
-    <nav class="header_classicNav">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="header_logo">
-        <div class="header_classicNav_linksContainer">
+    <nav class="menuHeader">
+        <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+        <div class="menuHeader__conteneurLiens">
             <a href="">Gestion locative</a>
             <a href="">Bail</a>
             <a href="">Assurance</a>
@@ -21,31 +21,31 @@ extra_css: "bail.css"
         </div>
     </nav>
 
-    <div class="header_classicTitling">
-        <div class="header_classicTitling_content">
-            <h1 class="header_classicTitling_title">Bail de location et modèle de contrat de location vide ou meublé 2019.</h1>
-            <span class="header_classicTitling_subTitle">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna.</span>
-            <a href="" class="btn btn-dark header_classicTitling_button">Démarrer</a>
+    <div class="headerClassique__titrage">
+        <div class="headerClassique__titrage_texte">
+            <h1 class="headerClassique__titrage_titre">Bail de location et modèle de contrat de location vide ou meublé 2019.</h1>
+            <span class="headerClassique__titrage_sousTitre">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna.</span>
+            <a href="" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
         </div>
-        <div class="header_classicTitling_illustration">
+        <div class="headerClassique__titrage_conteneurIllustration">
             <img src="../../../assets/img/smartloc/illustrations/notes_illustrated.png" alt="">
         </div>
     </div>
-    <div class="header_steps">
-        <h2 class="header_steps_title">Comment ça marche ?</h2>
-        <div class="header_steps_content">
-            <div class="header_steps_head">
-                <div class="header_steps_step">
-                    <span class="header_steps_step_number">1</span>
-                    <h5 class="header_steps_step_text">Remplissez votre bail avec notre outil en ligne</h5>
+    <div class="headerClassique__commentCaMarche">
+        <h2 class="headerClassique__commentCaMarche_titre">Comment ça marche ?</h2>
+        <div class="headerClassique__commentCaMarche_contenu">
+            <div class="headerClassique__commentCaMarche_conteneurEtapes">
+                <div class="headerClassique__commentCaMarche_etape">
+                    <span class="headerClassique__commentCaMarche_etape_number">1</span>
+                    <h5 class="headerClassique__commentCaMarche_etape_text">Remplissez votre bail avec notre outil en ligne</h5>
                 </div>
-                <div class="header_steps_step">
-                    <span class="header_steps_step_number">2</span>
-                    <h5 class="header_steps_step_text">Votre bail est sauvegardé et modifiable</h5>
+                <div class="headerClassique__commentCaMarche_etape">
+                    <span class="headerClassique__commentCaMarche_etape_number">2</span>
+                    <h5 class="headerClassique__commentCaMarche_etape_text">Votre bail est sauvegardé et modifiable</h5>
                 </div>
-                <div class="header_steps_step">
-                    <span class="header_steps_step_number">3</span>
-                    <h5 class="header_steps_step_text">Récupérez votre bail de location au format pdf</h5>
+                <div class="headerClassique__commentCaMarche_etape">
+                    <span class="headerClassique__commentCaMarche_etape_number">3</span>
+                    <h5 class="headerClassique__commentCaMarche_etape_text">Récupérez votre bail de location au format pdf</h5>
                 </div>
             </div>
             <h3>Le modèle de bail est-il à jour des dernières lois ?</h3>
@@ -497,17 +497,17 @@ extra_css: "bail.css"
 
 <!-- FOOTER -->
 <footer>
-    <div class="footer_containerLeft">
-        <img class="whiteLogo" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
+    <div class="footer__conteneurSocial">
+        <img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
         <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
         <div>
-            <img src="../../../assets/img/smartloc/icons/twitter.png" alt="">
-            <img src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
         </div>
     </div>
-    <div class="footer_line footer_line_responsive"></div>
-    <div class="footer_containerRight">
-        <div class="footer_topPart">
+    <div class="footer__ligneSeparation footer__ligneSeparation-responsive"></div>
+    <div class="footer__conteneurLiens">
+        <div class="footer__conteneurLiens_haut">
                 <a href="">Gestion locative</a>
                 <a href="">Bail</a>
                 <a href="">Assurance</a>
@@ -517,8 +517,8 @@ extra_css: "bail.css"
                 <a href="">A propos</a>
                 <a href="">Partenaires</a>
         </div>
-        <div class="footer_line"></div>
-        <div class="footer_bottomPart">
+        <div class="footer__ligneSeparation"></div>
+        <div class="footer__conteneurLiens_bas">
             <a href="">Modèle de bail numérique</a>
             <a href="">Signature électronique</a>
             <a href="">Etat des lieux</a>

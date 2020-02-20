@@ -1,7 +1,12 @@
 /************* HEADER *************/
 
-/* header nav menu classique, toutes pages sauf dossiers locataires */
-.header_classicNav
+.logoSmartloc
+{
+    width: 8.75rem;
+}
+
+/* MENU HEADER CLASSIQUE, toutes pages sauf dossiers locataires */
+.menuHeader
 {
     width: 100%;
     height : 2.5rem;
@@ -13,7 +18,7 @@
     align-items: center;
 }
 
-.header_classicNav_linksContainer
+.menuHeader__conteneurLiens
 {
     height: inherit;
     display: -ms-flexbox;
@@ -24,7 +29,7 @@
     align-items: center;
 }
 
-.header_classicNav_linksContainer a
+.menuHeader__conteneurLiens a
 {
     margin-left: 2rem;
     cursor: pointer;
@@ -33,7 +38,7 @@
 }
 
 
-/* header ressource hub home et categories */
+/* HEADER RESSOURCE HUB home et categories */
 .headerHub
 {
     background-color: #F9DCA5;
@@ -45,7 +50,7 @@
     bottom:0;
 }
 
-.headerHub_searchBar
+.headerHub .barreRecherche
 {
     width: 100%;
     padding: 0 10rem;
@@ -57,38 +62,9 @@
     z-index: 10;
 }
 
-/* ajouter a bootstrap */
-.headerHub_searchBar>form
-{
-    position: relative;
-}
 
-.headerHub_searchBar input
-{
-    width: 100% !important;
-    border-width: 1px;
-}
-
-.headerHub_searchBar_icon
-{
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 1rem;
-    border: none;
-    background-color: transparent;
-    background-image: url(../../../assets/img/smartloc/icons/search.png);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-
-
-/* header d'articles */
-.header_articleTitling{
+/* HEADER D'ARTICLE */
+.headerArticle__titrage{
     margin: 3.875rem 0 0 0;
     display: -ms-flexbox;
     display: flex;
@@ -100,15 +76,15 @@
     align-items: center;
 }
 
-.header_articleTitling a{
+.headerArticle__titrage a{
     color:black;
 }
 
-.header_articleTitling h1{
+.headerArticle__titrage_titre{
     margin: .5rem 0 0 0;
 }
 
-.header_articleTitling_infos
+.headerArticle__titrage_articleInfos
 {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
@@ -122,7 +98,7 @@
     justify-content: flex-end;
 }
 
-.header_articleTitling_infos p
+.headerArticle__titrage_articleInfos p
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -132,15 +108,15 @@
     margin-left: auto;
 }
 
-.header_articleTitling_infos img
+.headerArticle__titrage_articleInfos img
 {
     width: 3rem;
     height: 3rem;
     margin-left: .5rem;
 }
 
-/* header classic avec titre, bouton, illustration */
-.header_classicTitling
+/* HEADER CLASSIQUE présent sur pages bail, gestion locative, homepage, etc */
+.headerClassique__titrage
 {
     padding-top: 7.5rem;
     padding-bottom: 10rem; 
@@ -152,23 +128,23 @@
     align-items: center;
 }
 
-.header_classicTitling_content
+.headerClassique__titrage_texte
 {
     min-width: 45%;
     max-width: 45%;
 }
 
-.header_classicTitling_title
+.headerClassique__titrage_titre
 {
     margin-bottom: 1rem;
 }
 
-.header_classicTitling_subTitle
+.headerClassique__titrage_sousTitre
 {
     font-size: 1.125rem; 
 }
 
-.header_classicTitling_linkContainer
+.headerClassique__titrage_conteneurLiens
 {
     margin-top: 2rem;
     display: -ms-flexbox;
@@ -179,47 +155,49 @@
     align-items: center;
 }
 
-.header_classicTitling_linkContainer .header_classicTitling_button
+.headerClassique__titrage_conteneurLiens .headerClassique__titrage_bouton
 {
     display: inline;
     margin-top: 0;
     margin-right: 2rem;
 }
 
-.header_classicTitling_button
+.headerClassique__titrage_bouton
 {
     display: block;
     width: 17rem;
     margin-top: 2rem;
 }
 
-.header_classicTitling_photo
+.headerClassique__titrage_conteneurIllustration
+{
+    width: auto;
+    height: 18rem;
+    padding: 0 15%;
+}
+.headerClassique__titrage_conteneurIllustration img
+{
+    width: auto;
+    height: 100%;
+}
+
+/* cas comme homepage où illustration est une photo et pas une illustration */
+.headerClassique__titrage_conteneurPhoto
 {
     height: auto;
     width: 100%;
     margin: 0;
 }
 
-.header_classicTitling_photo img
+.headerClassique__titrage_conteneurPhoto img
 {
     height: auto;
     width: 100%;
 }
 
-.header_classicTitling_illustration
-{
-    width: auto;
-    height: 18rem;
-    padding: 0 15%;
-}
-.header_classicTitling_illustration img
-{
-    width: auto;
-    height: 100%;
-}
-
-/* headerSteps : header des pages bail, gestion locative, assuranceloyer impayé */
-.header_steps, .header_steps_step, .header_steps_head
+.headerClassique__commentCaMarche, 
+.headerClassique__commentCaMarche_conteneurEtapes,
+.headerClassique__commentCaMarche_etape
 {
     display: -ms-flexbox;
     display: flex;
@@ -229,36 +207,19 @@
     justify-content: space-between;
 }
 
-.header_steps
+.headerClassique__commentCaMarche
 {
     margin-bottom: 8rem;
 }
 
-.header_steps_title
-{
-    min-width: 16rem;
-    max-width: 16rem;
-}
 
-.header_steps_content
-{
-    width: 100%;
-    margin-left: 2rem;
-}
-
-.header_steps_content ul li
-{
-    line-height: 1.5rem;
-    margin-bottom: .375rem;
-}
-
-.header_steps_head
+.headerClassique__commentCaMarche_conteneurEtapes
 {
     margin-bottom: 3.5rem;
     width: 100%;
 }
 
-.header_steps_step
+.headerClassique__commentCaMarche_etape
 {
     width: 100%;
     margin-right: 1.5rem;
@@ -273,12 +234,12 @@
     border: 1px solid black;
     border-radius: 4px;
 }
-.header_steps_step:last-child
+.headerClassique__commentCaMarche_etape:last-child
 {
     margin: 0;
 }
 
-.header_steps_step_number
+.headerClassique__commentCaMarche_etape_number
 {
     font-size: 4.5rem;
     font-family: Roobert;
@@ -286,13 +247,32 @@
     text-align: center;
 }
 
-.header_steps_step_text
+.headerClassique__commentCaMarche_etape_text
 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 0;
 }
+
+.headerClassique__commentCaMarche_titre
+{
+    min-width: 16rem;
+    max-width: 16rem;
+}
+
+.headerClassique__commentCaMarche_contenu
+{
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.headerClassique__commentCaMarche_contenu ul li
+{
+    line-height: 1.5rem;
+    margin-bottom: .375rem;
+}
+
 
 /************* FOOTER *************/
 
@@ -317,7 +297,7 @@ footer a
     color: white !important;
 }
 
-.footer_containerLeft
+.footer__conteneurSocial
 {
     width: 12.5%;
     display: -ms-flexbox;
@@ -326,23 +306,18 @@ footer a
     flex-direction: column;
 }
 
-.footer_containerLeft .whiteLogo
-{
-    width: 8.75rem;
-}
-
-.footer_containerLeft a
+.footer__conteneurSocial a
 {
     margin: 1rem 0;
 }
 
-.footer_containerLeft div img
+.footer__logoReseauxSociaux
 {
     width: 1rem;
     margin-right: 1rem;
 }
 
-.footer_containerRight
+.footer__conteneurLiens
 {
     width: 75%;
     display: -ms-flexbox;
@@ -353,7 +328,7 @@ footer a
     justify-content: space-between;
 }
 
-.footer_topPart
+.footer__conteneurLiens_haut
 {
     width: 55%;
     max-height: 6rem;
@@ -362,14 +337,14 @@ footer a
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
 }
-.footer_topPart a
+.footer__conteneurLiens_haut a
 {
     margin-bottom: .5rem;
     margin-right: 5.75rem;
     font-weight: bold;
 }
 
-.footer_bottomPart
+.footer__conteneurLiens_bas
 {
     max-height: 12rem;
     display: -ms-flexbox;
@@ -378,23 +353,158 @@ footer a
     flex-flow: column wrap;
 }
 
-.footer_bottomPart a
+.footer__conteneurLiens_bas a
 {
     margin-bottom: .5rem;
     margin-right: 12.25rem;
     font-weight: bold;
 }
 
-div[class^="footer_line"]
+div[class^="footer__ligneSeparation"]
 {
     width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.footer_line_responsive
+.footer__ligneSeparation-responsive
 {
     display: none;
+}
+
+
+/************* INPUTS *************/
+
+/* BARRE DE RECHERCHE */
+.barreRecherche>form
+{
+    position: relative;
+}
+
+.barreRecherche__champSaisie
+{
+    width: 100% !important;
+    border-width: 1px;
+}
+
+.barreRecherche_bouton
+{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    background-image: url(../../../assets/img/smartloc/icons/search.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+/* BOUTONS OUI/NON VIOLETS */
+.boutonsRadioViolets__conteneur
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.boutonsRadioViolets__conteneur label
+{
+    margin-bottom: 0px !important;
+}
+.boutonsRadioViolets__conteneur label:first-child
+{
+    margin-right: 1rem;
+}
+
+/* permet de cacher l'input pour n'afficher que le label */
+.boutonsRadioViolets__conteneur label input[type="radio"]{
+    display: none; 
+}
+
+/* permet de colorer le bouton si il est checké ou non */
+.boutonsRadioViolets__conteneur label input:checked + div{
+    background: #A896D8;
+    border: 1px solid #A896D8;
+    font-weight: 600;
+}
+.boutonsRadioViolets__conteneur label input + div{
+    width: 4rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 52px;
+    font-weight: 600;
+}
+
+textarea{
+    resize: none;
+}
+
+.champSaisie-illustré
+{
+    position: relative;
+    height: 3rem;
+    display: block;
+}
+
+.champSaisie-illustré .form-control
+{
+    width: 100% !important;
+    position: absolute;
+}
+
+.champSaisie-illustré span, 
+.champSaisie-illustré svg
+{
+    position: absolute;
+    font-weight: bold;
+    line-height: 3rem;
+    height: 3rem;
+    right: 1rem;
+}
+
+
+/* BOUTONS UPLOAD CUSTOM */
+.conteneurBoutonUpload-custom input[type="file"] {
+    display: none !important;
+}
+
+.conteneurBoutonUpload-custom .boutonUpload-custom {
+    height: 3rem;
+    padding: 0px 2.25rem 0px 2.25rem;
+    line-height: 44px;
+    display: inline-block;
+    border: 1.5px solid #D3D3D3;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+/* ZONE CHECKBOXES */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    background-color: black!important;
+    box-shadow: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
 }
 
 /************* OBJETS RECCURENTS SUR LE SITE *************/
@@ -819,7 +929,57 @@ div[class^="footer_line"]
 }
 
 
-/* section services proposés sur la homepage */
+/* DOSSIERS LOCATAIRES */
+
+/* Inputs dans le formulaire */
+.dossierLocataire .form-control
+{
+    width: 50% !important;
+}
+
+.dossierLocataire .champSaisie-illustré
+{
+    width: 50%;  
+}
+
+/* Inputs fin de formulaire - Submit et autre */
+.conteneurBoutonsFinFormulaire
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/* ajouter la classe */
+.conteneurBoutonsFinFormulaire__etapePrecedente 
+{
+    font-weight: bold;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.conteneurBoutonsFinFormulaire button
+{
+    margin-left : 1rem;
+}
+
+.conteneurBoutonsFinFormulaire.sansEtapePrecedente
+{
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.addLocataire
+{
+    display: inline-block;
+    margin-top: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* SECTION SERVICES proposés sur la homepage */
 .sectionServices
 {
     padding-bottom: 0;
@@ -1275,21 +1435,21 @@ div[class^="footer_line"]
         flex-direction: column;
     }
 
-    footer>div:not(.footer__containerRight), .footer_containerRight>div:not(.bottomPart)
+    footer>div:not(.footer__containerRight), .footer__conteneurLiens>div:not(.bottomPart)
     {
         margin-bottom: 2.5rem;
     }
 
-    .footer_containerRight
+    .footer__conteneurLiens
     {
         width: 100%;
     }
-    .footer_containerLeft
+    .footer__conteneurSocial
     {
         width: 20%;
     }
 
-    .footer_line_responsive
+    .footer__ligneSeparation-responsive
     {
         display: block;
     }
