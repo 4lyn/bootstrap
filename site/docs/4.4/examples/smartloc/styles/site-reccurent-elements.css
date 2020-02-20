@@ -148,6 +148,7 @@
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -170,8 +171,11 @@
 .header_classicTitling_linkContainer
 {
     margin-top: 2rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -260,7 +264,9 @@
     margin-right: 1.5rem;
     height: 7.5rem;
     padding-right: 1.25rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
@@ -282,6 +288,8 @@
 
 .header_steps_step_text
 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 0;
 }
@@ -377,7 +385,7 @@ footer a
     font-weight: bold;
 }
 
-.footer_line
+div[class^="footer_line"]
 {
     width: 100%;
     height: 1px;
@@ -633,7 +641,9 @@ footer a
 /* items drop down */
 .dropDownItem
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     overflow: hidden;
     transition: .3s ease-in-out;
@@ -641,9 +651,13 @@ footer a
 
 .dropDownHead
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
 }
@@ -816,9 +830,13 @@ footer a
     height: 26.5rem;
     padding: 0 4rem;
     margin-top: 8.5rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
     align-items: center;
 }
 .serviceContainer:first-child
@@ -845,7 +863,9 @@ footer a
 .service_featureList li
 {
     margin-bottom: 4px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -881,9 +901,10 @@ footer a
 /* section categorie, present sur pages hub home et hub categories */
 .categoriesCard
 {
+    -ms-flex: 1 1 20%;
     flex: 1 1 20%;
     min-width: 15rem;
-    max-width: 23.5rem;
+    max-width: 15rem;
     border: none;
 }
 
@@ -894,6 +915,8 @@ footer a
 
 .categoriesCard .card-body
 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 
@@ -906,6 +929,7 @@ footer a
 
 .articlesCard
 {
+    -ms-flex: 1 1 30%;
     flex: 1 1 30%;
     width: calc(100% - 2rem);
     border: none;
@@ -966,11 +990,14 @@ footer a
 
 .temoignageCard
 {
+    -ms-flex: 1 1 30%;
     flex: 1 1 30%;
     padding: 2rem;
     border: none;
     background-color: #f4f4f4;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -992,14 +1019,18 @@ footer a
     padding: 0 10rem;
     position: absolute;
     bottom: 0;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .temoignage_partenairesPicContainer img{
     width: auto;
     height: 3rem;
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
@@ -1033,6 +1064,7 @@ footer a
     position: relative;
     width: calc(100% - 2rem);
     min-height: 16rem;
+    -ms-flex: 1 1 30%;
     flex: 1 1 30%;
     display: -ms-flexbox;
     display: flex;
@@ -1213,6 +1245,7 @@ footer a
 
 .sectionDocuments .smallCard
 {
+    -ms-flex: 1 1 45%;
     flex: 1 1 45%;
     width: calc(100% - 2rem);
 }
@@ -1226,8 +1259,9 @@ footer a
     {
         -ms-flex-line-pack: center;
         align-content: center;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        justify-content: center;
+        /* -ms-flex-direction: column;
+        flex-direction: column; */
     }
 }
 

@@ -8,8 +8,11 @@
 
 .sectionImpayes .stats_container
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -51,10 +54,15 @@
 
 .table_row, .table_head
 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 1rem;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -66,6 +74,7 @@
 .table_head
 {
     height: 3rem;
+    -ms-flex-align: baseline;
     align-items: baseline;
 }
 
@@ -95,16 +104,23 @@
 
 .table_cell:not(.table_first_column), .table_head_cell:not(.table_first_column)
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .table_first_column
 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -146,7 +162,9 @@
 
 .sectionImpayes .table_cell, .sectionImpayes .table_head_cell
 {
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
