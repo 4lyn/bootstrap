@@ -367,7 +367,7 @@ div[class^="footer__ligneSeparation"]
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.footer__ligneSeparation-responsive
+.footer__ligneSeparation--responsive
 {
     display: none;
 }
@@ -387,7 +387,7 @@ div[class^="footer__ligneSeparation"]
     border-width: 1px;
 }
 
-.barreRecherche_bouton
+.barreRecherche__bouton
 {
     width: 1rem;
     height: 1rem;
@@ -448,21 +448,21 @@ textarea{
     resize: none;
 }
 
-.champSaisie-illustré
+.champSaisie--illustré
 {
     position: relative;
     height: 3rem;
     display: block;
 }
 
-.champSaisie-illustré .form-control
+.champSaisie--illustré .form-control
 {
     width: 100% !important;
     position: absolute;
 }
 
-.champSaisie-illustré span, 
-.champSaisie-illustré svg
+.champSaisie--illustré span, 
+.champSaisie--illustré svg
 {
     position: absolute;
     font-weight: bold;
@@ -473,11 +473,11 @@ textarea{
 
 
 /* BOUTONS UPLOAD CUSTOM */
-.conteneurBoutonUpload-custom input[type="file"] {
+.conteneurBoutonUpload--custom input[type="file"] {
     display: none !important;
 }
 
-.conteneurBoutonUpload-custom .boutonUpload-custom {
+.conteneurBoutonUpload--custom .boutonUpload-custom {
     height: 3rem;
     padding: 0px 2.25rem 0px 2.25rem;
     line-height: 44px;
@@ -511,7 +511,7 @@ textarea{
 
 
 /* alertes-advice, messages de conseil du même style que les alertes coeur du composant ajouté au code source de bootstrap sous le nom de alerte-advice, étant une alerte modifée, au côté de alerte-notice qui en est une variante */
-.alert-advice_italicText
+.alert-advice__italicText
 {
     font-size: 1.125rem;
     line-height: 2rem;
@@ -519,7 +519,7 @@ textarea{
 }
 
 /* encadré push, encadrés de couleur avec shapes en background pour la promotion du service smartloc */
-.framePromotion
+.encadrementPromotion
 {
     width: 100%;
     position: relative;
@@ -534,35 +534,35 @@ textarea{
     text-align: center;
 }
 
-.framePromotion_backgroundImage
+.encadrementPromotion__imageBackground
 {
     position: absolute;
 }
-.framePromotion_backgroundImage:nth-of-type(1)
+.encadrementPromotion__imageBackground:nth-of-type(1)
 {
     width: auto;
     height: 95%;
     left: 0;
     bottom: 0;
 }
-.framePromotion_backgroundImage:nth-of-type(2)
+.encadrementPromotion__imageBackground:nth-of-type(2)
 {
     width: auto;
     height: 60%;
     right: 0;
     bottom: 0;
 }
-.framePromotion_purple 
+.encadrementPromotion_purple 
 {
     background-color: #A896D8;
 }
-.framePromotion_yellow 
+.encadrementPromotion_yellow 
 {
     background-color: #F9DCA5;
 }
 
 /* encadré rose et shapes colorées de contact de conseiller avec bouton "contacter un conseiller" */
-.frameContactConseiller
+.encadrementContactConseiller
 {
     width: 100%;
     height: 28rem;
@@ -577,7 +577,7 @@ textarea{
     background-color: #EBB9C2;
 }
 
-.frameContactConseiller_content
+.encadrementContactConseiller__contenu
 {
     width: 45%;
     display: -ms-flexbox;
@@ -592,41 +592,41 @@ textarea{
     z-index: 10;
 }
 
-.frameContactConseiller_button
+.encadrementContactConseiller__bouton
 {
     width: 17rem;
 }
 
-.frameContactConseiller_title
+.encadrementContactConseiller__titre
 {
     margin-bottom: 2.5rem;
     text-align: center;
 }
 
-.frameContactConseiller img
+.encadrementContactConseiller img
 {
     position: absolute;
 }
 
-.frameContactConseiller img:first-of-type
+.encadrementContactConseiller img:first-of-type
 {
     top: 0;
     left: 0;
     width:20%;
 }
-.frameContactConseiller img:nth-of-type(2)
+.encadrementContactConseiller img:nth-of-type(2)
 {
     top: 0;
     right: 2%;
     width:30%;
 }
-.frameContactConseiller img:nth-of-type(3)
+.encadrementContactConseiller img:nth-of-type(3)
 {
     bottom: 0;
     left: 5%;
     width:25%;
 }
-.frameContactConseiller img:nth-of-type(4)
+.encadrementContactConseiller img:nth-of-type(4)
 {
     bottom: 0;
     right: 0;
@@ -635,7 +635,7 @@ textarea{
 
 
 /* encadré gris */
-.frame_grey
+.encadrement--gris
 {
     background-color: #f4f4f4;
     border-radius: .25rem;
@@ -643,7 +643,7 @@ textarea{
 
 
 /* stickynav en haut d'ecran avec bouton demarrer */
-.stickyTopNav
+.menuStickyPage
 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -663,7 +663,7 @@ textarea{
     z-index: 20;
 }
 
- .stickyTopNav_linkContainer
+ .menuStickyPage__conteneurLiens
 {
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -674,7 +674,7 @@ textarea{
     flex-direction: row;
 }   
 
-.stickyTopNav_item
+.menuStickyPage__item
 {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -684,26 +684,26 @@ textarea{
     color: black;
     transition: .1s ease-in-out;
 }
-.stickyTopNav_item:hover
+.menuStickyPage__item:hover
 {
     color: black;
     text-decoration: none;
     border-bottom: solid 2px rgba(0, 0, 0, 0.493);
 }
 
-.stickyTopNav_item_active
+.menuStickyPage__item--active
 {
     border-bottom: solid 2px black;
 }
 
-.stickyTopNav_button
+.menuStickyPage__bouton
 {
     width: 11rem;
     height: 2rem;
     padding: .25rem 0;
 }
 
-.stickyTopNav_jumper
+.menuStickyPage__ancre
 {
     position: absolute;
     top: -12rem;
@@ -711,7 +711,7 @@ textarea{
 
 
 /* stickynav sur le cote d'une section */
-.stickySideNav
+.menuStickySection
 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -721,27 +721,27 @@ textarea{
     top: 6rem;
 }
 
-.stickySideNav_title
+.menuStickySection__titre
 {
     margin-bottom: 2.375rem;
 }
 
-.stickySideNav_item
+.menuStickySection__item
 {
     color: rgba(0, 0, 0, 0.6);
     transition: .1s ease-in-out;
 }
-.stickySideNav_item:hover
+.menuStickySection__item:hover
 {
     color: black;
     text-decoration: none;
 }
-.stickySideNav_item_active
+.menuStickySection__item_active
 {
     color:black !important;
 }
 
-.stickySideNav_jumper
+.menuStickySection__ancre
 {
     position: absolute;
     top: -12rem;
@@ -931,13 +931,14 @@ textarea{
 
 /* DOSSIERS LOCATAIRES */
 
+/* ajouter les classes dossierlocataire aux mains des pages */
 /* Inputs dans le formulaire */
-.dossierLocataire .form-control
+.dossierLocataire .form-control 
 {
     width: 50% !important;
 }
 
-.dossierLocataire .champSaisie-illustré
+.dossierLocataire .champSaisie--illustré
 {
     width: 50%;  
 }
@@ -1449,7 +1450,7 @@ textarea{
         width: 20%;
     }
 
-    .footer__ligneSeparation-responsive
+    .footer__ligneSeparation--responsive
     {
         display: block;
     }

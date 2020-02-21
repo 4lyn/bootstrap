@@ -59,20 +59,20 @@ extra_css: "gestion-locative.css"
 <!-- MAIN -->
 
 <main>
-    <div class="stickyTopNav">
-        <div class="stickyTopNav_linkContainer">
-            <a href="#fonctionnalites" class="stickyTopNav_item">Fonctionnalités</a>
-            <a href="#tarifs" class="stickyTopNav_item">Tarifs</a>
-            <a href="#questions" class="stickyTopNav_item">Vos questions</a>
-            <a href="#temoignages" class="stickyTopNav_item">Témoignages</a>
-            <a href="#usage" class="stickyTopNav_item">Cas d’usage</a>
+    <div class="menuStickyPage">
+        <div class="menuStickyPage__conteneurLiens">
+            <a href="#fonctionnalites" class="menuStickyPage__item">Fonctionnalités</a>
+            <a href="#tarifs" class="menuStickyPage__item">Tarifs</a>
+            <a href="#questions" class="menuStickyPage__item">Vos questions</a>
+            <a href="#temoignages" class="menuStickyPage__item">Témoignages</a>
+            <a href="#usage" class="menuStickyPage__item">Cas d’usage</a>
         </div>
-        <a href="" class="btn btn-dark btn-sm stickyTopNav_button">Démarrer</a>
+        <a href="" class="btn btn-dark btn-sm menuStickyPage__bouton">Démarrer</a>
     </div>
 
     <!-- SECTION FONCTIONNALITES -->
     <section class="page_section sectionFonctionnalite bg-light">
-        <div class="stickyTopNav_jumper" id="fonctionnalites"></div>
+        <div class="menuStickyPage__ancre" id="fonctionnalites"></div>
         <h2 class="page_section_sideTitle">Fonctionnalités</h2>
         <div class="page_section_content">
             <h2 class="subElement_title">Mettez votre location en pilote automatique</h2>
@@ -129,7 +129,7 @@ extra_css: "gestion-locative.css"
 
     <!-- SECTION TARIFS -->
     <section class="page_section sectionTarifs bg-quarantary">
-        <div class="stickyTopNav_jumper" id="tarifs"></div>
+        <div class="menuStickyPage__ancre" id="tarifs"></div>
         <h2 class="page_section_sideTitle">Tarifs</h2>
         <div class="page_section_content">
             <h2 class="subElement_title">Economisez 50€/mois en gardant le contrôle</h2>
@@ -147,7 +147,7 @@ extra_css: "gestion-locative.css"
 
     <!-- SECTIONS VOS QUESTIONS -->
     <section class="page_section sectionQuestions bg-light">
-        <div class="stickyTopNav_jumper" id="questions"></div>
+        <div class="menuStickyPage__ancre" id="questions"></div>
         <h2 class="page_section_sideTitle">Vos questions</h2>
         <div class="page_section_content">
             <div class="question_dropDown dropDownItem">
@@ -255,7 +255,7 @@ extra_css: "gestion-locative.css"
     
     <!-- SECTIONS TEMOIGNAGES -->
     <section class="sectionTemoignages">
-        <div class="stickyTopNav_jumper" id="temoignages"></div>
+        <div class="menuStickyPage__ancre" id="temoignages"></div>
         <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
         <div class="cardsContainer_row">
             <div class="card temoignageCard">
@@ -304,7 +304,7 @@ extra_css: "gestion-locative.css"
 
     <!-- SECTIONS CAS D'USAGE -->
     <section class="page_section sectionUsage">
-        <div class="stickyTopNav_jumper" id="usage"></div>
+        <div class="menuStickyPage__ancre" id="usage"></div>
         <h2 class="page_section_sideTitle">Cas d'usage</h2>
         <div class="page_section_content">
             <h2 class="subElement_title">Découvrez notre offre sur des exemples concrets </h2>
@@ -326,7 +326,7 @@ extra_css: "gestion-locative.css"
                     <div class="notice-info">
                         <h3 class="notice-title"> “ J'ai reçu un dossier de locataires mais  je crains qu'il ne soit faux”</h3>
                         <p>Lorsque que vous retenez une candidature de locataires, notre équipe peut vérifier le dossier de location dans le cadre de la garantie loyer impayé.</p>
-                        <ul class="list_dotted">
+                        <ul class="list--dotted">
                             L'étude comporte deux aspects :
                             <li>la vérification de la complétude et de l'éligibilité du dossier au regard de l'assurance</li>
                             <li>la détection d'éventuels faux documents ou fausses informations</li>
@@ -351,7 +351,7 @@ extra_css: "gestion-locative.css"
                     <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="notice-illustration" alt="">
                     <div class="notice-info">
                         <h3 class="notice-title">“Le chauffe-ballon est tombé en panne”</h3>
-                        <ul class="list_dotted">
+                        <ul class="list--dotted">
                             Lorsque un équipement tombe en panne, deux problèmes distincts se posent :
                             <li>comment faire intervenir rapidement et à moindre coût un artisan</li>
                             <li>qui doit prendre en charge le coût de la réparation</li>
@@ -401,7 +401,7 @@ extra_css: "gestion-locative.css"
                     <div class="notice-info">
                         <h3 class="notice-title">“Le locataire a dégradé la moquette du logement et refuse de la remettre en état”</h3>
                         <p>La gestion des sorties est un moment critique de la vie du logement. Sur votre espace de gestion Smartloc vous disposez d'un modèle d'état des lieux qui vous permet de comparer facilement l'état du logement à l'entrée et à la sortie.</p>
-                        <ul class="list_dotted">
+                        <ul class="list--dotted">
                             En cas de dégradations notre équipe peut vous orienter sur :
                             <li>le chiffrage des dégradations en fonction du taux de vétusté de chaque poster</li>
                             <li>le courrier à envoyer au locataire pour retenir la totalité ou une partie de son dépôt de garantie</li>
@@ -451,7 +451,7 @@ extra_css: "gestion-locative.css"
             <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
         </div>
     </div>
-    <div class="footer__ligneSeparation footer__ligneSeparation-responsive"></div>
+    <div class="footer__ligneSeparation footer__ligneSeparation--responsive"></div>
     <div class="footer__conteneurLiens">
         <div class="footer__conteneurLiens_haut">
                 <a href="">Gestion locative</a>
@@ -484,11 +484,11 @@ extra_css: "gestion-locative.css"
 <!-- SCRIPT -->
 <script>
     // NAV AVEC JUMP DANS LA PAGE
-    let stickyTopNav_items = document.querySelectorAll('.stickyTopNav_item');
-    stickyTopNav_items[0].classList.add('stickyTopNav_item_active');
+    let menuStickyPage__items = document.querySelectorAll('.menuStickyPage__item');
+    menuStickyPage__items[0].classList.add('menuStickyPage__item--active');
 
-    let stickyTopNav_jumpers = document.querySelectorAll('.stickyTopNav_jumper');
-    let stickySideNav_jumpers = document.querySelectorAll('.stickySideNav_jumper');
+    let menuStickyPage__ancres = document.querySelectorAll('.menuStickyPage__ancre');
+    let menuStickySection__ancres = document.querySelectorAll('.menuStickySection__ancre');
 
     let set_active = function(items, jumpers, className)
     {
@@ -498,15 +498,15 @@ extra_css: "gestion-locative.css"
                 if (window.pageYOffset>jumperPosition) 
                 {
                     for (let j = 0; j < items.length; j++) {
-                        items[j].classList.remove(className+'_active');
+                        items[j].classList.remove(className+'--active');
                     }
-                    items[i].classList.add(className+'_active');
+                    items[i].classList.add(className+'--active');
                 }
             }
         })
     }
 
-    set_active(stickyTopNav_items, stickyTopNav_jumpers, "stickyTopNav_item")
+    set_active(menuStickyPage__items, menuStickyPage__ancres, "menuStickyPage__item")
 
     // QUESTIONS DROPDOWN
     let dropDown_items = document.querySelectorAll(".dropDownItem");

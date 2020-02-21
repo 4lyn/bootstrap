@@ -1,7 +1,7 @@
 @import "../styles/smartloc.css";
 @import "../styles/site-reccurent-elements.css";
 
-.sectionConditions .frame_grey
+.sectionConditions .encadrement--gris
 {
     padding: 1.5rem 2rem;
 }
@@ -32,12 +32,12 @@
     margin-bottom: 2rem;
 }
 
-.sectionFAQ .stickySideNav a
+.sectionFAQ .menuStickySection a
 {
     color: rgba(0, 0, 0, 0.6);
     transition: .1s ease-in-out;
 }
-.sectionFAQ .stickySideNav a:hover
+.sectionFAQ .menuStickySection a:hover
 {
     color: black;
     text-decoration: none;
