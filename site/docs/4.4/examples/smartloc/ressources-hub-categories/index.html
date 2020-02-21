@@ -40,12 +40,12 @@ extra_css: "ressources-hub-categories.css"
 <main>
     <!-- SECTION SOUS CATEGORIES -->
     <section class="sectionSubCategories sectionHub">
-        <h2 class="sectionHub_title">Sous-catégories</h2>
+        <h2 class="sectionHub__titre">Sous-catégories</h2>
         <div class="subCategories_dropDown dropDownItem">
-            <div class="dropDownHead">
+            <div class="objetDeroulant__entete">
                 <span>Réparations</span>
-                <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
@@ -55,10 +55,10 @@ extra_css: "ressources-hub-categories.css"
             </div>
         </div>
         <div class="subCategories_dropDown dropDownItem">
-            <div class="dropDownHead">
+            <div class="objetDeroulant__entete">
                 <span>Échéances importantes</span>
-                <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Régularisation des charges locatives : mode d’emploi</p>
@@ -68,10 +68,10 @@ extra_css: "ressources-hub-categories.css"
             </div>
         </div>
         <div class="subCategories_dropDown dropDownItem">
-            <div class="dropDownHead">
+            <div class="objetDeroulant__entete">
                 <span>Juridique</span>
-                <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
@@ -81,10 +81,10 @@ extra_css: "ressources-hub-categories.css"
             </div>
         </div>
         <div class="subCategories_dropDown dropDownItem">
-            <div class="dropDownHead">
+            <div class="objetDeroulant__entete">
                 <span>Autres</span>
-                <img class="dropDownHead_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="dropDownHead_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
@@ -97,11 +97,11 @@ extra_css: "ressources-hub-categories.css"
 
     <!-- SECTION CATEGORIES -->
     <section class="sectionCategories sectionHub">
-        <h2 class="sectionHub_title">Autre catégories</h2>
+        <h2 class="sectionHub__titre">Autre catégories</h2>
         <div class="cardsContainer_row w-75">
-            <div class="card categoriesCard">
+            <div class="card cardCategorie">
                 <div class="card-header">
-                    <img class="categoriesCard_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
                     <h3 class="card-title">Assurance</h3>
                 </div>
                 <div class="card-body">
@@ -114,9 +114,9 @@ extra_css: "ressources-hub-categories.css"
                     </ul>
                 </div>
             </div>
-            <div class="card categoriesCard">
+            <div class="card cardCategorie">
                 <div class="card-header">
-                    <img class="categoriesCard_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
                     <h3 class="card-title">Bail</h3>
                 </div>
                 <div class="card-body">
@@ -129,9 +129,9 @@ extra_css: "ressources-hub-categories.css"
                     </ul>
                 </div>
             </div>
-            <div class="card categoriesCard">
+            <div class="card cardCategorie">
                 <div class="card-header">
-                    <img class="categoriesCard_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
+                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
                     <h3 class="card-title">Inv. locatif	</h3>
                 </div>
                 <div class="card-body">
@@ -206,10 +206,10 @@ extra_css: "ressources-hub-categories.css"
 <!-- SCRIPT -->
 <script>
     let dropDown_items = document.querySelectorAll(".dropDownItem");
-    let dropDown_heads = document.querySelectorAll(".dropDownHead");
+    let dropDown_heads = document.querySelectorAll(".objetDeroulant__entete");
     let dropDown_contents = document.querySelectorAll(".dropDownContent");
-    let dropDown_icon_open = document.querySelectorAll(".dropDownHead_icon_open");
-    let dropDown_icon_close = document.querySelectorAll(".dropDownHead_icon_close");
+    let dropDown_icon_open = document.querySelectorAll(".objetDeroulant__entete_icon_open");
+    let dropDown_icon_close = document.querySelectorAll(".objetDeroulant__entete_icon_close");
 
     for (let i = 0; i < dropDown_heads.length; i++) 
     {

@@ -35,13 +35,13 @@ extra_css: "dossier-locataire-6.css"
 
             <!-- RENTING FILE SECTION  -->
     <h1 class="titreDossierLocataire">Dossier de locataire</h1>
-    <div class="choseFile">
+    <div class="menuDossier">
         <span>Dossier 1</span>
-        <span>+ Ajouter un dossier</span>
+        <a href="" class="menuDossier__ajouterDossier">+ Ajouter un dossier</a>
     </div>
             
     <!-- FRAME DE FORM -->
-    <div class="mainContainer">
+    <div class="dossierLocataire__conteneurPrincipal">
         <form>
             <!-- ALERTE VERTE -->
             <div class="alert alert-success" role="alert">
@@ -58,7 +58,7 @@ extra_css: "dossier-locataire-6.css"
             </div>
 
             <!-- PREMIER FORM -->
-            <div class="formSection">
+            <div class="sectionFormulaire">
                 <h3>Dossier de location</h3>
                 <p>Vous pouvez accéder au dossier locataire ci-dessous.</p>
                 <button class="btn btn-primary btn-lg mb-4">Récupérer le dossier locataire</button>
@@ -73,7 +73,7 @@ extra_css: "dossier-locataire-6.css"
                 </p>
             </div>
 
-            <div class="formSection nextStepsSection">
+            <div class="sectionFormulaire nextStepsSection">
                 <h3>Prochaines étapes</h3>
                 <p>Voici les prochaines étapes que vous devez suivre :</p>
                 <p>1. démarrer un devis d'assurance pour ce dossier</p>
@@ -84,7 +84,7 @@ extra_css: "dossier-locataire-6.css"
                 <button class="btn btn-dark btn-lg">Démarrer un devis pour l’assurance</button>
             </div>
             
-            <div class="formSection">
+            <div class="sectionFormulaire">
                 <h3>Vérification par nos équipes</h3>
                 <p>Si vous souhaitez que notre équipe vérifie l'ensemble des points de contrôle que vous avez validés, vous pouvez nous envoyer le dossier PDF, nous vous donnerons un avis sous 48h. Paiement de 45€ avec un crédit pour un deuxième en cas de refus du premier.</p>
                 <button class="btn btn-outline-dark btn-lg">Faire vérifier le dossier</button>
@@ -92,7 +92,7 @@ extra_css: "dossier-locataire-6.css"
 
             <!-- FORM BUTTONS -->
             <div class="conteneurBoutonsFinFormulaire">
-                <span>< Étape précédente</span>
+                <a href="" class="conteneurBoutonsFinFormulaire__etapePrecedente">< Étape précédente</a>
                 <div>
                     <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
                 </div>

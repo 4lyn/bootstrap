@@ -102,25 +102,25 @@ header
     margin-bottom: 2.75rem;
 }
 
-.choseFile
+.menuDossier
 {
     margin-bottom: 3.25rem;
 }
 
-.choseFile span
+.menuDossier span
 {
     padding-bottom: 20px;
     margin-right: 1.5rem;
 }
 
-.choseFile span:first-child
+.menuDossier span:first-child
 {
     border-bottom: solid 2px black;
 }
 
 /* MAIN */
 
-.mainContainer
+.dossierLocataire__conteneurPrincipal
 {
     display: -ms-flexbox;
     display: flex;
@@ -136,7 +136,7 @@ form
     margin-right: 2rem;
 }
 
-.formSection
+.sectionFormulaire
 {
     padding: 2rem 2.5rem 2.125rem 2.5rem;
     margin-bottom: 2rem;
@@ -150,13 +150,13 @@ form
     display: inline-block;
 }
 
-.formSection h3
+.sectionFormulaire h3
 {
     margin-top: 1.875rem;
     margin-bottom: 2rem;
 }
 
-.formSection h3:first-of-type
+.sectionFormulaire h3:first-of-type
 {
     margin-top: 0px;
 }

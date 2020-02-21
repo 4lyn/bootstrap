@@ -33,18 +33,18 @@ extra_css: "dossier-locataire-3.css"
         </div>
     </div>
 
-    <!-- RENTING FILE SECTION  -->
+    <!-- SECTION DOSSIER LOCATAIRE  -->
     <h1 class="titreDossierLocataire">Dossier de locataire</h1>
-    <div class="choseFile">
+    <div class="menuDossier">
         <span>Dossier 1</span>
-        <span>+ Ajouter un dossier</span>
+        <a href="" class="menuDossier__ajouterDossier">+ Ajouter un dossier</a>
     </div>
     
-    <div class="mainContainer">
+    <div class="dossierLocataire__conteneurPrincipal">
         <!-- FRAME DE FORM -->
         <form>
             <!-- PREMIER FORM -->
-            <div class="formSection">
+            <div class="sectionFormulaire">
                 <h3 class="mb-1">Justificatif locataire 1</h3>
                 <p>CDI Hors période d'essai</p>
                 <div class="form-group">
@@ -121,7 +121,7 @@ extra_css: "dossier-locataire-3.css"
                 </div>
             </div>
 
-            <div class="formSection dropDownSection">
+            <div class="sectionFormulaire dropDownSection">
                 <h3 class="mb-0">Justificatifs complémentaires</h3>
                 <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.25 1.311L12.53 12.03C12.4604 12.0997 12.3778 12.1549 12.2869 12.1926C12.1959 12.2304 12.0984 12.2498 12 12.2498C11.9016 12.2498 11.8041 12.2304 11.7131 12.1926C11.6222 12.1549 11.5396 12.0997 11.47 12.03L0.75 1.311" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -130,7 +130,7 @@ extra_css: "dossier-locataire-3.css"
 
             <!-- FORM BUTTONS -->
             <div class="conteneurBoutonsFinFormulaire">
-                <span>< Étape précédente</span>
+                <a href="" class="conteneurBoutonsFinFormulaire__etapePrecedente">< Étape précédente</a>
                 <div>
                     <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
                     <button class="btn btn-dark">Étape suivante</button>

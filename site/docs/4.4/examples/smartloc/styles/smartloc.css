@@ -866,7 +866,7 @@ ul.list--dotted li::before
     transition: .3s ease-in-out;
 }
 
-.dropDownHead
+.objetDeroulant__entete
 {
     display: -ms-flexbox;
     display: flex;
@@ -879,11 +879,11 @@ ul.list--dotted li::before
     cursor: pointer;
 }
 
-.dropDownHead_icon_open
+.objetDeroulant__entete_icon_open
 {
     display: block;
 }
-.dropDownHead_icon_close
+.objetDeroulant__entete_icon_close
 {
     display: none;
 }
@@ -1038,16 +1038,11 @@ ul.list--dotted li::before
 
 /* DOSSIERS LOCATAIRES */
 
-/* ajouter les classes dossierlocataire aux mains des pages */
 /* Inputs dans le formulaire */
-.dossierLocataire .form-control 
-{
-    width: 50% !important;
-}
-
+.dossierLocataire .form-control ,
 .dossierLocataire .champSaisie--illustré
 {
-    width: 50%;  
+    width: 50%;
 }
 
 /* Inputs fin de formulaire - Submit et autre */
@@ -1058,13 +1053,18 @@ ul.list--dotted li::before
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+.conteneurBoutonsFinFormulaire.sansEtapePrecedente
+{
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
 
-/* ajouter la classe */
 .conteneurBoutonsFinFormulaire__etapePrecedente 
 {
-    font-weight: bold;
     -ms-flex-item-align: center;
     align-self: center;
+    font-weight: bold;
+    color: black;
 }
 
 .conteneurBoutonsFinFormulaire button
@@ -1072,13 +1072,7 @@ ul.list--dotted li::before
     margin-left : 1rem;
 }
 
-.conteneurBoutonsFinFormulaire.sansEtapePrecedente
-{
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.addLocataire
+.lienAjouterLocataire
 {
     display: inline-block;
     margin-top: 2rem;
@@ -1087,13 +1081,13 @@ ul.list--dotted li::before
 }
 
 
-/* SECTION SERVICES proposés sur la homepage */
+/* SECTION SERVICES proposés, sur la homepage */
 .sectionServices
 {
     padding-bottom: 0;
 }
 
-.serviceContainer
+.sectionServices__conteneurService
 {
     height: 26.5rem;
     padding: 0 4rem;
@@ -1107,28 +1101,28 @@ ul.list--dotted li::before
     -ms-flex-align: center;
     align-items: center;
 }
-.serviceContainer:first-child
+.sectionServices__conteneurService:first-child
 {
     margin-top: 0;
 }
 
-.service_name
+.sectionServices__conteneurService_contenu
+{
+    width: 40%;
+}
+
+.sectionServices__conteneurService_nomService
 {
     font-size: .825rem;
     font-family: Roobert;
 }
 
-.serviceContainer_content
-{
-    width: 40%;
-}
-
-.service_featureList
+.sectionServices__conteneurService_listeFeatures
 {
     margin: 1.5rem 0;
 }
 
-.service_featureList li
+.sectionServices__conteneurService_listeFeatures li
 {
     margin-bottom: 4px;
     display: -ms-flexbox;
@@ -1137,37 +1131,37 @@ ul.list--dotted li::before
     align-items: center;
 }
 
-.service_featureList img
+.sectionServices__conteneurService_listeFeatures img
 {
     margin-right: 12px;
 }
 
-.service_picture
+.sectionServices__photo
 {
     width: 50%;
     height: auto;
 }
 
 /* section de question */
-.question_dropDown
+.questionDeroulante
 {
     height: 3.125rem;
     margin-top: 2rem;
     border-bottom: 1px dashed black;
 }
-.question_dropDown:first-child
+.questionDeroulante:first-child
 {
     margin: 0;
 }
 
-.question_dropDown .dropDownHead
+.questionDeroulante .objetDeroulant__entete
 {
     padding-bottom: 1.5rem;
 }
 
 
 /* section categorie, present sur pages hub home et hub categories */
-.categoriesCard
+.cardCategorie
 {
     -ms-flex: 1 1 20%;
     flex: 1 1 20%;
@@ -1176,12 +1170,12 @@ ul.list--dotted li::before
     border: none;
 }
 
-.categoriesCard_illustration
+.cardCategorie_illustration
 {
     width: 50%;
 }
 
-.categoriesCard .card-body
+.cardCategorie .card-body
 {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -1189,13 +1183,13 @@ ul.list--dotted li::before
 }
 
 
-/* section suggestion d'articles */
-.sesectionArticlesSuggestion h2
+/* SECTION SUGGESTION D'ARTICLE */
+.sectionSuggestionArticle h2
 {
     margin-bottom: 2.5rem;
 }
 
-.articlesCard
+.cardArticle
 {
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;
@@ -1203,7 +1197,7 @@ ul.list--dotted li::before
     border: none;
 }
 
-.articlesCard_infos
+.cardArticle__articleInfos
 {
     padding-top: .5rem;
     padding-bottom: 1rem;
@@ -1215,13 +1209,13 @@ ul.list--dotted li::before
     align-items: center;
 }
 
-.articlesCard_preview p
+.cardArticle__apercu p
 {
     margin-bottom: 0;
 }
 
 
-/* sections des pages hub home et categories */
+/* SECTION DES PAGES HUB home et categories */
 .sectionHub
 {
     padding-top: 6.5rem;   /* padding de sections des pages hub home */
@@ -1233,13 +1227,13 @@ ul.list--dotted li::before
     padding-bottom: 10rem;
 }
 
-.sectionHub_title
+.sectionHub__titre
 {
     margin-bottom: 2.5rem;
 }
 
 
-/* section temoignages */
+/* SECTION TEMOIGNAGES */
 .sectionTemoignages
 {
     display: -ms-flexbox;
@@ -1256,7 +1250,7 @@ ul.list--dotted li::before
     margin-bottom: 6.5rem;
 }
 
-.temoignageCard
+.cardTemoignage
 {
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;
@@ -1269,19 +1263,19 @@ ul.list--dotted li::before
     justify-content: space-between;
 }
 
-.temoignage_bottomContainer h6
+.cardTemoignage__conteneurInfos h6
 {
     margin-bottom: 1.125rem
 }
 
-.temoignage_avisVerifPicture
+.sectionTemoignages__imageAvisVerifie
 {
     width: 11rem;
     margin-top: 5.5rem;
     margin-bottom: 2.5rem;
 }
 
-.temoignage_partenairesPicContainer
+.sectionTemoignages__conteneurPartenaires
 {
     width: 90%;
     padding: 0 10rem;
@@ -1295,24 +1289,25 @@ ul.list--dotted li::before
     justify-content: space-between;
 }
 
-.temoignage_partenairesPicContainer img{
+.sectionTemoignages__conteneurPartenaires img
+{
     width: auto;
     height: 3rem;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-.temoignage_shape
+.sectionTemoignages__formesBackground
 {
     position: absolute;
 }
-.temoignage_shape.couronneNoir
+.sectionTemoignages__formesBackground.couronneNoir
 {
     height: 20rem;
     left: 0;
     bottom: 5rem;
 }
-.temoignage_shape.rondJaune
+.sectionTemoignages__formesBackground.rondJaune
 {
     height: 20rem;
     right: 0;
@@ -1320,14 +1315,14 @@ ul.list--dotted li::before
 }
 
 
-/* section accompagnement des experts sur bail, gestion et assurance */
-.sectionExpertsHelp h1
+/* section accompagnement des experts sur hub article et homepage */
+.sectionAccompagnementExperts
 {
     margin-bottom: 5rem;
     text-align: center;
 }
 
-.expertsHelpCard
+.cardAccompagnementExperts
 {
     position: relative;
     width: calc(100% - 2rem);
@@ -1346,35 +1341,34 @@ ul.list--dotted li::before
     border: none;
 }
 
-.expertsHelpCard_illustration
+.cardAccompagnementExperts__illustration
 {
     width: 96px;
     margin-bottom: .5rem;
 }
 
-.expertsHelpCard h4
+.cardAccompagnementExperts h4
 {
     text-align: center;
 }
 
-.expertsHelpCard_background
+.cardAccompagnementExperts__background
 {
     position: absolute;
 }
-
-.bail_card .expertsHelpCard_background
+.bail_card .cardAccompagnementExperts__background
 {
     left:0;
     bottom: 0;
     height: 45%;
 }
-.gestion_card .expertsHelpCard_background
+.gestion_card .cardAccompagnementExperts__background
 {
     left: 0;
     bottom: 0;
     height: 40%;
 }
-.assurance_card .expertsHelpCard_background
+.assurance_card .cardAccompagnementExperts__background
 {
     right: 0;
     bottom: 0;
@@ -1383,7 +1377,7 @@ ul.list--dotted li::before
 
 
 /* section de contact des experts pour vous aider */
-.sectionExpertsContact
+.sectionExpertsAide
 {
     display: -ms-flexbox;
     display: flex;
@@ -1393,18 +1387,19 @@ ul.list--dotted li::before
     align-items: center;
 }
 
-.sectionExpertsContact h1
+.sectionExpertsAide h1
 {
     width: 28rem;
     text-align: center;
 }
 
-.sectionExpertsContact_images, .sectionExpertsContact_links
+.sectionExpertsAide__conteneurPhotos, 
+.sectionExpertsAide__conteneurBoutons
 {
     margin-top: 4rem;
 }
 
-.sectionExpertsContact_images
+.sectionExpertsAide__conteneurPhotos
 {
     display: -ms-flexbox;
     display: flex;
@@ -1414,21 +1409,22 @@ ul.list--dotted li::before
     justify-content: center;
 }
 
-.sectionExpertsContact_images img
+.sectionExpertsAide__conteneurPhotos img
 {
     width: 15%;
     min-width: 6.5rem;
     margin: 0 1.25rem; 
 }
 
-.sectionExpertsContact_links a
+.sectionExpertsAide__conteneurBoutons a
 {
     width: 16rem;;
     margin: 0 8px;
 }
 
-/* section violette avec shapes et bouton demarrer  */
-.sectionSmartlocHelp
+
+/* SECTION AIDE SMARTLOC violette avec shapes et bouton demarrer  */
+.sectionSmartlocAide
 {
     width: 100%;    
     padding-top: 8.5rem;
@@ -1443,7 +1439,7 @@ ul.list--dotted li::before
     background-color: #A896D8;
 }
 
-.sectionSmartlocHelp_content
+.sectionSmartlocAide__contenu
 {
     width: 45%;
     display: -ms-flexbox;
@@ -1458,38 +1454,40 @@ ul.list--dotted li::before
     z-index: 10;
 }
 
-.sectionSmartlocHelp img{
-    position: absolute;
-}
-
-.sectionSmartlocHelp_content h2{
+.sectionSmartlocAide__contenu h2
+{
     margin-bottom: 2.5rem;
     text-align: center;
 }
 
-.sectionSmartlocHelp_content a{
+.sectionSmartlocAide__contenu a
+{
     width: 17rem;
 }
 
-.sectionSmartlocHelp img:first-of-type
+.sectionSmartlocAide img
+{
+    position: absolute;
+}
+.sectionSmartlocAide img:first-of-type
 {
     top: 0;
     left: 2%;
     width: 25%;
 }
-.sectionSmartlocHelp img:nth-of-type(2)
+.sectionSmartlocAide img:nth-of-type(2)
 {
     top: 0;
     right: 5%;
     width: 20%;
 }
-.sectionSmartlocHelp img:nth-of-type(3)
+.sectionSmartlocAide img:nth-of-type(3)
 {
     bottom: 0;
     left: 5%;
     width: 25%;
 }
-.sectionSmartlocHelp img:nth-of-type(4)
+.sectionSmartlocAide img:nth-of-type(4)
 {
     bottom: 0;
     right: 5%;

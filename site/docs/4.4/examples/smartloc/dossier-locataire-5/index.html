@@ -35,13 +35,13 @@ extra_css: "dossier-locataire-5.css"
 
     <!-- RENTING FILE SECTION  -->
     <h1 class="titreDossierLocataire">Dossier de locataire</h1>
-    <div class="choseFile">
+    <div class="menuDossier">
         <span>Dossier 1</span>
-        <span>+ Ajouter un dossier</span>
+        <a href="" class="menuDossier__ajouterDossier">+ Ajouter un dossier</a>
     </div>
 
     <!-- FRAME DE FORM -->
-    <div class="mainContainer">
+    <div class="dossierLocataire__conteneurPrincipal">
         <form>
             <!-- ALERTE ROUGE -->
             <div class="alert alert-danger" role="alert">
@@ -64,7 +64,7 @@ extra_css: "dossier-locataire-5.css"
             </div>
 
             <!-- PREMIER FORM -->
-            <div class="formSection">
+            <div class="sectionFormulaire">
                 <!-- INPUT DE TEXT -->
                 <h3>Vos informations</h3>
                 <div class="form-group">
@@ -139,7 +139,7 @@ extra_css: "dossier-locataire-5.css"
 
             <!-- FORM BUTTONS -->
             <div class="conteneurBoutonsFinFormulaire">
-                <span>< Étape précédente</span>
+                <a href="" class="conteneurBoutonsFinFormulaire__etapePrecedente">< Étape précédente</a>
                 <div>
                     <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
                     <button class="btn btn-dark">Récupérer mon dossier</button>
