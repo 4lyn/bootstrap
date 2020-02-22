@@ -204,40 +204,4 @@ extra_css: "ressources-hub-categories.css"
 
 
 <!-- SCRIPT -->
-<script>
-    let dropDown_items = document.querySelectorAll(".objetDeroulant");
-    let dropDown_heads = document.querySelectorAll(".objetDeroulant__entete");
-    let dropDown_contents = document.querySelectorAll(".dropDownContent");
-    let dropDown_icon_open = document.querySelectorAll(".objetDeroulant__entete_icone--ouvrir");
-    let dropDown_icon_close = document.querySelectorAll(".objetDeroulant__entete_icone--fermer");
-
-    for (let i = 0; i < dropDown_heads.length; i++) 
-    {
-        let toggle = false;
-        
-        dropDown_heads[i].addEventListener('click', () => 
-        {
-            let dropHeight = dropDown_contents[i].offsetHeight + dropDown_items[i].offsetHeight;
-            if (toggle) 
-            {
-                dropDown_items[i].style.height = dropDown_heads[i].offsetHeight+"px";
-                dropDown_icon_open[i].style.display = "block";
-                dropDown_icon_close[i].style.display = "none";
-                toggle = false;
-            }
-            else
-            {
-                dropDown_items[i].style.height = dropHeight+"px";
-                dropDown_icon_open[i].style.display = "none";
-                dropDown_icon_close[i].style.display = "block";
-                toggle = true;
-            };
-        });
-        window.addEventListener('resize', ()=> {
-            dropDown_items[i].style.height = dropDown_heads[i].offsetHeight+"px";
-            dropDown_icon_open[i].style.display = "block";
-            dropDown_icon_close[i].style.display = "none";
-            toggle = false;
-        });
-    };
-</script>
+<script src="../scripts/scripts.js"></script>

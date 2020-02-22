@@ -739,48 +739,6 @@ extra_css: "assurance-loyer.css"
     </div>
 </footer>
 
+
 <!-- SCRIPT -->
-
-<script>
-    // MENU NOIR 
-    let menuNoir_items = document.querySelectorAll('.menuNoir__item');
-    menuNoir_items[0].classList.add('menuNoir__item--active');
-
-    for (let i = 0; i < menuNoir_items.length; i++) {
-        menuNoir_items[i].onclick=()=>{
-            for (let i = 0; i < menuNoir_items.length; i++) {
-                menuNoir_items[i].classList.remove('menuNoir__item--active');
-            }
-            menuNoir_items[i].classList.add('menuNoir__item--active');
-        }
-    }
-
-    // NAV AVEC JUMP DANS LA PAGE
-    let menuSticky_sousElement__items = document.querySelectorAll('.menuSticky--sousElement__item');
-    menuSticky_sousElement_items[0].classList.add('menuSticky--sousElement__item--active');
-    
-    let menuSticky_section_items = document.querySelectorAll('.menuSticky--section__item');
-    menuSticky_section_items[0].classList.add('menuSticky--section__item--active');
-
-    let menuSticky_section_ancres = document.querySelectorAll('.menuSticky--section__ancre');
-    let menuSticky_sousElement_ancres = document.querySelectorAll('.menuSticky--sousElement__ancre');
-
-    let set_active = function(items, jumpers, className)
-    {
-        window.addEventListener('scroll', () => {
-            for (let i = 0; i < items.length; i++) {
-                let jumperPosition = jumpers[i].getBoundingClientRect().top+window.scrollY
-                if (window.pageYOffset>jumperPosition) 
-                {
-                    for (let j = 0; j < items.length; j++) {
-                        items[j].classList.remove(className+'--active');
-                    }
-                    items[i].classList.add(className+'--active');
-                }
-            }
-        })
-    }
-
-    set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres,"menuSticky--sousElement__item")
-    set_active(menuSticky_section_items, menuSticky_section_ancres, "menuSticky--section__item")
-</script>
+<script src="../scripts/scripts.js"></script>
