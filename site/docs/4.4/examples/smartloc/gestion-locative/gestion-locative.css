@@ -19,7 +19,7 @@
     margin-bottom: .875rem;
 }
 
-.sectionUsage .section_subElement:not(:first-of-type) .subElement_title
+.sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre
 {
     padding-top: 1.5rem;
 }

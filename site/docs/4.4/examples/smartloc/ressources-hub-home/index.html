@@ -38,7 +38,7 @@ extra_css: "ressources-hub-home.css"
     <!-- SECTION CATEGORIES -->
     <section class="sectionCategories sectionHub">
         <h2 class="sectionHub__titre">Catégories</h2>
-        <div class="cardsContainer_row">
+        <div class="conteneurCards--enligne">
             <div class="card cardCategorie">
                 <div class="card-header">
                     <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
@@ -105,7 +105,7 @@ extra_css: "ressources-hub-home.css"
     <!-- SECTION ARTICLES -->
     <section class="sectionSuggestionArticle sectionHub">
         <h2 class="sectionHub__titre">Derniers articles</h2>
-        <div class="cardsContainer_row">
+        <div class="conteneurCards--enligne">
             <div class="card cardArticle">
                 <div class="card-body">
                     <div class="cardArticle__articleInfos">
@@ -183,47 +183,47 @@ extra_css: "ressources-hub-home.css"
         
     <!-- SECTION DOCUMENTS -->
     <section class="sectionDocuments sectionHub">
-        <h2 class="section_title sectionHub__titre"> Les fiches et documents clés</h2>
-        <div class="blackMenu">
-            <p class="blackMenu_item">Bail</p>
-            <p class="blackMenu_item">Assurance</p>
-            <p class="blackMenu_item">Gestion locative</p>
+        <h2 class="sectionDocuments__titre sectionHub__titre"> Les fiches et documents clés</h2>
+        <div class="menuNoir">
+            <p class="menuNoir__item">Bail</p>
+            <p class="menuNoir__item">Assurance</p>
+            <p class="menuNoir__item">Gestion locative</p>
         </div>
 
-        <div class="cardsContainer_row smallCardsContainer">
-            <div class="card smallCard">
+        <div class="conteneurCards--enligne conteneurCardLignes">
+            <div class="card cardLigne">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Titre du document</span>
                 </div>
             </div>
-            <div class="card smallCard">
+            <div class="card cardLigne">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Titre du document</span>
                 </div>
             </div>
-            <div class="card smallCard">
+            <div class="card cardLigne">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Titre du document</span>
                 </div>
             </div>
-            <div class="card smallCard">
+            <div class="card cardLigne">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Titre du document</span>
                 </div>
             </div>
-            <div class="card smallCard">
+            <div class="card cardLigne">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Titre du document</span>
                 </div>
             </div>
-            <div class="card smallCard">
+            <div class="card cardLigne">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Titre du document</span>
                 </div>
             </div>
@@ -286,17 +286,19 @@ extra_css: "ressources-hub-home.css"
     </div>
 </footer>
 
+
 <!-- SCRIPT -->
 <script>
-    let blackMenu_items = document.querySelectorAll('.blackMenu_item');
-    blackMenu_items[0].classList.add('blackMenu_item_active');
+    // MENU NOIR 
+    let menuNoir_items = document.querySelectorAll('.menuNoir__item');
+    menuNoir_items[0].classList.add('menuNoir__item--active');
 
-    for (let i = 0; i < blackMenu_items.length; i++) {
-        blackMenu_items[i].onclick=()=>{
-            for (let i = 0; i < blackMenu_items.length; i++) {
-                blackMenu_items[i].classList.remove('blackMenu_item_active');
+    for (let i = 0; i < menuNoir_items.length; i++) {
+        menuNoir_items[i].onclick=()=>{
+            for (let i = 0; i < menuNoir_items.length; i++) {
+                menuNoir_items[i].classList.remove('menuNoir__item--active');
             }
-            blackMenu_items[i].classList.add('blackMenu_item_active');
+            menuNoir_items[i].classList.add('menuNoir__item--active');
         }
     }
 </script>

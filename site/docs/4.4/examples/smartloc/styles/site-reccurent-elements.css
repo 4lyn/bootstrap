@@ -643,7 +643,7 @@ textarea{
 
 
 /* stickynav en haut d'ecran avec bouton demarrer */
-.menuStickyPage
+.menuSticky--section
 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -663,7 +663,7 @@ textarea{
     z-index: 20;
 }
 
- .menuStickyPage__conteneurLiens
+ .menuSticky--section__conteneurLiens
 {
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -674,7 +674,7 @@ textarea{
     flex-direction: row;
 }   
 
-.menuStickyPage__item
+.menuSticky--section__item
 {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -684,26 +684,26 @@ textarea{
     color: black;
     transition: .1s ease-in-out;
 }
-.menuStickyPage__item:hover
+.menuSticky--section__item:hover
 {
     color: black;
     text-decoration: none;
     border-bottom: solid 2px rgba(0, 0, 0, 0.493);
 }
 
-.menuStickyPage__item--active
+.menuSticky--section__item--active
 {
     border-bottom: solid 2px black;
 }
 
-.menuStickyPage__bouton
+.menuSticky--section__bouton
 {
     width: 11rem;
     height: 2rem;
     padding: .25rem 0;
 }
 
-.menuStickyPage__ancre
+.menuSticky--section__ancre
 {
     position: absolute;
     top: -12rem;
@@ -711,7 +711,7 @@ textarea{
 
 
 /* stickynav sur le cote d'une section */
-.menuStickySection
+.menuSticky--sousElement
 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -721,27 +721,27 @@ textarea{
     top: 6rem;
 }
 
-.menuStickySection__titre
+.menuSticky--sousElement__titre
 {
     margin-bottom: 2.375rem;
 }
 
-.menuStickySection__item
+.menuSticky--sousElement__item
 {
     color: rgba(0, 0, 0, 0.6);
     transition: .1s ease-in-out;
 }
-.menuStickySection__item:hover
+.menuSticky--sousElement__item:hover
 {
     color: black;
     text-decoration: none;
 }
-.menuStickySection__item_active
+.menuSticky--sousElement__item--active
 {
     color:black !important;
 }
 
-.menuStickySection__ancre
+.menuSticky--sousElement__ancre
 {
     position: absolute;
     top: -12rem;
@@ -749,7 +749,7 @@ textarea{
 
 
 /* items drop down */
-.dropDownItem
+.objetDeroulant
 {
     display: -ms-flexbox;
     display: flex;
@@ -772,18 +772,18 @@ textarea{
     cursor: pointer;
 }
 
-.objetDeroulant__entete_icon_open
+.objetDeroulant__entete_icone--ouvrir
 {
     display: block;
 }
-.objetDeroulant__entete_icon_close
+.objetDeroulant__entete_icone--fermer
 {
     display: none;
 }
 
 
 /* menu noir, present sur sections documents */
-.blackMenu
+.menuNoir
 {
     height: 3rem;
     display: -ms-flexbox;
@@ -798,7 +798,7 @@ textarea{
     border-radius: 25px;
 }
 
-.blackMenu_item
+.menuNoir__item
 {
     width: 100%;
     height: inherit;
@@ -812,17 +812,17 @@ textarea{
     user-select: none;
     transition: 0.1s ease-in-out;
 }
-.blackMenu_item:first-of-type
+.menuNoir__item:first-of-type
 {
     border-radius: 25px 0 0 25px;
 }
-.blackMenu_item:last-of-type
+.menuNoir__item:last-of-type
 {
     border-right: none;
     border-radius: 0px 25px 25px 0;
 }
 
-.blackMenu_item_active  /* classe pour le js */
+.menuNoir__item--active  /* classe pour le js */
 {
     background-color: black;
     color: white;
@@ -833,7 +833,7 @@ textarea{
 /************* CARDS *************/
 
 /* container des cards présent sur l'ensemble du site */
-.cardsContainer_row
+.conteneurCards--enligne
 {
     width: calc(100% + 2rem);   /* Permet d'agrandir et remonter le container ainsi permettre */
     margin-top: -2rem;          /*  un margin top sur les cards enfants pour eviter mauvais reponsive */
@@ -845,7 +845,7 @@ textarea{
     flex-flow: row wrap;
 }
 
-.cardsContainer_column
+.conteneurCards--colonne
 {
     width: calc(100% + 2rem);
     margin-top: -2rem;
@@ -855,7 +855,7 @@ textarea{
     flex-flow: column wrap;
 }
 
-.cardsContainer_row .card, .cardsContainer_column .card
+.conteneurCards--enligne .card, .conteneurCards--colonne .card
 {
     margin-top: 2rem; /* Applique un margin top sur les cards pour eviter mauvais reponsive */
     margin-right: 2rem;
@@ -863,22 +863,22 @@ textarea{
 
 
 /* petites cards sur une seule ligne avec un icone */
-.smallCardsContainer
+.conteneurCardLignes
 {
     margin-top: -1rem; /* ecrase le margin original pour l'adapter aux petites cards */
 }
 
-.smallCardsContainer .smallCard
+.conteneurCardLignes .cardLigne
 {
     margin-top: 1rem;
 }
 
-.smallCard
+.cardLigne
 {
     font-weight: bold;
 }
 
-.smallCard_icon
+.cardLigne__icone
 {
     width: 1.5rem;
     margin-right: .25rem;
@@ -889,7 +889,7 @@ textarea{
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
 
 /* style de section general */
-.page_section
+.sectionPageClassique
 {
     display: -ms-flexbox;
     display: flex;
@@ -897,33 +897,33 @@ textarea{
     flex-direction: row;
 }
 
-.page_section_content
+.sectionPageClassique__contenu
 {
     width: 100%;
     margin-left: 2rem;
 }
 
-.page_section_sideTitle
+.sectionPageClassique__titrage
 {
     max-width: 16rem;     /* permet de donner une taille absolument constente */
     min-width: 16rem;     /* et eviter les resizes automatiques */
 }
 
-.section_subElement
+.section__sousElement
 {
     position: relative;
 }
-.section_subElement:not(:last-child) 
+.section__sousElement:not(:last-child) 
 {
     margin-bottom: 2.5rem; /* permet de selectionner toutes les div subElements sauf la derniere */
 }
 
-.section_subElement>*:last-child
+.section__sousElement>*:last-child
 {
     margin-bottom: 0; /* permet de retirer un eventuel margin bottom non désiré a la fin d'un subElement */
 }
 
-.subElement_title
+.section__sousElement_titre
 {
     margin-bottom: 1em;
 }
@@ -1388,22 +1388,22 @@ sectionAccompagnementExperts{
     width: 25%;
 }
 
-/* section contenant smallcards de documents, avec menu nav noir */
-.sectionDocuments .section_title
+/* section contenant cardLignes de documents, avec menu nav noir */
+.sectionDocuments .sectionDocuments__titre
 {
     width: 100%;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.sectionDocuments .blackMenu
+.sectionDocuments .menuNoir
 {
     width: 75%;
     margin: auto;
     margin-bottom: 4rem;
 }
 
-.sectionDocuments .smallCard
+.sectionDocuments .cardLigne
 {
     -ms-flex: 1 1 45%;
     flex: 1 1 45%;
@@ -1415,7 +1415,7 @@ sectionAccompagnementExperts{
 
 @media (max-width: 750px)
 {
-    .cardsContainer_row
+    .conteneurCards--enligne
     {
         -ms-flex-line-pack: center;
         align-content: center;

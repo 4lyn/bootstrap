@@ -51,7 +51,7 @@ extra_css: "bail.css"
             <h3>Le modèle de bail est-il à jour des dernières lois ?</h3>
             <p>Le bail de location respecte un contrat type défini par décret en Conseil d'Etat (source du décret).</p>
             <p>Smartloc vous permet d'utiliser le seul modèle de bail de location légal obligatoire s'appliquant à tout nouveau contrat de location depuis 2014 :</p>
-            <ul class="list--dotted">
+            <ul class="liste--point">
                 <li>de résidence principale;</li>
                 <li>en vide ou en meublée (l'outil permet de sélectionner le modèle);</li>
                 <li>pour un locataire, un couple ou des des colocataires.</li>
@@ -64,31 +64,31 @@ extra_css: "bail.css"
 <!-- MAIN -->
 
 <main>
-    <div class="menuStickyPage">
-        <div class="menuStickyPage__conteneurLiens">
-            <a href="#annexes" class="menuStickyPage__item">Annexes</a>
-            <a href="#modeles" class="menuStickyPage__item">Modèles</a>
-            <a href="#signature" class="menuStickyPage__item">Signature</a>
-            <a href="#guide" class="menuStickyPage__item">Guide</a>
+    <div class="menuSticky--section">
+        <div class="menuSticky--section__conteneurLiens">
+            <a href="#annexes" class="menuSticky--section__item">Annexes</a>
+            <a href="#modeles" class="menuSticky--section__item">Modèles</a>
+            <a href="#signature" class="menuSticky--section__item">Signature</a>
+            <a href="#guide" class="menuSticky--section__item">Guide</a>
         </div>
-        <a href="" class="btn btn-dark btn-sm menuStickyPage__bouton">Démarrer</a>
+        <a href="" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
     </div>
 
     <!-- SECTION BAIL ANNEXE -->
-    <section class="page_section sectionBailAnnexe bg-light">
-        <div class="menuStickyPage__ancre" id="annexes"></div>
-        <h2 class="page_section_sideTitle">Quelles annexes du bail de location sont fournies ?</h2>
-        <div class="page_section_content">
-            <div class="section_subElement">
+    <section class="sectionPageClassique sectionBailAnnexe bg-light">
+        <div class="menuSticky--section__ancre" id="annexes"></div>
+        <h2 class="sectionPageClassique__titrage">Quelles annexes du bail de location sont fournies ?</h2>
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
                 <p>En location vide ou meublée, de nombreuses annexes sont obligatoires; notre module de rédaction automatique vous fournit toutes celles nécessaires et vous permet d'ajouter celles en votre possession : Etat des lieux, Notice d’information, Acte de caution solidaire.</p>
                 <div class="alert-notice alert-notice-primary">
                     <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
                     <div class="notice-info">
                         <h3 class="notice-title">L’état des lieux</h3>
                         <span>L'état des lieux que nous vous fournissons est un modèle pdf vous permettant de réaliser l'état des lieux d'entrée et de sortie sur le même document. C'est le système le plus simple que vous pourrez compléter par d'éventuelles photos.</span>
-                        <div class="card smallCard mt-4">
+                        <div class="card cardLigne mt-4">
                             <div class="card-body">
-                                <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                                 <span>L’état des lieux</span>
                             </div>
                         </div>
@@ -99,9 +99,9 @@ extra_css: "bail.css"
                     <div class="notice-info">
                         <h3 class="notice-title">La notice d’information</h3>
                         <span>La notice d'information que nous vous fournissons est une annexe obligatoire définie par décret. Elle résume les principales dispositions réglementaires régissant le bail loi 89 et remplace donc en pratique les conditions générales que vous aviez peut être l'habitude d'utiliser sur vos anciens modèles.</span>
-                        <div class="card smallCard mt-4">
+                        <div class="card cardLigne mt-4">
                             <div class="card-body">
-                                <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                                 <span>La notice d’information</span>
                             </div>
                         </div>
@@ -112,9 +112,9 @@ extra_css: "bail.css"
                     <div class="notice-info">
                         <h3 class="notice-title">L’acte de caution solidaire</h3>
                         <span>L'acte de caution solidaire que nous vous fournissons est une annexe optionnelle à utiliser uniquement si vous prenez un garant. Elle répond à des exigences formelles très strictes sur les informations à rappeler. Néanmoins depuis le 25 novembre 2018 les mentions manuscrites du garant ne sont plus obligatoires, nous vous fournissons donc un modèle allégé conforme à la nouvelle loi ELAN.</span>
-                        <div class="card smallCard mt-4">
+                        <div class="card cardLigne mt-4">
                             <div class="card-body">
-                                <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                                 <span>L’acte de caution solidaire</span>
                             </div>
                         </div>
@@ -123,41 +123,41 @@ extra_css: "bail.css"
             </div>
 
             <div class="secion_subElement">
-                <h3 class="subElement_title">Autres annexes disponibles</h3>
-                <div class="cardsContainer_column smallCardsContainer">
-                    <div class="card smallCard">
+                <h3 class="section__sousElement_titre">Autres annexes disponibles</h3>
+                <div class="conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Diagnostics (DPE, Plomb, ERNT)</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Extrait du réglement de copropriété</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Liste des charges récupérables</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Bail parking séparé</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Inventaire des meubles</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Avenant au bail</span>
                         </div>
                     </div>
@@ -167,15 +167,15 @@ extra_css: "bail.css"
     </section>
 
     <!-- SECTION MODELE BAIL -->
-    <section class="page_section sectionModeleBail">
-        <div class="menuStickyPage__ancre" id="modeles"></div>
-        <h2 class="page_section_sideTitle">Quel modèle  de bail choisir ?</h2>
+    <section class="sectionPageClassique sectionModeleBail">
+        <div class="menuSticky--section__ancre" id="modeles"></div>
+        <h2 class="sectionPageClassique__titrage">Quel modèle  de bail choisir ?</h2>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
                 <p>Notre module en ligne vous permet de remplir le bail de location d'une résidence principale d'habitation, louée vide ou meublée à une personne physique.</p>
                 <p>Nous distinguons ensuite plusieurs types d'occupation :</p>
-                <ul class="list--dotted">
+                <ul class="liste--point">
                     <li>le bail standard : pour un bien loué en entier à une personne seule.</li>
                     <li>le bail de colocation unique : vous louez un bien en entier, à plusieurs locataires, quelque soit leur régime matrimonial, avec ou sans clause de solidarité.</li>
                     <li>le bail de colocation individuel : vous louez plusieurs chambres dans un logement, avec des baux distincts pour chaque chambre.</li>
@@ -185,81 +185,81 @@ extra_css: "bail.css"
                 <p>Ces modèles de bail de location entre particuliers ne doivent pas être utilisés dans d'autres cas : si le logement est loué pour un logement de fonction via une société, pour une résidence secondaire ou pour un bail commercial. Dans ces trois cas nous vous fournissons des modèles séparés :</p>
             </div>
 
-            <div class="section_subElement">
-                <div class="cardsContainer_column smallCardsContainer">
-                    <div class="card smallCard">
+            <div class="section__sousElement">
+                <div class="conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Bail société en logement de fonction</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Bail résidence secondaire</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Bail commercial</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Modèle de bail Word ou PDF ?</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Modèle de bail Word ou PDF ?</h3>
                 <p>Sur le bail d'habitation en résidence principale nous ne fournissons pas de modèle de bail word car le modèle est défini par décret et ne peut donc en théorie pas être modifié à la guise du bailleur. En utilisant notre modèle de bail en ligne vous vous assurez de respecter le contrat type de location qui sera automatiquement adapté en fonction des informations que vous renseignez.</p>
             </div>
             
-            <div class="section_subElement">
-                <h3 class="subElement_title">Bail de location meublé : est-ce un modèle différent ?</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Bail de location meublé : est-ce un modèle différent ?</h3>
                 <p>Le bail de location meublé en résidence principale doit être rempli selon le même modèle que le bail de location vide. Le modèle que nous vous mettons à disposition permet de remplir ce bail meublé avec les quelques adaptations nécessaires, notamment la nécessité de remplir un inventaire des meubles ou la possibilité de choisir un forfait de charges même si vous n'êtes pas en colocation.</p>
             </div>
         </div>
     </section>
 
-    <section class="page_section sectionSignature bg-tertiary">
-        <div class="menuStickyPage__ancre" id="signature"></div>
-        <h2 class="page_section_sideTitle">Comment imprimer et signer le contrat de location ?</h2>
+    <section class="sectionPageClassique sectionSignature bg-tertiary">
+        <div class="menuSticky--section__ancre" id="signature"></div>
+        <h2 class="sectionPageClassique__titrage">Comment imprimer et signer le contrat de location ?</h2>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
-                <h3 class="subElement_title">Impression du bail de location</h3>
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Impression du bail de location</h3>
                 <p>Notre module de rédaction en ligne vous permet de récupérer un bail de location pdf. Il vous suffit d'imprimer ce bail en autant d'exemplaires que de parties et le faire signer à toutes les parties (bailleur, locataires, cautions).</p>
                 <p>Pensez à faire parapher toutes les pages pour éviter les contestations, une page volante non signée a peu de valeur en cas de contentieux (d'où l'intérêt de la signature électronique décrite ci-après).</p>
             </div>
 
-            <div class="card smallCard section_subElement">
+            <div class="card cardLigne section__sousElement">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Bail commercial</span>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Signature électronique du bail de location</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Signature électronique du bail de location</h3>
                 <p>Notre module de rédaction en ligne vous permet de récupérer un bail de location pdf. Il vous suffit d'imprimer ce bail en autant d'exemplaires que de parties et le faire signer à toutes les parties (bailleur, locataires, cautions).</p>
                 <p>Pensez à faire parapher toutes les pages pour éviter les contestations, une page volante non signée a peu de valeur en cas de contentieux (d'où l'intérêt de la signature électronique décrite ci-après).</p>
             </div>
 
-            <div class="section_subElement cardsContainer_column smallCardsContainer">
-                <div class="card smallCard">
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Signature électronique du bail de location ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Signature en ligne de l'acte de caution solidaire</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Authentification de la signature du garant en maire</span>
                     </div>
                 </div>
@@ -282,52 +282,52 @@ extra_css: "bail.css"
     </section>
 
     <!-- SECTION GUIDE -->
-    <section class="page_section sectionGuide">
-        <div class="menuStickyPage__ancre" id="guide"></div>
-        <div class="page_section_sideTitle">
-            <h2 class="menuStickySection__titre">Guide</h2>
-            <div class="menuStickySection">
-                <h4><a href="#guide_duree" class="menuStickySection__item">Durée</a></h4>
-                <h4><a href="#guide_loyer" class="menuStickySection__item">Loyer</a></h4>
-                <h4><a href="#guide_charges" class="menuStickySection__item">Charges</a></h4>
-                <h4><a href="#guide_depot" class="menuStickySection__item">Dépôt de garantie</a></h4>
-                <h4><a href="#guide_clauses" class="menuStickySection__item">Clauses</a></h4>
+    <section class="sectionPageClassique sectionGuide">
+        <div class="menuSticky--section__ancre" id="guide"></div>
+        <div class="sectionPageClassique__titrage">
+            <h2 class="menuSticky--sousElement__titre">Guide</h2>
+            <div class="menuSticky--sousElement">
+                <h4><a href="#guide_duree" class="menuSticky--sousElement__item">Durée</a></h4>
+                <h4><a href="#guide_loyer" class="menuSticky--sousElement__item">Loyer</a></h4>
+                <h4><a href="#guide_charges" class="menuSticky--sousElement__item">Charges</a></h4>
+                <h4><a href="#guide_depot" class="menuSticky--sousElement__item">Dépôt de garantie</a></h4>
+                <h4><a href="#guide_clauses" class="menuSticky--sousElement__item">Clauses</a></h4>
             </div>
         </div>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
-                <h2 class="subElement_title">Guide du bail de location</h2>
-                <h3 class="subElement_title">Nos dernières fiches thématiques</h3>
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
+                <h2 class="section__sousElement_titre">Guide du bail de location</h2>
+                <h3 class="section__sousElement_titre">Nos dernières fiches thématiques</h3>
                 <p>Les paragraphes suivants détaillent les élements principaux du bail. Pas d'inquiétudes cependant, notre module de création automatique vous guidera pas à pas dans sa rédaction.</p>
                 <a href="" class="btn btn-sm btn-dark mt-3" style="width: 17rem">Voir toutes les fiches</a>
             </div>
 
-            <div class="section_subElement">
-                <div id="guide_duree" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Durée du bail de location</h3>
+            <div class="section__sousElement">
+                <div id="guide_duree" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Durée du bail de location</h3>
                 <h4>En location vide</h4>
                 <p>La durée du bail est de 3 ans, 6 ans si le bailleur n'est pas une personne physique ou une SCI familiale.</p>
                 <h4>En location meublée</h4>
                 <p>La durée du bail est de 3 ans, 6 ans si le bailleur n'est pas une personne physique ou une SCI familiale.</p>
             </div>
 
-            <div class="card smallCard section_subElement">
+            <div class="card cardLigne section__sousElement">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Durée du bail de location ? Notre fiche pratique</span>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Fin du bail de location : modalités de résiliation</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Fin du bail de location : modalités de résiliation</h3>
                 <h4>En location vide</h4>
                 <p>Le bailleur peut donner congé au locataire tous les 3 ans (ou tous les 6 ans si le bailleur est une personne morale hors SCI familiale) avec un préavis de 6 mois. Il doit absolument motiver son congé par sa volonté de vendre son bien, de le reprendre pour y habiter ou loger un proche, ou pour manquement grave du locataire aux obligations du bail.</p>
                 <p>Si le bailleur ne donne pas congé dans les délais prévus, le bail est reconduit tacitement dans les mêmes conditions pour la même durée.</p>
                 <h4>En location meublée</h4>
                 <p>Le bailleur peut donner congé au locataire à chaque date d'anniversaire avec un préavis de 3 mois. Il doit absolument motiver son congé par sa volonté de vendre son bien, de le reprendre pour y habiter ou loger un proche, ou pour manquement grave du locataire aux obligations du bail.</p>
                 <p>Si le bailleur ne donne pas congé dans les délais prévus, le bail est reconduit tacitement dans les mêmes conditions pour la même durée (sauf dans le cas d'un bail de location étudiant de 9 mois où le bail ne peut être reconduit tacitement).</p>
-                <div class="section_subElement alert-advice alert-advice-success">
+                <div class="section__sousElement alert-advice alert-advice-success">
                     <img src="../../../assets/img/smartloc/illustrations/utilisateurs.png" class="advice-illustration" alt="">
                     <div class="advice-info">
                         <h3 class="advice-title">Congé du locataire</h3>
@@ -336,37 +336,37 @@ extra_css: "bail.css"
                 </div>
             </div>
 
-            <div class="section_subElement cardsContainer_column smallCardsContainer">
-                <div class="card smallCard">
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Résiliation du bail par le propriétaire ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Résiliation du bail par le locataire ? Notre fiche pratique</span>
                     </div>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <div id="guide_loyer" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Loyer du contrat de location</h3>
+            <div class="section__sousElement">
+                <div id="guide_loyer" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Loyer du contrat de location</h3>
                 <h4>En location vide</h4>
                 <p>Le loyer est habituellement payé mensuellement mais vous êtes libre de fixer la fréquence de paiement (trimestriellement ou annuellement par exemple).</p>
                 <p>Il est d'usage de le faire payer d'avance (c'est à dire à échoir), plutôt qu'une fois le mois passé (c'est à dire à terme échu). Le paiement d'avance a plusieurs avantages, notamment lors de l'entrée dans les lieux et lors de la fin du bail.</p>
             </div>
 
-            <div class="card smallCard section_subElement">
+            <div class="card cardLigne section__sousElement">
                 <div class="card-body">
-                    <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                     <span>Résiliation du bail par le propriétaire ? Notre fiche pratique</span>
                 </div>
             </div>
 
-            <div class="section_subElement">
+            <div class="section__sousElement">
                 <p>Le jour d'exigibilité est également à indiquer dans le bail, par défaut nous vous proposerons un paiement au 5 pour éviter les retards avec des locataires payés en début de mois.</p>
                 <p>Le loyer sera dans tous les cas indexé chaque année en fonction de l'IRL (indice de référence des loyers publié par l'INSEE) : chaque année vous allez pouvoir augmenter le loyer en fonction de l'évolution des prix.</p>
                 <div class="alert-advice alert-advice-danger">
@@ -378,35 +378,35 @@ extra_css: "bail.css"
                 </div>
             </div>
             
-            <div class="section_subElement cardsContainer_column smallCardsContainer">
-                <div class="card smallCard">
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Indexation du loyer ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Encadrement des loyers ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Complément de loyer exceptionnel ? Notre fiche pratique</span>
                     </div>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <div id="guide_charges" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Charges du contrat de location</h3>
+            <div class="section__sousElement">
+                <div id="guide_charges" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Charges du contrat de location</h3>
                 <h4>Quelles charges locatives récupérer ?</h4>
                 <p>Les charges que vous allez pouvoir récupérer auprès du locataires sont définies par un décret qui fixe une liste exhaustive et limitative. En copopriété il faut donc savoir que vous ne pourrez pas récupérer toutes vos charges de coproprité, en général le relevé annuel précise la part locataire (entre 50% et 75% des charges totales).</p>
                 <h4>Comment récupérer les charges ?</h4>
                 <p>Trois options pour fixer le montant de charges dans le bail :</p>
-                <ul class="list--dotted">
+                <ul class="liste--point">
                     <li>le forfait de charges</li>
                     <li>la refacturation au réel avec provisions</li>
                     <li>a refacturation au réel sans provisions</li>
@@ -416,57 +416,57 @@ extra_css: "bail.css"
                 <p>Pour une maison individuelle sans charges a priori (à part la taxe de collecte des ordures ménagères), vous pouvez opter pour une refacturation au réel sans provisions et demander la TEOM au locataire dès que le montant est confirmé sur votre avis de taxe foncière.</p>
             </div>
 
-            <div class="section_subElement cardsContainer_column smallCardsContainer">
-                <div class="card smallCard">
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Charges du bail de location ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Quelles sont les charges récupérables ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Récupération de la taxe d'ordure ménagère ? Notre fiche pratique</span>
                     </div>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <div id="guide_depot" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Dépôt de garantie et honoraires</h3>
+            <div class="section__sousElement">
+                <div id="guide_depot" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Dépôt de garantie et honoraires</h3>
                 <p>Il est par ailleurs nécessaire de préciser dans le bail de location le dépôt de garantie qui est d'un mois de loyer hors charges maximum en location vide, 2 mois de loyer hors charges maximum en location meublée.</p>
                 <p>Enfin si vous passez par un intermédiaire professionnel pour réaliser les visites ou l'état des lieux, ce dernier devra indiquer dans le bail le montant de ses honoraires imputables à chaque partie, ainsi que les plafonds réglementaires applicables.</p>
             </div>    
 
-            <div class="section_subElement cardsContainer_column smallCardsContainer">
-                <div class="card smallCard">
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Dépôt de garantie du bail de location ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Honoraires maximum en location ? Notre fiche pratique</span>
                     </div>
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <div id="guide_clauses" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Clauses du bail de location</h3>
+            <div class="section__sousElement">
+                <div id="guide_clauses" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Clauses du bail de location</h3>
                 <p>Même si elles ne sont pas prévues par défaut, nous vous proposons dans notre module de création automatique d'insérer par défaut une clause résolutoire et une clause de solidarité en cas de colocation.</p>
                 <p>La clause résolutoire est une clause qui permet de résilier le bail de location automatiquement en cas d'impayés, une fois passé un délai de deux mois après qu'un commandement de payer ait été délivré par huissier. Cette clause est primordiale notamment si vous souhaitez souscrire à une assurance loyer impayé car elle permet de grandement accélérer la procédure d'expulsion du locataire.</p>
                 <p>La clause de solidarité que nous vous proposons est une clause permettant de sécuriser le loyer en cas d'impayés en permettant au bailleur de solliciter un seul locataire pour le paiement de l'intégralité du loyer en évitant ainsi la division. Cette clause est également obligatoire si vous souhaitez prendre une assurance loyer impayé.</p>
                 <p>Vous pouvez insérer d'autres clauses optionnelles dans le modèle type, notamment celles disponibles sur notre module de création :</p>
-                <ul class="list--dotted">
+                <ul class="liste--point">
                     <li>Clause de visite lors du congé : elle vous permettra d'imposer des visites pendant le préavis du bail</li>
                     <li>Clause imposant les moyens de paiement : elle vous permettra d'éviter les paiements par chèque ou en espèces</li>
                     <li>Clause de mise à disposition des meubles : elle vous permettra d'éviter d'avoir à remplacer un équipement défectueux</li>
@@ -476,16 +476,16 @@ extra_css: "bail.css"
                 </ul>
             </div>
 
-            <div class="section_subElement cardsContainer_column smallCardsContainer">
-                <div class="card smallCard">
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Dépôt de garantie du bail de location ? Notre fiche pratique</span>
                     </div>
                 </div>
-                <div class="card smallCard">
+                <div class="card cardLigne">
                     <div class="card-body">
-                        <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                        <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                         <span>Honoraires maximum en location ? Notre fiche pratique</span>
                     </div>
                 </div>
@@ -538,14 +538,14 @@ extra_css: "bail.css"
 <!-- SCRIPT -->
 <script>
     // NAV AVEC JUMP DANS LA PAGE
-    let menuStickySection__items = document.querySelectorAll('.menuStickySection__item');
-    menuStickySection__items[0].classList.add('menuStickySection__item_active');
+    let menuSticky_sousElement__items = document.querySelectorAll('.menuSticky--sousElement__item');
+    menuSticky_sousElement_items[0].classList.add('menuSticky--sousElement__item--active');
     
-    let menuStickyPage__items = document.querySelectorAll('.menuStickyPage__item');
-    menuStickyPage__items[0].classList.add('menuStickyPage__item--active');
+    let menuSticky_section_items = document.querySelectorAll('.menuSticky--section__item');
+    menuSticky_section_items[0].classList.add('menuSticky--section__item--active');
 
-    let menuStickyPage__ancres = document.querySelectorAll('.menuStickyPage__ancre');
-    let menuStickySection__ancres = document.querySelectorAll('.menuStickySection__ancre');
+    let menuSticky_section_ancres = document.querySelectorAll('.menuSticky--section__ancre');
+    let menuSticky_sousElement_ancres = document.querySelectorAll('.menuSticky--sousElement__ancre');
 
     let set_active = function(items, jumpers, className)
     {
@@ -563,6 +563,6 @@ extra_css: "bail.css"
         })
     }
 
-    set_active(menuStickySection__items, menuStickySection__ancres,"menuStickySection__item")
-    set_active(menuStickyPage__items, menuStickyPage__ancres, "menuStickyPage__item")
+    set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres,"menuSticky--sousElement__item")
+    set_active(menuSticky_section_items, menuSticky_section_ancres, "menuSticky--section__item")
 </script>

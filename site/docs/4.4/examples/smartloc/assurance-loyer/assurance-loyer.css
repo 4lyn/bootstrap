@@ -27,17 +27,17 @@
     margin-bottom: 0;
 }
 
-.sectionDoc .section_subElement
+.sectionDoc .section__sousElement
 {
     margin-bottom: 2rem;
 }
 
-.sectionFAQ .menuStickySection a
+.sectionFAQ .menuSticky--sousElement a
 {
     color: rgba(0, 0, 0, 0.6);
     transition: .1s ease-in-out;
 }
-.sectionFAQ .menuStickySection a:hover
+.sectionFAQ .menuSticky--sousElement a:hover
 {
     color: black;
     text-decoration: none;

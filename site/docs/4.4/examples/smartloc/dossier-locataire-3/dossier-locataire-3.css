@@ -1,7 +1,7 @@
 @import "../styles/smartloc.css";
 @import "../styles/dossiers-locataires.css";
 
-.progression_line
+.dossierLocataire__ligneProgression
 {
     width: 66%;
 }

@@ -41,11 +41,11 @@ extra_css: "ressources-hub-categories.css"
     <!-- SECTION SOUS CATEGORIES -->
     <section class="sectionSubCategories sectionHub">
         <h2 class="sectionHub__titre">Sous-catégories</h2>
-        <div class="subCategories_dropDown dropDownItem">
+        <div class="subCategories_dropDown objetDeroulant">
             <div class="objetDeroulant__entete">
                 <span>Réparations</span>
-                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
@@ -54,11 +54,11 @@ extra_css: "ressources-hub-categories.css"
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
             </div>
         </div>
-        <div class="subCategories_dropDown dropDownItem">
+        <div class="subCategories_dropDown objetDeroulant">
             <div class="objetDeroulant__entete">
                 <span>Échéances importantes</span>
-                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Régularisation des charges locatives : mode d’emploi</p>
@@ -67,11 +67,11 @@ extra_css: "ressources-hub-categories.css"
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
             </div>
         </div>
-        <div class="subCategories_dropDown dropDownItem">
+        <div class="subCategories_dropDown objetDeroulant">
             <div class="objetDeroulant__entete">
                 <span>Juridique</span>
-                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
@@ -80,11 +80,11 @@ extra_css: "ressources-hub-categories.css"
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
             </div>
         </div>
-        <div class="subCategories_dropDown dropDownItem">
+        <div class="subCategories_dropDown objetDeroulant">
             <div class="objetDeroulant__entete">
                 <span>Autres</span>
-                <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
             </div>
             <div class="dropDownContent">
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
@@ -98,7 +98,7 @@ extra_css: "ressources-hub-categories.css"
     <!-- SECTION CATEGORIES -->
     <section class="sectionCategories sectionHub">
         <h2 class="sectionHub__titre">Autre catégories</h2>
-        <div class="cardsContainer_row w-75">
+        <div class="conteneurCards--enligne w-75">
             <div class="card cardCategorie">
                 <div class="card-header">
                     <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
@@ -205,11 +205,11 @@ extra_css: "ressources-hub-categories.css"
 
 <!-- SCRIPT -->
 <script>
-    let dropDown_items = document.querySelectorAll(".dropDownItem");
+    let dropDown_items = document.querySelectorAll(".objetDeroulant");
     let dropDown_heads = document.querySelectorAll(".objetDeroulant__entete");
     let dropDown_contents = document.querySelectorAll(".dropDownContent");
-    let dropDown_icon_open = document.querySelectorAll(".objetDeroulant__entete_icon_open");
-    let dropDown_icon_close = document.querySelectorAll(".objetDeroulant__entete_icon_close");
+    let dropDown_icon_open = document.querySelectorAll(".objetDeroulant__entete_icone--ouvrir");
+    let dropDown_icon_close = document.querySelectorAll(".objetDeroulant__entete_icone--fermer");
 
     for (let i = 0; i < dropDown_heads.length; i++) 
     {

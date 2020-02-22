@@ -58,25 +58,25 @@ extra_css: "assurance-loyer.css"
 
 <!-- MAIN -->
 <main>
-    <div class="menuStickyPage">
-        <div class="menuStickyPage__conteneurLiens">
-            <a href="#garanties" class="menuStickyPage__item">Garanties & tarifs</a>
-            <a href="#conditions" class="menuStickyPage__item">Conditions locataire</a>
-            <a href="#status" class="menuStickyPage__item">Status éligibles</a>
-            <a href="#impayes" class="menuStickyPage__item">En cas d’impayés</a>
-            <a href="#faq" class="menuStickyPage__item">FAQ</a>
-            <a href="#documentation" class="menuStickyPage__item">Documentation</a>
-            <a href="#about" class="menuStickyPage__item">A propos</a>
+    <div class="menuSticky--section">
+        <div class="menuSticky--section__conteneurLiens">
+            <a href="#garanties" class="menuSticky--section__item">Garanties & tarifs</a>
+            <a href="#conditions" class="menuSticky--section__item">Conditions locataire</a>
+            <a href="#status" class="menuSticky--section__item">Status éligibles</a>
+            <a href="#impayes" class="menuSticky--section__item">En cas d’impayés</a>
+            <a href="#faq" class="menuSticky--section__item">FAQ</a>
+            <a href="#documentation" class="menuSticky--section__item">Documentation</a>
+            <a href="#about" class="menuSticky--section__item">A propos</a>
         </div>
-        <a href="" class="btn btn-dark btn-sm menuStickyPage__bouton">Démarrer</a>
+        <a href="" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
     </div>
 
     <!-- SECTION GARANTIES ET TARIFS -->
-    <section class="page_section sectionGaranties bg-tertiary">
-        <div class="menuStickyPage__ancre" id="garanties"></div>
-        <h2 class="page_section_sideTitle">Garanties & tarifs de l’assurance loyer impayé</h2>
-        <div class="page_section_content">
-            <div class="section_subElement tableau bg-white">
+    <section class="sectionPageClassique sectionGaranties bg-tertiary">
+        <div class="menuSticky--section__ancre" id="garanties"></div>
+        <h2 class="sectionPageClassique__titrage">Garanties & tarifs de l’assurance loyer impayé</h2>
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement tableau bg-white">
                 <div class="table_head">
                     <div class="table_head_cell table_first_column mb-0"><h3>Garantie loyer impayé (GLI)</h3></div>
                     <div class="table_head_cell">Basic</div>
@@ -168,9 +168,9 @@ extra_css: "assurance-loyer.css"
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Locations éligibles</h3>
-                <ul class="list--checked">
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Locations éligibles</h3>
+                <ul class="liste--check">
                     <li>Bail d'habitation vide ou meublée</li>
                     <li>Location en France métropolitaine</li>
                 </ul>
@@ -178,8 +178,8 @@ extra_css: "assurance-loyer.css"
                 <a href="" class="text-dark"><u>Voir les critères détaillés</u></a> 
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Validation du dossier locataire</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Validation du dossier locataire</h3>
                 <p>Les justificatifs ne vous seront demandés qu'en cas d'impayés (voir la liste des critères et des pièces). Nous vous recommandons donc de constituer le dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreurs.</p>
                 <a href="" class="btn btn-outline-dark btn-sm">Valider votre dossier locataire</a>
             </div>
@@ -187,29 +187,29 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION CONDITIONS DU DOSSIER LOCATAIRE -->
-    <section class="page_section sectionConditions">
-        <div class="menuStickyPage__ancre" id="conditions"></div>
+    <section class="sectionPageClassique sectionConditions">
+        <div class="menuSticky--section__ancre" id="conditions"></div>
 
-        <h2 class="page_section_sideTitle">Conditions du dossier locataire pour la garantie loyer impayé</h2>
+        <h2 class="sectionPageClassique__titrage">Conditions du dossier locataire pour la garantie loyer impayé</h2>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
-                <div class="blackMenu mb-5">
-                    <p class="blackMenu_item">Entrants ou en place depuis - de 6 mois </p>
-                    <p class="blackMenu_item">En place depuis + de 6 mois</p>
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
+                <div class="menuNoir mb-5">
+                    <p class="menuNoir__item">Entrants ou en place depuis - de 6 mois </p>
+                    <p class="menuNoir__item">En place depuis + de 6 mois</p>
                 </div>
             </div>
 
-            <div class="section_subElement encadrement--gris">
+            <div class="section__sousElement encadrement--gris">
                 <h3>Revenu supérieur à 2,85 x le loyer CC</h3>
                 <p>Vous pouvez sommer les revenus des candidats éligibles ou des garants éligibles. <br> Il est par contre impossible de cumuler garant et assurance sauf pour les étudiants.</p>
                 <a href="" class="btn btn-outline-dark btn-sm w-50 mb-3">Calculez les revenus minimum pour votre loyer</a>
                 <a href="" class="btn btn-outline-dark btn-sm w-50">Tester l’éligibilité d’un dossier</a>
             </div> 
 
-            <div class="section_subElement encadrement--gris">
+            <div class="section__sousElement encadrement--gris">
                 <h3>Statuts éligibles</h3>
-                <ul class="list--dotted">
+                <ul class="liste--point">
                     <li>Salarié en CDI hors période d'essai</li>
                     <li>Fonctionnaire titulaire</li>
                     <li>Salarié en CDD avec plus de 8 mois de contrat restant</li>
@@ -221,9 +221,9 @@ extra_css: "assurance-loyer.css"
                 </ul>
             </div>
 
-            <div class="section_subElement encadrement--gris">
+            <div class="section__sousElement encadrement--gris">
                 <h3>Statuts non éligibles comme locataires entrants (même avec garants)</h3>
-                <ul class="list--dotted mb-3">
+                <ul class="liste--point mb-3">
                     <li>Sans emploi (sauf allocataire AAH)</li>
                     <li>Intérimaire / Intermittent</li>
                     <li>Salarié en CDD avec moins de 8 mois de contrat restant</li>
@@ -238,7 +238,7 @@ extra_css: "assurance-loyer.css"
                 <a href=""><u>consultez la fiche pratique sur les candidats non éligibles.</u></a>
             </div>
 
-            <div class="section_subElement">
+            <div class="section__sousElement">
                 <img src="../../../assets/img/smartloc/icons/arrow.svg" alt="">
                 <a href="" class="text-dark"><u>Liste complète des critères et justificatifs</u></a>
             </div>
@@ -246,13 +246,13 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION STATUS ELIGIBLES -->
-    <section class="page_section sectionStatus bg-primary">
-        <div class="menuStickyPage__ancre" id="status"></div>
+    <section class="sectionPageClassique sectionStatus bg-primary">
+        <div class="menuSticky--section__ancre" id="status"></div>
 
-        <h2 class="page_section_sideTitle">Status éligibles</h2>
+        <h2 class="sectionPageClassique__titrage">Status éligibles</h2>
 
-        <div class="page_section_content">
-                <div class="section_subElement tableau bg-white">
+        <div class="sectionPageClassique__contenu">
+                <div class="section__sousElement tableau bg-white">
                     <div class="table_head">
                         <div class="table_head_cell table_first_column mb-0">
                             <h3 class="mb-0">Status éligibles</h3>
@@ -384,15 +384,15 @@ extra_css: "assurance-loyer.css"
                     </div>
                 </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Validation du dossier locataire</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Validation du dossier locataire</h3>
                 <p>Les justificatifs ne vous seront demandés qu'en cas d'impayés (voir la liste des critères et des pièces).</p>
                 <p class="mb-4">Nous vous recommandons donc de constituer le dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreurs.</p>
                 <a href="" class="btn btn-outline-dark btn-sm">Valider votre dossier locataire</a>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Souscrivez au plus tard 14 jours après l'entrée dans les lieux</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Souscrivez au plus tard 14 jours après l'entrée dans les lieux</h3>
                 <p>Si vous souscrivez avec un locataire entrant ou en place depuis moins de 14 jours vous n'aurez pas de carence.</p>
                 <p>La carence est une période probatoire au démarrage de la garantie pendant laquelle vous ne devez pas avoir d'impayés sinon vous ne serez pas du tout couvert.</p>
             </div>
@@ -400,13 +400,13 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION CAS IMPAYÉS -->
-    <section class="page_section sectionImpayes">
-        <div class="menuStickyPage__ancre" id="impayes"></div>
+    <section class="sectionPageClassique sectionImpayes">
+        <div class="menuSticky--section__ancre" id="impayes"></div>
 
-        <h2 class="page_section_sideTitle">En cas d’impayés</h2>
+        <h2 class="sectionPageClassique__titrage">En cas d’impayés</h2>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
                 <div class="tableau bg-light mb-4">
                     <div class="table_head">
                         <div class="table_head_cell table_first_column mb-0">
@@ -472,13 +472,13 @@ extra_css: "assurance-loyer.css"
                 <p>(1) : Dates limites indicatives, référez-vous aux conditions générales du contrat</p>
             </div>
             
-            <div class="section_subElement alert-advice alert-advice-success">
+            <div class="section__sousElement alert-advice alert-advice-success">
                 <img src="../../../assets/img/smartloc/illustrations/calendrier.png" class="advice-illustration" alt="">
                 <div class="advice-info">
                     <h3 class="advice-title">Prise en charge dès le premier mois d'impayé</h3>
                     <p>Remboursement sans franchise des 3 premiers mois d'impayés après 90 jours puis remboursement mensuel.</p>
                     <p>L'assureur se charge de toute la procédure après transmission du dossier suite au premier impayé :</p>
-                    <ul class="list--checked">
+                    <ul class="liste--check">
                         <li>Commandement de payer délivré par huissier</li>
                         <li>Assignation au tribunal par un avocat spécialisé</li>
                         <li>Obtention d'un jugement d'expulsion</li>
@@ -487,8 +487,8 @@ extra_css: "assurance-loyer.css"
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Un risque réel pouvant s’élever à 3 ans d’impayés</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Un risque réel pouvant s’élever à 3 ans d’impayés</h3>
                 <div class="stats_container">
                     <h3>20 000€</h3>
                     <div>
@@ -505,8 +505,8 @@ extra_css: "assurance-loyer.css"
                 </div>
             </div>
 
-            <div class="section_subElement">
-                <h3 class="subElement_title">Nombre de procédures d’impayés devant les tribunaux en France</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Nombre de procédures d’impayés devant les tribunaux en France</h3>
                 <img src="../../../assets/img/smartloc/photos/assurance_graph.png" alt="" class="w-75">
             </div>
 
@@ -527,35 +527,35 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION FAQ -->
-    <section class="page_section sectionFAQ">
-        <div class="menuStickyPage__ancre" id="faq"></div>
+    <section class="sectionPageClassique sectionFAQ">
+        <div class="menuSticky--section__ancre" id="faq"></div>
 
-        <div class="page_section_sideTitle">
-            <h2 class="menuStickySection__titre">FAQ</h2>
+        <div class="sectionPageClassique__titrage">
+            <h2 class="menuSticky--sousElement__titre">FAQ</h2>
 
-            <div class="menuStickySection">
-                <h4><a href="#faq_garanties" class="menuStickySection__item">Les garanties</a></h4>
-                <h4><a href="#faq_criteres" class="menuStickySection__item">Les critères</a></h4>
+            <div class="menuSticky--sousElement">
+                <h4><a href="#faq_garanties" class="menuSticky--sousElement__item">Les garanties</a></h4>
+                <h4><a href="#faq_criteres" class="menuSticky--sousElement__item">Les critères</a></h4>
                 <h4><a href="#faq_dossier" class="">Le dossier locataire</a></h4>
                 <h4><a href="#faq_contrat" class="">La vie du contrat</a></h4>
                 <h4><a href="#faq_impayes" class="">La procédure d’impayés</a></h4>
             </div>
         </div>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
-                <div id="faq_garanties" class="menuStickySection__ancre"></div>
-                <h2 class="subElement_title">Les garanties de l’assurance loyer impayé</h2>
-                <h3 class="subElement_title">Que couvre la garantie loyer impayé ?</h3>
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
+                <div id="faq_garanties" class="menuSticky--sousElement__ancre"></div>
+                <h2 class="section__sousElement_titre">Les garanties de l’assurance loyer impayé</h2>
+                <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
                 <p>Vous êtes couvert contre les impayés de loyer qui vous sont remboursés directement.</p>
                 <p>L'assureur vous remplace également dans la procédure et va donc poursuivre directement le locataire pour récupérer les impayés et l'expulser si nécessaire.</p>
                 <p>Vous êtes également couvert sur les dégradations immobilières causées par le locataire et qui ne seraient pas remboursées (directement par le locataire ou en utilisant son dépôt de garantie - voir notre fiche pratique sur le sujet).</p>
                 <p>Enfin la garantie vous couvre contre les départs "à la cloche de bois", c'est à dire les départs furtifs du locataire abandonnant son logement. Vous êtes alors remboursé des loyers non perçus jusqu'à la récupération effective du logement.</p>
             </div>
 
-            <div class="section_subElement">
-                <div id="" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Y a-t-il une franchise ou une carence sur l'assurance loyer impayé ?</h3> 
+            <div class="section__sousElement">
+                <div id="" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Y a-t-il une franchise ou une carence sur l'assurance loyer impayé ?</h3> 
                 <p>La garantie loyer impayé Insured proposée par Smartloc est sans franchise pour les impayés de loyer. Le dépôt de garantie du locataire que vous avez encaissé est simplement déduit du dernier remboursement qui vous est dû par la compagnie.</p>                
                 <p>Pour les locataires entrants ou en place depuis moins de 14 jours il n'y a pas de carence, c'est à dire pas de période probatoire.</p>           
                 <p>Pour les locataires en place depuis plus de 14 jours vous avez une carence de 3 mois, c'est à dire que si un impayé intervient dans les 3 premiers mois du contrat vous ne serez pas du tout couvert.</p>
@@ -564,90 +564,90 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION DOC -->
-    <section class="page_section sectionDoc bg-light">
-        <div class="menuStickyPage__ancre" id="documentation"></div>
+    <section class="sectionPageClassique sectionDoc bg-light">
+        <div class="menuSticky--section__ancre" id="documentation"></div>
 
-        <div class="page_section_sideTitle">
-            <h2 class="menuStickySection__titre">La doc</h2>
+        <div class="sectionPageClassique__titrage">
+            <h2 class="menuSticky--sousElement__titre">La doc</h2>
 
-            <div class="menuStickySection">
-                <h4><a href="#doc_souscrire" class="menuStickySection__item">Avant de souscrire</a></h4>
-                <h4><a href="#doc_bail" class="menuStickySection__item">Pour signer le bail</a></h4>
-                <h4><a href="#doc_impayes" class="menuStickySection__item">En cas d’impayés</a></h4>
+            <div class="menuSticky--sousElement">
+                <h4><a href="#doc_souscrire" class="menuSticky--sousElement__item">Avant de souscrire</a></h4>
+                <h4><a href="#doc_bail" class="menuSticky--sousElement__item">Pour signer le bail</a></h4>
+                <h4><a href="#doc_impayes" class="menuSticky--sousElement__item">En cas d’impayés</a></h4>
             </div>
         </div>
 
-        <div class="page_section_content">
-            <div class="section_subElement">
-                <h2 class="subElement_title mb-4">Document de la GLI</h2>
-                <div id="doc_souscrire" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Avant de souscrire</h3>
-                <div class="cardsContainer_column smallCardsContainer">
-                    <div class="card smallCard">
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement">
+                <h2 class="section__sousElement_titre mb-4">Document de la GLI</h2>
+                <div id="doc_souscrire" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Avant de souscrire</h3>
+                <div class="conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Liste de critères et justificatifs</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Conditions générales Insured Rent</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Vérification du dossier avant souscription</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="section_subElement">
-                <div id="doc_bail" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">Pour signer le bail</h3>
-                <div class="cardsContainer_column smallCardsContainer">
-                    <div class="card smallCard">
+            <div class="section__sousElement">
+                <div id="doc_bail" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">Pour signer le bail</h3>
+                <div class="conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Bail de location conforme</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Etat des lieux conforme</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Checklist entrée dans les lieux</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="section_subElement">
-                <div id="doc_impayes" class="menuStickySection__ancre"></div>
-                <h3 class="subElement_title">En cas d'impayés</h3>
-                <div class="cardsContainer_column smallCardsContainer">
-                    <div class="card smallCard">
+            <div class="section__sousElement">
+                <div id="doc_impayes" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="section__sousElement_titre">En cas d'impayés</h3>
+                <div class="conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Que faire en cas d'impayés ?</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Lettre de relance simple</span>
                         </div>
                     </div>
-                    <div class="card smallCard">
+                    <div class="card cardLigne">
                         <div class="card-body">
-                            <img class="smallCard_icon" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
                             <span>Mise en demeure par RAR</span>
                         </div>
                     </div>
@@ -657,15 +657,15 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION COMPARATIFS -->
-    <section class="page_section sectionComparatifs bg-quarantary">
-        <div class="menuStickyPage__ancre" id="about"></div>
+    <section class="sectionPageClassique sectionComparatifs bg-quarantary">
+        <div class="menuSticky--section__ancre" id="about"></div>
 
-        <div class="page_section_sideTitle">
-            <h2 class="menuStickySection__titre">Comparatif des assurances loyers impayés</h2>
+        <div class="sectionPageClassique__titrage">
+            <h2 class="menuSticky--sousElement__titre">Comparatif des assurances loyers impayés</h2>
         </div>
 
-        <div class="page_section_content">
-            <div class="section_subElement" style="background: white; height: 600px;">
+        <div class="sectionPageClassique__contenu">
+            <div class="section__sousElement" style="background: white; height: 600px;">
                 tableau
             </div>
         </div>
@@ -743,27 +743,27 @@ extra_css: "assurance-loyer.css"
 
 <script>
     // MENU NOIR 
-    let blackMenu_items = document.querySelectorAll('.blackMenu_item');
-    blackMenu_items[0].classList.add('blackMenu_item_active');
+    let menuNoir_items = document.querySelectorAll('.menuNoir__item');
+    menuNoir_items[0].classList.add('menuNoir__item--active');
 
-    for (let i = 0; i < blackMenu_items.length; i++) {
-        blackMenu_items[i].onclick=()=>{
-            for (let i = 0; i < blackMenu_items.length; i++) {
-                blackMenu_items[i].classList.remove('blackMenu_item_active');
+    for (let i = 0; i < menuNoir_items.length; i++) {
+        menuNoir_items[i].onclick=()=>{
+            for (let i = 0; i < menuNoir_items.length; i++) {
+                menuNoir_items[i].classList.remove('menuNoir__item--active');
             }
-            blackMenu_items[i].classList.add('blackMenu_item_active');
+            menuNoir_items[i].classList.add('menuNoir__item--active');
         }
     }
 
     // NAV AVEC JUMP DANS LA PAGE
-    let menuStickySection__items = document.querySelectorAll('.menuStickySection__item');
-    menuStickySection__items[0].classList.add('menuStickySection__item_active');
+    let menuSticky_sousElement__items = document.querySelectorAll('.menuSticky--sousElement__item');
+    menuSticky_sousElement_items[0].classList.add('menuSticky--sousElement__item--active');
     
-    let menuStickyPage__items = document.querySelectorAll('.menuStickyPage__item');
-    menuStickyPage__items[0].classList.add('menuStickyPage__item--active');
+    let menuSticky_section_items = document.querySelectorAll('.menuSticky--section__item');
+    menuSticky_section_items[0].classList.add('menuSticky--section__item--active');
 
-    let menuStickyPage__ancres = document.querySelectorAll('.menuStickyPage__ancre');
-    let menuStickySection__ancres = document.querySelectorAll('.menuStickySection__ancre');
+    let menuSticky_section_ancres = document.querySelectorAll('.menuSticky--section__ancre');
+    let menuSticky_sousElement_ancres = document.querySelectorAll('.menuSticky--sousElement__ancre');
 
     let set_active = function(items, jumpers, className)
     {
@@ -781,6 +781,6 @@ extra_css: "assurance-loyer.css"
         })
     }
 
-    set_active(menuStickySection__items, menuStickySection__ancres,"menuStickySection__item")
-    set_active(menuStickyPage__items, menuStickyPage__ancres, "menuStickyPage__item")
+    set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres,"menuSticky--sousElement__item")
+    set_active(menuSticky_section_items, menuSticky_section_ancres, "menuSticky--section__item")
 </script>

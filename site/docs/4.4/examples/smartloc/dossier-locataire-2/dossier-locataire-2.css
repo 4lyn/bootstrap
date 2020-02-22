@@ -2,7 +2,7 @@
 @import "../styles/dossiers-locataires.css";
 
 
-.progression_line
+.dossierLocataire__ligneProgression
 {
     width: 33%;
 }

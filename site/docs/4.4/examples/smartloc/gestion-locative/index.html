@@ -59,24 +59,24 @@ extra_css: "gestion-locative.css"
 <!-- MAIN -->
 
 <main>
-    <div class="menuStickyPage">
-        <div class="menuStickyPage__conteneurLiens">
-            <a href="#fonctionnalites" class="menuStickyPage__item">Fonctionnalités</a>
-            <a href="#tarifs" class="menuStickyPage__item">Tarifs</a>
-            <a href="#questions" class="menuStickyPage__item">Vos questions</a>
-            <a href="#temoignages" class="menuStickyPage__item">Témoignages</a>
-            <a href="#usage" class="menuStickyPage__item">Cas d’usage</a>
+    <div class="menuSticky--section">
+        <div class="menuSticky--section__conteneurLiens">
+            <a href="#fonctionnalites" class="menuSticky--section__item">Fonctionnalités</a>
+            <a href="#tarifs" class="menuSticky--section__item">Tarifs</a>
+            <a href="#questions" class="menuSticky--section__item">Vos questions</a>
+            <a href="#temoignages" class="menuSticky--section__item">Témoignages</a>
+            <a href="#usage" class="menuSticky--section__item">Cas d’usage</a>
         </div>
-        <a href="" class="btn btn-dark btn-sm menuStickyPage__bouton">Démarrer</a>
+        <a href="" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
     </div>
 
     <!-- SECTION FONCTIONNALITES -->
-    <section class="page_section sectionFonctionnalite bg-light">
-        <div class="menuStickyPage__ancre" id="fonctionnalites"></div>
-        <h2 class="page_section_sideTitle">Fonctionnalités</h2>
-        <div class="page_section_content">
-            <h2 class="subElement_title">Mettez votre location en pilote automatique</h2>
-            <div class="cardsContainer_row section_subElement">
+    <section class="sectionPageClassique sectionFonctionnalite bg-light">
+        <div class="menuSticky--section__ancre" id="fonctionnalites"></div>
+        <h2 class="sectionPageClassique__titrage">Fonctionnalités</h2>
+        <div class="sectionPageClassique__contenu">
+            <h2 class="section__sousElement_titre">Mettez votre location en pilote automatique</h2>
+            <div class="conteneurCards--enligne section__sousElement">
                 <div class="fonctionnalite">
                     <img src="../../../assets/img/smartloc/illustrations/taches.png" alt="">
                     <h5>Bail de location numérique</h5>
@@ -128,13 +128,13 @@ extra_css: "gestion-locative.css"
     </section>
 
     <!-- SECTION TARIFS -->
-    <section class="page_section sectionTarifs bg-quarantary">
-        <div class="menuStickyPage__ancre" id="tarifs"></div>
-        <h2 class="page_section_sideTitle">Tarifs</h2>
-        <div class="page_section_content">
-            <h2 class="subElement_title">Economisez 50€/mois en gardant le contrôle</h2>
-            <div class="section_subElement bg-white" style="height: 690px; width: 100%"></div>
-            <div class="section_subElement alert-notice bg-white border-0">
+    <section class="sectionPageClassique sectionTarifs bg-quarantary">
+        <div class="menuSticky--section__ancre" id="tarifs"></div>
+        <h2 class="sectionPageClassique__titrage">Tarifs</h2>
+        <div class="sectionPageClassique__contenu">
+            <h2 class="section__sousElement_titre">Economisez 50€/mois en gardant le contrôle</h2>
+            <div class="section__sousElement bg-white" style="height: 690px; width: 100%"></div>
+            <div class="section__sousElement alert-notice bg-white border-0">
                 <div class="notice-illustration bg-dark" style="min-height: 112px; min-width: 112px"></div>
                 <div class="notice-info">
                     <h3 class="notice-title">Economisez 50€/mois en moyenne en gardant  le contrôle de votre location</h3>
@@ -146,105 +146,105 @@ extra_css: "gestion-locative.css"
     </section>
 
     <!-- SECTIONS VOS QUESTIONS -->
-    <section class="page_section sectionQuestions bg-light">
-        <div class="menuStickyPage__ancre" id="questions"></div>
-        <h2 class="page_section_sideTitle">Vos questions</h2>
-        <div class="page_section_content">
-            <div class="questionDeroulante dropDownItem">
+    <section class="sectionPageClassique sectionQuestions bg-light">
+        <div class="menuSticky--section__ancre" id="questions"></div>
+        <h2 class="sectionPageClassique__titrage">Vos questions</h2>
+        <div class="sectionPageClassique__contenu">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Gérez vous les encaissements ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Non les loyers sont directement encaissés par le propriétaire pour des raisons de coût et de simplicté. Si les loyers sont correctement payés il vous suffit de transférer la quittance que nous vous envoyons au locataire. En cas de retard ou d'impayés, notre outil vous guide pas à pas sur les démarches à effectuer, que vous ayez ou non pris notre garantie loyer impayé.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Comment fonctionne l'envoi des quittances ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Que se passe-t-il en cas d'impayés ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Gérez-vous la recherche du locataire ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Vérifiez-vous les dossiers des locataires ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Rédigez-vous le bail ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Est-ce que vous vous occupez de la déclaration fiscale ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Comment fonctionne l'assistance ? Peut-on vous appeler ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Comment sont gérés les incidents techniques ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
             </div>
-            <div class="questionDeroulante dropDownItem">
+            <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete">
                     <span>Proposez-vous d'autres assurances que la garantie loyer impayé ?</span>
-                    <img class="objetDeroulant__entete_icon_open" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icon_close" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
                 </div>
                 <div class="dropDownContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
@@ -255,9 +255,9 @@ extra_css: "gestion-locative.css"
     
     <!-- SECTIONS TEMOIGNAGES -->
     <section class="sectionTemoignages">
-        <div class="menuStickyPage__ancre" id="temoignages"></div>
+        <div class="menuSticky--section__ancre" id="temoignages"></div>
         <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
-        <div class="cardsContainer_row">
+        <div class="conteneurCards--enligne">
             <div class="card cardTemoignage">
                 <p>“Je suis satisfaite, service très facile  et rapide d’utilisation.”</p>
                 <div class="cardTemoignage__conteneurInfos">
@@ -303,15 +303,15 @@ extra_css: "gestion-locative.css"
     </section>
 
     <!-- SECTIONS CAS D'USAGE -->
-    <section class="page_section sectionUsage">
-        <div class="menuStickyPage__ancre" id="usage"></div>
-        <h2 class="page_section_sideTitle">Cas d'usage</h2>
-        <div class="page_section_content">
-            <h2 class="subElement_title">Découvrez notre offre sur des exemples concrets </h2>
+    <section class="sectionPageClassique sectionUsage">
+        <div class="menuSticky--section__ancre" id="usage"></div>
+        <h2 class="sectionPageClassique__titrage">Cas d'usage</h2>
+        <div class="sectionPageClassique__contenu">
+            <h2 class="section__sousElement_titre">Découvrez notre offre sur des exemples concrets </h2>
             <p>Le bail et les échéances importantes sont donc gérés automatiquement via votre espace de gestion Smartloc; vous vous demandez peut être comment sont résolues les nombreux problèmes particuliers que peuvent rencontrer nos bailleurs. Voici quelques cas d'usage, la liste n'est pas exhaustive.</p>
             
-            <div class="section_subElement">
-                <h3 class="subElement_title">Entrée des locataires</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Entrée des locataires</h3>
                 <div class="alert-notice alert-notice-tertiary">
                     <img src="../../../assets/img/smartloc/illustrations/notes.png" class="notice-illustration" alt="">
                     <div class="notice-info">
@@ -326,7 +326,7 @@ extra_css: "gestion-locative.css"
                     <div class="notice-info">
                         <h3 class="notice-title"> “ J'ai reçu un dossier de locataires mais  je crains qu'il ne soit faux”</h3>
                         <p>Lorsque que vous retenez une candidature de locataires, notre équipe peut vérifier le dossier de location dans le cadre de la garantie loyer impayé.</p>
-                        <ul class="list--dotted">
+                        <ul class="liste--point">
                             L'étude comporte deux aspects :
                             <li>la vérification de la complétude et de l'éligibilité du dossier au regard de l'assurance</li>
                             <li>la détection d'éventuels faux documents ou fausses informations</li>
@@ -336,8 +336,8 @@ extra_css: "gestion-locative.css"
                 </div>
             </div>
             
-            <div class="section_subElement">
-                <h3 class="subElement_title">Incidents en cours de bail</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Incidents en cours de bail</h3>
                 <div class="alert-notice alert-notice-quarantary">
                     <img src="../../../assets/img/smartloc/illustrations/fleches.png" class="notice-illustration" alt="">
                     <div class="notice-info">
@@ -351,7 +351,7 @@ extra_css: "gestion-locative.css"
                     <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="notice-illustration" alt="">
                     <div class="notice-info">
                         <h3 class="notice-title">“Le chauffe-ballon est tombé en panne”</h3>
-                        <ul class="list--dotted">
+                        <ul class="liste--point">
                             Lorsque un équipement tombe en panne, deux problèmes distincts se posent :
                             <li>comment faire intervenir rapidement et à moindre coût un artisan</li>
                             <li>qui doit prendre en charge le coût de la réparation</li>
@@ -362,8 +362,8 @@ extra_css: "gestion-locative.css"
                 </div>
             </div>
             
-            <div class="section_subElement">
-                <h3 class="subElement_title">Gestion financière</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Gestion financière</h3>
                 <div class="alert-notice alert-notice-tertiary">
                     <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
                     <div class="notice-info">
@@ -385,8 +385,8 @@ extra_css: "gestion-locative.css"
                 </div>
             </div>
             
-            <div class="section_subElement">
-                <h3 class="subElement_title">Sortie des locataires</h3>
+            <div class="section__sousElement">
+                <h3 class="section__sousElement_titre">Sortie des locataires</h3>
                 <div class="alert-notice alert-notice-success">
                     <img src="../../../assets/img/smartloc/illustrations/utilisateurs.png" class="notice-illustration" alt="">
                     <div class="notice-info">
@@ -401,7 +401,7 @@ extra_css: "gestion-locative.css"
                     <div class="notice-info">
                         <h3 class="notice-title">“Le locataire a dégradé la moquette du logement et refuse de la remettre en état”</h3>
                         <p>La gestion des sorties est un moment critique de la vie du logement. Sur votre espace de gestion Smartloc vous disposez d'un modèle d'état des lieux qui vous permet de comparer facilement l'état du logement à l'entrée et à la sortie.</p>
-                        <ul class="list--dotted">
+                        <ul class="liste--point">
                             En cas de dégradations notre équipe peut vous orienter sur :
                             <li>le chiffrage des dégradations en fonction du taux de vétusté de chaque poster</li>
                             <li>le courrier à envoyer au locataire pour retenir la totalité ou une partie de son dépôt de garantie</li>
@@ -484,11 +484,11 @@ extra_css: "gestion-locative.css"
 <!-- SCRIPT -->
 <script>
     // NAV AVEC JUMP DANS LA PAGE
-    let menuStickyPage__items = document.querySelectorAll('.menuStickyPage__item');
-    menuStickyPage__items[0].classList.add('menuStickyPage__item--active');
+    let menuSticky_section_items = document.querySelectorAll('.menuSticky--section__item');
+    menuSticky_section_items[0].classList.add('menuSticky--section__item--active');
 
-    let menuStickyPage__ancres = document.querySelectorAll('.menuStickyPage__ancre');
-    let menuStickySection__ancres = document.querySelectorAll('.menuStickySection__ancre');
+    let menuSticky_section_ancres = document.querySelectorAll('.menuSticky--section__ancre');
+    let menuSticky_sousElement_ancres = document.querySelectorAll('.menuSticky--sousElement__ancre');
 
     let set_active = function(items, jumpers, className)
     {
@@ -506,14 +506,14 @@ extra_css: "gestion-locative.css"
         })
     }
 
-    set_active(menuStickyPage__items, menuStickyPage__ancres, "menuStickyPage__item")
+    set_active(menuSticky_section_items, menuSticky_section_ancres, "menuSticky--section__item")
 
     // QUESTIONS DROPDOWN
-    let dropDown_items = document.querySelectorAll(".dropDownItem");
+    let dropDown_items = document.querySelectorAll(".objetDeroulant");
         let dropDown_heads = document.querySelectorAll(".objetDeroulant__entete");
         let dropDown_contents = document.querySelectorAll(".dropDownContent");
-        let dropDown_icon_open = document.querySelectorAll(".objetDeroulant__entete_icon_open");
-        let dropDown_icon_close = document.querySelectorAll(".objetDeroulant__entete_icon_close");
+        let dropDown_icon_open = document.querySelectorAll(".objetDeroulant__entete_icone--ouvrir");
+        let dropDown_icon_close = document.querySelectorAll(".objetDeroulant__entete_icone--fermer");
     
         for (let i = 0; i < dropDown_heads.length; i++) 
         {
