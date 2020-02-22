@@ -3,41 +3,6 @@ body
     background-color: #F4F4F4;
 }
 
-/* HEADER */
-
-header
-{
-    margin-bottom: 3.75rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center; 
-}
-
-.headerDossiers_buttonsContainer
-{
-    height: inherit;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 42%;
-}
-
-.headerDossiers_buttonsContainer a 
-{
-    margin-left: 1rem;
-    text-decoration: none !important;
-}
-
-.headerDossiers_buttonsContainer a:first-child
-{
-    color: black !important;
-}
 
 /* SECTION NAVIGATION étapes dossiers */
 
