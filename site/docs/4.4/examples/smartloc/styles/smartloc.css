@@ -73,8 +73,8 @@ ul
 }
 
 
-/************* HEADER *************/
 
+/************* HEADER *************/
 header
 {
     padding-top: 2.5rem;
@@ -84,6 +84,7 @@ header
 {
     width: 8.75rem;
 }
+
 
 /* MENU HEADER présent sur toutes les pages */
 .menuHeader
@@ -109,12 +110,14 @@ header
     align-items: center;
 }
 
-.menuHeader__conteneurLiens a
+.menuHeader__conteneurLiens a:not(:first-child)
 {
-    margin-left: 2rem;
-    cursor: pointer;
-    text-decoration: none !important;
-    color: black !important;
+    margin-left: 1.5rem;
+}
+.menuHeader__conteneurLiens a:not(.btn)
+{
+    text-decoration: none;
+    color: black;
 }
 
 .menuHeader__liensBold
@@ -122,6 +125,7 @@ header
     margin-left: 2.5rem;
     font-weight: bold;
 }
+
 
 /* HEADER DOSSIER LOCATAIRES */
 .headerDossierLocataire
