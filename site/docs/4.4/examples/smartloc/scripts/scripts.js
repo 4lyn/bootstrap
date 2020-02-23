@@ -3,6 +3,8 @@
 /* eslint-disable strict */
 /* eslint-disable camelcase */
 
+const taille_typo_base = 16
+
 // MENU NOIR
 const menuNoir_items = document.querySelectorAll('.menuNoir__item')
 
@@ -46,3 +48,34 @@ const set_active = function (items, jumpers)
 
 set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres)
 set_active(menuSticky_section_items, menuSticky_section_ancres)
+
+// QUESTIONS DROPDOWN
+const objet_deroulants = document.querySelectorAll('.objetDeroulant')
+const objet_deroulant_entetes = document.querySelectorAll('.objetDeroulant__entete')
+const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__contenu')
+const objet_deroulant_icones_ouvrir = document.querySelectorAll('.objetDeroulant__entete_icone--ouvrir')
+const objet_deroulant_icones_fermer = document.querySelectorAll('.objetDeroulant__entete_icone--fermer')
+
+for (let i = 0; i < objet_deroulant_entetes.length; i++)
+{
+  let toggle = false
+
+  objet_deroulant_entetes[i].addEventListener('click', () =>
+  {
+    const hauteurDeroulement = objet_deroulants_contenu[i].offsetHeight + objet_deroulants[i].offsetHeight
+    if (toggle)
+    {
+      objet_deroulants[i].style.height = objet_deroulant_entetes[i].offsetHeight / taille_typo_base + 'rem'
+      objet_deroulant_icones_ouvrir[i].style.display = 'block'
+      objet_deroulant_icones_fermer[i].style.display = 'none'
+      toggle = false
+    }
+    else
+    {
+      objet_deroulants[i].style.height = hauteurDeroulement / taille_typo_base + 'rem'
+      objet_deroulant_icones_ouvrir[i].style.display = 'none'
+      objet_deroulant_icones_fermer[i].style.display = 'block'
+      toggle = true
+    }
+  })
+}
