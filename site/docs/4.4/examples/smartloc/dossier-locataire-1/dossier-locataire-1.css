@@ -5,9 +5,7 @@ body
     background-color: #f4f4f4;
 }
 
-/* MAIN */
-
-.frame
+.dossierLocataire__encadrementBienvenue
 {
     background-color: white;
     overflow: hidden;
@@ -19,24 +17,43 @@ body
     flex-direction: row;
 }
 
-h2
-{
-    margin-bottom: 2rem;
-}
-
-.frameLeftPart
+.dossierLocataire__encadrementBienvenue__partieGauche
 {
     position: relative;
     padding: 2.5rem 0 3.75rem 2.5rem;
     max-width: 41%;
 }
 
-.frameRightPart
+.encadrementBienvenue__partieGauche_illustration
+{
+    position: absolute;
+}
+.encadrementBienvenue__partieGauche_illustration:nth-of-type(1)
+{
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+    z-index: -2;
+}
+.encadrementBienvenue__partieGauche_illustration:nth-of-type(2)
+{
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+.encadrementBienvenue__partieGauche_titre
+{
+    margin-bottom: 2rem;
+}
+
+.dossierLocataire__encadrementBienvenue__partieDroite
 {
     padding: 3.5rem 3.5rem 3.75rem 3.5rem;
 }
 
-.mathieuContainer
+.conteneurMathieu
 {
     display: -ms-flexbox;
     display: flex;
@@ -45,7 +62,7 @@ h2
     margin-bottom: 2rem;
 }
 
-.mathieuDescription
+.conteneurMathieu__description
 {
     margin-left: .75rem;
     display: -ms-flexbox;
@@ -54,23 +71,7 @@ h2
     flex-direction: column;
 }
 
-.shapes
+.conteneurMathieu__description h4
 {
-    position: absolute;
-}
-
-.shapes:nth-of-type(1)
-{
-    bottom: 0;
-    left: 30%;
-    width: 70%;
-    z-index: -2;
-}
-
-.shapes:nth-of-type(2)
-{
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 50%;
+    margin-bottom: 0;
 }
