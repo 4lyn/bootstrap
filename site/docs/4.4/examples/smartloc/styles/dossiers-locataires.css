@@ -6,111 +6,20 @@ body
 
 /* SECTION NAVIGATION étapes dossiers */
 
-.topNav
-{
-    width: 75%;
-    font-size: 1.125rem;
-    margin-bottom: 2.75rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.topNav img
-{
-    width: 1.5rem;
-}
-
-.topNav div
-{
-    opacity: 0.2;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.navActive
-{
-    opacity: 1 !important;
-}
-
-.topNav span
-{
-    font-weight: bold;
-    margin-left: .5rem;
-}
-
-/* HAUT DU DOCUMENT permanant */
-
-.titreDossierLocataire
-{
-    margin-bottom: 2.75rem;
-}
-
-.menuDossier
-{
-    margin-bottom: 3.25rem;
-}
-
-.menuDossier span
-{
-    padding-bottom: 20px;
-    margin-right: 1.5rem;
-}
-
-.menuDossier span:first-child
-{
-    border-bottom: solid 2px black;
-}
-
 /* MAIN */
 
-.dossierLocataire__conteneurPrincipal
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
 
 /* SECTION de formulaire */
 
-form
-{
-    width: 70%;
-    margin-right: 2rem;
-}
-
-.sectionFormulaire
-{
-    padding: 2rem 2.5rem 2.125rem 2.5rem;
-    margin-bottom: 2rem;
-    background-color: white;
-    border-radius: 4px;
-}
-
-.form-group span
-{
-    margin-bottom: .5rem;
-    display: inline-block;
-}
-
-.sectionFormulaire h3
+/* .dossierLocataire__formulaire_section h3
 {
     margin-top: 1.875rem;
     margin-bottom: 2rem;
-}
-
-.sectionFormulaire h3:first-of-type
+} */
+/* .dossierLocataire__formulaire_section h3:first-of-type
 {
     margin-top: 0px;
-}
+} */
 
 /* ASIDE */
 

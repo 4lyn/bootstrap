@@ -20,31 +20,31 @@ extra_css: "dossier-locataire-6.css"
     
 <main class="dossierLocataire">
     <!-- TOP NAV -->
-    <div class="topNav">
-        <div class="navActive">
+    <div class="dossierLocataire__menuEtapes">
+        <div class="dossierLocataire__menuEtapes_etape active">
             <img src="../../../assets/img/smartloc/icons/silhouette.png" alt="">
             <span>1. Information des candidats</span>
         </div>
-        <div class="navActive">
+        <div class="dossierLocataire__menuEtapes_etape active">
             <img src="../../../assets/img/smartloc/icons/file.svg" alt="">
             <span>2. Dépots des justificatifs</span>
         </div>
-        <div class="navActive">
+        <div class="dossierLocataire__menuEtapes_etape active">
             <img src="../../../assets/img/smartloc/icons/folder.png" alt="">
             <span>3. Récupération du dossier</span>
         </div>
     </div>
 
-            <!-- RENTING FILE SECTION  -->
-    <h1 class="titreDossierLocataire">Dossier de locataire</h1>
-    <div class="menuDossier">
-        <span>Dossier 1</span>
-        <a href="" class="menuDossier__ajouterDossier">+ Ajouter un dossier</a>
+    <!-- RENTING FILE SECTION  -->
+    <h1 class="dossierLocataire__titre">Dossier de locataire</h1>
+    <div class="dossierLocataire__menuDossier">
+        <a href="" class="dossierLocataire__menuDossier_dossier active">Dossier 1</a>
+        <a href="" class="dossierLocataire__menuDossier_lienAjouterDossier">+ Ajouter un dossier</a>
     </div>
             
     <!-- FRAME DE FORM -->
     <div class="dossierLocataire__conteneurPrincipal">
-        <form>
+        <form class="dossierLocataire__formulaire">
             <!-- ALERTE VERTE -->
             <div class="alert alert-success" role="alert">
                 <div class="alert-heading">
@@ -60,9 +60,11 @@ extra_css: "dossier-locataire-6.css"
             </div>
 
             <!-- PREMIER FORM -->
-            <div class="sectionFormulaire">
-                <h3>Dossier de location</h3>
-                <p>Vous pouvez accéder au dossier locataire ci-dessous.</p>
+            <div class="dossierLocataire__formulaire_section">
+                <div class="formulaire__sousElement_titre">
+                    <h3>Dossier de location</h3>
+                    <p>Vous pouvez accéder au dossier locataire ci-dessous.</p>
+                </div>
                 <button class="btn btn-primary btn-lg mb-4">Récupérer le dossier locataire</button>
                 <p>
                     Si vous avez une question sur le dossier, notre équipe peut y répondre gratuitement sur le chat. Parler avec un conseiller
@@ -75,8 +77,8 @@ extra_css: "dossier-locataire-6.css"
                 </p>
             </div>
 
-            <div class="sectionFormulaire nextStepsSection">
-                <h3>Prochaines étapes</h3>
+            <div class="dossierLocataire__formulaire_section nextStepsSection">
+                <h3 class="formulaire__sousElement_titre">Prochaines étapes</h3>
                 <p>Voici les prochaines étapes que vous devez suivre :</p>
                 <p>1. démarrer un devis d'assurance pour ce dossier</p>
                 <p>2. rédiger et signer le bail de location rapidement</p>
@@ -86,8 +88,8 @@ extra_css: "dossier-locataire-6.css"
                 <button class="btn btn-dark btn-lg">Démarrer un devis pour l’assurance</button>
             </div>
             
-            <div class="sectionFormulaire">
-                <h3>Vérification par nos équipes</h3>
+            <div class="dossierLocataire__formulaire_section">
+                <h3 class="formulaire__sousElement_titre">Vérification par nos équipes</h3>
                 <p>Si vous souhaitez que notre équipe vérifie l'ensemble des points de contrôle que vous avez validés, vous pouvez nous envoyer le dossier PDF, nous vous donnerons un avis sous 48h. Paiement de 45€ avec un crédit pour un deuxième en cas de refus du premier.</p>
                 <button class="btn btn-outline-dark btn-lg">Faire vérifier le dossier</button>
             </div>

@@ -20,95 +20,102 @@ extra_css: "dossier-locataire-3.css"
 
 <main class="dossierLocataire">
     <!-- TOP NAV -->
-    <div class="topNav">
-        <div class="navActive">
+    <div class="dossierLocataire__menuEtapes">
+        <div class="dossierLocataire__menuEtapes_etape active">
             <img src="../../../assets/img/smartloc/icons/silhouette.png" alt="">
             <span>1. Information des candidats</span>
         </div>
-        <div class="navActive">
+        <div class="dossierLocataire__menuEtapes_etape active">
             <img src="../../../assets/img/smartloc/icons/file.svg" alt="">
             <span>2. Dépots des justificatifs</span>
         </div>
-        <div>
+        <div class="dossierLocataire__menuEtapes_etape">
             <img src="../../../assets/img/smartloc/icons/folder.png" alt="">
             <span>3. Récupération du dossier</span>
         </div>
     </div>
 
     <!-- SECTION DOSSIER LOCATAIRE  -->
-    <h1 class="titreDossierLocataire">Dossier de locataire</h1>
-    <div class="menuDossier">
-        <span>Dossier 1</span>
-        <a href="" class="menuDossier__ajouterDossier">+ Ajouter un dossier</a>
+    <h1 class="dossierLocataire__titre">Dossier de locataire</h1>
+    <div class="dossierLocataire__menuDossier">
+        <a href="" class="dossierLocataire__menuDossier_dossier active">Dossier 1</a>
+        <a href="" class="dossierLocataire__menuDossier_lienAjouterDossier">+ Ajouter un dossier</a>
     </div>
     
     <div class="dossierLocataire__conteneurPrincipal">
         <!-- FRAME DE FORM -->
-        <form>
+        <form class="dossierLocataire__formulaire">
             <!-- PREMIER FORM -->
-            <div class="sectionFormulaire">
-                <h3 class="mb-1">Justificatif locataire 1</h3>
-                <p>CDI Hors période d'essai</p>
-                <div class="form-group">
-                    <label>Nom du locataire</label>
-                    <input class="form-control" type="text" placeholder="Optionel">
+            <div class="dossierLocataire__formulaire_section">
+                <div class="formulaire__sousElement">
+                    <div class="formulaire__sousElement_titre">
+                        <h3>Justificatif locataire 1</h3>
+                        <span>CDI Hors période d'essai</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="labelInput">Nom du locataire</span>
+                        <input class="form-control" type="text" placeholder="Optionel">
+                    </div>
+                    <div class="form-group">
+                        <span class="labelInput">Email du locataire</span>
+                        <input type="email" class="form-control" placeholder="Optionel">
+                    </div>
+                    <div class="form-group">
+                        <span class="labelInput">Commentaires</span>
+                        <textarea class="form-control" id="" rows="5" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Email du locataire</label>
-                    <input type="email" class="form-control" placeholder="Optionel">
-                </div>
-                <div class="form-group">
-                    <label>Commentaires</label>
-                    <textarea class="form-control" id="" rows="5" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
-                </div>
+
                 <!-- ENSEMBLE DES CHECKBOXES -->
-                <div class="form-group checkBoxesContainer">
-                    <h5>Justificatifs à fournir</h5>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck6">
-                        <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck7">
-                        <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck8">
-                        <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
+                <div class="formulaire__sousElement">
+                    <div class="form-group checkBoxesContainer">
+                        <h5>Justificatifs à fournir</h5>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
+                        </div>
                     </div>
                 </div>
 
                 <!-- ZONE UPLOAD -->
-                <div class="zoneUploads">
+                <div class="formulaire__sousElement zoneUploads">
                     <h5>Uploads</h5>
                     <div class="form-group conteneurBoutonUpload--custom">
-                        <span class="d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
+                        <span class="labelInput d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
                         <label class="boutonUpload-custom" for="file-input">Parcourir</label>
                         <span class="ml-3">Aucun fichier choisi</span>
                         <input class="form-control" type="file" id="file-input">
                     </div>
                     <div class="form-group">
-                        <span>2. Ce fichier contient (plusieurs choix possible)</span>
+                        <span class="labelInput">2. Ce fichier contient (plusieurs choix possible)</span>
                         <select class="custom-select form-control">
                             <option>Optionel</option>
                             <option></option>
@@ -117,13 +124,13 @@ extra_css: "dossier-locataire-3.css"
                         </select>
                     </div>
                     <div class="form-group mb-0">
-                        <span class="d-block">3. J’ajoute le fichier</span>
+                        <span class="labelInput d-block">3. J’ajoute le fichier</span>
                         <button class="btn btn-primary">Ajouter mon fichier</button>
                     </div>
                 </div>
             </div>
 
-            <div class="sectionFormulaire dropDownSection">
+            <div class="dossierLocataire__formulaire_section dropDownSection">
                 <h3 class="mb-0">Justificatifs complémentaires</h3>
                 <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.25 1.311L12.53 12.03C12.4604 12.0997 12.3778 12.1549 12.2869 12.1926C12.1959 12.2304 12.0984 12.2498 12 12.2498C11.9016 12.2498 11.8041 12.2304 11.7131 12.1926C11.6222 12.1549 11.5396 12.0997 11.47 12.03L0.75 1.311" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

@@ -20,104 +20,111 @@ extra_css: "dossier-locataire-2.css"
 
 <main class="dossierLocataire">
     <!-- TOP NAV -->
-    <div class="topNav">
-        <div class="navActive">
+    <div class="dossierLocataire__menuEtapes">
+        <div class="dossierLocataire__menuEtapes_etape active">
             <img src="../../../assets/img/smartloc/icons/silhouette.png" alt="">
             <span>1. Information des candidats</span>
         </div>
-        <div>
+        <div class="dossierLocataire__menuEtapes_etape">
             <img src="../../../assets/img/smartloc/icons/file.svg" alt="">
             <span>2. Dépots des justificatifs</span>
         </div>
-        <div>
+        <div class="dossierLocataire__menuEtapes_etape">
             <img src="../../../assets/img/smartloc/icons/folder.png" alt="">
             <span>3. Récupération du dossier</span>
         </div>
     </div>
 
     <!-- RENTING FILE SECTION  -->
-    <h1 class="titreDossierLocataire">Dossier de locataire</h1>
-    <div class="menuDossier">
-        <span>Dossier 1</span>
-        <a href="" class="menuDossier__ajouterDossier">+ Ajouter un dossier</a>
+    <h1 class="dossierLocataire__titre">Dossier de locataire</h1>
+    <div class="dossierLocataire__menuDossier">
+        <a href="" class="dossierLocataire__menuDossier_dossier active">Dossier 1</a>
+        <a href="" class="dossierLocataire__menuDossier_lienAjouterDossier">+ Ajouter un dossier</a>
     </div>
 
     <div class="dossierLocataire__conteneurPrincipal">
         <!-- FRAME DE FORM -->
-        <form>
+        <form class="dossierLocataire__formulaire">
             <!-- PREMIERE SECTION -->
-            <div class="sectionFormulaire">
-                <div class="form-group">
-                    <span>Le locataire est-il sur les lieux ?</span>
-                    <div class="boutonsRadioViolets__conteneur">
-                        <label>
-                            <input type="radio" checked="checked" name="radio1">
-                            <div>Oui</div>
-                        </label>
-                        <label>
-                            <input type="radio" checked="checked" name="radio1">
-                            <div>Non</div>
-                        </label>
+            <div class="dossierLocataire__formulaire_section">
+                <div class="formulaire__sousElement">
+                    <div class="form-group">
+                        <span class="labelInput">Le locataire est-il sur les lieux ?</span>
+                        <div class="boutonsRadioViolets__conteneur">
+                            <label>
+                                <input type="radio" checked="checked" name="radio1">
+                                <div>Oui</div>
+                            </label>
+                            <label>
+                                <input type="radio" checked="checked" name="radio1">
+                                <div>Non</div>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <span>Avez vous eu un incident de paiement sur les 6 premiers mois ?</span>
-                    <div class="boutonsRadioViolets__conteneur">
-                        <label>
-                            <input type="radio" checked="checked" name="radio2">
-                            <div>Oui</div>
-                        </label>
-                        <label>
-                            <input type="radio" checked="checked" name="radio2">
-                            <div>Non</div>
-                        </label>
+                    <div class="form-group">
+                        <span class="labelInput">Avez vous eu un incident de paiement sur les 6 premiers mois ?</span>
+                        <div class="boutonsRadioViolets__conteneur">
+                            <label>
+                                <input type="radio" checked="checked" name="radio2">
+                                <div>Oui</div>
+                            </label>
+                            <label>
+                                <input type="radio" checked="checked" name="radio2">
+                                <div>Non</div>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <span>Le locataire est dans les lieux depuis</span>
-                    <select class="custom-select form-control">
-                        <option>Moins de 14 jours</option>
-                        <option>Moins d'un mois</option>
-                        <option>Moins de 6 mois</option>
-                        <option>Moins d'un an</option>
-                    </select>
+                    <div class="form-group">
+                        <span class="labelInput">Le locataire est dans les lieux depuis</span>
+                        <select class="custom-select form-control">
+                            <option>Moins de 14 jours</option>
+                            <option>Moins d'un mois</option>
+                            <option>Moins de 6 mois</option>
+                            <option>Moins d'un an</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
             <!-- DEUXIEME SECTION -->
-            <div class="sectionFormulaire">
-                <h3>Locataire 1</h3>
-                <div class="form-group">
-                    <span>Statut du locataire</span>
-                    <select class="custom-select form-control">
-                        <option>Étudiant / Alternant</option>
-                        <option>Salarié</option>
-                        <option>Entrepreneur</option>
-                        <option>Retraité</option>
-                    </select>
-                </div>
-                <h3>Garant 1</h3>
-                <div class="form-group">
-                    <span>Statut du locataire</span>
-                    <select class="custom-select form-control">
-                        <option>Étudiant / Alternant</option>
-                        <option>Salarié</option>
-                        <option>Entrepreneur</option>
-                        <option>Retraité</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <span>Revenu du garant net AVANT retenu à la source</span>
-                    <div class="champSaisie--illustré">
-                        <input class="form-control" type="text">
-                        <span>€/mois</span>
+            <div class="dossierLocataire__formulaire_section">
+                <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">Locataire 1</h3>
+                    <div class="form-group">
+                        <span class="labelInput">Statut du locataire</span>
+                        <select class="custom-select form-control">
+                            <option>Étudiant / Alternant</option>
+                            <option>Salarié</option>
+                            <option>Entrepreneur</option>
+                            <option>Retraité</option>
+                        </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <span>Loyer + charges</span>
-                    <div class="champSaisie--illustré">
-                        <input class="form-control" type="text">
-                        <span>€/mois</span>
+
+                <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">Garant 1</h3>
+                    <div class="form-group">
+                        <span class="labelInput">Statut du locataire</span>
+                        <select class="custom-select form-control">
+                            <option>Étudiant / Alternant</option>
+                            <option>Salarié</option>
+                            <option>Entrepreneur</option>
+                            <option>Retraité</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <span class="labelInput">Revenu du garant net AVANT retenu à la source</span>
+                        <div class="champSaisie--illustré">
+                            <input class="form-control" type="text">
+                            <span>€/mois</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="labelInput">Loyer + charges</span>
+                        <div class="champSaisie--illustré">
+                            <input class="form-control" type="text">
+                            <span>€/mois</span>
+                        </div>
                     </div>
                 </div>
 

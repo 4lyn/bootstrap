@@ -825,7 +825,7 @@ ul.liste--point li::before
     border-bottom: solid 2px rgba(0, 0, 0, 0.493);
 }
 
-.menuSticky--section__item--active
+.menuSticky--section__item.active
 {
     border-bottom: solid 2px black;
 }
@@ -870,7 +870,7 @@ ul.liste--point li::before
     color: black;
     text-decoration: none;
 }
-.menuSticky--sousElement__item--active
+.menuSticky--sousElement__item.active
 {
     color:black !important;
 }
@@ -956,7 +956,7 @@ ul.liste--point li::before
     border-radius: 0px 25px 25px 0;
 }
 
-.menuNoir__item--active  /* classe pour le js */
+.menuNoir__item.active  /* classe pour le js */
 {
     background-color: black;
     color: white;
@@ -1506,7 +1506,7 @@ ul.liste--point li::before
 
 
 
-/* DOSSIERS LOCATAIRES */
+/********** DOSSIERS LOCATAIRES **********/
 
 .dossierLocataire
 {
@@ -1520,6 +1520,136 @@ ul.liste--point li::before
     position: absolute;
     top:0;
     background-color: black;
+}
+
+
+.dossierLocataire__menuEtapes
+{
+    width: 75%;
+    font-size: 1.125rem;
+    margin-bottom: 2.75rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.dossierLocataire__menuEtapes_etape
+{
+    opacity: 0.2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.dossierLocataire__menuEtapes img
+{
+    width: 1.5rem;
+}
+
+.dossierLocataire__menuEtapes_etape.active
+{
+    opacity: 1 !important;
+}
+
+.dossierLocataire__menuEtapes span
+{
+    font-weight: bold;
+    margin-left: .5rem;
+}
+
+
+/* HAUT DU DOCUMENT permanant */
+.dossierLocataire__titre
+{
+    margin-bottom: 2.75rem;
+}
+
+.dossierLocataire__menuDossier
+{
+    margin-bottom: 3.25rem;
+}
+
+.dossierLocataire__menuDossier_dossier,
+.dossierLocataire__menuDossier_lienAjouterDossier
+{
+    padding-bottom: 20px;
+    color: black;
+}
+.dossierLocataire__menuDossier_dossier:hover,
+.dossierLocataire__menuDossier_lienAjouterDossier:hover
+{
+    text-decoration: none;
+    color: black;
+}
+
+.dossierLocataire__menuDossier_dossier
+{
+    margin-right: 1.5rem;
+}
+.dossierLocataire__menuDossier_dossier.active
+{
+    border-bottom: solid 2px black;
+}
+
+.dossierLocataire__menuDossier_lienAjouterDossier
+{
+    margin-right: 0;
+    text-decoration: none;
+}
+
+/* CORPS DU DOSSIER LOCATAIRE */
+.dossierLocataire__conteneurPrincipal
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.dossierLocataire__formulaire
+{
+    width: 70%;
+    margin-right: 2rem;
+}
+
+.dossierLocataire__formulaire_section
+{
+    padding: 2rem 2.5rem 2.125rem 2.5rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.dossierLocataire .labelInput
+{
+    margin-bottom: .5rem;
+    display: inline-block;
+}
+
+.formulaire__sousElement
+{
+    margin-bottom: 1.875rem;
+}
+.dossierLocataire__formulaire_section .formulaire__sousElement:last-of-type,
+.formulaire__sousElement .form-group:last-of-type
+{
+    margin-bottom: 0;
+}
+
+.formulaire__sousElement_titre
+{
+    margin-bottom: 1.25rem;
+}
+
+.formulaire__sousElement_titre h3
+{
+    margin-bottom: 0;
 }
 
 /* INPUTS dans le formulaire */
