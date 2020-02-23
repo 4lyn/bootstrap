@@ -9,38 +9,3 @@ body
 {
     width: 66%;
 }
-
-/* ZONE CHECKBOXES */
-
-.checkBoxesContainer
-{
-    background-color: #F4F4F4;
-    padding: 1.5rem;
-    border-radius: 4px;
-}
-
-.checkBoxesContainer div
-{
-    margin-top: .5rem;
-}
-
-/* ZONE UPLOAD */
-
-.zoneUploads
-{
-    border: 1px dashed rgba(128, 128, 128, 0.44);
-    padding: 2rem;
-    border-radius: 4px;
-}
-
-/* SECTION JUSIFICATIFS COMPLEMENTAIRES */
-
-.dropDownSection
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}

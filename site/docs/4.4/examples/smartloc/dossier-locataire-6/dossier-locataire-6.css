@@ -10,21 +10,11 @@ body
     width: 100%;
 }
 
-.dossierLocataire__formulaire_section h3
+
+.dossierLocataire__formulaire_section h3,
+.dossierLocataire__formulaire_section p,
+.dossierLocataire__formulaire_section ul,
+.dossierLocataire__formulaire_section ul li:not(:last-of-type)
 {
     margin-bottom: .5rem;
-}
-
-.dossierLocataire__formulaire_section button
-{
-    margin-top: .5rem;
-}
-
-.nextStepsSection h3
-{
-    margin-bottom: 0px;
-}
-.nextStepsSection p
-{
-    margin-top: .5rem;
 }
