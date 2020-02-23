@@ -1,2 +1,6 @@
 @import "../styles/smartloc.css";
-@import "../styles/dossiers-locataires.css";
+
+body
+{
+    background-color: #f4f4f4;
+}

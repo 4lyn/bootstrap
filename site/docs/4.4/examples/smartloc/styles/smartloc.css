@@ -1572,7 +1572,8 @@ ul.liste--point li::before
 
 .dossierLocataire__menuDossier
 {
-    margin-bottom: 3.25rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .dossierLocataire__menuDossier_dossier,
@@ -1614,7 +1615,7 @@ ul.liste--point li::before
 
 .dossierLocataire__formulaire
 {
-    width: 70%;
+    min-width: 70%;
     margin-right: 2rem;
 }
 
@@ -1624,6 +1625,14 @@ ul.liste--point li::before
     margin-bottom: 2rem;
     background-color: white;
     border-radius: 4px;
+}
+
+.dossierLocataire__lienAjouterLocataire
+{
+    display: inline-block;
+    margin-top: 2rem;
+    color: black;
+    font-weight: bold;
 }
 
 .dossierLocataire .labelInput
@@ -1659,6 +1668,34 @@ ul.liste--point li::before
     width: 50%;
 }
 
+.dossierLocataire .alert
+{
+    margin-bottom: 2rem;
+}
+
+
+/* NOS ASTUCES */
+.dossierLocataire__astuces 
+{
+    width: 30%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.dossierLocataire__astuces h3, 
+.dossierLocataire__astuces h4
+{
+    margin-bottom: 1rem;
+}
+
+.dossierLocataire__astuces p
+{
+    font-size: .875rem;
+    line-height: 2rem;
+}
+
 
 /* INPUTS fin de formulaire - Submit et autre */
 .conteneurBoutonsFinFormulaire
@@ -1685,14 +1722,6 @@ ul.liste--point li::before
 .conteneurBoutonsFinFormulaire button
 {
     margin-left : 1rem;
-}
-
-.lienAjouterLocataire
-{
-    display: inline-block;
-    margin-top: 2rem;
-    color: black;
-    font-weight: bold;
 }
 
 

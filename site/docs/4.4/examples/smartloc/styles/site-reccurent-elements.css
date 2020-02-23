@@ -971,7 +971,7 @@ textarea{
     justify-content: flex-end;
 }
 
-.lienAjouterLocataire
+.dossierLocataire__lienAjouterLocataire
 {
     display: inline-block;
     margin-top: 2rem;
