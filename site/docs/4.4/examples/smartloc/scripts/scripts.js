@@ -56,17 +56,19 @@ const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__con
 const objet_deroulant_icones_ouvrir = document.querySelectorAll('.objetDeroulant__entete_icone--ouvrir')
 const objet_deroulant_icones_fermer = document.querySelectorAll('.objetDeroulant__entete_icone--fermer')
 
-const test = function () {
+if (objet_deroulants.length > 0) {
   for (let i = 0; i < objet_deroulant_entetes.length; i++)
   {
     let toggle = false
 
+    const hauteurDeroulement = objet_deroulants_contenu[i].offsetHeight + objet_deroulants[i].offsetHeight
+    const hauteurObjet = objet_deroulant_entetes[i].offsetHeight
+
     objet_deroulant_entetes[i].addEventListener('click', () =>
     {
-      const hauteurDeroulement = objet_deroulants_contenu[i].offsetHeight + objet_deroulants[i].offsetHeight
       if (toggle)
       {
-        objet_deroulants[i].style.height = objet_deroulant_entetes[i].offsetHeight / taille_typo_base + 'rem'
+        objet_deroulants[i].style.height = hauteurObjet / taille_typo_base + 'rem'
         objet_deroulant_icones_ouvrir[i].style.display = 'block'
         objet_deroulant_icones_fermer[i].style.display = 'none'
         toggle = false
@@ -82,5 +84,3 @@ const test = function () {
   }
 }
 
-test()
-window.onresize = test()
