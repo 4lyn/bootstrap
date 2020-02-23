@@ -55,6 +55,8 @@ const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__con
 const objet_deroulant_icones_ouvrir = document.querySelectorAll('.objetDeroulant__entete_icone--ouvrir')
 const objet_deroulant_icones_fermer = document.querySelectorAll('.objetDeroulant__entete_icone--fermer')
 
+const fontsize = parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size'))
+
 if (objet_deroulants.length > 0) {
   for (let i = 0; i < objet_deroulant_entetes.length; i++)
   {
@@ -65,25 +67,18 @@ if (objet_deroulants.length > 0) {
     {
       if (toggle)
       {
-        objet_deroulants[i].style.height = hauteurObjet / 16 + 'rem'
+        objet_deroulants[i].style.height = hauteurObjet / fontsize + 'rem'
         objet_deroulant_icones_ouvrir[i].style.display = 'block'
         objet_deroulant_icones_fermer[i].style.display = 'none'
         toggle = false
       }
       else
       {
-        objet_deroulants[i].style.height = hauteurDeroulement / 16 + 'rem'
+        objet_deroulants[i].style.height = hauteurDeroulement / fontsize + 'rem'
         objet_deroulant_icones_ouvrir[i].style.display = 'none'
         objet_deroulant_icones_fermer[i].style.display = 'block'
         toggle = true
       }
-    })
-
-    window.addEventListener('resize', () => {
-      objet_deroulants[i].style.height = hauteurObjet / 16 + 'rem'
-      objet_deroulant_icones_ouvrir[i].style.display = 'block'
-      objet_deroulant_icones_fermer[i].style.display = 'none'
-      toggle = false
     })
   }
 }
