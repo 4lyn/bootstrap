@@ -56,26 +56,31 @@ const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__con
 const objet_deroulant_icones_ouvrir = document.querySelectorAll('.objetDeroulant__entete_icone--ouvrir')
 const objet_deroulant_icones_fermer = document.querySelectorAll('.objetDeroulant__entete_icone--fermer')
 
-for (let i = 0; i < objet_deroulant_entetes.length; i++)
-{
-  let toggle = false
-
-  objet_deroulant_entetes[i].addEventListener('click', () =>
+const test = function () {
+  for (let i = 0; i < objet_deroulant_entetes.length; i++)
   {
-    const hauteurDeroulement = objet_deroulants_contenu[i].offsetHeight + objet_deroulants[i].offsetHeight
-    if (toggle)
+    let toggle = false
+
+    objet_deroulant_entetes[i].addEventListener('click', () =>
     {
-      objet_deroulants[i].style.height = objet_deroulant_entetes[i].offsetHeight / taille_typo_base + 'rem'
-      objet_deroulant_icones_ouvrir[i].style.display = 'block'
-      objet_deroulant_icones_fermer[i].style.display = 'none'
-      toggle = false
-    }
-    else
-    {
-      objet_deroulants[i].style.height = hauteurDeroulement / taille_typo_base + 'rem'
-      objet_deroulant_icones_ouvrir[i].style.display = 'none'
-      objet_deroulant_icones_fermer[i].style.display = 'block'
-      toggle = true
-    }
-  })
+      const hauteurDeroulement = objet_deroulants_contenu[i].offsetHeight + objet_deroulants[i].offsetHeight
+      if (toggle)
+      {
+        objet_deroulants[i].style.height = objet_deroulant_entetes[i].offsetHeight / taille_typo_base + 'rem'
+        objet_deroulant_icones_ouvrir[i].style.display = 'block'
+        objet_deroulant_icones_fermer[i].style.display = 'none'
+        toggle = false
+      }
+      else
+      {
+        objet_deroulants[i].style.height = hauteurDeroulement / taille_typo_base + 'rem'
+        objet_deroulant_icones_ouvrir[i].style.display = 'none'
+        objet_deroulant_icones_fermer[i].style.display = 'block'
+        toggle = true
+      }
+    })
+  }
 }
+
+test()
+window.onresize = test()

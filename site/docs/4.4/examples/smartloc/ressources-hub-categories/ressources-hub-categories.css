@@ -32,7 +32,7 @@
 /* MAIN */
 
 /* sous categories drop down */
-.subCategories_dropDown
+.sectionSousCategories .objetDeroulant
 {
     height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
     margin-top: 1.5rem;    
@@ -41,28 +41,28 @@
     border-radius: .25rem;
     background-color: #fff;
 }
-.subCategories_dropDown:first-child
+.sectionSousCategories .objetDeroulant:first-child
 {
     margin: 0;
 }
 
-.subCategories_dropDown .objetDeroulant__entete
+.sectionSousCategories .objetDeroulant__entete
 {
     padding: 1.25rem 0;
 }
 
-.subCategories_dropDown .objetDeroulant__contenu
+.sectionSousCategories .objetDeroulant__contenu
 {
     padding-bottom: 1.5rem;
 }
 
-.subCategories_dropDown .objetDeroulant__contenu p
+.sectionSousCategories .objetDeroulant__contenu p
 {
     width: 100%;
     padding-bottom: 1.125rem;
     border-bottom: 1px dashed black;
 }
-.subCategories_dropDown .objetDeroulant__contenu p:last-child
+.sectionSousCategories .objetDeroulant__contenu p:last-child
 {
     border: none;
     padding-bottom: 0;
