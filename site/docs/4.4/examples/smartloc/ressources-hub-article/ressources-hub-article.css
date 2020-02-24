@@ -1,66 +1,7 @@
 @import "../styles/smartloc.css";
 
-
 body
 {
     background-color: #F4F4F4;
 }
 
-/* HEADER */
-
-header{
-    position: relative;
-    padding-bottom: 5rem;
-}
-
-/* MAIN */
-
-/* SECTION ARTICLE */
-
- .sectionArticle
-{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.article_frame
-{
-    background-color: #fff;
-    padding: 144px;
-    padding-top: 118px;
-}
-
-.article_photo
-{
-    width: 100%;
-}
-
-.article_summary
-{
-    padding: 2rem 2.5rem;
-    line-height: 32px;
-    font-weight: bold;
-}
-
-.article_summary ul
-{
-    padding-left: 1rem;
-}
-
-.article_doubleImage
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.article_doubleImage img
-{
-    width: 47.5%
-}
-
-img.tweetImg
-{
-    width: 75%;
-}

@@ -170,6 +170,10 @@ header
 
 
 /* HEADER D'ARTICLE */
+.headerArticle{
+    padding-bottom: 5rem;
+}
+
 .headerArticle__titrage{
     margin: 3.875rem 0 0 0;
     display: -ms-flexbox;
@@ -825,7 +829,7 @@ ul.liste--point li::before
     border-bottom: solid 2px rgba(0, 0, 0, 0.493);
 }
 
-.menuSticky--section__item.active
+.menuSticky--section__item.active /* classe pour le js */
 {
     border-bottom: solid 2px black;
 }
@@ -870,7 +874,7 @@ ul.liste--point li::before
     color: black;
     text-decoration: none;
 }
-.menuSticky--sousElement__item.active
+.menuSticky--sousElement__item.active /* classe pour le js */
 {
     color:black !important;
 }
@@ -920,7 +924,7 @@ ul.liste--point li::before
 }
 
 
-/* menu noir, present sur sections documents */
+/* MENU NOIR, present sur sections documents */
 .menuNoir
 {
     height: 3rem;
@@ -964,6 +968,89 @@ ul.liste--point li::before
 {
     background-color: black;
     color: white;
+}
+
+
+/* TABLEAUX */
+.tableau
+{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: .25rem;
+}
+
+.tableau__ligne, 
+.tableau__entete
+{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.tableau__ligne:last-child
+{
+    margin-bottom: 0;
+}
+
+.tableau__entete
+{
+    height: 3rem;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.tableau__premiereColonne
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tableau__ligne_cellule p, 
+.tableau__entete_cellule p
+{
+    margin-bottom: 0;
+}
+
+.tableau__premiereColonne .tableau__cellule_petitTexte
+{
+    font-size: 0.875rem;
+}
+
+.tableau__cellule_nombre
+{
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.tableau__ligneSeparation
+{
+    width: 100%;
+    height: .125rem;
+    margin-bottom: 1.25rem;
+    background-color: black;
+}
+
+.tableau__ligne_cellule:not(.tableau__premiereColonne), .tableau__entete_cellule:not(.tableau__premiereColonne)
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 
@@ -1151,6 +1238,56 @@ ul.liste--point li::before
 }
 
 
+/* SECTION ARTICLE sur la page ressource hub article */
+.sectionArticle
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sectionArticle__corps
+{
+    background-color: #fff;
+    padding: 144px;
+    padding-top: 118px;
+}
+
+.sectionArticle__photo
+{
+    width: 100%;
+}
+
+.sectionArticle__sommaire
+{
+    padding: 2rem 2.5rem;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.sectionArticle__sommaire ul
+{
+    padding-left: 1rem;
+}
+
+.sectionArticle__doublePhoto
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sectionArticle__doublePhoto img
+{
+    width: 47.5%
+}
+
+.sectionArticle__captureTweet
+{
+    width: 75%;
+}
+
+
 /* SECTION CATEGORIES, present sur pages hub home et hub categories */
 .cardCategorie
 {
@@ -1171,6 +1308,45 @@ ul.liste--point li::before
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+}
+
+
+/* SECTION SOUS CATEGORIES */
+.sectionSousCategories .objetDeroulant
+{
+    height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
+    margin-top: 1.5rem;    
+    padding: 0 1.5rem;
+    line-height: 2rem;
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.sectionSousCategories .objetDeroulant:first-child
+{
+    margin: 0;
+}
+
+.sectionSousCategories .objetDeroulant__entete
+{
+    padding: 1.25rem 0;
+}
+
+.sectionSousCategories .objetDeroulant__contenu
+{
+    padding-bottom: 1.5rem;
+}
+
+.sectionSousCategories .objetDeroulant__contenu p
+{
+    width: 100%;
+    padding-bottom: 1.125rem;
+    border-bottom: 1px dashed black;
+}
+.sectionSousCategories .objetDeroulant__contenu p:last-child
+{
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -1509,6 +1685,35 @@ ul.liste--point li::before
 }
 
 
+/* SECTION FONCTIONNALITES sur page gestion locative */
+.sectionFontionnalites__conteneurFonctionnalite
+{
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-right: 2rem;
+}
+
+.sectionFontionnalites__conteneurFonctionnalite img
+{
+    width: 3.5rem;
+    margin-bottom: .875rem;
+}
+
+/* SECTION USAGE sur page gestion locative */
+.sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre
+{
+    padding-top: 1.5rem;
+}
+
+.sectionUsage .alert-notice
+{
+    margin-top: 2rem;
+}
 
 /********** DOSSIERS LOCATAIRES **********/
 
@@ -1556,7 +1761,7 @@ ul.liste--point li::before
     width: 1.5rem;
 }
 
-.dossierLocataire__menuEtapes_etape.active
+.dossierLocataire__menuEtapes_etape.active /* classe pour le js */
 {
     opacity: 1 !important;
 }
@@ -1597,7 +1802,7 @@ ul.liste--point li::before
 {
     margin-right: 1.5rem;
 }
-.dossierLocataire__menuDossier_dossier.active
+.dossierLocataire__menuDossier_dossier.active /* classe pour le js */
 {
     border-bottom: solid 2px black;
 }

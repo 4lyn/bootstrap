@@ -27,6 +27,27 @@
     margin-bottom: 0;
 }
 
+
+/* tableau section impayés */
+.sectionImpayes .tableau__premiereColonne
+{
+    width: 20%;
+    font-weight: bold;
+}
+
+.sectionImpayes .tableau__ligne_cellule, .sectionImpayes .tableau__entete_cellule
+{
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.sectionImpayes .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionImpayes .tableau__entete_cellule:not(.tableau__premiereColonne)
+{
+    width: 40%;
+}
+
 .sectionDoc .section__sousElement
 {
     margin-bottom: 2rem;
@@ -44,132 +65,32 @@
 }
 
 
-/* tableaux */
-.tableau
-{
-    width: 100%;
-    padding: 1.5rem 2rem;
-    border-radius: .25rem;
-}
-
-.table_row, .table_head
-{
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.table_row:last-child
-{
-    margin-bottom: 0;
-}
-
-.table_head
-{
-    height: 3rem;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-}
-
-.table_cell p, .table_head_cell p
-{
-    margin-bottom: 0;
-}
-
-.table_first_column .secondLine
-{
-    font-size: 0.875rem;
-}
-
-.table_number
-{
-    font-size: 1.125rem;
-    font-weight: bold;
-}
-
-.table_separationLine
-{
-    width: 100%;
-    height: .125rem;
-    margin-bottom: 1.25rem;
-    background-color: black;
-}
-
-.table_cell:not(.table_first_column), .table_head_cell:not(.table_first_column)
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.table_first_column
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
 /* tableau section garanties */
-.sectionGaranties .table_first_column
+.sectionGaranties .tableau__premiereColonne
 {
     width: 45%;
 }
 
-.sectionGaranties .table_cell:not(.table_first_column), .sectionGaranties .table_head_cell:not(.table_first_column)
+.sectionGaranties .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionGaranties .tableau__entete_cellule:not(.tableau__premiereColonne)
 {
     width: 15%;
 }
 
+
 /* tableau section status */
-.sectionStatus .table_head_cell:not(.table_first_column)
+.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne)
 {
     font-size: .875rem;
 }
 
-.sectionStatus .table_first_column
+.sectionStatus .tableau__premiereColonne
 {
     width: 30%;
 }
 
-.sectionStatus .table_cell:not(.table_first_column), .sectionStatus .table_head_cell:not(.table_first_column)
+.sectionStatus .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne)
 {
     width: 11%;
     text-align: center;
     font-size: .875rem;
 }
-
-/* tableau section impayés */
-.sectionImpayes .table_first_column
-{
-    width: 20%;
-    font-weight: bold;
-}
-
-.sectionImpayes .table_cell, .sectionImpayes .table_head_cell
-{
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
-.sectionImpayes .table_cell:not(.table_first_column), .sectionImpayes .table_head_cell:not(.table_first_column)
-{
-    width: 40%;
-}
-

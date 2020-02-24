@@ -48,7 +48,7 @@ const set_active = function (items, jumpers)
 set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres)
 set_active(menuSticky_section_items, menuSticky_section_ancres)
 
-// QUESTIONS DROPDOWN
+// OBJETS DEROULANTS
 const objet_deroulants = document.querySelectorAll('.objetDeroulant')
 const objet_deroulant_entetes = document.querySelectorAll('.objetDeroulant__entete')
 const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__contenu')

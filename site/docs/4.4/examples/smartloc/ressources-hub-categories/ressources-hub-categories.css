@@ -29,47 +29,6 @@
     right: 20%; 
 }
 
-/* MAIN */
-
-/* sous categories drop down */
-.sectionSousCategories .objetDeroulant
-{
-    height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
-    margin-top: 1.5rem;    
-    padding: 0 1.5rem;
-    line-height: 2rem;
-    border-radius: .25rem;
-    background-color: #fff;
-}
-.sectionSousCategories .objetDeroulant:first-child
-{
-    margin: 0;
-}
-
-.sectionSousCategories .objetDeroulant__entete
-{
-    padding: 1.25rem 0;
-}
-
-.sectionSousCategories .objetDeroulant__contenu
-{
-    padding-bottom: 1.5rem;
-}
-
-.sectionSousCategories .objetDeroulant__contenu p
-{
-    width: 100%;
-    padding-bottom: 1.125rem;
-    border-bottom: 1px dashed black;
-}
-.sectionSousCategories .objetDeroulant__contenu p:last-child
-{
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-
 /* responsive */
 
 @media (max-width: 750px)
