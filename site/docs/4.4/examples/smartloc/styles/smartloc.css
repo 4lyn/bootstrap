@@ -1220,7 +1220,7 @@ ul.liste--point li::before
 }
 
 
-/* SECTION QUESTIONS */
+/* SECTION QUESTIONS sur homepage et gestion locative */
 .questionDeroulante
 {
     height: 3.125rem;
@@ -1235,168 +1235,6 @@ ul.liste--point li::before
 .questionDeroulante .objetDeroulant__entete
 {
     padding-bottom: 1.5rem;
-}
-
-
-/* SECTION ARTICLE sur la page ressource hub article */
-.sectionArticle
-{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.sectionArticle__corps
-{
-    background-color: #fff;
-    padding: 144px;
-    padding-top: 118px;
-}
-
-.sectionArticle__photo
-{
-    width: 100%;
-}
-
-.sectionArticle__sommaire
-{
-    padding: 2rem 2.5rem;
-    line-height: 32px;
-    font-weight: bold;
-}
-
-.sectionArticle__sommaire ul
-{
-    padding-left: 1rem;
-}
-
-.sectionArticle__doublePhoto
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.sectionArticle__doublePhoto img
-{
-    width: 47.5%
-}
-
-.sectionArticle__captureTweet
-{
-    width: 75%;
-}
-
-
-/* SECTION CATEGORIES, present sur pages hub home et hub categories */
-.cardCategorie
-{
-    -ms-flex: 1 1 20%;
-    flex: 1 1 20%;
-    min-width: 15rem;
-    max-width: 15rem;
-    border: none;
-}
-
-.cardCategorie_illustration
-{
-    width: 50%;
-}
-
-.cardCategorie .card-body
-{
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-}
-
-
-/* SECTION SOUS CATEGORIES */
-.sectionSousCategories .objetDeroulant
-{
-    height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
-    margin-top: 1.5rem;    
-    padding: 0 1.5rem;
-    line-height: 2rem;
-    border-radius: .25rem;
-    background-color: #fff;
-}
-.sectionSousCategories .objetDeroulant:first-child
-{
-    margin: 0;
-}
-
-.sectionSousCategories .objetDeroulant__entete
-{
-    padding: 1.25rem 0;
-}
-
-.sectionSousCategories .objetDeroulant__contenu
-{
-    padding-bottom: 1.5rem;
-}
-
-.sectionSousCategories .objetDeroulant__contenu p
-{
-    width: 100%;
-    padding-bottom: 1.125rem;
-    border-bottom: 1px dashed black;
-}
-.sectionSousCategories .objetDeroulant__contenu p:last-child
-{
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-
-/* SECTION SUGGESTION D'ARTICLE */
-.sectionSuggestionArticle h2
-{
-    margin-bottom: 2.5rem;
-}
-
-.cardArticle
-{
-    -ms-flex: 1 1 30%;
-    flex: 1 1 30%;
-    width: calc(100% - 2rem);
-    border: none;
-}
-
-.cardArticle__articleInfos
-{
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.cardArticle__apercu p
-{
-    margin-bottom: 0;
-}
-
-
-/* SECTION DES PAGES HUB home et categories */
-.sectionHub
-{
-    padding-top: 6.5rem;   /* padding de sections des pages hub home */
-    padding-bottom: 0;     /* et hub categorie qui sont differents des autres setions du site */
-    background-color: #F4F4F4;
-}
-.sectionHub:last-child
-{
-    padding-bottom: 10rem;
-}
-
-.sectionHub__titre
-{
-    margin-bottom: 2.5rem;
 }
 
 
@@ -1479,6 +1317,168 @@ ul.liste--point li::before
     height: 20rem;
     right: 0;
     top: 0;
+}
+
+
+/* SECTION DES PAGES HUB home et categories */
+.sectionHub
+{
+    padding-top: 6.5rem;   /* padding de sections des pages hub home */
+    padding-bottom: 0;     /* et hub categorie qui sont differents des autres setions du site */
+    background-color: #F4F4F4;
+}
+.sectionHub:last-child
+{
+    padding-bottom: 10rem;
+}
+
+.sectionHub__titre
+{
+    margin-bottom: 2.5rem;
+}
+
+
+/* SECTION CATEGORIES, present sur pages hub home et hub categories */
+.cardCategorie
+{
+    -ms-flex: 1 1 20%;
+    flex: 1 1 20%;
+    min-width: 15rem;
+    max-width: 15rem;
+    border: none;
+}
+
+.cardCategorie_illustration
+{
+    width: 50%;
+}
+
+.cardCategorie .card-body
+{
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+
+/* SECTION SOUS CATEGORIES sur ressource hub categories */
+.sectionSousCategories .objetDeroulant
+{
+    height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
+    margin-top: 1.5rem;    
+    padding: 0 1.5rem;
+    line-height: 2rem;
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.sectionSousCategories .objetDeroulant:first-child
+{
+    margin: 0;
+}
+
+.sectionSousCategories .objetDeroulant__entete
+{
+    padding: 1.25rem 0;
+}
+
+.sectionSousCategories .objetDeroulant__contenu
+{
+    padding-bottom: 1.5rem;
+}
+
+.sectionSousCategories .objetDeroulant__contenu p
+{
+    width: 100%;
+    padding-bottom: 1.125rem;
+    border-bottom: 1px dashed black;
+}
+.sectionSousCategories .objetDeroulant__contenu p:last-child
+{
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/* SECTION ARTICLE sur la page ressource hub article */
+.sectionArticle
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sectionArticle__corps
+{
+    background-color: #fff;
+    padding: 144px;
+    padding-top: 118px;
+}
+
+.sectionArticle__photo
+{
+    width: 100%;
+}
+
+.sectionArticle__sommaire
+{
+    padding: 2rem 2.5rem;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.sectionArticle__sommaire ul
+{
+    padding-left: 1rem;
+}
+
+.sectionArticle__doublePhoto
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sectionArticle__doublePhoto img
+{
+    width: 47.5%
+}
+
+.sectionArticle__captureTweet
+{
+    width: 75%;
+}
+
+
+/* SECTION SUGGESTION D'ARTICLE */
+.sectionSuggestionArticle h2
+{
+    margin-bottom: 2.5rem;
+}
+
+.cardArticle
+{
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
+    width: calc(100% - 2rem);
+    border: none;
+}
+
+.cardArticle__articleInfos
+{
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cardArticle__apercu p
+{
+    margin-bottom: 0;
 }
 
 
@@ -1704,6 +1704,7 @@ ul.liste--point li::before
     margin-bottom: .875rem;
 }
 
+
 /* SECTION USAGE sur page gestion locative */
 .sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre
 {
@@ -1715,8 +1716,9 @@ ul.liste--point li::before
     margin-top: 2rem;
 }
 
-/********** DOSSIERS LOCATAIRES **********/
 
+
+/********** DOSSIERS LOCATAIRES **********/
 .dossierLocataire
 {
     padding: 10rem;
@@ -1730,7 +1732,6 @@ ul.liste--point li::before
     top:0;
     background-color: black;
 }
-
 
 .dossierLocataire__menuEtapes
 {
