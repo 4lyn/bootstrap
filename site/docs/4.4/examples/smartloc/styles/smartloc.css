@@ -1600,8 +1600,12 @@ ul.liste--point li::before
 
 .sectionExpertsAide__conteneurBoutons a
 {
-    width: 16rem;;
+    width: 16rem;
     margin: 0 8px;
+}
+.sectionExpertsAide__conteneurBoutons a h5
+{
+    margin: 0;
 }
 
 
