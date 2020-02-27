@@ -4,6 +4,9 @@
 /* eslint-disable strict */
 /* eslint-disable camelcase */
 
+
+const tailleTypo = parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size'))
+
 // MENU NOIR
 const menuNoir_items = document.querySelectorAll('.menuNoir__item')
 
@@ -26,14 +29,15 @@ const menuSticky_section_items = document.querySelectorAll('.menuSticky--section
 const menuSticky_section_ancres = document.querySelectorAll('.menuSticky--section__ancre')
 const menuSticky_sousElement_ancres = document.querySelectorAll('.menuSticky--sousElement__ancre')
 
-const set_active = function (items, jumpers)
+const set_active = function (items, ancres)
 {
   if (items.length > 0) {
     items[0].classList.add('active')
     window.addEventListener('scroll', () => {
       for (let i = 0; i < items.length; i++) {
-        const jumperPosition = jumpers[i].getBoundingClientRect().top + window.scrollY
-        if (window.pageYOffset > jumperPosition - 5)
+        const ancreDecalage = -9 * tailleTypo
+        const ancrePosition = ancres[i].getBoundingClientRect().top + window.scrollY + ancreDecalage
+        if (window.pageYOffset > ancrePosition)
         {
           for (let j = 0; j < items.length; j++) {
             items[j].classList.remove('active')
@@ -55,8 +59,6 @@ const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__con
 const objet_deroulant_icones_ouvrir = document.querySelectorAll('.objetDeroulant__entete_icone--ouvrir')
 const objet_deroulant_icones_fermer = document.querySelectorAll('.objetDeroulant__entete_icone--fermer')
 
-const fontsize = parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size'))
-
 if (objet_deroulants.length > 0) {
   for (let i = 0; i < objet_deroulant_entetes.length; i++)
   {
@@ -67,14 +69,14 @@ if (objet_deroulants.length > 0) {
     {
       if (toggle)
       {
-        objet_deroulants[i].style.height = hauteurObjet / fontsize + 'rem'
+        objet_deroulants[i].style.height = hauteurObjet / tailleTypo + 'rem'
         objet_deroulant_icones_ouvrir[i].style.display = 'block'
         objet_deroulant_icones_fermer[i].style.display = 'none'
         toggle = false
       }
       else
       {
-        objet_deroulants[i].style.height = hauteurDeroulement / fontsize + 'rem'
+        objet_deroulants[i].style.height = hauteurDeroulement / tailleTypo + 'rem'
         objet_deroulant_icones_ouvrir[i].style.display = 'none'
         objet_deroulant_icones_fermer[i].style.display = 'block'
         toggle = true

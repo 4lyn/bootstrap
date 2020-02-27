@@ -859,7 +859,7 @@ ul.liste--point li::before
 .menuSticky--section__ancre
 {
     position: absolute;
-    top: -12rem;
+    top: -3rem;
 }
 
 
@@ -897,7 +897,7 @@ ul.liste--point li::before
 .menuSticky--sousElement__ancre
 {
     position: absolute;
-    top: -12rem;
+    top: -3rem;
 }
 
 
