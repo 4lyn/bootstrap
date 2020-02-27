@@ -110,7 +110,7 @@ header
     align-items: center;
 }
 
-.menuHeader__conteneurLiens a:not(:first-child)
+.menuHeader__conteneurLiens a
 {
     margin-left: 1.5rem;
 }
@@ -122,8 +122,18 @@ header
 
 .menuHeader__liensBold
 {
-    margin-left: 2.5rem;
-    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.menuHeader__liensBold h5
+{
+    display: inline;
+    margin-left: 1rem;
+}
+
+.menuHeader__liensBold a
+{
+    margin-left: 0;
 }
 
 
@@ -1487,6 +1497,11 @@ ul.liste--point li::before
 {
     margin-bottom: 5rem;
     text-align: center;
+}
+
+.sectionAccompagnementExperts h1
+{
+    margin-bottom: 5rem;
 }
 
 .cardAccompagnementExperts
