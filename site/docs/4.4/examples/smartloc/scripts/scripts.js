@@ -24,7 +24,7 @@ if (menuNoir_items.length > 0) {
 
 // NAV AVEC JUMP DANS LA PAGE
 const menuSticky_sousElement_items = document.querySelectorAll('.menuSticky--sousElement__item')
-const menuSticky_section_items = document.querySelectorAll('.menuSticky--section__item')
+const menuSticky_section_items = document.querySelectorAll('.menuSticky--section__conteneurLiens_item')
 
 const menuSticky_section_ancres = document.querySelectorAll('.menuSticky--section__ancre')
 const menuSticky_sousElement_ancres = document.querySelectorAll('.menuSticky--sousElement__ancre')
