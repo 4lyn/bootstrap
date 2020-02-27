@@ -1911,23 +1911,31 @@ ul.liste--point li::before
 /* NOS ASTUCES */
 .dossierLocataire__astuces 
 {
-    width: 30%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.dossierLocataire__astuces h3, 
-.dossierLocataire__astuces h4
+.dossierLocataire__astuces>div
+{
+    margin-bottom: 1.5rem;
+}
+
+.dossierLocataire__astuces h3
 {
     margin-bottom: 1rem;
 }
 
+.dossierLocataire__astuces h4
+{
+    margin-bottom: .5rem;
+}
+
 .dossierLocataire__astuces p
 {
+    margin: 0;
     font-size: .875rem;
-    line-height: 2rem;
 }
 
 
