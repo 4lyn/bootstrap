@@ -151,6 +151,7 @@ header
 .headerDossierLocataire .menuHeader__conteneurLiens a
 {
     margin-left: 1rem;
+    font-weight: bold;
 }
 
 
@@ -1814,6 +1815,7 @@ ul.liste--point li::before
 .dossierLocataire__menuDossier_lienAjouterDossier
 {
     padding-bottom: 20px;
+    font-weight: bold;
     color: black;
 }
 .dossierLocataire__menuDossier_dossier:hover,
