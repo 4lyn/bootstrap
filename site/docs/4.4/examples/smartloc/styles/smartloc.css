@@ -1393,6 +1393,7 @@ ul.liste--point li::before
 .sectionSousCategories .objetDeroulant__entete
 {
     padding: 1.25rem 0;
+    font-weight: bold;
 }
 
 .sectionSousCategories .objetDeroulant__contenu
