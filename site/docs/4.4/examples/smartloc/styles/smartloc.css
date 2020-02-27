@@ -125,15 +125,15 @@ header
     margin-left: 1.5rem;
 }
 
-.menuHeader__liensBold h5
+.menuHeader__liensBold a
 {
-    display: inline;
     margin-left: 1rem;
 }
 
-.menuHeader__liensBold a
+.menuHeader__liensBold a h5
 {
-    margin-left: 0;
+    display: inline;
+    margin: 0;
 }
 
 
@@ -460,7 +460,11 @@ footer a
 {
     margin-bottom: .5rem;
     margin-right: 5.75rem;
-    font-weight: bold;
+}
+
+.footer__conteneurLiens_haut a h5
+{
+    margin: 0;
 }
 
 .footer__conteneurLiens_bas
