@@ -74,12 +74,10 @@ $colors: map-merge(
 );
 
 $primary:       $smartloc-purple !default;
-$secondary:     $smartloc-green !default;
-$tertiary:      $smartloc-yellow !default;
-$quarantary:    $smartloc-pink !default;
+$secondary:     $smartloc-pink !default;
 $success:       $smartloc-green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       $smartloc-yellow !default;
 $danger:        $smartloc-red !default;
 $light:         $smartloc-gray !default;
 $dark:          $black !default;
@@ -90,8 +88,6 @@ $theme-colors: map-merge(
   (
     "primary":    $primary,
     "secondary":  $secondary,
-    "tertiary":   $tertiary,
-    "quarantary": $quarantary,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,

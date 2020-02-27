@@ -1996,6 +1996,7 @@ ul.liste--point li::before
     {
         -ms-flex-line-pack: center;
         align-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
