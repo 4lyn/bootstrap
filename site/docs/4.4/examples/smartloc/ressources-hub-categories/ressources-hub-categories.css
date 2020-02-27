@@ -8,17 +8,17 @@
     padding-bottom: 3.75rem;
 }
 
-.headerHub_titling
+.headerHub__titrage
 {
     margin: 3.875rem 0 0 0;
 }
 
-.headerHub_titling a
+.headerHub__titrage a
 {
     color:black;
 }
 
-.headerHub_titling h1
+.headerHub__titrage h1
 {
     margin: .5rem 0 0 0;
 }
