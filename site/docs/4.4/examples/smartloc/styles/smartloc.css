@@ -342,7 +342,6 @@ header
 .headerClassique__commentCaMarche_contenu
 {
     width: 100%;
-    margin-left: 2rem;
 }
 
 .headerClassique__commentCaMarche_conteneurEtapes
@@ -2031,17 +2030,7 @@ ul.liste--point li::before
     }
 }
 
-/* taille de police responsive */
-@media screen and (min-width: 420px) {
-    html {
-        font-size: calc(10px + 6 * ((100vw - 420px) / 1020));
-    }
-}
-@media screen and (max-width: 420px) {
-    html {
-        font-size: calc(8px + 8 * ((100vw - 420px) / 1020));
-    }
-}
+
 
 @media (max-width: 1000px)
 {
