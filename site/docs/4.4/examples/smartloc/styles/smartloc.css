@@ -80,61 +80,25 @@ header
     padding-top: 2.5rem;
 }
 
+header .navbar{
+    padding-left: 0px;padding-right: 0px;
+}
+
+header  .navbar-collapse a{
+    margin-left: 1rem;
+}
+
+.navbar-light a:not(.btn)
+{
+    text-decoration: none !important;
+    color: black !important;
+}
+
 .logoSmartloc
 {
     width: 8.75rem;
 }
 
-
-/* MENU HEADER présent sur toutes les pages */
-.menuHeader
-{
-    width: 100%;
-    height : 2.5rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.menuHeader__conteneurLiens
-{
-    height: inherit;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.menuHeader__conteneurLiens a
-{
-    margin-left: 1.5rem;
-}
-.menuHeader__conteneurLiens a:not(.btn)
-{
-    text-decoration: none;
-    color: black;
-}
-
-.menuHeader__liensBold
-{
-    margin-left: 1.5rem;
-}
-
-.menuHeader__liensBold a
-{
-    margin-left: 1rem;
-}
-
-.menuHeader__liensBold a h5
-{
-    display: inline;
-    margin: 0;
-}
 
 
 /* HEADER DOSSIER LOCATAIRES */
@@ -249,11 +213,6 @@ header
     align-items: center;
 }
 
-.headerClassique__titrage_texte
-{
-    min-width: 45%;
-    max-width: 45%;
-}
 
 .headerClassique__titrage_titre
 {
@@ -364,10 +323,7 @@ header
     align-items: center;
     border: 1px solid black;
     border-radius: 4px;
-}
-.headerClassique__commentCaMarche_etape:last-child
-{
-    margin: 0;
+    margin-bottom:10px;
 }
 
 .headerClassique__commentCaMarche_etape_number
@@ -2038,5 +1994,13 @@ ul.liste--point li::before
     {
         padding-right: 5rem;
         padding-left: 5rem;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .headerClassique__titrage
+    {
+        padding-top: 4rem;
     }
 }
