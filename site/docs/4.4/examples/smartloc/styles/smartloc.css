@@ -1090,17 +1090,8 @@ ul.liste--point li::before
     flex-direction: row;
 }
 
-.sectionPageClassique__contenu
-{
-    width: 100%;
-    margin-left: 2rem;
-}
 
-.sectionPageClassique__titrage
-{
-    max-width: 16rem;     /* permet de donner une taille absolument constente */
-    min-width: 16rem;     /* et eviter les resizes automatiques */
-}
+
 
 .section__sousElement
 {
@@ -1526,11 +1517,6 @@ ul.liste--point li::before
     align-items: center;
 }
 
-.sectionExpertsAide h1
-{
-    width: 28rem;
-    text-align: center;
-}
 
 .sectionExpertsAide__conteneurPhotos, 
 .sectionExpertsAide__conteneurBoutons
@@ -1569,9 +1555,7 @@ ul.liste--point li::before
 /* SECTION AIDE SMARTLOC violette avec shapes et bouton demarrer  */
 .sectionSmartlocAide
 {
-    width: 100%;    
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
+    width: 100%;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -1990,7 +1974,7 @@ ul.liste--point li::before
 
 @media (max-width: 1000px)
 {
-    section, header, footer
+    footer
     {
         padding-right: 5rem;
         padding-left: 5rem;
@@ -2001,6 +1985,27 @@ ul.liste--point li::before
 {
     .headerClassique__titrage
     {
-        padding-top: 4rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .headerClassique__commentCaMarche {
+        margin-bottom: 5rem;
+    }
+
+    .menuSticky--section{
+        display: none;
+    }
+
+    section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .menuSticky--section{
+        padding-left: 1rem;
     }
 }
