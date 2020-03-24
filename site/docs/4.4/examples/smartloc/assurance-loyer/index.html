@@ -6,6 +6,7 @@ extra_css: "assurance-loyer.css"
 
 <script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
 
+
 <!-- HEADER -->
 
 <header class="container">
@@ -105,7 +106,7 @@ extra_css: "assurance-loyer.css"
     </div>
 
     <!-- SECTION GARANTIES ET TARIFS -->
-    <section class="sectionPageClassique sectionGaranties bg-warning container-fluid">
+    <section class="sectionGaranties bg-warning container-fluid">
         <div class="menuSticky--section__ancre" id="garanties"></div>
         <div class="row">
             <div class="col-lg-2 offset-lg-1">
@@ -210,7 +211,7 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION CONDITIONS DU DOSSIER LOCATAIRE -->
-    <section class="sectionPageClassique sectionConditions container-fluid">
+    <section class="sectionConditions container-fluid">
         <div class="menuSticky--section__ancre" id="conditions"></div>
         <div class="row">
             <div class="col-lg-2 offset-lg-1">
@@ -218,10 +219,14 @@ extra_css: "assurance-loyer.css"
             </div>
             <div class="col-lg-8">
                 <div class="section__sousElement">
-                    <div class="menuNoir mb-5">
-                        <p class="menuNoir__item">Entrants ou en place depuis - de 6 mois </p>
-                        <p class="menuNoir__item">En place <span class="d-none d-sm-inline-block">depuis</span> + de 6 mois</p>
-                    </div>
+                    <ul class="mb-5 nav menuNoir nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Entrants <span class="d-none d-sm-inline-block" ></span>ou en place depuis - de 6 mois</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">En place <span class="d-none d-sm-inline-block">depuis</span> + de 6 mois</a>
+                        </li>
+                    </ul>
                 </div>
                 
                 <div class="section__sousElement encadrement--gris">
@@ -237,7 +242,7 @@ extra_css: "assurance-loyer.css"
                     <div class="col-lg-6">
                         <div class="section__sousElement encadrement--gris">
                             <h3>Statuts éligibles</h3>
-                            <ul class="liste--point">
+                            <ul class="liste--point list-unstyled">
                                 <li>Salarié en CDI hors période d'essai</li>
                                 <li>Fonctionnaire titulaire</li>
                                 <li>Salarié en CDD avec plus de 8 mois de contrat restant</li>
@@ -249,15 +254,15 @@ extra_css: "assurance-loyer.css"
                             </ul>
                         </div>
                         <div class="section__sousElement">
-                            <p></p><a href="/dossier" class="btn btn-outline-dark btn-sm">Tester un dossier locataire</a></p>
-                            <p></p><img src="../../../assets/img/smartloc/icons/arrow.svg" alt="">
+                            <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Tester un dossier locataire</a></p>
+                            <p><img src="../../../assets/img/smartloc/icons/arrow.svg" alt="">
                             <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf" class="text-dark"><u>Liste complète des critères et justificatifs</u></a></p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="section__sousElement encadrement--gris mt-4 mt-lg-0">
                             <h3>Statuts non éligibles (même avec garants)</h3>
-                            <ul class="liste--point mb-3">
+                            <ul class="liste--point list-unstyled mb-3">
                                 <li>Sans emploi (sauf allocataire AAH)</li>
                                 <li>Intérimaire / Intermittent</li>
                                 <li>Salarié en CDD avec moins de 8 mois de contrat restant</li>
@@ -276,7 +281,7 @@ extra_css: "assurance-loyer.css"
 
                 <div class="section__sousElement mt-5">
                     <h3 class="section__sousElement_titre">Autres conditions</h3>
-                    <ul class="liste--check">
+                    <ul class="liste--check list-unstyled">
                         <li>Bail d'habitation vide ou meublée en résidence principale</li>
                         <li>Bail avec clause résolutoire</li>
                         <li>Si colocation => bail unique avec clause de solidarité</li>
@@ -296,7 +301,7 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION STATUS ELIGIBLES -->
-    <section class="sectionPageClassique sectionStatus bg-primary container-fluid d-none d-md-block">
+    <section class="sectionStatus bg-primary container-fluid d-none d-md-block">
         <div class="menuSticky--section__ancre" id="status"></div>
 
         <div class="row">
@@ -441,7 +446,7 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION CAS IMPAYÉS -->
-    <section class="sectionPageClassique sectionImpayes container-fluid">
+    <section class="sectionImpayes container-fluid">
         <div class="menuSticky--section__ancre" id="impayes"></div>
 
         <div class="row">
@@ -520,7 +525,7 @@ extra_css: "assurance-loyer.css"
                         <h3 class="advice-title">Prise en charge dès le premier mois d'impayé</h3>
                         <p>Remboursement sans franchise des 3 premiers mois d'impayés après 90 jours puis remboursement mensuel.</p>
                         <p>L'assureur se charge de toute la procédure après transmission du dossier suite au premier impayé :</p>
-                        <ul class="liste--check">
+                        <ul class="liste--check list-unstyled">
                             <li>Commandement de payer délivré par huissier</li>
                             <li>Assignation au tribunal par un avocat spécialisé</li>
                             <li>Obtention d'un jugement d'expulsion</li>
@@ -570,7 +575,7 @@ extra_css: "assurance-loyer.css"
     </section>
 
     <!-- SECTION FAQ -->
-    <section class="sectionPageClassique sectionFAQ container-fluid">
+    <section class="sectionFAQ container-fluid">
         <div class="menuSticky--section__ancre" id="faq"></div>
 
         <div class="row">
@@ -585,7 +590,7 @@ extra_css: "assurance-loyer.css"
                     <h4><a href="#faq_impayes" class="">La procédure d’impayés</a></h4>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 mt-4 mt-lg-0">
                 <div class="section__sousElement">
                     <div id="faq_garanties" class="menuSticky--sousElement__ancre"></div>
                     <h2 class="section__sousElement_titre">Les garanties de l’assurance loyer impayé</h2>
@@ -611,8 +616,9 @@ extra_css: "assurance-loyer.css"
     </section>
 
 
+
     <!-- SECTION DOC -->
-    <section class="sectionPageClassique sectionDoc container-fluid bg-light">
+    <section class="sectionDoc container-fluid bg-light">
         <div class="menuSticky--section__ancre" id="documentation"></div>
 
         <div class="row">
@@ -625,7 +631,7 @@ extra_css: "assurance-loyer.css"
                     <h4><a href="#doc_impaye" class="menuSticky--sousElement__item">En cas d'impayés</a></h4>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 mt-4 mt-lg-0">
                 <div class="section__sousElement">
                     <div id="doc_souscrire" class="menuSticky--sousElement__ancre"></div>
                     <h2 class="section__sousElement_titre">Les documents de la GLI</h2>
@@ -701,14 +707,6 @@ extra_css: "assurance-loyer.css"
                     </div>
                 </div>                
 
-                <div class="section__sousElement">
-                    <h3 class="section__sousElement_titre">Pour signer le bail</h3> 
-                    <p>La garantie loyer impayé Insured proposée par Smartloc est sans franchise pour les impayés de loyer. Le dépôt de garantie du locataire que vous avez encaissé est simplement déduit du dernier remboursement qui vous est dû par la compagnie.</p>                
-                    <p>Pour les locataires entrants ou en place depuis moins de 14 jours il n'y a pas de carence, c'est à dire pas de période probatoire.</p>           
-                    <p>Pour les locataires en place depuis plus de 14 jours vous avez une carence de 3 mois, c'est à dire que si un impayé intervient dans les 3 premiers mois du contrat vous ne serez pas du tout couvert.</p>
-                    <p>Fiche pratique : franchise et carence de la GLI</p> 
-                </div>
-
                 
             </div>
         </div>   
@@ -720,14 +718,35 @@ extra_css: "assurance-loyer.css"
     
 
     <!-- SECTION COMPARATIFS -->
-    <section class="sectionPageClassique sectionComparatifs bg-secondary">
+    <section class="sectionComparatifs bg-secondary container-fluid">
         <div class="menuSticky--section__ancre" id="about"></div>
 
-        <h2 class="sectionPageClassique__titrage">Comparatif des assurances loyers impayés</h2>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>A propos</h2>
+            </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <div class="section__sousElement">
+                    <h2 class="section__sousElement_titre">Nous avons sélectionné le meilleur contrat du marché</h2>
+                    <h3>Qui sommes-nous ?</h3>
+                    <p>Smartloc est une plateforme de gestion locative en ligne créée en 2012 par 
+                        deux ingénieurs polytechniciens qui ont souhaité proposer des outils innovants aux bailleurs indépendants. Nous avons assisté plus de 100 000 propriétaires indépendants qui louent sans agence.</p>
+                    <p>Smartloc est dans le cadre de cette activité courtier en assurance (n°Orias : 16005174) et a sélectionné la garantie loyer impayé Insured pour ses clients.
+                    <p>Insured est gestionnaire de garantie loyer impayé depuis plus de 10 ans (n°Orias : 14000256), basé à Toulouse et garantissant plusieurs dizaines de milliers de locations. 
+                        C'est donc Insured qui encaisse vos primes d'assurance, qui vous indemnise et qui poursuit le locataire en cas d'impayés.</p>
+                    <p>La compagnie d'assurance qui garantit in fine le contrat est Allianz, un des leaders mondials de l'assurance. Vous n'aurez néanmoins aucun contact avec eux car le contrat est distribué par Smartloc est géré par Insured.</p>
+                    <h3 class="mt-4">Pourquoi est-ce le meilleur contrat ?</h3>
+                    <p>Nos équipes connaissent très bien les problématiques d'impayés via notre activité de gestion locative en ligne. 
+                        Nous analysons depuis 2012 les différentes assurances du marché et nous avons sélectionné notre contrat sur 3 critères : </p>
+                    <ul>
+                        <li><strong>rapport qualité-prix</strong> : notre GLI a une couverture complète en durée et en montant pour le tarif le plus bas du marché</li>
+                        <li><strong>souscription digitale</strong> : la souscription se fait entièrement en ligne avec paiement carte bancaire et signature électronique</li>
+                        <li><strong>rigueur sur les sinistres</strong> : Insured dispose d'un extranet pour la gestion des sinistres ce qui vous garantit un suivi complet de votre sinistre</li>
+                    </ul>
+                    <a href="" class="text-dark"><img src="../../../assets/img/smartloc/icons/arrow.svg" alt=""> <u>Lire notre comparatif complet des GLI du marché</u></a>
 
-        <div class="sectionPageClassique__contenu">
-            <div class="section__sousElement" style="background: white; height: 600px;">
-                a
+
+                </div>
             </div>
         </div>
     </section>
@@ -767,42 +786,60 @@ extra_css: "assurance-loyer.css"
 
 <!-- FOOTER -->
 
-<footer>
-    <div class="footer__conteneurSocial">
-        <img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
-        <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
-        <div>
-            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
-            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href=""><h5>Gestion locative</h5></a>
+                    <a href=""><h5>Bail</h5></a>
+                    <a href=""><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href=""><h5>Ressources</h5></a>
+                    <a href=""><h5>Tarifs</h5></a>
+                    <a href=""><h5>Blog</h5></a>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href=""><h5>A propos</h5></a>
+                    <a href=""><h5>Partenaires</h5></a>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="">Modèle de bail numérique</a></li>
+                        <li><a href="">Signature électronique</a></li>
+                        <li><a href="">Etat des lieux</a></li>
+                        <li><a href="">Acte de caution</a></li>
+                        <li><a href="">Validation dossier locataire</a></li>
+                        <li><a href="">Caution bancaire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="">Fiscalité immobilière</a></li>
+                        <li><a href="">Echéance importantes</a></li>
+                        <li><a href="">Contentieux locataire</a></li>
+                        <li><a href="">Assistance technique</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer__ligneSeparation footer__ligneSeparation--responsive"></div>
-    <div class="footer__conteneurLiens">
-        <div class="footer__conteneurLiens_haut">
-                <a href=""><h5>Gestion locative</h5></a>
-                <a href=""><h5>Bail</h5></a>
-                <a href=""><h5>Assurance</h5></a>
-                <a href=""><h5>Ressources</h5></a>
-                <a href=""><h5>Tarifs</h5></a>
-                <a href=""><h5>Blog</h5></a>
-                <a href=""><h5>A propos</h5></a>
-                <a href=""><h5>Partenaires</h5></a>
-        </div>
-        <div class="footer__ligneSeparation"></div>
-        <div class="footer__conteneurLiens_bas">
-            <a href="">Modèle de bail numérique</a>
-            <a href="">Signature électronique</a>
-            <a href="">Etat des lieux</a>
-            <a href="">Acte de caution</a>
-            <a href="">Validation dossier locataire</a>
-            <a href="">Caution bancaire</a>
-            <a href="">Recouvrement et expulsion locataire</a>
-            <a href="">Fiscalité immobilière</a>
-            <a href="">Echéance importantes</a>
-            <a href="">Contentieux locataire</a>
-            <a href="">Assistance technique</a>
-        </div>
-    </div>
+
+
 </footer>
 
 

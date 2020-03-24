@@ -66,11 +66,6 @@ section
     padding-bottom: 8.5rem;
 }
 
-ul
-{
-    list-style: none;
-    padding-left: 0;
-}
 
 
 
@@ -353,16 +348,9 @@ header  .navbar-collapse a{
 
 footer
 {
-    width: 100%;
     height: 32rem;
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     color: white;
     background-color: black;
 }
@@ -372,19 +360,6 @@ footer a
     color: white !important;
 }
 
-.footer__conteneurSocial
-{
-    width: 12.5%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.footer__conteneurSocial a
-{
-    margin: 1rem 0;
-}
 
 .footer__logoReseauxSociaux
 {
@@ -392,65 +367,17 @@ footer a
     margin-right: 1rem;
 }
 
-.footer__conteneurLiens
-{
-    width: 75%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
 
-.footer__conteneurLiens_haut
-{
-    width: 55%;
-    max-height: 6rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-}
-.footer__conteneurLiens_haut a
-{
-    margin-bottom: .5rem;
-    margin-right: 5.75rem;
-}
-
-.footer__conteneurLiens_haut a h5
-{
-    margin: 0;
-}
-
-.footer__conteneurLiens_bas
-{
-    max-height: 12rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-}
-
-.footer__conteneurLiens_bas a
-{
-    margin-bottom: .5rem;
-    margin-right: 12.25rem;
-    font-weight: bold;
-}
-
-div[class^="footer__ligneSeparation"]
+footer hr
 {
     width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.footer__ligneSeparation--responsive
-{
-    display: none;
+footer .list-unstyled li{
+    margin-bottom: 0.5rem;
 }
-
 
 
 /************* INPUTS *************/
@@ -1038,7 +965,6 @@ ul.liste--point li::before
 
 .conteneurCards--colonne
 {
-    width: calc(100% + 2rem);
     margin-top: -2rem;
     display: -ms-flexbox;
     display: flex;
@@ -1079,17 +1005,6 @@ ul.liste--point li::before
 
 
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
-
-/* style de section general */
-
-.sectionPageClassique
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
 
 
 
