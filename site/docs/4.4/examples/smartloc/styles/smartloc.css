@@ -775,7 +775,7 @@ ul.liste--point li::before
 .menuSticky--sousElement__ancre
 {
     position: absolute;
-    top: -3rem;
+    top: -5rem;
 }
 
 
@@ -978,6 +978,12 @@ ul.liste--point li::before
 .cardLigne
 {
     font-weight: bold;
+}
+
+.cardLigne a
+{
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .cardLigne__icone
