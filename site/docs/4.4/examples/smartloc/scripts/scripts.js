@@ -7,20 +7,7 @@
 
 const tailleTypo = parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size'))
 
-// MENU NOIR
-const menuNoir_items = document.querySelectorAll('.menuNoir__item')
 
-if (menuNoir_items.length > 0) {
-  menuNoir_items[0].classList.add('active')
-  for (let i = 0; i < menuNoir_items.length; i++) {
-    menuNoir_items[i].onclick = () => {
-      for (let i = 0; i < menuNoir_items.length; i++) {
-        menuNoir_items[i].classList.remove('active')
-      }
-      menuNoir_items[i].classList.add('active')
-    }
-  }
-}
 
 // NAV AVEC JUMP DANS LA PAGE
 const menuSticky_sousElement_items = document.querySelectorAll('.menuSticky--sousElement__item')

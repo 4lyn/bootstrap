@@ -218,82 +218,121 @@ extra_css: "assurance-loyer.css"
                 <h2>Conditions pour la garantie loyer impayé</h2>
             </div>
             <div class="col-lg-8">
-                <div class="section__sousElement">
-                    <ul class="mb-5 nav menuNoir nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Entrants <span class="d-none d-sm-inline-block" ></span>ou en place depuis - de 6 mois</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">En place <span class="d-none d-sm-inline-block">depuis</span> + de 6 mois</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="section__sousElement encadrement--gris">
-                    <h3>Revenu supérieur à 2,85 x le loyer CC</h3>
-                    <p>Vous pouvez sommer les revenus des candidats éligibles ou des garants éligibles. 
-                    <p>Il est par contre impossible de cumuler garant et assurance sauf pour les étudiants.</p>
-                    <p>Pour les salariés c'est le salaire net garanti et régulier avant impôt à la source qui doit être retenu. Donc le revenu net hors primes et heures supplémentaires (si nécessaire retenez 75% du brut garanti).</p>
-                    <p>Pour les indépendants et les retraités c'est le dernier revenu imposable en haut de l'avis d'impôts qui doit être retenu.</p>
-                    <p>Les APL et les allocations familiales font partie des allocations éligibles (<a href="#">voir la liste complète</a>)</p>
-                </div> 
-    
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="section__sousElement encadrement--gris">
-                            <h3>Statuts éligibles</h3>
-                            <ul class="liste--point list-unstyled">
-                                <li>Salarié en CDI hors période d'essai</li>
-                                <li>Fonctionnaire titulaire</li>
-                                <li>Salarié en CDD avec plus de 8 mois de contrat restant</li>
-                                <li>Retraité</li>
-                                <li>Indépendant avec au moins un avis d'impôts complet sur l'activité</li>
-                                <li>Allocataire AAH</li>
-                                <li>Etudiant avec garant éligible</li>
-                                <li>Transfrontalier domicilié fiscalement en France</li>
-                            </ul>
-                        </div>
-                        <div class="section__sousElement">
-                            <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Tester un dossier locataire</a></p>
-                            <p><img src="../../../assets/img/smartloc/icons/arrow.svg" alt="">
-                            <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf" class="text-dark"><u>Liste complète des critères et justificatifs</u></a></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section__sousElement encadrement--gris mt-4 mt-lg-0">
-                            <h3>Statuts non éligibles (même avec garants)</h3>
-                            <ul class="liste--point list-unstyled mb-3">
-                                <li>Sans emploi (sauf allocataire AAH)</li>
-                                <li>Intérimaire / Intermittent</li>
-                                <li>Salarié en CDD avec moins de 8 mois de contrat restant</li>
-                                <li>Salarié en CDI en période d'essai</li>
-                                <li>Fonctionnaire non titulaire</li>
-                                <li>Transfrontaliers domiciliés fiscalement à l'étranger</li>
-                                <li>Diplomates</li>
-                                <li>Indépendant ayant moins d'un an d'ancienneté</li>
-                            </ul>
-                            <span><strong>→ Conseil Smartloc</strong></span>
-                            <span>Vous pouvez garantir ces candidats sans condition de solvabilité après 6 mois sans impayés :</span>
-                            <a href=""><u>consultez la fiche pratique sur les candidats non éligibles.</u></a>
-                        </div>
+                    <div class="col-lg-8">
+                        <ul class="mb-5 nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a class="nav-link active " href="#entrants" data-toggle="pill">Entrants <span class="d-none d-sm-inline-block">ou en place depuis - de 6 mois</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#enplace" data-toggle="pill">En place <span class="d-none d-sm-inline-block">depuis</span> + de 6 mois</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="section__sousElement mt-5">
-                    <h3 class="section__sousElement_titre">Autres conditions</h3>
-                    <ul class="liste--check list-unstyled">
-                        <li>Bail d'habitation vide ou meublée en résidence principale</li>
-                        <li>Bail avec clause résolutoire</li>
-                        <li>Si colocation => bail unique avec clause de solidarité</li>
-                        <li>Location en France métropolitaine</li>
-                    </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="entrants" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="section__sousElement encadrement--gris">
+                            <h3>Revenu supérieur à 2,85 x le loyer CC</h3>
+                            <p>Vous pouvez sommer les revenus des candidats éligibles ou des garants éligibles. 
+                            <p>Il est par contre impossible de cumuler garant et assurance sauf pour les étudiants.</p>
+                            <p>Pour les salariés c'est le salaire net garanti et régulier avant impôt à la source qui doit être retenu. Donc le revenu net hors primes et heures supplémentaires (si nécessaire retenez 75% du brut garanti).</p>
+                            <p>Pour les indépendants et les retraités c'est le dernier revenu imposable en haut de l'avis d'impôts qui doit être retenu.</p>
+                            <p>Les APL et les allocations familiales font partie des allocations éligibles (<a href="#">voir la liste complète</a>)</p>
+                        </div> 
+            
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris">
+                                    <h3>Statuts éligibles</h3>
+                                    <ul class="liste--point list-unstyled">
+                                        <li>Salarié en CDI hors période d'essai</li>
+                                        <li>Fonctionnaire titulaire</li>
+                                        <li>Salarié en CDD avec plus de 8 mois de contrat restant</li>
+                                        <li>Retraité</li>
+                                        <li>Indépendant avec au moins un avis d'impôts complet sur l'activité</li>
+                                        <li>Allocataire AAH</li>
+                                        <li>Etudiant avec garant éligible</li>
+                                        <li>Transfrontalier domicilié fiscalement en France</li>
+                                    </ul>
+                                </div>
+                                <div class="section__sousElement">
+                                    <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Tester un dossier locataire</a></p>
+                                    <p><img src="../../../assets/img/smartloc/icons/arrow.svg" alt="">
+                                    <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf" class="text-dark"><u>Liste complète des critères et justificatifs</u></a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris mt-4 mt-lg-0">
+                                    <h3>Statuts non éligibles (même avec garants)</h3>
+                                    <ul class="liste--point list-unstyled mb-3">
+                                        <li>Sans emploi (sauf allocataire AAH)</li>
+                                        <li>Intérimaire / Intermittent</li>
+                                        <li>Salarié en CDD avec moins de 8 mois de contrat restant</li>
+                                        <li>Salarié en CDI en période d'essai</li>
+                                        <li>Fonctionnaire non titulaire</li>
+                                        <li>Transfrontaliers domiciliés fiscalement à l'étranger</li>
+                                        <li>Diplomates</li>
+                                        <li>Indépendant ayant moins d'un an d'ancienneté</li>
+                                    </ul>
+                                    <span><strong>→ Conseil Smartloc</strong></span>
+                                    <span>Vous pouvez garantir ces candidats sans condition de solvabilité après 6 mois sans impayés :</span>
+                                    <a href=""><u>consultez la fiche pratique sur les candidats non éligibles.</u></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="section__sousElement mt-5">
+                            <h3 class="section__sousElement_titre">Autres conditions</h3>
+                            <ul class="liste--check list-unstyled">
+                                <li>Bail d'habitation vide ou meublée en résidence principale</li>
+                                <li>Bail avec clause résolutoire</li>
+                                <li>Si colocation => bail unique avec clause de solidarité</li>
+                                <li>Location en France métropolitaine</li>
+                            </ul>
+                        </div>
+            
+                        <div class="section__sousElement">
+                            <h3 class="section__sousElement_titre">Validation du dossier locataire</h3>
+                            <p>Les justificatifs ne vous seront demandés qu'en cas d'impayés (voir la <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf">liste des critères et des justificatifs</a>). Nous vous recommandons donc de constituer le dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreurs.</p>
+                            <a href="/dossier" class="btn btn-outline-dark btn-sm">Valider votre dossier locataire</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="enplace" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row section__sousElement">
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris">
+                                    <h3>Pas de critères de solvabilité</h3>
+                                    <p>Les locataires en place depuis plus de 6 mois sont éligibles <strong>sans condition de ressources ou de statuts</strong>.</p>
+                                    <p>Ils doivent simplement être à jour de leur paiement et ne pas avoir <strong>d'incidents de paiements sur les 6 derniers mois</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris mt-4 mt-lg-0">
+                                    <h3>Période probatoire de 3 mois</h3>
+                                    <p>Une carence de 3 mois est appliquée pour les locataires en place depuis plus de 14 jours que vous n'aviez 
+                                        pas précédemment couverts par une assurance loyer impayé.</p>
+
+                                        <p>C'est une période probatoire au démarrage de la garantie pendant laquelle vous ne devez pas avoir d'impayés; le cas échéant la garantie sera résiliée.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__sousElement encadrement--gris">
+                            <h3>Justificatifs réduits</h3>
+                            <p>En l'absence de critères de solvabilité il est simplement nécessaire d'avoir en votre possession lors de la souscription :</p>
+                            <ul>
+                                <li>Le bail de location signé avec clause résolutoire</li>
+                                <li>L'état des lieux signé</li>
+                                <li>Les pièces d'identité des locataires</li>
+                                <li>Leur attestation d'assurance habitation (nous contacter si vous ne l'avez pas)</li>
+                                <li>Les relevés de gestion de votre gestionnaire ou vos relevés bancaires prouvant que le locataire vous a bien payé par chèque ou virement sur les 6 derniers mois.</li>
+                            </ul>
+                        </div> 
+                    </div>
                 </div>
-    
-                <div class="section__sousElement">
-                    <h3 class="section__sousElement_titre">Validation du dossier locataire</h3>
-                    <p>Les justificatifs ne vous seront demandés qu'en cas d'impayés (voir la <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf">liste des critères et des justificatifs</a>). Nous vous recommandons donc de constituer le dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreurs.</p>
-                    <a href="/dossier" class="btn btn-outline-dark btn-sm">Valider votre dossier locataire</a>
-                </div>
+                
+
             </div>
         </div>
 
