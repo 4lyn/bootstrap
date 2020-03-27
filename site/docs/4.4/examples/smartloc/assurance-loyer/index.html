@@ -12,7 +12,7 @@ extra_css: "assurance-loyer.css"
 <header class="container">
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
 
         </a>
@@ -23,22 +23,25 @@ extra_css: "assurance-loyer.css"
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Gestion locative</span></a>
+                <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Assurance</a>
+                <a class="nav-link" href="/bail/">Bail</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Ressources</a>
+                <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tarifs</a>
+                <a class="nav-link" href="/blog">Ressources</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link ml-lg-5" href="#"><h5>Mon compte</h5></a>
+                <a class="nav-link" href="/tarifs">Tarifs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#"><h5>Contact</h5></a>
+                <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
             </li>
         </div>
     </nav>    
@@ -47,7 +50,7 @@ extra_css: "assurance-loyer.css"
         <div class="col-md-6">
             <h1 class="headerClassique__titrage_titre">L’assurance loyer impayé simple avec dossier locataire et bail numériques.</h1>
             <span class="headerClassique__titrage_sousTitre">Loyers, dégradations et procédure d'expulsion sont pris en charge dès le premier mois d'impayé, en durée illimitée.</span>
-            <a href="" class="btn btn-dark headerClassique__titrage_bouton">Démarrer mon bail</a>
+            <a href="/dossier" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
         </div>
         <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
             <img src="../../../assets/img/smartloc/illustrations/bouclier_illustrated.png" alt="">
@@ -102,7 +105,7 @@ extra_css: "assurance-loyer.css"
             <a href="#documentation" class="menuSticky--section__conteneurLiens_item">Documentation</a>
             <a href="#about" class="menuSticky--section__conteneurLiens_item">A propos</a>
         </div>
-        <a href="" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
+        <a href="/dossier" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
     </div>
 
     <!-- SECTION GARANTIES ET TARIFS -->
@@ -152,7 +155,7 @@ extra_css: "assurance-loyer.css"
                     </div>
                     <div class="tableau__ligne">
                         <div class="tableau__ligne_cellule tableau__premiereColonne">
-                            <p>Détériorations immobilières <a href=""><u>détails</u></a></p> 
+                            <p>Détériorations immobilières <a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/"><u>détails</u></a></p> 
                             <p class="tableau__cellule_petitTexte">Plafond de 10 000€ avec franchise du dépôt de garantie</p>
                         </div>
                         <div class="tableau__ligne_cellule"></div>
@@ -161,7 +164,7 @@ extra_css: "assurance-loyer.css"
                     </div>
                     <div class="tableau__ligne">
                         <div class="tableau__ligne_cellule tableau__premiereColonne">
-                            <p>Protection juridique hors impayés <a href=""><u>détails</u></a> </p>
+                            <p>Protection juridique hors impayés <a href="/blog/protection-juridique/"><u>détails</u></a> </p>
                             <p class="tableau__cellule_petitTexte">Plafond de 20 000€</p>
                         </div>
                         <div class="tableau__ligne_cellule"></div>
@@ -222,7 +225,7 @@ extra_css: "assurance-loyer.css"
                     <div class="col-lg-8">
                         <ul class="mb-5 nav nav-pills nav-fill">
                             <li class="nav-item">
-                                <a class="nav-link active " href="#entrants" data-toggle="pill">Entrants <span class="d-none d-sm-inline-block">ou en place depuis - de 6 mois</span></a>
+                                <a class="nav-link active" href="#entrants" data-toggle="pill">Entrants <span class="d-none d-sm-inline-block">ou en place depuis - de 6 mois</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#enplace" data-toggle="pill">En place <span class="d-none d-sm-inline-block">depuis</span> + de 6 mois</a>
@@ -239,7 +242,7 @@ extra_css: "assurance-loyer.css"
                             <p>Il est par contre impossible de cumuler garant et assurance sauf pour les étudiants.</p>
                             <p>Pour les salariés c'est le salaire net garanti et régulier avant impôt à la source qui doit être retenu. Donc le revenu net hors primes et heures supplémentaires (si nécessaire retenez 75% du brut garanti).</p>
                             <p>Pour les indépendants et les retraités c'est le dernier revenu imposable en haut de l'avis d'impôts qui doit être retenu.</p>
-                            <p>Les APL et les allocations familiales font partie des allocations éligibles (<a href="#">voir la liste complète</a>)</p>
+                            <p>Les APL et les allocations familiales font partie des allocations éligibles (<a href="/blog/garantie-loyer-impaye-apl-et-allocations-a-retenir/">voir la liste complète</a>)</p>
                         </div> 
             
                         <div class="row">
@@ -278,7 +281,7 @@ extra_css: "assurance-loyer.css"
                                     </ul>
                                     <span><strong>→ Conseil Smartloc</strong></span>
                                     <span>Vous pouvez garantir ces candidats sans condition de solvabilité après 6 mois sans impayés :</span>
-                                    <a href=""><u>consultez la fiche pratique sur les candidats non éligibles.</u></a>
+                                    <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>consultez la fiche pratique sur les candidats non éligibles.</u></a>
                                 </div>
                             </div>
                         </div>
@@ -510,7 +513,7 @@ extra_css: "assurance-loyer.css"
                             <div class="tableau__ligne_cellule tableau__premiereColonne">J + 20 jours</div>
                             <div class="tableau__ligne_cellule">
                                 <p>Relance simple.</p>
-                                <a href=""><u>Voir un modèle de courrier simple</u></a>
+                                <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>Voir un modèle de courrier simple</u></a>
                             </div>
                             <div class="tableau__ligne_cellule">-</div>
                         </div>
@@ -518,7 +521,7 @@ extra_css: "assurance-loyer.css"
                             <div class="tableau__ligne_cellule tableau__premiereColonne">J + 35 jours	</div>
                             <div class="tableau__ligne_cellule">
                                 <p>Mise en demeure.</p>
-                                <a href=""><u>Voir un modèle de courrier recommandé</u></a>
+                                <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>Voir un modèle de courrier recommandé</u></a>
                             </div>
                             <div class="tableau__ligne_cellule">-</div>
                         </div>
@@ -526,7 +529,7 @@ extra_css: "assurance-loyer.css"
                             <div class="tableau__ligne_cellule tableau__premiereColonne">J + 40 jours</div>
                             <div class="tableau__ligne_cellule">
                                 <p>Transmission du dossier à l'assurance.</p>
-                                <a href=""><u>Voir la composition du dossier</u></a>
+                                <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>Voir la composition du dossier</u></a>
                             </div>
                             <div class="tableau__ligne_cellule">-</div>
                         </div>
@@ -609,7 +612,7 @@ extra_css: "assurance-loyer.css"
         <img src="../../../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
         <div class="sectionSmartlocAide__contenu">
             <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
-            <a href="" class="btn btn-dark" >Démarrer</a>
+            <a href="/dossier" class="btn btn-dark" >Démarrer</a>
         </div>
     </section>
 
@@ -636,7 +639,8 @@ extra_css: "assurance-loyer.css"
                     <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
                     <p>Vous êtes couvert contre les impayés de loyer qui vous sont remboursés directement.</p>
                     <p>L'assureur vous remplace également dans la procédure et va donc poursuivre directement le locataire pour récupérer les impayés et l'expulser si nécessaire.</p>
-                    <p>Vous êtes également couvert sur les dégradations immobilières causées par le locataire et qui ne seraient pas remboursées (directement par le locataire ou en utilisant son dépôt de garantie - voir notre <a href="https://www.smartloc.fr/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">fiche pratique sur le sujet</a>).</p>
+                    <p>Vous êtes également couvert sur les dégradations immobilières causées par le locataire et qui ne seraient pas remboursées 
+                        (directement par le locataire ou en utilisant son dépôt de garantie - voir notre <a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">fiche pratique sur le sujet</a>).</p>
                     <p>Enfin la garantie vous couvre contre les départs "à la cloche de bois", c'est à dire les départs furtifs du locataire abandonnant son logement. Vous êtes alors remboursé des loyers non perçus jusqu'à la récupération effective du logement.</p>
                 
                 </div>
@@ -771,7 +775,7 @@ extra_css: "assurance-loyer.css"
                     <div class="card cardLigne">
                         <div class="card-body">
                             <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
-                            <span><a href="#">Liste complète des allocations éligibles</a></span>
+                            <span><a href="/blog/garantie-loyer-impaye-apl-et-allocations-a-retenir/">Liste complète des allocations éligibles</a></span>
                         </div>
                     </div>
                     <div class="card cardLigne">
@@ -822,7 +826,7 @@ extra_css: "assurance-loyer.css"
                     <p>Nous vous recommandons donc de :</p>
                         <ul>
                             <li>valider votre dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreur. Vous pouvez le constituer facilement au lien suivant : <a href="/dossier">dossier locataire Smartloc</a></li>
-                            <li>rédiger le bail et ses annexes sur notre <a href="/bail/creation">module de bail numérique conforme</a></li>
+                            <li>rédiger le bail et ses annexes sur notre <a href="/bail/">module de bail numérique conforme</a></li>
                             <li>utiliser notre <a href="/gestion-locative">gestion locative en ligne</a> pour être sûr de gérer l'entrée dans les lieux sans erreur (mais également les relances en cas d'impayés)</li>
                         </ul>
                 </div>
@@ -1073,7 +1077,7 @@ extra_css: "assurance-loyer.css"
                     <p>Smartloc est dans le cadre de cette activité courtier en assurance (n°Orias : 16005174) et a sélectionné la garantie loyer impayé Insured pour ses clients.
                     <p>Insured est gestionnaire de garantie loyer impayé depuis plus de 10 ans (n°Orias : 14000256), basé à Toulouse et garantissant plusieurs dizaines de milliers de locations. 
                         C'est donc Insured qui encaisse vos primes d'assurance, qui vous indemnise et qui poursuit le locataire en cas d'impayés.</p>
-                    <p>La compagnie d'assurance qui garantit in fine le contrat est Allianz, un des leaders mondials de l'assurance. Vous n'aurez néanmoins aucun contact avec eux car le contrat est distribué par Smartloc est géré par Insured.</p>
+                    <p>La compagnie d'assurance qui garantit in fine le contrat est Allianz, un des leaders mondials de l'assurance. Vous n'aurez néanmoins aucun contact avec eux car le contrat est distribué par Smartloc et géré par Insured.</p>
                     <h3 class="mt-4">Pourquoi est-ce le meilleur contrat ?</h3>
                     <p>Nos équipes connaissent très bien les problématiques d'impayés via notre activité de gestion locative en ligne. 
                         Nous analysons depuis 2012 les différentes assurances du marché et nous avons sélectionné notre contrat sur 3 critères : </p>
@@ -1098,7 +1102,7 @@ extra_css: "assurance-loyer.css"
         <img src="../../../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
         <div class="sectionSmartlocAide__contenu">
             <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
-            <a href="" class="btn btn-dark" >Démarrer</a>
+            <a href="/dossier" class="btn btn-dark" >Démarrer</a>
         </div>
     </section>
 
@@ -1114,7 +1118,7 @@ extra_css: "assurance-loyer.css"
                 </div>
                 <div class="sectionExpertsAide__conteneurBoutons text-center">
                     <a class="btn btn-outline-dark btn-sm"  href="mailto:equipe@smartloc.fr"><h5>equipe@smartloc.fr</h5></a>
-                    <a class="btn btn-dark btn-sm mt-2 mt-sm-0"  href=""><h5>Parlez avec un conseiller</h5></a>
+                    <a class="btn btn-dark btn-sm mt-2 mt-sm-0"  href="#" data-toggle="modal" data-target="#modalContact"><h5>Parlez avec un conseiller</h5></a>
                 </div>
             </div>
         </div>
@@ -1131,47 +1135,56 @@ extra_css: "assurance-loyer.css"
             <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
             <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
             <p>
-                <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
-                <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
             </p>
             <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
         </div>
         <div class="col-lg-8 offset-lg-1">
             <div class="row mt-4 mt-lg-0">
                 <div class="col-lg-2">
-                    <a href=""><h5>Gestion locative</h5></a>
-                    <a href=""><h5>Bail</h5></a>
-                    <a href=""><h5>Assurance</h5></a>
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
 
                 </div>
                 <div class="col-lg-2 offset-lg-1">
-                    <a href=""><h5>Ressources</h5></a>
-                    <a href=""><h5>Tarifs</h5></a>
-                    <a href=""><h5>Blog</h5></a>
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
                 </div>
-                <div class="col-lg-2 offset-lg-1">
-                    <a href=""><h5>A propos</h5></a>
-                    <a href=""><h5>Partenaires</h5></a>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <ul class="list-unstyled">
-                        <li><a href="">Modèle de bail numérique</a></li>
-                        <li><a href="">Signature électronique</a></li>
-                        <li><a href="">Etat des lieux</a></li>
-                        <li><a href="">Acte de caution</a></li>
-                        <li><a href="">Validation dossier locataire</a></li>
-                        <li><a href="">Caution bancaire</a></li>
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-unstyled">
-                        <li><a href="">Recouvrement et expulsion locataire</a></li>
-                        <li><a href="">Fiscalité immobilière</a></li>
-                        <li><a href="">Echéance importantes</a></li>
-                        <li><a href="">Contentieux locataire</a></li>
-                        <li><a href="">Assistance technique</a></li>
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
                     </ul>
                 </div>
             </div>
@@ -1180,6 +1193,23 @@ extra_css: "assurance-loyer.css"
 
 
 </footer>
+
+
+<div class="modal fade modalToShow" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- SCRIPT -->
