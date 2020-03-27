@@ -9,81 +9,84 @@ extra_css: "assurance-loyer.css"
 
 <!-- HEADER -->
 
-<header class="container">
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">
-            <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Bail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>    
 
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/bail/">Bail</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/blog">Ressources</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/tarifs">Tarifs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
-            </li>
-        </div>
-    </nav>    
-
-    <div class="headerClassique__titrage row">
-        <div class="col-md-6">
-            <h1 class="headerClassique__titrage_titre">L’assurance loyer impayé simple avec dossier locataire et bail numériques.</h1>
-            <span class="headerClassique__titrage_sousTitre">Loyers, dégradations et procédure d'expulsion sont pris en charge dès le premier mois d'impayé, en durée illimitée.</span>
-            <a href="/dossier" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
-        </div>
-        <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
-            <img src="../../../assets/img/smartloc/illustrations/bouclier_illustrated.png" alt="">
-        </div>
-    </div>
-    <div class="headerClassique__commentCaMarche row">
-        <div class="col-md-3">
-            <h2 class="headerClassique__commentCaMarche_titre">Comment ça marche ?</h2>
-        </div>
-        <div class="headerClassique__commentCaMarche_contenu col-md-9">
-            <div class="headerClassique__commentCaMarche_conteneurEtapes row">
-                <div class="col-xl col-lg-6">
-                    <div class="headerClassique__commentCaMarche_etape">
-                        <span class="headerClassique__commentCaMarche_etape_number">1</span>
-                        <h5 class="headerClassique__commentCaMarche_etape_text">Constitution d’un dossier locataire</h5>
-                    </div>
+            <div class="headerClassique__titrage row">
+                <div class="col-md-6">
+                    <h1 class="headerClassique__titrage_titre">L’assurance loyer impayé simple avec dossier locataire et bail numériques.</h1>
+                    <span class="headerClassique__titrage_sousTitre">Loyers, dégradations et procédure d'expulsion sont pris en charge dès le premier mois d'impayé, en durée illimitée.</span>
+                    <a href="/dossier" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
                 </div>
-                <div class="col-xl col-lg-6">
-                    <div class="headerClassique__commentCaMarche_etape">
-                        <span class="headerClassique__commentCaMarche_etape_number">2</span>
-                        <h5 class="headerClassique__commentCaMarche_etape_text">Rédaction et signature du bail</h5>
-                    </div>
+                <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
+                    <img src="../../../assets/img/smartloc/illustrations/bouclier_illustrated.png" alt="">
                 </div>
-                <div class="col-xl col-lg-6">
-                    <div class="headerClassique__commentCaMarche_etape">
-                        <span class="headerClassique__commentCaMarche_etape_number">3</span>
-                        <h5 class="headerClassique__commentCaMarche_etape_text">Souscription à l’assurance en ligne </h5>
-                    </div>
+            </div>
+            <div class="headerClassique__commentCaMarche row">
+                <div class="col-md-3">
+                    <h2 class="headerClassique__commentCaMarche_titre">Comment ça marche ?</h2>
                 </div>
-                <div class="col-xl col-lg-6">
-                    <div class="headerClassique__commentCaMarche_etape">
-                        <span class="headerClassique__commentCaMarche_etape_number">4</span>
-                        <h5 class="headerClassique__commentCaMarche_etape_text">Une gestion locative conforme</h5>
+                <div class="headerClassique__commentCaMarche_contenu col-md-9">
+                    <div class="headerClassique__commentCaMarche_conteneurEtapes row">
+                        <div class="col-xl col-lg-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">1</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Constitution d’un dossier locataire</h5>
+                            </div>
+                        </div>
+                        <div class="col-xl col-lg-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">2</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Rédaction et signature du bail</h5>
+                            </div>
+                        </div>
+                        <div class="col-xl col-lg-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">3</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Souscription à l’assurance en ligne </h5>
+                            </div>
+                        </div>
+                        <div class="col-xl col-lg-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">4</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Une gestion locative conforme</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

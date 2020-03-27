@@ -959,8 +959,7 @@ ul.liste--point li::before
 .conteneurCards--enligne .card, 
 .conteneurCards--colonne .card
 {
-    margin-top: 2rem;           /* Applique un margin top et right */
-    margin-right: 2rem;         /* sur les cards pour eviter mauvais reponsive */
+    margin-top: 2rem;           /* Applique un margin top et right */         /* sur les cards pour eviter mauvais reponsive */
 }
 
 
@@ -1054,6 +1053,7 @@ ul.liste--point li::before
 {
     font-size: .825rem;
     font-family: Roobert;
+    font-weight: 500;
 }
 
 .sectionServices__conteneurService_listeFeatures
@@ -1139,21 +1139,11 @@ ul.liste--point li::before
 {
     width: 11rem;
     margin-top: 5.5rem;
-    margin-bottom: 2.5rem;
 }
 
-.sectionTemoignages__conteneurPartenaires
-{
-    width: 90%;
-    padding: 0 10rem;
-    position: absolute;
-    bottom: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+
+.sectionTemoignages__conteneurPartenaires{
+    margin-bottom: 40px;
 }
 
 .sectionTemoignages__conteneurPartenaires img
@@ -1360,7 +1350,6 @@ ul.liste--point li::before
 .cardAccompagnementExperts
 {
     position: relative;
-    width: calc(100% - 2rem);
     min-height: 16rem;
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;

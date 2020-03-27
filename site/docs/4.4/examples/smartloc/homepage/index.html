@@ -4,156 +4,229 @@ title: homepage
 extra_css: "homepage.css"
 ---
 
-<header>
-    <nav class="menuHeader">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
-        <div class="menuHeader__conteneurLiens">
-            <a href="">Gestion locative</a>
-            <a href="">Bail</a>
-            <a href="">Assurance</a>
-            <a href="">Ressources</a>
-            <a href="">Tarifs</a>
-            <div class="menuHeader__liensBold">
-                <a href=""><h5>Mon compte</h5></a>
-                <a href=""><h5>Contact</h5></a>
-            </div>
-        </div>
-    </nav>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
 
-    <div class="headerClassique__titrage">
-        <div class="headerClassique__titrage_texte">
-            <h1 class="headerClassique__titrage_titre">Sécurisez et optimisez 
-                    votre investissement locatif partout en France</h1>
-            <span class="headerClassique__titrage_sousTitre">Smartloc, une équipe d'experts et des outils puissants pour vous aider à gérer votre location sans agence.</span>
-            <a href="" class="btn btn-dark headerClassique__titrage_bouton">Créez votre espace de gestion</a>
-        </div>
-        <div class="headerClassique__titrage_conteneurPhoto">
-            <img src="../../../assets/img/smartloc/photos/photo_home_header.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Bail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>    
+
+            <div class="headerClassique__titrage row">
+                <div class="col-md-6">
+                    <h1 class="headerClassique__titrage_titre">Sécurisez et optimisez 
+                            votre investissement locatif partout en France</h1>
+                    <span class="headerClassique__titrage_sousTitre">Smartloc, une équipe d'experts et des outils puissants pour vous aider à gérer votre location sans agence.</span>
+                    <a href="" class="btn btn-dark headerClassique__titrage_bouton">Créez votre espace de gestion</a>
+                </div>
+                <div class="headerClassique__titrage_conteneurPhoto col-md-6 d-none d-md-block">
+                    <img src="../../../assets/img/smartloc/photos/photo_home_header.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </header>
+
+
 
 
 <!-- MAIN -->
 
 <main>
     <!-- AIDE DES EXPERTS -->
-    <section class="sectionAccompagnementExperts pb-0">
-        <h1>Nos experts vous <br> accompagnent sur l’essentiel.</h1>
-        <div class="conteneurCards--enligne">
-            <div class="card cardAccompagnementExperts bail_card">
-                <img class="cardAccompagnementExperts__illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
-                <h4>Bail de <br> location</h4>
-                <img class="cardAccompagnementExperts__background" src="../../../assets/img/smartloc/illustrations/shapes/background_card_1.png" alt="">
-            </div>
-            <div class="card cardAccompagnementExperts gestion_card">
-                <img class="cardAccompagnementExperts__illustration" src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
-                <h4>Gestion locative <br> en ligne</h4>
-                <img class="cardAccompagnementExperts__background" src="../../../assets/img/smartloc/illustrations/shapes/background_card_2.png" alt="">
-            </div>
-            <div class="card cardAccompagnementExperts assurance_card">
-                <img class="cardAccompagnementExperts__illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
-                <h4>Assurance loyer <br> impayé</h4>
-                <img class="cardAccompagnementExperts__background" src="../../../assets/img/smartloc/illustrations/shapes/background_card_3.png" alt="">
+    <section class="sectionAccompagnementExperts pb-0 container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h1>Nos experts vous <br> accompagnent sur l’essentiel.</h1>
+                <div class="row conteneurCards--enligne">
+                    <div class="col-lg-4">
+                        <div class="card cardAccompagnementExperts bail_card">
+                            <img class="cardAccompagnementExperts__illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                            <h4>Bail de <br> location</h4>
+                            <img class="cardAccompagnementExperts__background" src="../../../assets/img/smartloc/illustrations/shapes/background_card_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card cardAccompagnementExperts gestion_card">
+                            <img class="cardAccompagnementExperts__illustration" src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
+                            <h4>Gestion locative <br> en ligne</h4>
+                            <img class="cardAccompagnementExperts__background" src="../../../assets/img/smartloc/illustrations/shapes/background_card_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card cardAccompagnementExperts assurance_card">
+                            <img class="cardAccompagnementExperts__illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                            <h4>Assurance loyer <br> impayé</h4>
+                            <img class="cardAccompagnementExperts__background" src="../../../assets/img/smartloc/illustrations/shapes/background_card_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- SECTIONS TEMOIGNAGES -->
-    <section class="sectionTemoignages">
-        <div class="menuSticky--section__ancre" id="temoignages"></div>
-        <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
-        <div class="conteneurCards--enligne">
-            <div class="card cardTemoignage">
-                <p>“Je suis satisfaite, service très facile  et rapide d’utilisation.”</p>
-                <div class="cardTemoignage__conteneurInfos">
-                    <h6>Laura C. le 19 octobre 2019</h6>
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+    <section class="sectionTemoignages container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="menuSticky--section__ancre" id="temoignages"></div>
+                <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
+                <div class="conteneurCards--enligne row">
+                    <div class="col-lg-4">
+                        <div class="card cardTemoignage">
+                            <p>“Je suis satisfaite, service très facile  et rapide d’utilisation.”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>Laura C. le 19 octobre 2019</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card cardTemoignage">
+                            <p>“Simple, efficace et à un prix raisonnable. Je commande vivement.”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>Laura C. le 19 octobre 2019</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card cardTemoignage">
+                            <p>“Pour un premier essai j’ai été très satisfaite, saisie facile, retours clairs, des explications bien...”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>Laura C. le 19 octobre 2019</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card cardTemoignage">
-                <p>“Simple, efficace et à un prix raisonnable. Je commande vivement.”</p>
-                <div class="cardTemoignage__conteneurInfos">
-                    <h6>Laura C. le 19 octobre 2019</h6>
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                </div>
-            </div>
-            <div class="card cardTemoignage">
-                <p>“Pour un premier essai j’ai été très satisfaite, saisie facile, retours clairs, des explications bien...”</p>
-                <div class="cardTemoignage__conteneurInfos">
-                    <h6>Laura C. le 19 octobre 2019</h6>
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img class="sectionTemoignages__imageAvisVerifie" src="../../../assets/img/smartloc/photos/avis_verif.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <img class="sectionTemoignages__imageAvisVerifie" src="../../../assets/img/smartloc/photos/avis_verif.png" alt="">
-        <div class="sectionTemoignages__conteneurPartenaires">
-            <img src="../../../assets/img/smartloc/logos/logo_challenges.png" alt="">
-            <img src="../../../assets/img/smartloc/logos/logo_lefigaro.png" alt="">
-            <img src="../../../assets/img/smartloc/logos/logo_lemonde.png" alt="">
-        </div>
-        <img class="sectionTemoignages__formesBackground couronneNoir" src="../../../assets/img/smartloc/illustrations/shapes/couronne_noire_2.png" alt="">
-        <img class="sectionTemoignages__formesBackground rondJaune" src="../../../assets/img/smartloc/illustrations/shapes/rond_jaune_2.png" alt="">
+        <img class="sectionTemoignages__formesBackground couronneNoir d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/couronne_noire_2.png" alt="">
+        <img class="sectionTemoignages__formesBackground rondJaune d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/rond_jaune_2.png" alt="">
+
     </section>
 
-    <!-- SECTION SERVICES PROPOSEÉS -->
-    <section class="sectionServices">
-        <div class="sectionServices__conteneurService">
-            <div class="sectionServices__conteneurService_contenu">
-                <span class="sectionServices__conteneurService_nomService">Bail de location</span>
-                <h1>Ici vient le <br> gain apporté</h1>
-                <ul class="sectionServices__conteneurService_listeFeatures">
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                <a href="">En savoir plus</a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row sectionTemoignages__conteneurPartenaires">
+                    <div class="col-lg-4">
+                        <img src="../../../assets/img/smartloc/logos/logo_challenges.png" alt="" class="mx-auto d-block">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="../../../assets/img/smartloc/logos/logo_lefigaro.png" alt="" class="mx-auto d-block">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="../../../assets/img/smartloc/logos/logo_lemonde.png" alt="" class="mx-auto d-block">
+                    </div>
+                </div>
             </div>
-            <img class="sectionServices__photo" src="../../../assets/img/smartloc/photos/photo_service_1.png" alt="">
         </div>
+    </div>
 
-        <div class="sectionServices__conteneurService">
-            <img class="sectionServices__photo" src="../../../assets/img/smartloc/photos/photo_service_2.png" alt="">
-            <div class="sectionServices__conteneurService_contenu">
-                <span class="sectionServices__conteneurService_nomService">Assurance loyer impayé</span>
-                <h1>Ici vient le <br> gain apporté</h1>
-                <ul class="sectionServices__conteneurService_listeFeatures">
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                <a href="">En savoir plus</a>
+
+    <!-- SECTION SERVICES PROPOSEÉS -->
+    <section class="sectionServices container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="sectionServices__conteneurService">
+                    <div class="sectionServices__conteneurService_contenu">
+                        <span class="sectionServices__conteneurService_nomService">BAIL DE LOCATION</span>
+                        <h1>Un bail numérique <br> conforme et complet</h1>
+                        <ul class="sectionServices__conteneurService_listeFeatures">
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Modèle à jour des dernières lois</span></li>
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Clauses protectrices de vos intérêts</span></li>
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Annexes complètes pour toutes les situations</span></li>
+                        </ul>
+                        <p>Notre modèle de bail vous permet de générer facilement un bail PDF complet avec clauses et annexes conçus par nos gestionnaires.
+                            Vous pouvez choisir de l'imprimer ou de le signer en ligne.
+                        </p>
+                        <a href="/bail/">En savoir plus</a>
+                    </div>
+                    <img class="sectionServices__photo" src="../../../assets/img/smartloc/photos/photo_service_1.png" alt="">
+                </div>
+
+                <div class="sectionServices__conteneurService">
+                    <img class="sectionServices__photo" src="../../../assets/img/smartloc/photos/photo_service_2.png" alt="">
+                    <div class="sectionServices__conteneurService_contenu">
+                        <span class="sectionServices__conteneurService_nomService">ASSURANCE LOYER IMPAYE</span>
+                        <h1>L'assurance loyer <br> impayé simple</h1>
+                        <ul class="sectionServices__conteneurService_listeFeatures">
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Durée illimité de remboursement</span></li>
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Sans franchise et sans carence</span></li>
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Options dégradations et protection juridique</span></li>
+                        </ul>
+                        <p>Notre assurance vous rembourse dès le premier mois et prend en charge l'expulsion du locataire. 
+                            Vous pouvez souscrire à l'entrée du locataire ou en cours de bail.</p>
+                        <a href="/comparateur-assurance-loyer-impaye">En savoir plus</a>
+                    </div>
+                </div>
+                
+                <div class="sectionServices__conteneurService">
+                    <div class="sectionServices__conteneurService_contenu">
+                        <span class="sectionServices__conteneurService_nomService">GESTION LOCATIVE EN LIGNE</span>
+                        <h1>Votre location <br> en pilote automatique</h1>
+                        <ul class="sectionServices__conteneurService_listeFeatures">
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Quittances mensuelles par email</span></li>
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Indexation du loyer</span></li>
+                            <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Assistance incidents & contentieux</span></li>
+                        </ul>
+                        <p>Pour permettre aux particuliers de gérer leurs locations sans agence, notre équipe a conçu un 
+                            espace de gestion complet pour vous permettre de gérer toutes les échéances importantes et les incidents.</p>
+                        <a href="/gestion-locative">En savoir plus</a>
+                    </div>
+                    <img class="sectionServices__photo" src="../../../assets/img/smartloc/photos/photo_service_3.png" alt="">
+                </div>
             </div>
-        </div>
-        
-        <div class="sectionServices__conteneurService">
-            <div class="sectionServices__conteneurService_contenu">
-                <span class="sectionServices__conteneurService_nomService">Gestion locative en ligne</span>
-                <h1>Ici vient le <br> gain apporté</h1>
-                <ul class="sectionServices__conteneurService_listeFeatures">
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                    <li><img src="../../../assets/img/smartloc/icons/check.svg" alt=""><span>Ici vient le nom d’une feature 1</span></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                <a href="">En savoir plus</a>
-            </div>
-            <img class="sectionServices__photo" src="../../../assets/img/smartloc/photos/photo_service_3.png" alt="">
         </div>
     </section>
 
