@@ -841,7 +841,7 @@ ul.liste--point li::before
     background-color: black;
 }
 
-.nav-fill{
+.nav-justified{
     border : 0.125rem solid black;
     border-radius: 25px;
     height: 3rem;
@@ -937,8 +937,7 @@ ul.liste--point li::before
 /* container des cards présent sur l'ensemble du site */
 .conteneurCards--enligne
 {
-    width: calc(100% + 2rem);   /* Permet d'agrandir et remonter le container ainsi permettre */
-    margin-top: -2rem;          /*  un margin sur les cards enfants pour eviter mauvais reponsive */
+
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -1027,8 +1026,6 @@ ul.liste--point li::before
 
 .sectionServices__conteneurService
 {
-    height: 26.5rem;
-    padding: 0 4rem;
     margin-top: 8.5rem;
     display: -ms-flexbox;
     display: flex;
@@ -1044,10 +1041,6 @@ ul.liste--point li::before
     margin-top: 0;
 }
 
-.sectionServices__conteneurService_contenu
-{
-    width: 40%;
-}
 
 .sectionServices__conteneurService_nomService
 {
@@ -1077,7 +1070,7 @@ ul.liste--point li::before
 
 .sectionServices__photo
 {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -1516,27 +1509,8 @@ ul.liste--point li::before
 }
 
 
-/* SECTION DOCUMENTS avec cardLigne de documents et menu noir */
-.sectionDocuments__titre
-{
-    width: 100%;
-    margin-bottom: 3rem;
-    text-align: center;
-}
 
-.sectionDocuments .menuNoir
-{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 4rem;
-}
 
-.sectionDocuments .cardLigne
-{
-    -ms-flex: 1 1 45%;
-    flex: 1 1 45%;
-    width: calc(100% - 2rem);
-}
 
 
 /* SECTION FONCTIONNALITES sur page gestion locative */
@@ -1823,16 +1797,6 @@ ul.liste--point li::before
 
 /*********** RESPONSIVE ************/
 
-@media (max-width: 750px)
-{
-    .conteneurCards--enligne
-    {
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
 
 @media (max-width: 1000px)
 {
@@ -1899,7 +1863,13 @@ ul.liste--point li::before
     h2{
         margin-bottom: 2.5rem;
     }
+
+    .sectionServices__conteneurService{
+        margin-top: 3rem;
+    }
+
 }
+
 
 @media (max-width: 1200px)
 {
