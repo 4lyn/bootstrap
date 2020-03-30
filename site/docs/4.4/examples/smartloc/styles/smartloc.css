@@ -935,16 +935,6 @@ ul.liste--point li::before
 /************* CARDS *************/
 
 /* container des cards présent sur l'ensemble du site */
-.conteneurCards--enligne
-{
-
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
 
 .conteneurCards--colonne
 {
@@ -955,8 +945,7 @@ ul.liste--point li::before
     flex-flow: column wrap;
 }
 
-.conteneurCards--enligne .card, 
-.conteneurCards--colonne .card
+.card
 {
     margin-top: 2rem;           /* Applique un margin top et right */         /* sur les cards pour eviter mauvais reponsive */
 }
@@ -1453,20 +1442,7 @@ ul.liste--point li::before
     background-color: #A896D8;
 }
 
-.sectionSmartlocAide__contenu
-{
-    width: 45%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 10;
-}
+
 
 .sectionSmartlocAide__contenu h2
 {
@@ -1826,18 +1802,24 @@ ul.liste--point li::before
     {
         display: block;
     }
-}
 
-
-
-@media (max-width: 1000px)
-{
     footer
     {
         padding-right: 5rem;
         padding-left: 5rem;
     }
 }
+
+
+
+@media (max-width: 767px)
+{
+    .notice-illustration{
+        display: none;
+    }
+}
+
+
 
 @media (max-width: 991px)
 {
@@ -1866,6 +1848,10 @@ ul.liste--point li::before
 
     .sectionServices__conteneurService{
         margin-top: 3rem;
+    }
+
+    .notice-illustration{
+        display:none;
     }
 
 }

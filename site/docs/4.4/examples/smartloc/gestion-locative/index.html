@@ -4,60 +4,64 @@ title: gestion-locative
 extra_css: "gestion-locative.css"
 ---
 
+
 <!-- HEADER -->
 
-<header class="headerSteps">
-    <nav class="menuHeader">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
-        <div class="menuHeader__conteneurLiens">
-            <a href="">Gestion locative</a>
-            <a href="">Bail</a>
-            <a href="">Assurance</a>
-            <a href="">Ressources</a>
-            <a href="">Tarifs</a>
-            <div class="menuHeader__liensBold">
-                <a href=""><h5>Mon compte</h5></a>
-                <a href=""><h5>Contact</h5></a>
-            </div>
-        </div>
-    </nav>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
 
-    <div class="headerClassique__titrage">
-        <div class="headerClassique__titrage_texte">
-            <h1 class="headerClassique__titrage_titre">Gestion locative en <br> ligne pour particuliers indépendants</h1>
-            <span class="headerClassique__titrage_sousTitre">Economisez 50€/mois en honoraires de gestion
-                    en mettant votre location sous pilote automatique.</span>
-            <div class="headerClassique__titrage_conteneurLiens">
-                <a href="" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
-                <a href="">Parler à un conseiller</a>
-            </div>
-        </div>
-        <div class="headerClassique__titrage_conteneurIllustration">
-            <img src="../../../assets/img/smartloc/illustrations/immeuble_illustrated.png" alt="">
-        </div>
-    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Bail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>    
 
-    <div class="headerClassique__commentCaMarche">
-        <h2 class="headerClassique__commentCaMarche_titre">Comment ça marche ?</h2>
-        <div class="headerClassique__commentCaMarche_contenu">
-            <div class="headerClassique__commentCaMarche_conteneurEtapes">
-                <div class="headerClassique__commentCaMarche_etape">
-                    <span class="headerClassique__commentCaMarche_etape_number">1</span>
-                    <h5>Lorem ipsum dolor sit amet, consectetur</h5>
+            <div class="headerClassique__titrage row">
+                <div class="col-md-6">
+                    <h1 class="headerClassique__titrage_titre">Gestion locative en <br> ligne pour particuliers indépendants</h1>
+                    <span class="headerClassique__titrage_sousTitre">Economisez 50€/mois en honoraires de gestion
+                        en mettant votre location sous pilote automatique.</span>
+                    <div class="headerClassique__titrage_conteneurLiens">
+                        <a href="/gestion-locative/creation" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
+                        <a href="#" class="mt-4 mt-sm-0 mt-md-4 mt-xl-0">Parlez à un conseiller</a>
+                    </div>
                 </div>
-                <div class="headerClassique__commentCaMarche_etape">
-                    <span class="headerClassique__commentCaMarche_etape_number">2</span>
-                    <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                </div>
-                <div class="headerClassique__commentCaMarche_etape">
-                    <span class="headerClassique__commentCaMarche_etape_number">3</span>
-                    <h5>Lorem ipsum dolor sit amet, consectetur</h5>
+                <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
+                    <img src="../../../assets/img/smartloc/illustrations/immeuble_illustrated.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 </header>
-
 
 
 <!-- MAIN -->
@@ -75,342 +79,455 @@ extra_css: "gestion-locative.css"
     </div>
 
     <!-- SECTION FONCTIONNALITES -->
-    <section class="sectionPageClassique sectionFonctionnalites bg-light">
+    <section class="container-fluid sectionFonctionnalites bg-light">
         <div class="menuSticky--section__ancre" id="fonctionnalites"></div>
-        <h2 class="sectionPageClassique__titrage">Fonctionnalités</h2>
-        <div class="sectionPageClassique__contenu">
-            <h2 class="section__sousElement_titre">Mettez votre location en pilote automatique</h2>
-            <div class="conteneurCards--enligne section__sousElement">
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/taches.png" alt="">
-                    <h5>Bail de location numérique</h5>
-                    <p>Vous rédigez votre bail en ligne avec toutes les clauses et annexes nécessaires. Vous pouvez signer votre bail en ligne et le modifier de manière illimitée, y compris pour faire rentrer un nouveau locataire.</p>
-                    <a href="">Voir un exemple de bail numérique</a>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Fonctionnalités</h2>
+            </div>
+            <div class="col-lg-8">
+                <h2 class="section__sousElement_titre">Mettez votre location en pilote automatique</h2>
+                <div class="section__sousElement row">
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/taches.png" alt="">
+                            <h5>Bail de location numérique</h5>
+                            <p>Vous rédigez votre bail en ligne avec toutes les clauses et annexes nécessaires. Vous pouvez signer votre bail en ligne et le modifier de manière illimitée, y compris pour faire rentrer un nouveau locataire.</p>
+                            <a href="">Voir un exemple de bail numérique</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                            <h5>Quittances légales</h5>
+                            <p>Vous recevez sur votre boîte mail les quittances à date d'échéance chaque mois, vous les transférez directement au locataire.</p>
+                            <a href="">Voir un exemple de quittance</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
-                    <h5>Quittances légales</h5>
-                    <p>Vous recevez sur votre boîte mail les quittances à date d'échéance chaque mois, vous les transférez directement au locataire.</p>
-                    <a href="">Voir un exemple de quittance</a>
+                <div class="section__sousElement row">
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/calendrier.png" alt="">
+                            <h5>Echeances importantes</h5>
+                            <p>Recevez des alertes mail pour les échéances importantes du bail : date limite du congé bailleur, liquidation des charges, etc.</p>
+                            <a href="">Voir le calendrier des échéances importantes</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/calculette.png" alt="">
+                            <h5>Indexation et régularisation</h5>
+                            <p>Grâce à nous courriers mis en forme et nos modules automatiques vous indexez facilement vos loyers et régularisez vos charges locatives.</p>
+                            <a href="">Voir un exemple de courrier</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/calendrier.png" alt="">
-                    <h5>Echeances importantes</h5>
-                    <p>Recevez des alertes mail pour les échéances importantes du bail : date limite du congé bailleur, liquidation des charges, etc.</p>
-                    <a href="">Voir le calendrier des échéances importantes</a>
+                <div class="section__sousElement row">
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                            <h5>Impayés de loyers</h5>
+                            <p>En cas d'impayés, vous disposez de courriers de relance et d'une assistance pour lancer la procédure de recouvrement et d'expulsion.</p>
+                            <a href="">Voir un exemple de courrier de mise en demeure</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
+                            <h5>Gestion technique</h5>
+                            <p>En cas de panne ou de travaux, vous accédez à un réseau d'artisans à tarifs négociés. Vous commandez les interventions directement en ligne en fonction des disponiblités du locataire.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/calculette.png" alt="">
-                    <h5>Indexation et régularisation</h5>
-                    <p>Grâce à nous courriers mis en forme et nos modules automatiques vous indexez facilement vos loyers et régularisez vos charges locatives.</p>
-                    <a href="">Voir un exemple de courrier</a>
-                </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
-                    <h5>Impayés de loyers</h5>
-                    <p>En cas d'impayés, vous disposez de courriers de relance et d'une assistance pour lancer la procédure de recouvrement et d'expulsion.</p>
-                    <a href="">Voir un exemple de courrier de mise en demeure</a>
-                </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
-                    <h5>Gestion technique</h5>
-                    <p>En cas de panne ou de travaux, vous accédez à un réseau d'artisans à tarifs négociés. Vous commandez les interventions directement en ligne en fonction des disponiblités du locataire.</p>
-                </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
-                    <h5>Modèles</h5>
-                    <p>Vous disposez d'une bibliothèque de plus de 20 modèles de courrier et de documents pour toutes les situations, incluant l'accès au bail numérique de manière illimitée.</p>
-                </div>
-                <div class="sectionFontionnalites__conteneurFonctionnalite">
-                    <img src="../../../assets/img/smartloc/illustrations/conversation.png" alt="">
-                    <h5>Assistance d'une équipe d'experts</h5>
-                    <p>Notre équipe reste disponible par chat et email pendant toute la durée du bail et vous assiste sur les échéances importantes et éventuels incidents.</p>
-                    <a href="">Parlez avec un conseiller</a>
+                <div class="section__sousElement row">
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                            <h5>Modèles</h5>
+                            <p>Vous disposez d'une bibliothèque de plus de 20 modèles de courrier et de documents pour toutes les situations, incluant l'accès au bail numérique de manière illimitée.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sectionFontionnalites__conteneurFonctionnalite">
+                            <img src="../../../assets/img/smartloc/illustrations/conversation.png" alt="">
+                            <h5>Assistance d'une équipe d'experts</h5>
+                            <p>Notre équipe reste disponible par chat et email pendant toute la durée du bail et vous assiste sur les échéances importantes et éventuels incidents.</p>
+                            <a href="">Parlez avec un conseiller</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION TARIFS -->
-    <section class="sectionPageClassique sectionTarifs bg-secondary">
+    <section class="container-fluid sectionTarifs bg-secondary">
         <div class="menuSticky--section__ancre" id="tarifs"></div>
-        <h2 class="sectionPageClassique__titrage">Tarifs</h2>
-        <div class="sectionPageClassique__contenu">
-            <h2 class="section__sousElement_titre">Economisez 50€/mois en gardant le contrôle</h2>
-            <div class="section__sousElement bg-white" style="height: 690px; width: 100%"></div>
-            <div class="section__sousElement alert-notice bg-white border-0">
-                <div class="notice-illustration bg-dark" style="min-height: 112px; min-width: 112px"></div>
-                <div class="notice-info">
-                    <h3 class="notice-title">Economisez 50€/mois en moyenne en gardant  le contrôle de votre location</h3>
-                    <p>Un gestionnaire immobilier va vous facturer en moyenne 6% HT du loyer charges comprises pour encaisser le loyer et gérer les rares incidents que vous aurez pendant vos locations (les frais de recherche locataire et la garantie des loyers impayés sont facturés séparément).</p>
-                    <p>Pour un loyer de 700€ CC, vous économisez donc en moyenne 50€/mois en gardant le contrôle sur l'encaissement de vos loyers et en étant complément assisté sur les échéances importantes du bail et les incidents.</p>
-                    <p>- Mathieu Chantalat, Directeur immobilier</p>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Tarifs</h2>
+            </div>
+            <div class="col-lg-8">
+                <h2 class="section__sousElement_titre">Economisez 50€/mois en gardant le contrôle</h2>
+                <div class="section__sousElement">
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Particulier</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">4,90€/mois</h4>
+                                    <p class="card-text">Abonnement trimestriel<br/>par lot</p>
+                                    <a href="/gestion-locative/creation" class="card-link">Souscrire</a>
+                                    <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Investisseur</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">4,90€/mois</h4>
+                                    <p class="card-text">Abonnement mensuel<br/>pour 4 à lots</p>
+                                    <a href="#" class="card-link">Souscrire</a>
+                                    <a href="#/tarifs" class="card-link">Voir tous les tarifs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Gestionnaire</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
+                                    <p class="card-text">Abonnement mensuel<br/>pour +10 lots</p>
+                                    <a href="#" class="card-link">Souscrire</a>
+                                    <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                </div>
+                <div class="section__sousElement alert-notice bg-white border-0">
+                    <div class="notice-illustration d-none d-sm-block">
+                        <img src="https://www.smartloc.fr/imgs/photo_mathieu.jpg" class="img-fluid">
+                    </div>
+                    <div class="notice-info">
+                        <h3 class="notice-title">Economisez 50€/mois en moyenne en gardant le contrôle de votre location</h3>
+                        <p>Un gestionnaire immobilier va vous facturer en moyenne 6% HT du loyer charges comprises pour encaisser le loyer et gérer les rares incidents que vous aurez pendant vos locations (les frais de recherche locataire et la garantie des loyers impayés sont facturés séparément).</p>
+                        <p>Pour un loyer de 700€ CC, vous économisez donc en moyenne 50€/mois en gardant le contrôle sur l'encaissement de vos loyers et en étant complément assisté sur les échéances importantes du bail et les incidents.</p>
+                        <p>- Mathieu Chantalat, Directeur immobilier</p>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- SECTIONS VOS QUESTIONS -->
-    <section class="sectionPageClassique sectionQuestions bg-light">
+    <section class="container-fluid sectionQuestions bg-light">
         <div class="menuSticky--section__ancre" id="questions"></div>
-        <h2 class="sectionPageClassique__titrage">Vos questions</h2>
-        <div class="sectionPageClassique__contenu">
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Gérez vous les encaissements ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Non les loyers sont directement encaissés par le propriétaire pour des raisons de coût et de simplicté. Si les loyers sont correctement payés il vous suffit de transférer la quittance que nous vous envoyons au locataire. En cas de retard ou d'impayés, notre outil vous guide pas à pas sur les démarches à effectuer, que vous ayez ou non pris notre garantie loyer impayé.</p>
-                </div>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Vos questions</h2>
             </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Comment fonctionne l'envoi des quittances ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+            <div class="col-lg-8">
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Gérez vous les encaissements ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Non les loyers sont directement encaissés par le propriétaire pour des raisons de coût et de simplicté. Si les loyers sont correctement payés il vous suffit de transférer la quittance que nous vous envoyons au locataire. En cas de retard ou d'impayés, notre outil vous guide pas à pas sur les démarches à effectuer, que vous ayez ou non pris notre garantie loyer impayé.</p>
+                    </div>
                 </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Comment fonctionne l'envoi des quittances ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Que se passe-t-il en cas d'impayés ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Que se passe-t-il en cas d'impayés ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Gérez-vous la recherche du locataire ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Gérez-vous la recherche du locataire ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Vérifiez-vous les dossiers des locataires ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Rédigez-vous le bail ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Vérifiez-vous les dossiers des locataires ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Est-ce que vous vous occupez de la déclaration fiscale ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Comment fonctionne l'assistance ? Peut-on vous appeler ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Rédigez-vous le bail ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Comment sont gérés les incidents techniques ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Est-ce que vous vous occupez de la déclaration fiscale ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Comment fonctionne l'assistance ? Peut-on vous appeler ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Comment sont gérés les incidents techniques ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-            </div>
-            <div class="questionDeroulante objetDeroulant">
-                <div class="objetDeroulant__entete">
-                    <h5>Proposez-vous d'autres assurances que la garantie loyer impayé ?</h5>
-                    <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                    <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                </div>
-                <div class="objetDeroulant__contenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <h5>Proposez-vous d'autres assurances que la garantie loyer impayé ?</h5>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.Texte sur les features et la catégorie - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- SECTIONS TEMOIGNAGES -->
-    <section class="sectionTemoignages">
-        <div class="menuSticky--section__ancre" id="temoignages"></div>
-        <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
-        <div class="conteneurCards--enligne">
-            <div class="card cardTemoignage">
-                <p>“Je suis satisfaite, service très facile  et rapide d’utilisation.”</p>
-                <div class="cardTemoignage__conteneurInfos">
-                    <h6>Laura C. le 19 octobre 2019</h6>
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+    <section class="sectionTemoignages container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="menuSticky--section__ancre" id="temoignages"></div>
+                <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                        <div class="card cardTemoignage">
+                            <p>“Trés pratique et réactif. Un vrai support pour toutes les démarches à faire en tant que propriétaire. 
+                                J'avais une question fiscale autour de ma location, j'ai obtenu la réponse en moins de 24h.”
+                            </p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>François V. le 17/02/2020</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                        <div class="card cardTemoignage">
+                            <p>“J'utilise ce site depuis plusieurs années pour rédiger mon baux en signature éléctronique, j'en suis ravi.”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>François-xavier M. le 14 mars 2020</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                        <div class="card cardTemoignage">
+                            <p>“Professionnel de l'immobilier depuis 30 ans, les outils informatiques proposés par smartloc sont d'une réelle efficacité et permettent d'être sûrs de contracter dans le respect des derniers décrets.”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>Xavier D. le 19 janvier 2020</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card cardTemoignage">
-                <p>“Simple, efficace et à un prix raisonnable. Je commande vivement.”</p>
-                <div class="cardTemoignage__conteneurInfos">
-                    <h6>Laura C. le 19 octobre 2019</h6>
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                </div>
-            </div>
-            <div class="card cardTemoignage">
-                <p>“Pour un premier essai j’ai été très satisfaite, saisie facile, retours clairs, des explications bien...”</p>
-                <div class="cardTemoignage__conteneurInfos">
-                    <h6>Laura C. le 19 octobre 2019</h6>
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
-                    <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img class="sectionTemoignages__imageAvisVerifie" src="../../../assets/img/smartloc/photos/avis_verif.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <img class="sectionTemoignages__imageAvisVerifie" src="../../../assets/img/smartloc/photos/avis_verif.png" alt="">
-        <div class="sectionTemoignages__conteneurPartenaires">
-            <img src="../../../assets/img/smartloc/logos/logo_challenges.png" alt="">
-            <img src="../../../assets/img/smartloc/logos/logo_lefigaro.png" alt="">
-            <img src="../../../assets/img/smartloc/logos/logo_lemonde.png" alt="">
-        </div>
-        <img class="sectionTemoignages__formesBackground couronneNoir" src="../../../assets/img/smartloc/illustrations/shapes/couronne_noire_2.png" alt="">
-        <img class="sectionTemoignages__formesBackground rondJaune" src="../../../assets/img/smartloc/illustrations/shapes/rond_jaune_2.png" alt="">
+        <img class="sectionTemoignages__formesBackground couronneNoir d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/couronne_noire_2.png" alt="">
+        <img class="sectionTemoignages__formesBackground rondJaune d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/rond_jaune_2.png" alt="">
+
     </section>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row sectionTemoignages__conteneurPartenaires">
+                    <div class="col-lg-4 mb-4">
+                        <img src="../../../assets/img/smartloc/logos/logo_challenges.png" alt="" class="mx-auto d-block">
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="../../../assets/img/smartloc/logos/logo_lefigaro.png" alt="" class="mx-auto d-block">
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="../../../assets/img/smartloc/logos/logo_lemonde.png" alt="" class="mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SECTIONS CAS D'USAGE -->
-    <section class="sectionPageClassique sectionUsage">
+    <section class="container-fluid sectionUsage">
         <div class="menuSticky--section__ancre" id="usage"></div>
-        <h2 class="sectionPageClassique__titrage">Cas d'usage</h2>
-        <div class="sectionPageClassique__contenu">
-            <h2 class="section__sousElement_titre">Découvrez notre offre sur des exemples concrets </h2>
-            <p>Le bail et les échéances importantes sont donc gérés automatiquement via votre espace de gestion Smartloc; vous vous demandez peut être comment sont résolues les nombreux problèmes particuliers que peuvent rencontrer nos bailleurs. Voici quelques cas d'usage, la liste n'est pas exhaustive.</p>
-            
-            <div class="section__sousElement">
-                <h3 class="section__sousElement_titre">Entrée des locataires</h3>
-                <div class="alert-notice alert-notice-warning">
-                    <img src="../../../assets/img/smartloc/illustrations/notes.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“J'ai besoin de rédiger un bail de colocation”</h3>
-                        <p>Lorsque vous démarrez votre bail numérique (inclus dans votre abonnement de gestion locative), il vous est proposé de choisir comme type de bail "colocation".</p>
-                        <p>L'outil va alors adapter le modèle légal de bail à une colocation en y ajoutant les clauses et adaptations nécessaires, notamment la clause de solidarité obligatoire pour être éligible à la garantie loyer impayé.</p>
-                        <p>Vous pourrez enfin signer le bail en ligne instantanément via la signature électronique, ce qui représente un gain de temps conséquent notamment pour un bail de colocation.</p>
-                    </div>
-                </div>
-                <div class="alert-notice alert-notice-warning">
-                    <img src="../../../assets/img/smartloc/illustrations/bouclier.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title"> “ J'ai reçu un dossier de locataires mais  je crains qu'il ne soit faux”</h3>
-                        <p>Lorsque que vous retenez une candidature de locataires, notre équipe peut vérifier le dossier de location dans le cadre de la garantie loyer impayé.</p>
-                        <ul class="liste--point">
-                            L'étude comporte deux aspects :
-                            <li>la vérification de la complétude et de l'éligibilité du dossier au regard de l'assurance</li>
-                            <li>la détection d'éventuels faux documents ou fausses informations</li>
-                        </ul>
-                        <p>Vous disposez d'un espace en ligne pour déposer les pièces du dossier; l'équipe vous fait un retour en général dans la journée et vous émet une attestation de conformité.</p>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Cas d'usage</h2>
             </div>
-            
-            <div class="section__sousElement">
-                <h3 class="section__sousElement_titre">Incidents en cours de bail</h3>
-                <div class="alert-notice alert-notice-secondary">
-                    <img src="../../../assets/img/smartloc/illustrations/fleches.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“Mon locataire ne m'a payé que la moitié  du loyer ce mois-ci”</h3>
-                        <p>Lorsque le locataire ne vous paie qu'une partie du loyer, vous devez lui émettre un reçu (et non une quittance) et le relancer de la même manière qu'un impayé total.</p>
-                        <p>Sur votre espace de gestion Smartloc vous disposez de modèle de reçu, de courriers de relance simple et de mise en demeure.</p>
-                        <p>Si vous avez souscrit à notre garantie loyer impayé en option, les impayés partiels sont pris en charge de la même manière qu'un impayé total.</p>
+            <div class="col-lg-8">
+                <div class="section__sousElement">
+                    <h2 class="section__sousElement_titre">Découvrez notre offre sur des exemples concrets </h2>
+                    <p>Le bail et les échéances importantes sont donc gérés automatiquement via votre espace de gestion Smartloc; 
+                        vous vous demandez peut être comment sont résolues les nombreux problèmes particuliers que peuvent rencontrer nos bailleurs.
+                         Voici quelques cas d'usage, la liste n'est pas exhaustive.</p>
+                </div>
+
+                
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Entrée des locataires</h3>
+                    <div class="alert-notice alert-notice-warning">
+                        <img src="../../../assets/img/smartloc/illustrations/notes.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“J'ai besoin de rédiger un bail de colocation”</h3>
+                            <p>Lorsque vous démarrez votre bail numérique (inclus dans votre abonnement de gestion locative), il vous est proposé de choisir comme type de bail "colocation".</p>
+                            <p>L'outil va alors adapter le modèle légal de bail à une colocation en y ajoutant les clauses et adaptations nécessaires, notamment la clause de solidarité obligatoire pour être éligible à la garantie loyer impayé.</p>
+                            <p>Vous pourrez enfin signer le bail en ligne instantanément via la signature électronique, ce qui représente un gain de temps conséquent notamment pour un bail de colocation.</p>
+                        </div>
+                    </div>
+                    <div class="alert-notice alert-notice-warning">
+                        <img src="../../../assets/img/smartloc/illustrations/bouclier.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title"> “ J'ai reçu un dossier de locataires mais je crains qu'il ne soit faux”</h3>
+                            <p>Lorsque que vous retenez une candidature de locataires, notre équipe peut vérifier le dossier de location dans le cadre de la garantie loyer impayé.</p>
+                            <ul>
+                                L'étude comporte deux aspects :
+                                <li>la vérification de la complétude et de l'éligibilité du dossier au regard de l'assurance</li>
+                                <li>la détection d'éventuels faux documents ou fausses informations</li>
+                            </ul>
+                            <p>Vous disposez d'un espace en ligne pour déposer les pièces du dossier; l'équipe vous fait un retour en général dans la journée et vous émet une attestation de conformité.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="alert-notice alert-notice-secondary">
-                    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“Le chauffe-ballon est tombé en panne”</h3>
-                        <ul class="liste--point">
-                            Lorsque un équipement tombe en panne, deux problèmes distincts se posent :
-                            <li>comment faire intervenir rapidement et à moindre coût un artisan</li>
-                            <li>qui doit prendre en charge le coût de la réparation</li>
-                        </ul>
-                        <p>Pour les incidents techniques, comme la panne d'un chauffe-ballon, il n'est quasiment jamais nécessaire de se déplacer (le gestionnaire qui vous facturerait 60€/mois ne se déplace d'ailleurs jamais pour un chauffe-ballon).</p>
-                        <p>Via votre espace de gestion Smartloc, vous disposez d'un accès à notre réseau partenaire d'artisans sélectionnés, sur lequel vous pouvez commander en ligne une réparation dans les 48h, en coordoniation avec les disponibilités du locataires. L'intervention est garantie satisfait ou refait, et vous bénéfiez de forfait négocié (par exemple 440€ TTC déplacement inclus pour le remplacement d'un chauffe-ballon de 150L).</p>
+                
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Incidents en cours de bail</h3>
+                    <div class="alert-notice alert-notice-secondary">
+                        <img src="../../../assets/img/smartloc/illustrations/fleches.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“Mon locataire ne m'a payé que la moitié du loyer ce mois-ci”</h3>
+                            <p>Lorsque le locataire ne vous paie qu'une partie du loyer, vous devez lui émettre un reçu (et non une quittance) et le relancer de la même manière qu'un impayé total.</p>
+                            <p>Sur votre espace de gestion Smartloc vous disposez de modèle de reçu, de courriers de relance simple et de mise en demeure.</p>
+                            <p>Si vous avez souscrit à notre garantie loyer impayé en option, les impayés partiels sont pris en charge de la même manière qu'un impayé total.</p>
+                        </div>
+                    </div>
+                    <div class="alert-notice alert-notice-secondary">
+                        <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“Le chauffe-ballon est tombé en panne”</h3>
+                            <ul>
+                                Lorsque un équipement tombe en panne, deux problèmes distincts se posent :
+                                <li>comment faire intervenir rapidement et à moindre coût un artisan</li>
+                                <li>qui doit prendre en charge le coût de la réparation</li>
+                            </ul>
+                            <p>Pour les incidents techniques, comme la panne d'un chauffe-ballon, il n'est quasiment jamais nécessaire de se déplacer (le gestionnaire qui vous facturerait 60€/mois ne se déplace d'ailleurs jamais pour un chauffe-ballon).</p>
+                            <p>Via votre espace de gestion Smartloc, vous disposez d'un accès à notre réseau partenaire d'artisans sélectionnés, sur lequel vous pouvez commander en ligne une réparation dans les 48h, en coordoniation avec les disponibilités du locataires. L'intervention est garantie satisfait ou refait, et vous bénéfiez de forfait négocié (par exemple 440€ TTC déplacement inclus pour le remplacement d'un chauffe-ballon de 150L).</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="section__sousElement">
-                <h3 class="section__sousElement_titre">Gestion financière</h3>
-                <div class="alert-notice alert-notice-warning">
-                    <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“J'hésite pour ma déclaration fiscale en meublé entre LMNP et micro-BIC”</h3>
-                        <p>Lors de la déclaration de vos revenus, la question principale à se poser est la suivante : "est-ce rentable de déclarer mes charges au réel ou au forfait ?"</p>
-                        <p>Ces deux régimes, respectivement appelés LMNP et micro-BIC ont des implications différentes et nécessite de bien calculer les charges réelles ou comptables que vous pouvez imputer à vos revenus locatifs.</p>
-                        <p>Notre équipe a rédigé une fiche complète sur le sujet du LMNP, mais dans le cadre de l'assistance nous restons également disponible pour répondre à vos questions.</p>
+                
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Gestion financière</h3>
+                    <div class="alert-notice alert-notice-warning">
+                        <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“J'hésite pour ma déclaration fiscale en meublé entre LMNP et micro-BIC”</h3>
+                            <p>Lors de la déclaration de vos revenus, la question principale à se poser est la suivante : "est-ce rentable de déclarer mes charges au réel ou au forfait ?"</p>
+                            <p>Ces deux régimes, respectivement appelés LMNP et micro-BIC ont des implications différentes et nécessite de bien calculer les charges réelles ou comptables que vous pouvez imputer à vos revenus locatifs.</p>
+                            <p>Notre équipe a rédigé une fiche complète sur le sujet du LMNP, mais dans le cadre de l'assistance nous restons également disponible pour répondre à vos questions.</p>
+                        </div>
+                    </div>
+                    <div class="alert-notice alert-notice-warning">
+                        <img src="../../../assets/img/smartloc/illustrations/calculette.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“J'ai reçu ma taxe foncière, comment réclamer la TEOM au locataire ?”</h3>
+                            <p>La Taxe d'Enlèvement des Ordures Ménagères est une charge locative récupérable, c'est à dire que vous allez pouvoir l'imputer au locataire.</p>
+                            <p>Contrairement à de nombreux croyances, elle ne doit pas être réglée à part des autres charges, elle fait partie des charges incluses dans la provision qui nécessite régularisation annuelle.</p>
+                            <p>Sur votre espace de gestion vous bénéficiez d'un module pour éditer un courrier d'explication de la régularisation ainsi que la quittance de régularisation correspondante.</p>
+                            <p>Notre équipe a réalisé une fiche complète sur la régularisation des charges et sur la refacturation de le TEOM, mais nous restons encore une fois à votre disposition par mail et chat si vous avez des questions.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="alert-notice alert-notice-warning">
-                    <img src="../../../assets/img/smartloc/illustrations/calculette.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“J'ai reçu ma taxe foncière, comment réclamer la TEOM au locataire ?”</h3>
-                        <p>La Taxe d'Enlèvement des Ordures Ménagères est une charge locative récupérable, c'est à dire que vous allez pouvoir l'imputer au locataire.</p>
-                        <p>Contrairement à de nombreux croyances, elle ne doit pas être réglée à part des autres charges, elle fait partie des charges incluses dans la provision qui nécessite régularisation annuelle.</p>
-                        <p>Sur votre espace de gestion vous bénéficiez d'un module pour éditer un courrier d'explication de la régularisation ainsi que la quittance de régularisation correspondante.</p>
-                        <p>Notre équipe a réalisé une fiche complète sur la régularisation des charges et sur la refacturation de le TEOM, mais nous restons encore une fois à votre disposition par mail et chat si vous avez des questions.</p>
+                
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Sortie des locataires</h3>
+                    <div class="alert-notice alert-notice-success">
+                        <img src="../../../assets/img/smartloc/illustrations/utilisateurs.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“Le couple de locataire se sépare, un des deux occupants souhaite rester”</h3>
+                            <p>Lorsque deux colocataires se séparent, la solidarité du partant s'éteint après 6 mois ou dès son remplacement par un nouveau locataire.</p>
+                            <p>Sur votre espace de gestion vous disposez d'un modèle d'avenant pour remplacer le locataire par un nouvel occupant si vous êtes en bail unique. Sachez que dans ce cas notre garantie loyer impayé continue à fonctionner même lorsque certains colocataires quittent le logement.</p>
+                            <p>Notre module de bail numérique vous permet également de gérer le cas particulier du bail individuel, qui facilite la gestion des entrées/sorties en cas de colocation mais qui a des des inconvénients assez forts sur les impayés. Notre équipe est capable de vous assister sur le choix du montage à faire.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="section__sousElement">
-                <h3 class="section__sousElement_titre">Sortie des locataires</h3>
-                <div class="alert-notice alert-notice-success">
-                    <img src="../../../assets/img/smartloc/illustrations/utilisateurs.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“Le couple de locataire se sépare, un des deux occupants souhaite rester”</h3>
-                        <p>Lorsque deux colocataires se séparent, la solidarité du partant s'éteint après 6 mois ou dès son remplacement par un nouveau locataire.</p>
-                        <p>Sur votre espace de gestion vous disposez d'un modèle d'avenant pour remplacer le locataire par un nouvel occupant si vous êtes en bail unique. Sachez que dans ce cas notre garantie loyer impayé continue à fonctionner même lorsque certains colocataires quittent le logement.</p>
-                        <p>Notre module de bail numérique vous permet également de gérer le cas particulier du bail individuel, qui facilite la gestion des entrées/sorties en cas de colocation mais qui a des des inconvénients assez forts sur les impayés. Notre équipe est capable de vous assister sur le choix du montage à faire.</p>
-                    </div>
-                </div>
-                <div class="alert-notice alert-notice-success">
-                    <img src="../../../assets/img/smartloc/illustrations/bouclier.png" class="notice-illustration" alt="">
-                    <div class="notice-info">
-                        <h3 class="notice-title">“Le locataire a dégradé la moquette du logement et refuse de la remettre en état”</h3>
-                        <p>La gestion des sorties est un moment critique de la vie du logement. Sur votre espace de gestion Smartloc vous disposez d'un modèle d'état des lieux qui vous permet de comparer facilement l'état du logement à l'entrée et à la sortie.</p>
-                        <ul class="liste--point">
-                            En cas de dégradations notre équipe peut vous orienter sur :
-                            <li>le chiffrage des dégradations en fonction du taux de vétusté de chaque poster</li>
-                            <li>le courrier à envoyer au locataire pour retenir la totalité ou une partie de son dépôt de garantie</li>
-                            <li> es démarches à effectuer pour poursuivre le locataire au-delà du dépôt de garantie, que vous ayiez ou non pris notre assurance loyer impayé avec options dégradations.</li>
-                        </ul>
+                    <div class="alert-notice alert-notice-success">
+                        <img src="../../../assets/img/smartloc/illustrations/bouclier.png" class="notice-illustration" alt="">
+                        <div class="notice-info">
+                            <h3 class="notice-title">“Le locataire a dégradé la moquette du logement et refuse de la remettre en état”</h3>
+                            <p>La gestion des sorties est un moment critique de la vie du logement. Sur votre espace de gestion Smartloc vous disposez d'un modèle d'état des lieux qui vous permet de comparer facilement l'état du logement à l'entrée et à la sortie.</p>
+                            <ul class="liste--point">
+                                En cas de dégradations notre équipe peut vous orienter sur :
+                                <li>le chiffrage des dégradations en fonction du taux de vétusté de chaque poster</li>
+                                <li>le courrier à envoyer au locataire pour retenir la totalité ou une partie de son dépôt de garantie</li>
+                                <li> es démarches à effectuer pour poursuivre le locataire au-delà du dépôt de garantie, que vous ayiez ou non pris notre assurance loyer impayé avec options dégradations.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -418,71 +535,123 @@ extra_css: "gestion-locative.css"
     </section>
 
     <!-- SECTION VIOLETTE AVEC BACKGROUND "DEMARRER" -->
-    <section class="sectionSmartlocAide">
+    <section class="sectionSmartlocAide container-fluid">
         <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
         <img src="../../../assets/img/smartloc/illustrations/shapes/couronne-noire.png" alt="">
         <img src="../../../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
         <img src="../../../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
-        <div class="sectionSmartlocAide__contenu">
-            <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
-            <a href="" class="btn btn-dark" >Démarrer</a>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center sectionSmartlocAide__contenu">
+                <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
+                <a href="/dossier" class="btn btn-dark" >Démarrer</a>
+            </div>
         </div>
     </section>
 
-    <!-- CONTACT D'EXPERTS -->
-    <section class="sectionExpertsAide">
-        <h1>Des experts disponibles pour vous aider</h1>
-        <div class="sectionExpertsAide__conteneurPhotos">
-            <img src="../../../assets/img/smartloc/photos/expert_1.png" alt="">
-            <img src="../../../assets/img/smartloc/photos/expert_2.png" alt="">
-            <img src="../../../assets/img/smartloc/photos/expert_3.png" alt="">
-        </div>
-        <div class="sectionExpertsAide__conteneurBoutons">
-            <a class="btn btn-outline-dark btn-sm"  href="mailto:equipe@smartloc.fr"><h5>equipe@smartloc.fr</h5></a>
-            <a class="btn btn-dark btn-sm"  href=""><h5>Parlez avec un conseiller</h5></a>
+    <!-- SECTION CONTACT D'EXPERTS -->
+    <section class="sectionExpertsAide container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Des experts disponibles pour vous aider</h1>
+                <div class="sectionExpertsAide__conteneurPhotos">
+                    <img src="../../../assets/img/smartloc/photos/expert_1.png" alt="">
+                    <img src="../../../assets/img/smartloc/photos/expert_2.png" alt="">
+                    <img src="../../../assets/img/smartloc/photos/expert_3.png" class="d-none d-sm-block" alt="">
+                </div>
+                <div class="sectionExpertsAide__conteneurBoutons text-center">
+                    <a class="btn btn-outline-dark btn-sm"  href="mailto:equipe@smartloc.fr"><h5>equipe@smartloc.fr</h5></a>
+                    <a class="btn btn-dark btn-sm mt-2 mt-sm-0"  href="#" data-toggle="modal" data-target="#modalContact"><h5>Parlez avec un conseiller</h5></a>
+                </div>
+            </div>
         </div>
     </section>
 </main>
 
 
+
+
 <!-- FOOTER -->
-<footer>
-    <div class="footer__conteneurSocial">
-        <img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
-        <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
-        <div>
-            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
-            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer__ligneSeparation footer__ligneSeparation--responsive"></div>
-    <div class="footer__conteneurLiens">
-        <div class="footer__conteneurLiens_haut">
-                <a href=""><h5>Gestion locative</h5></a>
-                <a href=""><h5>Bail</h5></a>
-                <a href=""><h5>Assurance</h5></a>
-                <a href=""><h5>Ressources</h5></a>
-                <a href=""><h5>Tarifs</h5></a>
-                <a href=""><h5>Blog</h5></a>
-                <a href=""><h5>A propos</h5></a>
-                <a href=""><h5>Partenaires</h5></a>
-        </div>
-        <div class="footer__ligneSeparation"></div>
-        <div class="footer__conteneurLiens_bas">
-            <a href="">Modèle de bail numérique</a>
-            <a href="">Signature électronique</a>
-            <a href="">Etat des lieux</a>
-            <a href="">Acte de caution</a>
-            <a href="">Validation dossier locataire</a>
-            <a href="">Caution bancaire</a>
-            <a href="">Recouvrement et expulsion locataire</a>
-            <a href="">Fiscalité immobilière</a>
-            <a href="">Echéance importantes</a>
-            <a href="">Contentieux locataire</a>
-            <a href="">Assistance technique</a>
-        </div>
-    </div>
+
+
 </footer>
+
+
+<div class="modal fade modalToShow" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- SCRIPT -->
