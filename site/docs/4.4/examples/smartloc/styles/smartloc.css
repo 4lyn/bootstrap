@@ -1837,6 +1837,10 @@ ul.liste--check li::before
         display:none;
     }
 
+    .advice-illustration{
+        display:none;
+    }
+
 }
 
 
