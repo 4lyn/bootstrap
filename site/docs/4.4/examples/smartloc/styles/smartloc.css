@@ -598,7 +598,6 @@ ul.liste--check li::before
 
 .encadrementContactConseiller__contenu
 {
-    width: 45%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1292,10 +1291,6 @@ ul.liste--check li::before
     align-items: center;
 }
 
-.cardArticle__apercu p
-{
-    margin-bottom: 0;
-}
 
 
 /* SECTION ACCOMPAGNEMENT DES EXPERTS des experts sur hub article et homepage */
@@ -1836,18 +1831,26 @@ ul.liste--check li::before
     .headerHub .barreRecherche{
         padding: 0 1rem;
     }
+    .sectionContact{
+        padding-left: 1rem;
+        padding-right: 1rem;
 
+    }
 
 }
 
 
-@media (max-width: 1200px) and (min-width: 768px)
+@media (max-width: 1200px) and (min-width: 992px)
 {
     .headerHub .barreRecherche{
         padding: 0 3rem;
     }
-}
+    .sectionContact{
+        padding-left: 5rem;
+        padding-right: 5rem;
 
+    }
+}
 
 @media (max-width: 1200px)
 {
