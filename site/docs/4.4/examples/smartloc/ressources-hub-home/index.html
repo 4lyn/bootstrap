@@ -4,26 +4,49 @@ title: ressources hub home
 extra_css: "ressources-hub-home.css"
 ---
 
+
 <!-- HEADER -->
 
-<header class="headerHub">
-    <nav class="menuHeader">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
-        <div class="menuHeader__conteneurLiens">
-            <a href="">Gestion locative</a>
-            <a href="">Bail</a>
-            <a href="">Assurance</a>
-            <a href="">Ressources</a>
-            <a href="">Tarifs</a>
-            <div class="menuHeader__liensBold">
-                <a href=""><h5>Mon compte</h5></a>
-                <a href=""><h5>Contact</h5></a>
-            </div>
+<header class="container-fluid headerHub">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Bail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>
+            <h1 class="headerHub__titrage">Bienvenue sur notre hub de ressources.</h1>
         </div>
-    </nav>
-
-    <h1 class="headerHub__titrage">Bienvenue sur notre hub de ressources.</h1>
-
+    </div>    
     <div class="barreRecherche">
         <form class="form-inline">
             <input class="form-control barreRecherche__champSaisie" type="search" placeholder="Recherche" aria-label="Recherche">
@@ -31,7 +54,7 @@ extra_css: "ressources-hub-home.css"
         </form>
     </div>
 
-    <img src="../../../assets/img/smartloc/illustrations/shapes/shapes.png" class="headerHub_illustration">
+    <img src="../../../assets/img/smartloc/illustrations/shapes/shapes.png" class="headerHub_illustration d-none d-sm-block">
 </header>
 
 
@@ -39,67 +62,79 @@ extra_css: "ressources-hub-home.css"
 
 <main>
     <!-- SECTION CATEGORIES -->
-    <section class="sectionCategories sectionHub">
-        <h2 class="sectionHub__titre">Catégories</h2>
-        <div class="conteneurCards--enligne">
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
-                    <h3 class="card-title">Assurance</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Critères</a></li>
-                        <li class="list-group-item"><a href="">Souscription</a></li>
-                        <li class="list-group-item"><a href="">En cas d'impayés</a></li>
-                        <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
-                    <h3 class="card-title">Bail</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Types de contrats</a></li>
-                        <li class="list-group-item"><a href="">Définitions du logement</a></li>
-                        <li class="list-group-item"><a href="">Définitions du bail</a></li>
-                        <li class="list-group-item"><a href="">Clauses</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
-                    <h3 class="card-title">Gestion</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Réparations</a></li>
-                        <li class="list-group-item"><a href="">Échéances importantes</a></li>
-                        <li class="list-group-item"><a href="">Juridique</a></li>
-                        <li class="list-group-item"><a href="">Autres</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
-                    <h3 class="card-title">Inv. locatif	</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Fiscalité</a></li>
-                        <li class="list-group-item"><a href="">Zone</a></li>
-                        <li class="list-group-item"><a href="">Optimisation des charges</a></li>
-                        <li class="list-group-item"><a href="">Dispositifs</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
+    <section class="sectionCategories sectionHub container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2 class="sectionHub__titre">Catégories</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                                <h3 class="card-title">Assurance</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Critères</a></li>
+                                    <li class="list-group-item"><a href="">Souscription</a></li>
+                                    <li class="list-group-item"><a href="">En cas d'impayés</a></li>
+                                    <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                                <h3 class="card-title">Bail</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Types de contrats</a></li>
+                                    <li class="list-group-item"><a href="">Définitions du logement</a></li>
+                                    <li class="list-group-item"><a href="">Définitions du bail</a></li>
+                                    <li class="list-group-item"><a href="">Clauses</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/immeuble.png" alt="">
+                                <h3 class="card-title">Gestion</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Réparations</a></li>
+                                    <li class="list-group-item"><a href="">Échéances importantes</a></li>
+                                    <li class="list-group-item"><a href="">Juridique</a></li>
+                                    <li class="list-group-item"><a href="">Autres</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
+                                <h3 class="card-title">Inv. locatif	</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Fiscalité</a></li>
+                                    <li class="list-group-item"><a href="">Zone</a></li>
+                                    <li class="list-group-item"><a href="">Optimisation des charges</a></li>
+                                    <li class="list-group-item"><a href="">Dispositifs</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

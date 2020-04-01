@@ -1160,8 +1160,6 @@ ul.liste--check li::before
 {
     -ms-flex: 1 1 20%;
     flex: 1 1 20%;
-    min-width: 15rem;
-    max-width: 15rem;
     border: none;
 }
 
@@ -1795,12 +1793,6 @@ ul.liste--check li::before
 
 
 
-@media (max-width: 767px)
-{
-    .notice-illustration{
-        display: none;
-    }
-}
 
 
 
@@ -1841,6 +1833,19 @@ ul.liste--check li::before
         display:none;
     }
 
+    .headerHub .barreRecherche{
+        padding: 0 1rem;
+    }
+
+
+}
+
+
+@media (max-width: 1200px) and (min-width: 768px)
+{
+    .headerHub .barreRecherche{
+        padding: 0 3rem;
+    }
 }
 
 
