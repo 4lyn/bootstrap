@@ -19,9 +19,7 @@ body
 
 .dossierLocataire__encadrementBienvenue__partieGauche
 {
-    position: relative;
     padding: 2.5rem 0 3.75rem 2.5rem;
-    max-width: 41%;
 }
 
 .encadrementBienvenue__partieGauche_illustration

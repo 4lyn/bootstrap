@@ -4,14 +4,28 @@ title: dossier locataire 1
 extra_css: "dossier-locataire-1.css"
 ---
 
-<!-- HEADER -->
-<header class="headerDossierLocataire">
-    <div class="menuHeader">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
-        <div class="menuHeader__conteneurLiens">
-            <a href="">Aide</a>
-            <a href="" class="btn btn-outline-dark btn-sm">Parler à un conseiller</a>
-            <a href="" class="btn btn-dark btn-sm">Connexion</a>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav> 
         </div>
     </div>
 </header>
@@ -19,35 +33,49 @@ extra_css: "dossier-locataire-1.css"
 
 <!-- MAIN -->
 
-<main class="dossierLocataire">
+<main class="dossierLocataire container-fluid">
     <!-- CARD -->
-    <div class="dossierLocataire__encadrementBienvenue">
-        <div class="dossierLocataire__encadrementBienvenue__partieGauche">
-            <div class="w-75">
-                <h2 class="encadrementBienvenue__partieGauche_titre">Bienvenue sur notre outil de constitution et de validation du dossier locataire</h3>
-                <button class="btn btn-dark" style="padding-left: 30px; padding-right: 30px;">Démarrer le dossier locataire</button>
-            </div>
-            <img class="encadrementBienvenue__partieGauche_illustration" src="../../../assets/img/smartloc/illustrations/shapes/rond-jaune.png" alt="">
-            <img class="encadrementBienvenue__partieGauche_illustration" src="../../../assets/img/smartloc/illustrations/shapes/couronne-rose.png" alt="">
-        </div>
-        
-        <div class="dossierLocataire__encadrementBienvenue__partieDroite border-left">
-            <div class="conteneurMathieu">
-                <img class="h-50" src="../../../assets/img/smartloc/photos/Image.png" alt="Mathieu Chantalat photo">
-                <div class="conteneurMathieu__description">
-                    <h4>Mathieu Chantalat</h4>
-                    <span>Directeur Immobilier</span>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="dossierLocataire__encadrementBienvenue">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="dossierLocataire__encadrementBienvenue__partieGauche">
+                                <div class="w-75">
+                                    <h2 class="encadrementBienvenue__partieGauche_titre">Bienvenue sur notre outil de constitution et de validation du dossier locataire</h3>
+                                    <button class="btn btn-dark" style="padding-left: 30px; padding-right: 30px;">Démarrer le dossier locataire</button>
+                                </div>
+                                <img class="encadrementBienvenue__partieGauche_illustration" src="../../../assets/img/smartloc/illustrations/shapes/rond-jaune.png" alt="">
+                                <img class="encadrementBienvenue__partieGauche_illustration" src="../../../assets/img/smartloc/illustrations/shapes/couronne-rose.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="dossierLocataire__encadrementBienvenue__partieDroite border-left">
+                                <div class="conteneurMathieu">
+                                    <img class="h-50" src="../../../assets/img/smartloc/photos/Image.png" alt="Mathieu Chantalat photo">
+                                    <div class="conteneurMathieu__description">
+                                        <h4>Mathieu Chantalat</h4>
+                                        <span>Directeur Immobilier</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-weight-bold">Sur cette page vous allez pouvoir:</p>
+                                    <ul class="liste--point">
+                                        <li>évaluer l'éligibilité des candidats à l'assurance loyer impayé</li>
+                                        <li>ajouter et valider les justificatifs</li>
+                                        <li>récupérer un dossier pdf vous permettant de souscrire</li>
+                                    </ul>
+                                    <p>En cas de questions ou de problèmes notre équipe est disponible à tout moment sur le chat ou par mail à equipe@smartloc.fr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
                 </div>
-            </div>
-            <div>
-                <p class="font-weight-bold">Sur cette page vous allez pouvoir:</p>
-                <ul class="liste--point">
-                    <li>évaluer l'éligibilité des candidats à l'assurance loyer impayé</li>
-                    <li>ajouter et valider les justificatifs</li>
-                    <li>récupérer un dossier pdf vous permettant de souscrire</li>
-                </ul>
-                <p>En cas de questions ou de problèmes notre équipe est disponible à tout moment sur le chat ou par mail à equipe@smartloc.fr</p>
+
             </div>
         </div>
-    </div>
+
 </main>
