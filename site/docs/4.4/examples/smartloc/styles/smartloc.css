@@ -144,18 +144,6 @@ header  .navbar-collapse a{
     padding-bottom: 5rem;
 }
 
-.headerArticle__titrage{
-    margin: 3.875rem 0 0 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
 .headerArticle__titrage a{
     color:black;
 }
@@ -166,8 +154,6 @@ header  .navbar-collapse a{
 
 .headerArticle__titrage_articleInfos
 {
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1215,54 +1201,6 @@ ul.liste--check li::before
 }
 
 
-/* SECTION ARTICLE sur la page ressource hub article */
-.sectionArticle
-{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.sectionArticle__corps
-{
-    background-color: #fff;
-    padding: 144px;
-    padding-top: 118px;
-}
-
-.sectionArticle__photo
-{
-    width: 100%;
-}
-
-.sectionArticle__sommaire
-{
-    padding: 2rem 2.5rem;
-    line-height: 32px;
-    font-weight: bold;
-}
-
-.sectionArticle__sommaire ul
-{
-    padding-left: 1rem;
-}
-
-.sectionArticle__doublePhoto
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.sectionArticle__doublePhoto img
-{
-    width: 47.5%
-}
-
-.sectionArticle__captureTweet
-{
-    width: 75%;
-}
 
 
 /* SECTION SUGGESTION D'ARTICLE */
@@ -1294,11 +1232,7 @@ ul.liste--check li::before
 
 
 /* SECTION ACCOMPAGNEMENT DES EXPERTS des experts sur hub article et homepage */
-.sectionAccompagnementExperts
-{
-    margin-bottom: 5rem;
-    text-align: center;
-}
+
 
 .sectionAccompagnementExperts h1
 {
@@ -1834,7 +1768,6 @@ ul.liste--check li::before
     .sectionContact{
         padding-left: 1rem;
         padding-right: 1rem;
-
     }
 
 }

@@ -6,147 +6,184 @@ extra_css: "ressources-hub-categories.css"
 
 <!-- HEADER -->
 
-<header class="headerHub">
-    <nav class="menuHeader">
-        <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
-        <div class="menuHeader__conteneurLiens">
-            <a href="">Gestion locative</a>
-            <a href="">Bail</a>
-            <a href="">Assurance</a>
-            <a href="">Ressources</a>
-            <a href="">Tarifs</a>
-            <div class="menuHeader__liensBold">
-                <a href=""><h5>Mon compte</h5></a>
-                <a href=""><h5>Contact</h5></a>
-            </div>
-        </div>
-    </nav>
+<header class="container-fluid headerHub">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
 
-    <div class="headerHub__titrage">
-        <div class="headerHub__titrage_arboresence">
-            <a href="">Ressources </a> > <a href=""> Catégories</a>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Bail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>
+            <div class="headerHub__titrage">
+                <div class="headerHub__titrage_arboresence">
+                    <a href="">Ressources </a> > <a href=""> Catégories</a>
+                </div>
+                <h1 class="headerArticle__titrage_titre">Gestion</h1>
+            </div>        
         </div>
-        <h1 class="headerArticle__titrage_titre">Gestion</h1>
-    </div>
-    
+    </div>    
     <div class="barreRecherche">
-            <form class="form-inline">
-                <input class="form-control barreRecherche__champSaisie" type="search" placeholder="Recherche" aria-label="Recherche">
-                <button class="barreRecherche__bouton">
-            </form>
-        </div>
+        <form class="form-inline">
+            <input class="form-control barreRecherche__champSaisie" type="search" placeholder="Recherche" aria-label="Recherche">
+            <button class="barreRecherche__bouton">
+        </form>
+    </div>
 
-    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="headerHub_illustration">
+    <img src="../../../assets/img/smartloc/illustrations/immeuble.png" class="headerHub_illustration d-none d-sm-block">
 </header>
+
 
 
 <!-- MAIN -->
 
 <main>
     <!-- SECTION SOUS CATEGORIES -->
-    <section class="sectionSousCategories sectionHub">
-        <h2 class="sectionHub__titre">Sous-catégories</h2>
-        <div class="objetDeroulant">
-            <div class="objetDeroulant__entete">
-                <span>Réparations</span>
-                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-            </div>
-            <div class="objetDeroulant__contenu">
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-            </div>
-        </div>
-        <div class="objetDeroulant">
-            <div class="objetDeroulant__entete">
-                <span>Échéances importantes</span>
-                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-            </div>
-            <div class="objetDeroulant__contenu">
-                <p>Régularisation des charges locatives : mode d’emploi</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-            </div>
-        </div>
-        <div class="objetDeroulant">
-            <div class="objetDeroulant__entete">
-                <span>Juridique</span>
-                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-            </div>
-            <div class="objetDeroulant__contenu">
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-            </div>
-        </div>
-        <div class="objetDeroulant">
-            <div class="objetDeroulant__entete">
-                <span>Autres</span>
-                <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-            </div>
-            <div class="objetDeroulant__contenu">
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
-                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+    <section class="container-fluid sectionSousCategories sectionHub">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2 class="sectionHub__titre">Sous-catégories</h2>
+                <div class="objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <span>Réparations</span>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                    </div>
+                </div>
+                <div class="objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <span>Échéances importantes</span>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Régularisation des charges locatives : mode d’emploi</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                    </div>
+                </div>
+                <div class="objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <span>Juridique</span>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                    </div>
+                </div>
+                <div class="objetDeroulant">
+                    <div class="objetDeroulant__entete">
+                        <span>Autres</span>
+                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
+                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    </div>
+                    <div class="objetDeroulant__contenu">
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmo</p>
+                    </div>
+                </div>                
             </div>
         </div>
     </section>
 
     <!-- SECTION CATEGORIES -->
-    <section class="sectionCategories sectionHub">
-        <h2 class="sectionHub__titre">Autre catégories</h2>
-        <div class="conteneurCards--enligne w-75">
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
-                    <h3 class="card-title">Assurance</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Critères</a></li>
-                        <li class="list-group-item"><a href="">Souscription</a></li>
-                        <li class="list-group-item"><a href="">En cas d'impayés</a></li>
-                        <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
-                    <h3 class="card-title">Bail</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Types de contrats</a></li>
-                        <li class="list-group-item"><a href="">Définitions du logement</a></li>
-                        <li class="list-group-item"><a href="">Définitions du bail</a></li>
-                        <li class="list-group-item"><a href="">Clauses</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card cardCategorie">
-                <div class="card-header">
-                    <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
-                    <h3 class="card-title">Inv. locatif	</h3>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Fiscalité</a></li>
-                        <li class="list-group-item"><a href="">Zone</a></li>
-                        <li class="list-group-item"><a href="">Optimisation des charges</a></li>
-                        <li class="list-group-item"><a href="">Dispositifs</a></li>
-                        <li class="list-group-item"><a href="">Voir tout</a></li>
-                    </ul>
+    <section class="container-fluid sectionCategories sectionHub">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <h2 class="sectionHub__titre">Autre catégories</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/bouclier.png" alt="">
+                                <h3 class="card-title">Assurance</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Critères</a></li>
+                                    <li class="list-group-item"><a href="">Souscription</a></li>
+                                    <li class="list-group-item"><a href="">En cas d'impayés</a></li>
+                                    <li class="list-group-item"><a href="">Garanties et tarifs</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/notes.png" alt="">
+                                <h3 class="card-title">Bail</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Types de contrats</a></li>
+                                    <li class="list-group-item"><a href="">Définitions du logement</a></li>
+                                    <li class="list-group-item"><a href="">Définitions du bail</a></li>
+                                    <li class="list-group-item"><a href="">Clauses</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardCategorie">
+                            <div class="card-header">
+                                <img class="cardCategorie_illustration" src="../../../assets/img/smartloc/illustrations/graph.png" alt="">
+                                <h3 class="card-title">Inv. locatif	</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="">Fiscalité</a></li>
+                                    <li class="list-group-item"><a href="">Zone</a></li>
+                                    <li class="list-group-item"><a href="">Optimisation des charges</a></li>
+                                    <li class="list-group-item"><a href="">Dispositifs</a></li>
+                                    <li class="list-group-item"><a href="">Voir tout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,9 +196,11 @@ extra_css: "ressources-hub-categories.css"
             <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
             <img src="../../../assets/img/smartloc/illustrations/shapes/couronne-vert.png" alt="">
             <img src="../../../assets/img/smartloc/illustrations/shapes/carre-noir.png" alt="">
-            <div class="encadrementContactConseiller__contenu">
-                <h2 class="encadrementContactConseiller__titre">Vous ne trouvez pas ce qu'il vous faut ? Contactez nous !</h2>
-                <a href="" class="btn btn-dark encadrementContactConseiller__bouton">Contactez un conseiller</a>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center encadrementContactConseiller__contenu">
+                    <h2 class="encadrementContactConseiller__titre">Gérez votre location sans agence avec Smartloc !</h2>
+                    <a href="/gestion-locative" class="btn btn-dark encadrementContactConseiller__bouton">En savoir plus</a>
+                </div>
             </div>
         </div>
     </section>
@@ -170,43 +209,87 @@ extra_css: "ressources-hub-categories.css"
 
 <!-- FOOTER -->
 
-<footer>
-    <div class="footer__conteneurSocial">
-        <img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt="">
-        <a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a>
-        <div>
-            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
-            <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                        <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer__ligneSeparation footer__ligneSeparation--responsive"></div>
-    <div class="footer__conteneurLiens">
-        <div class="footer__conteneurLiens_haut">
-                <a href=""><h5>Gestion locative</h5></a>
-                <a href=""><h5>Bail</h5></a>
-                <a href=""><h5>Assurance</h5></a>
-                <a href=""><h5>Ressources</h5></a>
-                <a href=""><h5>Tarifs</h5></a>
-                <a href=""><h5>Blog</h5></a>
-                <a href=""><h5>A propos</h5></a>
-                <a href=""><h5>Partenaires</h5></a>
-        </div>
-        <div class="footer__ligneSeparation"></div>
-        <div class="footer__conteneurLiens_bas">
-            <a href="">Modèle de bail numérique</a>
-            <a href="">Signature électronique</a>
-            <a href="">Etat des lieux</a>
-            <a href="">Acte de caution</a>
-            <a href="">Validation dossier locataire</a>
-            <a href="">Caution bancaire</a>
-            <a href="">Recouvrement et expulsion locataire</a>
-            <a href="">Fiscalité immobilière</a>
-            <a href="">Echéance importantes</a>
-            <a href="">Contentieux locataire</a>
-            <a href="">Assistance technique</a>
-        </div>
-    </div>
+
+
 </footer>
+
+
+<div class="modal fade modalToShow" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- SCRIPT -->
