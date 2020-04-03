@@ -1432,26 +1432,13 @@ ul.liste--check li::before
 
 .dossierLocataire__menuEtapes
 {
-    width: 75%;
     font-size: 1.125rem;
     margin-bottom: 2.75rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .dossierLocataire__menuEtapes_etape
 {
     opacity: 0.2;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .dossierLocataire__menuEtapes img
@@ -1479,14 +1466,13 @@ ul.liste--check li::before
 
 .dossierLocataire__menuDossier
 {
-    height: 2.5rem;
     margin-bottom: 2rem;
 }
 
 .dossierLocataire__menuDossier_dossier,
 .dossierLocataire__menuDossier_lienAjouterDossier
 {
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
     font-weight: bold;
     color: black;
 }
@@ -1519,12 +1505,6 @@ ul.liste--check li::before
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-}
-
-.dossierLocataire__formulaire
-{
-    min-width: 70%;
-    margin-right: 2rem;
 }
 
 .dossierLocataire__formulaire_section
@@ -1569,17 +1549,18 @@ ul.liste--check li::before
     margin-bottom: 0;
 }
 
-/* INPUTS dans le formulaire */
-.dossierLocataire .form-control ,
-.dossierLocataire .champSaisie--illustré
-{
-    width: 50%;
+form .row{
+    margin-bottom: 1rem;
 }
+
+/* INPUTS dans le formulaire */
+
 
 .dossierLocataire .alert
 {
     margin-bottom: 2rem;
 }
+
 
 
 /* NOS ASTUCES */
@@ -1614,18 +1595,6 @@ ul.liste--check li::before
 
 
 /* INPUTS fin de formulaire - Submit et autre */
-.conteneurBoutonsFinFormulaire
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-.conteneurBoutonsFinFormulaire.sansEtapePrecedente
-{
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
 
 .conteneurBoutonsFinFormulaire__etapePrecedente 
 {
@@ -1751,6 +1720,17 @@ ul.liste--check li::before
     .sectionContact{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .dossierLocataire__menuDossier_dossier,
+.dossierLocataire__menuDossier_lienAjouterDossier
+    {
+        padding: 0 0 5px 0;
+        margin-top: 10px;
+    }
+
+    .dossierLocataire__formulaire_section{
+        padding: 1rem;
     }
 
 }
