@@ -54,8 +54,8 @@ extra_css: "dossier-locataire-2.css"
                         <span>2. Dépots des justificatifs</span>
                     </a>
                 </li>
-                <li class="nav-item dossierLocataire__menuEtapes_etape">
-                    <a class="nav-link" data-toggle="tab" href="#tab_dossier" role="tab">
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
                         <img src="../../../assets/img/smartloc/icons/folder.png" >
                         <span>3. Récupération du dossier</span>
                     </a>
@@ -377,7 +377,138 @@ extra_css: "dossier-locataire-2.css"
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="tab_dossier" role="tabpanel" aria-labelledby="contact-tab">panneau 3</div>
+                <div class="tab-pane fade" id="tab_dossier" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form>
+
+                                <!-- ALERTE ROUGE -->
+                                <div class="alert alert-danger" role="alert">
+                                    <div class="alert-heading">
+                                        <img src="../../../assets/img/smartloc/icons/erreur_croix.svg" alt="">                                   
+                                        <span>Veuillez remplir les champs qui n'ont pas été renseignés. </span>
+                                    </div>
+                                    <p>Essayez à nouveau ou contactez notre équipe si le problème persiste (equipe@smartloc.fr).</p>
+                                </div>
+                    
+                                <!-- PREMIER FORM -->
+                                <div class="dossierLocataire__formulaire_section">
+                    
+                                    <div class="formulaire__sousElement">
+                                        <h3 class="formulaire__sousElement_titre">Vos informations</h3>
+                    
+                                        <div class="form-group">
+                                            <span class="labelInput">Votre nom</span>
+                                            <input class="form-control col-sm-8 col-lg-6" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="labelInput">Adresse</span>
+                                            <input type="text" class="form-control col-sm-8 col-lg-6">
+                                        </div>
+                        
+                                        <div class="row">
+                                            <div class="form-group col-sm-8 col-lg-6">
+                                                <span class="labelInput">Date de signature prévisionnelle du bail</span>
+                                                <div class="champSaisie--illustré">
+                                                    <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="formulaire__sousElement">
+                                        <h3 class="formulaire__sousElement_titre">Accès à votre espace Smartloc </h3>
+                    
+                                        <div class="form-group">
+                                            <span class="labelInput">Adresse email</span>
+                                            <input type="email" class="form-control col-sm-8 col-lg-6">
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-sm-8 col-lg-6">
+                                                <span class="labelInput">Mot de passe</span>
+                                                <div class="champSaisie--illustré">
+                                                    <input class="form-control" type="password" placeholder="8 caractères minimum">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <path d="M7.99989 3.5008C5.31255 3.45547 2.53322 5.33347 0.785885 7.2568C0.602474 7.46043 0.500977 7.72476 0.500977 7.9988C0.500977 8.27285 0.602474 8.53718 0.785885 8.7408C2.49522 10.6235 5.26655 12.5448 7.99989 12.4988C10.7332 12.5448 13.5052 10.6235 15.2159 8.7408C15.3993 8.53718 15.5008 8.27285 15.5008 7.9988C15.5008 7.72476 15.3993 7.46043 15.2159 7.2568C13.4666 5.33347 10.6872 3.45547 7.99989 3.5008Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.5 8.00018C10.4999 8.4946 10.3531 8.97789 10.0784 9.38892C9.80357 9.79996 9.41307 10.1203 8.95625 10.3094C8.49942 10.4985 7.99678 10.5479 7.51187 10.4514C7.02696 10.3549 6.58156 10.1167 6.232 9.76704C5.88243 9.41739 5.6444 8.97193 5.54799 8.48699C5.45158 8.00206 5.50113 7.49943 5.69037 7.04265C5.8796 6.58587 6.20004 6.19547 6.61114 5.92079C7.02225 5.64612 7.50558 5.49951 8 5.49951C8.32839 5.49942 8.65357 5.56405 8.95697 5.6897C9.26036 5.81535 9.53603 5.99955 9.7682 6.23179C10.0004 6.46402 10.1845 6.73973 10.3101 7.04316C10.4356 7.34659 10.5002 7.67179 10.5 8.00018Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-sm-8 col-lg-6">
+                                                <span class="labelInput">Confirmation de votre mot de passe</span>
+                                                <div class="champSaisie--illustré">
+                                                    <input class="form-control" type="password" placeholder="8 caractères minimum">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0)">
+                                                            <path d="M7.99989 3.5008C5.31255 3.45547 2.53322 5.33347 0.785885 7.2568C0.602474 7.46043 0.500977 7.72476 0.500977 7.9988C0.500977 8.27285 0.602474 8.53718 0.785885 8.7408C2.49522 10.6235 5.26655 12.5448 7.99989 12.4988C10.7332 12.5448 13.5052 10.6235 15.2159 8.7408C15.3993 8.53718 15.5008 8.27285 15.5008 7.9988C15.5008 7.72476 15.3993 7.46043 15.2159 7.2568C13.4666 5.33347 10.6872 3.45547 7.99989 3.5008Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.5 8.00018C10.4999 8.4946 10.3531 8.97789 10.0784 9.38892C9.80357 9.79996 9.41307 10.1203 8.95625 10.3094C8.49942 10.4985 7.99678 10.5479 7.51187 10.4514C7.02696 10.3549 6.58156 10.1167 6.232 9.76704C5.88243 9.41739 5.6444 8.97193 5.54799 8.48699C5.45158 8.00206 5.50113 7.49943 5.69037 7.04265C5.8796 6.58587 6.20004 6.19547 6.61114 5.92079C7.02225 5.64612 7.50558 5.49951 8 5.49951C8.32839 5.49942 8.65357 5.56405 8.95697 5.6897C9.26036 5.81535 9.53603 5.99955 9.7682 6.23179C10.0004 6.46402 10.1845 6.73973 10.3101 7.04316C10.4356 7.34659 10.5002 7.67179 10.5 8.00018Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0">
+                                                                <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- FORM BUTTONS -->
+                                <div class="row justify-content-between">
+                                    <div class="col-sm-auto">
+                                        <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente">< Etape précédente</button>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <div class="row justify-content-end">
+                                            <div class="col-sm-auto">
+                                                <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                            </div>
+                                            <div class="col-sm-auto mt-3 mt-sm-0">
+                                                <button class="btn btn-dark">Récupérer mon dossier</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <aside class="dossierLocataire__astuces">
+                                <h3>Informations importantes</h3>
+                                <div>
+                                    <h4>Aide sur les justificatifs de revenus complémentaires</h4>
+                                    <p>1. Pour les APL il est important de transmettre une simulation sur le logement futur et non une attestation passée. 
+                                    <br><br>
+                                    2. Pour les revenus locatifs il est nécessaire de transmettre le bail et un document prouvant la propriété de chaque bien constituant le revenu foncier.</a></p>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
