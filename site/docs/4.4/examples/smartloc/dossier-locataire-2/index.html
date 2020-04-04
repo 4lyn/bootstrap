@@ -327,6 +327,9 @@ extra_css: "dossier-locataire-2.css"
                                                 <span class="labelInput d-block">3. J’ajoute le fichier</span>
                                                 <button class="btn btn-primary">Ajouter mon fichier</button>
                                             </div>
+                                            <button type="button" class="btn btn-dark btn-sm mt-5" data-toggle="modal" data-target="#exampleModal">
+                                                Montrer la modale
+                                        </button>
                                         </div>
                                     </div>
 
@@ -593,6 +596,37 @@ extra_css: "dossier-locataire-2.css"
                 <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
                 <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
                 <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modalToShow" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>Veuillez vérifier les points suivants</h3>
+                <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
+                <div class="mt-4 mb-2">
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck1">
+                        <label class="custom-control-label" for="modalCheck1">aucun candidat n'est diplomate </label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck2">
+                        <label class="custom-control-label" for="modalCheck2">aucun candidat ou garant n'est domicilié fiscalement à l'étranger ni dans les DOM</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck3">
+                        <label class="custom-control-label" for="modalCheck3">le bail envisagé n'est pas un bail de colocation non solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
+                    </div>
+                </div>
+                <p class="my-4">Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN français.</p>
+                <button class="btn btn-dark" data-dismiss="modal">Valider</button>
             </div>
         </div>
     </div>
