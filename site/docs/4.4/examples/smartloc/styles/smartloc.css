@@ -1434,6 +1434,8 @@ ul.liste--check li::before
 .dossierLocataire
 {
     margin-top:3.75rem;
+    padding-bottom: 8.5rem;
+
 }
 
 .dossierLocataire__ligneProgression
