@@ -3,6 +3,8 @@ layout: examples
 title: dossier locataire 2
 extra_css: "dossier-locataire-2.css"
 ---
+<script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
+
 
 <div class="progression_line"></div>
 
@@ -60,21 +62,23 @@ extra_css: "dossier-locataire-2.css"
                 </li>
             </ul>
 
+            
+            <h1 class="dossierLocataire__titre">Dossier de locataire</h1>
+            <ul class="nav dossierLocataire__menuDossier">
+                <li class="nav-item">
+                    <a class="nav-link active dossierLocataire__menuDossier_dossier" href="#">Dossier 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuDossier_dossier" href="#">Dossier 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuDossier_lienAjouterDossier" href="#">+ Ajouter un dossier</a>
+                </li>
+            </ul>
+
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="tab_infos" role="tabpanel" aria-labelledby="home-tab">
-                    <!-- RENTING FILE SECTION  -->
-                    <h1 class="dossierLocataire__titre">Dossier de locataire</h1>
-                    <ul class="nav dossierLocataire__menuDossier">
-                        <li class="nav-item">
-                            <a class="nav-link active dossierLocataire__menuDossier_dossier" href="#">Dossier 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dossierLocataire__menuDossier_dossier" href="#">Dossier 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dossierLocataire__menuDossier_lienAjouterDossier" href="#">+ Ajouter un dossier</a>
-                        </li>
-                    </ul>
+
 
                     <div class="row">
                         <div class="col-lg-8">
@@ -235,11 +239,233 @@ extra_css: "dossier-locataire-2.css"
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="tab_depot" role="tabpanel" aria-labelledby="profile-tab">panneau 2</div>
+                <div class="tab-pane fade" id="tab_depot" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="col-lg-8">                        
+                            <form>
+                                <div class="dossierLocataire__formulaire_section">
+                                    <div data-toggle="collapse" href="#justifs_loc1" role="button">
+                                        <h3 class="collapse_header">Justificatifs locataire 1 <i class="fas fa-chevron-down float-right mt-1"></i></h3>
+                                        <span>CDI Hors période d'essai</span>
+                                    </div>
+                    
+                                    <div class="collapse" id="justifs_loc1">
+                                        <div class="formulaire__sousElement">
+                    
+                                            <div class="form-group">
+                                                <span class="labelInput">Nom du locataire</span>
+                                                <input class="form-control col-sm-8 col-lg-6" type="text" placeholder="Optionel">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="labelInput">Email du locataire</span>
+                                                <input type="email" class="form-control col-sm-8 col-lg-6" placeholder="Optionel">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="labelInput">Commentaires</span>
+                                                <textarea class="form-control col-sm-8 col-lg-6" id="" rows="5" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- ENSEMBLE DES CHECKBOXES -->
+                                        <div class="formulaire__sousElement">
+                                            <div class="form-group conteneurCheckBoxes">
+                                                <h5>Justificatifs à fournir</h5>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">Pièce d'identité</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label" for="customCheck2">Contrat de travail ou attestation employeur</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                    <label class="custom-control-label" for="customCheck3">Bulletin de salaire octobre</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                    <label class="custom-control-label" for="customCheck4">Bulletin de salaire septembre</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                    <label class="custom-control-label" for="customCheck5">Bulletin de salaire août</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                    <label class="custom-control-label" for="customCheck6">Dernier avis d'impôts</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                                    <label class="custom-control-label" for="customCheck7">Trois dernières quittances de loyer ou attestation d'hébergement</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                                    <label class="custom-control-label" for="customCheck8">Bulletin de salaire juillet (optionnel)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- ZONE UPLOAD -->
+                                        <div class="formulaire__sousElement zoneUploads">
+                                            <h5>Uploads</h5>
+                                            <div class="form-group conteneurBoutonUpload--custom">
+                                                <span class="labelInput d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
+                                                <label class="boutonUpload-custom" for="file-input">Parcourir</label>
+                                                <span class="ml-3">Aucun fichier choisi</span>
+                                                <input class="form-control" type="file" id="file-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="labelInput">2. Ce fichier contient (plusieurs choix possible)</span>
+                                                <select class="custom-select form-control col-sm-8 col-lg-6">
+                                                    <option>Optionel</option>
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="labelInput d-block">3. J’ajoute le fichier</span>
+                                                <button class="btn btn-primary">Ajouter mon fichier</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                    
+                                <div class="dossierLocataire__formulaire_section">
+                                    <div data-toggle="collapse" href="#justifs_complementaires" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <h3 class="collapse_header">Justificatifs complémentaires <i class="fas fa-chevron-down float-right mt-1"></i></h3>
+                                    </div>
+                                    <div class="collapse" id="justifs_complementaires">
+                                        <div class="collapse_body">
+                                            <div class="formulaire__sousElement">
+                                                <p>Test </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- FORM BUTTONS -->
+                                <div class="row justify-content-between">
+                                    <div class="col-sm-auto">
+                                        <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente">< Etape précédente</button>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <div class="row justify-content-end">
+                                            <div class="col-sm-auto">
+                                                <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                            </div>
+                                            <div class="col-sm-auto mt-3 mt-sm-0">
+                                                <button class="btn btn-dark">Etape suivante</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <aside class="dossierLocataire__astuces">
+                                <h3>Informations importantes</h3>
+                                <div>
+                                    <h4>Aide sur les justificatifs de revenus complémentaires</h4>
+                                    <p>1. Pour les APL il est important de transmettre une simulation sur le logement futur et non une attestation passée. 
+                                    <br><br>
+                                    2. Pour les revenus locatifs il est nécessaire de transmettre le bail et un document prouvant la propriété de chaque bien constituant le revenu foncier.</a></p>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="tab_dossier" role="tabpanel" aria-labelledby="contact-tab">panneau 3</div>
-              </div>
-
-
+            </div>
         </div>
     </div>
 </main>
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                        <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<div class="modal fade modalToShow" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="../scripts/scripts.js"></script>

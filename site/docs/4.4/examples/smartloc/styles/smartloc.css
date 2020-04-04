@@ -768,6 +768,15 @@ ul.liste--check li::before
     display: none;
 }
 
+.collapse_header{
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.collapse_body{
+    padding-top: 1.875rem;
+}
+
 
 /* MENU NOIR, present sur sections documents */
 
@@ -1498,14 +1507,6 @@ ul.liste--check li::before
     text-decoration: none;
 }
 
-/* CORPS DU DOSSIER LOCATAIRE */
-.dossierLocataire__conteneurPrincipal
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
 
 .dossierLocataire__formulaire_section
 {
@@ -1731,6 +1732,10 @@ form .row{
 
     .dossierLocataire__formulaire_section{
         padding: 1rem;
+    }
+
+    .conteneurCheckBoxes, .zoneUploads{
+        padding: 0.5rem;
     }
 
 }
