@@ -66,6 +66,11 @@ section
     padding-bottom: 8.5rem;
 }
 
+.btn {
+    white-space: normal;
+    min-width: auto;
+}
+
 
 
 
