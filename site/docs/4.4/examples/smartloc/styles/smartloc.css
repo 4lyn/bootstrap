@@ -737,26 +737,8 @@ ul.liste--check li::before
 
 
 /* ITEMS DEROULANT */
-.objetDeroulant
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    overflow: hidden;
-    transition: .3s ease-in-out;
-}
-
 .objetDeroulant__entete
 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
     cursor: pointer;
 }
 .objetDeroulant__entete>*
@@ -764,14 +746,6 @@ ul.liste--check li::before
     margin-bottom: 0;
 }
 
-.objetDeroulant__entete_icone--ouvrir
-{
-    display: block;
-}
-.objetDeroulant__entete_icone--fermer
-{
-    display: none;
-}
 
 .collapse_header{
     margin-bottom: 0px;
@@ -1033,7 +1007,6 @@ ul.liste--check li::before
 /* SECTION QUESTIONS sur homepage et gestion locative */
 .questionDeroulante
 {
-    height: 3.125rem;
     margin-top: 2rem;
     border-bottom: 1px dashed black;
 }
@@ -1162,7 +1135,6 @@ ul.liste--check li::before
 /* SECTION SOUS CATEGORIES sur ressource hub categories */
 .sectionSousCategories .objetDeroulant
 {
-    height: 4.5rem;   /* hauteur quand l'item est fermé, necessaire à renseigner pour que le dropdown fonctionne */
     margin-top: 1.5rem;    
     padding: 0 1.5rem;
     line-height: 2rem;

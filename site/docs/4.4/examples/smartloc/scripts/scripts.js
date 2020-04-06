@@ -39,36 +39,5 @@ const set_active = function (items, ancres)
 set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres)
 set_active(menuSticky_section_items, menuSticky_section_ancres)
 
-// OBJETS DEROULANTS
-const objet_deroulants = document.querySelectorAll('.objetDeroulant')
-const objet_deroulant_entetes = document.querySelectorAll('.objetDeroulant__entete')
-const objet_deroulants_contenu = document.querySelectorAll('.objetDeroulant__contenu')
-const objet_deroulant_icones_ouvrir = document.querySelectorAll('.objetDeroulant__entete_icone--ouvrir')
-const objet_deroulant_icones_fermer = document.querySelectorAll('.objetDeroulant__entete_icone--fermer')
 
-if (objet_deroulants.length > 0) {
-  for (let i = 0; i < objet_deroulant_entetes.length; i++)
-  {
-    let toggle = false
-    const hauteurDeroulement = objet_deroulants_contenu[i].offsetHeight + objet_deroulants[i].offsetHeight
-    const hauteurObjet = objet_deroulant_entetes[i].offsetHeight
-    objet_deroulant_entetes[i].addEventListener('click', () =>
-    {
-      if (toggle)
-      {
-        objet_deroulants[i].style.height = hauteurObjet / tailleTypo + 'rem'
-        objet_deroulant_icones_ouvrir[i].style.display = 'block'
-        objet_deroulant_icones_fermer[i].style.display = 'none'
-        toggle = false
-      }
-      else
-      {
-        objet_deroulants[i].style.height = hauteurDeroulement / tailleTypo + 'rem'
-        objet_deroulant_icones_ouvrir[i].style.display = 'none'
-        objet_deroulant_icones_fermer[i].style.display = 'block'
-        toggle = true
-      }
-    })
-  }
-}
 

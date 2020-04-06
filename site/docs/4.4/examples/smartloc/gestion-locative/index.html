@@ -4,6 +4,9 @@ title: gestion-locative
 extra_css: "gestion-locative.css"
 ---
 
+<script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
+
+
 
 <!-- HEADER -->
 
@@ -232,123 +235,106 @@ extra_css: "gestion-locative.css"
                 <h2>Vos questions</h2>
             </div>
             <div class="col-lg-8">
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Gérez vous les encaissements de loyers ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                <div class="accordion" id="accordion_faq_gestion">
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+                            <h5>Gérez vous les encaissements de loyers ? <i class="fas fa-minus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_gestion">
+                            <p>Non les loyers sont directement encaissés par le propriétaire pour des raisons de coût et de simplicté.</p>
+                            <p>Si les loyers sont correctement payés la quittance est automatiquement envoyé au locataire. Si un impayé survient vous pouvez suspendre cet envoi.</p>
+                            <p>En cas de retard ou d'impayés, notre outil vous guide pas à pas sur les démarches à effectuer, que vous ayez ou non pris notre garantie loyer impayé.</p>
+                        </div>
                     </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Non les loyers sont directement encaissés par le propriétaire pour des raisons de coût et de simplicté.</p>
-                        <p>Si les loyers sont correctement payés la quittance est automatiquement envoyé au locataire. Si un impayé survient vous pouvez suspendre cet envoi.</p>
-                        <p>En cas de retard ou d'impayés, notre outil vous guide pas à pas sur les démarches à effectuer, que vous ayez ou non pris notre garantie loyer impayé.</p>
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+                            <h5>Comment fonctionne l'envoi des quittances ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_gestion">
+                            <p>Les quittances sont envoyées chaque mois au locataire avec l'avis d'échéance du mois suivant, par courrier électronique sur son adresse mail. 
+                                Vous recevez en tant que propriétaire un rappel quelques jours avant pour vérifier le bon paiement du loyer et gérer éventuellement un impayé via Smartloc.</p>
+                            <p>Sur votre espace vous disposez par ailleurs de l'historique de toutes les quittances et d'un module pour les quittances spécifiques (entrée/sortie, liquidation des charges, indexation du loyer).</p>
+                        </div>
                     </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Comment fonctionne l'envoi des quittances ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_3">
+                            <h5>Que se passe-t-il en cas d'impayés ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_3" data-parent="#accordion_faq_gestion">
+                            <p><strong>Si vous avez souscrit à notre garantie loyer impayé</strong>, il vous suffit de relancer le locataire le premier mois par courrier simple puis par recommandé, des modèles sont préparés via votre espace de gestion.</p>
+                            <p>Vous devez alors déclarer le sinistre à partir de la deuxième échéance impayé. Vous serez alors remboursé des impayés et l'assureur prend le relais pour poursuivre et expulser le locataire.</p>
+                            <p><strong>Si vous n'avez pas souscrit à notre garantie loyer impayé</strong>, vous disposez sur votre espace d'un gestion des modèles de courrier de relance; 
+                            vous pouvez par ailleurs solliciter notre réseau d'avocats et d'huissiers partenaires, capables de mener pour vous la procédure d'expulsion, partout en France, à des tarifs négociés.</p>                    </div>
                     </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Les quittances sont envoyées chaque mois au locataire avec l'avis d'échéance du mois suivant, par courrier électronique sur son adresse mail. 
-                            Vous recevez en tant que propriétaire un rappel quelques jours avant pour vérifier le bon paiement du loyer et gérer éventuellement un impayé via Smartloc.</p>
-                        <p>Sur votre espace vous disposez par ailleurs de l'historique de toutes les quittances et d'un module pour les quittances spécifiques (entrée/sortie, liquidation des charges, indexation du loyer).</p>
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_4">
+                            <h5>Gérez-vous la recherche du locataire ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_4" data-parent="#accordion_faq_gestion">
+                            <p>Non par contre nous pouvons vous mettre en relation avec des agences partenaires qui ont l'habitude d'utiliser notre garantie loyer impayé et notre bail de location numérique.</p>
+                            <p>Elles ne vous obligeront pas à prendre un mandat de gestion chez elle pour s'occuper de votre recherche locataire et de votre état des lieux.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Que se passe-t-il en cas d'impayés ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_5">
+                            <h5>Vérifiez-vous les dossiers des locataires ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_5" data-parent="#accordion_faq_gestion">
+                            <p>Vous disposez d'un module gratuit de constitution et de validation du dossier locataire. Il vous permet de récupérer gratuitement un dossier PDF conforme aux exigences de l'assurance loyer impayé.</p>
+                            <p>Une fois le dossier locataire constitué sur Smartloc vous pouvez l'envoyer en vérification à nos équipes, c'est un service optionnel facturé 45€/dossier, vous pouvez donc choisir de souscrire sans cette vérification.</p>
+                        </div>
                     </div>
-                    <div class="objetDeroulant__contenu">
-                        <p><strong>Si vous avez souscrit à notre garantie loyer impayé</strong>, il vous suffit de relancer le locataire le premier mois par courrier simple puis par recommandé, des modèles sont préparés via votre espace de gestion.</p>
-                        <p>Vous devez alors déclarer le sinistre à partir de la deuxième échéance impayé. Vous serez alors remboursé des impayés et l'assureur prend le relais pour poursuivre et expulser le locataire.</p>
-                        <p><strong>Si vous n'avez pas souscrit à notre garantie loyer impayé</strong>, vous disposez sur votre espace d'un gestion des modèles de courrier de relance; 
-                        vous pouvez par ailleurs solliciter notre réseau d'avocats et d'huissiers partenaires, capables de mener pour vous la procédure d'expulsion, partout en France, à des tarifs négociés.</p>                    </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Gérez-vous la recherche du locataire ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_6">
+                            <h5>Rédigez-vous le bail ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_6" data-parent="#accordion_faq_gestion">
+                            <p>Nous vous mettons à disposition un outil de création automatique du bail et de ses annexes qui vous guide pas à pas.</p>
+                            <p>Toutes les situations sont prévues : colocation à bail unique ou individuel, bail classique vide ou meublée, bail mixte, etc..</p>
+                        </div>
                     </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Non par contre nous pouvons vous mettre en relation avec des agences partenaires qui ont l'habitude d'utiliser notre garantie loyer impayé et notre bail de location numérique.</p>
-                        <p>Elles ne vous obligeront pas à prendre un mandat de gestion chez elle pour s'occuper de votre recherche locataire et de votre état des lieux.</p>
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_7">
+                            <h5>Est-ce que vous vous occupez de la déclaration fiscale ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_7" data-parent="#accordion_faq_gestion">
+                            <p>Nos équipes peuvent vous aider à décider entre la déclaration des charges au réel ou au forfait. Elles sont disponibles par mail ou chat, ainsi qu'en rdv téléphonique si vous avez des questions ou bloccage dans votre déclaration.</p>
+                            <p>Vous restez néanmoins responsable de la déclaration de vos revenus immobiliers.</p>
+                            <p>Si vous optez pour le LMNP réel en meublé, nous vous recommandons de passer par notre comptable partenaire, qui s'occupera de toute votre déclaration, moyennant des honoraires supplémentaires.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Vérifiez-vous les dossiers des locataires ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_8">
+                            <h5>Comment fonctionne l'assistance ? Peut-on vous appeler ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_8" data-parent="#accordion_faq_gestion">
+                            <p>Nous sommes disponibles par mail et chat, avec une réponse souvent instantanée, au plus tard le lendemain.</p>
+                            <p>Si la question est trop complexe pour être traitée par chat nous vous proposons un rendez-vous téléphonique.</p>
                     </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Vous disposez d'un module gratuit de constitution et de validation du dossier locataire. Il vous permet de récupérer gratuitement un dossier PDF conforme aux exigences de l'assurance loyer impayé.</p>
-                        <p>Une fois le dossier locataire constitué sur Smartloc vous pouvez l'envoyer en vérification à nos équipes, c'est un service optionnel facturé 45€/dossier, vous pouvez donc choisir de souscrire sans cette vérification.</p>
                     </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Rédigez-vous le bail ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_9">
+                            <h5>Comment sont gérés les incidents techniques ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_9" data-parent="#accordion_faq_gestion">
+                            <p>Prenons l'exemple d'une chauffe-ballon en panne. La majorité des gestionnaires immobiliers sont contactés par le locataire; il leur suffit d'envoyer un plombier qui se chargera de la réparation en coordination avec le locataire.</p>
+                            <p>En pratique il n'est pas donc pas nécessaire de se déplacer dans 90% des cas, la difficulté est plus de trouver un artisan rapidement et à un tarif raisonnable.</p>
+                            <p>Sur votre espace Smartloc vous disposez d'un module en ligne vous permettant de commander des réparations <strong>dans la journée</strong> à des tarifs négociés, partout en France.</p>
+                            <p>Par exemple le remplacement d'un robinet mitigeur est facturé 149€ déplacement et pièces inclus. Si vous prenez l'option garantie dépannage à 15€/mois, cette intervention sera gratuite car prise en charge dans le cadre de la garantie.</p>
+                        </div>
                     </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Nous vous mettons à disposition un outil de création automatique du bail et de ses annexes qui vous guide pas à pas.</p>
-                        <p>Toutes les situations sont prévues : colocation à bail unique ou individuel, bail classique vide ou meublée, bail mixte, etc..</p>
-                    </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Est-ce que vous vous occupez de la déclaration fiscale ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                    </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Nos équipes peuvent vous aider à décider entre la déclaration des charges au réel ou au forfait. Elles sont disponibles par mail ou chat, ainsi qu'en rdv téléphonique si vous avez des questions ou bloccage dans votre déclaration.</p>
-                        <p>Vous restez néanmoins responsable de la déclaration de vos revenus immobiliers.</p>
-                        <p>Si vous optez pour le LMNP réel en meublé, nous vous recommandons de passer par notre comptable partenaire, qui s'occupera de toute votre déclaration, moyennant des honoraires supplémentaires.</p>
-                    </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Comment fonctionne l'assistance ? Peut-on vous appeler ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                    </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Nous sommes disponibles par mail et chat, avec une réponse souvent instantanée, au plus tard le lendemain.</p>
-                        <p>Si la question est trop complexe pour être traitée par chat nous vous proposons un rendez-vous téléphonique.</p>
-                </div>
-                </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Comment sont gérés les incidents techniques ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                    </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Prenons l'exemple d'une chauffe-ballon en panne. La majorité des gestionnaires immobiliers sont contactés par le locataire; il leur suffit d'envoyer un plombier qui se chargera de la réparation en coordination avec le locataire.</p>
-                        <p>En pratique il n'est pas donc pas nécessaire de se déplacer dans 90% des cas, la difficulté est plus de trouver un artisan rapidement et à un tarif raisonnable.</p>
-                        <p>Sur votre espace Smartloc vous disposez d'un module en ligne vous permettant de commander des réparations <strong>dans la journée</strong> à des tarifs négociés, partout en France.</p>
-                        <p>Par exemple le remplacement d'un robinet mitigeur est facturé 149€ déplacement et pièces inclus. Si vous prenez l'option garantie dépannage à 15€/mois, cette intervention sera gratuite car prise en charge dans le cadre de la garantie.</p>
+                    <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_10">
+                            <h5>Proposez-vous d'autres assurances que la garantie loyer impayé ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_10" data-parent="#accordion_faq_gestion">
+                            <p>Oui en plus de l'assurance loyer impayé, nous pouvons vous proposer une assurance propriétaire non occupant (PNO) qui couvre notamment votre responsabilité civile obligatoire en tant que bailleur.</p>
+                            <p>Vous pouvez également souscrire à notre garantie dépannage qui vous permet d'avoir jusqu'à 4 interventions par an prises en charge par notre réseau d'artisans partenaires.</p>
+                            <p>Nous ne proposons par contre pas d'assurance vacance ou carence locative car ces contrats sont très chers et exclusivement proposés en parallèle d'une gestion locative par agence.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="questionDeroulante objetDeroulant">
-                    <div class="objetDeroulant__entete">
-                        <h5>Proposez-vous d'autres assurances que la garantie loyer impayé ?</h5>
-                        <img class="objetDeroulant__entete_icone--ouvrir" src="../../../assets/img/smartloc/icons/open.svg" alt="">
-                        <img class="objetDeroulant__entete_icone--fermer" src="../../../assets/img/smartloc/icons/close.svg" alt="">
-                    </div>
-                    <div class="objetDeroulant__contenu">
-                        <p>Oui en plus de l'assurance loyer impayé, nous pouvons vous proposer une assurance propriétaire non occupant (PNO) qui couvre notamment votre responsabilité civile obligatoire en tant que bailleur.</p>
-                        <p>Vous pouvez également souscrire à notre garantie dépannage qui vous permet d'avoir jusqu'à 4 interventions par an prises en charge par notre réseau d'artisans partenaires.</p>
-                        <p>Nous ne proposons par contre pas d'assurance vacance ou carence locative car ces contrats sont très chers et exclusivement proposés en parallèle d'une gestion locative par agence.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
