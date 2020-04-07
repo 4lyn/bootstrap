@@ -1,0 +1,434 @@
+---
+layout: examples
+title: dossier locataire 2
+extra_css: "bail-formulaire.css"
+---
+<script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
+
+
+<div class="progression_line"></div>
+
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav> 
+        </div>
+    </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main class="dossierLocataire container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <ul class="nav dossierLocataire__menuEtapes">
+                <li class="nav-item">
+                    <a class="nav-link active dossierLocataire__menuEtapes_etape pl-3 pl-sm-0" data-toggle="tab" href="#tab_type" role="tab">
+                        <i class="fas fa-list-alt"></i> <span>Type de bail</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_bien" role="tab">
+                        <i class="fas fa-building"></i> <span>Bien</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_personnes" role="tab">
+                        <i class="fas fa-users"></i> <span>Personnes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+                        <i class="fas fa-exchange-alt"></i> <span>Loyer & charges</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+                        <i class="fas fa-gavel"></i> <span>Clauses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+                        <i class="far fa-file-alt"></i> <span>Annexes</span>
+                    </a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+                        <i class="far fa-check-square"></i> <span>Téléchargement</span>
+                    </a>
+                </li>                                                           
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab_type" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="dossierLocataire__formulaire_section">
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Type de location</h3>
+                            <div class="form-group">
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio1">
+                                        <div>Location vide</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio1">
+                                        <div>Location meublée</div>
+                                    </label>
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Type d'occupation</h3>
+                            <div class="form-group">
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio2">
+                                        <div>Standard</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="boutonsRadioViolets__conteneur">                                
+                                    <label>
+                                        <input type="radio" name="radio2">
+                                        <div>Colocation en bail unique</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio2">
+                                        <div>Colocation en bail individuel</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" name="radio2">
+                                        <div>Location étudiante de 9 mois</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio2">
+                                        <div>Mixte habitation & professionnel</div>
+                                    </label>
+                                </div>                    
+                            </div>
+                        </div>
+                        <div class="formulaire__sousElement">
+                            <p><strong>Bail standard</strong> : Choisissez ce type d'occupation quand vous louez un bien en entier à un locataire unique personne physique.
+                                C'est également le modèle à privilégier quand vous louez une seule chambre dans votre logement (si plusieurs chambres optez pour le bail individuel).</p>
+
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-auto">
+                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                        </div>
+                        <div class="col-sm-auto mt-3 mt-sm-0">
+                            <button class="btn btn-dark" data-toggle="tab" href="#tab_bien" role="tab">Etape suivante</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab_bien" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="dossierLocataire__formulaire_section">
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Descriptif du bien</h3>
+                            <div class="form-group">
+                                <label>Adresse du logement</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Surface habitable</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Nombre de pièces</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Type d'habitat</label>
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio3">
+                                        <div>Immeuble</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio3">
+                                        <div>Maison</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Type de copropriété</label>
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" name="radio4">
+                                        <div>Copropriété</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio4">
+                                        <div>Monopropriété</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-auto">
+                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_type" role="tab">
+                                < Etape précédente
+                            </button>
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-auto">
+                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                </div>
+                                <div class="col-sm-auto mt-3 mt-sm-0">
+                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_personnes" role="tab">Etape suivante</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab_personnes" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="dossierLocataire__formulaire_section">
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Propriétaire</h3>
+                            <div class="form-group">
+                                <label>Type de propriétaire</label>
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio5">
+                                        <div>Personne physique</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio5">
+                                        <div>Personne morale</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Prénom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Nom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Prénom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Nom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <a href="#"><i class="fas fa-plus"></i> Ajouter un propriétaire</a>
+                                <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un propriétaire</a>
+                            </div>
+                            <div class="form-group">
+                                <label>Adresse</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Locataire</h3>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Prénom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Nom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Prénom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Nom</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <a href="#"><i class="fas fa-plus"></i> Ajouter un locataire</a>
+                                <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un locataire</a>
+                                <a href="#" class="ml-4"><i class="fas fa-info"></i> Afficher les détails</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-auto">
+                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_bien" role="tab">
+                                < Etape précédente
+                            </button>
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-auto">
+                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                </div>
+                                <div class="col-sm-auto mt-3 mt-sm-0">
+                                    <button class="btn btn-dark">Etape suivante</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div style="background-color: white; height: 1000px;"></div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                        <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<div class="modal fade modalToShow" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modalToShow" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>Veuillez vérifier les points suivants</h3>
+                <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
+                <div class="mt-4 mb-2">
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck1">
+                        <label class="custom-control-label" for="modalCheck1">aucun candidat n'est diplomate </label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck2">
+                        <label class="custom-control-label" for="modalCheck2">aucun candidat ou garant n'est domicilié fiscalement à l'étranger ni dans les DOM</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck3">
+                        <label class="custom-control-label" for="modalCheck3">le bail envisagé n'est pas un bail de colocation non solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
+                    </div>
+                </div>
+                <p class="my-4">Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN français.</p>
+                <button class="btn btn-dark" data-dismiss="modal">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="../scripts/scripts.js"></script>
