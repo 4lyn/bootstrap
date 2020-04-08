@@ -57,7 +57,7 @@ extra_css: "bail-formulaire.css"
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_loyer" role="tab">
                         <i class="fas fa-exchange-alt"></i> <span>Loyer & charges</span>
                     </a>
                 </li>
@@ -292,6 +292,181 @@ extra_css: "bail-formulaire.css"
                     <div class="row justify-content-between">
                         <div class="col-sm-auto">
                             <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_bien" role="tab">
+                                < Etape précédente
+                            </button>
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-auto">
+                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                </div>
+                                <div class="col-sm-auto mt-3 mt-sm-0">
+                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_loyer" role="tab">Etape suivante</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab_loyer" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="dossierLocataire__formulaire_section">
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Loyer</h3>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Loyer mensuel hors charges</label>
+                                    <div class="champSaisie--illustré ">
+                                        <input type="text" class="form-control">
+                                        <span>€/mois</span>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Dépôt de garantie</label>
+                                    <div class="champSaisie--illustré ">
+                                        <input type="text" class="form-control">
+                                        <span>€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Le logement est dans une zone où le loyer est encadré
+                                        (seulement à Paris et à Lille)</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"> Le logement est en zone tendue (l'évolution du loyer entre 2 locataires est plafonnée à l'IRL 
+                                        / <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027399823&fastPos=1&fastReqId=2020967123&categorieLien=cid&oldAction=rechTexte" target="_blank">liste des communes en zone tendue</a>)</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6 mt-3">
+                                    <label>Trimestre de référence pour l'IRL</label>
+                                    <select class="custom-select form-control">
+                                        <option>4T 2019 valeur 130,26</option>
+                                        <option>3T 2019 valeur 130,26</option>
+                                        <option>2T 2019 valeur 130,26</option>
+                                        <option>1T 2019 valeur 130,26</option>
+                                    </select>                               
+                                 </div>
+                                <div class="form-group col-lg-6 mt-3">
+                                    <label>Date de révision du loyer</label>
+                                    <select class="custom-select form-control">
+                                        <option>1er mois suivant l'anniversaire</option>
+                                        <option>Date d'anniversaire du bail</option>
+                                        <option>1er janvier</option>
+                                        <option>AUtre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Le précédent locataire a quitté le logement</label>
+                                    <select class="custom-select form-control">
+                                        <option>-</option>
+                                        <option>depuis moins de 18 mois</option>
+                                        <option>depuis plus de 18 mois</option>
+                                        <option>1er location</option>
+                                    </select>                               
+                                 </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Dernier loyer versé par l'ancien locataire</label>
+                                    <div class="champSaisie--illustré ">
+                                        <input type="text" class="form-control">
+                                        <span>€/mois</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Date de versement du dernier loyer</label>
+                                    <input type="text" class="form-control">                             
+                                 </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Date de révision du dernier loyer</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Charges</h3>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Type de charges</label>
+                                    <select class="custom-select form-control">
+                                        <option>-</option>
+                                        <option>Provisions sur charges</option>
+                                        <option>Forfait de charges</option>
+                                        <option>Paiement périodique sans provisions</option>
+                                        <option>Absence de charges</option>
+                                    </select>                               
+                                 </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Montant mensuel des charges</label>
+                                    <div class="champSaisie--illustré ">
+                                        <input type="text" class="form-control">
+                                        <span>€/mois</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Durée</h3>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Date de signature prévisionnelle du bail</label>
+                                    <div class="champSaisie--illustré">
+                                        <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>                                        
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Durée du contrat</label>
+                                    <input type="text" class="form-control">
+                                    <div class="custom-control custom-checkbox mt-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck1">Contrat inférieur à la durée légale</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Le loyer est payé</label>
+                                <div class="boutonsRadioViolets__conteneur">
+                                    <label>
+                                        <input type="radio" checked="checked" name="radio5">
+                                        <div>en avance pour le mois à venir</div>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio5">
+                                        <div>une fois le mois écoulé</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Jour de paiement du loyer</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-auto">
+                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_personnes" role="tab">
                                 < Etape précédente
                             </button>
                         </div>
