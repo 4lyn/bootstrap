@@ -1591,6 +1591,28 @@ ul.liste--check li::before
     border-radius: 4px;
 }
 
+/*** BAIL FORMULAIRE ***/
+.pricing_table td, .pricing_table th{
+    text-align: center;
+    border-top: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.fa-star, .fa-star-half-o {
+    color: #efb305;
+}
+
+.pricing_table{
+    margin-bottom: 0px;
+}
+
+.grey {
+    color: grey;
+    opacity: 0.5;
+}
+
+
 
 /*********** RESPONSIVE ************/
 

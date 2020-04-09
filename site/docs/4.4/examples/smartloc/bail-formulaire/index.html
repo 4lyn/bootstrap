@@ -72,7 +72,7 @@ extra_css: "bail-formulaire.css"
                     </a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+                    <a class="nav-link dossierLocataire__menuEtapes_etape" data-toggle="tab" href="#tab_download" role="tab">
                         <i class="far fa-check-square"></i> <span>Téléchargement</span>
                     </a>
                 </li>                                                           
@@ -80,671 +80,929 @@ extra_css: "bail-formulaire.css"
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="tab_type" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="dossierLocataire__formulaire_section">
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Type de location</h3>
-                            <div class="form-group">
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio1">
-                                        <div>Location vide</div>
-                                    </label>
-                                    <label class="mt-3 mt-sm-0">
-                                        <input type="radio" name="radio1">
-                                        <div>Location meublée</div>
-                                    </label>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Type de location</h3>
+                                    <div class="form-group">
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" checked="checked" name="radio1">
+                                                <div>Location vide</div>
+                                            </label>
+                                            <label class="mt-3 mt-sm-0">
+                                                <input type="radio" name="radio1">
+                                                <div>Location meublée</div>
+                                            </label>
+                                        </div>
+                                    </div>                    
                                 </div>
-                            </div>                    
-                        </div>
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Type d'occupation</h3>
-                            <div class="form-group">
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio2">
-                                        <div>Standard</div>
-                                    </label>
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Type d'occupation</h3>
+                                    <div class="form-group">
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" checked="checked" name="radio2">
+                                                <div>Standard</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="boutonsRadioViolets__conteneur">                                
+                                            <label>
+                                                <input type="radio" name="radio2">
+                                                <div>Colocation en bail unique</div>
+                                            </label>
+                                            <label class="mt-3 mt-sm-0">
+                                                <input type="radio" name="radio2">
+                                                <div>Colocation en bail individuel</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" name="radio2">
+                                                <div>Location étudiante de 9 mois</div>
+                                            </label>
+                                            <label class="mt-3 mt-sm-0">
+                                                <input type="radio" name="radio2">
+                                                <div>Mixte habitation & professionnel</div>
+                                            </label>
+                                        </div>                    
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="boutonsRadioViolets__conteneur">                                
-                                    <label>
-                                        <input type="radio" name="radio2">
-                                        <div>Colocation en bail unique</div>
-                                    </label>
-                                    <label class="mt-3 mt-sm-0">
-                                        <input type="radio" name="radio2">
-                                        <div>Colocation en bail individuel</div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" name="radio2">
-                                        <div>Location étudiante de 9 mois</div>
-                                    </label>
-                                    <label class="mt-3 mt-sm-0">
-                                        <input type="radio" name="radio2">
-                                        <div>Mixte habitation & professionnel</div>
-                                    </label>
-                                </div>                    
-                            </div>
-                        </div>
-                        <div class="formulaire__sousElement">
-                            <p><strong>Bail standard</strong> : Choisissez ce type d'occupation quand vous louez un bien en entier à un locataire unique personne physique.
-                                C'est également le modèle à privilégier quand vous louez une seule chambre dans votre logement (si plusieurs chambres optez pour le bail individuel).</p>
+                                <div class="formulaire__sousElement">
+                                    <p><strong>Bail standard</strong> : Choisissez ce type d'occupation quand vous louez un bien en entier à un locataire unique personne physique.
+                                        C'est également le modèle à privilégier quand vous louez une seule chambre dans votre logement (si plusieurs chambres optez pour le bail individuel).</p>
 
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-auto">
+                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                </div>
+                                <div class="col-sm-auto mt-3 mt-sm-0">
+                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_bien" role="tab">Etape suivante</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-end">
-                        <div class="col-sm-auto">
-                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
-                        </div>
-                        <div class="col-sm-auto mt-3 mt-sm-0">
-                            <button class="btn btn-dark" data-toggle="tab" href="#tab_bien" role="tab">Etape suivante</button>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div style="background-color: white; height: 1000px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab_bien" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="dossierLocataire__formulaire_section">
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Descriptif du bien</h3>
-                            <div class="form-group">
-                                <label>Adresse du logement</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Surface habitable</label>
-                                    <input type="text" class="form-control">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Descriptif du bien</h3>
+                                    <div class="form-group">
+                                        <label>Adresse du logement</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Surface habitable</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Nombre de pièces</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type d'habitat</label>
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" checked="checked" name="radio3">
+                                                <div>Immeuble</div>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="radio3">
+                                                <div>Maison</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type de copropriété</label>
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" name="radio4">
+                                                <div>Copropriété</div>
+                                            </label>
+                                            <label>
+                                                <input type="radio" checked="checked" name="radio4">
+                                                <div>Monopropriété</div>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Nombre de pièces</label>
-                                    <input type="text" class="form-control">
-                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Type d'habitat</label>
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio3">
-                                        <div>Immeuble</div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="radio3">
-                                        <div>Maison</div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Type de copropriété</label>
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" name="radio4">
-                                        <div>Copropriété</div>
-                                    </label>
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio4">
-                                        <div>Monopropriété</div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-sm-auto">
-                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_type" role="tab">
-                                < Etape précédente
-                            </button>
-                        </div>
-                        <div class="col-sm-auto">
-                            <div class="row justify-content-end">
+                            <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                    <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_type" role="tab">
+                                        < Etape précédente
+                                    </button>
                                 </div>
-                                <div class="col-sm-auto mt-3 mt-sm-0">
-                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_personnes" role="tab">Etape suivante</button>
+                                <div class="col-sm-auto">
+                                    <div class="row justify-content-end">
+                                        <div class="col-sm-auto">
+                                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                        </div>
+                                        <div class="col-sm-auto mt-3 mt-sm-0">
+                                            <button class="btn btn-dark" data-toggle="tab" href="#tab_personnes" role="tab">Etape suivante</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div style="background-color: white; height: 1000px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab_personnes" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="dossierLocataire__formulaire_section">
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Propriétaire</h3>
-                            <div class="form-group">
-                                <label>Type de propriétaire</label>
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio5">
-                                        <div>Personne physique</div>
-                                    </label>
-                                    <label class="mt-3 mt-sm-0">
-                                        <input type="radio" name="radio5">
-                                        <div>Personne morale</div>
-                                    </label>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Propriétaire</h3>
+                                    <div class="form-group">
+                                        <label>Type de propriétaire</label>
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" checked="checked" name="radio5">
+                                                <div>Personne physique</div>
+                                            </label>
+                                            <label class="mt-3 mt-sm-0">
+                                                <input type="radio" name="radio5">
+                                                <div>Personne morale</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Prénom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Nom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Prénom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Nom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#"><i class="fas fa-plus"></i> Ajouter un propriétaire</a>
+                                        <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un propriétaire</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Adresse</label>
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Prénom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Nom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Prénom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Nom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <a href="#"><i class="fas fa-plus"></i> Ajouter un propriétaire</a>
-                                <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un propriétaire</a>
-                            </div>
-                            <div class="form-group">
-                                <label>Adresse</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Locataire</h3>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Prénom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Nom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Prénom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Nom</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <a href="#"><i class="fas fa-plus"></i> Ajouter un locataire</a>
-                                <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un locataire</a>
-                                <a href="#" class="ml-4"><i class="fas fa-info"></i> Afficher les détails</a>
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Locataire</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Prénom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Nom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Prénom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Nom</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#"><i class="fas fa-plus"></i> Ajouter un locataire</a>
+                                        <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un locataire</a>
+                                        <a href="#" class="ml-4"><i class="fas fa-info"></i> Afficher les détails</a>
 
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-sm-auto">
-                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_bien" role="tab">
-                                < Etape précédente
-                            </button>
-                        </div>
-                        <div class="col-sm-auto">
-                            <div class="row justify-content-end">
+                            <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                    <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_bien" role="tab">
+                                        < Etape précédente
+                                    </button>
                                 </div>
-                                <div class="col-sm-auto mt-3 mt-sm-0">
-                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_loyer" role="tab">Etape suivante</button>
+                                <div class="col-sm-auto">
+                                    <div class="row justify-content-end">
+                                        <div class="col-sm-auto">
+                                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                        </div>
+                                        <div class="col-sm-auto mt-3 mt-sm-0">
+                                            <button class="btn btn-dark" data-toggle="tab" href="#tab_loyer" role="tab">Etape suivante</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div style="background-color: white; height: 1000px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab_loyer" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="dossierLocataire__formulaire_section">
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Loyer</h3>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Loyer mensuel hors charges</label>
-                                    <div class="champSaisie--illustré ">
-                                        <input type="text" class="form-control">
-                                        <span>€/mois</span>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Loyer</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Loyer mensuel hors charges</label>
+                                            <div class="champSaisie--illustré ">
+                                                <input type="text" class="form-control">
+                                                <span>€/mois</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Dépôt de garantie</label>
+                                            <div class="champSaisie--illustré ">
+                                                <input type="text" class="form-control">
+                                                <span>€</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Le logement est dans une zone où le loyer est encadré
+                                                (seulement à Paris et à Lille)</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2"> Le logement est en zone tendue (l'évolution du loyer entre 2 locataires est plafonnée à l'IRL 
+                                                / <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027399823&fastPos=1&fastReqId=2020967123&categorieLien=cid&oldAction=rechTexte" target="_blank">liste des communes en zone tendue</a>)</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6 mt-3">
+                                            <label>Trimestre de référence pour l'IRL</label>
+                                            <select class="custom-select form-control">
+                                                <option>4T 2019 valeur 130,26</option>
+                                                <option>3T 2019 valeur 130,26</option>
+                                                <option>2T 2019 valeur 130,26</option>
+                                                <option>1T 2019 valeur 130,26</option>
+                                            </select>                               
+                                        </div>
+                                        <div class="form-group col-lg-6 mt-3">
+                                            <label>Date de révision du loyer</label>
+                                            <select class="custom-select form-control">
+                                                <option>1er mois suivant l'anniversaire</option>
+                                                <option>Date d'anniversaire du bail</option>
+                                                <option>1er janvier</option>
+                                                <option>AUtre</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Le précédent locataire a quitté le logement</label>
+                                            <select class="custom-select form-control">
+                                                <option>-</option>
+                                                <option>depuis moins de 18 mois</option>
+                                                <option>depuis plus de 18 mois</option>
+                                                <option>1er location</option>
+                                            </select>                               
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Dernier loyer versé par l'ancien locataire</label>
+                                            <div class="champSaisie--illustré ">
+                                                <input type="text" class="form-control">
+                                                <span>€/mois</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Date de versement du dernier loyer</label>
+                                            <input type="text" class="form-control">                             
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Date de révision du dernier loyer</label>
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Dépôt de garantie</label>
-                                    <div class="champSaisie--illustré ">
-                                        <input type="text" class="form-control">
-                                        <span>€</span>
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Charges</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Type de charges</label>
+                                            <select class="custom-select form-control">
+                                                <option>-</option>
+                                                <option>Provisions sur charges</option>
+                                                <option>Forfait de charges</option>
+                                                <option>Paiement périodique sans provisions</option>
+                                                <option>Absence de charges</option>
+                                            </select>                               
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Montant mensuel des charges</label>
+                                            <div class="champSaisie--illustré ">
+                                                <input type="text" class="form-control">
+                                                <span>€/mois</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Durée</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Date d'effet'</label>
+                                            <div class="champSaisie--illustré">
+                                                <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>                                        
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Durée du contrat</label>
+                                            <input type="text" class="form-control">
+                                            <div class="custom-control custom-checkbox mt-3">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck1">Contrat inférieur à la durée légale</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Le loyer est payé</label>
+                                        <div class="boutonsRadioViolets__conteneur">
+                                            <label>
+                                                <input type="radio" checked="checked" name="radio5">
+                                                <div>en avance pour le mois à venir</div>
+                                            </label>
+                                            <label class="mt-3 mt-sm-0">
+                                                <input type="radio" name="radio5">
+                                                <div>une fois le mois écoulé</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Jour de paiement du loyer</label>
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Le logement est dans une zone où le loyer est encadré
-                                        (seulement à Paris et à Lille)</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                    <label class="custom-control-label" for="customCheck2"> Le logement est en zone tendue (l'évolution du loyer entre 2 locataires est plafonnée à l'IRL 
-                                        / <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027399823&fastPos=1&fastReqId=2020967123&categorieLien=cid&oldAction=rechTexte" target="_blank">liste des communes en zone tendue</a>)</label>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6 mt-3">
-                                    <label>Trimestre de référence pour l'IRL</label>
-                                    <select class="custom-select form-control">
-                                        <option>4T 2019 valeur 130,26</option>
-                                        <option>3T 2019 valeur 130,26</option>
-                                        <option>2T 2019 valeur 130,26</option>
-                                        <option>1T 2019 valeur 130,26</option>
-                                    </select>                               
-                                 </div>
-                                <div class="form-group col-lg-6 mt-3">
-                                    <label>Date de révision du loyer</label>
-                                    <select class="custom-select form-control">
-                                        <option>1er mois suivant l'anniversaire</option>
-                                        <option>Date d'anniversaire du bail</option>
-                                        <option>1er janvier</option>
-                                        <option>AUtre</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Le précédent locataire a quitté le logement</label>
-                                    <select class="custom-select form-control">
-                                        <option>-</option>
-                                        <option>depuis moins de 18 mois</option>
-                                        <option>depuis plus de 18 mois</option>
-                                        <option>1er location</option>
-                                    </select>                               
-                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Dernier loyer versé par l'ancien locataire</label>
-                                    <div class="champSaisie--illustré ">
-                                        <input type="text" class="form-control">
-                                        <span>€/mois</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Date de versement du dernier loyer</label>
-                                    <input type="text" class="form-control">                             
-                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Date de révision du dernier loyer</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Charges</h3>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Type de charges</label>
-                                    <select class="custom-select form-control">
-                                        <option>-</option>
-                                        <option>Provisions sur charges</option>
-                                        <option>Forfait de charges</option>
-                                        <option>Paiement périodique sans provisions</option>
-                                        <option>Absence de charges</option>
-                                    </select>                               
-                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Montant mensuel des charges</label>
-                                    <div class="champSaisie--illustré ">
-                                        <input type="text" class="form-control">
-                                        <span>€/mois</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Durée</h3>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Date d'effet'</label>
-                                    <div class="champSaisie--illustré">
-                                        <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <path d="M0 0H16V16H0V0Z" fill="white"/>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>                                        
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Durée du contrat</label>
-                                    <input type="text" class="form-control">
-                                    <div class="custom-control custom-checkbox mt-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class="custom-control-label" for="customCheck1">Contrat inférieur à la durée légale</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Le loyer est payé</label>
-                                <div class="boutonsRadioViolets__conteneur">
-                                    <label>
-                                        <input type="radio" checked="checked" name="radio5">
-                                        <div>en avance pour le mois à venir</div>
-                                    </label>
-                                    <label class="mt-3 mt-sm-0">
-                                        <input type="radio" name="radio5">
-                                        <div>une fois le mois écoulé</div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Jour de paiement du loyer</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-sm-auto">
-                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_personnes" role="tab">
-                                < Etape précédente
-                            </button>
-                        </div>
-                        <div class="col-sm-auto">
-                            <div class="row justify-content-end">
+                            <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                    <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_personnes" role="tab">
+                                        < Etape précédente
+                                    </button>
                                 </div>
-                                <div class="col-sm-auto mt-3 mt-sm-0">
-                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
+                                <div class="col-sm-auto">
+                                    <div class="row justify-content-end">
+                                        <div class="col-sm-auto">
+                                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                        </div>
+                                        <div class="col-sm-auto mt-3 mt-sm-0">
+                                            <button class="btn btn-dark" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div style="background-color: white; height: 1000px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab_clauses" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="dossierLocataire__formulaire_section">
-                        <div class="formulaire__sousElement">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <h3 class="formulaire__sousElement_titre">Clauses génériques</h3>
-                                    <div class="list-group" id="list-tab">
-                                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-resolutoire" role="tab">
-                                            Clause résolutoire
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-solidarite" role="tab">
-                                            Clause de solidarité
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mt-3 mt-lg-0">
-                                    <h3 class="formulaire__sousElement_titre">Clauses optionnelles</h3>
-                                    <div class="list-group" id="list-tab">
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-resolutoire" role="tab">
-                                            Clause résolutoire
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-solidarite" role="tab">
-                                            Clause de solidarité
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
-                                            Visites pour relouer
-                                            <i class="far fa-check-circle float-right"></i>                                        
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formulaire__sousElement">
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="list-resolutoire" role="tabpanel">
-                                    <div class="form-group">
-                                        <h3 class="formulaire__sousElement_titre">Clause résolutoire</h3>
-                                        <p>
-                                            <a href="#"><i class="fas fa-plus"></i> Utiliser la clause Smartloc</a>
-                                            <a href="#" class="ml-3"><i class="fas fa-minus"></i> Supprimer la clause</a>
-                                        </p>
-                                        <textarea class="form-control" rows="10" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
-                                    </div>
-                                    <div class="alert-notice alert-notice-warning">
-                                        <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
-                                        <div class="notice-info">
-                                            <h3 class="notice-title">Intérêt de la clause résolutoire</h3>
-                                            <p>Cette clause vous permet de faire constater automatiquement la résiliation du bail devant un juge en cas de non respect par le locataire de ses obligations contractuelles. Cela vous permet notamment de gagner du temps et de poursuivre rapidement la procédure en vue de l'expulsion du locataire.</p>
-                                            <p><b>Attention</b> est réputée non écrite toute clause motivant la résiliation du bail par des motifs autre que ceux indiqués dans notre clause type.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="formulaire__sousElement">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h3 class="formulaire__sousElement_titre">Clauses génériques</h3>
+                                            <div class="list-group" id="list-tab">
+                                                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-resolutoire" role="tab">
+                                                    Clause résolutoire
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-solidarite" role="tab">
+                                                    Clause de solidarité
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>  
-                                </div>
-                                <div class="tab-pane fade" id="list-solidarite" role="tabpanel">
-                                    <div class="form-group">
-                                        <h3 class="formulaire__sousElement_titre">Clause de solidarite</h3>
-                                        <p>
-                                            <a href="#"><i class="fas fa-plus"></i> Utiliser la clause Smartloc</a>
-                                            <a href="#" class="ml-3"><i class="fas fa-minus"></i> Supprimer la clause</a>
-                                        </p>
-                                        <textarea class="form-control" rows="10" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
-                                    </div>  
-                                </div>
-                                <div class="tab-pane fade" id="list-visites" role="tabpanel">
-                                    <div class="form-group">
-                                        <h3 class="formulaire__sousElement_titre">Clause de visite</h3>
-                                        <p>
-                                            <a href="#"><i class="fas fa-plus"></i> Utiliser la clause Smartloc</a>
-                                            <a href="#" class="ml-3"><i class="fas fa-minus"></i> Supprimer la clause</a>
-                                        </p>
-                                        <textarea class="form-control" rows="10" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+                                        <div class="col-lg-6 mt-3 mt-lg-0">
+                                            <h3 class="formulaire__sousElement_titre">Clauses optionnelles</h3>
+                                            <div class="list-group" id="list-tab">
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-resolutoire" role="tab">
+                                                    Clause résolutoire
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-solidarite" role="tab">
+                                                    Clause de solidarité
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-visites" role="tab">
+                                                    Visites pour relouer
+                                                    <i class="far fa-check-circle float-right"></i>                                        
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>                         
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-sm-auto">
-                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_loyer" role="tab">
-                                < Etape précédente
-                            </button>
-                        </div>
-                        <div class="col-sm-auto">
-                            <div class="row justify-content-end">
-                                <div class="col-sm-auto">
-                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
-                                </div>
-                                <div class="col-sm-auto mt-3 mt-sm-0">
-                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_annexes" role="tab">Etape suivante</button>
+                                <div class="formulaire__sousElement">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="list-resolutoire" role="tabpanel">
+                                            <div class="form-group">
+                                                <h3 class="formulaire__sousElement_titre">Clause résolutoire</h3>
+                                                <p>
+                                                    <a href="#"><i class="fas fa-plus"></i> Utiliser la clause Smartloc</a>
+                                                    <a href="#" class="ml-3"><i class="fas fa-minus"></i> Supprimer la clause</a>
+                                                </p>
+                                                <textarea class="form-control" rows="10" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+                                            </div>
+                                            <div class="alert-notice alert-notice-warning">
+                                                <img src="../../../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
+                                                <div class="notice-info">
+                                                    <h3 class="notice-title">Intérêt de la clause résolutoire</h3>
+                                                    <p>Cette clause vous permet de faire constater automatiquement la résiliation du bail devant un juge en cas de non respect par le locataire de ses obligations contractuelles. Cela vous permet notamment de gagner du temps et de poursuivre rapidement la procédure en vue de l'expulsion du locataire.</p>
+                                                    <p><b>Attention</b> est réputée non écrite toute clause motivant la résiliation du bail par des motifs autre que ceux indiqués dans notre clause type.</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="list-solidarite" role="tabpanel">
+                                            <div class="form-group">
+                                                <h3 class="formulaire__sousElement_titre">Clause de solidarite</h3>
+                                                <p>
+                                                    <a href="#"><i class="fas fa-plus"></i> Utiliser la clause Smartloc</a>
+                                                    <a href="#" class="ml-3"><i class="fas fa-minus"></i> Supprimer la clause</a>
+                                                </p>
+                                                <textarea class="form-control" rows="10" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="list-visites" role="tabpanel">
+                                            <div class="form-group">
+                                                <h3 class="formulaire__sousElement_titre">Clause de visite</h3>
+                                                <p>
+                                                    <a href="#"><i class="fas fa-plus"></i> Utiliser la clause Smartloc</a>
+                                                    <a href="#" class="ml-3"><i class="fas fa-minus"></i> Supprimer la clause</a>
+                                                </p>
+                                                <textarea class="form-control" rows="10" placeholder="Optionel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>                         
                                 </div>
                             </div>
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_loyer" role="tab">
+                                        < Etape précédente
+                                    </button>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="row justify-content-end">
+                                        <div class="col-sm-auto">
+                                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                        </div>
+                                        <div class="col-sm-auto mt-3 mt-sm-0">
+                                            <button class="btn btn-dark" data-toggle="tab" href="#tab_annexes" role="tab">Etape suivante</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div style="background-color: white; height: 1000px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="tab_annexes" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="dossierLocataire__formulaire_section">
-                        <div class="formulaire__sousElement">
-                            <div class="form-group">
-                                <h3 class="formulaire__sousElement_titre">Annexes fournies par Smartloc</h3>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck10">
-                                    <label class="custom-control-label" for="customCheck10">
-                                        Etat des lieux <a href="#">(aperçu)</a>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                    <label class="custom-control-label" for="customCheck11">Notice d'information <a href="#">(aperçu)</a></label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck12" checked>
-                                    <label class="custom-control-label" for="customCheck12">Acte de caution solidaire pour le garant <a href="#">(aperçu)</a></label>
-                                </div>
-                            </div>
-                            <div class="alert alert-warning" role="alert">
-                                Chaque locataire peut être couvert par plusieurs garants. De même, chaque garant peut couvrir plusieurs locataires.<br/>
-                                Dans tous les cas il faudra établir un acte de caution solidaire par couple garant/locataire.
-                                Le module ci-dessous vous permet de créer automatiquement ces actes de caution et d'insérer une clause spécifique (si vous ne remplissez rien un modèle d'acte de caution vierge vous sera fourni).
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Prénom du garant</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Nom du garant</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Adresse du garant</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-lg-6">
-                                    <label>Date de fin d'engagement</label>
-                                    <div class="champSaisie--illustré">
-                                        <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <path d="M0 0H16V16H0V0Z" fill="white"/>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>                                        
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="formulaire__sousElement">
+                                    <div class="form-group">
+                                        <h3 class="formulaire__sousElement_titre">Annexes fournies par Smartloc</h3>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                            <label class="custom-control-label" for="customCheck10">
+                                                Etat des lieux <a href="#">(aperçu)</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                            <label class="custom-control-label" for="customCheck11">Notice d'information <a href="#">(aperçu)</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck12" checked>
+                                            <label class="custom-control-label" for="customCheck12">Acte de caution solidaire pour le garant <a href="#">(aperçu)</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-warning" role="alert">
+                                        Chaque locataire peut être couvert par plusieurs garants. De même, chaque garant peut couvrir plusieurs locataires.<br/>
+                                        Dans tous les cas il faudra établir un acte de caution solidaire par couple garant/locataire.
+                                        Le module ci-dessous vous permet de créer automatiquement ces actes de caution et d'insérer une clause spécifique (si vous ne remplissez rien un modèle d'acte de caution vierge vous sera fourni).
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Prénom du garant</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Nom du garant</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Adresse du garant</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-6">
+                                            <label>Date de fin d'engagement</label>
+                                            <div class="champSaisie--illustré">
+                                                <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>                                        
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label>Le garant se porte caution pour</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                                <label class="custom-control-label" for="customCheck14">le locataire 1</label>
+                                            </div>  
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                <label class="custom-control-label" for="customCheck15">le locataire 2</label>
+                                            </div>                               
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#"><i class="fas fa-plus"></i> Ajouter un garant</a>
+                                        <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un garant</a>
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label>Le garant se porte caution pour</label>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck14">
-                                        <label class="custom-control-label" for="customCheck14">le locataire 1</label>
-                                    </div>  
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck15">
-                                        <label class="custom-control-label" for="customCheck15">le locataire 2</label>
-                                    </div>                               
+                                <div class="formulaire__sousElement">
+                                    <h3 class="formulaire__sousElement_titre">Annexes fournies par le propriétaire</h3>
+                                    <div class="form-group conteneurBoutonUpload--custom">
+                                        <span class="labelInput d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
+                                        <label class="boutonUpload-custom" for="file-input">Parcourir</label>
+                                        <span class="ml-3">Aucun fichier choisi</span>
+                                        <input class="form-control" type="file" id="file-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>2. Ce fichier contient (plusieurs choix possible)</label>
+                                        <select class="custom-select form-control col-sm-8 col-lg-6">
+                                            <option>Diagnostic énergétique</option>
+                                            <option>Diagnostic plomb</option>
+                                            <option>Diagnostic amiante</option>
+                                            <option>Diagnostic gaz</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="labelInput d-block">3. J’ajoute le fichier</span>
+                                        <button class="btn btn-primary">Ajouter mon fichier</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <a href="#"><i class="fas fa-plus"></i> Ajouter un garant</a>
-                                <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un garant</a>
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_annexes" role="tab">
+                                        < Etape précédente
+                                    </button>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="row justify-content-end">
+                                        <div class="col-sm-auto">
+                                            <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                        </div>
+                                        <div class="col-sm-auto mt-3 mt-sm-0">
+                                            <button class="btn btn-dark" data-toggle="tab" href="#tab_download" role="tab">Etape suivante</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="formulaire__sousElement">
-                            <h3 class="formulaire__sousElement_titre">Annexes fournies par le propriétaire</h3>
-                            <div class="form-group conteneurBoutonUpload--custom">
-                                <span class="labelInput d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
-                                <label class="boutonUpload-custom" for="file-input">Parcourir</label>
-                                <span class="ml-3">Aucun fichier choisi</span>
-                                <input class="form-control" type="file" id="file-input">
-                            </div>
-                            <div class="form-group">
-                                <label>2. Ce fichier contient (plusieurs choix possible)</label>
-                                <select class="custom-select form-control col-sm-8 col-lg-6">
-                                    <option>Diagnostic énergétique</option>
-                                    <option>Diagnostic plomb</option>
-                                    <option>Diagnostic amiante</option>
-                                    <option>Diagnostic gaz</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <span class="labelInput d-block">3. J’ajoute le fichier</span>
-                                <button class="btn btn-primary">Ajouter mon fichier</button>
-                            </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div style="background-color: white; height: 1000px;"></div>
                         </div>
                     </div>
-                    <div class="row justify-content-between">
-                        <div class="col-sm-auto">
-                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_clauses" role="tab">
-                                < Etape précédente
-                            </button>
-                        </div>
-                        <div class="col-sm-auto">
-                            <div class="row justify-content-end">
-                                <div class="col-sm-auto">
-                                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                </div>
+                <div class="tab-pane fade" id="tab_download" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="dossierLocataire__formulaire_section">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h3 class="formulaire__sousElement_titre p-3 bg-warning">Formules</h3>
+                                        <div class="table-responsive">
+                                            <table class="table pricing_table">
+                                                <tr>
+                                                    <th class="d-none d-md-table-cell"></th>
+                                                    <th style="text-align:center">
+                                                        <h5 style="margin:0px">BAIL ZEN</h5><br/>
+                                                        <div class="boutonsRadioViolets__conteneur">
+                                                            <label>
+                                                                <input type="radio" checked="checked" name="radio21">
+                                                                <div>Bail zen choisi</div>
+                                                            </label>
+                                                        </div>
+                                                    </th>
+                                                    <th style="text-align:center;padding-top:15px;padding-bottom:15px;">
+                                                        <h5 style="margin:0px">BAIL LIMITÉ</h5><br/>
+                                                        <div class="boutonsRadioViolets__conteneur">
+                                                            <label>
+                                                                <input type="radio" name="radio21">
+                                                                <div>Choisir</div>
+                                                            </label>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="7" class="pt-4 d-none d-md-table-cell"><strong><i class="fas fa-file-invoice"></i> Bail numerique</strong></td>
+                                                    <td class="pt-4">Bail PDF rempli et mis en forme</td>
+                                                    <td class="pt-4">Bail PDF rempli et mis en forme</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Clauses résolutoire et solidarité</td>
+                                                    <td>Clauses résolutoire et solidarité</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Notice &amp; Etat des lieux</td>
+                                                    <td>Notice &amp; Etat des lieux</td>
+                                                </tr>  
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Garant, paiement par virement, dégradations locataire, visites pour relouer, meubles, franchise, entretien chaudière, etc.">
+                                                        11 Clauses importantes 
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey"> <s>11 Clauses importantes</s></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Acte de caution, inventaire des meubles, liste des charges, liste des réparations, bail parking, etc.">
+                                                        14 Annexes importantes 
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey"> <s>14 Annexes importantes</s></td>
+                                                </tr>
+                                                <tr class="active">
+                                                    <td class="text-center tableau__cellule_nombre pt-4 pb-4">
+                                                        <h4>
+                                                            <span>14,70 €</span><br/>modifications illimitées
+                                                        </h4>
+                                                    </td>
+                                                    <td class="text-center pt-4 pb-4">
+                                                        gratuit<br/>modifiable 3 jours<br/>
+                                                    </td>
+                                                </tr>
+                                                <tr class="active" >
+                                                    <td class="text-center" style="border-top:none"><span style="position:relative;top:-23px;display:block;height:0px"><i class="fas fa-plus-circle fa-2x"></i></span></td>
+                                                    <td class="text-center" style="border-top:none"><span style="display:block;height:0px"></span></td>
+                                                </tr>    
+                                                
+                                                <tr>
+                                                    <td rowspan="7" class="pt-4 d-none d-md-table-cell">
+                                                        <strong><i class="fas fa-tasks"></i> Gestion en ligne</strong><br/>
+                                                        <small><a href="/gestion-locative" target="_blank" style="color: grey; border-bottom: 1px dashed lightgrey">+ d'infos sur la gestion en ligne</a></small><br/>
+                                                        <small><a href="https://www.smartloc.fr/blog/wp-content/uploads/2019/01/Quittance_76341_2019-01.pdf" target="_blank"  style="color: grey; border-bottom: 1px dashed lightgrey">exemple de quittance</a></small>
+    
+                                                    </td>
+                                                    <td  class="pt-4"data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Vous recevez tous les mois par email votre quittance générée automatiquement. Toutes les quittances et avis d'échéances sont disponibles sur votre espace de gestion.">
+                                                        Quittances mensuelles par email
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey pt-4"> <s>Quittances mensuelles par email</s></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Nous vous préparons le courrier type à envoyer au locataire et vous calculons l'augmentation de loyer que vous pouvez appliquer chaque année."></i>
+                                                        Indexation du loyer
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey"> <s>Indexation du loyer</s></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Rappel mail et courriers types pour régularisation des charges, attestation assurance locataire, déclaration fiscale, congé pour vente ou reprise, entretien chaudière, etc">
+                                                        Echéances importantes
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey"> <s>Echéances importantes</s></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Saisie des dépenses et des factures, simulateur pour choix du régime, aide à la déclaration fiscale, mise en relation avec comptable">
+                                                        Finance & fiscalité
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    
+                                                    <td class="grey"> <s>Module financier</s></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Courriers types et assistance pour les contentieux comme contestation des charges, impayés ou retard, retenues pour dégradations, troubles de voisinage">
+                                                        Gestion contentieux locataire 
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey"> <s>Gestion contentieux locataire</s></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover"
+                                                            data-content="Commande en ligne pour dépannage, chiffrage travaux, refacturation au locataire">
+                                                        Assistance en cas de pannes 
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </td>
+                                                    <td class="grey"> <s>Assistance en cas de pannes</s></td>
+                                                </tr>
+                                                <tr class="active">
+                                                    <td class="text-center tableau__cellule_nombre pt-4 pb-4">
+                                                        <h4 style="margin:0px">
+                                                            <s>4,90 €/mois</s><br>3 premiers mois offerts<br><u>annulable à tout moment</u>
+                                                        </h4>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h3 class="formulaire__sousElement_titre p-3 bg-primary">Options</h3>
+                                        <div class="table-responsive">
+                                            <table class="table pricing_table">
+                                                <tr>
+                                                    <th style="text-align:center;padding-top:15px;padding-bottom:15px;">
+                                                        <h5 style="margin:0px">SIGNATURE NUMERIQUE</h5><br/>
+                                                        <div class="boutonsRadioViolets__conteneur">
+                                                            <label>
+                                                                <input type="radio" name="radio21">
+                                                                <div>Ajouter cette option</div>
+                                                            </label>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pt-4">Acceptée par les tribunaux</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Signature instantanée à distance</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Conservation sécurisée</td>
+                                                </tr>
+                                                <tr class="active">
+                                                    <td class="text-center tableau__cellule_nombre pt-4 pb-3">
+                                                        <h4>
+                                                            <span>4 €</span><br/>par signataire
+                                                        </h4>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="formulaire__sousElement">
+                                            <h3 class="formulaire__sousElement_titre bg-secondary p-3">Téléchargement</h3>
+                                            <div class="form-group">
+                                                <label>Email de sauvegarde</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck31">
+                                                    <label class="custom-control-label" for="customCheck31">
+                                                        Je valide les <a href="/cgu" target="_blank" style="color : inherit;border-bottom: 1px dashed lightgrey">conditions générales d'utilisation</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-end mt-4 mb-4">
+                                                <div class="col-sm-auto">
+                                                    <button class="btn btn-outline-dark" type="submit">Aperçu du bail zen</button>
+                                                </div>
+                                                <div class="col-sm-auto mt-3 mt-sm-0">
+                                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_annexes" role="tab">Générer le bail</button>
+                                                </div>
+                                            </div>
+                                            <h3>14,70€ TTC</h3>
+                                            <p><em>Bail numérique + 3 premiers mois offerts sur la gestion en ligne.
+                                                Après 3 mois formule bail Zen à 4,90 €/mois, renouvelable tacitement chaque trimestre, annulable à tout moment en ligne sans frais.</em></p>
+                                            <hr class="mt-4 mb-4">
+                                            <p style="margin-bottom: 10px">Recommandé par <img src="https://www.smartloc.fr/bail/imgs/logo_challenges.png" style="width:100px;height:auto"></p>
+                                            <p style="margin-bottom: 10px">Modèle conforme loi 2020 <img src="https://www.smartloc.fr/bail/imgs/BM.png" style="width:100px;height:auto"></p>
+                                            <p style="margin-bottom: 10px"><a href="https://www.avis-verifies.com/avis-clients/smartloc.fr" target="_blank" style="color : inherit;border-bottom: 1px dashed lightgrey">Avis clients 4,4/5</a> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-auto mt-3 mt-sm-0">
-                                    <button class="btn btn-dark" data-toggle="tab" href="#tab_annexes" role="tab">Etape suivante</button>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_clauses" role="tab">
+                                        < Etape précédente
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -752,9 +1010,7 @@ extra_css: "bail-formulaire.css"
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 mt-5 mt-lg-0">
-            <div style="background-color: white; height: 1000px;"></div>
-        </div>
+
     </div>
 </main>
 
