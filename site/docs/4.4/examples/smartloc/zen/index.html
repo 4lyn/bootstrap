@@ -1,0 +1,470 @@
+---
+layout: examples
+title: zen
+extra_css: "zen.css"
+---
+<script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
+
+
+<div class="progression_line"></div>
+
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Mes dossiers</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Mes baux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Mes assurances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>
+            <div class="row pt-5 pb-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Espace de gestion</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">Marwan DAGHER</h3>
+                            <h3 class="card-subtitle mb-2 text-muted">Stéphanie AZAR-DAGHER</h3>
+                            <dl class="row card-text mt-4">
+                                <dt class="col-sm-5">Loyer</dt>
+                                <dd class="col-sm-7">790€</dd>
+                                <dt class="col-sm-5">Type</dt>
+                                <dd class="col-sm-7">Vide</dd>
+                                <dt class="col-sm-5">Charges</dt>
+                                <dd class="col-sm-7">100€</dd>
+                                <dt class="col-sm-5">Adresse</dt>
+                                <dd class="col-sm-7">39 rue Taitbout</dd>
+                                <dt class="col-sm-5">Début du bail</dt>
+                                <dd class="col-sm-7">23/12/2019</dd>
+                            </dl>
+                          <a href="#" class="card-link">Modifier</a>
+                          <a href="#" class="card-link">Changer de locataire</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Envoyez vos quittances automatiquement</h2> 
+                            <hr>
+                            <h4>Comment fonctionne l'envoi automatique des quittances ?</h4>
+                            <dl class="row">
+                                <dt class="col-sm-2 offset-sm-2">le 5 du mois</dt>
+                                <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
+                                <dt class="col-sm-2 offset-sm-2">le 15 du mois</dt>
+                                <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
+                                <dt class="col-sm-2 offset-sm-2">le 25 du mois</dt>
+                                <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
+                            </dl>
+                            <p>Si vous n'activez pas l'option, la quittance vous sera directement envoyée le 5 du mois.</p>
+                            <hr>
+                            <h4>Pourquoi c'est important ?</h4>
+                            <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                            <ul>
+                                <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
+                                <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                                <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                            </ul>
+                            <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
+                            <div class="custom-control custom-switch mt-3 mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+                            </div>
+                            <p><button class="btn btn-primary">Sauvegarder et passer à l'étape suivante</button></p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-auto">
+                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_personnes" role="tab">
+                                < Etape précédente
+                            </button>
+                        </div>
+                        <div class="col-sm-auto mt-3 mt-sm-0">
+                            <button class="btn btn-dark" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="menuSticky--section">
+        <div class="menuSticky--section__conteneurLiens">
+            <a href="#bail" class="menuSticky--section__conteneurLiens_item">Bail & Annexes</a>
+            <a href="#quittances" class="menuSticky--section__conteneurLiens_item">Quittances</a>
+            <a href="#echeances" class="menuSticky--section__conteneurLiens_item">Echéances</a>
+            <a href="#impayes" class="menuSticky--section__conteneurLiens_item">Assurances</a>
+            <a href="#faq" class="menuSticky--section__conteneurLiens_item">Incidents</a>
+            <a href="#documentation" class="menuSticky--section__conteneurLiens_item">Sortie du locataire</a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="menuSticky--section__ancre" id="bail"></div>
+
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-3 offset-lg-1">
+                <h2>Bail & Annexes</h2>
+
+                <div class="menuSticky--sousElement">
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Bail de location <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Entrée dans les lieux <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bail de location	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
+                            pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
+                        <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
+                            de garantie (que vous pouvez encaisser dès la signature).</p> 
+                        <hr> 
+                        <h4>Bail de location</h4>
+                        <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <div class="menuSticky--section__ancre" id="quittances"></div>
+
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-3 offset-lg-1">
+                <h2>Quittances</h2>
+
+                <div class="menuSticky--sousElement">
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Echéance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2020</small></a></h4>
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Echéance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2020</small></a></h4>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bail de location	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
+                            pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
+                        <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
+                            de garantie (que vous pouvez encaisser dès la signature).</p> 
+                        <hr> 
+                        <h4>Bail de location</h4>
+                        <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="menuSticky--section__ancre" id="echeances"></div>
+
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-3 offset-lg-1">
+                <h2>Echeances</h2>
+
+                <div class="menuSticky--sousElement">
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Attestation assurance locataire <br/><small><i class="far fa-calendar-alt"></i> Mars</small></a></h4>
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Déclaration fiscale<br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Indexation du loyer <br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Régularisation des charges <br/><small><i class="far fa-calendar-alt"></i> Septembre</small></a></h4>
+                    <h4 class="mb-4"><a href="#faq_garanties" class="menuSticky--sousElement__item">Congé propriétaire <br/><small><i class="far fa-calendar-alt"></i> Septembre 2022</small></a></h4>
+
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Bail de location	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
+                            pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
+                        <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
+                            de garantie (que vous pouvez encaisser dès la signature).</p> 
+                        <hr> 
+                        <h4>Bail de location</h4>
+                        <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                        <hr>
+                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        <hr> 
+                        <h4>Documents à remplir et à signer</h4>
+                        <ul class="fa-ul">
+                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                            Inventaire des meubles</a></li>
+                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                        <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>Veuillez vérifier les points suivants</h3>
+                <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
+                <div class="mt-4 mb-2">
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck1">
+                        <label class="custom-control-label" for="modalCheck1">aucun candidat n'est diplomate </label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck2">
+                        <label class="custom-control-label" for="modalCheck2">aucun candidat ou garant n'est domicilié fiscalement à l'étranger ni dans les DOM</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck3">
+                        <label class="custom-control-label" for="modalCheck3">le bail envisagé n'est pas un bail de colocation non solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
+                    </div>
+                </div>
+                <p class="my-4">Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN français.</p>
+                <button class="btn btn-dark" data-dismiss="modal">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- SCRIPT -->
+<script src="../scripts/scripts.js"></script>
