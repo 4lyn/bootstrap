@@ -1555,13 +1555,7 @@ ul.liste--check li::before
 
 /* INPUTS fin de formulaire - Submit et autre */
 
-.conteneurBoutonsFinFormulaire__etapePrecedente 
-{
-    -ms-flex-item-align: center;
-    align-self: center;
-    font-weight: bold;
-    color: black;
-}
+
 
 .conteneurBoutonsFinFormulaire button
 {
@@ -1618,6 +1612,12 @@ ul.liste--check li::before
     padding-top: 3px;
     padding-bottom: 3px;
 }
+
+.btn-link{
+    font-weight: bold;
+    color: black;
+}
+
 
 
 

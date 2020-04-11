@@ -75,44 +75,47 @@ extra_css: "zen.css"
                                 <dd class="col-sm-7">23/12/2019</dd>
                             </dl>
                             <a href="/dossier" class="btn btn-outline-dark btn-sm">Paramètres</a>
-                            <a href="#" class="card-link ml-3">Changer de locataire</a>
+                            <a href="#" class="card-link ml-3 btn-link"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title">Envoyez vos quittances automatiquement</h2> 
+                            <h3 class="card-title">Envoyez vos quittances automatiquement</h3> 
                             <hr>
-                            <h4>Comment fonctionne l'envoi automatique des quittances ?</h4>
-                            <dl class="row">
-                                <dt class="col-sm-2 offset-sm-2">le 5 du mois</dt>
-                                <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
-                                <dt class="col-sm-2 offset-sm-2">le 15 du mois</dt>
-                                <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
-                                <dt class="col-sm-2 offset-sm-2">le 25 du mois</dt>
-                                <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
-                            </dl>
-                            <p>Si vous n'activez pas l'option, la quittance vous sera directement envoyée le 5 du mois.</p>
-                            <hr>
-                            <h4>Pourquoi c'est important ?</h4>
-                            <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
-                            <ul>
-                                <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
-                                <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
-                                <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
-                            </ul>
-                            <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
-                            <div class="custom-control custom-switch mt-3 mb-3">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+                            <div class="section__sousElement">
+                                <h4 class="section__sousElement_titre">Comment fonctionne l'envoi automatique des quittances ?</h4>
+                                <dl class="row">
+                                    <dt class="col-sm-2 offset-sm-2">le 5 du mois</dt>
+                                    <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
+                                    <dt class="col-sm-2 offset-sm-2">le 15 du mois</dt>
+                                    <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
+                                    <dt class="col-sm-2 offset-sm-2">le 25 du mois</dt>
+                                    <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
+                                </dl>
+                                <p>Si vous n'activez pas l'option, la quittance vous sera directement envoyée le 5 du mois.</p>
                             </div>
-                            <p><button class="btn btn-primary">Sauvegarder et passer à l'étape suivante</button></p>
+                            <div class="section__sousElement">
+                                <h4 class="section__sousElement_titre">Pourquoi c'est important ?</h4>
+                                <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                                <ul>
+                                    <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
+                                    <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                                    <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                                </ul>
+                                <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
+                                <div class="custom-control custom-switch mt-4 mb-4">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+                                </div>
+                                <p><button class="btn btn-primary">Sauvegarder et passer à l'étape suivante</button></p>
+                            </div>
                         </div>
                     </div>
                     <div class="row justify-content-between">
                         <div class="col-sm-auto">
-                            <button type="button" class="btn btn-link conteneurBoutonsFinFormulaire__etapePrecedente" data-toggle="tab" href="#tab_personnes" role="tab">
+                            <button type="button" class="btn btn-link" data-toggle="tab" href="#tab_personnes" role="tab">
                                 < Etape précédente
                             </button>
                         </div>
@@ -161,13 +164,24 @@ extra_css: "zen.css"
                         <div id="bail_pdf" class="menuSticky--sousElement__ancre"></div>
                         <h3 class="card-title">Bail de location	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
                         <hr>
-                        <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
-                            pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
-                        <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
-                            de garantie (que vous pouvez encaisser dès la signature).</p> 
-                        <hr> 
-                        <h4>Bail de location</h4>
-                        <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+                        <div class="section__sousElement">
+                            <h4 class="section__sousElement_titre">Bail de location</h4>
+                            <p><a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button></p>
+                            <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
+                                pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
+                            <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
+                                de garantie (que vous pouvez encaisser dès la signature).</p>
+                        </div>
+                        <div class="section__sousElement">
+                            <h4 class="section__sousElement_titre">Signature électronique</h4>
+                            <p>La signature électronique du bail est acceptée par les compagnies d'assurance et les tribunaux en cas d'impayés. Depuis fin 2018 il est possible de signer électroniquement les actes de caution.</p>
+                            <div class="card cardLigne">
+                                <div class="card-body">
+                                    <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                    <span><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/">Signature électronique du bail</a></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -175,19 +189,31 @@ extra_css: "zen.css"
                         <div id="bail_edl" class="menuSticky--sousElement__ancre"></div>
                         <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
                         <hr>
-                        <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
-                        <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
-                        <hr> 
-                        <h4>Documents à remplir et à signer</h4>
-                        <ul class="fa-ul">
-                            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
-                            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
-                            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                            Inventaire des meubles</a></li>
-                            <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
-                        </ul>
+                        <div class="section__sousElement">
+                            <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
+                            <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
+                        </div>
+                        <div class="section__sousElement">
+                            <h4 class="section__sousElement_titre">Documents à remplir et à signer</h4>
+                            <ul class="fa-ul">
+                                <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                                État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+                                <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                                État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+                                <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                                Inventaire des meubles</a></li>
+                                <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
+                            </ul>
+                        </div>
+                        <div class="section__sousElement">
+                            <h4 class="section__sousElement_titre">Documents à transmettre au locataire</h4>
+                            <ul class="fa-ul">
+                                <li><a href="/bail/pdf/echeance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                                Avis d'échéance Mars 2020</a></li>
+                                <li><a href="/bail/pdf/quittance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+                                Quittance de loyer Mars 2020</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,7 +287,7 @@ extra_css: "zen.css"
                         <div class="section__sousElement">
                             <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
                             <p>Notre équipe peut vous renseigner sur les différentes modalités de déclaration de vos revenus fonciers, et vous proposer les solutions les plus adaptées à vos besoins.</p>
-                            <p><a href="#" class="btn btn-outline-dark">Parlez à un gestionnaire</a></p>
+                            <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
                         </div>
                         <div class="section__sousElement">
                             <h4 class="section__sousElement_titre">Choix du régime fiscal en meublé</h4>
@@ -286,7 +312,7 @@ extra_css: "zen.css"
                             </div>
                         </div>
                         <div class="section__sousElement">
-                            <p><a href="https://smartloc.typeform.com/to/IjCCDd" class="btn btn-dark" target="_blank">Simulation avec notre comptable partenaire</a></p>
+                            <p><a href="https://smartloc.typeform.com/to/IjCCDd" class="btn btn-dark btn-sm" target="_blank">Simulation avec notre comptable partenaire</a></p>
                         </div>
                     </div>
                 </div>
