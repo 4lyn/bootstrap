@@ -84,7 +84,7 @@ header .navbar{
     padding-left: 0px;padding-right: 0px;
 }
 
-header  .navbar-collapse a{
+header  .navbar-collapse .nav-link{
     margin-left: 1rem;
 }
 
@@ -689,8 +689,8 @@ ul.liste--check li::before
 
 .menuSticky--section__ancre
 {
-    position: absolute;
-    top: -3rem;
+    position:relative;
+    top: -70px;
 }
 
 
@@ -1611,6 +1611,14 @@ ul.liste--check li::before
     color: grey;
     opacity: 0.5;
 }
+
+/*** ZEN ***/
+
+.fa-ul li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 
 
 
