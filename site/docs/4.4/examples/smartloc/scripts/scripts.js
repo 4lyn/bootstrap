@@ -7,8 +7,6 @@
 
 const tailleTypo = parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size'))
 
-
-
 // NAV AVEC JUMP DANS LA PAGE
 const menuSticky_sousElement_items = document.querySelectorAll('.menuSticky--sousElement__item')
 const menuSticky_section_items = document.querySelectorAll('.menuSticky--section__conteneurLiens_item')
@@ -38,6 +36,4 @@ const set_active = function (items, ancres)
 
 set_active(menuSticky_sousElement_items, menuSticky_sousElement_ancres)
 set_active(menuSticky_section_items, menuSticky_section_ancres)
-
-
 
