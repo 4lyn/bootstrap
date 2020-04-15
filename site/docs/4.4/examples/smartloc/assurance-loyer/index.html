@@ -98,18 +98,34 @@ extra_css: "assurance-loyer.css"
 <!-- MAIN -->
 
 <main>
-    <div class="menuSticky--section">
-        <div class="menuSticky--section__conteneurLiens">
-            <a href="#garanties" class="menuSticky--section__conteneurLiens_item">Garanties & tarifs</a>
-            <a href="#conditions" class="menuSticky--section__conteneurLiens_item">Conditions</a>
-            <a href="#status" class="menuSticky--section__conteneurLiens_item">Justificatifs locataire</a>
-            <a href="#impayes" class="menuSticky--section__conteneurLiens_item">En cas d’impayés</a>
-            <a href="#faq" class="menuSticky--section__conteneurLiens_item">FAQ</a>
-            <a href="#documentation" class="menuSticky--section__conteneurLiens_item">Documentation</a>
-            <a href="#about" class="menuSticky--section__conteneurLiens_item">A propos</a>
-        </div>
+
+    <div class="menuSticky--section" id="menuSticky_gli">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#garanties" class="menuSticky--section__conteneurLiens_item">Garanties & tarifs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#conditions" class="menuSticky--section__conteneurLiens_item">Conditions</a>
+            </li>
+            <li class="nav-item">
+                <a href="#status" class="menuSticky--section__conteneurLiens_item">Justificatifs locataire</a>
+            </li>
+            <li class="nav-item">
+                <a href="#impayes" class="menuSticky--section__conteneurLiens_item">En cas d’impayés</a>
+            </li>
+            <li class="nav-item">
+                <a href="#faq" class="menuSticky--section__conteneurLiens_item">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#documentation" class="menuSticky--section__conteneurLiens_item">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="menuSticky--section__conteneurLiens_item">A propos</a>
+            </li>
+        </ul>
         <a href="/dossier" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
     </div>
+
 
     <!-- SECTION GARANTIES ET TARIFS -->
     <section class="sectionGaranties bg-warning container-fluid">
@@ -241,7 +257,7 @@ extra_css: "assurance-loyer.css"
                     <div class="tab-pane active" id="entrants" role="tabpanel" aria-labelledby="home-tab">
                         <div class="section__sousElement encadrement--gris">
                             <h3>Revenu supérieur à 2,85 x le loyer CC</h3>
-                            <p>Vous pouvez sommer les revenus des candidats éligibles ou des garants éligibles. 
+                            <p>Vous pouvez sommer les revenus des candidats éligibles ou des garants éligibles.</p>
                             <p>Il est par contre impossible de cumuler garant et assurance sauf pour les étudiants.</p>
                             <p>Pour les salariés c'est le salaire net garanti et régulier avant impôt à la source qui doit être retenu. Donc le revenu net hors primes et heures supplémentaires (si nécessaire retenez 75% du brut garanti).</p>
                             <p>Pour les indépendants et les retraités c'est le dernier revenu imposable en haut de l'avis d'impôts qui doit être retenu.</p>
@@ -335,10 +351,8 @@ extra_css: "assurance-loyer.css"
                                 <li>Les relevés de gestion de votre gestionnaire ou vos relevés bancaires prouvant que le locataire vous a bien payé par chèque ou virement sur les 6 derniers mois.</li>
                             </ul>
                         </div> 
-                    </div>
+                    </div> 
                 </div>
-                
-
             </div>
         </div>
 
@@ -627,14 +641,25 @@ extra_css: "assurance-loyer.css"
 
         <div class="row">
             <div class="col-lg-2 offset-lg-1">
-                <h2>FAQ</h2>
-
-                <div class="menuSticky--sousElement">
-                    <h4><a href="#faq_garanties" class="menuSticky--sousElement__item">Les garanties</a></h4>
-                    <h4><a href="#faq_criteres" class="menuSticky--sousElement__item">Les critères</a></h4>
-                    <h4><a href="#faq_dossier" class="menuSticky--sousElement__item">Le dossier locataire</a></h4>
-                    <h4><a href="#faq_contrat" class="menuSticky--sousElement__item">La vie du contrat</a></h4>
-                    <h4><a href="#faq_impayes" class="menuSticky--sousElement__item">La procédure d’impayés</a></h4>
+                <div class="menuSticky--sousElement" id="menuSticky_gli_faq">
+                    <h2>FAQ</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4><a href="#faq_garanties" class="menuSticky--sousElement__item active">Les garanties</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_criteres" class="menuSticky--sousElement__item">Les critères</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_dossier" class="menuSticky--sousElement__item">Le dossier locataire</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_contrat" class="menuSticky--sousElement__item">La vie du contrat</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_impayes" class="menuSticky--sousElement__item">La procédure d’impayés</a></h4>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-8 mt-4 mt-lg-0">
@@ -647,7 +672,6 @@ extra_css: "assurance-loyer.css"
                     <p>Vous êtes également couvert sur les dégradations immobilières causées par le locataire et qui ne seraient pas remboursées 
                         (directement par le locataire ou en utilisant son dépôt de garantie - voir notre <a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">fiche pratique sur le sujet</a>).</p>
                     <p>Enfin la garantie vous couvre contre les départs "à la cloche de bois", c'est à dire les départs furtifs du locataire abandonnant son logement. Vous êtes alors remboursé des loyers non perçus jusqu'à la récupération effective du logement.</p>
-                
                 </div>
                 <div class="section__sousElement">
                     <h3 class="section__sousElement_titre">Y a-t-il une franchise ou une carence sur l'assurance loyer impayé ?</h3> 
@@ -679,7 +703,7 @@ extra_css: "assurance-loyer.css"
                         </div>
                     </div>                    
                 </div>
-           
+        
                 <div class="section__sousElement">
                     <h3 class="section__sousElement_titre">Qui s'occupe de la procédure d'expulsion du locataire ?</h3>
                     <p>La procédure d'expulsion du locataire et de recouvrement des impayés est ménée par les équipes de la compagnie d'assurance, jusqu'à la récupération des lieux.</p>
@@ -692,11 +716,13 @@ extra_css: "assurance-loyer.css"
                             <span><a href="/blog/assurance-loyer-impaye-prise-en-charge-de-la-procedure-juridique/">Procédure d'expulsion du locataire</a></span>
                         </div>
                     </div> 
-                </div>
+                </div> 
                 <div class="section__sousElement">
                     <h3 class="section__sousElement_titre">Que couvre en pratique la protection juridique ?</h3>
                     <p>La garantie protection juridique proposée en formule premium vous couvre pour les contentieux que vous pourriez avoir <strong>hors impayés</strong>, la procédure d'expulsion du locataire en impayés étant déjà incluse dans la formule Basic ou Classic.</p>
                     <p>Les contentieux hors impayés sont peu nombreux, ils concernent en général des contestations sur les charges, les travaux, ou les troubles de voisinage.</p>
+                    <p>A noter que cette protection juridique est parfois déjà proposée dans votre offre d'assurance PNO.</p>                   
+                <p>A noter que cette protection juridique est parfois déjà proposée dans votre offre d'assurance PNO.</p>                   
                     <p>A noter que cette protection juridique est parfois déjà proposée dans votre offre d'assurance PNO.</p>                   
                 </div>
                 <div class="section__sousElement">
@@ -718,7 +744,7 @@ extra_css: "assurance-loyer.css"
                 </div>
                 <div class="section__sousElement">
                     <h3 class="section__sousElement_titre">Couvrez-vous les DOM-TOM ?</h3>
-                    <p><p>Non, il faut que le logement soit en France métropolitaine et que les locataires ou leurs garants y soient également domiciliés.</p></p>  
+                    <p>Non, il faut que le logement soit en France métropolitaine et que les locataires ou leurs garants y soient également domiciliés.</p> 
                 </div>
 
                 <div class="section__sousElement">
@@ -765,13 +791,13 @@ extra_css: "assurance-loyer.css"
                 </div>
                 <div class="section__sousElement">
                     <h3 class="section__sousElement_titre">Quels revenus retenir pour la garantie loyer impayé ?</h3>
-	                <p><strong>Pour les salariés</strong> il est nécessaire de retenir <strong>le revenu net imposable mensuel, déduction faite des primes et compléments exceptionnels non récurrents</strong>, comme les primes de fin d'année, les heures supplémentaires, les primes sur résultats, les intéressements, etc.</p>
-	                <p>Pour recalculer le net hors primes à partir du brut de base en haut de la fiche de paie, vous pouvez utiliser ce <a href="http://www.salaire-brut-en-net.fr/" target="_blank" rel="nofollow">simulateur</a>.</p>
-	                <p>Les primes et indemnités récurrentes (prime d'ancienneté, treizième mois) sont quant à elle éligibles.</p>
-	                <p><strong>Pour les non-salariés</strong>, retenez la moyenne des revenus indiqués sur les 2 derniers avis d'imposition.</p>
+                    <p><strong>Pour les salariés</strong> il est nécessaire de retenir <strong>le revenu net imposable mensuel, déduction faite des primes et compléments exceptionnels non récurrents</strong>, comme les primes de fin d'année, les heures supplémentaires, les primes sur résultats, les intéressements, etc.</p>
+                    <p>Pour recalculer le net hors primes à partir du brut de base en haut de la fiche de paie, vous pouvez utiliser ce <a href="http://www.salaire-brut-en-net.fr/" target="_blank" rel="nofollow">simulateur</a>.</p>
+                    <p>Les primes et indemnités récurrentes (prime d'ancienneté, treizième mois) sont quant à elle éligibles.</p>
+                    <p><strong>Pour les non-salariés</strong>, retenez la moyenne des revenus indiqués sur les 2 derniers avis d'imposition.</p>
                 </div>
                 <div class="section__sousElement">
-	                <h3 class="section__sousElement_titre">Quelles allocations retenir pour une assurance loyer impayé?</h3>
+                    <h3 class="section__sousElement_titre">Quelles allocations retenir pour une assurance loyer impayé?</h3>
                     <p>Les allocations familiales et les allocations logement sont les deux principales allocations éligibles.</p>
                     <p>Point important pour les APL sur le logement futur, il est nécessaire de fonder le calcul du montant de l'allocation à retenir sur une simulation extraite du site de la CAF et non sur les allocations perçues sur l'ancien logement.</p>
                     <p>A noter enfin que les <strong>personnes sans emploi</strong> ne sont pas éligibles, même si leurs allocations éligibles dépassent le seuil de solvabilité (dérogation possible après étude pour les titulaires de l'AAH).</p>
@@ -798,7 +824,7 @@ extra_css: "assurance-loyer.css"
                 </div>
                 <div class="section__sousElement">
                     <h3 class="section__sousElement_titre">Les transfrontaliers sont-ils éligibles à la garantie loyer impayé ?</h3>
-					<p>Vous pouvez garantir les loyers payés par des locataires transfrontaliers (Suisse et Belgique notamment), à condition qu'ils soient domiciliés fiscalement en France et qu'ils aient un compte bancaire ouvert en France.</p>
+                    <p>Vous pouvez garantir les loyers payés par des locataires transfrontaliers (Suisse et Belgique notamment), à condition qu'ils soient domiciliés fiscalement en France et qu'ils aient un compte bancaire ouvert en France.</p>
                 </div>
                 <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
                     <div class="card cardLigne">
@@ -920,7 +946,7 @@ extra_css: "assurance-loyer.css"
                 </div>                
 
                 <div class="section__sousElement">
-                     <h3 class="section__sousElement_titre">La garantie s'active-t-elle si le locataire paie une partie du loyer seulement ?</h3>
+                    <h3 class="section__sousElement_titre">La garantie s'active-t-elle si le locataire paie une partie du loyer seulement ?</h3>
                     <p>Oui, sur une échéance de loyer, l'impayé partiel est considéré de manière identique à un impayé total. De manière générale la procédure de recouvrement et d'expulsion lancée par l'assurance se poursuit tant que la <strong>dette locative totale est supérieure à un demi mois de loyer mensuel</strong>.</p>
                 </div>
                 <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
@@ -933,22 +959,22 @@ extra_css: "assurance-loyer.css"
                 </div>
 
                 <div class="section__sousElement">
-                     <h3 class="section__sousElement_titre">Sous quel délai est-on remboursé ?</h3>
+                    <h3 class="section__sousElement_titre">Sous quel délai est-on remboursé ?</h3>
                     <p>Vous êtes remboursé après 3 mois des trois premières échéances impayées, puis vous êtes remboursé tous les mois.</p>
                 </div>
 
                 <div class="section__sousElement">
-                     <h3 class="section__sousElement_titre">Y a-t-il une franchise ?</h3>
+                    <h3 class="section__sousElement_titre">Y a-t-il une franchise ?</h3>
                     <p>Non vous n'avez pas de franchise pour les impayés et la procédure d'expuslion. Une franchise d'un mois de loyer, correspondant a minima au dépôt de garantie, s'applique pour la composante dégradations immobilières.</p>
                 </div>
 
                 <div class="section__sousElement">
-                     <h3 class="section__sousElement_titre">Qui s'occupe de l'expulsion ?</h3>
+                    <h3 class="section__sousElement_titre">Qui s'occupe de l'expulsion ?</h3>
                     <p>L'assurance se charge de toute la procédure avec des huissiers et des avocats sélectionnés. Une fois le dossier transmis à la compagnie vous n'avez donc rien à faire et vous êtes remboursé tous les mois tant que le locataire n'est pas parti ou que sa dette n'a pas été soldée.</p>
                 </div>
 
                 <div class="section__sousElement">
-                     <h3 class="section__sousElement_titre">Doit-on faire venir un expert en cas de dégradations ?</h3>
+                    <h3 class="section__sousElement_titre">Doit-on faire venir un expert en cas de dégradations ?</h3>
                     <p>Le remboursement des dégradations se fait sur étude des états des lieux d'entrée et de sortie, des devis que vous avez fournis et d'éventuelles photos prises. La compagnie peut au cas par cas vous demander d'attendre le passage d'un expert qu'elle mandatera pour évaluer les dégâts avant de démarrer les travaux.</p>
                 </div>
                 <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
@@ -959,7 +985,7 @@ extra_css: "assurance-loyer.css"
                         </div>
                     </div>
                 </div>                
-            </div>
+            </div>                
         </div>   
     </section>
 
@@ -971,12 +997,18 @@ extra_css: "assurance-loyer.css"
 
         <div class="row">
             <div class="col-lg-2 offset-lg-1">
-                <h2>La doc</h2>
-
-                <div class="menuSticky--sousElement">
-                    <h4><a href="#doc_souscrire" class="menuSticky--sousElement__item">Avant de souscrire</a></h4>
-                    <h4><a href="#doc_bail" class="menuSticky--sousElement__item">Pour signer le bail</a></h4>
-                    <h4><a href="#doc_impaye" class="menuSticky--sousElement__item">En cas d'impayés</a></h4>
+                <div class="menuSticky--sousElement" id="menuSticky_gli_doc">
+                    <h2>La doc</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4><a href="#doc_souscrire" class="menuSticky--sousElement__item active">Avant de souscrire</a></h4>                          </li>
+                        <li class="nav-item">
+                            <h4><a href="#doc_bail" class="menuSticky--sousElement__item">Pour signer le bail</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#doc_impaye" class="menuSticky--sousElement__item">En cas d'impayés</a></h4>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-8 mt-4 mt-lg-0">
@@ -1054,15 +1086,9 @@ extra_css: "assurance-loyer.css"
                         </div>
                     </div>
                 </div>                
-
-                
             </div>
-        </div>   
+        </div>    
     </section>
-    
-
-
-
     
 
     <!-- SECTION COMPARATIFS -->
@@ -1098,6 +1124,7 @@ extra_css: "assurance-loyer.css"
             </div>
         </div>
     </section>
+
 
     <!-- SECTION VIOLETTE AVEC BACKGROUND "DEMARRER" -->
     <section class="sectionSmartlocAide container-fluid">

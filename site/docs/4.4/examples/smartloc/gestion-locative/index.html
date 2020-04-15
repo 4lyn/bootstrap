@@ -70,14 +70,24 @@ extra_css: "gestion-locative.css"
 <!-- MAIN -->
 
 <main>
-    <div class="menuSticky--section">
-        <div class="menuSticky--section__conteneurLiens">
-            <a href="#fonctionnalites" class="menuSticky--section__conteneurLiens_item">Fonctionnalités</a>
-            <a href="#tarifs" class="menuSticky--section__conteneurLiens_item">Tarifs</a>
-            <a href="#questions" class="menuSticky--section__conteneurLiens_item">Vos questions</a>
-            <a href="#temoignages" class="menuSticky--section__conteneurLiens_item">Témoignages</a>
-            <a href="#usage" class="menuSticky--section__conteneurLiens_item">Cas d’usage</a>
-        </div>
+    <div class="menuSticky--section" id="menuSticky_gel">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#fonctionnalites" class="menuSticky--section__conteneurLiens_item">Fonctionnalités</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tarifs" class="menuSticky--section__conteneurLiens_item">Tarifs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#questions" class="menuSticky--section__conteneurLiens_item">Vos questions</a>
+            </li>
+            <li class="nav-item">
+                <a href="#temoignages" class="menuSticky--section__conteneurLiens_item">Témoignages</a>
+            </li>
+            <li class="nav-item">
+                <a href="#usage" class="menuSticky--section__conteneurLiens_item">Cas d’usage</a>
+            </li>
+        </ul>
         <a href="" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
     </div>
 
@@ -209,8 +219,7 @@ extra_css: "gestion-locative.css"
                                 </div>
                             </div>
                         </div>                        
-                    </div>
-
+                    </div> 
                 </div>
                 <div class="section__sousElement alert-notice bg-white border-0">
                     <div class="notice-illustration d-none d-sm-block">
@@ -334,7 +343,6 @@ extra_css: "gestion-locative.css"
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -430,7 +438,7 @@ extra_css: "gestion-locative.css"
                     <h2 class="section__sousElement_titre">Découvrez notre offre sur des exemples concrets </h2>
                     <p>Le bail et les échéances importantes sont donc gérés automatiquement via votre espace de gestion Smartloc; 
                         vous vous demandez peut être comment sont résolus les nombreux problèmes particuliers que peuvent rencontrer nos bailleurs.
-                         Voici quelques cas d'usage, la liste n'est pas exhaustive.</p>
+                        Voici quelques cas d'usage, la liste n'est pas exhaustive.</p>
                 </div>
 
                 
@@ -538,6 +546,7 @@ extra_css: "gestion-locative.css"
             </div>
         </div>
     </section>
+
 
     <!-- SECTION VIOLETTE AVEC BACKGROUND "DEMARRER" -->
     <section class="sectionSmartlocAide container-fluid">

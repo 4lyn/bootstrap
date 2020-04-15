@@ -637,7 +637,7 @@ ul.liste--check li::before
     top: 0;
     padding: 0 10rem;
     padding-top: .875rem;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -648,16 +648,6 @@ ul.liste--check li::before
     z-index: 20;
 }
 
- .menuSticky--section__conteneurLiens
-{
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}   
 
 .menuSticky--section__conteneurLiens_item
 {

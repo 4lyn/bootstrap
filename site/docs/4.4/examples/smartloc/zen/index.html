@@ -146,18 +146,24 @@ extra_css: "zen.css"
                 <a class="menuSticky--section__conteneurLiens_item" href="#echeances">Echeances</a>
             </li>
         </ul>
-       <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Paramètres</a>
+        <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Paramètres</a>
     </div>
 
-    <div class="container-fluid" data-spy="scroll" data-target="#menuSticky_zen" data-offset="0" style="position: relative;">
+    <div class="container-fluid">
         <div class="menuSticky--section__ancre" id="bail"></div>
 
         <div class="row pt-5 pb-5">
             <div class="col-lg-3 offset-lg-1">
-                <div class="menuSticky--sousElement">
+                <div class="menuSticky--sousElement" id="menuSticky_zen_bail">
                     <h2>Bail & Annexes</h2>
-                    <h4 class="mb-4"><a href="#bail_pdf" class="menuSticky--sousElement__item">Bail de location <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
-                    <h4 class="mb-4"><a href="#bail_edl" class="menuSticky--sousElement__item">Entrée dans les lieux <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#bail_pdf" class="menuSticky--sousElement__item">Bail de location <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#bail_edl" class="menuSticky--sousElement__item">Entrée dans les lieux <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -226,10 +232,16 @@ extra_css: "zen.css"
         <div class="row pt-5 pb-5">
             <div class="col-lg-3 offset-lg-1">
 
-                <div class="menuSticky--sousElement">
+                <div class="menuSticky--sousElement" id="menuSticky_zen_quittances">
                     <h2>Quittances</h2>
-                    <h4 class="mb-4"><a href="#quittances_mois" class="menuSticky--sousElement__item">Echéance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2020</small></a></h4>
-                    <h4 class="mb-4"><a href="#quittances_prochain" class="menuSticky--sousElement__item">Echéance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2020</small></a></h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#quittances_mois" class="menuSticky--sousElement__item">Echéance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2020</small></a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#quittances_prochain" class="menuSticky--sousElement__item">Echéance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2020</small></a></h4>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -269,14 +281,25 @@ extra_css: "zen.css"
 
         <div class="row pt-5 pb-5">
             <div class="col-lg-3 offset-lg-1">
-                <div class="menuSticky--sousElement">
+                <div class="menuSticky--sousElement" id="menuSticky_zen_echeances">
                     <h2>Echeances</h2>
-                    <h4 class="mb-4"><a href="#echeances_fisca" class="menuSticky--sousElement__item">Déclaration fiscale<br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
-                    <h4 class="mb-4"><a href="#echeances_attestation" class="menuSticky--sousElement__item">Attestation assurance locataire <br/><small><i class="far fa-calendar-alt"></i> Mars</small></a></h4>
-                    <h4 class="mb-4"><a href="#echeances_index" class="menuSticky--sousElement__item">Indexation du loyer <br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
-                    <h4 class="mb-4"><a href="#echeances_regul" class="menuSticky--sousElement__item">Régularisation des charges <br/><small><i class="far fa-calendar-alt"></i> Septembre</small></a></h4>
-                    <h4 class="mb-4"><a href="#echeances_conge" class="menuSticky--sousElement__item">Congé propriétaire <br/><small><i class="far fa-calendar-alt"></i> Septembre 2022</small></a></h4>
-
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#echeances_fisca" class="menuSticky--sousElement__item">Déclaration fiscale<br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#echeances_attestation" class="menuSticky--sousElement__item">Attestation assurance locataire <br/><small><i class="far fa-calendar-alt"></i> Mars</small></a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#echeances_index" class="menuSticky--sousElement__item">Indexation du loyer <br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#echeances_regul" class="menuSticky--sousElement__item">Régularisation des charges <br/><small><i class="far fa-calendar-alt"></i> Septembre</small></a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="mb-4"><a href="#echeances_conge" class="menuSticky--sousElement__item">Congé propriétaire <br/><small><i class="far fa-calendar-alt"></i> Septembre 2022</small></a></h4>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-7">
