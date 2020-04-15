@@ -8,7 +8,7 @@ extra_css: "zen.css"
 
 <div class="progression_line"></div>
 
-<header class="container-fluid">
+<header class="container-fluid bg-warning pb-5">
     <div class="row">
         <div class="col-lg-10 offset-lg-1">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -128,32 +128,34 @@ extra_css: "zen.css"
         </div>
     </div>
     <img class="sectionTemoignages__formesBackground couronneNoir d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/couronne_noire_2.png" alt="">
-    <img class="sectionTemoignages__formesBackground rondJaune d-none d-xl-block" src="../../../assets/img/smartloc/illustrations/shapes/rond_jaune_2.png" alt="">
 
 </header>
 
 
+
 <main>
-    <div class="menuSticky--section mt-5">
-        <div class="menuSticky--section__conteneurLiens">
-            <a href="#bail" class="menuSticky--section__conteneurLiens_item active">Bail & Annexes</a>
-            <a href="#quittances" class="menuSticky--section__conteneurLiens_item">Quittances</a>
-            <a href="#echeances" class="menuSticky--section__conteneurLiens_item">Echéances</a>
-            <a href="#assurances" class="menuSticky--section__conteneurLiens_item">Assurances</a>
-            <a href="#incidents" class="menuSticky--section__conteneurLiens_item">Incidents</a>
-            <a href="#sortie" class="menuSticky--section__conteneurLiens_item">Sortie du locataire</a>
-        </div>
-        <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Paramètres</a>
+    <div class="menuSticky--section" id="menuSticky_zen">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="active menuSticky--section__conteneurLiens_item" href="#bail">Bail & Annexes</a>
+            </li>
+            <li class="nav-item">
+                <a class="menuSticky--section__conteneurLiens_item" href="#quittances">Quittances</a>
+            </li>
+            <li class="nav-item">
+                <a class="menuSticky--section__conteneurLiens_item" href="#echeances">Echeances</a>
+            </li>
+        </ul>
+       <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Paramètres</a>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" data-spy="scroll" data-target="#menuSticky_zen" data-offset="0" style="position: relative;">
         <div class="menuSticky--section__ancre" id="bail"></div>
 
-        <div class="row pt-5 pb-5 bg-warning">
+        <div class="row pt-5 pb-5">
             <div class="col-lg-3 offset-lg-1">
-                <h2>Bail & Annexes</h2>
-
                 <div class="menuSticky--sousElement">
+                    <h2>Bail & Annexes</h2>
                     <h4 class="mb-4"><a href="#bail_pdf" class="menuSticky--sousElement__item">Bail de location <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
                     <h4 class="mb-4"><a href="#bail_edl" class="menuSticky--sousElement__item">Entrée dans les lieux <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
                 </div>
@@ -223,9 +225,9 @@ extra_css: "zen.css"
 
         <div class="row pt-5 pb-5">
             <div class="col-lg-3 offset-lg-1">
-                <h2>Quittances</h2>
 
                 <div class="menuSticky--sousElement">
+                    <h2>Quittances</h2>
                     <h4 class="mb-4"><a href="#quittances_mois" class="menuSticky--sousElement__item">Echéance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2020</small></a></h4>
                     <h4 class="mb-4"><a href="#quittances_prochain" class="menuSticky--sousElement__item">Echéance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2020</small></a></h4>
                 </div>
@@ -265,11 +267,10 @@ extra_css: "zen.css"
 
         <div class="menuSticky--section__ancre" id="echeances"></div>
 
-        <div class="row pt-5 pb-5 bg-primary">
+        <div class="row pt-5 pb-5">
             <div class="col-lg-3 offset-lg-1">
-                <h2>Echeances</h2>
-
                 <div class="menuSticky--sousElement">
+                    <h2>Echeances</h2>
                     <h4 class="mb-4"><a href="#echeances_fisca" class="menuSticky--sousElement__item">Déclaration fiscale<br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
                     <h4 class="mb-4"><a href="#echeances_attestation" class="menuSticky--sousElement__item">Attestation assurance locataire <br/><small><i class="far fa-calendar-alt"></i> Mars</small></a></h4>
                     <h4 class="mb-4"><a href="#echeances_index" class="menuSticky--sousElement__item">Indexation du loyer <br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>

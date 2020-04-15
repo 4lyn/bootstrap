@@ -637,6 +637,7 @@ ul.liste--check li::before
     top: 0;
     padding: 0 10rem;
     padding-top: .875rem;
+    padding-bottom: 9px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
