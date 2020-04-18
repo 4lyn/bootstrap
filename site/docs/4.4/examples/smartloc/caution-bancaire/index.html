@@ -1,0 +1,1251 @@
+---
+layout: examples
+title: assurance loyer impayé
+extra_css: "assurance-loyer.css"
+---
+
+<script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
+
+
+<!-- HEADER -->
+
+<header class="container-fluid bg-warning">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bail/">Bail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/comparateur-assurance-loyer-impaye">Assurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav>    
+
+            <div class="headerClassique__titrage row">
+                <div class="col-md-6">
+                    <h1 class="headerClassique__titrage_titre">L’assurance loyer impayé simple avec dossier locataire et bail numériques.</h1>
+                    <span class="headerClassique__titrage_sousTitre">Loyers, dégradations et procédure d'expulsion sont pris en charge dès le premier mois d'impayé, en durée illimitée.</span>
+                    <a href="/dossier" class="btn btn-dark headerClassique__titrage_bouton">Démarrer</a>
+                </div>
+                <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
+                    <img src="../../../assets/img/smartloc/illustrations/bouclier_illustrated_grisclair.png" alt="">
+                </div>
+            </div>
+            <div class="headerClassique__commentCaMarche row">
+                <div class="col-md-3">
+                    <h2 class="headerClassique__commentCaMarche_titre">Comment ça marche ?</h2>
+                </div>
+                <div class="headerClassique__commentCaMarche_contenu col-md-9">
+                    <div class="headerClassique__commentCaMarche_conteneurEtapes row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">1</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Constitution d’un dossier locataire</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">2</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Rédaction et signature du bail</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">3</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Souscription à l’assurance en ligne </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="headerClassique__commentCaMarche_etape">
+                                <span class="headerClassique__commentCaMarche_etape_number">4</span>
+                                <h5 class="headerClassique__commentCaMarche_etape_text">Une gestion locative conforme</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main>
+
+    <div class="menuSticky--section" id="menuSticky_gli">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#garanties" class="menuSticky--section__conteneurLiens_item">Garanties & tarifs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#conditions" class="menuSticky--section__conteneurLiens_item">Conditions</a>
+            </li>
+            <li class="nav-item">
+                <a href="#status" class="menuSticky--section__conteneurLiens_item">Justificatifs locataire</a>
+            </li>
+            <li class="nav-item">
+                <a href="#impayes" class="menuSticky--section__conteneurLiens_item">En cas d’impayés</a>
+            </li>
+            <li class="nav-item">
+                <a href="#faq" class="menuSticky--section__conteneurLiens_item">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#documentation" class="menuSticky--section__conteneurLiens_item">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="menuSticky--section__conteneurLiens_item">A propos</a>
+            </li>
+        </ul>
+        <a href="/dossier" class="btn btn-dark btn-sm menuSticky--section__bouton">Démarrer</a>
+    </div>
+
+
+    <!-- SECTION GARANTIES ET TARIFS -->
+    <section class="sectionGaranties container-fluid bg-light">
+        <div class="menuSticky--section__ancre" id="garanties"></div>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Garanties & tarifs de l’assurance loyer impayé</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="section__sousElement tableau bg-white">
+                    <div class="tableau__entete">
+                        <div class="tableau__entete_cellule tableau__premiereColonne mb-0"><h3 class="d-none d-sm-inline-block">Garantie loyer impayé (GLI)</h3></div>
+                        <div class="tableau__entete_cellule">Basic</div>
+                        <div class="tableau__entete_cellule">
+                            <p class="text-primary position-absolute" style="top:.5rem">le + choisi</p>
+                            <p>Classic</p>
+                        </div>
+                        <div class="tableau__entete_cellule">Premium</div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">
+                            <p>Remboursement des impayés de loyer</p>
+                            <p class="tableau__cellule_petitTexte">Plafond de 70 000€ en durée illimitée sans franchise</p>
+                        </div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">
+                            <p>Procédure judiciaire & expulsion</p>
+                            <p class="tableau__cellule_petitTexte">Démarches menées par l'assureur (huissiers, avocats..)</p>
+                        </div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">
+                            <p>Abandon du logement par le locataire </p>
+                            <p class="tableau__cellule_petitTexte">Remboursement des loyers jusqu'à récupération du bien</p>
+                        </div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">
+                            <p>Détériorations immobilières <a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/"><u>détails</u></a></p> 
+                            <p class="tableau__cellule_petitTexte">Plafond de 10 000€ avec franchise du dépôt de garantie</p>
+                        </div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">
+                            <p>Protection juridique hors impayés <a href="/blog/protection-juridique/"><u>détails</u></a> </p>
+                            <p class="tableau__cellule_petitTexte">Plafond de 20 000€</p>
+                        </div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"><img src="../../../assets/img/smartloc/icons/check.svg" alt=""></div>
+                    </div>
+                    <div class="tableau__ligneSeparation"></div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">
+                            <p class="mb-2">Tarif de base (en % du loyer charges comprises)</p>
+                            <p class="tableau__cellule_petitTexte mb-2">+ frais de courtage annuel 30€ TTC</p>
+                            <p>DEDUCTIBLE DE VOS REVENUS FONCIERS</p>
+                        </div>
+                        <div class="tableau__ligne_cellule  tableau__cellule_nombre">2,2%</div>
+                        <div class="tableau__ligne_cellule">
+                            <p class=" tableau__cellule_nombre">2,64%</p>
+                        </div>
+                        <div class="tableau__ligne_cellule tableau__cellule_nombre">2,75%</div>
+                    </div>
+                    <div class="tableau__ligneSeparation d-none d-sm-inline-block" ></div>
+                    <div class="tableau__ligne mb-2">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne d-none d-sm-inline-block">
+                            <p class="mb-2">Calculez vos mensualités</p>
+                            <div class="champSaisie--illustré w-75" style="min-height: 3rem;">
+                                <input class="form-control" type="text">
+                                <span>€/mois</span>
+                            </div>
+                        </div>
+                        <div class="tableau__ligne_cellule d-none d-sm-inline-block">
+                            <p>33,30€/mois</p>
+                            <p>tout inclus</p>
+                        </div>
+                        <div class="tableau__ligne_cellule d-none d-sm-inline-block">
+                            <p>39,46€/mois </p>
+                            <p>tout inclus</p>
+                        </div>
+                        <div class="tableau__ligne_cellule d-none d-sm-inline-block">
+                            <p>41,00€/mois</p>
+                            <p>tout inclus</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION CONDITIONS DU DOSSIER LOCATAIRE -->
+    <section class="sectionConditions container-fluid">
+        <div class="menuSticky--section__ancre" id="conditions"></div>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Conditions pour la garantie loyer impayé</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="mb-5 nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#entrants" data-toggle="pill">Entrants <span class="d-none d-sm-inline-block">ou en place depuis - de 6 mois</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#enplace" data-toggle="pill">En place <span class="d-none d-sm-inline-block">depuis</span> + de 6 mois</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="entrants" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="section__sousElement encadrement--gris">
+                            <h3>Revenu supérieur à 2,85 x le loyer CC</h3>
+                            <p>Vous pouvez sommer les revenus des candidats éligibles ou des garants éligibles.</p>
+                            <p>Il est par contre impossible de cumuler garant et assurance sauf pour les étudiants.</p>
+                            <p>Pour les salariés c'est le salaire net garanti et régulier avant impôt à la source qui doit être retenu. Donc le revenu net hors primes et heures supplémentaires (si nécessaire retenez 75% du brut garanti).</p>
+                            <p>Pour les indépendants et les retraités c'est le dernier revenu imposable en haut de l'avis d'impôts qui doit être retenu.</p>
+                            <p>Les APL et les allocations familiales font partie des allocations éligibles (<a href="/blog/garantie-loyer-impaye-apl-et-allocations-a-retenir/">voir la liste complète</a>)</p>
+                        </div> 
+            
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris">
+                                    <h3>Statuts éligibles</h3>
+                                    <ul>
+                                        <li>Salarié en CDI hors période d'essai</li>
+                                        <li>Fonctionnaire titulaire</li>
+                                        <li>Salarié en CDD avec plus de 8 mois de contrat restant</li>
+                                        <li>Retraité</li>
+                                        <li>Indépendant avec au moins un avis d'impôts complet sur l'activité</li>
+                                        <li>Allocataire AAH</li>
+                                        <li>Etudiant avec garant éligible</li>
+                                        <li>Transfrontalier domicilié fiscalement en France</li>
+                                    </ul>
+                                </div>
+                                <div class="section__sousElement">
+                                    <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Tester un dossier locataire</a></p>
+                                    <p><img src="../../../assets/img/smartloc/icons/arrow.svg" alt="">
+                                    <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf" class="text-dark"><u>Liste complète des critères et justificatifs</u></a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris mt-4 mt-lg-0">
+                                    <h3>Statuts non éligibles (même avec garants)</h3>
+                                    <ul class="mb-3">
+                                        <li>Sans emploi (sauf allocataire AAH)</li>
+                                        <li>Intérimaire / Intermittent</li>
+                                        <li>Salarié en CDD avec moins de 8 mois de contrat restant</li>
+                                        <li>Salarié en CDI en période d'essai</li>
+                                        <li>Fonctionnaire non titulaire</li>
+                                        <li>Transfrontaliers domiciliés fiscalement à l'étranger</li>
+                                        <li>Diplomates</li>
+                                        <li>Indépendant ayant moins d'un an d'ancienneté</li>
+                                    </ul>
+                                    <span><strong>→ Conseil Smartloc</strong></span>
+                                    <span>Vous pouvez garantir ces candidats sans condition de solvabilité après 6 mois sans impayés :</span>
+                                    <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>consultez la fiche pratique sur les candidats non éligibles.</u></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="section__sousElement mt-5">
+                            <h3 class="section__sousElement_titre">Autres conditions</h3>
+                            <ul class="liste--check list-unstyled">
+                                <li>Bail d'habitation vide ou meublée en résidence principale</li>
+                                <li>Bail avec clause résolutoire</li>
+                                <li>Si colocation => bail unique avec clause de solidarité</li>
+                                <li>Location en France métropolitaine</li>
+                            </ul>
+                        </div>
+            
+                        <div class="section__sousElement">
+                            <h3 class="section__sousElement_titre">Validation du dossier locataire</h3>
+                            <p>Les justificatifs ne vous seront demandés qu'en cas d'impayés (voir la <a href="/blog/wp-content/uploads/2019/06/Crit%C3%A8res-et-justificatifs-Insured-AZ.pdf">liste des critères et des justificatifs</a>). Nous vous recommandons donc de constituer le dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreurs.</p>
+                            <a href="/dossier" class="btn btn-outline-dark btn-sm">Valider votre dossier locataire</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="enplace" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row section__sousElement">
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris">
+                                    <h3>Pas de critères de solvabilité</h3>
+                                    <p>Les locataires en place depuis plus de 6 mois sont éligibles <strong>sans condition de ressources ou de statuts</strong>.</p>
+                                    <p>Ils doivent simplement être à jour de leur paiement et ne pas avoir <strong>d'incidents de paiements sur les 6 derniers mois</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section__sousElement encadrement--gris mt-4 mt-lg-0">
+                                    <h3>Période probatoire de 3 mois</h3>
+                                    <p>Une carence de 3 mois est appliquée pour les locataires en place depuis plus de 14 jours que vous n'aviez 
+                                        pas précédemment couverts par une assurance loyer impayé.</p>
+
+                                        <p>C'est une période probatoire au démarrage de la garantie pendant laquelle vous ne devez pas avoir d'impayés; le cas échéant la garantie sera résiliée.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__sousElement encadrement--gris">
+                            <h3>Justificatifs réduits</h3>
+                            <p>En l'absence de critères de solvabilité il est simplement nécessaire d'avoir en votre possession lors de la souscription :</p>
+                            <ul>
+                                <li>Le bail de location signé avec clause résolutoire</li>
+                                <li>L'état des lieux signé</li>
+                                <li>Les pièces d'identité des locataires</li>
+                                <li>Leur attestation d'assurance habitation (nous contacter si vous ne l'avez pas)</li>
+                                <li>Les relevés de gestion de votre gestionnaire ou vos relevés bancaires prouvant que le locataire vous a bien payé par chèque ou virement sur les 6 derniers mois.</li>
+                            </ul>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- SECTION STATUS ELIGIBLES -->
+    <section class="sectionStatus bg-primary container-fluid d-none d-md-block">
+        <div class="menuSticky--section__ancre" id="status"></div>
+
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Justificatifs locataire</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="section__sousElement tableau bg-white">
+                    <div class="tableau__entete">
+                        <div class="tableau__entete_cellule tableau__premiereColonne mb-0">
+                            <h3 class="mb-0">Statuts éligibles</h3>
+                            <p class="tableau__cellule_petitTexte">(locataires ou garants)</p>
+                        </div>
+                        <div class="tableau__entete_cellule">CDI</div>
+                        <div class="tableau__entete_cellule">CDD</div>
+                        <div class="tableau__entete_cellule">Fonctionnaire</div>
+                        <div class="tableau__entete_cellule">Indépendant</div>
+                        <div class="tableau__entete_cellule">Retraité</div>
+                        <div class="tableau__entete_cellule">Étudiant</div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Critères d'éligibilité</div>
+                        <div class="tableau__ligne_cellule">hors période d’essai</div>
+                        <div class="tableau__ligne_cellule">+ 8 mois restant</div>
+                        <div class="tableau__ligne_cellule">titulaire</div>
+                        <div class="tableau__ligne_cellule">2 ans d’activité</div>
+                        <div class="tableau__ligne_cellule">-</div>
+                        <div class="tableau__ligne_cellule">avec garant éligible</div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Revenus pris en compte</div>
+                        <div class="tableau__ligne_cellule">Salaire net régulier</div>
+                        <div class="tableau__ligne_cellule">Salaire net régulier</div>
+                        <div class="tableau__ligne_cellule">Salaire net régulier</div>
+                        <div class="tableau__ligne_cellule">Revenu imposable</div>
+                        <div class="tableau__ligne_cellule">Revenu imposable</div>
+                        <div class="tableau__ligne_cellule">Revenu des garants</div>
+                    </div>
+                    <div class="tableau__ligneSeparation"></div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Carte d'identité ou passeport</div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">3 dernières quittances / attestation hébergement / taxe foncière</div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule">Quittance des garants</div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">3 dernières fiches de salaire	</div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule">Si dirigeant salarié</div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Contrat de travail / Attestation employeur</div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Dernier avis d'imposition</div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">K-bis ou inscription SIREN ou carte pro</div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Attestation comptable sur revenus en cours	</div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule">Si dirigeant</div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Bulletin de pensions / Décompte des caisses de retraite</div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                        <div class="tableau__ligne_cellule"></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Carte d'étudiant ou attestation de scolarité pour l'année en cours</div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"></div>
+                        <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Justificatifs d'allocations <br> (Liste des allocations éligibles)</div>
+                        <div class="tableau__ligne_cellule w-100">Nécessaire si allocations</div>
+                    </div>
+                    <div class="tableau__ligneSeparation"></div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Bail de location</div>
+                        <div class="tableau__ligne_cellule w-100 d-inline-block">Obligatoires dans tous les cas, avec clause résolutoire et solidarité (voir notre <a href="/bail/creation">bail numérique</a>)</div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Etat des lieux</div>
+                        <div class="tableau__ligne_cellule w-100 d-inline-block">A récupérer lors de l'état des lieux (voir notre <a href="/blog/modele-type-etat-des-lieux-loi-alur/">modèle d'état des lieux</a>)</div>
+                    </div>
+                    <div class="tableau__ligne">
+                        <div class="tableau__ligne_cellule tableau__premiereColonne">Attestation d'assurance habitation</div>
+                        <div class="tableau__ligne_cellule w-100 d-inline-block">A demander au locataire lors chaque année (voir notre <a href="https://www.luko.eu/fr/?utm_source=partner&utm_medium=RealEstate&utm_campaign=Smartloc&utm_term=HomeFR" rel="nofollow">assurance habitation locataire</a>)</div>
+                    </div>
+                </div>
+
+
+        </div>
+    </section>
+
+    <!-- SECTION CAS IMPAYÉS -->
+    <section class="sectionImpayes container-fluid">
+        <div class="menuSticky--section__ancre" id="impayes"></div>
+
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>En cas d’impayés</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="section__sousElement">
+                    <div class="tableau bg-light mb-4 pl-1 pr-1 pl-sm-4 pr-sm-4">
+                        <div class="tableau__entete">
+                            <div class="tableau__entete_cellule tableau__premiereColonne mb-0">
+                                <h4 class="mb-0">Date limite</h4>
+                            </div>
+                            <div class="tableau__entete_cellule mb-0">
+                                <h4 class="mb-0">Démarches du propriétaire</h4>
+                            </div>
+                            <div class="tableau__entete_cellule mb-0">
+                                <h4 class="mb-0">Démarches de l’assureur</h4>
+                            </div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 20 jours</div>
+                            <div class="tableau__ligne_cellule">
+                                <p>Relance simple.</p>
+                                <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>Voir un modèle de courrier simple</u></a>
+                            </div>
+                            <div class="tableau__ligne_cellule">-</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 35 jours	</div>
+                            <div class="tableau__ligne_cellule">
+                                <p>Mise en demeure.</p>
+                                <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>Voir un modèle de courrier recommandé</u></a>
+                            </div>
+                            <div class="tableau__ligne_cellule">-</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 40 jours</div>
+                            <div class="tableau__ligne_cellule">
+                                <p>Transmission du dossier à l'assurance.</p>
+                                <a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/"><u>Voir la composition du dossier</u></a>
+                            </div>
+                            <div class="tableau__ligne_cellule">-</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 50 jours	</div>
+                            <div class="tableau__ligne_cellule">-</div>
+                            <div class="tableau__ligne_cellule">Commandement de payer. Huissier saisi par l'assureur.</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 90 jours	</div>
+                            <div class="tableau__ligne_cellule">-</div>
+                            <div class="tableau__ligne_cellule">Remboursement des 3 premières échéances. L'Assureur vous rembourse ensuite mensuellement.</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 110 jours</div>
+                            <div class="tableau__ligne_cellule">-</div>
+                            <div class="tableau__ligne_cellule">Assignation au tribunal. Avocat saisi par l’assureur.</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 120 jours</div>
+                            <div class="tableau__ligne_cellule">Décompte mensuel. Déclaration <br> en ligne de l'échéance impayée.</div>
+                            <div class="tableau__ligne_cellule">Remboursement mensuel. Indemnisation chaque mois dans la limite de 70 000€.</div>
+                        </div>
+                        <div class="tableau__ligne">
+                            <div class="tableau__ligne_cellule tableau__premiereColonne">J + 24 mois<br/>en moyenne</div>
+                            <div class="tableau__ligne_cellule">-</div>
+                            <div class="tableau__ligne_cellule">Expulsion du locataire. Organisation de l'expulsion du locataire (en savoir plus sur la procédure).</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section__sousElement alert-advice alert-advice-success">
+                    <img src="../../../assets/img/smartloc/illustrations/calendrier.png" class="advice-illustration" alt="">
+                    <div class="advice-info">
+                        <h3 class="advice-title">Prise en charge dès le premier mois d'impayé</h3>
+                        <p>Remboursement sans franchise des 3 premiers mois d'impayés après 90 jours puis remboursement mensuel.</p>
+                        <p>L'assureur se charge de toute la procédure après transmission du dossier suite au premier impayé :</p>
+                        <ul class="liste--check list-unstyled">
+                            <li>Commandement de payer délivré par huissier</li>
+                            <li>Assignation au tribunal par un avocat spécialisé</li>
+                            <li>Obtention d'un jugement d'expulsion</li>
+                            <li>Mise en oeuvre de l'expulsion avec recours si nécessaire à la force publique</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Un risque réel pouvant s’élever à 3 ans d’impayés</h3>
+                    <div class="stats_container">
+                        <h3>20 000€</h3>
+                        <div>
+                            <p>C’est le coût moyen d'un impayé moyen pour le propriétaire. </p>
+                            <p> - Source: Foncia.</p>
+                        </div>
+                    </div>
+                    <div class="stats_container">
+                        <h3>159 000</h3>
+                        <div>
+                            <p>C’est le nombre d’impayés déclarés aux tribunaux en 2016.</p>
+                            <p>- Source Ministrère de la Justice.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Nombre de procédures d’impayés devant les tribunaux en France</h3>
+                    <img src="../../../assets/img/smartloc/photos/assurance_graph.png" alt="" class="w-75">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- SECTION VIOLETTE AVEC BACKGROUND "DEMARRER" -->
+    <section class="sectionSmartlocAide container-fluid">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/couronne-noire.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center sectionSmartlocAide__contenu">
+                <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
+                <a href="/dossier" class="btn btn-dark" >Démarrer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+    <section class="sectionFAQ container-fluid">
+        <div class="menuSticky--section__ancre" id="faq"></div>
+
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <div class="menuSticky--sousElement" id="menuSticky_gli_faq">
+                    <h2>FAQ</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4><a href="#faq_garanties" class="menuSticky--sousElement__item active">Les garanties</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_criteres" class="menuSticky--sousElement__item">Les critères</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_dossier" class="menuSticky--sousElement__item">Le dossier locataire</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_contrat" class="menuSticky--sousElement__item">La vie du contrat</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#faq_impayes" class="menuSticky--sousElement__item">La procédure d’impayés</a></h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <div class="section__sousElement">
+                    <div id="faq_garanties" class="menuSticky--sousElement__ancre"></div>
+                    <h2 class="section__sousElement_titre">Les garanties de l’assurance loyer impayé</h2>
+                    <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
+                    <p>Vous êtes couvert contre les impayés de loyer qui vous sont remboursés directement.</p>
+                    <p>L'assureur vous remplace également dans la procédure et va donc poursuivre directement le locataire pour récupérer les impayés et l'expulser si nécessaire.</p>
+                    <p>Vous êtes également couvert sur les dégradations immobilières causées par le locataire et qui ne seraient pas remboursées 
+                        (directement par le locataire ou en utilisant son dépôt de garantie - voir notre <a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">fiche pratique sur le sujet</a>).</p>
+                    <p>Enfin la garantie vous couvre contre les départs "à la cloche de bois", c'est à dire les départs furtifs du locataire abandonnant son logement. Vous êtes alors remboursé des loyers non perçus jusqu'à la récupération effective du logement.</p>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Y a-t-il une franchise ou une carence sur l'assurance loyer impayé ?</h3> 
+                    <p>La garantie loyer impayé Insured proposée par Smartloc est <strong>sans franchise pour les impayés de loyer</strong>. Le dépôt de garantie du locataire que vous avez encaissé est simplement déduit du dernier remboursement qui vous est dû par la compagnie.</p>
+                    <p>La composante dégradations immobilières a quant à elle une <strong>franchise d'un mois</strong> de loyer hors charges. Contrairement à la déduction du dépôt de garantie sur les impayés de loyer, il s'agit d'une franchise réelle qui est appliquée quoiqu'il arrive. Si vous avez conservé le dépôt de garantie vous ne perdez rien, par contre si le dépôt de garantie a été déduit des remboursement d'éventuels impayés de loyer, <strong>l'assureur ne vous appliquera pas cette franchise d'un mois sur les dégradations</strong>.</p>
+                    <p>Pour les locataires entrants ou en place depuis moins de 14 jours il n'y a pas de carence, c'est à dire pas de période probatoire.</p>
+                    <p>Pour les locataires en place depuis plus de 14 jours vous avez une carence de 3 mois, c'est à dire que si un impayé intervient dans les 3 premiers mois du contrat vous ne serez pas du tout couvert.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-franchise-et-carence/">Franchise et carence de la garantie loyer impayé</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Que couvre en pratique la garantie dégradations ?</h3>
+                    <p>La composante dégradations immobilières vous rembourse contre les dégradations faites par le locataire, non couvertes par son dépôt de garantie et non remboursées après son départ.</p>
+                    <p>Il s'agit donc grosso modo des détériorations faites aux sols, murs, plafonds et tous les éléments qui y sont fixés sans possibilité de les démonter.</p>
+                    <p>Les meubles en location meublée ne sont donc pas couverts, tout comme les espaces extérieurs.</p>
+                    <p>Enfin sachez que les dégâts vous sont remboursés déduction faite d'un taux de vétusté de 6% par an depuis les derniers travaux que vous réalises, dans la limite de 50%.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">Assurance dégradations immobilières du locataire</a></span>
+                        </div>
+                    </div>                    
+                </div>
+        
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Qui s'occupe de la procédure d'expulsion du locataire ?</h3>
+                    <p>La procédure d'expulsion du locataire et de recouvrement des impayés est ménée par les équipes de la compagnie d'assurance, jusqu'à la récupération des lieux.</p>
+                    <p>Cette prise en charge est incluses dans toutes nos formules, de la Basic à la Premium. Dans tous les cas vous n'avez donc qu'à relancer le locataire par courrier puis RAR de mise en demeure le premie mois, nous nous chargeons du reste dès le commandement de payer par huissier.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-prise-en-charge-de-la-procedure-juridique/">Procédure d'expulsion du locataire</a></span>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Que couvre en pratique la protection juridique ?</h3>
+                    <p>La garantie protection juridique proposée en formule premium vous couvre pour les contentieux que vous pourriez avoir <strong>hors impayés</strong>, la procédure d'expulsion du locataire en impayés étant déjà incluse dans la formule Basic ou Classic.</p>
+                    <p>Les contentieux hors impayés sont peu nombreux, ils concernent en général des contestations sur les charges, les travaux, ou les troubles de voisinage.</p>
+                    <p>A noter que cette protection juridique est parfois déjà proposée dans votre offre d'assurance PNO.</p>                   
+                <p>A noter que cette protection juridique est parfois déjà proposée dans votre offre d'assurance PNO.</p>                   
+                    <p>A noter que cette protection juridique est parfois déjà proposée dans votre offre d'assurance PNO.</p>                   
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Garantissez-vous l'absence de locataire (vacance locative) ?</h3>
+                    <p>Non la période de vacance locative entre deux locataire n'est pas couverte à l'exception des cas suivants : </p>
+                    <ul>
+                        <li><strong>en cas de départ furtif du locataire dit "à la cloche de bois"</strong> : vous êtes remboursé jusqu'à reprise des lieux.</li>
+                        <li><strong>en cas préavis réduit en zone tendue</strong> : si le locataire utilise sa faculté de réduire le préavis à un mois en zone tendue et que vous ne retrouvez pas de locataire à son départ, le premier mois de vacance vous est remboursé par l'assureur.</li>
+                        <li><strong>en cas de dégradations immobilières</strong> : si des travaux de remise en état sont nécessaires suite aux dégradations du précédent locataire, l'assureur vous rembourse jusqu'à 2 mois pour la perte de loyer pendant la durée des travaux.</li>
+                    </ul>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-carence-vacance-locative/">Assurance contre la carence et vacance locative</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Couvrez-vous les DOM-TOM ?</h3>
+                    <p>Non, il faut que le logement soit en France métropolitaine et que les locataires ou leurs garants y soient également domiciliés.</p> 
+                </div>
+
+                <div class="section__sousElement">
+                    <div id="faq_criteres" class="menuSticky--sousElement__ancre"></div>
+                    <h2 class="section__sousElement_titre  mt-5">Les critères de l’assurance loyer impayé</h2>
+                    <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
+                    <p>Les critères de solvabilité s'appliquent <strong>aux locataires entrants et aux locataires en place depuis moins de 6 mois</strong>.</p>
+                    <p>Les critères de solvabilité sont en synthèse: personnes en situation stable (CDI hors période d'essai, fonctionnaires, retraités, indépendants, CDD de plus de 8 mois) ayant un revenu net régulier équivalent à 2,85 fois le loyer charges comprises minimum.</p>
+                    <p>Pour les locataires en place depuis plus de 6 mois, il n'y pas de critères de solvabilité. Vous pouvez donc souscrire sans dossier de solvabilité, à la seule condition que le locataire soit à jour de ses paiements et <strong>qu'il n'y ait pas eu d'incidents de paiement sur les 6 derniers mois</strong>.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/wp-content/uploads/2019/06/Critères-et-justificatifs-Insured-AZ.pdf">Liste des critères pour les locataires entrants</a></span>
+                        </div>
+                    </div>
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-dun-locataire-deja-en-place/">Assurance loyer impayé d'un locataire en place</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Peut-on cumuler assurance loyer impayé et garant ?</h3>
+                    <p>La loi Boutin interdit de <strong>cumuler garant et assurance loyer impayé sauf pour les étudiants</strong> (dans ce cas c'est la solvabilité des garants qui est étudiée).</p>
+                    <p>Si un des titulaires du bail n'est pas étudiant, il n'est donc pas possible de prendre un garant en plus de l'assurance.</p>
+                    <p>C'est une règle assez contraignante car vous ne pourrez pas en pratique compenser un dossier non éligible par l'ajout d'un garant.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/cumuler-assurance-loyer-impaye-et-garant-ou-caution/">Cumul d'un garant et assurance loyer impayé</a></span>
+                        </div>
+                    </div>
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-que-faire-si-le-candidat-nest-pas-eligible/">Que faire si le dossier locataire n'est pas éligible ?</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Quels revenus retenir pour la garantie loyer impayé ?</h3>
+                    <p><strong>Pour les salariés</strong> il est nécessaire de retenir <strong>le revenu net imposable mensuel, déduction faite des primes et compléments exceptionnels non récurrents</strong>, comme les primes de fin d'année, les heures supplémentaires, les primes sur résultats, les intéressements, etc.</p>
+                    <p>Pour recalculer le net hors primes à partir du brut de base en haut de la fiche de paie, vous pouvez utiliser ce <a href="http://www.salaire-brut-en-net.fr/" target="_blank" rel="nofollow">simulateur</a>.</p>
+                    <p>Les primes et indemnités récurrentes (prime d'ancienneté, treizième mois) sont quant à elle éligibles.</p>
+                    <p><strong>Pour les non-salariés</strong>, retenez la moyenne des revenus indiqués sur les 2 derniers avis d'imposition.</p>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Quelles allocations retenir pour une assurance loyer impayé?</h3>
+                    <p>Les allocations familiales et les allocations logement sont les deux principales allocations éligibles.</p>
+                    <p>Point important pour les APL sur le logement futur, il est nécessaire de fonder le calcul du montant de l'allocation à retenir sur une simulation extraite du site de la CAF et non sur les allocations perçues sur l'ancien logement.</p>
+                    <p>A noter enfin que les <strong>personnes sans emploi</strong> ne sont pas éligibles, même si leurs allocations éligibles dépassent le seuil de solvabilité (dérogation possible après étude pour les titulaires de l'AAH).</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/garantie-loyer-impaye-apl-et-allocations-a-retenir/">Liste complète des allocations éligibles</a></span>
+                        </div>
+                    </div>
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/garantie-loyer-impaye-apl-et-allocations-a-retenir/">APL pour une assurance loyer impayé</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Comment évaluer la solvabilité d'un couple ou d'une colocation ?</h3>
+                    <p>Vous pouvez sommer les revenus éligibles d'un couple ou d'une colocation.</p>
+                    <p>Vous pouvez de la même manière sommer les revenus des garants éligibles si la colocation est composée d'étudiants.</p>
+                    <p>Il n'est par contre pas possible de sommer les revenus d'un garant et d'un colocataire. En pratique vous devez donc soit considérer la somme des revenus des colocataires non étudiants ou la somme des revenus des garants des étudiants.</p>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Les transfrontaliers sont-ils éligibles à la garantie loyer impayé ?</h3>
+                    <p>Vous pouvez garantir les loyers payés par des locataires transfrontaliers (Suisse et Belgique notamment), à condition qu'ils soient domiciliés fiscalement en France et qu'ils aient un compte bancaire ouvert en France.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/quelle-assurance-loyer-impaye-pour-un-transfrontalier/">Transfrontaliers éligibles à l'assurance loyer impayé</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">La garantie loyer impayé couvre-t-elle tous les types de location ?</h3>
+                    <p>De manière générale les contrats d'assurance loyer impayés ne vous couvrent pas dans les situations suivantes : </p>
+                    <ul>
+                        <li><strong>logement hors habitation classique</strong> : ne sont pas couverts les résidences secondaires, les logements de fonction, les logements sociaux, les locaux professionnels ou commerciaux</li>
+                        <li><strong>location à un proche</strong> : vous ne devez pas avoir de relation familiale directe ou indirecte avec le locataire</li>
+                        <li><strong>logement hors de France métropolitaine</strong></li>
+                        <li><strong>bail individuel, location à la chambre, colocation non solidaire</strong></li>
+                    </ul>
+                </div>
+
+                <div class="section__sousElement">
+                    <div id="faq_dossier" class="menuSticky--sousElement__ancre"></div>
+                    <h2 class="section__sousElement_titre  mt-5">Le dossier locataire pour l'assurance loyer impayé</h2>
+                    <h3 class="section__sousElement_titre">Quelles sont les justificatifs demandés pour le dossier du locataire ?</h4>
+                    <p>Vous trouverez tous les documents à rassembler sur notre <a href="/blog/wp-content/uploads/2019/06/Critères-et-justificatifs-Insured-AZ.pdf">liste des critères et justificatifs</a>.</p>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Doit-on envoyer le dossier avant souscription ?</h3>
+                    <p>Le dossier du locataire, le bail et ses annexes ne vous sont demandés qu'en cas d'impayés.</p>
+                    <p>Nous vous recommandons donc de :</p>
+                        <ul>
+                            <li>valider votre dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreur. Vous pouvez le constituer facilement au lien suivant : <a href="/dossier">dossier locataire Smartloc</a></li>
+                            <li>rédiger le bail et ses annexes sur notre <a href="/bail/">module de bail numérique conforme</a></li>
+                            <li>utiliser notre <a href="/gestion-locative">gestion locative en ligne</a> pour être sûr de gérer l'entrée dans les lieux sans erreur (mais également les relances en cas d'impayés)</li>
+                        </ul>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Peut-on souscrire à la GLI avec un locataire en place ?</h3>
+                    <p>Vous pouvez souscrire avec un locataire déjà en place, mais il ne devra pas avoir eu d'incidents de paiement sur les 6 derniers mois. Il devra par ailleurs être à jour de ses paiements.</p>
+                    <p>En cas de doute sur un incident mineur de paiement, vous pouvez soumettre votre dossier pour agrément en nous écrivant par mail.</p>
+                    <p>Les locataires en place depuis plus de 6 mois n'ont pas besoin de respecter les critères de solvabilité. Il est simplement nécessaire de conserver le bail, l'état des lieux, l'attestation d'assurance et les pièces d'identité des locataires.</p>
+                    <p>Enfin une carence de 3 mois est appliquée aux locataire en place depuis plus de 14 jours; il est donc important si vous le pouvez de souscrire au plus tard dans les 14 jours suivant l'état des lieux d'entrée.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-dun-locataire-deja-en-place/">Critères GLI des locataires en place</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Que se passe-t-il si la situation du locataire change en cours de bail ?</h3>
+                    <p>Vous restez couvert, seule la situation du locataire à la signature du bail détermine son éligibilité à la garantie loyer impayé.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <div id="faq_contrat" class="menuSticky--sousElement__ancre"></div>
+                    <h2 class="section__sousElement_titre  mt-5">La vie du contrat d'assurance loyer impayé</h2>
+                    <h3 class="section__sousElement_titre">Comment souscrire à l'assurance loyer impayé ?</h3>
+                    <p>Il est nécessaire dans un premier temps de constituer un dossier éligible et complet du candidat avec qui vous allez signer. 
+                    Reportez-vous pour cela à notre document <a href="/blog/wp-content/uploads/2019/06/Critères-et-justificatifs-Insured-AZ.pdf">Critères et justificatifs</a>.</p>
+                    <p>Vous pouvez également tester l'éligibilité des candidats et constituer le dossier locataire en ligne au lien suivant : <a href="/dossier">dossier locataire Smartloc</a></p>
+                    <p>Une fois le bail signé et au plus tard 14 jours après l'entrée dans les lieux, vous pouvez souscrire directement en ligne en réglant votre première année de cotisation au lien suivant : <a href="<?php echo URL_INSURED; ?>" rel="nofollow">souscription à la garantie</a> </p>
+                    <p>Si votre locataire est déjà en place depuis plus de 6 mois vous n'avez pas besoin de rassembler les justificatifs de solvabilité du locataire, il vous suffit simplement de souscrire directement.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Comment régler la cotisation ?</h3>
+                    <p>La souscription et le règlement de la première cotisation se fait en ligne par carte bancaire. Vous pouvez payer par prélèvement automatique lors de la deuxième année.</p>
+                    <p>Les paiements se font <strong>annuellement d'avance</strong>. La compagnie vous rembourse au prorata en cas de départ du locataire en cours d'année.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Quand doit-on souscrire à la garantie loyer impayé ?</h3>
+                    <p>En pratique nous recommandons de souscrire <strong>après la signature du bail</strong> pour éviter un désistement du locataire qui nécessiterait d'annuler le contrat.</p>
+                    <p>Nous recommandons enfin de souscrire au plus tard 14 jours après l'entrée dans les lieux du locataire; passé ce délai vous risquez d'avoir un impayés vous empêchant de prendre la garantie, et une fois souscrite l'assurance vous impose une période probatoire de 3 mois.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Comment résilier son assurance loyer impayé ?</h3>
+                    <p>Le contrat de garantie loyer impayé est résiliable chaque année par le propriétaire avec un préavis de deux mois. En l'absence de résiliation le contrat se poursuit tacitement.</p>
+                    <p>Il prendra également <strong>fin au départ du locataire</strong>, il vous suffira d'envoyer par mail l'état des lieux de sortie. L'assureur vous remboursant alors le trop perçu de cotisations.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/duree-et-resiliation-dune-assurance-loyer-impaye/">Comment résilier son assurance loyer impayé ?</a></span>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Peut-on souscrire si une agence ou un gestionnaire à trouver le locataire ?</h3>
+                    <p>Vous êtes toujours libre de souscrire à la garantie loyer impayé que nous proposons, que votre locataire ait été trouvé par une agence ou que vos loyers soient encaissés par un gestionnaire immobilier.</p>
+                    <p>Il est simplement important de bien vous coordonner avec l'agence pour qu'elle ait les critères et les justificatifs en tête lors de la recherche, ainsi que les modalités d'indemnisation en cas d'impayés.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Quelle est in fine la compagnie qui assure les impayés de loyers ?</h3>
+                    <p>Smartloc intervient en tant que courtier distributeur du contrat de garantie loyer impayé. Notre rôle est donc de vous conseiller et de vous assister dans la souscription de la garantie loyer impayé Insured.</p>
+                    <p>Insured est la compagnie qui a créé le produit, le gère et qui encaisse donc vos primes d'assurance et vous rembourse en cas de sinistres. Ce sont les équipes d'Insured qui s'occupe notamment en direct de la procédure juridique d'impayés et d'expulsion.</p>                
+                </div>
+
+                <div class="section__sousElement">
+                    <div id="faq_impayes" class="menuSticky--sousElement__ancre"></div>
+                    <h2 class="section__sousElement_titre  mt-5">La procédure en cas d'impayés</h2>
+                    <h3 class="section__sousElement_titre">Quelles sont les démarches à effectuer en cas d'impayés ?</h3>
+                    <p>Vous devez envoyer un courrier simple de relance, puis une lettre recommandé de mise en demeure et enfin transmettre le dossier à la compagnie qui se chargera de la suite.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/wp-content/uploads/2019/07/Procedure-INSURED-RENT-que-faire-en-cas-de-sinistre-ALLIANZ.pdf">Délais des démarches en cas d'impayés</a></span>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">La garantie s'active-t-elle si le locataire paie une partie du loyer seulement ?</h3>
+                    <p>Oui, sur une échéance de loyer, l'impayé partiel est considéré de manière identique à un impayé total. De manière générale la procédure de recouvrement et d'expulsion lancée par l'assurance se poursuit tant que la <strong>dette locative totale est supérieure à un demi mois de loyer mensuel</strong>.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/que-faire-en-cas-dimpaye-partiel-du-locataire/">Prise en charge d'un impayé partiel</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Sous quel délai est-on remboursé ?</h3>
+                    <p>Vous êtes remboursé après 3 mois des trois premières échéances impayées, puis vous êtes remboursé tous les mois.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Y a-t-il une franchise ?</h3>
+                    <p>Non vous n'avez pas de franchise pour les impayés et la procédure d'expuslion. Une franchise d'un mois de loyer, correspondant a minima au dépôt de garantie, s'applique pour la composante dégradations immobilières.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Qui s'occupe de l'expulsion ?</h3>
+                    <p>L'assurance se charge de toute la procédure avec des huissiers et des avocats sélectionnés. Une fois le dossier transmis à la compagnie vous n'avez donc rien à faire et vous êtes remboursé tous les mois tant que le locataire n'est pas parti ou que sa dette n'a pas été soldée.</p>
+                </div>
+
+                <div class="section__sousElement">
+                    <h3 class="section__sousElement_titre">Doit-on faire venir un expert en cas de dégradations ?</h3>
+                    <p>Le remboursement des dégradations se fait sur étude des états des lieux d'entrée et de sortie, des devis que vous avez fournis et d'éventuelles photos prises. La compagnie peut au cas par cas vous demander d'attendre le passage d'un expert qu'elle mandatera pour évaluer les dégâts avant de démarrer les travaux.</p>
+                </div>
+                <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+                    <div class="card cardLigne">
+                        <div class="card-body">
+                            <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                            <span><a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">Dégradations immobilières de l'assurance loyer impayé</a></span>
+                        </div>
+                    </div>
+                </div>                
+            </div>                
+        </div>   
+    </section>
+
+
+
+    <!-- SECTION DOC -->
+    <section class="sectionDoc container-fluid bg-light">
+        <div class="menuSticky--section__ancre" id="documentation"></div>
+
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <div class="menuSticky--sousElement" id="menuSticky_gli_doc">
+                    <h2>La doc</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4><a href="#doc_souscrire" class="menuSticky--sousElement__item active">Avant de souscrire</a></h4>                          </li>
+                        <li class="nav-item">
+                            <h4><a href="#doc_bail" class="menuSticky--sousElement__item">Pour signer le bail</a></h4>
+                        </li>
+                        <li class="nav-item">
+                            <h4><a href="#doc_impaye" class="menuSticky--sousElement__item">En cas d'impayés</a></h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <div class="section__sousElement">
+                    <div id="doc_souscrire" class="menuSticky--sousElement__ancre"></div>
+                    <h2 class="section__sousElement_titre">Les documents de la GLI</h2>
+                    <h3 class="section__sousElement_titre">Avant de souscrire</h3>
+                    <div class="conteneurCards--colonne conteneurCardLignes">
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail société en logement de fonction</span>
+                            </div>
+                        </div>
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail résidence secondaire</span>
+                            </div>
+                        </div>
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__sousElement">
+                    <div id="doc_bail" class="menuSticky--sousElement__ancre"></div>
+                    <h3 class="section__sousElement_titre">Avant de souscrire</h3>
+                    <div class="conteneurCards--colonne conteneurCardLignes">
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail société en logement de fonction</span>
+                            </div>
+                        </div>
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail résidence secondaire</span>
+                            </div>
+                        </div>
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__sousElement">
+                    <div id="doc_impaye" class="menuSticky--sousElement__ancre"></div>
+                    <h3 class="section__sousElement_titre">Avant de souscrire</h3>
+                    <div class="conteneurCards--colonne conteneurCardLignes">
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail société en logement de fonction</span>
+                            </div>
+                        </div>
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail résidence secondaire</span>
+                            </div>
+                        </div>
+                        <div class="card cardLigne">
+                            <div class="card-body">
+                                <img class="cardLigne__icone" src="../../../assets/img/smartloc/icons/file.svg" alt="">
+                                <span>Bail commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>    
+    </section>
+    
+
+    <!-- SECTION COMPARATIFS -->
+    <section class="sectionComparatifs bg-secondary container-fluid">
+        <div class="menuSticky--section__ancre" id="about"></div>
+
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>A propos</h2>
+            </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <div class="section__sousElement">
+                    <h2 class="section__sousElement_titre">Nous avons sélectionné le meilleur contrat du marché</h2>
+                    <h3>Qui sommes-nous ?</h3>
+                    <p>Smartloc est une plateforme de gestion locative en ligne créée en 2012 par 
+                        deux ingénieurs polytechniciens qui ont souhaité proposer des outils innovants aux bailleurs indépendants. Nous avons assisté plus de 100 000 propriétaires indépendants qui louent sans agence.</p>
+                    <p>Smartloc est dans le cadre de cette activité courtier en assurance (n°Orias : 16005174) et a sélectionné la garantie loyer impayé Insured pour ses clients.
+                    <p>Insured est gestionnaire de garantie loyer impayé depuis plus de 10 ans (n°Orias : 14000256), basé à Toulouse et garantissant plusieurs dizaines de milliers de locations. 
+                        C'est donc Insured qui encaisse vos primes d'assurance, qui vous indemnise et qui poursuit le locataire en cas d'impayés.</p>
+                    <p>La compagnie d'assurance qui garantit in fine le contrat est Allianz, un des leaders mondials de l'assurance. Vous n'aurez néanmoins aucun contact avec eux car le contrat est distribué par Smartloc et géré par Insured.</p>
+                    <h3 class="mt-4">Pourquoi est-ce le meilleur contrat ?</h3>
+                    <p>Nos équipes connaissent très bien les problématiques d'impayés via notre activité de gestion locative en ligne. 
+                        Nous analysons depuis 2012 les différentes assurances du marché et nous avons sélectionné notre contrat sur 3 critères : </p>
+                    <ul>
+                        <li><strong>rapport qualité-prix</strong> : notre GLI a une couverture complète en durée et en montant pour le tarif le plus bas du marché</li>
+                        <li><strong>souscription digitale</strong> : la souscription se fait entièrement en ligne avec paiement carte bancaire et signature électronique</li>
+                        <li><strong>rigueur sur les sinistres</strong> : Insured dispose d'un extranet pour la gestion des sinistres ce qui vous garantit un suivi complet de votre sinistre</li>
+                    </ul>
+                    <a href="" class="text-dark"><img src="../../../assets/img/smartloc/icons/arrow.svg" alt=""> <u>Lire notre comparatif complet des GLI du marché</u></a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION VIOLETTE AVEC BACKGROUND "DEMARRER" -->
+    <section class="sectionSmartlocAide container-fluid">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/couronne-noire.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center sectionSmartlocAide__contenu">
+                <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
+                <a href="/dossier" class="btn btn-dark" >Démarrer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT D'EXPERTS -->
+    <section class="sectionExpertsAide container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Des experts disponibles pour vous aider</h1>
+                <div class="sectionExpertsAide__conteneurPhotos">
+                    <img src="../../../assets/img/smartloc/photos/expert_1.png" alt="">
+                    <img src="../../../assets/img/smartloc/photos/expert_2.png" alt="">
+                    <img src="../../../assets/img/smartloc/photos/expert_3.png" class="d-none d-sm-block" alt="">
+                </div>
+                <div class="sectionExpertsAide__conteneurBoutons text-center">
+                    <a class="btn btn-outline-dark btn-sm"  href="mailto:equipe@smartloc.fr"><h5>equipe@smartloc.fr</h5></a>
+                    <a class="btn btn-dark btn-sm mt-2 mt-sm-0"  href="#" data-toggle="modal" data-target="#modalContact"><h5>Parlez avec un conseiller</h5></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                        <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPT -->
+
+<script src="../scripts/scripts.js"></script>

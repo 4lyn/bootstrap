@@ -6,79 +6,10 @@ body
 }
 
 
-.sectionArticle
-{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.sectionArticle__corps
-{
-    background-color: #fff;
-    padding: 144px;
-    padding-top: 118px;
-}
-
-.sectionArticle__photo
-{
-    width: 100%;
-}
-
-.sectionArticle__sommaire
-{
-    padding: 2rem 2.5rem;
-    line-height: 32px;
-    font-weight: bold;
-}
-
-.sectionArticle__sommaire ul
-{
-    padding-left: 1rem;
-}
-
-.sectionArticle__doublePhoto
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.sectionArticle__doublePhoto img
-{
-    width: 47.5%
-}
-
-.sectionArticle__captureTweet
-{
-    width: 75%;
-}
-
-
-
-
-@media (max-width: 991px)
-{
-
-    .sectionArticle__corps{
-        padding : 20px;
-    }
-
-}
-
-
 @media (max-width: 576px)
 {
-    .sectionArticle__corps{
-        padding : 0;
-        background-color: transparent;
-    }
+
     body{
         background-color: transparent;
-    }
-    .sectionArticle__sommaire
-    {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
     }
 }

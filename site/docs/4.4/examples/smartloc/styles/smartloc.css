@@ -319,6 +319,13 @@ header  .navbar-collapse .nav-link{
 }
 
 
+/* categories */
+
+.headerHub__titrage a
+{
+    color:black;
+}
+
 /************* FOOTER *************/
 
 footer
@@ -1429,6 +1436,76 @@ ul.liste--check li::before
 }
 
 
+.dossierLocataire__encadrementBienvenue
+{
+    background-color: white;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.dossierLocataire__encadrementBienvenue__partieGauche
+{
+    padding: 2.5rem 0 3.75rem 2.5rem;
+}
+
+.encadrementBienvenue__partieGauche_illustration
+{
+    position: absolute;
+}
+.encadrementBienvenue__partieGauche_illustration:nth-of-type(1)
+{
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+    z-index: -2;
+}
+.encadrementBienvenue__partieGauche_illustration:nth-of-type(2)
+{
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+.encadrementBienvenue__partieGauche_titre
+{
+    margin-bottom: 2rem;
+}
+
+.dossierLocataire__encadrementBienvenue__partieDroite
+{
+    padding: 3.5rem 3.5rem 3.75rem 3.5rem;
+}
+
+.conteneurMathieu
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.conteneurMathieu__description
+{
+    margin-left: .75rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.conteneurMathieu__description h4
+{
+    margin-bottom: 0;
+}
+
+
 /* HAUT DU DOCUMENT permanant */
 .dossierLocataire__titre
 {
@@ -1610,7 +1687,213 @@ ul.liste--check li::before
 }
 
 
+/*********** GLI ************/
 
+
+.sectionConditions .encadrement--gris
+{
+    padding: 1.5rem 2rem;
+}
+
+.sectionImpayes .stats_container
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sectionImpayes .stats_container h3 
+{
+    margin-right: 1.5rem;
+}
+
+.sectionImpayes .stats_container p
+{
+    margin-bottom: 0;
+}
+
+
+/* tableau section impayés */
+.sectionImpayes .tableau__premiereColonne
+{
+    width: 20%;
+    font-weight: bold;
+}
+
+.sectionImpayes .tableau__ligne_cellule, .sectionImpayes .tableau__entete_cellule
+{
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.sectionImpayes .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionImpayes .tableau__entete_cellule:not(.tableau__premiereColonne)
+{
+    width: 40%;
+}
+
+.sectionDoc .section__sousElement
+{
+    margin-bottom: 2rem;
+}
+
+.sectionFAQ .menuSticky--sousElement a
+{
+    color: rgba(0, 0, 0, 0.6);
+    transition: .1s ease-in-out;
+}
+.sectionFAQ .menuSticky--sousElement a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* tableau section garanties */
+.sectionGaranties .tableau__premiereColonne
+{
+    width: 45%;
+}
+
+.sectionGaranties .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionGaranties .tableau__entete_cellule:not(.tableau__premiereColonne)
+{
+    width: 15%;
+}
+
+
+/* tableau section status */
+.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne)
+{
+    font-size: .875rem;
+}
+
+.sectionStatus .tableau__premiereColonne
+{
+    width: 30%;
+}
+
+.sectionStatus .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne)
+{
+    width: 11%;
+    text-align: center;
+    font-size: .875rem;
+}
+
+
+/*********** BAIL ************/
+
+.sectionBailAnnexe .alert-notice
+{
+    margin-top: 2rem;
+}
+
+/*********** GEL ************/
+
+.sectionTarifs .card{
+    border: none;
+}
+
+/*********** HOMEPAGE ************/
+
+
+ #header_homepage
+{
+    background: right 0 bottom 0 / 40% no-repeat url("../../../assets/img/smartloc/illustrations/shapes/background_header_home.svg") #f9dca5;
+}
+
+#header_homepage .headerClassique__titrage
+{
+    padding-top: 4.5rem;
+    padding-bottom: 6.5rem; 
+}
+
+
+/*********** ARTICLE ************/
+
+.sectionArticle
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sectionArticle__corps
+{
+    background-color: #fff;
+    padding: 144px;
+    padding-top: 118px;
+}
+
+.sectionArticle__photo
+{
+    width: 100%;
+}
+
+.sectionArticle__sommaire
+{
+    padding: 2rem 2.5rem;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.sectionArticle__sommaire ul
+{
+    padding-left: 1rem;
+}
+
+.sectionArticle__doublePhoto
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sectionArticle__doublePhoto img
+{
+    width: 47.5%
+}
+
+.sectionArticle__captureTweet
+{
+    width: 75%;
+}
+
+
+
+@media (max-width: 991px)
+{
+
+    .sectionArticle__corps{
+        padding : 20px;
+    }
+
+}
+
+
+@media (max-width: 576px)
+{
+    .sectionArticle__corps{
+        padding : 0;
+        background-color: transparent;
+    }
+    .sectionArticle__sommaire
+    {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+
+/*********** ZEN ************/
+
+#section_echeances .card-body{
+    font-size: 15px;
+}
 
 
 /*********** RESPONSIVE ************/
