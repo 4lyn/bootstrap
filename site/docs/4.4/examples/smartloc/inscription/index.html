@@ -1,0 +1,243 @@
+---
+layout: examples
+title: dossier locataire 2
+extra_css: "inscription.css"
+---
+<script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
+
+
+<div class="progression_line"></div>
+
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/logo.png" class="logoSmartloc">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                </div>
+            </nav> 
+        </div>
+    </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main class="dossierLocataire container">
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="dossierLocataire__formulaire_section">
+                <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">Indiquez les informations de votre quittance</h3>
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label>Prénom propriétaire</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Nom propriétaire</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="#"><i class="fas fa-plus"></i> Ajouter</a>
+                        <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer</a>
+                        <a href="#" class="ml-4"><i class="far fa-building"></i> SCI</a>
+                    </div>
+                    <div class="form-group">
+                        <label>Adresse du propriétaire</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="formulaire__sousElement">
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label>Prénom locataire</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Nom locataire</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="#"><i class="fas fa-plus"></i> Ajouter un locataire</a>
+                        <a href="#" class="ml-4"><i class="fas fa-minus"></i> Supprimer un locataire</a>
+                    </div>
+                </div>
+                <div class="formulaire__sousElement">
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label>Loyer mensuel hors charges</label>
+                            <div class="champSaisie--illustré ">
+                                <input type="text" class="form-control">
+                                <span>€/mois</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Charges mensuelles</label>
+                            <div class="champSaisie--illustré ">
+                                <input type="text" class="form-control">
+                                <span>€/mois</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formulaire__sousElement">
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label>Votre email <span class="badge badge-pill badge-warning" style="position:relative;top:-1px">Zéro spam garanti</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Mot de passe</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg my-4">Récupérer votre quittance (GRATUIT)</button>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div style="position:sticky; top:20px" >
+                <iframe  src="https://www.smartloc.fr/blog/wp-content/uploads/2019/01/Quittance_76341_2019-01.pdf" type="application/pdf" width="100%" height="700px">
+                    This browser does not support PDFs. Please download the PDF to view it: Download PDF
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+            <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/logo-white.png" alt=""></p>
+            <p><a href="mailto:equipie@smartloc.fr">equipe@smartloc.fr</a></p>
+            <p>
+                <a href="https://twitter.com/smartloc" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+                    <img class="footer__logoReseauxSociaux" src="../../../assets/img/smartloc/icons/linkedin.png" alt="">
+                </a>
+            </p>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+            <div class="row mt-4 mt-lg-0">
+                <div class="col-lg-2">
+                    <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+                    <a href="/bail/"><h5>Bail</h5></a>
+                    <a href="/comparateur-assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <a href="/blog"><h5>Ressources</h5></a>
+                    <a href="/tarifs"><h5>Tarifs</h5></a>
+                    <a href="/cgu"><h5>Mentions légales</h5></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <a href="/a-propos"><h5>A propos</h5></a>
+                    <h5>Partenaires</h5>
+                    <div class="row mt-3">
+                        <div class="col-lg-auto">
+                            <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="https://www.smartloc.fr/imgs/Lemon-Way-Logo-Inline-200px-white.png" class="float-left"></a>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                        <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                        <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                        <li><a href="/dossier">Validation dossier locataire</a></li>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                        <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                        <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                        <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>2 moyens pour contacter nos équipes</h3>
+                <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>Veuillez vérifier les points suivants</h3>
+                <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
+                <div class="mt-4 mb-2">
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck1">
+                        <label class="custom-control-label" for="modalCheck1">aucun candidat n'est diplomate </label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck2">
+                        <label class="custom-control-label" for="modalCheck2">aucun candidat ou garant n'est domicilié fiscalement à l'étranger ni dans les DOM</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mt-3">
+                        <input type="checkbox" class="custom-control-input" id="modalCheck3">
+                        <label class="custom-control-label" for="modalCheck3">le bail envisagé n'est pas un bail de colocation non solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
+                    </div>
+                </div>
+                <p class="my-4">Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN français.</p>
+                <button class="btn btn-dark" data-dismiss="modal">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="../scripts/scripts.js"></script>
