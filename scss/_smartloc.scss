@@ -1877,14 +1877,14 @@ ul.liste--check li::before
 
 @media (max-width: 576px)
 {
-    .sectionArticle__corps{
-        padding : 0;
-        background-color: transparent;
-    }
     .sectionArticle__sommaire
     {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .rowArticle{
+        background-color: white;
     }
 }
 
