@@ -6,6 +6,7 @@ import Dropdown from './dropdown'
 import Modal from './modal'
 import Popover from './popover'
 import Scrollspy from './scrollspy'
+import Smartloc from './smartloc'
 import Tab from './tab'
 import Toast from './toast'
 import Tooltip from './tooltip'
@@ -28,6 +29,7 @@ export {
   Modal,
   Popover,
   Scrollspy,
+  Smartloc,
   Tab,
   Toast,
   Tooltip
