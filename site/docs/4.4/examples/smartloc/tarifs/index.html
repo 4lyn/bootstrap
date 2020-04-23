@@ -66,125 +66,334 @@ title: tarifs
 
 <main>
 
-    <section class="container-fluid sectionTarifs sectionHub">
-        <div class="menuSticky--section__ancre" id="tarifs"></div>
+    <section class="container-fluid sectionTarifs bg-light">
         <div class="row">
             <div class="col-lg-2 offset-lg-1">
-                <h2>Gestion locative en ligne</h2>
+                <h2 class="mt-4">Gestion locative en ligne</h2>
             </div>
             <div class="col-lg-8">
-                <h2 class="section__sousElement_titre">Economisez 50€/mois en gardant le contrôle</h2>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Particulier</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">4,90€/mois</h4>
+                                <p class="card-text">Abonnement trimestriel par lot, annulable à tout moment</p>
+                                <a href="/gestion-locative/creation" class="card-link">Démarrer</a>
+                                <a href="/gestion-locative" class="card-link">En savoir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Investisseur</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">19€/mois</h4>
+                                <p class="card-text">Abonnement mensuel pour 4 à 9 lots, annulable à tout moment</p>
+                                <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
+                                <a href="/gestion-locative" class="card-link">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Gestionnaire</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
+                                <p class="card-text">Abonnement mensuel pour +10 lots, annulable à tout moment</p>
+                                <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
+                                <a href="/gestion-locative" class="card-link">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Options</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">activable sur demande</h4>
+                                <p class="mt-3"><a href="https://www.homeserve.fr/partenaire/smartloc/assurances-bailleur?utm_source=Smartloc&amp;utm_medium=partnerships&amp;utm_campaign=tarifs" rel="nofollow" class="card-link">Option garantie dépannage : 15€/moisGarantie dépannage : 15€/mois</a></p>
+                                <p><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="card-link">Comptabilité LMNP réel : 450€/an</a></p>
+                                <p><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="card-link">Expulsion du locataire : 600€/procédure</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-2 offset-lg-1">
+                <h2 class="mt-4">Assurance loyer impayé</h2>
+            </div>
+            <div class="col-lg-8">
                 <div class="section__sousElement">
                     <div class="row">
                         <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Particulier</h3>
-                                    <h4 class="card-subtitle mb-2 text-muted">4,90€/mois</h4>
-                                    <p class="card-text">Abonnement trimestriel<br/>par lot</p>
-                                    <a href="https://smartloc.typeform.com/to/mYYucI" class="card-link">Démarrer</a>
-                                    <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
+                                    <h3 class="card-title">Basic</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">2,2% du loyer</h4>
+                                    <p class="card-text">Loyers impayés <br/>+ procédure d'expulsion</p>
+                                    <p class="card-text">Abonnement annuel par lot, résiliable si fin du bail</p>
+                                    <a href="/comparateur-assurance-loyer-impaye" class="card-link">Démarrer</a>
+                                    <a href="/comparateur-assurance-loyer-impaye" class="card-link">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Investisseur</h3>
-                                    <h4 class="card-subtitle mb-2 text-muted">19€/mois</h4>
-                                    <p class="card-text">Abonnement mensuel<br/>pour 4 à lots</p>
-                                    <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
-                                    <a href="#/tarifs" class="card-link">Voir tous les tarifs</a>
+                                    <h3 class="card-title">Classic</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">2,64% du loyer</h4>
+                                    <p class="card-text">Formule Basic <br/>+ dégradations immobilières</p>
+                                    <p class="card-text">Abonnement annuel par lot, résiliable si fin du bail</p>
+                                    <a href="/comparateur-assurance-loyer-impaye" class="card-link">Démarrer</a>
+                                    <a href="/comparateur-assurance-loyer-impaye" class="card-link">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Gestionnaire</h3>
-                                    <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
-                                    <p class="card-text">Abonnement mensuel<br/>pour +10 lots</p>
-                                    <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
-                                    <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
+                                    <h3 class="card-title">Premium</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">2,75% du loyer</h4>
+                                    <p class="card-text">Formule Classic <br/>+ protection juridique</p>
+                                    <p class="card-text">Abonnement annuel par lot, résiliable si fin du bail</p>
+                                    <a href="/comparateur-assurance-loyer-impaye" class="card-link">Démarrer</a>
+                                    <a href="/comparateur-assurance-loyer-impaye" class="card-link">En savoir plus</a>
                                 </div>
                             </div>
                         </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Options</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">activable sur demande</h4>
+                                    <p class="mt-3"><a href="/dossier" class="card-link">Dossier locataire en ligne : gratuit</a></p>
+                                    <p><a href="/dossier" class="card-link">Vérification du dossier : 45€</a></p>
+                                    <p><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/" class="card-link">Assurance PNO : 78€/an</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-2 offset-lg-1">
+                <h2 class="mt-4">Bail de location</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="section__sousElement">
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Bail limité</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">Gratuit</h4>
+                                    <p class="card-text">Bail modifiable pendant 3 jours</p>
+                                    <a href="/bail/creation" class="card-link">Démarrer</a>
+                                    <a href="/bail/" class="card-link">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Bail complet</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">14,70€</h4>
+                                    <p class="card-text">Bail modifiable en illimité</p>
+                                    <a href="/bail/creation" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
+                                    <a href="/bail/" class="card-link">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Options</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">activable sur demande</h4>
+                                    <p class="mt-3"><a href="/blog/signature-en-ligne-du-bail-de-location/" class="card-link">Signature électronique : 4€/signataire</a></p>
+                                </div>
+                            </div>
+                        </div>                     
                     </div> 
                 </div>
-                <div class="section__sousElement alert-notice bg-white border-0">
-                    <div class="notice-illustration d-none d-sm-block">
-                        <img src="../../../assets/img/smartloc/photos/photo_mathieu.jpg" class="img-fluid">
-                    </div>
-                    <div class="notice-info">
-                        <h3 class="notice-title">Economisez 50€/mois en moyenne en gardant le contrôle de votre location</h3>
-                        <p>Un gestionnaire immobilier va vous facturer en moyenne 6% HT du loyer charges comprises pour encaisser le loyer et gérer les rares incidents que vous aurez pendant vos locations (les frais de recherche locataire et la garantie des loyers impayés sont facturés séparément).</p>
-                        <p>Pour un loyer de 700€ CC, vous économisez donc en moyenne 50€/mois en gardant le contrôle sur l'encaissement de vos loyers et en étant complément assisté sur les échéances importantes du bail et les incidents.</p>
-                        <p>- Mathieu Chantalat, Directeur immobilier</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTIONS VOS QUESTIONS -->
+    <section class="sectionPageClassique sectionQuestions container-fluid">
+        <div class="menuSticky--section__ancre" id="questions"></div>
+        <div class="row">
+            <div class="col-lg-2 offset-lg-1">
+                <h2>Questions <br/>fréquentes</h2>
+            </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <div class="sectionPageClassique__contenu">
+                    <div class="accordion" id="accordion_faq_home">
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+                                <h5>Peut-on prendre chaque prestation à la carte ? <i class="fas fa-minus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
+                                <p>Oui vous pouvez prendre l'assurance sans le bail, ou la gestion en ligne sans assurance.</p>
+                                <p>Néanmoins pour vous permettre d'optimiser pleinement votre gestion nous vous recommandons de prendre l'ensemble des élements de votre location sur Smartloc.</p>
+                            </div>
+                        </div>
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+                                <h5>Quelles sont les durées d'engagement ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
+                                <p>Pour la formule Bail Zen avec gestion en ligne, l'engagement est trimestriel reconductible tacitement, vous pouvez résilier à tout moment en ligne sans motif.</p>
+                                <p>Pour l'assurance loyer impayé l'engagement est annuel reconductible tacitement; vous pouvez résilier et vous faire rembourser du trop perçu sur l'année en cas de départ du locataire ou du vente du logement.</p>
+                                <p>Les contrats d'assurance que vous souscrivez via Smartloc sont séparés de la gestion locative en ligne, ce qui vous permet de résilier l'un ou l'autre séparément (contrairement aux mandats de gestion classiques pour lesquels assurance et gestion sont couplés).</p>
+                            </div>
+                        </div>
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_3">
+                                <h5>Avez-vous des formules dégressives pour plusieurs biens ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse" id="faq_contenu_3" data-parent="#accordion_faq_home">
+                                <p>Oui nous proposons des formules dégressives sur le bail et la gestion en ligne. Vous avez une formule investisseur 
+                                    entre 4 et 9 lots, une formule gestionnaire à plus de 10 lots. Ces formules sont activables sur demande.</p>
+                                    <p>Sur les signatures électroniques et sur la garantie loyer impayé nous ne proposons pas de formule dégressive car le coût marginal du produit est le même que vous ayez un ou vingt lots; 
+                                    par ailleurs nos tarifs sur ces produits sont déjà très négociés.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_4">
+                                <h5>Comment est calculé le nombre de lots sur les colocations ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse" id="faq_contenu_4" data-parent="#accordion_faq_home">
+                                <p>Les abonnements à la gestion locative en ligne sont calculés par lot, avec 1 bail = 1 lot = 1 abonnement.</p>
+                                <p>Pour chaque lot, vous pouvez modifier le bail de manière illimitée à chaque changement de locataire.</p>
+                                <p>Pour les colocations à bail unique vous avez donc un abonnement par logement. Pour les baux individuels nous traitons chaque bail comme un lot séparé, sur lequel vous allez envoyer des quittances, gérer des indexations ou résilier le bail de manière indépendante. 
+                                Il faudra donc prendre un abonnement par bail individuel et donc par colocataire. Vous pouvez donc rapidement nous demander d'activer une des formules dégressives (investisseur ou gestionnaire).</p>
+                            </div>
+                        </div>
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_5">
+                                <h5>A quoi correspondent les frais de courtage sur la garantie loyer impayé ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse" id="faq_contenu_5" data-parent="#accordion_faq_home">
+                                <p>Ces frais sont facturés chaque année en plus du taux indiqué pour la formule que vous avez choisie. Ils nous permettent de nous rémunérer pour vous assister dans la souscription du contrat.</p>
+                            </div>
+                        </div>
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_6">
+                                <h5>Combien coûte la vérification du dossier locataire ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse" id="faq_contenu_6" data-parent="#accordion_faq_home">
+                                <p>Dans le cadre de la garantie loyer impayé nous avons créé un module de validation du dossier locataire qui est gratuit, et qui vous permet de constituer le dossier de votre locataire et de vérifier que vous répondez aux exigences de l'assurance.</p>
+                                <p>En effet l'assurance ne demande le dossier qu'en cas d'impayés. A l'issue de la validation du dossier locataire via notre module en ligne, si vous avez encore des doutes, vous pouvez demander à notre équipe de faire une vérification du dossier.</p>
+                                <p>Le service coûte 45€, nous vous répondons en 48h ouvrés et vous disposez d'un crédit pour un deuxième dossier en cas de refus.</p>                            </div>
+                        </div>
+                        <div class="questionDeroulante objetDeroulant">
+                            <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_7">
+                                <h5>Y-a-t-il des frais supplémentaires ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                            </div>
+                            <div class="objetDeroulant__contenu collapse" id="faq_contenu_7" data-parent="#accordion_faq_home">
+                                <p>En cours de bail vous n'avez aucun frais supplémentaires si vous avez choisi la gestion en ligne et/ou la garantie loyer impayé.</p>
+                                <p>Vous avez par contre la possibilité d'activer des options :</p>
+                                <ul>
+                                    <li>vous faire assister par notre avocat partenaire en cas d'impayés (si vous n'avez pas pris l'assurance)</li>
+                                    <li>vous faire assister par notre comptable partenaire pour basculer au LMNP réel</li>
+                                    <li>solliciter un dépannage via notre réseau d'artisans avec un devis et une commande en ligne</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid sectionTarifs sectionHub">
-        <div class="menuSticky--section__ancre" id="tarifs"></div>
+
+    <!-- SECTION VIOLETTE AVEC BACKGROUND "DEMARRER" -->
+    <section class="sectionSmartlocAide container-fluid">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/couronne-noire.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
+        <img src="../../../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
         <div class="row">
-            <div class="col-lg-2 offset-lg-1">
-                <h2>Gestion locative en ligne</h2>
+            <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center sectionSmartlocAide__contenu">
+                <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
+                <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#modalDemarrer">Démarrer</a>
             </div>
-            <div class="col-lg-8">
-                <h2 class="section__sousElement_titre">Economisez 50€/mois en gardant le contrôle</h2>
-                <div class="section__sousElement">
-                    <div class="row">
-                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Particulier</h3>
-                                    <h4 class="card-subtitle mb-2 text-muted">4,90€/mois</h4>
-                                    <p class="card-text">Abonnement trimestriel<br/>par lot</p>
-                                    <a href="https://smartloc.typeform.com/to/mYYucI" class="card-link">Démarrer</a>
-                                    <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
-                                </div>
+        </div>
+    </section>
+
+    <!-- SECTIONS TEMOIGNAGES -->
+    <section class="sectionTemoignages container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="menuSticky--section__ancre" id="temoignages"></div>
+                <h1>Nous avons aidé plus de 100 000 <br> bailleurs indépendants depuis 2012</h1>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                        <div class="card cardTemoignage">
+                            <p>“Trés pratique et réactif. Un vrai support pour toutes les démarches à faire en tant que propriétaire. 
+                                J'avais une question fiscale autour de ma location, j'ai obtenu la réponse en moins de 24h.”
+                            </p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>François V. le 17/02/2020</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Investisseur</h3>
-                                    <h4 class="card-subtitle mb-2 text-muted">19€/mois</h4>
-                                    <p class="card-text">Abonnement mensuel<br/>pour 4 à lots</p>
-                                    <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
-                                    <a href="#/tarifs" class="card-link">Voir tous les tarifs</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Gestionnaire</h3>
-                                    <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
-                                    <p class="card-text">Abonnement mensuel<br/>pour +10 lots</p>
-                                    <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
-                                    <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div> 
-                </div>
-                <div class="section__sousElement alert-notice bg-white border-0">
-                    <div class="notice-illustration d-none d-sm-block">
-                        <img src="../../../assets/img/smartloc/photos/photo_mathieu.jpg" class="img-fluid">
                     </div>
-                    <div class="notice-info">
-                        <h3 class="notice-title">Economisez 50€/mois en moyenne en gardant le contrôle de votre location</h3>
-                        <p>Un gestionnaire immobilier va vous facturer en moyenne 6% HT du loyer charges comprises pour encaisser le loyer et gérer les rares incidents que vous aurez pendant vos locations (les frais de recherche locataire et la garantie des loyers impayés sont facturés séparément).</p>
-                        <p>Pour un loyer de 700€ CC, vous économisez donc en moyenne 50€/mois en gardant le contrôle sur l'encaissement de vos loyers et en étant complément assisté sur les échéances importantes du bail et les incidents.</p>
-                        <p>- Mathieu Chantalat, Directeur immobilier</p>
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                        <div class="card cardTemoignage">
+                            <p>“J'utilise ce site depuis plusieurs années pour rédiger mon baux en signature éléctronique, j'en suis ravi.”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>François-xavier M. le 14 mars 2020</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                        <div class="card cardTemoignage">
+                            <p>“Professionnel de l'immobilier depuis 30 ans, les outils informatiques proposés par smartloc sont d'une réelle efficacité et permettent d'être sûrs de contracter dans le respect des derniers décrets.”</p>
+                            <div class="cardTemoignage__conteneurInfos">
+                                <h6>Xavier D. le 19 janvier 2020</h6>
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                                <img src="../../../assets/img/smartloc/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <img class="sectionTemoignages__imageAvisVerifie" src="../../../assets/img/smartloc/photos/avis_verif.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        <img class="sectionTemoignages__formesBackground couronneNoir d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/couronne_noire_2.png" alt="">
+        <img class="sectionTemoignages__formesBackground rondJaune d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/rond_jaune_2.png" alt="">
+
     </section>
+
+
+    
 </main>
 
 
@@ -265,6 +474,23 @@ title: tarifs
             <div class="modal-body">
                 <h3>2 moyens pour contacter nos équipes</h3>
                 <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+                <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
+                <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="modalInvestisseur" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <h3>Activation sur demande</h3>
+                <p>Pour activer les formules Investisseur ou Gestionnaire, contactez notre équipe.</p>
+                <h5 class="mt-3"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
                 <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
                 <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
             </div>
