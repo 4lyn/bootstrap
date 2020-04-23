@@ -72,6 +72,16 @@ section
 }
 
 
+.bg-grey{
+    background-color: #f4f4f4;
+}
+
+/************* Modal *************/
+
+.modal-footer{
+    padding: .75rem;
+}
+
 
 
 /************* HEADER *************/
@@ -1672,6 +1682,24 @@ ul.liste--check li::before
 .grey {
     color: grey;
     opacity: 0.5;
+}
+
+#prix_barre::before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 7px;
+    width: 90px;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    border-top: 2px solid #e8612d;
+}
+
+#tab_download .btn-sm{
+    font-size: 0.8rem;
+    padding: 0.5rem;
 }
 
 /*** ZEN ***/

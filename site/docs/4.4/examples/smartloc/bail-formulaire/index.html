@@ -1,7 +1,7 @@
 ---
 layout: examples
 title: dossier locataire 2
-extra_css: "bail-formulaire.css"
+body_class: bg-grey
 ---
 <script src="https://kit.fontawesome.com/b86c9554e6.js" crossorigin="anonymous"></script>
 
@@ -798,9 +798,9 @@ extra_css: "bail-formulaire.css"
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="formulaire__sousElement">
-                                    <h3>Formules</h3>
                                     <div class="row">
                                         <div class="col-lg-6">
+                                            <h3>Formules</h3>
                                             <div class="card" style="border:6px solid #a896d8;cursor: pointer;">
                                                 <div class="card-body">
                                                     <h4 class="card-title">BAIL COMPLET</h4>
@@ -812,17 +812,16 @@ extra_css: "bail-formulaire.css"
                                                         <li>11 Clauses importantes</li>
                                                         <li>14 Annexes importantes </li>
                                                     </ul>
-                                                    <p><h4>
+                                                    <h4 class="mb-3">
                                                         14,70 €
-                                                    </h4></p>
-                                                    <p><a href="#" class="card-link">Voir la différence avec le bail limité</a></p>
+                                                    </h4>
+                                                    <a href="#" class="card-link">Voir la différence avec le bail limité</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="card" style="cursor: pointer;">
+                                            <div class="card" style="cursor: pointer;" data-toggle="modal" data-target="#modal_bail_simple">
                                                 <div class="card-body">
-                                                    <h4 class="card-title">BAIL LIMITE</h4>
+                                                    <h4 class="card-title">BAIL LIMITE <a href="#" class="btn btn-outline-dark btn-sm float-right">Choisir</a>
+                                                    </h4>
                                                     <h5 class="card-subtitle mb-2 text-muted">Modifiable pendant 3 jours</h5>
                                                     <ul class="list-unstyled">
                                                         <li>Bail PDF rempli et mis en forme</li>
@@ -831,49 +830,44 @@ extra_css: "bail-formulaire.css"
                                                         <li class="grey"><s>11 Clauses importantes</s></li>
                                                         <li class="grey"><s>14 Annexes importantes</s></li>
                                                     </ul>
-                                                    <p><h4>
+                                                    <h4 class="mb-3">
                                                         Gratuit
-                                                    </h4></p>
+                                                    </h4>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="formulaire__sousElement">
-                                    <h3>Options</h3>
-                                    <div class="row">
                                         <div class="col-lg-6">
+                                            <h3>Options</h3>
                                             <div class="card" style="border:6px solid #a896d8;cursor: pointer;" data-toggle="modal" data-target="#modalAboZen">
                                                 <div class="card-body">
-                                                    <h4 class="card-title">GESTION LOCATIVE EN LIGNE</h4>
+                                                    <h4 class="card-title">GESTION EN LIGNE <a href="#" class="btn btn-outline-dark btn-sm float-right">Supprimer</a></h4>
+                                                    <h5 class="card-subtitle mb-2 text-muted">3 premiers mois offerts</h5>
                                                     <ul class="list-unstyled">
-                                                        <li>Quittances mensuelles par email </li>
+                                                        <li>Checklist d'entrée dans les lieux</li>
+                                                        <li>Quittances mensuelles par email</li>
                                                         <li>Indexation du loyer automatique</li>
                                                         <li>Echéances importantes</li>
-                                                        <li>Finance & fiscalité</li>
                                                         <li>Assistance panne & contentieux</li>
                                                     </ul>
-                                                    <p><h4>
-                                                        <s>4,90 €/mois</s><br>3 premiers mois offerts avec le bail complet<br><u>annulable à tout moment</u>
-                                                    </h4></p>
-                                                    <p><a href="#" class="card-link">Exemple de quittance</a>
-                                                    <br/><a href="#" class="card-link">Aperçu de l'espace de gestion</a></p>
+                                                    <h4 style="position:relative" class="mb-3">
+                                                        <span id="prix_barre">4,90 €/mois</span> 3 mois offerts avec le bail complet
+                                                    </h4>
+                                                    <a href="#" class="card-link">En savoir plus</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6">
                                             <div class="card" style="cursor: pointer;">
                                                 <div class="card-body">
-                                                    <h4 class="card-title">SIGNATURE ELECTRONIQUE</h4>
+                                                    <h4 class="card-title">SIGNATURE ELECTRONIQUE <a href="#" class="btn btn-outline-dark btn-sm float-right">Ajouter</a></h4>
+                                                    <h5 class="card-subtitle mb-2 text-muted">Satisfait ou remboursé</h5>
                                                     <ul class="list-unstyled">
                                                         <li>Acceptée par les tribunaux</li>
                                                         <li>Signature instantanée à distance</li>
                                                         <li>Conservation sécurisée</li>
                                                     </ul>
-                                                    <p><h4>
+                                                    <h4 class="mb-3">
                                                         4€ / signataire
-                                                    </h4></p>
-                                                    <p><a href="#" class="card-link">En savoir plus</a></p>
+                                                    </h4>
+                                                    <a href="#" class="card-link">En savoir plus</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -884,7 +878,7 @@ extra_css: "bail-formulaire.css"
                                         <div class="col-lg-6">
                                             <div class="card" style="background-color: lightgrey;cursor: not-allowed;">
                                                 <div class="card-body">
-                                                    <h4 class="card-title">GESTION LOCATIVE EN LIGNE <br/><span class="badge badge-pill badge-danger">Non disponible avec le bail limité</span>                                                    </h4>
+                                                    <h4 class="card-title">GESTION EN LIGNE <br/><span class="badge badge-pill badge-danger">Non disponible avec le bail limité</span>                                                    </h4>
                                                     <ul class="list-unstyled">
                                                         <li>Quittances mensuelles par email </li>
                                                         <li>Indexation du loyer automatique</li>
@@ -895,14 +889,15 @@ extra_css: "bail-formulaire.css"
                                                     <p><h4>
                                                         <s>4,90 €/mois</s><br>3 premiers mois offerts avec le bail complet<br><u>annulable à tout moment</u>
                                                     </h4></p>
-                                                    <p><a href="#" class="card-link">En savoir plus</a></p>
+                                                    <p><a href="#" class="card-link">Voir l'espace de gestion</a></p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="card" style="border:6px solid #a896d8;cursor: pointer;">
                                                 <div class="card-body">
-                                                    <h4 class="card-title">SIGNATURE ELECTRONIQUE<br/><span class="badge badge-pill badge-success">Déjà payé</span></h4>
+                                                    <h4 class="card-title">SIGNATURE ELECTRONIQUE <span class="badge badge-pill badge-success float-right">Déjà payé</span></h4>
+                                                    <h5 class="card-subtitle mb-2 text-muted">Satisfait ou remboursé</h5>
                                                     <ul class="list-unstyled">
                                                         <li>Acceptée par les tribunaux</li>
                                                         <li>Signature instantanée à distance</li>
@@ -935,7 +930,7 @@ extra_css: "bail-formulaire.css"
                                     </div>
                                     <div class="row justify-content-end mt-4 mb-4">
                                         <div class="col-sm-auto">
-                                            <button class="btn btn-outline-dark" type="submit">Aperçu du bail complet</button>
+                                            <button class="btn btn-dark" type="submit">Aperçu du bail complet</button>
                                         </div>
                                         <div class="col-sm-auto mt-3 mt-sm-0">
                                             <button class="btn btn-primary" data-toggle="tab" href="#tab_annexes" role="tab">Générer le bail</button>
@@ -943,7 +938,7 @@ extra_css: "bail-formulaire.css"
                                     </div>
                                     <h3>14,70€ TTC</h3>
                                     <p><em>Bail complet + 3 premiers mois offerts sur la gestion locative en ligne.
-                                        Après 3 mois formule abonnement gestion locative en ligne à 4,90 €/mois, renouvelable tacitement chaque trimestre, annulable à tout moment en ligne sans frais.</em></p>
+                                        Après 3 mois abonnement de gestion locative en ligne à 4,90 €/mois, renouvelable tacitement chaque trimestre, annulable à tout moment en ligne sans frais.</em></p>
                                     <hr class="mt-4 mb-4">
                                     <p style="margin-bottom: 10px">Recommandé par <img src="../../../assets/img/smartloc/logos/logo_challenges.png" style="width:100px;height:auto"></p>
                                     <p style="margin-bottom: 10px">Modèle conforme loi 2020 <img src="../../../assets/img/smartloc/logos/BM.png" style="width:100px;height:auto"></p>
@@ -1060,10 +1055,44 @@ extra_css: "bail-formulaire.css"
                 </button>
               </div>
               <div class="modal-body">
-                <p>Les 3 mois de gestion locative en ligne sont proposés par défaut gratuitement avec le bail complet.</p>
-                <p>Après 3 mois l'abonnement de gestion locative en ligne passe à 4,90 €/mois, renouvelable tacitement chaque trimestre.</p>
-                <p>Vous pouvez annuler à tout moment en ligne sans frais, même pendant les 3 mois gratuits.</p>
+                <p>La gestion locative en ligne vous est proposée <strong>par défaut gratuitement</strong> avec le bail complet.</p>
+                <p>Vous pouvez annuler cette option à tout moment en ligne sans frais, même pendant les 3 mois gratuits, mais nous sommes persuadés que nos outils automatiques et notre espace de gestion vous convaincront.</p>
+                <p>Après 3 mois gratuis, l'abonnement de gestion locative en ligne passe à 4,90 €/mois, renouvelable tacitement chaque trimestre.</p>
               </div>
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="modal_bail_simple" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Attention votre bail limité ne contiendra pas :</h3>
+                <ul class="fa-ul" style="margin-top:30px;margin-bottom:30px">
+                    <li><i class="fas fa-times-circle"></i> Clause sur les visites pour relouer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause de paiement du loyer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause de franchise de loyer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause animaux domestiques</li>
+                    <hr>
+                    <li><i class="fas fa-times-circle"></i> Acte de caution solidaire</li>
+                    <li><i class="fas fa-times-circle"></i> Inventaire des meubles</li>
+                    <li><i class="fas fa-times-circle"></i> Liste des charges</li>
+                    <hr>
+                    <li><i class="fas fa-times-circle"></i> 3 mois de gestion en ligne offerts (checklist entrée dans les lieux, quittances, etc)</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Choisir la formule Bail Complet</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Je ne veux pas d'un bail complet</button>
+            </div>											
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- SCRIPT -->
+<script src="../scripts/scripts.js"></script>
