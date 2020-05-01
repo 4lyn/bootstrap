@@ -1,11 +1,3 @@
-/**
- * ------------------------------------------------------------------------
- * Constants
- * ------------------------------------------------------------------------
- */
-
-const tailleTypo = parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size'))
-const rationTypo = -9
 
 /**
  * ------------------------------------------------------------------------
@@ -18,7 +10,7 @@ class Smartloc {
       items[0].classList.add('active')
       window.addEventListener('scroll', () => {
         for (let i = 0; i < items.length; i++) {
-          const ancreDecalage = rationTypo * tailleTypo
+          const ancreDecalage = -140
           const ancrePosition = ancres[i].getBoundingClientRect().top + window.scrollY + ancreDecalage
           if (window.pageYOffset > ancrePosition) {
             for (let j = 0; j < items.length; j++) {
