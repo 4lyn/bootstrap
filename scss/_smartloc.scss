@@ -1893,6 +1893,16 @@ ul.liste--check li::before
     width: 75%;
 }
 
+.sectionArticle__corps h2 {
+    margin-bottom : 1rem; margin-top : 2.5rem;
+}
+.sectionArticle__corps h3 {
+    margin-bottom : 1rem;
+}
+.sectionArticle__corps .card {
+    margin-bottom : 2rem;
+}
+
 
 
 @media (max-width: 991px)
