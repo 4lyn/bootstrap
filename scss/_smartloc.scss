@@ -98,7 +98,7 @@ header  .navbar-collapse .nav-link{
     margin-left: 1rem;
 }
 
-.navbar-light a:not(.btn)
+.navbar-light a:not(.disabled)
 {
     text-decoration: none !important;
     color: black !important;
