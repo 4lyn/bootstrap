@@ -62,7 +62,7 @@ body_class: bg-grey
                                         <li>ajouter et valider les justificatifs</li>
                                         <li>récupérer un dossier pdf vous permettant de souscrire</li>
                                     </ul>
-                                    <p>En cas de questions ou de problèmes notre équipe est disponible à tout moment sur le chat ou par mail à equipe@smartloc.fr</p>
+                                    <p>En cas de questions ou de problèmes notre équipe est disponible à tout moment par mail sur <a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
                                     <button class="btn btn-dark btn-lg">Démarrer le dossier locataire</button>
                                 </div>
                             </div>
@@ -77,3 +77,46 @@ body_class: bg-grey
         </div>
 
 </main>
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

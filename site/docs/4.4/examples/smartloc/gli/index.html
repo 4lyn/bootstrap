@@ -58,7 +58,6 @@ extra_css: https://use.fontawesome.com/releases/v5.13.0/css/all.css
             <span class="headerClassique__titrage_sousTitre">Loyers, dégradations et procédure d'expulsion sont pris en charge dès le premier mois d'impayé, en durée illimitée.</span>
             <div class="headerClassique__titrage_conteneurLiens">
               <a href="#" class="btn btn-dark headerClassique__titrage_bouton" data-toggle="modal" data-target="#modalDemarrer">Démarrer</a>
-              <a href="#" class="mt-4 mt-sm-0 mt-md-4 mt-xl-0 btn-link">Parlez à un conseiller</a>
             </div>
           </div>
           <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
@@ -1124,8 +1123,7 @@ extra_css: https://use.fontawesome.com/releases/v5.13.0/css/all.css
           <img src="../../../assets/img/smartloc/photos/expert_3.png" class="d-none d-sm-block" alt="">
         </div>
         <div class="sectionExpertsAide__conteneurBoutons text-center">
-          <a class="btn btn-outline-dark btn-sm"  href="mailto:equipe@smartloc.fr"><h5>equipe@smartloc.fr</h5></a>
-          <a class="btn btn-dark btn-sm mt-2 mt-sm-0"  href="#" data-toggle="modal" data-target="#modalContact"><h5>Parlez avec un conseiller</h5></a>
+          <a class="btn btn-outline-dark btn-sm"  href="#" data-toggle="modal" data-target="#modalContact"><h5>Nous contacter</h5></a>
         </div>
       </div>
     </div>
@@ -1202,28 +1200,55 @@ extra_css: https://use.fontawesome.com/releases/v5.13.0/css/all.css
 </footer>
 
 
-<div class="modal fade " id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
       </button>
       <div class="modal-body">
         <h3>2 moyens pour contacter nos équipes</h3>
-        <h5 class="mt-5"><a class="btn btn-outline-dark btn-sm" href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
-        <h5><a class="btn btn-dark btn-sm" href="">Parlez avec un conseiller</a></h5>
-        <p class="mt-4">Notre support téléphonique est réservé à nos clients, vous trouverez notre numéro sur votre espace de gestion.</p>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade " id="modalDemarrer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade " id="modalDemarrer" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title" id="exampleModalLabel">Les étapes pour souscrire</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
         </button>
         </div>
       <div class="modal-body">
