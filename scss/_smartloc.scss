@@ -129,6 +129,15 @@ section.headerHub
 {
     position: absolute;
     bottom:0;
+    right: 20%;
+    height: 75%;
+}
+
+.headerHub_illustration_blog{
+  position: absolute;
+  bottom:0;
+  right: 10rem;
+  width:50%
 }
 
 .headerHub .barreRecherche
@@ -234,6 +243,12 @@ section.headerHub
     width: 17rem;
     margin-top: 2rem;
 }
+
+.bouton_float{
+  position:absolute;
+  z-index:20;
+}
+
 
 .headerClassique__titrage_conteneurIllustration
 {
