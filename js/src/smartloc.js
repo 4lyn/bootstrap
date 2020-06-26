@@ -1,3 +1,4 @@
+import $ from 'jquery'
 
 /**
  * ------------------------------------------------------------------------
@@ -24,13 +25,15 @@ class Smartloc {
   }
 }
 
-Smartloc.setActive(
-  document.querySelectorAll('.menuSticky--sousElement__item'),
-  document.querySelectorAll('.menuSticky--sousElement__ancre')
-)
-Smartloc.setActive(
-  document.querySelectorAll('.menuSticky--section__conteneurLiens_item'),
-  document.querySelectorAll('.menuSticky--section__ancre')
-)
+$(document).ready(() => {
+  Smartloc.setActive(
+    document.querySelectorAll('.menuSticky--sousElement__item'),
+    document.querySelectorAll('.menuSticky--sousElement__ancre')
+  )
+  Smartloc.setActive(
+    document.querySelectorAll('.menuSticky--section__conteneurLiens_item'),
+    document.querySelectorAll('.menuSticky--section__ancre')
+  )
+})
 
 export default Smartloc
