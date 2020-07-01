@@ -1,67 +1,63 @@
 /* @import "./site-reccurent-elements.css"; */
 @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
 
-*
-{
+* {
     font-family: 'Archivo', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6
-{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
-h1
-{
+h1 {
     font-size: 2.5rem;
     line-height: 3rem;
 }
 
-h2
-{
+h2 {
     font-size: 2rem;
     line-height: 2.5rem;
 }
 
-h3
-{
+h3 {
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
-h4
-{
+h4 {
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
 
-h5
-{
+h5 {
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
-h6
-{
+h6 {
     font-size: .875rem;
     line-height: 1.5rem;
 }
 
-main
-{
+main {
     width: 100%;
 }
 
-section, header, footer
-{
+section,
+header,
+footer {
     width: 100%;
     position: relative;
     padding-right: 10rem;
     padding-left: 10rem;
 }
 
-section 
-{
+section {
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
 }
@@ -71,103 +67,89 @@ section
     min-width: auto;
 }
 
-
-.bg-grey{
+.bg-grey {
     background-color: #f4f4f4;
 }
 
 /************* Modal *************/
 
-.modal-footer{
+.modal-footer {
     padding: .75rem;
 }
 
-
-
 /************* HEADER *************/
-header
-{
+
+header {
     padding-top: 2.5rem;
 }
 
-header .navbar{
-    padding-left: 0px;padding-right: 0px;
+header .navbar {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-header  .navbar-collapse .nav-link{
+header .navbar-collapse .nav-link {
     margin-left: 1rem;
 }
 
-.navbar-light a:not(.disabled)
-{
+.navbar-light a:not(.disabled) {
     text-decoration: none !important;
     color: black !important;
 }
 
-.logoSmartloc
-{
+.logoSmartloc {
     width: 8.75rem;
 }
 
-
-
-
-
 /* HEADER RESSOURCE HUB home et categories */
-.headerHub
-{
+.headerHub {
     background-color: #F9DCA5;
     padding-bottom: 3.75rem;
 }
 
-section.headerHub
-{
+section.headerHub {
     padding-top: 0;
 }
 
-.headerHub_illustration
-{
+.headerHub_illustration {
     position: absolute;
-    bottom:0;
+  bottom: 0;
     right: 20%;
     height: 75%;
 }
 
-.headerHub_illustration_blog{
+.headerHub_illustration_blog {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   right: 10rem;
   width: 40%
 }
 
-.headerHub .barreRecherche
-{
+.headerHub .barreRecherche {
     width: 100%;
     padding: 0 10rem;
     position: absolute;
-    bottom:0;
+  bottom: 0;
     left: 0; 
     -webkit-transform: translateY(50%);
     transform: translateY(50%);
     z-index: 10;
 }
 
-
 /* HEADER D'ARTICLE */
-.headerArticle{
+.headerArticle {
     padding-bottom: 5rem;
 }
 
-.headerArticle__titrage a{
-    color:black;
+.headerArticle__titrage a {
+  color: black;
 }
 
-.headerArticle__titrage_titre{
+.headerArticle__titrage_titre {
     margin: .5rem 0 0 0;
 }
 
-.headerArticle__titrage_articleInfos
-{
+.headerArticle__titrage_articleInfos {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -178,8 +160,7 @@ section.headerHub
     justify-content: flex-end;
 }
 
-.headerArticle__titrage_articleInfos p
-{
+.headerArticle__titrage_articleInfos p {
     margin-top: 0;
     margin-bottom: 0;
     width: -webkit-max-content;
@@ -188,16 +169,14 @@ section.headerHub
     margin-left: auto;
 }
 
-.headerArticle__titrage_articleInfos img
-{
+.headerArticle__titrage_articleInfos img {
     width: 4.3rem;
     height: 4.3rem;
     margin-left: .5rem;
 }
 
 /* HEADER CLASSIQUE présent sur pages bail, gestion locative, homepage, etc */
-.headerClassique__titrage
-{
+.headerClassique__titrage {
     padding-top: 7.5rem;
     padding-bottom: 10rem; 
     display: -ms-flexbox; 
@@ -208,19 +187,15 @@ section.headerHub
     align-items: center;
 }
 
-
-.headerClassique__titrage_titre
-{
+.headerClassique__titrage_titre {
     margin-bottom: 1rem;
 }
 
-.headerClassique__titrage_sousTitre
-{
+.headerClassique__titrage_sousTitre {
     font-size: 1.125rem; 
 }
 
-.headerClassique__titrage_conteneurLiens
-{
+.headerClassique__titrage_conteneurLiens {
     margin-top: 2rem;
     display: -ms-flexbox;
     display: flex;
@@ -230,56 +205,49 @@ section.headerHub
     align-items: center;
 }
 
-.headerClassique__titrage_conteneurLiens .headerClassique__titrage_bouton
-{
+.headerClassique__titrage_conteneurLiens .headerClassique__titrage_bouton {
     display: inline;
     margin-top: 0;
     margin-right: 2rem;
 }
 
-.headerClassique__titrage_bouton
-{
+.headerClassique__titrage_bouton {
     display: block;
     width: 17rem;
     margin-top: 2rem;
 }
 
-.bouton_float{
-  position:absolute;
-  z-index:20;
+.bouton_float {
+  position: absolute;
+  z-index: 20;
 }
 
-
-.headerClassique__titrage_conteneurIllustration
-{
+.headerClassique__titrage_conteneurIllustration {
     width: auto;
     height: 18rem;
     padding: 0 15%;
 }
-.headerClassique__titrage_conteneurIllustration img
-{
+
+.headerClassique__titrage_conteneurIllustration img {
     width: auto;
     height: 100%;
 }
 
 /* cas comme homepage où illustration est une photo et pas une illustration */
-.headerClassique__titrage_conteneurPhoto
-{
+.headerClassique__titrage_conteneurPhoto {
     height: auto;
     width: 100%;
     margin: 0;
 }
 
-.headerClassique__titrage_conteneurPhoto img
-{
+.headerClassique__titrage_conteneurPhoto img {
     height: auto;
     width: 100%;
 }
 
 .headerClassique__commentCaMarche, 
 .headerClassique__commentCaMarche_conteneurEtapes,
-.headerClassique__commentCaMarche_etape
-{
+.headerClassique__commentCaMarche_etape {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -288,30 +256,25 @@ section.headerHub
     justify-content: space-between;
 }
 
-.headerClassique__commentCaMarche
-{
+.headerClassique__commentCaMarche {
     margin-bottom: 8rem;
 }
 
-.headerClassique__commentCaMarche_titre
-{
+.headerClassique__commentCaMarche_titre {
     min-width: 16rem;
     max-width: 16rem;
 }
 
-.headerClassique__commentCaMarche_contenu
-{
+.headerClassique__commentCaMarche_contenu {
     width: 100%;
 }
 
-.headerClassique__commentCaMarche_conteneurEtapes
-{
+.headerClassique__commentCaMarche_conteneurEtapes {
     margin-bottom: 3.5rem;
     width: 100%;
 }
 
-.headerClassique__commentCaMarche_etape
-{
+.headerClassique__commentCaMarche_etape {
     width: 100%;
     margin-right: 1.5rem;
     height: 7.5rem;
@@ -324,47 +287,41 @@ section.headerHub
     align-items: center;
     border: 1px solid black;
     border-radius: 4px;
-    margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
-.headerClassique__commentCaMarche_etape_number
-{
+.headerClassique__commentCaMarche_etape_number {
     font-size: 4.5rem;
     font-family: Roobert;
     width: 60%;
     text-align: center;
 }
 
-.headerClassique__commentCaMarche_etape_text
-{
+.headerClassique__commentCaMarche_etape_text {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 0;
 }
 
-.headerClassique__commentCaMarche_contenu ul li
-{
+.headerClassique__commentCaMarche_contenu ul li {
     line-height: 1.5rem;
     margin-bottom: .375rem;
 }
 
-
 /* categories */
 
-.headerHub__titrage{
+.headerHub__titrage {
   margin: 3.875rem 0 0 0;
 }
 
-.headerHub__titrage a
-{
-    color:black;
+.headerHub__titrage a {
+  color: black;
 }
 
 /************* FOOTER *************/
 
-footer
-{
+footer {
     height: 32rem;
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
@@ -372,52 +329,42 @@ footer
     background-color: black;
 }
 
-footer a
-{
+footer a {
     color: white !important;
 }
 
-
-.footer__logoReseauxSociaux
-{
+.footer__logoReseauxSociaux {
     width: 1rem;
     margin-right: 1rem;
 }
 
-
-footer hr
-{
+footer hr {
     width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-footer .list-unstyled li{
+footer .list-unstyled li {
     margin-bottom: 0.5rem;
 }
 
-
 /************* INPUTS *************/
 
-textarea{
+textarea {
     resize: none;
 }
 
-
 /* BARRE DE RECHERCHE */
-.barreRecherche>form
-{
+.barreRecherche>form {
     position: relative;
 }
 
-.barreRecherche__champSaisie
-{
+.barreRecherche__champSaisie {
     width: 100% !important;
     border-width: 1px;
 }
 
-.barreRecherche__bouton
-{
+.barreRecherche__bouton {
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -433,32 +380,30 @@ textarea{
     background-size: cover; 
 }
 
-
 /* BOUTONS OUI/NON VIOLETS */
 
-
-.boutonsRadioViolets__conteneur label
-{
+.boutonsRadioViolets__conteneur label {
     margin-bottom: 0px !important;
 }
-.boutonsRadioViolets__conteneur label:first-child
-{
+
+.boutonsRadioViolets__conteneur label:first-child {
     margin-right: 1rem;
 }
 
 /* permet de cacher l'input pour n'afficher que le label */
-.boutonsRadioViolets__conteneur label input[type="radio"]{
+.boutonsRadioViolets__conteneur label input[type="radio"] {
     display: none; 
 }
 
 /* permet de colorer le bouton si il est checké ou non */
-.boutonsRadioViolets__conteneur label input:checked + div{
+.boutonsRadioViolets__conteneur label input:checked+div {
     background: #A896D8;
     border: 1px solid #A896D8;
     font-weight: 600;
 }
-.boutonsRadioViolets__conteneur label input + div{
-    padding : 0.5rem 1rem 0.5rem 1rem;
+
+.boutonsRadioViolets__conteneur label input+div {
+  padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
     border: 1px solid black;
     background-color: #fff;
@@ -466,24 +411,20 @@ textarea{
     font-weight: 600;
 }
 
-
 /* INPUT ILLUSTRÉ avec icone ou texte */
-.champSaisie--illustré
-{
+.champSaisie--illustré {
     position: relative;
     height: 3rem;
     display: block;
 }
 
-.champSaisie--illustré .form-control
-{
+.champSaisie--illustré .form-control {
     width: 100% !important;
     position: absolute;
 }
 
 .champSaisie--illustré span, 
-.champSaisie--illustré svg
-{
+.champSaisie--illustré svg {
     position: absolute;
     font-weight: bold;
     line-height: 3rem;
@@ -491,54 +432,47 @@ textarea{
     right: 1rem;
 }
 
-
 /* ZONE CHECKBOXES */
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before 
-{
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     border: 1px solid rgba(0, 0, 0, 0.112);
-    background-color: black!important;
+  background-color: black !important;
     box-shadow: none !important;
 }
 
-.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
-}
-.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
-}
-.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:checked:focus~.custom-control-label::before {
     border: 1px solid rgba(0, 0, 0, 0.112);
     box-shadow: none !important;
 }
 
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
 
+.custom-checkbox .custom-control-input:active~.custom-control-label::before {
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: none !important;
+}
 
 /************* OBJETS RECCURENTS SUR LE SITE *************/
 
-ul.liste--check li::before
-{
+ul.liste--check li::before {
     content: "✔";
     color: black;
     margin-right: .25rem;
 }
 
-
-
 /* ALERTE ADVICE, messages de conseil du même style que les alertes 
 - coeur du composant ajouté au code source de bootstrap sous le nom de alerte-advice, 
 étant une alerte modifée, au côté de alerte-notice qui en est une variante */
-.alert-advice__italicText
-{
+.alert-advice__italicText {
     font-size: 1.125rem;
     line-height: 2rem;
     font-style: italic;
 }
 
 /* ENCADREMENT PROMOTIONNEL de couleur avec shapes en background pour la promotion du service smartloc */
-.encadrementPromotion
-{
+.encadrementPromotion {
     width: 100%;
     position: relative;
     display: -ms-flexbox;
@@ -552,19 +486,18 @@ ul.liste--check li::before
     text-align: center;
 }
 
-.encadrementPromotion__imageBackground
-{
+.encadrementPromotion__imageBackground {
     position: absolute;
 }
-.encadrementPromotion__imageBackground:nth-of-type(1)
-{
+
+.encadrementPromotion__imageBackground:nth-of-type(1) {
     width: auto;
     height: 95%;
     left: 0;
     bottom: 0;
 }
-.encadrementPromotion__imageBackground:nth-of-type(2)
-{
+
+.encadrementPromotion__imageBackground:nth-of-type(2) {
     width: auto;
     height: 60%;
     right: 0;
@@ -572,8 +505,7 @@ ul.liste--check li::before
 }
 
 /* ENCADREMENT ROSE DE CONTACT de conseiller avec shapes colorées et bouton "contacter un conseiller" */
-.encadrementContactConseiller
-{
+.encadrementContactConseiller {
     width: 100%;
     height: 28rem;
     padding: 30% auto;
@@ -587,8 +519,7 @@ ul.liste--check li::before
     background-color: #EBB9C2;
 }
 
-.encadrementContactConseiller__contenu
-{
+.encadrementContactConseiller__contenu {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -601,58 +532,51 @@ ul.liste--check li::before
     z-index: 10;
 }
 
-.encadrementContactConseiller__bouton
-{
+.encadrementContactConseiller__bouton {
     width: 17rem;
 }
 
-.encadrementContactConseiller__titre
-{
+.encadrementContactConseiller__titre {
     margin-bottom: 2.5rem;
     text-align: center;
 }
 
-.encadrementContactConseiller img
-{
+.encadrementContactConseiller img {
     position: absolute;
 }
-.encadrementContactConseiller img:first-of-type
-{
+
+.encadrementContactConseiller img:first-of-type {
     top: 0;
     left: 0;
-    width:20%;
+  width: 20%;
 }
-.encadrementContactConseiller img:nth-of-type(2)
-{
+
+.encadrementContactConseiller img:nth-of-type(2) {
     top: 0;
     right: 2%;
-    width:30%;
+  width: 30%;
 }
-.encadrementContactConseiller img:nth-of-type(3)
-{
+
+.encadrementContactConseiller img:nth-of-type(3) {
     bottom: 0;
     left: 5%;
-    width:25%;
+  width: 25%;
 }
-.encadrementContactConseiller img:nth-of-type(4)
-{
+
+.encadrementContactConseiller img:nth-of-type(4) {
     bottom: 0;
     right: 0;
-    width:30%;
+  width: 30%;
 }
 
-
 /* ENCADREMENT GRIS */
-.encadrement--gris
-{
+.encadrement--gris {
     background-color: #f4f4f4;
     border-radius: .25rem;
 }
 
-
 /* MENU STICKY en haut d'ecran avec bouton demarrer */
-.menuSticky--section
-{
+.menuSticky--section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -672,9 +596,7 @@ ul.liste--check li::before
     z-index: 20;
 }
 
-
-.menuSticky--section__conteneurLiens_item
-{
+.menuSticky--section__conteneurLiens_item {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -683,35 +605,33 @@ ul.liste--check li::before
     color: black;
     transition: .1s ease-in-out;
 }
-.menuSticky--section__conteneurLiens_item:hover
-{
+
+.menuSticky--section__conteneurLiens_item:hover {
     color: black;
     text-decoration: none;
     border-bottom: solid 2px rgba(0, 0, 0, 0.493);
 }
 
-.menuSticky--section__conteneurLiens_item.active /* classe pour le js */
+.menuSticky--section__conteneurLiens_item.active
+
+/* classe pour le js */
 {
     border-bottom: solid 2px black;
 }
 
-.menuSticky--section__bouton
-{
+.menuSticky--section__bouton {
     width: 11rem;
     height: 2rem;
     padding: .25rem 0;
 }
 
-.menuSticky--section__ancre
-{
-    position:relative;
+.menuSticky--section__ancre {
+  position: relative;
     top: -70px;
 }
 
-
 /* MENU STICKY DE SECTION, sur le cote d'une section */
-.menuSticky--sousElement
-{
+.menuSticky--sousElement {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -721,91 +641,88 @@ ul.liste--check li::before
     margin-top: 2.375rem;
 }
 
-.menuSticky--sousElement__item
-{
+.menuSticky--sousElement__item {
     color: rgba(0, 0, 0, 0.6);
     transition: .1s ease-in-out;
 }
-.menuSticky--sousElement__item:hover
-{
+
+.menuSticky--sousElement__item:hover {
     color: black;
     text-decoration: none;
 }
-.menuSticky--sousElement__item.active /* classe pour le js */
+
+.menuSticky--sousElement__item.active
+
+/* classe pour le js */
 {
-    color:black !important;
+  color: black !important;
 }
 
-.menuSticky--sousElement__ancre
-{
+.menuSticky--sousElement__ancre {
     position: absolute;
     top: -5rem;
 }
 
-
 /* ITEMS DEROULANT */
-.objetDeroulant__entete
-{
+.objetDeroulant__entete {
     cursor: pointer;
 }
-.objetDeroulant__entete>*
-{
+
+.objetDeroulant__entete>* {
     margin-bottom: 0;
 }
 
-
-.collapse_header{
+.collapse_header {
     margin-bottom: 0px;
     cursor: pointer;
 }
 
-.collapse_body{
+.collapse_body {
     padding-top: 1.875rem;
 }
 
-
 /* MENU NOIR, present sur sections documents */
 
-.nav-pills .nav-item:first-of-type .nav-link{
+.nav-pills .nav-item:first-of-type .nav-link {
     border-radius: 25px 0 0 25px;
     margin-left: -1px;
 }
 
-.nav-pills .nav-item:last-of-type .nav-link{
-    border-radius:  0 25px 25px 0;
+.nav-pills .nav-item:last-of-type .nav-link {
+  border-radius: 0 25px 25px 0;
     margin-right: -1px;
 }
-.nav-link{
-    color:black;
+
+.nav-link {
+  color: black;
     padding-top: 11px;
     padding-bottom: 11px;
 }
-.nav-link:hover{
-    color:black;
+
+.nav-link:hover {
+  color: black;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: black;
 }
 
-.nav-justified{
-    border : 0.125rem solid black;
+.nav-justified {
+  border: 0.125rem solid black;
     border-radius: 25px;
     height: 3rem;
 }
 
-
 /* TABLEAUX */
-.tableau
-{
+.tableau {
     width: 100%;
     padding: 1.5rem 2rem;
     border-radius: .25rem;
 }
 
 .tableau__ligne, 
-.tableau__entete
-{
+.tableau__entete {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -818,20 +735,17 @@ ul.liste--check li::before
     justify-content: space-between;
 }
 
-.tableau__ligne:last-child
-{
+.tableau__ligne:last-child {
     margin-bottom: 0;
 }
 
-.tableau__entete
-{
+.tableau__entete {
     height: 3rem;
     -ms-flex-align: baseline;
     align-items: baseline;
 }
 
-.tableau__premiereColonne
-{
+.tableau__premiereColonne {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -841,32 +755,28 @@ ul.liste--check li::before
 }
 
 .tableau__ligne_cellule p, 
-.tableau__entete_cellule p
-{
+.tableau__entete_cellule p {
     margin-bottom: 0;
 }
 
-.tableau__premiereColonne .tableau__cellule_petitTexte
-{
+.tableau__premiereColonne .tableau__cellule_petitTexte {
     font-size: 0.875rem;
 }
 
-.tableau__cellule_nombre
-{
+.tableau__cellule_nombre {
     font-size: 1.125rem;
     font-weight: bold;
 }
 
-.tableau__ligneSeparation
-{
+.tableau__ligneSeparation {
     width: 100%;
     height: .125rem;
     margin-bottom: 1.25rem;
     background-color: black;
 }
 
-.tableau__ligne_cellule:not(.tableau__premiereColonne), .tableau__entete_cellule:not(.tableau__premiereColonne)
-{
+.tableau__ligne_cellule:not(.tableau__premiereColonne),
+.tableau__entete_cellule:not(.tableau__premiereColonne) {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -877,14 +787,11 @@ ul.liste--check li::before
     align-items: center;
 }
 
-
-
 /************* CARDS *************/
 
 /* container des cards présent sur l'ensemble du site */
 
-.conteneurCards--colonne
-{
+.conteneurCards--colonne {
     margin-top: -2rem;
     display: -ms-flexbox;
     display: flex;
@@ -892,76 +799,62 @@ ul.liste--check li::before
     flex-flow: column wrap;
 }
 
-.card
-{
-    margin-top: 2rem;           /* Applique un margin top et right */         /* sur les cards pour eviter mauvais reponsive */
+.card {
+  margin-top: 2rem;
+  /* Applique un margin top et right */
+  /* sur les cards pour eviter mauvais reponsive */
 }
-
 
 /* petites cards sur une seule ligne avec un icone */
-.conteneurCardLignes
-{
-    margin-top: -1rem;          /* margin adapté aux petites cards */
+.conteneurCardLignes {
+  margin-top: -1rem;
+  /* margin adapté aux petites cards */
 }
 
-.conteneurCardLignes .cardLigne
-{
+.conteneurCardLignes .cardLigne {
     margin-top: 1rem;
 }
 
-.cardLigne
-{
+.cardLigne {
     font-weight: bold;
 }
 
-.cardLigne a
-{
+.cardLigne a {
     text-decoration: none !important;
     color: black !important;
 }
 
-.cardLigne__icone
-{
+.cardLigne__icone {
     width: 1.5rem;
     margin-right: .25rem;
 }
 
-
-
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
 
-
-
-.section__sousElement
-{
+.section__sousElement {
     position: relative;
 }
+
 /* permet d'appliquer un espacement bas aux sous-elements d'une section sauf le dernier */
-.section__sousElement:not(:last-child) 
-{
+.section__sousElement:not(:last-child) {
     margin-bottom: 2.5rem; 
 }
 
 /* permet de retirer un eventuel margin bottom non désiré a la fin d'un sous-element */
-.section__sousElement>*:last-child
-{
+.section__sousElement>*:last-child {
     margin-bottom: 0; 
 }
 
-.section__sousElement_titre
-{
+.section__sousElement_titre {
     margin-bottom: 1em;
 }
 
-
 /* SECTION SERVICES proposés, sur la homepage */
-.sectionServices
-{
+.sectionServices {
     padding-bottom: 0;
 }
 
-.sectionServices__conteneurService
-{
+.sectionServices__conteneurService {
     margin-top: 8.5rem;
     display: -ms-flexbox;
     display: flex;
@@ -972,26 +865,22 @@ ul.liste--check li::before
     -ms-flex-align: center;
     align-items: center;
 }
-.sectionServices__conteneurService:first-child
-{
+
+.sectionServices__conteneurService:first-child {
     margin-top: 0;
 }
 
-
-.sectionServices__conteneurService_nomService
-{
+.sectionServices__conteneurService_nomService {
     font-size: .825rem;
     font-family: Roobert;
     font-weight: 500;
 }
 
-.sectionServices__conteneurService_listeFeatures
-{
+.sectionServices__conteneurService_listeFeatures {
     margin: 1.5rem 0;
 }
 
-.sectionServices__conteneurService_listeFeatures li
-{
+.sectionServices__conteneurService_listeFeatures li {
     margin-bottom: 4px;
     display: -ms-flexbox;
     display: flex;
@@ -999,38 +888,31 @@ ul.liste--check li::before
     align-items: center;
 }
 
-.sectionServices__conteneurService_listeFeatures img
-{
+.sectionServices__conteneurService_listeFeatures img {
     margin-right: 12px;
 }
 
-.sectionServices__photo
-{
+.sectionServices__photo {
     width: 100%;
     height: auto;
 }
 
-
 /* SECTION QUESTIONS sur homepage et gestion locative */
-.questionDeroulante
-{
+.questionDeroulante {
     margin-top: 2rem;
     border-bottom: 1px dashed black;
 }
-.questionDeroulante:first-child
-{
+
+.questionDeroulante:first-child {
     margin: 0;
 }
 
-.questionDeroulante .objetDeroulant__entete
-{
+.questionDeroulante .objetDeroulant__entete {
     padding-bottom: 1.5rem;
 }
 
-
 /* SECTION TEMOIGNAGES */
-.sectionTemoignages
-{
+.sectionTemoignages {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1039,14 +921,12 @@ ul.liste--check li::before
     align-items: center;
 }
 
-.sectionTemoignages h1
-{
+.sectionTemoignages h1 {
     text-align: center;
     margin-bottom: 6.5rem;
 }
 
-.cardTemoignage
-{
+.cardTemoignage {
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;
     padding: 2rem;
@@ -1058,144 +938,123 @@ ul.liste--check li::before
     justify-content: space-between;
 }
 
-.cardTemoignage__conteneurInfos h6
-{
+.cardTemoignage__conteneurInfos h6 {
     margin-bottom: 1.125rem
 }
 
-.sectionTemoignages__imageAvisVerifie
-{
+.sectionTemoignages__imageAvisVerifie {
     width: 11rem;
     margin-top: 5.5rem;
 }
 
-
-.sectionTemoignages__conteneurPartenaires{
+.sectionTemoignages__conteneurPartenaires {
     margin-bottom: 40px;
 }
 
-.sectionTemoignages__conteneurPartenaires img
-{
+.sectionTemoignages__conteneurPartenaires img {
     width: auto;
     height: 3rem;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-.sectionTemoignages__formesBackground
-{
+.sectionTemoignages__formesBackground {
     position: absolute;
 }
-.sectionTemoignages__formesBackground.couronneNoir
-{
+
+.sectionTemoignages__formesBackground.couronneNoir {
     height: 20rem;
     left: 0;
     bottom: 5rem;
 }
-.sectionTemoignages__formesBackground.rondJaune
-{
+
+.sectionTemoignages__formesBackground.rondJaune {
     height: 20rem;
     right: 0;
     top: 0;
 }
 
-
 /* SECTION DES PAGES HUB home et categories */
-.sectionHub
-{
-    padding-top: 6.5rem;   /* padding de sections des pages hub home */
-    padding-bottom: 0;     /* et hub categorie qui sont differents des autres setions du site */
+.sectionHub {
+  padding-top: 6.5rem;
+  /* padding de sections des pages hub home */
+  padding-bottom: 0;
+  /* et hub categorie qui sont differents des autres setions du site */
     background-color: #F4F4F4;
 }
-.sectionHub:last-child
-{
+
+.sectionHub:last-child {
     padding-bottom: 10rem;
 }
 
-.sectionHub__titre
-{
+.sectionHub__titre {
     margin-bottom: 2.5rem;
 }
 
-
 /* SECTION CATEGORIES, present sur pages hub home et hub categories */
-.cardCategorie
-{
+.cardCategorie {
     -ms-flex: 1 1 20%;
     flex: 1 1 20%;
     border: none;
 }
 
-.cardCategorie_illustration
-{
+.cardCategorie_illustration {
     width: 50%;
 }
 
-.cardCategorie .card-body
-{
+.cardCategorie .card-body {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
 }
 
-
 /* SECTION SOUS CATEGORIES sur ressource hub categories */
-.sectionSousCategories .objetDeroulant
-{
+.sectionSousCategories .objetDeroulant {
     margin-top: 1.5rem;    
     padding: 0 1.5rem;
     line-height: 2rem;
     border-radius: .25rem;
     background-color: #fff;
 }
-.sectionSousCategories .objetDeroulant:first-child
-{
+
+.sectionSousCategories .objetDeroulant:first-child {
     margin: 0;
 }
 
-.sectionSousCategories .objetDeroulant__entete
-{
+.sectionSousCategories .objetDeroulant__entete {
     padding: 1.25rem 0;
     font-weight: bold;
 }
 
-.sectionSousCategories .objetDeroulant__contenu
-{
+.sectionSousCategories .objetDeroulant__contenu {
     padding-bottom: 1.5rem;
 }
 
-.sectionSousCategories .objetDeroulant__contenu p
-{
+.sectionSousCategories .objetDeroulant__contenu p {
     width: 100%;
     padding-bottom: 1.125rem;
     border-bottom: 1px dashed black;
 }
-.sectionSousCategories .objetDeroulant__contenu p:last-child
-{
+
+.sectionSousCategories .objetDeroulant__contenu p:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-
-
-
 /* SECTION SUGGESTION D'ARTICLE */
-.sectionSuggestionArticle h2
-{
+.sectionSuggestionArticle h2 {
     margin-bottom: 2.5rem;
 }
 
-.cardArticle
-{
+.cardArticle {
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;
     width: calc(100% - 2rem);
     border: none;
 }
 
-.cardArticle__articleInfos
-{
+.cardArticle__articleInfos {
     padding-top: .5rem;
     padding-bottom: 1rem;
     display: -ms-flexbox;
@@ -1206,18 +1065,13 @@ ul.liste--check li::before
     align-items: center;
 }
 
-
-
 /* SECTION ACCOMPAGNEMENT DES EXPERTS des experts sur hub article et homepage */
 
-
-.sectionAccompagnementExperts h1
-{
+.sectionAccompagnementExperts h1 {
     margin-bottom: 5rem;
 }
 
-.cardAccompagnementExperts
-{
+.cardAccompagnementExperts {
     position: relative;
     min-height: 16rem;
     -ms-flex: 1 1 30%;
@@ -1234,44 +1088,39 @@ ul.liste--check li::before
     border: none;
 }
 
-.cardAccompagnementExperts__illustration
-{
+.cardAccompagnementExperts__illustration {
     width: 96px;
     margin-bottom: .5rem;
 }
 
-.cardAccompagnementExperts h4
-{
+.cardAccompagnementExperts h4 {
     text-align: center;
 }
 
-.cardAccompagnementExperts__background
-{
+.cardAccompagnementExperts__background {
     position: absolute;
 }
-.bail_card .cardAccompagnementExperts__background
-{
-    left:0;
+
+.bail_card .cardAccompagnementExperts__background {
+  left: 0;
     bottom: 0;
     height: 45%;
 }
-.gestion_card .cardAccompagnementExperts__background
-{
+
+.gestion_card .cardAccompagnementExperts__background {
     left: 0;
     bottom: 0;
     height: 40%;
 }
-.assurance_card .cardAccompagnementExperts__background
-{
+
+.assurance_card .cardAccompagnementExperts__background {
     right: 0;
     bottom: 0;
     height: 50%;
 }
 
-
 /* SECTION AIDE D'EXPERTS avec liens de contact */
-.sectionExpertsAide
-{
+.sectionExpertsAide {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1280,15 +1129,12 @@ ul.liste--check li::before
     align-items: center;
 }
 
-
 .sectionExpertsAide__conteneurPhotos, 
-.sectionExpertsAide__conteneurBoutons
-{
+.sectionExpertsAide__conteneurBoutons {
     margin-top: 4rem;
 }
 
-.sectionExpertsAide__conteneurPhotos
-{
+.sectionExpertsAide__conteneurPhotos {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1297,27 +1143,23 @@ ul.liste--check li::before
     justify-content: center;
 }
 
-.sectionExpertsAide__conteneurPhotos img
-{
+.sectionExpertsAide__conteneurPhotos img {
     width: 15%;
     min-width: 6.5rem;
     margin: 0 1.25rem; 
 }
 
-.sectionExpertsAide__conteneurBoutons a
-{
+.sectionExpertsAide__conteneurBoutons a {
     width: 16rem;
     margin: 0 8px;
 }
-.sectionExpertsAide__conteneurBoutons a h5
-{
+
+.sectionExpertsAide__conteneurBoutons a h5 {
     margin: 0;
 }
 
-
 /* SECTION AIDE SMARTLOC violette avec shapes et bouton demarrer  */
-.sectionSmartlocAide
-{
+.sectionSmartlocAide {
     width: 100%;
     position: relative;
     display: -ms-flexbox;
@@ -1329,56 +1171,45 @@ ul.liste--check li::before
     background-color: #A896D8;
 }
 
-
-
-.sectionSmartlocAide__contenu h2
-{
+.sectionSmartlocAide__contenu h2 {
     margin-bottom: 2.5rem;
     text-align: center;
 }
 
-.sectionSmartlocAide__contenu a
-{
+.sectionSmartlocAide__contenu a {
     width: 17rem;
 }
 
-.sectionSmartlocAide img
-{
+.sectionSmartlocAide img {
     position: absolute;
 }
-.sectionSmartlocAide img:first-of-type
-{
+
+.sectionSmartlocAide img:first-of-type {
     top: 0;
     left: 2%;
     width: 25%;
 }
-.sectionSmartlocAide img:nth-of-type(2)
-{
+
+.sectionSmartlocAide img:nth-of-type(2) {
     top: 0;
     right: 5%;
     width: 20%;
 }
-.sectionSmartlocAide img:nth-of-type(3)
-{
+
+.sectionSmartlocAide img:nth-of-type(3) {
     bottom: 0;
     left: 5%;
     width: 25%;
 }
-.sectionSmartlocAide img:nth-of-type(4)
-{
+
+.sectionSmartlocAide img:nth-of-type(4) {
     bottom: 0;
     right: 5%;
     width: 25%;
 }
 
-
-
-
-
-
 /* SECTION FONCTIONNALITES sur page gestion locative */
-.sectionFontionnalites__conteneurFonctionnalite
-{
+.sectionFontionnalites__conteneurFonctionnalite {
     -ms-flex: 1 1 45%;
     flex: 1 1 45%;
     display: -ms-flexbox;
@@ -1389,72 +1220,60 @@ ul.liste--check li::before
     margin-right: 2rem;
 }
 
-.sectionFontionnalites__conteneurFonctionnalite img
-{
+.sectionFontionnalites__conteneurFonctionnalite img {
     width: 3.5rem;
     margin-bottom: .875rem;
 }
 
-
 /* SECTION USAGE sur page gestion locative */
-.sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre
-{
+.sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre {
     padding-top: 1.5rem;
 }
 
-.sectionUsage .alert-notice
-{
+.sectionUsage .alert-notice {
     margin-top: 2rem;
 }
 
-
-
 /********** DOSSIERS LOCATAIRES **********/
-.dossierLocataire
-{
-    margin-top:3.75rem;
+.dossierLocataire {
+  margin-top: 3.75rem;
     padding-bottom: 8.5rem;
 
 }
 
-.dossierLocataire__ligneProgression
-{
+.dossierLocataire__ligneProgression {
     height: .25rem;
     position: absolute;
-    top:0;
+  top: 0;
     background-color: black;
 }
 
-.dossierLocataire__menuEtapes
-{
+.dossierLocataire__menuEtapes {
     font-size: 1.125rem;
     margin-bottom: 2.75rem;
 }
 
-.dossierLocataire__menuEtapes_etape
-{
+.dossierLocataire__menuEtapes_etape {
     opacity: 0.2;
 }
 
-.dossierLocataire__menuEtapes img
-{
+.dossierLocataire__menuEtapes img {
     width: 1.5rem;
 }
 
-.dossierLocataire__menuEtapes_etape.active /* classe pour le js */
+.dossierLocataire__menuEtapes_etape.active
+
+/* classe pour le js */
 {
     opacity: 1 !important;
 }
 
-.dossierLocataire__menuEtapes span
-{
+.dossierLocataire__menuEtapes span {
     font-weight: bold;
     margin-left: .5rem;
 }
 
-
-.dossierLocataire__encadrementBienvenue
-{
+.dossierLocataire__encadrementBienvenue {
     background-color: white;
     overflow: hidden;
     z-index: 0;
@@ -1465,42 +1284,37 @@ ul.liste--check li::before
     flex-direction: row;
 }
 
-.dossierLocataire__encadrementBienvenue__partieGauche
-{
+.dossierLocataire__encadrementBienvenue__partieGauche {
     padding: 2.5rem 0 3.75rem 2.5rem;
 }
 
-.encadrementBienvenue__partieGauche_illustration
-{
+.encadrementBienvenue__partieGauche_illustration {
     position: absolute;
 }
-.encadrementBienvenue__partieGauche_illustration:nth-of-type(1)
-{
+
+.encadrementBienvenue__partieGauche_illustration:nth-of-type(1) {
     bottom: 0;
     left: 30%;
     width: 70%;
     z-index: -2;
 }
-.encadrementBienvenue__partieGauche_illustration:nth-of-type(2)
-{
+
+.encadrementBienvenue__partieGauche_illustration:nth-of-type(2) {
     bottom: 0;
     left: 0;
     z-index: -1;
     width: 50%;
 }
 
-.encadrementBienvenue__partieGauche_titre
-{
+.encadrementBienvenue__partieGauche_titre {
     margin-bottom: 2rem;
 }
 
-.dossierLocataire__encadrementBienvenue__partieDroite
-{
+.dossierLocataire__encadrementBienvenue__partieDroite {
     padding: 3.5rem 3.5rem 3.75rem 3.5rem;
 }
 
-.conteneurMathieu
-{
+.conteneurMathieu {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1508,8 +1322,7 @@ ul.liste--check li::before
     margin-bottom: 2rem;
 }
 
-.conteneurMathieu__description
-{
+.conteneurMathieu__description {
     margin-left: .75rem;
     display: -ms-flexbox;
     display: flex;
@@ -1517,173 +1330,145 @@ ul.liste--check li::before
     flex-direction: column;
 }
 
-.conteneurMathieu__description h4
-{
+.conteneurMathieu__description h4 {
     margin-bottom: 0;
 }
 
-
 /* HAUT DU DOCUMENT permanant */
-.dossierLocataire__titre
-{
+.dossierLocataire__titre {
     margin-bottom: 2.75rem;
 }
 
-.dossierLocataire__menuDossier
-{
+.dossierLocataire__menuDossier {
     margin-bottom: 2rem;
 }
 
 .dossierLocataire__menuDossier_dossier,
-.dossierLocataire__menuDossier_lienAjouterDossier
-{
+.dossierLocataire__menuDossier_lienAjouterDossier {
     padding: 0 0 20px 0;
     font-weight: bold;
     color: black;
 }
+
 .dossierLocataire__menuDossier_dossier:hover,
-.dossierLocataire__menuDossier_lienAjouterDossier:hover
-{
+.dossierLocataire__menuDossier_lienAjouterDossier:hover {
     text-decoration: none;
     color: black;
 }
 
-.dossierLocataire__menuDossier_dossier
-{
+.dossierLocataire__menuDossier_dossier {
     margin-right: 1.5rem;
 }
-.dossierLocataire__menuDossier_dossier.active /* classe pour le js */
+
+.dossierLocataire__menuDossier_dossier.active
+
+/* classe pour le js */
 {
     border-bottom: solid 2px black;
     border-radius: 0;
 }
 
-.dossierLocataire__menuDossier_lienAjouterDossier
-{
+.dossierLocataire__menuDossier_lienAjouterDossier {
     margin-right: 0;
     text-decoration: none;
 }
 
-
-.dossierLocataire__formulaire_section
-{
+.dossierLocataire__formulaire_section {
     padding: 2rem 2.5rem 2.125rem 2.5rem;
     margin-bottom: 2rem;
     background-color: white;
     border-radius: 4px;
 }
 
-.dossierLocataire__lienAjouterLocataire
-{
+.dossierLocataire__lienAjouterLocataire {
     display: inline-block;
     margin-top: 2rem;
     color: black;
     font-weight: bold;
 }
 
-
-.formulaire__sousElement
-{
+.formulaire__sousElement {
     margin-bottom: 1.875rem;
 }
 
-.formulaire__sousElement_titre
-{
+.formulaire__sousElement_titre {
     margin-bottom: 1.25rem;
 }
 
-.formulaire__sousElement_titre h3
-{
+.formulaire__sousElement_titre h3 {
     margin-bottom: 0;
 }
 
-
 /* INPUTS dans le formulaire */
 
-
-.dossierLocataire .alert
-{
+.dossierLocataire .alert {
     margin-bottom: 2rem;
 }
 
-
-
 /* NOS ASTUCES */
-.dossierLocataire__astuces 
-{
+.dossierLocataire__astuces {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.dossierLocataire__astuces>div
-{
+.dossierLocataire__astuces>div {
     margin-bottom: 1.5rem;
 }
 
-.dossierLocataire__astuces h3
-{
+.dossierLocataire__astuces h3 {
     margin-bottom: 1rem;
 }
 
-.dossierLocataire__astuces h4
-{
+.dossierLocataire__astuces h4 {
     margin-bottom: .5rem;
 }
 
-.dossierLocataire__astuces p
-{
+.dossierLocataire__astuces p {
     margin: 0;
     font-size: .875rem;
 }
 
-
 /* INPUTS fin de formulaire - Submit et autre */
 
-
-
-.conteneurBoutonsFinFormulaire button
-{
-    margin-left : 1rem;
+.conteneurBoutonsFinFormulaire button {
+  margin-left: 1rem;
 }
 
-
 /* ZONE CHECKBOXES */
-.conteneurCheckBoxes
-{
+.conteneurCheckBoxes {
     background-color: #F4F4F4;
     padding: 1.5rem;
     border-radius: 4px;
 }
 
-.conteneurCheckBoxes .custom-control
-{
+.conteneurCheckBoxes .custom-control {
     margin-top: .5rem;
 }
 
-
 /* ZONE UPLOAD */
-.zoneUploads
-{
+.zoneUploads {
     border: 1px dashed rgba(128, 128, 128, 0.44);
     padding: 2rem;
     border-radius: 4px;
 }
 
 /*** BAIL FORMULAIRE ***/
-.pricing_table td, .pricing_table th{
+.pricing_table td,
+.pricing_table th {
     text-align: center;
     border-top: none;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-.fa-star, .fa-star-half-o {
+.fa-star,
+.fa-star-half-o {
     color: #efb305;
 }
 
-.pricing_table{
+.pricing_table {
     margin-bottom: 0px;
 }
 
@@ -1705,34 +1490,30 @@ ul.liste--check li::before
     border-top: 2px solid #e8612d;
 }
 
-#tab_download .btn-sm{
+#tab_download .btn-sm {
     font-size: 0.8rem;
     padding: 0.5rem;
 }
 
 /*** ZEN ***/
 
-.fa-ul li{
+.fa-ul li {
     padding-top: 3px;
     padding-bottom: 3px;
 }
 
-.btn-link{
+.btn-link {
     font-weight: bold;
     color: black;
 }
 
-
 /*********** GLI ************/
 
-
-.sectionConditions .encadrement--gris
-{
+.sectionConditions .encadrement--gris {
     padding: 1.5rem 2rem;
 }
 
-.sectionImpayes .stats_container
-{
+.sectionImpayes .stats_container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -1742,108 +1523,93 @@ ul.liste--check li::before
     margin-bottom: 1rem;
 }
 
-.sectionImpayes .stats_container h3 
-{
+.sectionImpayes .stats_container h3 {
     margin-right: 1.5rem;
 }
 
-.sectionImpayes .stats_container p
-{
+.sectionImpayes .stats_container p {
     margin-bottom: 0;
 }
 
-
 /* tableau section impayés */
-.sectionImpayes .tableau__premiereColonne
-{
+.sectionImpayes .tableau__premiereColonne {
     width: 20%;
     font-weight: bold;
 }
 
-.sectionImpayes .tableau__ligne_cellule, .sectionImpayes .tableau__entete_cellule
-{
+.sectionImpayes .tableau__ligne_cellule,
+.sectionImpayes .tableau__entete_cellule {
     -ms-flex-pack: start;
     justify-content: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
 
-.sectionImpayes .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionImpayes .tableau__entete_cellule:not(.tableau__premiereColonne)
-{
+.sectionImpayes .tableau__ligne_cellule:not(.tableau__premiereColonne),
+.sectionImpayes .tableau__entete_cellule:not(.tableau__premiereColonne) {
     width: 40%;
 }
 
-.sectionDoc .section__sousElement
-{
+.sectionDoc .section__sousElement {
     margin-bottom: 2rem;
 }
 
-.sectionFAQ .menuSticky--sousElement a
-{
+.sectionFAQ .menuSticky--sousElement a {
     color: rgba(0, 0, 0, 0.6);
     transition: .1s ease-in-out;
 }
-.sectionFAQ .menuSticky--sousElement a:hover
-{
+
+.sectionFAQ .menuSticky--sousElement a:hover {
     color: black;
     text-decoration: none;
 }
 
-
 /* tableau section garanties */
-.sectionGaranties .tableau__premiereColonne
-{
+.sectionGaranties .tableau__premiereColonne {
     width: 45%;
 }
 
-.sectionGaranties .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionGaranties .tableau__entete_cellule:not(.tableau__premiereColonne)
-{
+.sectionGaranties .tableau__ligne_cellule:not(.tableau__premiereColonne),
+.sectionGaranties .tableau__entete_cellule:not(.tableau__premiereColonne) {
     width: 15%;
 }
 
-
 /* tableau section status */
-.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne)
-{
+.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne) {
     font-size: .875rem;
 }
 
-.sectionStatus .tableau__premiereColonne
-{
+.sectionStatus .tableau__premiereColonne {
     width: 30%;
 }
 
-.sectionStatus .tableau__ligne_cellule:not(.tableau__premiereColonne), .sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne)
-{
+.sectionStatus .tableau__ligne_cellule:not(.tableau__premiereColonne),
+.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne) {
     width: 11%;
     text-align: center;
     font-size: .875rem;
 }
 
-
 /*********** BAIL ************/
 
-.sectionBailAnnexe .alert-notice
-{
+.sectionBailAnnexe .alert-notice {
     margin-top: 2rem;
 }
 
 /*********** GEL ************/
 
-.sectionTarifs .card{
+.sectionTarifs .card {
     border: none;
 }
 
 /*********** ARTICLE ************/
 
-.sectionArticle
-{
+.sectionArticle {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.sectionArticle__corps
-{
+.sectionArticle__corps {
     background-color: #fff;
     padding: 144px;
     padding-top: 70px;
@@ -1851,132 +1617,108 @@ ul.liste--check li::before
     font-size: 18px;
 }
 
-.sectionArticle__photo
-{
+.sectionArticle__photo {
     width: 100%;
 }
 
-.sectionArticle__sommaire
-{
+.sectionArticle__sommaire {
     padding: 2rem 2.5rem;
     line-height: 32px;
     font-weight: bold;
 }
 
-.sectionArticle__sommaire ul
-{
+.sectionArticle__sommaire ul {
     padding-left: 1rem;
 }
 
-.sectionArticle__doublePhoto
-{
+.sectionArticle__doublePhoto {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
-.sectionArticle__doublePhoto img
-{
+.sectionArticle__doublePhoto img {
     width: 47.5%
 }
 
-.sectionArticle__captureTweet
-{
+.sectionArticle__captureTweet {
     width: 75%;
 }
 
 .sectionArticle__corps h2 {
-    margin-bottom : 1rem; margin-top : 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
 }
+
 .sectionArticle__corps h3 {
-    margin-bottom : 1rem;
+  margin-bottom: 1rem;
 }
+
 .sectionArticle__corps .card {
-    margin-bottom : 2rem;
+  margin-bottom: 2rem;
 }
 
+@media (max-width: 991px) {
 
-
-@media (max-width: 991px)
-{
-
-    .sectionArticle__corps{
-        padding : 20px;
+  .sectionArticle__corps {
+    padding: 20px;
     }
 
 }
 
-
-@media (max-width: 576px)
-{
-    .sectionArticle__sommaire
-    {
+@media (max-width: 576px) {
+  .sectionArticle__sommaire {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
-    .rowArticle{
+  .rowArticle {
         background-color: white;
     }
 }
 
-
 /*********** ZEN ************/
 
-#section_echeances .card-body{
+#section_echeances .card-body {
     font-size: 15px;
 }
 
-
 /*********** RESPONSIVE ************/
 
-
-@media (max-width: 1000px)
-{
-    footer
-    {
+@media (max-width: 1000px) {
+  footer {
         height: auto;
         padding: 3.75rem 5rem;
         -ms-flex-direction: column;
         flex-direction: column;
     }
 
-    footer>div:not(.footer__containerRight), .footer__conteneurLiens>div:not(.bottomPart)
-    {
+  footer>div:not(.footer__containerRight),
+  .footer__conteneurLiens>div:not(.bottomPart) {
         margin-bottom: 2.5rem;
     }
 
-    .footer__conteneurLiens
-    {
+  .footer__conteneurLiens {
         width: 100%;
     }
-    .footer__conteneurSocial
-    {
+
+  .footer__conteneurSocial {
         width: 20%;
     }
 
-    .footer__ligneSeparation--responsive
-    {
+  .footer__ligneSeparation--responsive {
         display: block;
     }
 
-    footer
-    {
+  footer {
         padding-right: 5rem;
         padding-left: 5rem;
     }
 }
 
-
-
-
-
-
-@media (max-width: 991px)
-{
-    .headerClassique__titrage
-    {
+@media (max-width: 991px) {
+  .headerClassique__titrage {
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
@@ -1985,7 +1727,7 @@ ul.liste--check li::before
         margin-bottom: 5rem;
     }
 
-    .menuSticky--section{
+  .menuSticky--section {
         display: none;
     }
 
@@ -1994,63 +1736,62 @@ ul.liste--check li::before
         padding-bottom: 5rem;
     }
 
-    h2{
+  h2 {
         margin-bottom: 2.5rem;
     }
 
-    .sectionServices__conteneurService{
+  .sectionServices__conteneurService {
         margin-top: 3rem;
     }
 
-    .notice-illustration{
-        display:none;
+  .notice-illustration {
+    display: none;
     }
 
-    .advice-illustration{
-        display:none;
+  .advice-illustration {
+    display: none;
     }
 
-    .headerHub .barreRecherche{
+  .headerHub .barreRecherche {
         padding: 0 1rem;
     }
-    .sectionContact{
+
+  .sectionContact {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
     .dossierLocataire__menuDossier_dossier,
-.dossierLocataire__menuDossier_lienAjouterDossier
-    {
+  .dossierLocataire__menuDossier_lienAjouterDossier {
         padding: 0 0 5px 0;
         margin-top: 10px;
     }
 
-    .dossierLocataire__formulaire_section{
+  .dossierLocataire__formulaire_section {
         padding: 1rem;
     }
 
-    .conteneurCheckBoxes, .zoneUploads{
+  .conteneurCheckBoxes,
+  .zoneUploads {
         padding: 0.5rem;
     }
 
 }
 
-
-@media (max-width: 1200px) and (min-width: 992px)
-{
-    .headerHub .barreRecherche{
+@media (max-width: 1200px) and (min-width: 992px) {
+  .headerHub .barreRecherche {
         padding: 0 3rem;
     }
-    .sectionContact{
+
+  .sectionContact {
         padding-left: 5rem;
         padding-right: 5rem;
 
     }
 }
 
-@media (max-width: 1200px)
-{
-    .menuSticky--section{
+@media (max-width: 1200px) {
+  .menuSticky--section {
         padding-left: 1rem;
     }
 }
