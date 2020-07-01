@@ -117,7 +117,7 @@ body_class: bg-grey
                     </div>
                     <div class="form-group">
                       <label>Le locataire est dans les lieux depuis</label>
-                      <select class="custom-select form-control col-sm-8 col-lg-6">
+                      <select class="custom-select col-sm-8 col-lg-6">
                         <option>Moins de 14 jours</option>
                         <option>Moins d'un mois</option>
                         <option>Moins de 6 mois</option>
@@ -133,7 +133,7 @@ body_class: bg-grey
                     <h3 class="formulaire__sousElement_titre">Locataire 1</h3>
                     <div class="form-group">
                       <label>Statut du locataire</label>
-                      <select class="custom-select form-control col-sm-8 col-lg-6">
+                      <select class="custom-select col-sm-8 col-lg-6">
                         <option>Étudiant / Alternant</option>
                         <option>Salarié</option>
                         <option>Entrepreneur</option>
@@ -146,7 +146,7 @@ body_class: bg-grey
                     <h3 class="formulaire__sousElement_titre">Garant 1</h3>
                     <div class="form-group">
                       <label>Statut du locataire</label>
-                      <select class="custom-select form-control col-sm-8 col-lg-6">
+                      <select class="custom-select col-sm-8 col-lg-6">
                         <option>Étudiant / Alternant</option>
                         <option>Salarié</option>
                         <option>Entrepreneur</option>
@@ -329,15 +329,16 @@ body_class: bg-grey
                       <!-- ZONE UPLOAD -->
                       <div class="formulaire__sousElement zoneUploads">
                         <h5>Uploads</h5>
-                        <div class="form-group conteneurBoutonUpload--custom">
-                          <span class="labelInput d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
-                          <label class="boutonUpload-custom" for="file-input">Parcourir</label>
-                          <span class="ml-3">Aucun fichier choisi</span>
-                          <input class="form-control" type="file" id="file-input">
+                        <div class="form-group">
+                          <label class="d-block">1. Choisir un fichier (.pdf ou .jpg)</label>
+                          <div class="custom-file col-sm-8 col-lg-6">
+                            <input type="file" class="custom-file-input" id="file-input" lang="fr">
+                            <label class="custom-file-label" for="file-input">Sélectionner un fichier</label>
+                          </div>
                         </div>
                         <div class="form-group">
-                          <label>2. Ce fichier contient (plusieurs choix possible)</label>
-                          <select class="custom-select form-control col-sm-8 col-lg-6">
+                          <label class="d-block">2. Ce fichier contient (plusieurs choix possible)</label>
+                          <select class="custom-select col-sm-8 col-lg-6">
                             <option>Optionel</option>
                             <option></option>
                             <option></option>
@@ -345,7 +346,7 @@ body_class: bg-grey
                           </select>
                         </div>
                         <div class="form-group">
-                          <span class="labelInput d-block">3. J’ajoute le fichier</span>
+                          <label class="d-block">3. J’ajoute le fichier</label>
                           <button class="btn btn-primary">Ajouter mon fichier</button>
                         </div>
                         <button type="button" class="btn btn-dark btn-sm mt-5" data-toggle="modal"

@@ -219,15 +219,15 @@
 .custom-select {
   display: block;
   width: 100%;
-  height: 3rem;
-  padding: 0.625rem ($custom-select-padding-x + $custom-select-indicator-padding) 0.625rem 1rem;
+  height: $custom-select-height;
+  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
   font-family: $custom-select-font-family;
   @include font-size($custom-select-font-size);
   font-weight: $custom-select-font-weight;
   line-height: $custom-select-line-height;
   color: $custom-select-color;
   background: $custom-select-bg $custom-select-background;
-  border: 1.5px solid $input-border-color;
+  border: $custom-select-border-width solid $custom-select-border-color;
   @include border-radius($custom-select-border-radius, 0);
   @include box-shadow($custom-select-box-shadow);
   appearance: none;

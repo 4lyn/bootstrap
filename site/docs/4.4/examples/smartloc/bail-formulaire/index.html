@@ -364,7 +364,7 @@ body_class: bg-grey
                                     <div class="form-row">
                                         <div class="form-group col-lg-6 mt-3">
                                             <label>Trimestre de référence pour l'IRL</label>
-                                            <select class="custom-select form-control">
+                                            <select class="custom-select">
                                                 <option>4T 2019 valeur 130,26</option>
                                                 <option>3T 2019 valeur 130,26</option>
                                                 <option>2T 2019 valeur 130,26</option>
@@ -373,7 +373,7 @@ body_class: bg-grey
                                         </div>
                                         <div class="form-group col-lg-6 mt-3">
                                             <label>Date de révision du loyer</label>
-                                            <select class="custom-select form-control">
+                                            <select class="custom-select">
                                                 <option>1er mois suivant l'anniversaire</option>
                                                 <option>Date d'anniversaire du bail</option>
                                                 <option>1er janvier</option>
@@ -384,7 +384,7 @@ body_class: bg-grey
                                     <div class="form-row">
                                         <div class="form-group col-lg-6">
                                             <label>Le précédent locataire a quitté le logement</label>
-                                            <select class="custom-select form-control">
+                                            <select class="custom-select">
                                                 <option>-</option>
                                                 <option>depuis moins de 18 mois</option>
                                                 <option>depuis plus de 18 mois</option>
@@ -415,7 +415,7 @@ body_class: bg-grey
                                     <div class="form-row">
                                         <div class="form-group col-lg-6">
                                             <label>Type de charges</label>
-                                            <select class="custom-select form-control">
+                                            <select class="custom-select">
                                                 <option>-</option>
                                                 <option>Provisions sur charges</option>
                                                 <option>Forfait de charges</option>
@@ -745,15 +745,16 @@ body_class: bg-grey
                                 </div>
                                 <div class="formulaire__sousElement">
                                     <h3 class="formulaire__sousElement_titre">Annexes fournies par le propriétaire</h3>
-                                    <div class="form-group conteneurBoutonUpload--custom">
-                                        <span class="labelInput d-block">1. Choisir un fichier (.pdf ou .jpg)</span>
-                                        <label class="boutonUpload-custom" for="file-input">Parcourir</label>
-                                        <span class="ml-3">Aucun fichier choisi</span>
-                                        <input class="form-control" type="file" id="file-input">
+                                    <div class="form-group">
+                                        <label class="d-block">1. Choisir un fichier (.pdf ou .jpg)</label>
+                                        <div class="custom-file col-sm-8 col-lg-6">
+                                          <input type="file" class="custom-file-input" id="file-input" lang="fr">
+                                          <label class="custom-file-label" for="file-input">Sélectionner un fichier</label>
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label>2. Ce fichier contient (plusieurs choix possible)</label>
-                                        <select class="custom-select form-control col-sm-8 col-lg-6">
+                                        <label class="d-block">2. Ce fichier contient (plusieurs choix possible)</label>
+                                        <select class="custom-select col-sm-8 col-lg-6">
                                             <option>Diagnostic énergétique</option>
                                             <option>Diagnostic plomb</option>
                                             <option>Diagnostic amiante</option>
@@ -761,7 +762,7 @@ body_class: bg-grey
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <span class="labelInput d-block">3. J’ajoute le fichier</span>
+                                        <label class="d-block">3. J’ajoute le fichier</label>
                                         <button class="btn btn-primary">Ajouter mon fichier</button>
                                     </div>
                                 </div>

@@ -492,24 +492,6 @@ textarea{
 }
 
 
-/* BOUTONS UPLOAD CUSTOM */
-.conteneurBoutonUpload--custom input[type="file"] 
-{
-    display: none !important;
-}
-
-.conteneurBoutonUpload--custom .boutonUpload-custom 
-{
-    height: 3rem;
-    padding: 0px 2.25rem 0px 2.25rem;
-    line-height: 44px;
-    display: inline-block;
-    border: 1.5px solid #D3D3D3;
-    border-radius: .25rem;
-    cursor: pointer;
-}
-
-
 /* ZONE CHECKBOXES */
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before 
 {
