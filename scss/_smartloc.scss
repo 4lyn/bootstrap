@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
 
 * {
-    font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
 }
 
 h1,
@@ -11,76 +11,76 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h4 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 h5 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h6 {
-    font-size: .875rem;
-    line-height: 1.5rem;
+  font-size: .875rem;
+  line-height: 1.5rem;
 }
 
 main {
-    width: 100%;
+  width: 100%;
 }
 
 section,
 header,
 footer {
-    width: 100%;
-    position: relative;
-    padding-right: 10rem;
-    padding-left: 10rem;
+  width: 100%;
+  position: relative;
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 section {
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
+  padding-top: 8.5rem;
+  padding-bottom: 8.5rem;
 }
 
 .btn {
-    white-space: normal;
-    min-width: auto;
+  white-space: normal;
+  min-width: auto;
 }
 
 .bg-grey {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 /************* Modal *************/
 
 .modal-footer {
-    padding: .75rem;
+  padding: .75rem;
 }
 
 /************* HEADER *************/
 
 header {
-    padding-top: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 header .navbar {
@@ -89,33 +89,33 @@ header .navbar {
 }
 
 header .navbar-collapse .nav-link {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .navbar-light a:not(.disabled) {
-    text-decoration: none !important;
-    color: black !important;
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .logoSmartloc {
-    width: 8.75rem;
+  width: 8.75rem;
 }
 
 /* HEADER RESSOURCE HUB home et categories */
 .headerHub {
-    background-color: #F9DCA5;
-    padding-bottom: 3.75rem;
+  background-color: #F9DCA5;
+  padding-bottom: 3.75rem;
 }
 
 section.headerHub {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .headerHub_illustration {
-    position: absolute;
+  position: absolute;
   bottom: 0;
-    right: 20%;
-    height: 75%;
+  right: 20%;
+  height: 75%;
 }
 
 .headerHub_illustration_blog {
@@ -126,19 +126,19 @@ section.headerHub {
 }
 
 .headerHub .barreRecherche {
-    width: 100%;
-    padding: 0 10rem;
-    position: absolute;
+  width: 100%;
+  padding: 0 10rem;
+  position: absolute;
   bottom: 0;
-    left: 0; 
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
-    z-index: 10;
+  left: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  z-index: 10;
 }
 
 /* HEADER D'ARTICLE */
 .headerArticle {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .headerArticle__titrage a {
@@ -146,75 +146,75 @@ section.headerHub {
 }
 
 .headerArticle__titrage_titre {
-    margin: .5rem 0 0 0;
+  margin: .5rem 0 0 0;
 }
 
 .headerArticle__titrage_articleInfos {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .headerArticle__titrage_articleInfos p {
-    margin-top: 0;
-    margin-bottom: 0;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
 }
 
 .headerArticle__titrage_articleInfos img {
-    width: 4.3rem;
-    height: 4.3rem;
-    margin-left: .5rem;
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-left: .5rem;
 }
 
 /* HEADER CLASSIQUE présent sur pages bail, gestion locative, homepage, etc */
 .headerClassique__titrage {
-    padding-top: 7.5rem;
-    padding-bottom: 10rem; 
-    display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: center;
-    align-items: center;
+  padding-top: 7.5rem;
+  padding-bottom: 10rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .headerClassique__titrage_titre {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .headerClassique__titrage_sousTitre {
-    font-size: 1.125rem; 
+  font-size: 1.125rem;
 }
 
 .headerClassique__titrage_conteneurLiens {
-    margin-top: 2rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-align: center;
-    align-items: center;
+  margin-top: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .headerClassique__titrage_conteneurLiens .headerClassique__titrage_bouton {
-    display: inline;
-    margin-top: 0;
-    margin-right: 2rem;
+  display: inline;
+  margin-top: 0;
+  margin-right: 2rem;
 }
 
 .headerClassique__titrage_bouton {
-    display: block;
-    width: 17rem;
-    margin-top: 2rem;
+  display: block;
+  width: 17rem;
+  margin-top: 2rem;
 }
 
 .bouton_float {
@@ -223,90 +223,90 @@ section.headerHub {
 }
 
 .headerClassique__titrage_conteneurIllustration {
-    width: auto;
-    height: 18rem;
-    padding: 0 15%;
+  width: auto;
+  height: 18rem;
+  padding: 0 15%;
 }
 
 .headerClassique__titrage_conteneurIllustration img {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
 
 /* cas comme homepage où illustration est une photo et pas une illustration */
 .headerClassique__titrage_conteneurPhoto {
-    height: auto;
-    width: 100%;
-    margin: 0;
+  height: auto;
+  width: 100%;
+  margin: 0;
 }
 
 .headerClassique__titrage_conteneurPhoto img {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
-.headerClassique__commentCaMarche, 
+.headerClassique__commentCaMarche,
 .headerClassique__commentCaMarche_conteneurEtapes,
 .headerClassique__commentCaMarche_etape {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .headerClassique__commentCaMarche {
-    margin-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 .headerClassique__commentCaMarche_titre {
-    min-width: 16rem;
-    max-width: 16rem;
+  min-width: 16rem;
+  max-width: 16rem;
 }
 
 .headerClassique__commentCaMarche_contenu {
-    width: 100%;
+  width: 100%;
 }
 
 .headerClassique__commentCaMarche_conteneurEtapes {
-    margin-bottom: 3.5rem;
-    width: 100%;
+  margin-bottom: 3.5rem;
+  width: 100%;
 }
 
 .headerClassique__commentCaMarche_etape {
-    width: 100%;
-    margin-right: 1.5rem;
-    height: 7.5rem;
-    padding-right: 1.25rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 4px;
+  width: 100%;
+  margin-right: 1.5rem;
+  height: 7.5rem;
+  padding-right: 1.25rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 
 .headerClassique__commentCaMarche_etape_number {
-    font-size: 4.5rem;
-    font-family: Roobert;
-    width: 60%;
-    text-align: center;
+  font-size: 4.5rem;
+  font-family: Roobert;
+  width: 60%;
+  text-align: center;
 }
 
 .headerClassique__commentCaMarche_etape_text {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
 }
 
 .headerClassique__commentCaMarche_contenu ul li {
-    line-height: 1.5rem;
-    margin-bottom: .375rem;
+  line-height: 1.5rem;
+  margin-bottom: .375rem;
 }
 
 /* categories */
@@ -322,381 +322,381 @@ section.headerHub {
 /************* FOOTER *************/
 
 footer {
-    height: 32rem;
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
-    color: white;
-    background-color: black;
+  height: 32rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  color: white;
+  background-color: black;
 }
 
 footer a {
-    color: white !important;
+  color: white !important;
 }
 
 .footer__logoReseauxSociaux {
-    width: 1rem;
-    margin-right: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
 }
 
 footer hr {
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 footer .list-unstyled li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /************* INPUTS *************/
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 /* BARRE DE RECHERCHE */
 .barreRecherche>form {
-    position: relative;
+  position: relative;
 }
 
 .barreRecherche__champSaisie {
-    width: 100% !important;
-    border-width: 1px;
+  width: 100% !important;
+  border-width: 1px;
 }
 
 .barreRecherche__bouton {
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 1rem;
-    border: none;
-    background-color: transparent;
-    background-image: url(../../../assets/img/smartloc/icons/search.png);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../../assets/img/smartloc/icons/search.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* BOUTONS OUI/NON VIOLETS */
 
 .boutonsRadioViolets__conteneur label {
-    margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .boutonsRadioViolets__conteneur label:first-child {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 /* permet de cacher l'input pour n'afficher que le label */
 .boutonsRadioViolets__conteneur label input[type="radio"] {
-    display: none; 
+  display: none;
 }
 
 /* permet de colorer le bouton si il est checké ou non */
 .boutonsRadioViolets__conteneur label input:checked+div {
-    background: #A896D8;
-    border: 1px solid #A896D8;
-    font-weight: 600;
+  background: #A896D8;
+  border: 1px solid #A896D8;
+  font-weight: 600;
 }
 
 .boutonsRadioViolets__conteneur label input+div {
   padding: 0.5rem 1rem 0.5rem 1rem;
-    text-align: center;
-    border: 1px solid black;
-    background-color: #fff;
-    border-radius: 52px;
-    font-weight: 600;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 52px;
+  font-weight: 600;
 }
 
 /* INPUT ILLUSTRÉ avec icone ou texte */
 .champSaisie--illustré {
-    position: relative;
-    height: 3rem;
-    display: block;
+  position: relative;
+  height: 3rem;
+  display: block;
 }
 
 .champSaisie--illustré .form-control {
-    width: 100% !important;
-    position: absolute;
+  width: 100% !important;
+  position: absolute;
 }
 
-.champSaisie--illustré span, 
+.champSaisie--illustré span,
 .champSaisie--illustré svg {
-    position: absolute;
-    font-weight: bold;
-    line-height: 3rem;
-    height: 3rem;
-    right: 1rem;
+  position: absolute;
+  font-weight: bold;
+  line-height: 3rem;
+  height: 3rem;
+  right: 1rem;
 }
 
 /* ZONE CHECKBOXES */
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
+  border: 1px solid rgba(0, 0, 0, 0.112);
   background-color: black !important;
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .custom-checkbox .custom-control-input:checked:focus~.custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.112);
+  box-shadow: none !important;
 }
 
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.112);
+  box-shadow: none !important;
 }
 
 .custom-checkbox .custom-control-input:active~.custom-control-label::before {
-    border: 1px solid rgba(0, 0, 0, 0.112);
-    box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.112);
+  box-shadow: none !important;
 }
 
 /************* OBJETS RECCURENTS SUR LE SITE *************/
 
 ul.liste--check li::before {
-    content: "✔";
-    color: black;
-    margin-right: .25rem;
+  content: "✔";
+  color: black;
+  margin-right: .25rem;
 }
 
 /* ALERTE ADVICE, messages de conseil du même style que les alertes 
 - coeur du composant ajouté au code source de bootstrap sous le nom de alerte-advice, 
 étant une alerte modifée, au côté de alerte-notice qui en est une variante */
 .alert-advice__italicText {
-    font-size: 1.125rem;
-    line-height: 2rem;
-    font-style: italic;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-style: italic;
 }
 
 /* ENCADREMENT PROMOTIONNEL de couleur avec shapes en background pour la promotion du service smartloc */
 .encadrementPromotion {
-    width: 100%;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 2.5rem 0;
-    border-radius: 4px;
-    text-align: center;
+  width: 100%;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .encadrementPromotion__imageBackground {
-    position: absolute;
+  position: absolute;
 }
 
 .encadrementPromotion__imageBackground:nth-of-type(1) {
-    width: auto;
-    height: 95%;
-    left: 0;
-    bottom: 0;
+  width: auto;
+  height: 95%;
+  left: 0;
+  bottom: 0;
 }
 
 .encadrementPromotion__imageBackground:nth-of-type(2) {
-    width: auto;
-    height: 60%;
-    right: 0;
-    bottom: 0;
+  width: auto;
+  height: 60%;
+  right: 0;
+  bottom: 0;
 }
 
 /* ENCADREMENT ROSE DE CONTACT de conseiller avec shapes colorées et bouton "contacter un conseiller" */
 .encadrementContactConseiller {
-    width: 100%;
-    height: 28rem;
-    padding: 30% auto;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #EBB9C2;
+  width: 100%;
+  height: 28rem;
+  padding: 30% auto;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #EBB9C2;
 }
 
 .encadrementContactConseiller__contenu {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 10;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 10;
 }
 
 .encadrementContactConseiller__bouton {
-    width: 17rem;
+  width: 17rem;
 }
 
 .encadrementContactConseiller__titre {
-    margin-bottom: 2.5rem;
-    text-align: center;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .encadrementContactConseiller img {
-    position: absolute;
+  position: absolute;
 }
 
 .encadrementContactConseiller img:first-of-type {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
   width: 20%;
 }
 
 .encadrementContactConseiller img:nth-of-type(2) {
-    top: 0;
-    right: 2%;
+  top: 0;
+  right: 2%;
   width: 30%;
 }
 
 .encadrementContactConseiller img:nth-of-type(3) {
-    bottom: 0;
-    left: 5%;
+  bottom: 0;
+  left: 5%;
   width: 25%;
 }
 
 .encadrementContactConseiller img:nth-of-type(4) {
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
   width: 30%;
 }
 
 /* ENCADREMENT GRIS */
 .encadrement--gris {
-    background-color: #f4f4f4;
-    border-radius: .25rem;
+  background-color: #f4f4f4;
+  border-radius: .25rem;
 }
 
 /* MENU STICKY en haut d'ecran avec bouton demarrer */
 .menuSticky--section {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 0 10rem;
-    padding-top: .875rem;
-    padding-bottom: 8px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background-color: #fff;
-    z-index: 20;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0 10rem;
+  padding-top: .875rem;
+  padding-bottom: 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 20;
 }
 
 .menuSticky--section__conteneurLiens_item {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    padding-bottom: 1.125rem;
-    margin-right: 1.5rem;
-    color: black;
-    transition: .1s ease-in-out;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.125rem;
+  margin-right: 1.5rem;
+  color: black;
+  transition: .1s ease-in-out;
 }
 
 .menuSticky--section__conteneurLiens_item:hover {
-    color: black;
-    text-decoration: none;
-    border-bottom: solid 2px rgba(0, 0, 0, 0.493);
+  color: black;
+  text-decoration: none;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.493);
 }
 
 .menuSticky--section__conteneurLiens_item.active
 
 /* classe pour le js */
-{
-    border-bottom: solid 2px black;
+  {
+  border-bottom: solid 2px black;
 }
 
 .menuSticky--section__bouton {
-    width: 11rem;
-    height: 2rem;
-    padding: .25rem 0;
+  width: 11rem;
+  height: 2rem;
+  padding: .25rem 0;
 }
 
 .menuSticky--section__ancre {
   position: relative;
-    top: -70px;
+  top: -70px;
 }
 
 /* MENU STICKY DE SECTION, sur le cote d'une section */
 .menuSticky--sousElement {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 6rem;
-    margin-top: 2.375rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  margin-top: 2.375rem;
 }
 
 .menuSticky--sousElement__item {
-    color: rgba(0, 0, 0, 0.6);
-    transition: .1s ease-in-out;
+  color: rgba(0, 0, 0, 0.6);
+  transition: .1s ease-in-out;
 }
 
 .menuSticky--sousElement__item:hover {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .menuSticky--sousElement__item.active
 
 /* classe pour le js */
-{
+  {
   color: black !important;
 }
 
 .menuSticky--sousElement__ancre {
-    position: absolute;
-    top: -5rem;
+  position: absolute;
+  top: -5rem;
 }
 
 /* ITEMS DEROULANT */
 .objetDeroulant__entete {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .objetDeroulant__entete>* {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .collapse_header {
-    margin-bottom: 0px;
-    cursor: pointer;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
 .collapse_body {
-    padding-top: 1.875rem;
+  padding-top: 1.875rem;
 }
 
 /* MENU NOIR, present sur sections documents */
 
 .nav-pills .nav-item:first-of-type .nav-link {
-    border-radius: 25px 0 0 25px;
-    margin-left: -1px;
+  border-radius: 25px 0 0 25px;
+  margin-left: -1px;
 }
 
 .nav-pills .nav-item:last-of-type .nav-link {
   border-radius: 0 25px 25px 0;
-    margin-right: -1px;
+  margin-right: -1px;
 }
 
 .nav-link {
   color: black;
-    padding-top: 11px;
-    padding-bottom: 11px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .nav-link:hover {
@@ -705,86 +705,86 @@ ul.liste--check li::before {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: black;
+  background-color: black;
 }
 
 .nav-justified {
   border: 0.125rem solid black;
-    border-radius: 25px;
-    height: 3rem;
+  border-radius: 25px;
+  height: 3rem;
 }
 
 /* TABLEAUX */
 .tableau {
-    width: 100%;
-    padding: 1.5rem 2rem;
-    border-radius: .25rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: .25rem;
 }
 
-.tableau__ligne, 
+.tableau__ligne,
 .tableau__entete {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .tableau__ligne:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tableau__entete {
-    height: 3rem;
-    -ms-flex-align: baseline;
-    align-items: baseline;
+  height: 3rem;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .tableau__premiereColonne {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.tableau__ligne_cellule p, 
+.tableau__ligne_cellule p,
 .tableau__entete_cellule p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tableau__premiereColonne .tableau__cellule_petitTexte {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 .tableau__cellule_nombre {
-    font-size: 1.125rem;
-    font-weight: bold;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .tableau__ligneSeparation {
-    width: 100%;
-    height: .125rem;
-    margin-bottom: 1.25rem;
-    background-color: black;
+  width: 100%;
+  height: .125rem;
+  margin-bottom: 1.25rem;
+  background-color: black;
 }
 
 .tableau__ligne_cellule:not(.tableau__premiereColonne),
 .tableau__entete_cellule:not(.tableau__premiereColonne) {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /************* CARDS *************/
@@ -792,11 +792,11 @@ ul.liste--check li::before {
 /* container des cards présent sur l'ensemble du site */
 
 .conteneurCards--colonne {
-    margin-top: -2rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
+  margin-top: -2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 .card {
@@ -812,166 +812,166 @@ ul.liste--check li::before {
 }
 
 .conteneurCardLignes .cardLigne {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .cardLigne {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .cardLigne a {
-    text-decoration: none !important;
-    color: black !important;
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .cardLigne__icone {
-    width: 1.5rem;
-    margin-right: .25rem;
+  width: 1.5rem;
+  margin-right: .25rem;
 }
 
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
 
 .section__sousElement {
-    position: relative;
+  position: relative;
 }
 
 /* permet d'appliquer un espacement bas aux sous-elements d'une section sauf le dernier */
 .section__sousElement:not(:last-child) {
-    margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem;
 }
 
 /* permet de retirer un eventuel margin bottom non désiré a la fin d'un sous-element */
 .section__sousElement>*:last-child {
-    margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .section__sousElement_titre {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 /* SECTION SERVICES proposés, sur la homepage */
 .sectionServices {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .sectionServices__conteneurService {
-    margin-top: 8.5rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
+  margin-top: 8.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .sectionServices__conteneurService:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .sectionServices__conteneurService_nomService {
-    font-size: .825rem;
-    font-family: Roobert;
-    font-weight: 500;
+  font-size: .825rem;
+  font-family: Roobert;
+  font-weight: 500;
 }
 
 .sectionServices__conteneurService_listeFeatures {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .sectionServices__conteneurService_listeFeatures li {
-    margin-bottom: 4px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+  margin-bottom: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .sectionServices__conteneurService_listeFeatures img {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .sectionServices__photo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* SECTION QUESTIONS sur homepage et gestion locative */
 .questionDeroulante {
-    margin-top: 2rem;
-    border-bottom: 1px dashed black;
+  margin-top: 2rem;
+  border-bottom: 1px dashed black;
 }
 
 .questionDeroulante:first-child {
-    margin: 0;
+  margin: 0;
 }
 
 .questionDeroulante .objetDeroulant__entete {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /* SECTION TEMOIGNAGES */
 .sectionTemoignages {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .sectionTemoignages h1 {
-    text-align: center;
-    margin-bottom: 6.5rem;
+  text-align: center;
+  margin-bottom: 6.5rem;
 }
 
 .cardTemoignage {
-    -ms-flex: 1 1 30%;
-    flex: 1 1 30%;
-    padding: 2rem;
-    border: none;
-    background-color: #f4f4f4;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  padding: 2rem;
+  border: none;
+  background-color: #f4f4f4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .cardTemoignage__conteneurInfos h6 {
-    margin-bottom: 1.125rem
+  margin-bottom: 1.125rem
 }
 
 .sectionTemoignages__imageAvisVerifie {
-    width: 11rem;
-    margin-top: 5.5rem;
+  width: 11rem;
+  margin-top: 5.5rem;
 }
 
 .sectionTemoignages__conteneurPartenaires {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .sectionTemoignages__conteneurPartenaires img {
-    width: auto;
-    height: 3rem;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+  width: auto;
+  height: 3rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .sectionTemoignages__formesBackground {
-    position: absolute;
+  position: absolute;
 }
 
 .sectionTemoignages__formesBackground.couronneNoir {
-    height: 20rem;
-    left: 0;
-    bottom: 5rem;
+  height: 20rem;
+  left: 0;
+  bottom: 5rem;
 }
 
 .sectionTemoignages__formesBackground.rondJaune {
-    height: 20rem;
-    right: 0;
-    top: 0;
+  height: 20rem;
+  right: 0;
+  top: 0;
 }
 
 /* SECTION DES PAGES HUB home et categories */
@@ -980,454 +980,454 @@ ul.liste--check li::before {
   /* padding de sections des pages hub home */
   padding-bottom: 0;
   /* et hub categorie qui sont differents des autres setions du site */
-    background-color: #F4F4F4;
+  background-color: #F4F4F4;
 }
 
 .sectionHub:last-child {
-    padding-bottom: 10rem;
+  padding-bottom: 10rem;
 }
 
 .sectionHub__titre {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* SECTION CATEGORIES, present sur pages hub home et hub categories */
 .cardCategorie {
-    -ms-flex: 1 1 20%;
-    flex: 1 1 20%;
-    border: none;
+  -ms-flex: 1 1 20%;
+  flex: 1 1 20%;
+  border: none;
 }
 
 .cardCategorie_illustration {
-    width: 50%;
+  width: 50%;
 }
 
 .cardCategorie .card-body {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 /* SECTION SOUS CATEGORIES sur ressource hub categories */
 .sectionSousCategories .objetDeroulant {
-    margin-top: 1.5rem;    
-    padding: 0 1.5rem;
-    line-height: 2rem;
-    border-radius: .25rem;
-    background-color: #fff;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+  line-height: 2rem;
+  border-radius: .25rem;
+  background-color: #fff;
 }
 
 .sectionSousCategories .objetDeroulant:first-child {
-    margin: 0;
+  margin: 0;
 }
 
 .sectionSousCategories .objetDeroulant__entete {
-    padding: 1.25rem 0;
-    font-weight: bold;
+  padding: 1.25rem 0;
+  font-weight: bold;
 }
 
 .sectionSousCategories .objetDeroulant__contenu {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .sectionSousCategories .objetDeroulant__contenu p {
-    width: 100%;
-    padding-bottom: 1.125rem;
-    border-bottom: 1px dashed black;
+  width: 100%;
+  padding-bottom: 1.125rem;
+  border-bottom: 1px dashed black;
 }
 
 .sectionSousCategories .objetDeroulant__contenu p:last-child {
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* SECTION SUGGESTION D'ARTICLE */
 .sectionSuggestionArticle h2 {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .cardArticle {
-    -ms-flex: 1 1 30%;
-    flex: 1 1 30%;
-    width: calc(100% - 2rem);
-    border: none;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  width: calc(100% - 2rem);
+  border: none;
 }
 
 .cardArticle__articleInfos {
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* SECTION ACCOMPAGNEMENT DES EXPERTS des experts sur hub article et homepage */
 
 .sectionAccompagnementExperts h1 {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .cardAccompagnementExperts {
-    position: relative;
-    min-height: 16rem;
-    -ms-flex: 1 1 30%;
-    flex: 1 1 30%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #f4f4f4;
-    border: none;
+  position: relative;
+  min-height: 16rem;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  border: none;
 }
 
 .cardAccompagnementExperts__illustration {
-    width: 96px;
-    margin-bottom: .5rem;
+  width: 96px;
+  margin-bottom: .5rem;
 }
 
 .cardAccompagnementExperts h4 {
-    text-align: center;
+  text-align: center;
 }
 
 .cardAccompagnementExperts__background {
-    position: absolute;
+  position: absolute;
 }
 
 .bail_card .cardAccompagnementExperts__background {
   left: 0;
-    bottom: 0;
-    height: 45%;
+  bottom: 0;
+  height: 45%;
 }
 
 .gestion_card .cardAccompagnementExperts__background {
-    left: 0;
-    bottom: 0;
-    height: 40%;
+  left: 0;
+  bottom: 0;
+  height: 40%;
 }
 
 .assurance_card .cardAccompagnementExperts__background {
-    right: 0;
-    bottom: 0;
-    height: 50%;
+  right: 0;
+  bottom: 0;
+  height: 50%;
 }
 
 /* SECTION AIDE D'EXPERTS avec liens de contact */
 .sectionExpertsAide {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.sectionExpertsAide__conteneurPhotos, 
+.sectionExpertsAide__conteneurPhotos,
 .sectionExpertsAide__conteneurBoutons {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .sectionExpertsAide__conteneurPhotos {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: center;
-    justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .sectionExpertsAide__conteneurPhotos img {
-    width: 15%;
-    min-width: 6.5rem;
-    margin: 0 1.25rem; 
+  width: 15%;
+  min-width: 6.5rem;
+  margin: 0 1.25rem;
 }
 
 .sectionExpertsAide__conteneurBoutons a {
-    width: 16rem;
-    margin: 0 8px;
+  width: 16rem;
+  margin: 0 8px;
 }
 
 .sectionExpertsAide__conteneurBoutons a h5 {
-    margin: 0;
+  margin: 0;
 }
 
 /* SECTION AIDE SMARTLOC violette avec shapes et bouton demarrer  */
 .sectionSmartlocAide {
-    width: 100%;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #A896D8;
+  width: 100%;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #A896D8;
 }
 
 .sectionSmartlocAide__contenu h2 {
-    margin-bottom: 2.5rem;
-    text-align: center;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .sectionSmartlocAide__contenu a {
-    width: 17rem;
+  width: 17rem;
 }
 
 .sectionSmartlocAide img {
-    position: absolute;
+  position: absolute;
 }
 
 .sectionSmartlocAide img:first-of-type {
-    top: 0;
-    left: 2%;
-    width: 25%;
+  top: 0;
+  left: 2%;
+  width: 25%;
 }
 
 .sectionSmartlocAide img:nth-of-type(2) {
-    top: 0;
-    right: 5%;
-    width: 20%;
+  top: 0;
+  right: 5%;
+  width: 20%;
 }
 
 .sectionSmartlocAide img:nth-of-type(3) {
-    bottom: 0;
-    left: 5%;
-    width: 25%;
+  bottom: 0;
+  left: 5%;
+  width: 25%;
 }
 
 .sectionSmartlocAide img:nth-of-type(4) {
-    bottom: 0;
-    right: 5%;
-    width: 25%;
+  bottom: 0;
+  right: 5%;
+  width: 25%;
 }
 
 /* SECTION FONCTIONNALITES sur page gestion locative */
 .sectionFontionnalites__conteneurFonctionnalite {
-    -ms-flex: 1 1 45%;
-    flex: 1 1 45%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: 2.5rem;
-    margin-right: 2rem;
+  -ms-flex: 1 1 45%;
+  flex: 1 1 45%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  margin-right: 2rem;
 }
 
 .sectionFontionnalites__conteneurFonctionnalite img {
-    width: 3.5rem;
-    margin-bottom: .875rem;
+  width: 3.5rem;
+  margin-bottom: .875rem;
 }
 
 /* SECTION USAGE sur page gestion locative */
 .sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre {
-    padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .sectionUsage .alert-notice {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /********** DOSSIERS LOCATAIRES **********/
 .dossierLocataire {
   margin-top: 3.75rem;
-    padding-bottom: 8.5rem;
+  padding-bottom: 8.5rem;
 
 }
 
 .dossierLocataire__ligneProgression {
-    height: .25rem;
-    position: absolute;
+  height: .25rem;
+  position: absolute;
   top: 0;
-    background-color: black;
+  background-color: black;
 }
 
 .dossierLocataire__menuEtapes {
-    font-size: 1.125rem;
-    margin-bottom: 2.75rem;
+  font-size: 1.125rem;
+  margin-bottom: 2.75rem;
 }
 
 .dossierLocataire__menuEtapes_etape {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .dossierLocataire__menuEtapes img {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 .dossierLocataire__menuEtapes_etape.active
 
 /* classe pour le js */
-{
-    opacity: 1 !important;
+  {
+  opacity: 1 !important;
 }
 
 .dossierLocataire__menuEtapes span {
-    font-weight: bold;
-    margin-left: .5rem;
+  font-weight: bold;
+  margin-left: .5rem;
 }
 
 .dossierLocataire__encadrementBienvenue {
-    background-color: white;
-    overflow: hidden;
-    z-index: 0;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
+  background-color: white;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .dossierLocataire__encadrementBienvenue__partieGauche {
-    padding: 2.5rem 0 3.75rem 2.5rem;
+  padding: 2.5rem 0 3.75rem 2.5rem;
 }
 
 .encadrementBienvenue__partieGauche_illustration {
-    position: absolute;
+  position: absolute;
 }
 
 .encadrementBienvenue__partieGauche_illustration:nth-of-type(1) {
-    bottom: 0;
-    left: 30%;
-    width: 70%;
-    z-index: -2;
+  bottom: 0;
+  left: 30%;
+  width: 70%;
+  z-index: -2;
 }
 
 .encadrementBienvenue__partieGauche_illustration:nth-of-type(2) {
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 50%;
 }
 
 .encadrementBienvenue__partieGauche_titre {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .dossierLocataire__encadrementBienvenue__partieDroite {
-    padding: 3.5rem 3.5rem 3.75rem 3.5rem;
+  padding: 3.5rem 3.5rem 3.75rem 3.5rem;
 }
 
 .conteneurMathieu {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-bottom: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 .conteneurMathieu__description {
-    margin-left: .75rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  margin-left: .75rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .conteneurMathieu__description h4 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* HAUT DU DOCUMENT permanant */
 .dossierLocataire__titre {
-    margin-bottom: 2.75rem;
+  margin-bottom: 2.75rem;
 }
 
 .dossierLocataire__menuDossier {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .dossierLocataire__menuDossier_dossier,
 .dossierLocataire__menuDossier_lienAjouterDossier {
-    padding: 0 0 20px 0;
-    font-weight: bold;
-    color: black;
+  padding: 0 0 20px 0;
+  font-weight: bold;
+  color: black;
 }
 
 .dossierLocataire__menuDossier_dossier:hover,
 .dossierLocataire__menuDossier_lienAjouterDossier:hover {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .dossierLocataire__menuDossier_dossier {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .dossierLocataire__menuDossier_dossier.active
 
 /* classe pour le js */
-{
-    border-bottom: solid 2px black;
-    border-radius: 0;
+  {
+  border-bottom: solid 2px black;
+  border-radius: 0;
 }
 
 .dossierLocataire__menuDossier_lienAjouterDossier {
-    margin-right: 0;
-    text-decoration: none;
+  margin-right: 0;
+  text-decoration: none;
 }
 
 .dossierLocataire__formulaire_section {
-    padding: 2rem 2.5rem 2.125rem 2.5rem;
-    margin-bottom: 2rem;
-    background-color: white;
-    border-radius: 4px;
+  padding: 2rem 2.5rem 2.125rem 2.5rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .dossierLocataire__lienAjouterLocataire {
-    display: inline-block;
-    margin-top: 2rem;
-    color: black;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 2rem;
+  color: black;
+  font-weight: bold;
 }
 
 .formulaire__sousElement {
-    margin-bottom: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 .formulaire__sousElement_titre {
-    margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .formulaire__sousElement_titre h3 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* INPUTS dans le formulaire */
 
 .dossierLocataire .alert {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* NOS ASTUCES */
 .dossierLocataire__astuces {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .dossierLocataire__astuces>div {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .dossierLocataire__astuces h3 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .dossierLocataire__astuces h4 {
-    margin-bottom: .5rem;
+  margin-bottom: .5rem;
 }
 
 .dossierLocataire__astuces p {
-    margin: 0;
-    font-size: .875rem;
+  margin: 0;
+  font-size: .875rem;
 }
 
 /* INPUTS fin de formulaire - Submit et autre */
@@ -1438,212 +1438,212 @@ ul.liste--check li::before {
 
 /* ZONE CHECKBOXES */
 .conteneurCheckBoxes {
-    background-color: #F4F4F4;
-    padding: 1.5rem;
-    border-radius: 4px;
+  background-color: #F4F4F4;
+  padding: 1.5rem;
+  border-radius: 4px;
 }
 
 .conteneurCheckBoxes .custom-control {
-    margin-top: .5rem;
+  margin-top: .5rem;
 }
 
 /* ZONE UPLOAD */
 .zoneUploads {
-    border: 1px dashed rgba(128, 128, 128, 0.44);
-    padding: 2rem;
-    border-radius: 4px;
+  border: 1px dashed rgba(128, 128, 128, 0.44);
+  padding: 2rem;
+  border-radius: 4px;
 }
 
 /*** BAIL FORMULAIRE ***/
 .pricing_table td,
 .pricing_table th {
-    text-align: center;
-    border-top: none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  text-align: center;
+  border-top: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .fa-star,
 .fa-star-half-o {
-    color: #efb305;
+  color: #efb305;
 }
 
 .pricing_table {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .grey {
-    color: grey;
-    opacity: 0.5;
+  color: grey;
+  opacity: 0.5;
 }
 
 #prix_barre::before {
-    content: '';
-    position: absolute;
-    top: 26px;
-    left: 7px;
-    width: 90px;
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    -webkit-transform-origin: left;
-    transform-origin: left;
-    border-top: 2px solid #e8612d;
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 7px;
+  width: 90px;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  border-top: 2px solid #e8612d;
 }
 
 #tab_download .btn-sm {
-    font-size: 0.8rem;
-    padding: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.5rem;
 }
 
 /*** ZEN ***/
 
 .fa-ul li {
-    padding-top: 3px;
-    padding-bottom: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .btn-link {
-    font-weight: bold;
-    color: black;
+  font-weight: bold;
+  color: black;
 }
 
 /*********** GLI ************/
 
 .sectionConditions .encadrement--gris {
-    padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .sectionImpayes .stats_container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .sectionImpayes .stats_container h3 {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .sectionImpayes .stats_container p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* tableau section impayés */
 .sectionImpayes .tableau__premiereColonne {
-    width: 20%;
-    font-weight: bold;
+  width: 20%;
+  font-weight: bold;
 }
 
 .sectionImpayes .tableau__ligne_cellule,
 .sectionImpayes .tableau__entete_cellule {
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .sectionImpayes .tableau__ligne_cellule:not(.tableau__premiereColonne),
 .sectionImpayes .tableau__entete_cellule:not(.tableau__premiereColonne) {
-    width: 40%;
+  width: 40%;
 }
 
 .sectionDoc .section__sousElement {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .sectionFAQ .menuSticky--sousElement a {
-    color: rgba(0, 0, 0, 0.6);
-    transition: .1s ease-in-out;
+  color: rgba(0, 0, 0, 0.6);
+  transition: .1s ease-in-out;
 }
 
 .sectionFAQ .menuSticky--sousElement a:hover {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 /* tableau section garanties */
 .sectionGaranties .tableau__premiereColonne {
-    width: 45%;
+  width: 45%;
 }
 
 .sectionGaranties .tableau__ligne_cellule:not(.tableau__premiereColonne),
 .sectionGaranties .tableau__entete_cellule:not(.tableau__premiereColonne) {
-    width: 15%;
+  width: 15%;
 }
 
 /* tableau section status */
 .sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne) {
-    font-size: .875rem;
+  font-size: .875rem;
 }
 
 .sectionStatus .tableau__premiereColonne {
-    width: 30%;
+  width: 30%;
 }
 
 .sectionStatus .tableau__ligne_cellule:not(.tableau__premiereColonne),
 .sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne) {
-    width: 11%;
-    text-align: center;
-    font-size: .875rem;
+  width: 11%;
+  text-align: center;
+  font-size: .875rem;
 }
 
 /*********** BAIL ************/
 
 .sectionBailAnnexe .alert-notice {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /*********** GEL ************/
 
 .sectionTarifs .card {
-    border: none;
+  border: none;
 }
 
 /*********** ARTICLE ************/
 
 .sectionArticle {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .sectionArticle__corps {
-    background-color: #fff;
-    padding: 144px;
-    padding-top: 70px;
-    line-height: 1.58;
-    font-size: 18px;
+  background-color: #fff;
+  padding: 144px;
+  padding-top: 70px;
+  line-height: 1.58;
+  font-size: 18px;
 }
 
 .sectionArticle__photo {
-    width: 100%;
+  width: 100%;
 }
 
 .sectionArticle__sommaire {
-    padding: 2rem 2.5rem;
-    line-height: 32px;
-    font-weight: bold;
+  padding: 2rem 2.5rem;
+  line-height: 32px;
+  font-weight: bold;
 }
 
 .sectionArticle__sommaire ul {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .sectionArticle__doublePhoto {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .sectionArticle__doublePhoto img {
-    width: 47.5%
+  width: 47.5%
 }
 
 .sectionArticle__captureTweet {
-    width: 75%;
+  width: 75%;
 }
 
 .sectionArticle__corps h2 {
@@ -1663,135 +1663,149 @@ ul.liste--check li::before {
 
   .sectionArticle__corps {
     padding: 20px;
-    }
+  }
 
 }
 
 @media (max-width: 576px) {
   .sectionArticle__sommaire {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
   .rowArticle {
-        background-color: white;
-    }
+    background-color: white;
+  }
 }
 
 /*********** ZEN ************/
 
 #section_echeances .card-body {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /*********** RESPONSIVE ************/
 
 @media (max-width: 1000px) {
   footer {
-        height: auto;
-        padding: 3.75rem 5rem;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
+    height: auto;
+    padding: 3.75rem 5rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
   footer>div:not(.footer__containerRight),
   .footer__conteneurLiens>div:not(.bottomPart) {
-        margin-bottom: 2.5rem;
-    }
+    margin-bottom: 2.5rem;
+  }
 
   .footer__conteneurLiens {
-        width: 100%;
-    }
+    width: 100%;
+  }
 
   .footer__conteneurSocial {
-        width: 20%;
-    }
+    width: 20%;
+  }
 
   .footer__ligneSeparation--responsive {
-        display: block;
-    }
+    display: block;
+  }
 
   footer {
-        padding-right: 5rem;
-        padding-left: 5rem;
-    }
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }
 
 @media (max-width: 991px) {
   .headerClassique__titrage {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 
-    .headerClassique__commentCaMarche {
-        margin-bottom: 5rem;
-    }
+  .headerClassique__commentCaMarche {
+    margin-bottom: 5rem;
+  }
 
   .menuSticky--section {
-        display: none;
-    }
+    display: none;
+  }
 
-    section {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 
   h2 {
-        margin-bottom: 2.5rem;
-    }
+    margin-bottom: 2.5rem;
+  }
 
   .sectionServices__conteneurService {
-        margin-top: 3rem;
-    }
+    margin-top: 3rem;
+  }
 
   .notice-illustration {
     display: none;
-    }
+  }
 
   .advice-illustration {
     display: none;
-    }
+  }
 
   .headerHub .barreRecherche {
-        padding: 0 1rem;
-    }
+    padding: 0 1rem;
+  }
 
   .sectionContact {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-    .dossierLocataire__menuDossier_dossier,
+  .dossierLocataire__menuDossier_dossier,
   .dossierLocataire__menuDossier_lienAjouterDossier {
-        padding: 0 0 5px 0;
-        margin-top: 10px;
-    }
+    padding: 0 0 5px 0;
+    margin-top: 10px;
+  }
 
   .dossierLocataire__formulaire_section {
-        padding: 1rem;
-    }
+    padding: 1rem;
+  }
 
   .conteneurCheckBoxes,
   .zoneUploads {
-        padding: 0.5rem;
-    }
+    padding: 0.5rem;
+  }
 
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
   .headerHub .barreRecherche {
-        padding: 0 3rem;
-    }
+    padding: 0 3rem;
+  }
 
   .sectionContact {
-        padding-left: 5rem;
-        padding-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 
-    }
+  }
 }
 
 @media (max-width: 1200px) {
   .menuSticky--section {
-        padding-left: 1rem;
-    }
+    padding-left: 1rem;
+  }
+}
+
+/*********** Hide Arrows From Input Number ************/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
