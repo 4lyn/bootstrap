@@ -432,6 +432,10 @@ textarea {
   right: 1rem;
 }
 
+.champSaisie--illustré .form-control.is-invalid ~ span {
+  right: 3rem;
+}
+
 /* ZONE CHECKBOXES */
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
   border: 1px solid rgba(0, 0, 0, 0.112);
