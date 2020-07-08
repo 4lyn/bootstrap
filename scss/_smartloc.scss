@@ -309,6 +309,11 @@ section.headerHub {
   margin-bottom: .375rem;
 }
 
+.headerClassique__commentCaMarche_etape a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
 /* categories */
 
 .headerHub__titrage {
@@ -432,7 +437,7 @@ textarea {
   right: 1rem;
 }
 
-.champSaisie--illustré .form-control.is-invalid ~ span {
+.champSaisie--illustré .form-control.is-invalid~span {
   right: 3rem;
 }
 
