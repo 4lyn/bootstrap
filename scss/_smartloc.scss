@@ -1257,26 +1257,27 @@ ul.liste--check li::before {
 }
 
 .formulaire__menuEtapes {
-  font-size: 1.125rem;
   margin-bottom: 2.75rem;
 }
 
+.formulaire__menuEtapes .nav-item:first-child .formulaire__menuEtapes_etape {
+  padding-left: 0;
+}
+
 .formulaire__menuEtapes_etape {
-  opacity: 0.2;
+  opacity: 0.2 !important;
 }
 
-.formulaire__menuEtapes img {
-  width: 1.5rem;
-}
-
-.formulaire__menuEtapes_etape.active
-
-/* classe pour le js */
-  {
+.formulaire__menuEtapes_etape.active {
   opacity: 1 !important;
 }
 
-.formulaire__menuEtapes span {
+.formulaire__menuEtapes_etape img {
+  width: 1.5rem;
+}
+
+.formulaire__menuEtapes_etape span {
+  font-size: 1.125rem;
   font-weight: bold;
   margin-left: .5rem;
 }
