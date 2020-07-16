@@ -1244,45 +1244,44 @@ ul.liste--check li::before {
 }
 
 /********** DOSSIERS LOCATAIRES **********/
-.dossierLocataire {
+.formulaire {
   margin-top: 3.75rem;
   padding-bottom: 8.5rem;
-
 }
 
-.dossierLocataire__ligneProgression {
+.formulaire__ligneProgression {
   height: .25rem;
   position: absolute;
   top: 0;
   background-color: black;
 }
 
-.dossierLocataire__menuEtapes {
+.formulaire__menuEtapes {
   font-size: 1.125rem;
   margin-bottom: 2.75rem;
 }
 
-.dossierLocataire__menuEtapes_etape {
+.formulaire__menuEtapes_etape {
   opacity: 0.2;
 }
 
-.dossierLocataire__menuEtapes img {
+.formulaire__menuEtapes img {
   width: 1.5rem;
 }
 
-.dossierLocataire__menuEtapes_etape.active
+.formulaire__menuEtapes_etape.active
 
 /* classe pour le js */
   {
   opacity: 1 !important;
 }
 
-.dossierLocataire__menuEtapes span {
+.formulaire__menuEtapes span {
   font-weight: bold;
   margin-left: .5rem;
 }
 
-.dossierLocataire__encadrementBienvenue {
+.formulaire__encadrementBienvenue {
   background-color: white;
   overflow: hidden;
   z-index: 0;
@@ -1293,7 +1292,7 @@ ul.liste--check li::before {
   flex-direction: row;
 }
 
-.dossierLocataire__encadrementBienvenue__partieGauche {
+.formulaire__encadrementBienvenue__partieGauche {
   padding: 2.5rem 0 3.75rem 2.5rem;
 }
 
@@ -1319,7 +1318,7 @@ ul.liste--check li::before {
   margin-bottom: 2rem;
 }
 
-.dossierLocataire__encadrementBienvenue__partieDroite {
+.formulaire__encadrementBienvenue__partieDroite {
   padding: 3.5rem 3.5rem 3.75rem 3.5rem;
 }
 
@@ -1344,32 +1343,32 @@ ul.liste--check li::before {
 }
 
 /* HAUT DU DOCUMENT permanant */
-.dossierLocataire__titre {
+.formulaire__titre {
   margin-bottom: 2.75rem;
 }
 
-.dossierLocataire__menuDossier {
+.formulaire__menuDossier {
   margin-bottom: 2rem;
 }
 
-.dossierLocataire__menuDossier_dossier,
-.dossierLocataire__menuDossier_lienAjouterDossier {
+.formulaire__menuDossier_dossier,
+.formulaire__menuDossier_lienAjouterDossier {
   padding: 0 0 20px 0;
   font-weight: bold;
   color: black;
 }
 
-.dossierLocataire__menuDossier_dossier:hover,
-.dossierLocataire__menuDossier_lienAjouterDossier:hover {
+.formulaire__menuDossier_dossier:hover,
+.formulaire__menuDossier_lienAjouterDossier:hover {
   text-decoration: none;
   color: black;
 }
 
-.dossierLocataire__menuDossier_dossier {
+.formulaire__menuDossier_dossier {
   margin-right: 1.5rem;
 }
 
-.dossierLocataire__menuDossier_dossier.active
+.formulaire__menuDossier_dossier.active
 
 /* classe pour le js */
   {
@@ -1377,19 +1376,19 @@ ul.liste--check li::before {
   border-radius: 0;
 }
 
-.dossierLocataire__menuDossier_lienAjouterDossier {
+.formulaire__menuDossier_lienAjouterDossier {
   margin-right: 0;
   text-decoration: none;
 }
 
-.dossierLocataire__formulaire_section {
+.formulaire__section {
   padding: 2rem 2.5rem 2.125rem 2.5rem;
   margin-bottom: 2rem;
   background-color: white;
   border-radius: 4px;
 }
 
-.dossierLocataire__lienAjouterLocataire {
+.formulaire__lienAjouterLocataire {
   display: inline-block;
   margin-top: 2rem;
   color: black;
@@ -1408,33 +1407,27 @@ ul.liste--check li::before {
   margin-bottom: 0;
 }
 
-/* INPUTS dans le formulaire */
-
-.dossierLocataire .alert {
-  margin-bottom: 2rem;
-}
-
 /* NOS ASTUCES */
-.dossierLocataire__astuces {
+.formulaire__astuces {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.dossierLocataire__astuces>div {
+.formulaire__astuces>div {
   margin-bottom: 1.5rem;
 }
 
-.dossierLocataire__astuces h3 {
+.formulaire__astuces h3 {
   margin-bottom: 1rem;
 }
 
-.dossierLocataire__astuces h4 {
+.formulaire__astuces h4 {
   margin-bottom: .5rem;
 }
 
-.dossierLocataire__astuces p {
+.formulaire__astuces p {
   margin: 0;
   font-size: .875rem;
 }
@@ -1770,13 +1763,13 @@ ul.liste--check li::before {
     padding-right: 1rem;
   }
 
-  .dossierLocataire__menuDossier_dossier,
-  .dossierLocataire__menuDossier_lienAjouterDossier {
+  .formulaire__menuDossier_dossier,
+  .formulaire__menuDossier_lienAjouterDossier {
     padding: 0 0 5px 0;
     margin-top: 10px;
   }
 
-  .dossierLocataire__formulaire_section {
+  .formulaire__section {
     padding: 1rem;
   }
 
