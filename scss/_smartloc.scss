@@ -835,9 +835,13 @@ ul.liste--check li::before {
 .cardLigne__icone {
   width: 1.5rem;
   margin-right: .25rem;
-  font-size: 1.6rem;
   position: relative;
   top: 3px;
+}
+
+/************* ICONES *************/
+.icone_medium {
+  font-size: 1.6rem;
 }
 
 /************* SECTIONS RECCURENTES SUR LE SITE *************/
