@@ -1277,6 +1277,10 @@ ul.liste--check li::before {
   opacity: 1 !important;
 }
 
+.formulaire__menuEtapes_etape.disabled {
+  opacity: 1 !important;
+}
+
 .formulaire__menuEtapes_etape img {
   width: 1.5rem;
 }
@@ -1357,35 +1361,27 @@ ul.liste--check li::before {
   margin-bottom: 2rem;
 }
 
-.formulaire__menuDossier_dossier,
-.formulaire__menuDossier_lienAjouterDossier {
+.formulaire__menuDossier_lien {
   padding: 0 0 20px 0;
   font-weight: bold;
   color: black;
 }
 
-.formulaire__menuDossier_dossier:hover,
-.formulaire__menuDossier_lienAjouterDossier:hover {
+.formulaire__menuDossier_lien:hover {
   text-decoration: none;
   color: black;
 }
 
-.formulaire__menuDossier_dossier {
+.formulaire__menuDossier_lien {
   margin-right: 1.5rem;
 }
 
-.formulaire__menuDossier_dossier.active
-
 /* classe pour le js */
-  {
+.formulaire__menuDossier_lien.active {
   border-bottom: solid 2px black;
   border-radius: 0;
 }
 
-.formulaire__menuDossier_lienAjouterDossier {
-  margin-right: 0;
-  text-decoration: none;
-}
 
 .formulaire__section {
   padding: 2rem 2.5rem 2.125rem 2.5rem;
@@ -1762,8 +1758,7 @@ ul.liste--check li::before {
     padding-right: 1rem;
   }
 
-  .formulaire__menuDossier_dossier,
-  .formulaire__menuDossier_lienAjouterDossier {
+  .formulaire__menuDossier_lien {
     padding: 0 0 5px 0;
     margin-top: 10px;
   }
