@@ -1,0 +1,204 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+---
+
+
+
+<div class="container py-5" style="min-height:1000px">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="mb-4">Boutons & liens</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Bouton primaire</h3>
+          <p><button class="btn btn-dark">Générer le bail</button></p>
+          <p></p><code>&lt;button class="btn btn-dark"&gt;</code>Générer le bail<code>&lt;/button&gt;</code></p>
+          <p>Bouton à utiliser pour avancer sur un autre panneau ou une autre page</p>
+        </div>
+        <div class="col">
+          <h3>Bouton secondaire</h3>
+          <p><button class="btn btn-outline-dark">Sauvegarder</button></p>
+          <p><code>&lt;button class="btn btn-outline-dark"&gt;</code>Sauvegarder<code>&lt;/button&gt;</code></p>
+          <p>Bouton à utiliser pour faire une action secondaire sur une page : sauvegarder, choisir une offre</p>
+        </div>
+        <div class="col">
+          <h3>Bouton résultat</h3>
+          <p><button class="btn btn-primary">Votre dossier de location</button></p>
+          <p><code>&lt;button class="btn btn-primary"&gt;</code>Votre devis<code>&lt;/button&gt;</code></p>
+          <p>Bouton pour mettre en avant un fichier résultat d'une action : récupération du bail, du dossier locataire, d'un devis à relire, d'un courrier mise en forme.</p>
+        </div>
+        <div class="col">
+          <h3>Bouton lien</h3>
+          <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Changer de locataire</a></p>
+          <p><code>&lt;button class="btn btn-primary"&gt;</code><code>&lt;i class="fas fa-exchange-alt"&gt;</code><code>&lt;/i&gt;</code> Changer de locataire<code>&lt;/button&gt;</code></p>
+          <p>Bouton à utiliser avec une icône pour une action rapide : ajouter un locataire, supprimer un dossier, étape précédente.</p>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-3">
+          <h3>Lien simple</h3>
+          <p><a href="#">Liste des communes en zone tendue</a></p>
+          <p><code>&lt;a href="#"&gt;</code>Liste des communes en zone tendue<code>&lt;/a&gt;</code></p>
+          <p>Lien simple vers une autre page </p>
+        </div>
+        <div class="col-3">
+          <h3>Lien annexe</h3>
+          <p><a href="https://www.avis-verifies.com/avis-clients/smartloc.fr" target="_blank" style="color : inherit;border-bottom: 1px dashed lightgrey">Avis clients 4,4/5</a>
+          <p>TODO code de la classe</p>
+          <p>Lien vers une page sans importance </p>
+        </div>
+        <div class="col-6">
+          <h3>Lien vers fiches ou fichiers</h3>
+          <div class="card cardLigne">
+            <div class="card-body">
+              <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+              <span><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="stretched-link">Signature électronique du bail</a></span>
+            </div>
+          </div>
+          <div class="card cardLigne">
+            <div class="card-body">
+              <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+              <span><a href="#" class="stretched-link">Modèle de courrier de régularisation</a></span>
+            </div>
+          </div>
+          <div class="card cardLigne">
+            <div class="card-body">
+              <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+              <span><a href="#" class="stretched-link">Modèle d'état des lieux</a></span>
+            </div>
+          </div>
+                
+          <p class="mt-5">
+            <pre>
+              <code>&lt;div class="card cardLigne"&gt;</code>
+                <code>&lt;div class="card-body"&gt;</code>
+                  <code>&lt;i class="fal fa-file-alt cardLigne__icone icone_medium"&gt;&lt;/i&gt;</code>
+                  <code>&lt;span&gt;</code><code>&lt;a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="stretched-link"&gt;</code>Signature électronique du bail<code>&lt;/a&gt;</code><code>&lt;/span&gt;</code>
+                <code>&lt;/div&gt;</code>
+              <code>&lt;/div&gt;</code>
+            </pre>
+          </p>
+          <p>Lien avec icône dans une card simple, pour renvoyer vers une fiche smartloc</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 offset-lg-1">
+      <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/smartloc_white.png" alt=""></p>
+      <p><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+      <p>
+        <a href="https://twitter.com/smartloc" rel="nofollow">
+          <i class="fab fa-twitter footer__logoReseauxSociaux"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+          <i class="fab fa-linkedin-in footer__logoReseauxSociaux"></i>
+        </a>
+      </p>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+    </div>
+    <div class="col-lg-8 offset-lg-1">
+      <div class="row mt-4 mt-lg-0">
+        <div class="col-lg-2">
+          <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+          <a href="/bail/"><h5>Bail</h5></a>
+          <a href="/assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <a href="/blog"><h5>Ressources</h5></a>
+          <a href="/tarifs"><h5>Tarifs</h5></a>
+          <a href="/cgu"><h5>Mentions légales</h5></a>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+          <a href="/a-propos"><h5>A propos</h5></a>
+          <h5>Partenaires</h5>
+          <div class="row mt-3">
+            <div class="col-lg-auto">
+              <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="../../../assets/img/smartloc/logos/lemonway.png" class="float-left"></a>
+            </div>
+            <div class="col-lg-auto">
+              <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+            <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+            <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+            <li><a href="/dossier">Validation dossier locataire</a></li>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+            <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+            <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+            <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
