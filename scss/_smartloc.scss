@@ -1452,6 +1452,15 @@ ul.liste--check li::before {
   border-radius: 4px;
 }
 
+.bootstrap-select {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bootstrap-select .btn {
+  font-weight: normal;
+}
+
 /*** BAIL FORMULAIRE ***/
 .pricing_table td,
 .pricing_table th {
