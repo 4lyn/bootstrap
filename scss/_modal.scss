@@ -35,8 +35,7 @@
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   position: relative;
-  // width: auto;
-  max-width: 736px;
+  width: auto;
   margin: $modal-dialog-margin;
   // allow clicks to pass through for custom click handling to close modal
   pointer-events: none;
@@ -114,18 +113,11 @@
   pointer-events: auto;
   background-color: $modal-content-bg;
   background-clip: padding-box;
-  // border: $modal-content-border-width solid $modal-content-border-color;
+  border: $modal-content-border-width solid $modal-content-border-color;
   @include border-radius($modal-content-border-radius);
   @include box-shadow($modal-content-box-shadow-xs);
   // Remove focus outline from opened modal
   outline: 0;
-
-  .close{
-    z-index: 2000;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-  }
 }
 
 // Modal background
@@ -157,6 +149,7 @@
     padding: $modal-header-padding;
     // auto on the left force icon to the right even when there is no .modal-title
     margin: (-$modal-header-padding-y) (-$modal-header-padding-x) (-$modal-header-padding-y) auto;
+    line-height: 1.5;
   }
 }
 
@@ -208,7 +201,7 @@
 @include media-breakpoint-up(sm) {
   // Automatically set modal's width for larger viewports
   .modal-dialog {
-    max-width: $modal-lg;
+    max-width: $modal-md;
     margin: $modal-dialog-margin-y-sm-up auto;
   }
 
