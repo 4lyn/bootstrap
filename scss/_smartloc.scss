@@ -1691,6 +1691,13 @@ ul.liste--check li::before {
   font-size: 15px;
 }
 
+/*********** LIENS BOUTONS ************/
+
+.lien_annexe {
+  color: inherit;
+  border-bottom: 1px dashed lightgrey;
+}
+
 /*********** RESPONSIVE ************/
 
 @media (max-width: 1000px) {
