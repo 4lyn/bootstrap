@@ -1433,15 +1433,16 @@ ul.liste--check li::before {
   margin-left: 1rem;
 }
 
-/* ZONE CHECKBOXES */
-.conteneurCheckBoxes {
+/* ZONE CHECKBOX */
+.conteneurCheckbox {
   background-color: #F4F4F4;
   padding: 1.5rem;
   border-radius: 4px;
 }
 
-.conteneurCheckBoxes .custom-control {
+.conteneurCheckbox .custom-control {
   margin-top: .5rem;
+  padding-left: 0;
 }
 
 /* ZONE UPLOAD */
@@ -1767,7 +1768,7 @@ ul.liste--check li::before {
     padding: 1rem;
   }
 
-  .conteneurCheckBoxes,
+  .conteneurCheckbox,
   .zoneUploads {
     padding: 0.5rem;
   }
