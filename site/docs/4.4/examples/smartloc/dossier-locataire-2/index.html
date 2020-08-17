@@ -577,7 +577,7 @@ body_class: bg-grey
                 <div class="formulaire__section">
                   <h3>Dossier de location</h3>
                   <p>Vous pouvez accéder au dossier locataire ci-dessous.</p>
-                  <button class="btn btn-primary btn-lg my-4">Récupérer le dossier locataire</button>
+                  <button class="btn btn-primary btn-lg mb-4 mt-2">Récupérer le dossier locataire</button>
                   <p>
                     Si tous les documents demandés ont été ajoutés et que vous avez validé chaque point de contrôle, ce
                     dossier est conforme aux exigences de l'assurance.
@@ -588,7 +588,7 @@ body_class: bg-grey
                   </p>
                 </div>
 
-                <div class="formulaire__section nextStepsSection">
+                <div class="formulaire__section">
                   <h3>Prochaines étapes</h3>
                   <p>Voici les prochaines étapes que vous devez suivre :</p>
                   <ol>
@@ -675,15 +675,18 @@ body_class: bg-grey
 </div>
 
 
-<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
+
+      <div class="modal-header">
+        <h3 class="modal-title">Veuillez vérifier les points suivants</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+
       <div class="modal-body">
-        <h3>Veuillez vérifier les points suivants</h3>
         <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
         <div class="mt-4 mb-2">
           <div class="custom-control custom-checkbox mt-3">
@@ -705,6 +708,7 @@ body_class: bg-grey
           français.</p>
         <button class="btn btn-dark" data-dismiss="modal">Valider</button>
       </div>
+      
     </div>
   </div>
 </div>
