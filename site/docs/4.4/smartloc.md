@@ -157,6 +157,98 @@ Formulaire dans une card
 
 
 ## Navigation
+### Navbar
+
+Navbar d'une page avec 
+
+{% capture example %}
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+          <img src="https://www.smartloc.fr/imgs/smartloc.png" class="logoSmartloc">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/assurance-loyer-impaye">Assurance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Ressources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tarifs">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-lg-5" href="/login" id="connexion"><h5>Mon compte</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modal_contact"><h5>Contact</h5></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Sous-menu fixe
+
+<p>Navbar en fixed top pour un sous-menu au milieu d'une page.</p>
+<p>Les ancres doivent être bien nommées via la classe menuSticky--section__ancre plus bas.</p>
+<p>La navbar est invisible en dessous de 991px (soit en en dessous de lg), pour éviter de gérer des collapses, au cas par cas il faut cacher certains items entre lg et xl).</p>
+
+{% capture example %}
+<div class="menuSticky--section">
+  <ul class="nav">
+    <li class="nav-item">
+      <a href="#garanties" class="menuSticky--section__conteneurLiens_item">Garanties & tarifs</a>
+    </li>
+    <li class="nav-item">
+      <a href="#conditions" class="menuSticky--section__conteneurLiens_item">Conditions</a>
+    </li>
+    <li class="nav-item">
+      <a href="#status" class="menuSticky--section__conteneurLiens_item">Justificatifs locataire</a>
+    </li>
+  </ul>
+  <a href="#" class="btn btn-dark btn-sm menuSticky--section__bouton" data-toggle="modal" data-target="#modalDemarrer">Démarrer</a>
+</div>
+<div class="container-fluid mt-5">
+  <div class="menuSticky--section__ancre" id="garanties"></div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Garanties & tarifs de l’assurance loyer impayé</h2>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="menuSticky--section__ancre" id="conditions"></div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Conditions</h2>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="menuSticky--section__ancre" id="status"></div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Justificatifs</h2>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ## Hero & Bannieres
 ## Cards & Alerts
 ## Modal
