@@ -198,11 +198,9 @@ Navbar d'une page avec
 {% endcapture %}
 {% include example.html content=example %}
 
-### Sous-menu fixe horizontal
+### Nav horizontal
 
 <p>Navbar en fixed top pour un sous-menu d'une page longue.</p>
-<p>Les ancres doivent être bien nommées via la classe menuSticky--section__ancre plus bas.</p>
-<p>La navbar est invisible en dessous de 991px (soit en en dessous de lg), pour éviter de gérer des collapses, au cas par cas il faut cacher certains items entre lg et xl).</p>
 
 {% capture example %}
 <div class="menuSticky--section">
@@ -231,8 +229,48 @@ Navbar d'une page avec
 {% endcapture %}
 {% include example.html content=example %}
 
+<p>Nav horizontal non fixe</p>
 
-### Sous-menu fixe vertical
+{% capture example %}
+<ul class="nav formulaire__menuDossier">
+  <li class="nav-item">
+    <a class="nav-link active formulaire__menuDossier_lien" href="#">Dossier 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link formulaire__menuDossier_lien" href="#">Dossier 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link formulaire__menuDossier_lien" href="#">+ Ajouter un dossier</a>
+  </li>
+</ul>
+{% endcapture %}
+{% include example.html content=example %}
+
+<p>Nav horizontal en frise</p>
+
+{% capture example %}
+<ul class="nav formulaire__menuEtapes">
+  <li class="nav-item">
+    <a class="nav-link active formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_type">
+      <i class="fas fa-list-alt"></i> <span>Type de bail</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_bien">
+      <i class="fas fa-building"></i> <span>Bien</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_download">
+      <i class="far fa-check-square"></i> <span>Téléchargement</span>
+    </a>
+  </li>                                                           
+</ul>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+### Nav vertical
 <p>Navs en sticky lateral pour un sous-menu d'un texte long.</p>
 
 {% capture example %}
@@ -316,7 +354,7 @@ Navbar d'une page avec
 {% include example.html content=example %}
 
 
-### Nav bouton
+### Nav pills
 <p>Navs pills pour categoriser des fiches.</p>
 
 {% capture example %}
@@ -462,9 +500,9 @@ Navbar d'une page avec
     <a href="/blog/" class="mt-5 text-primary d-flex justify-content-center">Voir plus de fiches / documents clés</a>
   </div>
 </div>
-
 {% endcapture %}
 {% include example.html content=example %}
+
 ## Hero & Bannieres
 ## Cards & Alerts
 ## Modal
