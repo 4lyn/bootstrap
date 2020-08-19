@@ -198,9 +198,9 @@ Navbar d'une page avec
 {% endcapture %}
 {% include example.html content=example %}
 
-### Sous-menu fixe
+### Sous-menu fixe horizontal
 
-<p>Navbar en fixed top pour un sous-menu au milieu d'une page.</p>
+<p>Navbar en fixed top pour un sous-menu d'une page longue.</p>
 <p>Les ancres doivent être bien nommées via la classe menuSticky--section__ancre plus bas.</p>
 <p>La navbar est invisible en dessous de 991px (soit en en dessous de lg), pour éviter de gérer des collapses, au cas par cas il faut cacher certains items entre lg et xl).</p>
 
@@ -219,7 +219,7 @@ Navbar d'une page avec
   </ul>
   <a href="#" class="btn btn-dark btn-sm menuSticky--section__bouton" data-toggle="modal" data-target="#modalDemarrer">Démarrer</a>
 </div>
-<div class="container-fluid mt-5">
+<section class="container-fluid bg-light">
   <div class="menuSticky--section__ancre" id="garanties"></div>
   <div class="row">
     <div class="col-lg-12">
@@ -227,28 +227,244 @@ Navbar d'une page avec
       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
     </div>
   </div>
-</div>
-<div class="container-fluid">
-  <div class="menuSticky--section__ancre" id="conditions"></div>
-  <div class="row">
-    <div class="col-lg-12">
-      <h2>Conditions</h2>
-      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+### Sous-menu fixe vertical
+<p>Navs en sticky lateral pour un sous-menu d'un texte long.</p>
+
+{% capture example %}
+<div class="row">
+  <div class="col-lg-2">
+    <div class="menuSticky--sousElement" id="menuSticky_gli_faq">
+      <h2>FAQ</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <h4><a href="#faq_garanties" class="menuSticky--sousElement__item active">Les garanties</a></h4>
+        </li>
+        <li class="nav-item">
+          <h4><a href="#faq_criteres" class="menuSticky--sousElement__item">Les critères</a></h4>
+        </li>
+        <li class="nav-item">
+          <h4><a href="#faq_dossier" class="menuSticky--sousElement__item">Le dossier locataire</a></h4>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
-<div class="container-fluid">
-  <div class="menuSticky--section__ancre" id="status"></div>
-  <div class="row">
-    <div class="col-lg-12">
-      <h2>Justificatifs</h2>
-      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+  <div class="col-lg-8 mt-4">
+    <div class="section__sousElement">
+      <div id="faq_garanties" class="menuSticky--sousElement__ancre"></div>
+      <h2 class="section__sousElement_titre">Les garanties de l’assurance loyer impayé</h2>
+      <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
+      <p>Vous êtes couvert contre les impayés de loyer qui vous sont remboursés directement.</p>
+      <p>L'assureur vous remplace également dans la procédure et va donc poursuivre directement le locataire pour récupérer les impayés et
+        l'expulser si nécessaire.</p>
+      <p>Vous êtes également couvert sur les dégradations immobilières causées par le locataire et qui ne seraient pas remboursées
+        (directement par le locataire ou en utilisant son dépôt de garantie - voir notre <a
+            href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/">fiche pratique sur le sujet</a>).</p>
+      <p>Enfin la garantie vous couvre contre les départs "à la cloche de bois", c'est à dire les départs furtifs du locataire abandonnant son
+        logement. Vous êtes alors remboursé des loyers non perçus jusqu'à la récupération effective du logement.</p>
+    </div>
+    <div class="section__sousElement">
+      <h3 class="section__sousElement_titre">Y a-t-il une franchise ou une carence sur l'assurance loyer impayé ?</h3>
+      <p>La garantie loyer impayé Insured proposée par Smartloc est <strong>sans franchise pour les impayés de loyer</strong>. Le dépôt de
+        garantie du locataire que vous avez encaissé est simplement déduit du dernier remboursement qui vous est dû par la compagnie.</p>
+      <p>La composante dégradations immobilières a quant à elle une <strong>franchise d'un mois</strong> de loyer hors charges. Contrairement à
+        la déduction du dépôt de garantie sur les impayés de loyer, il s'agit d'une franchise réelle qui est appliquée quoiqu'il arrive. Si vous
+        avez conservé le dépôt de garantie vous ne perdez rien, par contre si le dépôt de garantie a été déduit des remboursement d'éventuels
+        impayés de loyer, <strong>l'assureur ne vous appliquera pas cette franchise d'un mois sur les dégradations</strong>.</p>
+      <p>Pour les locataires entrants ou en place depuis moins de 14 jours il n'y a pas de carence, c'est à dire pas de période probatoire.</p>
+      <p>Pour les locataires en place depuis plus de 14 jours vous avez une carence de 3 mois, c'est à dire que si un impayé intervient dans les
+        3 premiers mois du contrat vous ne serez pas du tout couvert.</p>
+    </div>
+    <div class="section__sousElement">
+      <div id="faq_criteres" class="menuSticky--sousElement__ancre"></div>
+      <h2 class="section__sousElement_titre  mt-5">Les critères de l’assurance loyer impayé</h2>
+      <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
+      <p>Les critères de solvabilité s'appliquent <strong>aux locataires entrants et aux locataires en place depuis moins de 6 mois</strong>.
+      </p>
+      <p>Les critères de solvabilité sont en synthèse: personnes en situation stable (CDI hors période d'essai, fonctionnaires, retraités,
+        indépendants, CDD de plus de 8 mois) ayant un revenu net régulier équivalent à 2,85 fois le loyer charges comprises minimum.</p>
+      <p>Pour les locataires en place depuis plus de 6 mois, il n'y pas de critères de solvabilité. Vous pouvez donc souscrire sans dossier de
+        solvabilité, à la seule condition que le locataire soit à jour de ses paiements et <strong>qu'il n'y ait pas eu d'incidents de paiement
+          sur les 6 derniers mois</strong>.</p>
+    </div>
+    <div class="section__sousElement">
+      <div id="faq_dossier" class="menuSticky--sousElement__ancre"></div>
+      <h2 class="section__sousElement_titre  mt-5">Le dossier locataire pour l'assurance loyer impayé</h2>
+      <h3 class="section__sousElement_titre">Quelles sont les justificatifs demandés pour le dossier du locataire ?</h3>
+        <p>Vous trouverez tous les documents à rassembler sur notre <a
+              href="/blog/wp-content/uploads/2019/06/Critères-et-justificatifs-Insured-AZ.pdf">liste des critères et justificatifs</a>.</p>
+    </div>
+    <div class="section__sousElement">
+      <h3 class="section__sousElement_titre">Doit-on envoyer le dossier avant souscription ?</h3>
+      <p>Le dossier du locataire, le bail et ses annexes ne vous sont demandés qu'en cas d'impayés.</p>
+      <p>Nous vous recommandons donc de :</p>
+      <ul>
+        <li>valider votre dossier locataire sur Smartloc pour être sûr de ne pas faire d'erreur. Vous pouvez le constituer facilement au lien
+          suivant : <a href="/dossier">dossier locataire Smartloc</a></li>
+        <li>rédiger le bail et ses annexes sur notre <a href="/bail/">module de bail numérique conforme</a></li>
+        <li>utiliser notre <a href="/gestion-locative">gestion locative en ligne</a> pour être sûr de gérer l'entrée dans les lieux sans erreur
+          (mais également les relances en cas d'impayés)</li>
+      </ul>
     </div>
   </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
 
+
+### Nav bouton
+<p>Navs pills pour categoriser des fiches.</p>
+
+{% capture example %}
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <h2 class="pb-lg-5 pb-lg-2 text-center">Les fiches et documents clés</h2>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <ul class="mb-5 nav nav-pills nav-justified mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#doc_bail" data-toggle="pill">Bail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#doc_assurance" data-toggle="pill">Assurance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#doc_gestion" data-toggle="pill">Gestion <span class="d-none d-sm-inline-block">locative</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane active" id="doc_bail">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/modele-gratuit-dacte-de-caution-solidaire/" class="stretched-link">Modèle d'acte de caution solidaire</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/modele-type-etat-des-lieux-loi-alur/" class="stretched-link">Modèle d'état des lieux</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-6">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/bail-individuel-non-solidaire-quel-modele-utiliser-pour-louer-a-la-chambre/" class="stretched-link">Bail
+                  individuel non solidaire : quel modèle utiliser en colocation ?</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/signature-en-ligne-du-bail-de-location/" class="stretched-link">Signature électronique du bail de location</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="doc_assurance">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/verification-du-dossier-de-location-les-techniques-pour-deceler-les-faux-dossiers/"
+                    class="stretched-link">Vérification du dossier de location</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/assurance-loyer-impaye-dun-locataire-deja-en-place/" class="stretched-link">Assurance loyer impayé : locataire
+                  déjà en place</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-6">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/assurance-loyer-impaye-dune-colocation/" class="stretched-link">Assurance loyer impayé d’une colocation</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/loyer-impaye-comment-se-deroule-la-procedure-dexpulsion/" class="stretched-link">Comment se déroule la procédure
+                  d’expulsion ?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="doc_gestion">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/encadrement-des-loyers/" class="stretched-link">Encadrement des loyers 2020 : le guide complet</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/modele-gratuit-davenant-au-bail/" class="stretched-link">Avenant au bail : modèle 2020 et cas d’usage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-6">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/indexation-du-loyer/" class="stretched-link">Indexation du loyer : définition, calcul et mode d’emploi</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3 mt-sm-0">
+            <div class="card cardLigne">
+              <div class="card-body">
+                <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                <a href="/blog/regularisation-des-charges-locatives-mode-demploi/" class="stretched-link">Régularisation des charges locatives :
+                  mode d’emploi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="/blog/" class="mt-5 text-primary d-flex justify-content-center">Voir plus de fiches / documents clés</a>
+  </div>
+</div>
+
+{% endcapture %}
+{% include example.html content=example %}
 ## Hero & Bannieres
 ## Cards & Alerts
 ## Modal
