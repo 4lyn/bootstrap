@@ -587,7 +587,222 @@ Banniere de CTA dans une landing
 </section>
 {% endcapture %}
 {% include example.html content=example %}
+
+
 ## Cards & Alerts
+### Cards
+
+Cards standard
+
+{% capture example %}
+<div class="row">
+  <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Particulier</h3>
+        <h4 class="card-subtitle mb-2 text-muted">4,90€/mois (3 mois offerts)</h4>
+        <p class="card-text">Abonnement trimestriel par lot, annulable à tout moment</p>
+        <a href="/gestion-locative/creation" class="card-link">Démarrer</a>
+        <a href="/gestion-locative" class="card-link">En savoir</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Investisseur</h3>
+        <h4 class="card-subtitle mb-2 text-muted">19€/mois (1 mois offert)</h4>
+        <p class="card-text">Abonnement mensuel pour 4 à 9 lots, annulable à tout moment</p>
+        <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
+        <a href="/gestion-locative" class="card-link">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Gestionnaire</h3>
+        <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
+        <p class="card-text">Abonnement mensuel pour +10 lots, annulable à tout moment</p>
+        <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
+        <a href="/gestion-locative" class="card-link">En savoir plus</a>
+      </div>
+    </div>
+  </div>            
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Cards cas d'usage
+
+{% capture example %}
+<div class="alert-notice alert-notice-warning">
+  <img src="../assets/img/smartloc/illustrations/conversation.png" class="notice-illustration" alt="">
+  <div class="notice-info">
+    <h3 class="notice-title">“J'hésite pour ma déclaration fiscale en meublé entre LMNP et micro-BIC”</h3>
+    <p>Lors de la déclaration de vos revenus, la question principale à se poser est la suivante : "est-ce rentable de déclarer mes charges au réel ou au forfait ?"</p>
+    <p>Ces deux régimes, respectivement appelés LMNP et micro-BIC ont des implications différentes et nécessitent de bien calculer les charges réelles ou comptables que vous pouvez imputer à vos revenus locatifs.</p>
+    <p>Notre équipe a rédigé une fiche complète sur le sujet du LMNP, mais dans le cadre de l'assistance nous restons également disponible pour répondre à vos questions.</p>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Cards temoignage
+
+{% capture example %}
+<div class="row">
+  <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+    <div class="card cardTemoignage">
+      <p>“Trés pratique et réactif. Un vrai support pour toutes les démarches à faire en tant que propriétaire. 
+        J'avais une question fiscale autour de ma location, j'ai obtenu la réponse en moins de 24h.”
+      </p>
+      <div class="cardTemoignage__conteneurInfos">
+        <h6>François V. le 17/02/2020</h6>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+    <div class="card cardTemoignage">
+      <p>“J'utilise ce site depuis plusieurs années pour rédiger mon baux en signature éléctronique, j'en suis ravi.”</p>
+      <div class="cardTemoignage__conteneurInfos">
+        <h6>François-xavier M. le 14 mars 2020</h6>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+    <div class="card cardTemoignage">
+      <p>“Professionnel de l'immobilier depuis 30 ans, les outils informatiques proposés par smartloc sont d'une réelle efficacité et permettent d'être sûrs de contracter dans le respect des derniers décrets.”</p>
+      <div class="cardTemoignage__conteneurInfos">
+        <h6>Xavier D. le 19 janvier 2020</h6>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+Cards je te parle, à utiliser idéalement sur un container-fluid de couleur
+
+{% capture example %}
+<section class="container-fluid bg-secondary">
+  <div class="alert-notice border-0">
+    <div class="notice-illustration d-none d-sm-block">
+      <img src="../assets/img/smartloc/photos/photo_mathieu.jpg" class="img-fluid">
+    </div>
+    <div class="notice-info">
+      <h3 class="notice-title">Economisez 50€/mois en moyenne en gardant le contrôle de votre location</h3>
+      <p>Un gestionnaire immobilier va vous facturer en moyenne 6% HT du loyer charges comprises pour encaisser le loyer et gérer les rares incidents que vous aurez pendant vos locations (les frais de recherche locataire et la garantie des loyers impayés sont facturés séparément).</p>
+      <p>Pour un loyer de 700€ CC, vous économisez donc en moyenne 50€/mois en gardant le contrôle sur l'encaissement de vos loyers et en étant complètement assisté sur les échéances importantes du bail et les incidents.</p>
+      <p>- Mathieu Chantalat, Directeur immobilier</p>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+Cards article de blog
+
+{% capture example %}
+<section class="container-fluid bg-light">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <h2 class="mb-5">Derniers articles</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card cardArticle">
+            <div class="card-body">
+              <div class="cardArticle__articleInfos">
+                <img src="../assets/img/smartloc/photos/Image.png" alt="">
+                <span>Novembre 2019</span>
+              </div>
+              <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur ...</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+              <a href="#" class="card-link">Voir l'article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card cardArticle">
+            <div class="card-body">
+              <div class="cardArticle__articleInfos">
+                <img src="../assets/img/smartloc/photos/Image.png" alt="">
+                <span>Novembre 2019</span>
+              </div>
+              <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur ...</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum optio in magnam culpa debitis, modi quae totam nemo corrupti incidunt numquam...</p>
+              <a href="#" class="card-link">Voir l'article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+Cards services avec illustrations
+
+{% capture example %}
+<div class="row">
+  <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+    <div class="card cardAccompagnementExperts bail_card">
+      <img class="cardAccompagnementExperts__illustration" src="../assets/img/smartloc/illustrations/notes.png" alt="">
+      <h4><a href="/bail/" class="btn-link stretched-link">Bail de <br> location</a></h4>
+      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/background_card_1.png" alt="">
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+    <div class="card cardAccompagnementExperts gestion_card">
+      <img class="cardAccompagnementExperts__illustration" src="../assets/img/smartloc/illustrations/immeuble.png" alt="">
+      <h4><a href="/gestion-locative" class="btn-link stretched-link">Gestion locative <br> en ligne</a></h4>
+      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/background_card_2.png" alt="">
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
+    <div class="card cardAccompagnementExperts assurance_card">
+      <img class="cardAccompagnementExperts__illustration" src="../assets/img/smartloc/illustrations/bouclier.png" alt="">
+      <h4><a href="/assurance-loyer-impaye" class="btn-link stretched-link">Assurance loyer <br> impayé</a></h4>
+      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/background_card_3.png" alt="">
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Alerts
+
+Alerte incise de texte
+
+{% capture example %}
+<div class="section__sousElement alert-advice alert-advice-success">
+  <img src="../assets/img/smartloc/illustrations/notes.png" class="advice-illustration" alt="">
+  <div class="advice-info">
+    <h3 class="advice-title">Conseil de Smartloc</h3>
+    <p>En alternative au garant nous recommandons de passer par une <a href="">assurance loyer impayé</a> qui couvrira également les sinistres concernant les charges locatives et leurs éventuelles régularisations.</p>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ## Modal
 ## Typographie
 ### Tableaux
