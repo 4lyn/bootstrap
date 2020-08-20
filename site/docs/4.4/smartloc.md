@@ -140,7 +140,7 @@ Formulaire dans une card
       </div>
     </div>
     <div class="form-group ">
-      <label class="mt-3">Label du champ select</label>
+      <label class="mt-3">Label du champ typearea</label>
       <textarea class="form-control" rows="10" placeholder="Ce placeholder va disparaître si tu cliques" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
     </div>
     <div class="form-group">
@@ -149,7 +149,11 @@ Formulaire dans une card
         <input type="file" class="custom-file-input" id="file-input" lang="fr">
         <label class="custom-file-label" for="file-input">--</label>
       </div>
-    </div>                                   
+    </div>
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+      <label class="custom-control-label" for="customSwitch1">Label du switch (ne marche pas sans l'id et le for)</label>
+    </div>                                  
   </div>
 </div>
 {% endcapture %}
@@ -159,7 +163,7 @@ Formulaire dans une card
 ## Navigation
 ### Navbar
 
-Navbar d'une page avec 
+Navbar d'une page landing
 
 {% capture example %}
 <header class="container-fluid">
@@ -167,7 +171,7 @@ Navbar d'une page avec
     <div class="col-lg-10 offset-lg-1">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">
-          <img src="https://www.smartloc.fr/imgs/smartloc.png" class="logoSmartloc">
+          <img src="../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
@@ -504,6 +508,85 @@ Navbar d'une page avec
 {% include example.html content=example %}
 
 ## Hero & Bannieres
+### Hero
+
+Hero grande taille sur landing
+{% capture example %}
+<section class="container-fluid bg-warning pt-0 pb-0">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <div class="headerClassique__titrage row">
+        <div class="col-md-6">
+          <h1 class="headerClassique__titrage_titre">L’assurance loyer impayé simple avec dossier locataire et bail numériques.</h1>
+          <span class="headerClassique__titrage_sousTitre">Loyers, dégradations et procédure d'expulsion sont pris en charge dès le premier mois d'impayé, en durée illimitée.</span>
+          <div class="headerClassique__titrage_conteneurLiens">
+            <a href="#" class="btn btn-dark headerClassique__titrage_bouton" data-toggle="modal" data-target="#modalDemarrer">Démarrer</a>
+          </div>
+        </div>
+        <div class="headerClassique__titrage_conteneurIllustration col-md-6 d-none d-md-block">
+          <img src="../assets/img/smartloc/illustrations/bouclier_illustrated_grisclair.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+Hero petite taille sur page annexe
+{% capture example %}
+<section class="container-fluid headerHub">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <div class="headerHub__titrage">
+        <h1 class="headerArticle__titrage_titre mt-2">Nos tarifs</h1>
+        <span class="headerClassique__titrage_sousTitre">Des formules simples et transparentes</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <a href="https://smartloc.typeform.com/to/mYYucI" class="btn btn-dark headerClassique__titrage_bouton bouton_float">Démarrer</a>
+    </div>
+  </div>
+  <img src="../assets/img/smartloc/illustrations/immeuble.png" class="headerHub_illustration d-none d-lg-block">
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+### Bannière
+
+Banniere de CTA dans un article
+
+{% capture example %}
+<div class="section__sousElement encadrementPromotion bg-warning">
+  <h3>Gérez automatiquement vos <br> quittances et avis d’échéances</h3>
+  <p>Pour seulement 4,90€/mois</p>
+  <a href="" class="btn btn-dark btn-sm">Gestion locative automatisée avec Smartloc</a>
+  <img class="encadrementPromotion__imageBackground d-none d-sm-block" src="../assets/img/smartloc/illustrations/shapes/background_push_1.png" alt="">
+  <img class="encadrementPromotion__imageBackground d-none d-sm-block" src="../assets/img/smartloc/illustrations/shapes/background_push_2.png" alt="">
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Banniere de CTA dans une landing
+
+{% capture example %}
+<section class="sectionSmartlocAide container-fluid">
+  <img src="../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
+  <img src="../assets/img/smartloc/illustrations/shapes/couronne-noire.png" alt="">
+  <img src="../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
+  <img src="../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center sectionSmartlocAide__contenu">
+      <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
+      <a href="#" class="btn btn-dark">Démarrer</a>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
 ## Cards & Alerts
 ## Modal
 ## Typographie
