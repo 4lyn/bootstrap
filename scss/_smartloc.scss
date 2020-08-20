@@ -843,6 +843,11 @@ ul.liste--check li::before {
   top: 3px;
 }
 
+/* cards sur fond de couleur */
+.bg-light .card, .bg-secondary .card, .bg-warning .card {
+  border: none;
+}
+
 /************* ICONES *************/
 .icone_medium {
   font-size: 1.6rem;
@@ -998,7 +1003,6 @@ ul.liste--check li::before {
   /* padding de sections des pages hub home */
   padding-bottom: 0;
   /* et hub categorie qui sont differents des autres setions du site */
-  background-color: #F4F4F4;
 }
 
 .sectionHub:last-child {
@@ -1600,11 +1604,6 @@ ul.liste--check li::before {
   margin-top: 2rem;
 }
 
-/*********** GEL ************/
-
-.sectionTarifs .card {
-  border: none;
-}
 
 /*********** ARTICLE ************/
 
