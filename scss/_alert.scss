@@ -148,7 +148,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: $alert-padding-y $alert-padding-x;
+    padding: ($alert-padding-y / 2) $alert-padding-x;
     color: inherit;
   }
 }
