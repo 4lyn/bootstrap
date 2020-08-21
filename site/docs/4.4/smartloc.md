@@ -588,6 +588,15 @@ Banniere de CTA dans une landing
 {% endcapture %}
 {% include example.html content=example %}
 
+Bannière small en haut de page
+
+{% capture example %}
+<p class="bg-primary w-100 text-center py-1 d-none d-lg-inline-block">
+  <strong>Gérez sans agence</strong> - Découvrez comment économiser 50€/mois grâce à Smartloc
+  <a class="btn btn-outline-dark btn-sm ml-2" style="padding: 0.2rem 0.5rem" href="/gestion-locative">en savoir plus</a>
+</p>
+{% endcapture %}
+{% include example.html content=example %}
 
 ## Cards & Alerts
 ### Cards
@@ -793,12 +802,33 @@ Cards services avec illustrations
 Alerte incise de texte
 
 {% capture example %}
-<div class="section__sousElement alert-advice alert-advice-success">
+<div class="alert-advice alert-advice-success">
   <img src="../assets/img/smartloc/illustrations/notes.png" class="advice-illustration" alt="">
   <div class="advice-info">
     <h3 class="advice-title">Conseil de Smartloc</h3>
     <p>En alternative au garant nous recommandons de passer par une <a href="">assurance loyer impayé</a> qui couvrira également les sinistres concernant les charges locatives et leurs éventuelles régularisations.</p>
   </div>
+</div>
+<br/>
+<div class="alert-advice alert-advice-danger">
+  <img src="../assets/img/smartloc/illustrations/bouclier.png" class="advice-illustration" alt="">
+  <div class="advice-info">
+    <h3 class="advice-title">Plafonnement et encadrement des loyers</h3>
+    <p>En zone tendue, l'évolution des loyers est plafonnée à l'IRL, c'est à dire que vous ne pouvez pas augmenter le loyer entre deux locataires au-delà de l'évolution de l'IRL, sauf à le justifier par des travaux conséquents. Par ailleurs à Paris les valeurs absolues de loyer sont encadrées, vous pouvez dépasser le loyer de référence majorée de votre zone pour un nombre de pièces en justifiant d'un complément de loyer exceptionnel.</p>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+Alerte sur soumission de formulaire
+
+{% capture example %}
+<div class="alert alert-danger">
+  <div class="alert-heading"><i class="fal fa-times-circle icone_medium"></i> <span>Le loyer est trop élevé !</span></div>
+  <p>L'assurance loyer impayé ne couvre pas les loyers mensuels au-dessus de 3100€. 
+    Pour ce type de loyer vous pouvez mettre en place notre <a href="https://www.smartloc.fr/caution-bancaire-location" class="alert-link">caution bancaire</a>.
+  </p>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
@@ -807,7 +837,147 @@ Alerte incise de texte
 ## Typographie
 ### Tableaux
 ### Listes
-### Font
+
+Liste en accordion
+
+{% capture example %}
+<div class="accordion" id="accordion_faq_home">
+  <div class="questionDeroulante objetDeroulant">
+    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+      <h5>Peut-on prendre chaque prestation à la carte ? <i class="fas fa-minus float-right mt-1"></i></h5>
+    </div>
+    <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
+      <p>Oui vous pouvez prendre l'assurance sans le bail, ou la gestion en ligne sans assurance.</p>
+      <p>Néanmoins pour vous permettre d'optimiser pleinement votre gestion nous vous recommandons de prendre l'ensemble des élements de votre location sur Smartloc.</p>
+    </div>
+  </div>
+  <div class="questionDeroulante objetDeroulant">
+    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+      <h5>Quelles sont les durées d'engagement ? <i class="fas fa-plus float-right mt-1"></i></h5>
+    </div>
+    <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
+      <p>Pour la formule Bail Zen avec gestion en ligne, l'engagement est trimestriel reconductible tacitement, vous pouvez résilier à tout moment en ligne sans motif.</p>
+      <p>Pour l'assurance loyer impayé l'engagement est annuel reconductible tacitement; vous pouvez résilier et vous faire rembourser du trop perçu sur l'année en cas de départ du locataire ou du vente du logement.</p>
+      <p>Les contrats d'assurance que vous souscrivez via Smartloc sont séparés de la gestion locative en ligne, ce qui vous permet de résilier l'un ou l'autre séparément (contrairement aux mandats de gestion classiques pour lesquels assurance et gestion sont couplés).</p>
+    </div>
+  </div>
+  <div class="questionDeroulante objetDeroulant">
+    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_3">
+      <h5>Avez-vous des formules dégressives pour plusieurs biens ? <i class="fas fa-plus float-right mt-1"></i></h5>
+    </div>
+    <div class="objetDeroulant__contenu collapse" id="faq_contenu_3" data-parent="#accordion_faq_home">
+      <p>Oui nous proposons des formules dégressives sur le bail et la gestion en ligne. Vous avez une formule investisseur 
+        entre 4 et 9 lots, une formule gestionnaire à plus de 10 lots. Ces formules sont activables sur demande.</p>
+        <p>Sur les signatures électroniques et sur la garantie loyer impayé nous ne proposons pas de formule dégressive car le coût marginal du produit est le même que vous ayez un ou vingt lots; 
+        par ailleurs nos tarifs sur ces produits sont déjà très négociés.</p>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Liste de fonctionnalites avec icones
+
+{% capture example %}
+<div class="row">
+  <div class="col-lg-6">
+    <div class="sectionFontionnalites__conteneurFonctionnalite">
+      <img src="../assets/img/smartloc/illustrations/taches.png" alt="">
+      <h5>Bail de location numérique</h5>
+      <p>Vous rédigez votre bail en ligne avec toutes les clauses et annexes nécessaires. Vous pouvez signer votre bail en ligne et le modifier de manière illimitée, y compris pour faire rentrer un nouveau locataire.</p>
+      <a href="/bail/">Voir un exemple de bail numérique</a>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="sectionFontionnalites__conteneurFonctionnalite">
+      <img src="../assets/img/smartloc/illustrations/notes.png" alt="">
+      <h5>Quittances légales</h5>
+      <p>Les quittances et avis d'échéance mensuelles sont envoyées automatiquement aux locataires.</p>
+      <a href="/blog/wp-content/uploads/2019/01/Quittance_76341_2019-01.pdf">Voir un exemple de quittance</a>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Liste d'étapes en comment ça marche
+
+{% capture example %}
+<div class="headerClassique__commentCaMarche_conteneurEtapes row">
+  <div class="col-md-3 col-sm-6">
+    <div class="headerClassique__commentCaMarche_etape">
+      <span class="headerClassique__commentCaMarche_etape_number">1</span>
+      <a href="/dossier" class="stretched-link"><h5 class="headerClassique__commentCaMarche_etape_text">Constitution d’un dossier locataire</h5></a>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="headerClassique__commentCaMarche_etape">
+      <span class="headerClassique__commentCaMarche_etape_number">2</span>
+      <h5 class="headerClassique__commentCaMarche_etape_text">Devis en ligne</h5>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="headerClassique__commentCaMarche_etape">
+      <span class="headerClassique__commentCaMarche_etape_number">3</span>
+      <h5 class="headerClassique__commentCaMarche_etape_text">Rédaction et signature du bail</h5>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="headerClassique__commentCaMarche_etape">
+      <span class="headerClassique__commentCaMarche_etape_number">4</span>
+      <h5 class="headerClassique__commentCaMarche_etape_text">Souscription à l'assurance</h5>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+### Texte
+
+Paragraphe Landing avec titre latéral
+
+{% capture example %}
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 offset-lg-1">
+      <h2>Cas d'usage</h2>
+    </div>
+    <div class="col-lg-8">
+      <div class="section__sousElement">
+        <p>Le bail et les échéances importantes sont donc gérés automatiquement via votre espace de gestion Smartloc; 
+          vous vous demandez peut être comment sont résolus les nombreux problèmes particuliers que peuvent rencontrer nos bailleurs.
+          Voici quelques cas d'usage, la liste n'est pas exhaustive.</p>
+      </div>
+      <div class="section__sousElement">
+        <h3 class="section__sousElement_titre">Entrée des locataires</h3>
+        <p>Texte</p>
+      </div>
+      <div class="section__sousElement">
+        <h3 class="section__sousElement_titre">Incidents en cours de bail</h3>
+          <p>Texte</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+Paragraphe dans article
+
+{% capture example %}
+<div class="section__sousElement">
+  <h2 class="section__sousElement_titre">Comment régulariser les charges ?</h2>
+  <h3 class="section__sousElement_titre">Comment calculer les charges à régulariser ?</h3>
+  <p>Une fois que vous avez déterminé les charges à récupérer auprès du locataire le calcul est assez simple : le montant à régulariser correspond à la différence entre les charges réelles et la provision pour charges pour la période considérée.</p>
+</div>
+<div class="section__sousElement">
+  <h3 class="section__sousElement_titre">Lettre de régularisation des charges et quittances spéciales</h3>
+  <p>En accompagnement du décompte de charges et de l’éventuelle répartition entre occupants dans un immeuble collectif, vous devez envoyer un courrier ou un mail au locataire récapitulant le montant total qu’il a payé au titre des provisions, le montant réel dû, et la différence (positive ou négative) qui va modifier la prochaine échéance de loyer.</p>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Images
 
 
