@@ -1240,14 +1240,6 @@ ul.liste--check li::before {
   margin-bottom: .875rem;
 }
 
-/* SECTION USAGE sur page gestion locative */
-.sectionUsage .section__sousElement:not(:first-of-type) .section__sousElement_titre {
-  padding-top: 1.5rem;
-}
-
-.sectionUsage .alert-notice {
-  margin-top: 2rem;
-}
 
 /********** DOSSIERS LOCATAIRES **********/
 .formulaire {
@@ -1562,15 +1554,6 @@ ul.liste--check li::before {
   margin-bottom: 2rem;
 }
 
-.sectionFAQ .menuSticky--sousElement a {
-  color: rgba(0, 0, 0, 0.6);
-  transition: .1s ease-in-out;
-}
-
-.sectionFAQ .menuSticky--sousElement a:hover {
-  color: black;
-  text-decoration: none;
-}
 
 /* tableau section garanties */
 .sectionGaranties .tableau__premiereColonne {
