@@ -836,6 +836,127 @@ Alerte sur soumission de formulaire
 ## Modal
 ## Typographie
 ### Tableaux
+
+Tableau formules
+
+{% capture example %}
+<section class="sectionGaranties container-fluid bg-light">
+  <div class="section__sousElement tableau bg-white">
+    <div class="tableau__entete">
+      <div class="tableau__entete_cellule tableau__premiereColonne mb-0">
+        <h3 class="d-none d-sm-inline-block">Garantie loyer impayé (GLI)</h3>
+      </div>
+      <div class="tableau__entete_cellule">Basic</div>
+      <div class="tableau__entete_cellule">
+        <p class="text-primary position-absolute" style="top:.5rem">le + choisi</p>
+        <p>Classic</p>
+      </div>
+      <div class="tableau__entete_cellule">Premium</div>
+    </div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">
+        <p>Abandon du logement par le locataire </p>
+        <p class="tableau__cellule_petitTexte">Remboursement des loyers jusqu'à récupération du bien</p>
+      </div>
+      <div class="tableau__ligne_cellule"><i class="fal fa-check-circle icone_medium"></i></div>
+      <div class="tableau__ligne_cellule"><i class="fal fa-check-circle icone_medium"></i></div>
+      <div class="tableau__ligne_cellule"><i class="fal fa-check-circle icone_medium"></i></div>
+    </div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">
+        <p>Détériorations immobilières <a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/"><u>détails</u></a></p>
+        <p class="tableau__cellule_petitTexte">Plafond de 10 000€ avec franchise du dépôt de garantie</p>
+      </div>
+      <div class="tableau__ligne_cellule"></div>
+      <div class="tableau__ligne_cellule"><i class="fal fa-check-circle icone_medium"></i></div>
+      <div class="tableau__ligne_cellule"><i class="fal fa-check-circle icone_medium"></i></div>
+    </div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">
+        <p>Protection juridique hors impayés <a href="/blog/protection-juridique/"><u>détails</u></a> </p>
+        <p class="tableau__cellule_petitTexte">Plafond de 20 000€</p>
+      </div>
+      <div class="tableau__ligne_cellule"></div>
+      <div class="tableau__ligne_cellule"></div>
+      <div class="tableau__ligne_cellule"><i class="fal fa-check-circle icone_medium"></i></div>
+    </div>
+    <div class="tableau__ligneSeparation"></div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">
+        <p class="mb-2">Tarif de base (en % du loyer charges comprises)</p>
+        <p class="tableau__cellule_petitTexte mb-2">+ frais de courtage annuel 30€ TTC</p>
+        <p>DEDUCTIBLE DE VOS REVENUS FONCIERS</p>
+      </div>
+      <div class="tableau__ligne_cellule  tableau__cellule_nombre">2,2%</div>
+      <div class="tableau__ligne_cellule">
+        <p class=" tableau__cellule_nombre">2,64%</p>
+      </div>
+      <div class="tableau__ligne_cellule tableau__cellule_nombre">2,75%</div>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
+Tableau complexe
+
+{% capture example %}
+<section class="sectionStatus bg-primary container-fluid d-none d-md-block">
+  <div class="section__sousElement tableau bg-white">
+    <div class="tableau__entete">
+      <div class="tableau__entete_cellule tableau__premiereColonne mb-0">
+        <h3 class="mb-0">Statuts éligibles</h3>
+        <p class="tableau__cellule_petitTexte">(locataires ou garants)</p>
+      </div>
+      <div class="tableau__entete_cellule">CDI</div>
+      <div class="tableau__entete_cellule">CDD</div>
+      <div class="tableau__entete_cellule">Fonctionnaire</div>
+      <div class="tableau__entete_cellule">Indépendant</div>
+      <div class="tableau__entete_cellule">Retraité</div>
+      <div class="tableau__entete_cellule">Étudiant</div>
+    </div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">Critères d'éligibilité</div>
+      <div class="tableau__ligne_cellule">hors période d’essai</div>
+      <div class="tableau__ligne_cellule">+ 8 mois restant</div>
+      <div class="tableau__ligne_cellule">titulaire</div>
+      <div class="tableau__ligne_cellule">2 ans d’activité</div>
+      <div class="tableau__ligne_cellule">-</div>
+      <div class="tableau__ligne_cellule">avec garant éligible</div>
+    </div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">Revenus pris en compte</div>
+      <div class="tableau__ligne_cellule">Salaire net régulier</div>
+      <div class="tableau__ligne_cellule">Salaire net régulier</div>
+      <div class="tableau__ligne_cellule">Salaire net régulier</div>
+      <div class="tableau__ligne_cellule">Revenu imposable</div>
+      <div class="tableau__ligne_cellule">Revenu imposable</div>
+      <div class="tableau__ligne_cellule">Revenu des garants</div>
+    </div>
+    <div class="tableau__ligneSeparation"></div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">Carte d'identité ou passeport</div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+    </div>
+    <div class="tableau__ligne">
+      <div class="tableau__ligne_cellule tableau__premiereColonne">3 dernières quittances / attestation hébergement / taxe foncière</div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule"><i class="far fa-check-circle fa-lg"></i></div>
+      <div class="tableau__ligne_cellule">Quittance des garants</div>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Listes
 
 Liste en accordion
