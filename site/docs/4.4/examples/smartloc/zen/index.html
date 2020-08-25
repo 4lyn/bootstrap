@@ -46,10 +46,14 @@ body_class: bg-grey
               <a class="nav-link" href="/blog">Ressources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-lg-5"  href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+              <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="/login"><h5>Déconnexion</h5></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/password/change">Mot de passe</a>
+                <a class="dropdown-item" href="/logout">Déconnexion</a>
+              </div>
             </li>
           </ul>
         </div>

@@ -188,10 +188,10 @@ Navbar d'une page landing
               <a class="nav-link" href="/tarifs">Tarifs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-lg-5" href="/login" id="connexion"><h5>Mon compte</h5></a>
+              <a class="nav-link ml-lg-5 font-weight-bold" href="#" data-toggle="modal" data-target="#modal_contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modal_contact"><h5>Contact</h5></a>
+              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 font-weight-bold" href="/login" id="connexion">Mon Compte</a>
             </li>
           </ul>
         </div>
