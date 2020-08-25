@@ -840,8 +840,8 @@ Alerte sur soumission de formulaire
 Tableau formules
 
 {% capture example %}
-<section class="sectionGaranties container-fluid bg-light">
-  <div class="section__sousElement tableau bg-white">
+<section class="container-fluid bg-light">
+  <div class="section__sousElement tableau tableau_standard bg-white">
     <div class="tableau__entete">
       <div class="tableau__entete_cellule tableau__premiereColonne mb-0">
         <h3 class="d-none d-sm-inline-block">Garantie loyer impayé (GLI)</h3>
@@ -901,8 +901,8 @@ Tableau formules
 Tableau complexe
 
 {% capture example %}
-<section class="sectionStatus bg-primary container-fluid d-none d-md-block">
-  <div class="section__sousElement tableau bg-white">
+<section class="bg-primary container-fluid d-none d-md-block">
+  <div class="section__sousElement tableau tableau_compact bg-white">
     <div class="tableau__entete">
       <div class="tableau__entete_cellule tableau__premiereColonne mb-0">
         <h3 class="mb-0">Statuts éligibles</h3>

@@ -1556,26 +1556,26 @@ ul.liste--check li::before {
 
 
 /* tableau section garanties */
-.sectionGaranties .tableau__premiereColonne {
+.tableau_standard .tableau__premiereColonne {
   width: 45%;
 }
 
-.sectionGaranties .tableau__ligne_cellule:not(.tableau__premiereColonne),
-.sectionGaranties .tableau__entete_cellule:not(.tableau__premiereColonne) {
+.tableau_standard .tableau__ligne_cellule:not(.tableau__premiereColonne),
+.tableau_standard .tableau__entete_cellule:not(.tableau__premiereColonne) {
   width: 15%;
 }
 
 /* tableau section status */
-.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne) {
+.tableau_compact .tableau__entete_cellule:not(.tableau__premiereColonne) {
   font-size: .875rem;
 }
 
-.sectionStatus .tableau__premiereColonne {
+.tableau_compact .tableau__premiereColonne {
   width: 30%;
 }
 
-.sectionStatus .tableau__ligne_cellule:not(.tableau__premiereColonne),
-.sectionStatus .tableau__entete_cellule:not(.tableau__premiereColonne) {
+.tableau_compact .tableau__ligne_cellule:not(.tableau__premiereColonne),
+.tableau_compact .tableau__entete_cellule:not(.tableau__premiereColonne) {
   width: 11%;
   text-align: center;
   font-size: .875rem;
