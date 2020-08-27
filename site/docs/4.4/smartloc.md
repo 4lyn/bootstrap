@@ -507,6 +507,29 @@ Navbar d'une page landing
 {% endcapture %}
 {% include example.html content=example %}
 
+### Breadcrumb d'articles
+
+Chapeau d'un article de blog
+
+{% capture example %}
+<div class="row headerArticle__titrage mt-4 mt-lg-5">
+  <div class="col-lg-8">
+    <div class="headerHub__titrage_arboresence">
+      <a href="">Ressources </a> > <a href=""> Gestion</a> > <a href=""> Échéances importantes</a>
+    </div>
+    <h1 class="headerArticle__titrage_titre">Régularisation des charges locatives : mode d’emploi</h1>
+  </div>
+  <div class="col-lg-4 headerArticle__titrage_articleInfos mt-4 mt-lg-0 pt-0 pt-lg-5 float-right">
+    <div>
+      <p>Mathieu Chantalat</p>
+      <p>8 juillet 2018</p>
+    </div>
+    <img src="../assets/img/smartloc/photos/Image.png" alt="">
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ## Hero & Bannieres
 ### Hero
 
@@ -1050,6 +1073,37 @@ Liste d'étapes en comment ça marche
     </div>
   </div>
 </div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Sommaire d'article de blog
+
+{% capture example %}
+<h2>Sommaire</h2>
+<ul class="section__sousElement sectionArticle__sommaire liste--point encadrement--gris">
+  <li><a href="#">Quelles dépenses sont récupérables auprès du locataire ?</a></li>
+  <li><a href="#">Quand faire la régularisation des charges ?</a></li>
+  <li><a href="#">Comment régulariser les charges ?</a>
+    <ul class="liste--point">
+      <li><a href="#">Comment calculer les charges à régulariser ?</a></li>
+      <li><a href="#">Lettre de régularisation des charges et quittances spéciales</a></li>
+      <li><a href="#">Réajustement de la provision pour charges</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Oubli de régularisation : le sort des charges locatives non récupérées</a>
+    <ul class="liste--point">
+      <li><a href="#">Délai de prescription de la régularisation pour charges</a></li>
+      <li><a href="#">Action du locataire demandant une régularisation tardive</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Régularisation au départ du locataire : retenue sur le dépôt de garantie</a></li>
+  <li><a href="#">Impayés du locataire pour charges</a>
+    <ul class="liste--point">
+      <li><a href="#">Attention aux régularisation de charges abusives</a></li>
+      <li><a href="#">Poursuivre le locataire partant</a></li>
+    </ul>
+  </li>
+</ul>
 {% endcapture %}
 {% include example.html content=example %}
 
