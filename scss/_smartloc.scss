@@ -1602,35 +1602,21 @@ ul.liste--check li::before {
   line-height: 1.58;
   font-size: 18px;
 }
-
-.sectionArticle__photo {
-  width: 100%;
-}
+x
 
 .sectionArticle__sommaire {
   padding: 2rem 2.5rem;
   line-height: 32px;
-  font-weight: bold;
 }
 
 .sectionArticle__sommaire ul {
   padding-left: 1rem;
 }
 
-.sectionArticle__doublePhoto {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.sectionArticle__sommaire a {
+  color: inherit;
 }
 
-.sectionArticle__doublePhoto img {
-  width: 47.5%
-}
-
-.sectionArticle__captureTweet {
-  width: 75%;
-}
 
 .sectionArticle__corps h2 {
   margin-bottom: 1rem;
