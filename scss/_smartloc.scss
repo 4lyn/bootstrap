@@ -71,6 +71,14 @@ section {
   background-color: #f4f4f4;
 }
 
+.cursor_pointer {
+  cursor: pointer;
+}
+
+cursor_not {
+  cursor: not-allowed;
+}
+
 /************* Modal *************/
 
 .modal-footer {
@@ -846,6 +854,10 @@ ul.liste--check li::before {
 /* cards sur fond de couleur */
 .bg-light .card, .bg-secondary .card, .bg-warning .card {
   border: none;
+}
+
+.card_active{
+  border:6px solid #a896d8;
 }
 
 /************* ICONES *************/

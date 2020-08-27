@@ -820,6 +820,54 @@ Cards services avec illustrations
 {% endcapture %}
 {% include example.html content=example %}
 
+
+Cards formules pricing
+
+{% capture example %}
+<div class="row">
+  <div class="col-md-6 px-4 px-xl-5">
+    <h3>Formules</h3>
+    <div class="card cursor_pointer" data-toggle="modal" data-target="#modal_bail_simple">
+      <div class="card-body">
+        <h4 class="card-title">BAIL LIMITE <a href="#" class="btn btn-outline-dark btn-sm float-right">Choisir</a></h4>
+        <h5 class="card-subtitle mb-2 text-muted">Modifiable pendant 3 jours</h5>
+        <ul class="list-unstyled">
+          <li>Bail PDF rempli et mis en forme</li>
+          <li>Clauses résolutoire et solidarité</li>
+          <li>Notice & Etat des lieux</li>
+          <li class="grey"><s>11 Clauses importantes</s></li>
+          <li class="grey"><s>14 Annexes importantes</s></li>
+        </ul>
+        <h4 class="mb-3">
+          Gratuit
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mt-4 mt-md-0 px-4 px-xl-5">
+    <h3>Options</h3>
+    <div class="card card_active cursor_pointer">
+      <div class="card-body">
+        <h4 class="card-title">GESTION EN LIGNE <a href="#" class="btn btn-outline-dark btn-sm float-right">Supprimer</a></h4>
+        <h5 class="card-subtitle mb-2 text-muted">3 premiers mois offerts</h5>
+        <ul class="list-unstyled">
+          <li>Checklist d'entrée dans les lieux</li>
+          <li>Quittances mensuelles par email</li>
+          <li>Indexation du loyer automatique</li>
+          <li>Echéances importantes</li>
+          <li>Assistance panne & contentieux</li>
+        </ul>
+        <h4 style="position:relative" class="mb-3">
+          <span id="prix_barre">4,90 €/mois</span> 3 mois offerts avec le bail complet
+        </h4>
+        <a href="#" class="card-link">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ### Alerts
 
 Alerte incise de texte
