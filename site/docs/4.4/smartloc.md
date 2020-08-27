@@ -837,7 +837,7 @@ Alerte sur soumission de formulaire
 ## Typographie
 ### Tableaux
 
-Tableau formules
+Tableau standard
 
 {% capture example %}
 <section class="container-fluid bg-light">
@@ -898,7 +898,7 @@ Tableau formules
 {% endcapture %}
 {% include example.html content=example %}
 
-Tableau complexe
+Tableau compact
 
 {% capture example %}
 <section class="bg-primary container-fluid d-none d-md-block">
@@ -1101,8 +1101,50 @@ Paragraphe dans article
 
 ### Images
 
+Image d'illustration d'un service
+
+{% capture example %}
+<div class="row sectionServices__conteneurService">
+  <div class="col-lg-6 pr-lg-5 d-none d-lg-block">
+    <img class="sectionServices__photo" src="../assets/img/smartloc/photos/paris_small.jpg" alt="">
+  </div>
+  <div class="col-lg-5 offset-lg-0 col-sm-8 offset-sm-2 sectionServices__conteneurService_contenu">
+    <span class="sectionServices__conteneurService_nomService">ASSURANCE LOYER IMPAYE</span>
+    <h1>L'assurance loyer <br> impayé simple</h1>
+    <ul class="sectionServices__conteneurService_listeFeatures">
+      <li><i class="far fa-check-circle"></i><span>Durée illimité de remboursement</span></li>
+      <li><i class="far fa-check-circle"></i><span>Sans franchise et sans carence</span></li>
+      <li><i class="far fa-check-circle"></i><span>Options dégradations et protection juridique</span></li>
+    </ul>
+    <p>Notre assurance vous rembourse dès le premier mois et prend en charge l'expulsion du locataire.
+      Vous pouvez souscrire à l'entrée du locataire ou en cours de bail.</p>
+    <a href="/assurance-loyer-impaye">En savoir plus</a>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
 
 
+Photos de l'équipe d'experts
+
+{% capture example %}
+<section class="sectionExpertsAide container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Des experts disponibles pour vous aider</h1>
+      <div class="sectionExpertsAide__conteneurPhotos">
+        <img src="../assets/img/smartloc/photos/expert_1_min.png" alt="">
+        <img src="../assets/img/smartloc/photos/expert_2.png" alt="">
+        <img src="../assets/img/smartloc/photos/expert_3.png" class="d-none d-sm-block" alt="">
+      </div>
+      <div class="sectionExpertsAide__conteneurBoutons text-center">
+        <a class="btn btn-outline-dark btn-sm"  href="#" data-toggle="modal" data-target="#modal_contact"><h5>Nous contacter</h5></a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcapture %}
+{% include example.html content=example %}
 
 
 
