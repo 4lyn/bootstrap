@@ -118,7 +118,7 @@ Formulaire dans une card
     <div class="form-row">
       <div class="form-group col-lg-6">
         <label>Label du champ texte</label>
-        <div class="champSaisie--illustré ">
+        <div class="champSaisie--illustré">
           <input type="text" class="form-control">
           <span>€/mois</span>
         </div>
@@ -139,7 +139,7 @@ Formulaire dans une card
         <label class="custom-control-label" for="customCheck1">Ceci est le label d'une checkbox</label>
       </div>
     </div>
-    <div class="form-group ">
+    <div class="form-group">
       <label class="mt-3">Label du champ typearea</label>
       <textarea class="form-control" rows="10" placeholder="Ce placeholder va disparaître si tu cliques" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
     </div>
@@ -323,7 +323,7 @@ Navbar d'une page landing
     </div>
     <div class="section__sousElement">
       <div id="faq_criteres" class="menuSticky--sousElement__ancre"></div>
-      <h2 class="section__sousElement_titre  mt-5">Les critères de l’assurance loyer impayé</h2>
+      <h2 class="section__sousElement_titre mt-5">Les critères de l’assurance loyer impayé</h2>
       <h3 class="section__sousElement_titre">Que couvre la garantie loyer impayé ?</h3>
       <p>Les critères de solvabilité s'appliquent <strong>aux locataires entrants et aux locataires en place depuis moins de 6 mois</strong>.
       </p>
@@ -335,7 +335,7 @@ Navbar d'une page landing
     </div>
     <div class="section__sousElement">
       <div id="faq_dossier" class="menuSticky--sousElement__ancre"></div>
-      <h2 class="section__sousElement_titre  mt-5">Le dossier locataire pour l'assurance loyer impayé</h2>
+      <h2 class="section__sousElement_titre mt-5">Le dossier locataire pour l'assurance loyer impayé</h2>
       <h3 class="section__sousElement_titre">Quelles sont les justificatifs demandés pour le dossier du locataire ?</h3>
         <p>Vous trouverez tous les documents à rassembler sur notre <a
               href="/blog/wp-content/uploads/2019/06/Critères-et-justificatifs-Insured-AZ.pdf">liste des critères et justificatifs</a>.</p>
@@ -602,7 +602,7 @@ Banniere de CTA dans une landing
   <img src="../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
   <img src="../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
   <div class="row">
-    <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1  text-center sectionSmartlocAide__contenu">
+    <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1 text-center sectionSmartlocAide__contenu">
       <h2>Ne prenez plus de risques et laissez Smartloc vous aider</h2>
       <a href="#" class="btn btn-dark">Démarrer</a>
     </div>
@@ -958,7 +958,7 @@ Tableau standard
         <p class="tableau__cellule_petitTexte mb-2">+ frais de courtage annuel 30€ TTC</p>
         <p>DEDUCTIBLE DE VOS REVENUS FONCIERS</p>
       </div>
-      <div class="tableau__ligne_cellule  tableau__cellule_nombre">2,2%</div>
+      <div class="tableau__ligne_cellule tableau__cellule_nombre">2,2%</div>
       <div class="tableau__ligne_cellule">
         <p class=" tableau__cellule_nombre">2,64%</p>
       </div>
@@ -1240,7 +1240,7 @@ Photos de l'équipe d'experts
         <img src="../assets/img/smartloc/photos/expert_3.png" class="d-none d-sm-block" alt="">
       </div>
       <div class="sectionExpertsAide__conteneurBoutons text-center">
-        <a class="btn btn-outline-dark btn-sm"  href="#" data-toggle="modal" data-target="#modal_contact"><h5>Nous contacter</h5></a>
+        <a class="btn btn-outline-dark btn-sm" href="#" data-toggle="modal" data-target="#modal_contact"><h5>Nous contacter</h5></a>
       </div>
     </div>
   </div>
