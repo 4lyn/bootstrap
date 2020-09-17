@@ -210,13 +210,13 @@ Navbar d'une page landing
 <div class="menuSticky--section">
   <ul class="nav">
     <li class="nav-item">
-      <a href="#garanties" class="menuSticky--section__conteneurLiens_item">Garanties & tarifs</a>
+      <a href="#garanties" class="menuSticky--section__conteneurLiens_item js-scrollTo">Garanties & tarifs</a>
     </li>
     <li class="nav-item">
-      <a href="#conditions" class="menuSticky--section__conteneurLiens_item">Conditions</a>
+      <a href="#conditions" class="menuSticky--section__conteneurLiens_item js-scrollTo">Conditions</a>
     </li>
     <li class="nav-item">
-      <a href="#status" class="menuSticky--section__conteneurLiens_item">Justificatifs locataire</a>
+      <a href="#status" class="menuSticky--section__conteneurLiens_item js-scrollTo">Justificatifs locataire</a>
     </li>
   </ul>
   <a href="#" class="btn btn-dark btn-sm menuSticky--section__bouton" data-toggle="modal" data-target="#modalDemarrer">Démarrer</a>
@@ -284,13 +284,13 @@ Navbar d'une page landing
       <h2>FAQ</h2>
       <ul class="nav flex-column">
         <li class="nav-item">
-          <h4><a href="#faq_garanties" class="menuSticky--sousElement__item active">Les garanties</a></h4>
+          <h4><a href="#faq_garanties" class="menuSticky--sousElement__item active js-scrollTo">Les garanties</a></h4>
         </li>
         <li class="nav-item">
-          <h4><a href="#faq_criteres" class="menuSticky--sousElement__item">Les critères</a></h4>
+          <h4><a href="#faq_criteres" class="menuSticky--sousElement__item js-scrollTo">Les critères</a></h4>
         </li>
         <li class="nav-item">
-          <h4><a href="#faq_dossier" class="menuSticky--sousElement__item">Le dossier locataire</a></h4>
+          <h4><a href="#faq_dossier" class="menuSticky--sousElement__item js-scrollTo">Le dossier locataire</a></h4>
         </li>
       </ul>
     </div>

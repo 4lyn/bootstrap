@@ -34,6 +34,19 @@ $(document).ready(() => {
     document.querySelectorAll('.menuSticky--section__conteneurLiens_item'),
     document.querySelectorAll('.menuSticky--section__ancre')
   )
+
+  $('.objetDeroulant__contenu').on('shown.bs.collapse', function () {
+    $(this).closest('.questionDeroulante').find('.fas').removeClass('fa-plus').addClass('fa-minus');
+  });
+
+  $('.objetDeroulant__contenu').on('hidden.bs.collapse', function () {
+    $(this).closest('.questionDeroulante').find('.fas').removeClass('fa-minus').addClass('fa-plus');
+  });
+
+  $('.js-scrollTo').click(function(){
+    $('html, body').animate( { scrollTop: $($(this).attr('href')).offset().top-30 }, 750 );
+    return false;
+  });
 })
 
 export default Smartloc
