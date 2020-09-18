@@ -1,0 +1,196 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+body_class: bg-grey
+---
+
+
+<!-- HEADER -->
+
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                </div>
+            </nav> 
+        </div>
+    </div>
+</header>
+
+
+<!-- MAIN -->
+<main class="container-fluid formulaire">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="alert alert-danger">
+        Votre bail simple ne comporte pas toutes les clauses et annexes recommandées // <a class="alert-link" class="ml-3">Débloquez le bail zen complet</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="formulaire__section">
+        <div class="formulaire__sousElement">
+          <h3 class="formulaire__sousElement_titre">Bail & Annexes à signer</h3>
+          <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous pouvez très bien signer en avance 
+            pour une date d'effet dans le futur.</p>
+          <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt de garantie 
+            (que vous pouvez encaisser dès la signature).</p>
+          <p class="mt-4">
+            <a href="#">Bail PDF en cours</a>
+            <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+            <button class="btn btn-dark btn-sm ml-3">Signer le bail en ligne</button>
+          </p>
+          <p>
+            <a target="_blank" ng-href="/bail/docs/edl.pdf" download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl.pdf">
+              État des lieux entrée /sortie
+            </a>
+          </p>
+          <p>
+            <a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank">
+              État des lieux compact entrée ou sortie
+            </a>								
+          </p>
+          <div class="form-group">
+            <label class="mt-3">Lien de partage du bail pour le locataire</label>
+            <textarea class="form-control" rows="10" placeholder="Ce placeholder va disparaître si tu cliques" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Optionel'"></textarea>
+          </div>     
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="formulaire__section">
+        <div class="formulaire__sousElement">
+          <h3 class="formulaire__sousElement_titre">Votre compte Smartloc</h3>
+          <div class="form-group">
+            <label>Votre email</label>
+            <input type="text" class="form-control col-lg-6">
+          </div>
+          <div class="form-group">
+            <label>Votre mot de passe</label>
+            <input type="text" class="form-control col-lg-6">
+          </div>
+          <div class="form-group">
+            <label>Confirmez votre mot de passe</label>
+            <input type="text" class="form-control col-lg-6">
+          </div>                      
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-sm-auto">
+            <button class="btn btn-outline-dark">J'ai déjà un compte</button>
+        </div>
+        <div class="col-sm-auto mt-3 mt-sm-0">
+            <button class="btn btn-dark">Créer mon compte</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade " id="modalAboZen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Gestion locative par défaut</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>La gestion locative en ligne vous est proposée <strong>par défaut gratuitement</strong> avec le bail complet.</p>
+                <p>Vous pouvez annuler cette option à tout moment en ligne sans frais, même pendant les 3 mois gratuits, mais nous sommes persuadés que nos outils automatiques et notre espace de gestion vous convaincront.</p>
+                <p>Après 3 mois gratuis, l'abonnement de gestion locative en ligne passe à 4,90 €/mois, renouvelable tacitement chaque trimestre.</p>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal_bail_simple" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Attention votre bail limité ne contiendra pas :</h3>
+                <ul class="fa-ul my-4">
+                    <li><i class="fas fa-times-circle"></i> Clause sur les visites pour relouer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause de paiement du loyer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause de franchise de loyer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause animaux domestiques</li>
+                    <hr>
+                    <li><i class="fas fa-times-circle"></i> Acte de caution solidaire</li>
+                    <li><i class="fas fa-times-circle"></i> Inventaire des meubles</li>
+                    <li><i class="fas fa-times-circle"></i> Liste des charges</li>
+                    <hr>
+                    <li><i class="fas fa-times-circle"></i> 3 mois de gestion en ligne offerts (checklist entrée dans les lieux, quittances, etc)</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Choisir la formule Bail Complet</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Je ne veux pas d'un bail complet</button>
+            </div>											
+        </div>
+    </div>
+</div>
+
+
