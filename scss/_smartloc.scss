@@ -1791,3 +1791,13 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+/*********** bootstrap-select ************/
+
+.bootstrap-select .dropdown-toggle {
+  border-width: 2px;
+}
+
+.bootstrap-select.is-invalid .dropdown-toggle {
+  border-color: $red !important;
+}
