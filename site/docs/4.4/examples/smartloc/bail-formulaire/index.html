@@ -40,7 +40,7 @@ body_class: bg-grey
             <ul class="nav formulaire__menuEtapes">
                 <li class="nav-item">
                     <a class="nav-link active formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_type" role="tab">
-                        <i class="fas fa-list-alt"></i> <span>Type de bail</span>
+                        <i class="fas fa-list-alt"></i> <span>Choix du modèle</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -91,53 +91,58 @@ body_class: bg-grey
                                                 <input type="radio" checked="checked" name="radio1">
                                                 <div>Location vide</div>
                                             </label>
-                                            <label class="mt-3 mt-sm-0">
+                                            <label class="mt-3 mt-sm-0 mr-3">
                                                 <input type="radio" name="radio1">
                                                 <div>Location meublée</div>
                                             </label>
+                                            <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="btn-link"><i class="fal fa-question-circle"></i> Comprendre les différences</a>
                                         </div>
                                     </div>                    
                                 </div>
                                 <div class="formulaire__sousElement">
-                                    <h3 class="formulaire__sousElement_titre">Type d'occupation</h3>
+                                    <h3 class="formulaire__sousElement_titre">Type de bail</h3>
                                     <div class="form-group">
-                                        <div class="boutonsRadioViolets__conteneur">
-                                            <label>
-                                                <input type="radio" checked="checked" name="radio2">
-                                                <div>Standard</div>
-                                            </label>
-                                        </div>
+                                      <div class="boutonsRadioViolets__conteneur">
+                                          <label>
+                                              <input type="radio" checked="checked" name="radio2">
+                                              <div>Bail standard</div>
+                                          </label>
+                                          <label class="mt-3 mt-sm-0">
+                                            <input type="radio" name="radio2">
+                                            <div>Colocation bail unique</div>
+                                        </label>
+                                      </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="boutonsRadioViolets__conteneur">                                
-                                            <label>
-                                                <input type="radio" name="radio2">
-                                                <div>Colocation en bail unique</div>
-                                            </label>
-                                            <label class="mt-3 mt-sm-0">
-                                                <input type="radio" name="radio2">
-                                                <div>Colocation en bail individuel</div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="boutonsRadioViolets__conteneur">
-                                            <label>
-                                                <input type="radio" name="radio2">
-                                                <div>Location étudiante de 9 mois</div>
-                                            </label>
-                                            <label class="mt-3 mt-sm-0">
-                                                <input type="radio" name="radio2">
-                                                <div>Mixte habitation & professionnel</div>
-                                            </label>
-                                        </div>                    
+                                      <div class="boutonsRadioViolets__conteneur">      
+                                          <label>
+                                            <input type="radio" name="radio2">
+                                            <div>Colocation bail individuel</div>
+                                        </label>
+                                        <a href="#"  class="btn-link"><i class="fal fa-question-circle"></i> Comprendre les différences</a>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="formulaire__sousElement">
-                                    <p><strong>Bail standard</strong> : Choisissez ce type d'occupation quand vous louez un bien en entier à un locataire unique personne physique.
-                                        C'est également le modèle à privilégier quand vous louez une seule chambre dans votre logement (si plusieurs chambres optez pour le bail individuel).</p>
-
-                                </div>
+                                  <h3 class="formulaire__sousElement_titre">Type de propriétaire</h3>
+                                  <div class="form-group">
+                                      <div class="boutonsRadioViolets__conteneur">
+                                          <label>
+                                              <input type="radio" checked="checked" name="radio33">
+                                              <div>Personne physique ou SCI familiale</div>
+                                          </label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <div class="boutonsRadioViolets__conteneur">                                  
+                                          <label>
+                                            <input type="radio" name="radio33">
+                                            <div>Personne morale hors SCI familiale</div>
+                                        </label>
+                                        <a href="#"  class="btn-link"><i class="fal fa-question-circle"></i> Comprendre les différences</a>
+                                      </div>
+                                  </div>
+                              </div>
                             </div>
                             <div class="row justify-content-end">
                                 <div class="col-sm-auto">
@@ -166,11 +171,17 @@ body_class: bg-grey
                                     <div class="form-row">
                                         <div class="form-group col-lg-6">
                                             <label>Surface habitable</label>
-                                            <input type="text" class="form-control">
+                                            <div class="champSaisie--illustré">
+                                              <input type="text" class="form-control">
+                                              <span>m²</span>
+                                            </div>
                                         </div>
                                         <div class="form-group col-lg-6">
                                             <label>Nombre de pièces</label>
-                                            <input type="text" class="form-control">
+                                            <div class="champSaisie--illustré">
+                                              <input type="text" class="form-control">
+                                              <span>pièces</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -334,14 +345,14 @@ body_class: bg-grey
                                     <div class="form-row">
                                         <div class="form-group col-lg-6">
                                             <label>Loyer mensuel hors charges</label>
-                                            <div class="champSaisie--illustré ">
+                                            <div class="champSaisie--illustré">
                                                 <input type="text" class="form-control">
                                                 <span>€/mois</span>
                                             </div>
                                         </div>
                                         <div class="form-group col-lg-6">
                                             <label>Dépôt de garantie</label>
-                                            <div class="champSaisie--illustré ">
+                                            <div class="champSaisie--illustré">
                                                 <input type="text" class="form-control">
                                                 <span>€</span>
                                             </div>
@@ -1047,6 +1058,46 @@ body_class: bg-grey
             </div>											
         </div>
     </div>
+</div>
+
+<div class="modal fade" id="modal_choix_meuble" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Type de location</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Location vide</h4>
+        <p><strong>Définition</strong> : location d'un logement sans meubles ou avec des meubles insuffisants pour respecter le mobilier minimum fixé par décret.</p>
+        <p><strong>Conséquences</strong></p>
+        <ul>
+          <li>Dépôt de garantie à 1 mois de loyer hors charges</li>
+          <li>Durée du bail à 3 ans</li>
+          <li>Provision pour charges par défaut si bail standard</li>
+        </ul>
+        <hr>
+        <h4>Location meublée</h4>
+        <p><strong>Définition</strong> : location d'un logement respectant la liste minimum des meubles.</p>
+        <p><strong>Conséquences</strong></p>
+        <ul>
+          <li>Durée du bail à 1 an</li>
+          <li>Forfait de charges par défaut</li>
+          <li>Inventaire des meubles en annexe</li>
+        </ul>
+        <hr>
+        <h4>En savoir plus</h4>
+        <p><a href="/blog/louer-meuble-ou-vide/">Fiche complète sur le vide vs meublé</a></p>
+        <p><a href="/blog/liste-des-meubles-obligatoires-en-location-meublee/">Fiche sur le mobilier minimum</a></p>             
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
