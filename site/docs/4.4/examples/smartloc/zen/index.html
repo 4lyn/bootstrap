@@ -98,32 +98,43 @@ body_class: bg-grey
               <div class="card-body">
                 <h3 class="card-title">Envoyez vos quittances automatiquement</h3> 
                 <hr>
-                <div class="section__sousElement">
-                  <h4 class="section__sousElement_titre">Comment fonctionne l'envoi automatique des quittances ?</h4>
-                  <dl class="row">
-                    <dt class="col-sm-2 offset-sm-2">le 5 du mois</dt>
-                    <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
-                    <dt class="col-sm-2 offset-sm-2">le 15 du mois</dt>
-                    <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
-                    <dt class="col-sm-2 offset-sm-2">le 25 du mois</dt>
-                    <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
-                  </dl>
-                  <p>Si vous n'activez pas l'option, la quittance vous sera directement envoyée le 5 du mois.</p>
-                </div>
-                <div class="section__sousElement">
-                  <h4 class="section__sousElement_titre">Pourquoi c'est important ?</h4>
-                  <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
-                  <ul>
-                    <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
-                    <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
-                    <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
-                  </ul>
+                <div class="accordion" id="accordion_faq_home">
+                  <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+                      <h5>Comment fonctionne l'envoi automatique des quittances ? <i class="fas fa-minus float-right mt-1"></i></h5>
+                    </div>
+                    <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
+                      <dl class="row">
+                        <dt class="col-sm-2 offset-sm-2">le 5 du mois</dt>
+                        <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
+                        <dt class="col-sm-2 offset-sm-2">le 15 du mois</dt>
+                        <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
+                        <dt class="col-sm-2 offset-sm-2">le 25 du mois</dt>
+                        <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+                      <h5>Pourquoi c'est important  d'envoyer les quittances ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                    </div>
+                    <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
+                      <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                      <ul>
+                        <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
+                        <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                        <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                      </ul>                      
+                    </div>
+                  </div>
+                </div>                
+                <div class="section__sousElement mt-4">
                   <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
                   <div class="custom-control custom-switch mt-4 mb-4">
                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
                     <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
                   </div>
-                  <p><button class="btn btn-primary">Sauvegarder et passer à l'étape suivante</button></p>
+                  <p><button class="btn btn-primary">Sauvegarder</button></p>
                 </div>
               </div>
             </div>
@@ -145,6 +156,7 @@ body_class: bg-grey
   </section>
 
   <div class="menuSticky--section px-5">
+    <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Infos du bail</a>
     <ul class="nav">
       <li class="nav-item">
         <a class="active menuSticky--section__conteneurLiens_item" href="#bail">Bail & Annexes</a>
@@ -155,8 +167,22 @@ body_class: bg-grey
       <li class="nav-item">
         <a class="menuSticky--section__conteneurLiens_item" href="#echeances">Echeances</a>
       </li>
+      <li class="nav-item">
+        <a class="menuSticky--section__conteneurLiens_item" href="#">Assurances</a>
+      </li>
+      <li class="nav-item">
+        <a class="menuSticky--section__conteneurLiens_item" href="#">Incidents</a>
+      </li>
+      <li class="nav-item">
+        <a class="menuSticky--section__conteneurLiens_item" href="#">Sortie du locataire</a>
+      </li>
+      <li class="nav-item d-lg-none d-xl-inline-block">
+        <a class="menuSticky--section__conteneurLiens_item" href="#">Bibliothèque</a>
+      </li>
+      <li class="nav-item">
+        <a class="menuSticky--section__conteneurLiens_item" href="#">Compte</a>
+      </li>            
     </ul>
-    <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Infos du bail</a>
   </div>
 
   <div class="container-fluid" id="section_echeances">
