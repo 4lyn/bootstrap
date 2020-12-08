@@ -950,10 +950,15 @@ body_class: bg-grey
                     <h3 class="formulaire__sousElement_titre">Formules</h3>
                     <div class="card card_active cursor_pointer">
                       <div class="card-body">
-                        <h4 class="card-title">BAIL COMPLET</h4>
-                        <h5 class="card-subtitle mb-2 text-muted">Modification illimitée</h5>
+                        <h4 class="card-title">BAIL ZEN</h4>
+                        <h5 class="card-subtitle mb-2 text-muted mt-1">
+                          Bail complet modifiable en illimité
+                          <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="lien_annexe d-inline-block ml-3">
+                            <i class="fal fa-question-circle"></i> infos
+                          </a>
+                        </h5>
                         <ul class="list-unstyled">
-                          <li>Bail PDF rempli et mis en forme</li>
+                          <li>PDF rempli et adapté</li>
                           <li>Clauses résolutoire et solidarité</li>
                           <li>Notice & Etat des lieux	</li>
                           <li>11 Clauses importantes</li>
@@ -962,16 +967,31 @@ body_class: bg-grey
                         <h4 class="mb-3">
                           14,70 €
                         </h4>
-                        <a href="#" class="card-link">Voir la différence avec le bail limité</a>
+                        <h5 class="card-subtitle mb-2 text-muted mt-3">
+                          + Gestion locative en ligne
+                          <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="lien_annexe d-inline-block ml-3">
+                            <i class="fal fa-question-circle"></i> infos
+                          </a>
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li>Checklist entrée dans les lieux</li>
+                          <li>Quittances mensuelles par email</li>
+                          <li>Indexation du loyer automatique</li>
+                          <li>Echéances importantes</li>
+                          <li>Assistance panne & contentieux</li>
+                        </ul>
+                        <h4 style="position:relative" class="mb-3">
+                          <span id="prix_barre">4,90 €/mois</span> 3 premiers mois offerts
+                        </h4>
                       </div>
                     </div>
                     <div class="card cursor_pointer" data-toggle="modal" data-target="#modal_bail_simple">
                       <div class="card-body">
                         <h4 class="card-title">BAIL LIMITE <a href="#" class="btn btn-outline-dark btn-sm float-right">Choisir</a>
                         </h4>
-                        <h5 class="card-subtitle mb-2 text-muted">Modifiable pendant 3 jours</h5>
+                        <h5 class="card-subtitle mb-2 text-muted mt-1">Modifiable pendant 3 jours</h5>
                         <ul class="list-unstyled">
-                          <li>Bail PDF rempli et mis en forme</li>
+                          <li>PDF rempli et adapté</li>
                           <li>Clauses résolutoire et solidarité</li>
                           <li>Notice & Etat des lieux</li>
                           <li class="grey"><s>11 Clauses importantes</s></li>
@@ -988,43 +1008,30 @@ body_class: bg-grey
               <div class="col-xl-4">
                 <div class="formulaire__section">
                   <div class="formulaire__sousElement">
-                    <div class="formulaire__sousElement">
-                      <h3 class="formulaire__sousElement_titre">Options</h3>
-                      <div class="card card_active cursor_pointer" data-toggle="modal" data-target="#modalAboZen">
-                        <div class="card-body">
-                          <h4 class="card-title">GESTION EN LIGNE <a href="#" class="btn btn-outline-dark btn-sm float-right">Supprimer</a></h4>
-                          <h5 class="card-subtitle mb-2 text-muted">3 premiers mois offerts</h5>
-                          <ul class="list-unstyled">
-                            <li>Checklist d'entrée dans les lieux</li>
-                            <li>Quittances mensuelles par email</li>
-                            <li>Indexation du loyer automatique</li>
-                            <li>Echéances importantes</li>
-                            <li>Assistance panne & contentieux</li>
-                          </ul>
-                          <h4 style="position:relative" class="mb-3">
-                            <span id="prix_barre">4,90 €/mois</span> 3 mois offerts avec le bail complet
-                          </h4>
-                          <a href="#" class="card-link">En savoir plus</a>
-                        </div>
+                    <h3 class="formulaire__sousElement_titre">Options</h3>
+                    <div class="card cursor_pointer">
+                      <div class="card-body">
+                        <h4 class="card-title">SIGNATURE ELECTRONIQUE <a href="#" class="btn btn-outline-dark btn-sm float-right">Ajouter</a></h4>
+                        <h5 class="card-subtitle mb-2 text-muted mt-1">Signature en ligne à distance
+                          <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="lien_annexe d-inline-block ml-3">
+                            <i class="fal fa-question-circle"></i> infos
+                          </a>
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li>Acceptée par les tribunaux</li>
+                          <li>Signature instantanée à distance</li>
+                          <li>Conservation sécurisée</li>
+                        </ul>
+                        <h4 class="mb-3">
+                          4€ / signataire
+                        </h4>
                       </div>
-                      <div class="card cursor_pointer">
-                        <div class="card-body">
-                          <h4 class="card-title">SIGNATURE ELECTRONIQUE <a href="#" class="btn btn-outline-dark btn-sm float-right">Ajouter</a></h4>
-                          <h5 class="card-subtitle mb-2 text-muted">Satisfait ou remboursé</h5>
-                          <ul class="list-unstyled">
-                            <li>Acceptée par les tribunaux</li>
-                            <li>Signature instantanée à distance</li>
-                            <li>Conservation sécurisée</li>
-                          </ul>
-                          <h4 class="mb-3">
-                            4€ / signataire
-                          </h4>
-                          <a href="#" class="card-link">En savoir plus</a>
-                        </div>
-                      </div>
-                    </div>                              
+                    </div>
                   </div>
                 </div>
+                <p class="mb-3">Recommandé par <img src="../../../assets/img/smartloc/logos/challenges.png" style="width:100px;height:auto"></p>
+                <p class="mb-3">Modèle conforme loi 2020 <img src="../../../assets/img/smartloc/logos/ministere.png" style="width:100px;height:auto"></p>
+                <p class="mb-3"><a href="https://www.avis-verifies.com/avis-clients/smartloc.fr" target="_blank" class="lien_annexe">Avis clients 4,4/5</a> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
               </div>
               <div class="col-xl-4">
                 <div class="formulaire__section">
@@ -1053,10 +1060,6 @@ body_class: bg-grey
                     <h3>14,70€ TTC</h3>
                     <p><em>Bail complet + 3 premiers mois offerts sur la gestion locative en ligne.
                         Après 3 mois abonnement de gestion locative en ligne à 4,90 €/mois, renouvelable tacitement chaque trimestre, annulable à tout moment en ligne sans frais.</em></p>
-                    <hr class="mt-4 mb-4">
-                    <p class="mb-3">Recommandé par <img src="../../../assets/img/smartloc/logos/challenges.png" style="width:100px;height:auto"></p>
-                    <p class="mb-3">Modèle conforme loi 2020 <img src="../../../assets/img/smartloc/logos/ministere.png" style="width:100px;height:auto"></p>
-                    <p class="mb-3"><a href="https://www.avis-verifies.com/avis-clients/smartloc.fr" target="_blank" class="lien_annexe">Avis clients 4,4/5</a> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
                   </div>
                 </div>
               </div>
@@ -1069,18 +1072,15 @@ body_class: bg-grey
                         <div class="col-lg-6">
                             <div class="card bg-grey cursor_not">
                                 <div class="card-body">
-                                    <h4 class="card-title">GESTION EN LIGNE <br/><span class="badge badge-pill badge-danger">Non disponible avec le bail limité</span>                                                    </h4>
+                                    <h4 class="card-title">BAIL LIMITE <span class="badge badge-pill badge-danger float-right">Expiré</span>                                                    </h4>
+                                    <h5 class="card-subtitle mb-2 text-muted mt-1">Modifiable pendant 3 jours</h5>
                                     <ul class="list-unstyled">
-                                        <li>Quittances mensuelles par email </li>
-                                        <li>Indexation du loyer automatique</li>
-                                        <li>Echéances importantes</li>
-                                        <li>Finance & fiscalité</li>
-                                        <li>Assistance panne & contentieux</li>
+                                      <li>PDF rempli et adapté</li>
+                                      <li>Clauses résolutoire et solidarité</li>
+                                      <li>Notice & Etat des lieux</li>
+                                      <li class="grey"><s>11 Clauses importantes</s></li>
+                                      <li class="grey"><s>14 Annexes importantes</s></li>
                                     </ul>
-                                    <p><h4>
-                                        <s>4,90 €/mois</s><br>3 premiers mois offerts avec le bail complet<br><u>annulable à tout moment</u>
-                                    </h4></p>
-                                    <p><a href="#" class="card-link">Voir l'espace de gestion</a></p>
                                 </div>
                             </div>
                         </div>
