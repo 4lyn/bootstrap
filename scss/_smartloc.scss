@@ -1487,13 +1487,13 @@ ul.liste--check li::before {
   content: '';
   position: absolute;
   top: 26px;
-  left: 7px;
-  width: 90px;
+  left: 3px;
+  width: 95px;
   -webkit-transform: rotate(-20deg);
   transform: rotate(-20deg);
   -webkit-transform-origin: left;
   transform-origin: left;
-  border-top: 2px solid #e8612d;
+  border-top: 3px solid #e8612d;
 }
 
 #tab_download .btn-sm {
