@@ -802,17 +802,6 @@ ul.liste--check li::before {
 }
 
 /************* CARDS *************/
-
-/* container des cards présent sur l'ensemble du site */
-
-.conteneurCards--colonne {
-  margin-top: -2rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-}
-
 .card {
   margin-top: 2rem;
   /* Applique un margin top et right */
