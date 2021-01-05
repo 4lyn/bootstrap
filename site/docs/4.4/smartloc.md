@@ -71,22 +71,24 @@ Bouton à utiliser avec une icône pour une action rapide : ajouter un locataire
 Lien avec icône dans une card simple, pour renvoyer vers une fiche smartloc
 
 {% capture example %}
-<div class="card cardLigne">
-  <div class="card-body">
-    <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
-    <span><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="stretched-link">Signature électronique du bail</a></span>
+<div class="conteneurCardLignes">
+  <div class="card cardLigne">
+    <div class="card-body">
+      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+      <span><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="stretched-link">Signature électronique du bail</a></span>
+    </div>
   </div>
-</div>
-<div class="card cardLigne">
-  <div class="card-body">
-    <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
-    <span><a href="#" class="stretched-link">Modèle de courrier de régularisation</a></span>
+  <div class="card cardLigne">
+    <div class="card-body">
+      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+      <span><a href="#" class="stretched-link">Modèle de courrier de régularisation</a></span>
+    </div>
   </div>
-</div>
-<div class="card cardLigne">
-  <div class="card-body">
-    <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
-    <span><a href="#" class="stretched-link">Modèle d'état des lieux</a></span>
+  <div class="card cardLigne">
+    <div class="card-body">
+      <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+      <span><a href="#" class="stretched-link">Modèle d'état des lieux</a></span>
+    </div>
   </div>
 </div>
 {% endcapture %}
