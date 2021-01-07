@@ -45,4 +45,5 @@ Thumbs.db
 /node_modules/
 
 /dist/
+/js/dist/
 /site/docs/**/assets/css/
