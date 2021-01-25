@@ -394,11 +394,8 @@ textarea {
 /* BOUTONS OUI/NON VIOLETS */
 
 .boutonsRadioViolets__conteneur label {
-  margin-bottom: 0px !important;
-}
-
-.boutonsRadioViolets__conteneur label:first-child {
   margin-right: 1rem;
+  margin-bottom: 0px !important;
 }
 
 /* permet de cacher l'input pour n'afficher que le label */
