@@ -67,7 +67,7 @@ body_class: bg-grey
 
 <main>
   <section class="container-fluid bg-warning pt-0 pb-5">
-    <div class="row">
+    <div class="row pb-5">
       <div class="col-lg-10 offset-lg-1">
         <div class="row pt-5 pb-5">
           <div class="col-md-4">
@@ -77,19 +77,19 @@ body_class: bg-grey
                 <h4 class="card-subtitle mb-2 text-muted">Marwan DAGHER</h4>
                 <h4 class="card-subtitle mb-2 text-muted">Stéphanie AZAR-DAGHER</h4>
                 <dl class="row card-text mt-4">
-                  <dt class="col-sm-5">Loyer</dt>
-                  <dd class="col-sm-7">790€</dd>
-                  <dt class="col-sm-5">Type</dt>
-                  <dd class="col-sm-7">Vide</dd>
-                  <dt class="col-sm-5">Charges</dt>
-                  <dd class="col-sm-7">100€</dd>
-                  <dt class="col-sm-5">Adresse</dt>
-                  <dd class="col-sm-7">39 rue Taitbout</dd>
-                  <dt class="col-sm-5">Début du bail</dt>
-                  <dd class="col-sm-7">23/12/2019</dd>
+                  <dt class="col-sm-4">Adresse</dt>
+                  <dd class="col-sm-8">39 rue Taitbout</dd>
+                  <dt class="col-sm-4">Type</dt>
+                  <dd class="col-sm-8">Vide</dd>
+                  <dt class="col-sm-4">Loyer</dt>
+                  <dd class="col-sm-8">790€</dd>
+                  <dt class="col-sm-4">Charges</dt>
+                  <dd class="col-sm-8">100€ (provision)</dd>
+                  <dt class="col-sm-4">Début</dt>
+                  <dd class="col-sm-8"><a href="#" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
                 </dl>
-                <a href="/dossier" class="btn btn-outline-dark btn-sm">Infos du bail</a>
-                <a href="#" class="card-link ml-3 btn-link"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
+                <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Modifier les infos</a></p>
+                <p><a href="#" class="card-link btn-link"><i class="fas fa-exchange-alt"></i> Changer de locataire</a></p>
               </div>
             </div>
           </div>
@@ -134,7 +134,8 @@ body_class: bg-grey
                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
                     <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
                   </div>
-                  <p><button class="btn btn-primary">Sauvegarder</button></p>
+                  <p><button class="btn btn-primary">Sauvegarder</button>
+                  </p>
                 </div>
               </div>
             </div>
@@ -145,7 +146,12 @@ body_class: bg-grey
                 </button>
               </div>
               <div class="col-sm-auto mt-3 mt-sm-0">
-                <button class="btn btn-dark" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
+                <button class="btn btn-dark float-right" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
+                <p class="mt-2">
+                  <a href="#" class="lien_annexe" style="color:red">
+                    <i class="fal fa-exclamation-triangle"></i>  Compléter la date de début de bail pour passer cette étape
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -156,7 +162,7 @@ body_class: bg-grey
   </section>
 
   <div class="menuSticky--section px-5">
-    <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Infos du bail</a>
+    <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Modifier les infos</a>
     <ul class="nav">
       <li class="nav-item">
         <a class="active menuSticky--section__conteneurLiens_item" href="#bail">Bail & Annexes</a>
