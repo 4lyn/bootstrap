@@ -940,7 +940,7 @@ Alerte en indication de formulaire
       <button class="btn btn-dark float-right">Reprendre le bail précédent</button>
     </div>
   </div>
-  <p>Si vous souhaitez repartir de zéro et supprimer la sauvegarde local, cliquez sur <a href="#" class="alert-link">le lien suivant</a>.
+  <p>Si vous souhaitez repartir de zéro et supprimer la sauvegarde locale, cliquez sur <a href="#" class="alert-link">le lien suivant</a>.
   </p>
 </div>
 {% endcapture %}
