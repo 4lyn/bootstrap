@@ -906,6 +906,48 @@ Alerte sur soumission de formulaire
 {% endcapture %}
 {% include example.html content=example %}
 
+Alerte en résultat de formulaire
+
+{% capture example %}
+<div class="alert alert-success">
+  <div class="row justify-content-between align-items-center mb-0">
+    <div class="col-sm-auto">
+      <div class="alert-heading">
+        <i class="fal fa-check-circle icone_medium"></i>
+        <span>Les candidats sont éligibles !</span>
+      </div>
+    </div>
+    <div class="col-sm-auto mt-3 mt-sm-0">
+      <button class="btn btn-dark float-right">Ajouter les justificatifs</button>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+Alerte en indication de formulaire
+
+{% capture example %}
+<div class="alert alert-primary">
+  <div class="row justify-content-between align-items-center mb-0">
+    <div class="col-sm-auto">
+      <div class="alert-heading">
+        <i class="fal fa-exclamation-triangle icone_medium"></i>
+        <span>Vous avez déjà un bail sauvegardé sur cet appareil !</span>
+      </div>
+    </div>
+    <div class="col-sm-auto mt-3 mt-sm-0">
+      <button class="btn btn-dark float-right">Reprendre le bail précédent</button>
+    </div>
+  </div>
+  <p>Si vous souhaitez repartir de zéro et supprimer la sauvegarde local, cliquez sur <a href="#" class="alert-link">le lien suivant</a>.
+  </p>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+
 ## Modal
 ## Typographie
 ### Tableaux
