@@ -22,8 +22,8 @@ body_class: bg-grey
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes baux</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item disabled" href="#">Dagher</a>
-                <a class="dropdown-item" href="#">Beaussier</a>
+                <a class="dropdown-item disabled" href="#">Combescot</a>
+                <a class="dropdown-item" href="#">Dagher</a>
                 <a class="dropdown-item" href="#">Dupont</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Ajouter un logement</a>
@@ -70,30 +70,34 @@ body_class: bg-grey
     <div class="row pb-5">
       <div class="col-lg-10 offset-lg-1">
         <div class="row pt-5 pb-5">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="card">
               <div class="card-body">
                 <h2 class="card-title">Espace de gestion</h2>
-                <h4 class="card-subtitle mb-2 text-muted">Marwan DAGHER</h4>
-                <h4 class="card-subtitle mb-2 text-muted">Stéphanie AZAR-DAGHER</h4>
                 <dl class="row card-text mt-4">
-                  <dt class="col-sm-4">Adresse</dt>
-                  <dd class="col-sm-8">39 rue Taitbout</dd>
-                  <dt class="col-sm-4">Type</dt>
-                  <dd class="col-sm-8">Vide</dd>
-                  <dt class="col-sm-4">Loyer</dt>
-                  <dd class="col-sm-8">790€</dd>
-                  <dt class="col-sm-4">Charges</dt>
-                  <dd class="col-sm-8">100€ (provision)</dd>
-                  <dt class="col-sm-4">Début</dt>
-                  <dd class="col-sm-8"><a href="#" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
+                  <dt class="col-sm-3">Locataires</dt>
+                  <dd class="col-sm-9">
+                      Pascal Combescot <small>pascal.combescot@gmail.com</small><br/>
+                      Vigdis Beaussier <small>vigdis4@hotmail.com</small>
+                    </dd>
+                  <dt class="col-sm-3">Adresse</dt>
+                  <dd class="col-sm-9">39 rue Taitbout</dd>
+                  <dt class="col-sm-3">Bailleur</dt>
+                  <dd class="col-sm-9">SCI Ginza <small>mchantalat@gmail.com</small></dd>
+                  <dt class="col-sm-3">Type</dt>
+                  <dd class="col-sm-9">Bail couple ou colocation Vide</dd>
+                  <dt class="col-sm-3">Loyer</dt>
+                  <dd class="col-sm-9">790€ payable le 5 du mois</dd>
+                  <dt class="col-sm-3">Charges</dt>
+                  <dd class="col-sm-9">Provision 100€</dd>
+                  <dt class="col-sm-3">Début</dt>
+                  <dd class="col-sm-9"><a href="#" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
                 </dl>
-                <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Modifier les infos</a></p>
-                <p><a href="#" class="card-link btn-link"><i class="fas fa-exchange-alt"></i> Changer de locataire</a></p>
+                <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Paramètres</a> <a href="#" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a></p>
               </div>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card mb-4">
               <div class="card-body">
                 <h3 class="card-title">Envoyez vos quittances automatiquement</h3> 
@@ -105,11 +109,11 @@ body_class: bg-grey
                     </div>
                     <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
                       <dl class="row">
-                        <dt class="col-sm-2 offset-sm-2">le 5 du mois</dt>
+                        <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt>
                         <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
-                        <dt class="col-sm-2 offset-sm-2">le 15 du mois</dt>
+                        <dt class="col-sm-3 offset-sm-1">le 15 du mois</dt>
                         <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
-                        <dt class="col-sm-2 offset-sm-2">le 25 du mois</dt>
+                        <dt class="col-sm-3 offset-sm-1">le 25 du mois</dt>
                         <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
                       </dl>
                     </div>
@@ -167,7 +171,7 @@ body_class: bg-grey
   </section>
 
   <div class="menuSticky--section px-5">
-    <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Modifier les infos</a>
+    <a href="/dossier" class="btn btn-outline-dark btn-sm menuSticky--section__bouton">Paramètres</a>
     <ul class="nav">
       <li class="nav-item">
         <a class="active menuSticky--section__conteneurLiens_item" href="#bail">Bail & Annexes</a>
