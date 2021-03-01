@@ -422,26 +422,107 @@ body_class: bg-grey
                               </div>
                           </div>
                           <div class="formulaire__sousElement">
-                              <h3 class="formulaire__sousElement_titre">Charges</h3>
-                              <div class="form-row">
-                                  <div class="form-group col-lg-6">
-                                      <label>Type de charges</label>
-                                      <select class="custom-select">
-                                          <option>-</option>
-                                          <option>Provisions sur charges</option>
-                                          <option>Forfait de charges</option>
-                                          <option>Paiement périodique sans provisions</option>
-                                          <option>Absence de charges</option>
-                                      </select>                               
-                                  </div>
-                                  <div class="form-group col-lg-6">
-                                      <label>Montant mensuel des charges</label>
-                                      <div class="champSaisie--illustré ">
-                                          <input type="text" class="form-control">
-                                          <span>€/mois</span>
-                                      </div>
-                                  </div>
+                            <h3 class="formulaire__sousElement_titre">Charges</h3>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Type de charges</label>
+                                    <select class="custom-select">
+                                        <option>-</option>
+                                        <option>Provisions sur charges</option>
+                                        <option>Forfait de charges</option>
+                                        <option>Paiement périodique sans provisions</option>
+                                        <option>Absence de charges</option>
+                                    </select>                               
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Montant mensuel des charges</label>
+                                    <div class="champSaisie--illustré ">
+                                        <input type="text" class="form-control">
+                                        <span>€/mois</span>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="form-group">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                <label class="custom-control-label" for="customCheck12">
+                                  Le bailleur refacture une partie des dépenses privatives au locataire
+                                </label>
                               </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Abonnements conservés par le propriétaire</label><br/>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_elec" class="custom-control-input">
+                                <label for="refac_elec" class="custom-control-label">
+                                   Electricité
+                                 </label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_internet" class="custom-control-input">
+                                <label for="refac_internet" class="custom-control-label">
+                                   Internet
+                                 </label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_gaz" class="custom-control-input">
+                                <label for="refac_gaz" class="custom-control-label">
+                                   Gaz
+                                 </label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_eau" class="custom-control-input">
+                                <label for="refac_eau" class="custom-control-label">
+                                   Eau
+                                 </label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Ces dépenses privatives sont-elles incluses dans la provision/forfait de charges ?</label>
+                              <div class="boutonsRadioViolets__conteneur">
+                                <label>
+                                  <input type="radio" name="refac_inlus">
+                                  <div>Oui</div>
+                                </label>
+                                <label>
+                                  <input type="radio" checked="checked"  name="refac_inclus">
+                                  <div>Non</div>
+                                </label>
+                              </div>
+                            </div>                            
+                            <div class="form-row">
+                              <div class="form-group col-lg-6">
+                                <label>Montant récupérable</label>
+                                <div class="champSaisie--illustré">
+                                  <input type="text" class="form-control">
+                                  <span>€/an</span>
+                                </div>
+                              </div>
+                              <div class="form-group col-lg-6">
+                                <label>Fréquence de paiement</label>
+                                <div class="boutonsRadioViolets__conteneur">
+                                  <label><input type="radio"  name="refac_frequence">
+                                    <div>Annuellement</div>
+                                  </label>
+                                  <label><input type="radio"  checked="checked" name="refac_frequence">
+                                    <div>Mensuellement</div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-lg-6">
+                                <div class="form-group">
+                                  <label>Fréquence de régularisation</label>
+                                  <select class="custom-select">
+                                    <option>Forfait non régularisé</option>
+                                    <option>Mensuelle</option>
+                                    <option>Trimestrielle</option>
+                                    <option>Annuelle</option>
+                                  </select> 
+                                </div>
+                              </div>
+                            </div>                           
                           </div>
                           <div class="formulaire__sousElement">
                               <h3 class="formulaire__sousElement_titre">Durée</h3>
