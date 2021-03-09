@@ -1199,6 +1199,57 @@ Sommaire d'article de blog
 {% endcapture %}
 {% include example.html content=example %}
 
+Liste de fichiers uploadés
+
+{% capture example %}
+<div class="row mt-4">
+  <div class="col-lg-12">
+    <h5>Fichiers ajoutés</h5>
+    <form>
+      <div class="row mb-3">
+        <div class="col-lg-3">
+          <a href="#" target="_blank">
+            <i class="far fa-file"></i> Fichier 1</a>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-unstyled mb-0">
+            <li>Diagnostic énergétique</li>
+            <li>Diagnostic électricité</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <button type="button" class="btn btn-link p-0">
+            <i class="fal fa-trash"></i> Supprimer
+          </button>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-3">
+          <a href="#" target="_blank">
+            <i class="far fa-file"></i> Fichier 2
+          </a>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-unstyled mb-0">
+            <li>Etat des risques</li>
+            <li>Diagnostic amiante</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <button type="button" class="btn btn-link p-0">
+            <i class="fal fa-trash"></i> Supprimer
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+
+
 ### Texte
 
 Paragraphe Landing avec titre latéral
