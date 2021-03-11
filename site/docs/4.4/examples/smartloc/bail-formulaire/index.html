@@ -904,20 +904,29 @@ body_class: bg-grey
                                   <div class="custom-control custom-checkbox">
                                       <input type="checkbox" class="custom-control-input" id="customCheck10">
                                       <label class="custom-control-label" for="customCheck10">
-                                          Etat des lieux <a href="#">(aperçu)</a>
+                                          Etat des lieux 
                                       </label>
+                                      <a data-toggle="modal" data-target="#modal_apercu_edl" href="#" class="lien_annexe d-inline-block ml-3">
+                                        <i class="fal fa-file-search"></i> aperçu
+                                      </a>
                                   </div>
                               </div>
                               <div class="form-group">
                                   <div class="custom-control custom-checkbox">
                                       <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                      <label class="custom-control-label" for="customCheck11">Notice d'information <a href="#">(aperçu)</a></label>
+                                      <label class="custom-control-label" for="customCheck11">Notice d'information</label>
+                                      <a data-toggle="modal" data-target="#modal_apercu_edl" href="#" class="lien_annexe d-inline-block ml-3">
+                                        <i class="fal fa-file-search"></i> aperçu
+                                      </a>
                                   </div>
                               </div>
                               <div class="form-group">
                                   <div class="custom-control custom-checkbox">
                                       <input type="checkbox" class="custom-control-input" id="customCheck12" checked>
-                                      <label class="custom-control-label" for="customCheck12">Acte de caution solidaire pour le garant <a href="#">(aperçu)</a></label>
+                                      <label class="custom-control-label" for="customCheck12">Acte de caution solidaire pour le garant</label>
+                                      <a data-toggle="modal" data-target="#modal_apercu_edl" href="#" class="lien_annexe d-inline-block ml-3">
+                                        <i class="fal fa-file-search"></i> aperçu
+                                      </a>
                                   </div>
                               </div>
                               <div class="alert alert-warning" role="alert">
@@ -977,7 +986,10 @@ body_class: bg-grey
                               </div>
                           </div>
                           <div class="formulaire__sousElement">
-                              <h3 class="formulaire__sousElement_titre">Annexes fournies par le propriétaire</h3>
+                              <h3 class="formulaire__sousElement_titre d-inline-block">Annexes fournies par le propriétaire</h3>
+                              <a data-toggle="modal" data-target="#modal_annexes" href="#" class="lien_annexe d-inline-block ml-3">
+                                <i class="fal fa-question-circle"></i> infos
+                              </a>
                               <div class="form-group">
                                   <label class="d-block">1. Choisir un fichier (.pdf ou .jpg)</label>
                                   <div class="custom-file col-sm-8 col-lg-6">
@@ -988,10 +1000,15 @@ body_class: bg-grey
                               <div class="form-group">
                                   <label class="d-block">2. Ce fichier contient (plusieurs choix possibles)</label>
                                   <select class="custom-select col-sm-8 col-lg-6">
+                                      <option>Extrait du règlement de copro</option>
+                                      <option>Attestation surface habitable</option>
                                       <option>Diagnostic énergétique</option>
-                                      <option>Diagnostic plomb</option>
                                       <option>Diagnostic amiante</option>
+                                      <option>Diagnostic plomb</option>
+                                      <option>Diagnostic électricité</option>
                                       <option>Diagnostic gaz</option>
+                                      <option>État des risques et pollutions</option>
+                                      <option>Annexe libre</option>
                                   </select>
                               </div>
                               <div class="form-group">
@@ -1364,6 +1381,101 @@ body_class: bg-grey
         <h4>En savoir plus</h4>
         <p><a href="/blog/louer-meuble-ou-vide/">Fiche complète sur le vide vs meublé</a></p>
         <p><a href="/blog/liste-des-meubles-obligatoires-en-location-meublee/">Fiche sur le mobilier minimum</a></p>             
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_apercu_edl">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Etat des lieux</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+          <img src="https://www.smartloc.fr/blog/wp-content/uploads/2020/11/etat_des_lieux_complet-min.png" class="img-fluid">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal_annexes">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Diagnostics à fournir</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Durée de validité et obligation</h4>
+        <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Diagnostic</th>
+                  <th>Validité</th>
+                  <th>Commentaires</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Surface habitable</td>
+                  <td>Illimité</td>
+                  <td>Facultatif, à refaire si travaux</td>
+              </tr>
+              <tr>
+                  <td>Diagnostic énergétique (DPE)</td>
+                  <td>10 ans</td>
+                  <td>Obligatoire</td>
+              </tr>
+              <tr>
+                  <td>Plomb</td>
+                  <td>6 ans si positif, illimité sinon</td>
+                  <td>Obligatoire pour les logements construits avant le 01/01/1949</td>
+              </tr>
+              <tr>
+                  <td>Amiante</td>
+                  <td>3 ans si positif, illimité sinon</td>
+                  <td>Optionnel mais obligatoire en cas de demande du locataire pour les logement construits avant le 01/07/1997</td>
+              </tr>
+              <tr>
+              </tr><tr>
+                  <td>Electricité</td>
+                  <td>6 ans </td>
+                  <td>Obligatoire si installation de plus de 15 ans</td>
+              </tr>
+              <tr>
+                  <td>Gaz</td>
+                  <td>6 ans </td>
+                  <td>Obligatoire si installation de plus de 15 ans</td>
+              </tr>
+              <tr>
+                  <td>État des risques et pollutions</td>
+                  <td>6 mois</td>
+                  <td>Obligatoire</td>
+              </tr>
+          </tbody>
+        </table>
+        <h4>Quels risques à ne pas fournir les diagnostics ?</h4>
+        <p>
+          Ces diagnostics sont en théorie obligatoires mais en pratique leur absence ne permet pas au locataire de remettre en cause le bail ou 
+          de demander des dommages. Ils n'ont qu'une <strong>valeur informative</strong> sauf l'état des risques naturels et technologiques qui 
+          permet au locataire de demander la résolution ou une <strong>diminution du loyer</strong>.
+        </p>
+        <p>Pour commander vos diagnostics vous pouvez passer par notre <a href="/diagnostics-location" target="_blank">partenaire Allodiagnostic</a>.</p>
       </div>
 
       <div class="modal-footer">
