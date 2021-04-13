@@ -1,5 +1,6 @@
 /* @import "./site-reccurent-elements.css"; */
 @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap');
 
 * {
   font-family: 'Archivo', sans-serif;
@@ -889,7 +890,7 @@ ul.liste--check li::before {
 
 .sectionServices__conteneurService_nomService {
   font-size: .825rem;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .sectionServices__conteneurService_listeFeatures {
