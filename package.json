@@ -85,7 +85,7 @@
     "watch-css-docs": "nodemon --watch \"site/docs/**/assets/scss/\" --ext scss --exec \"npm run css-docs\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm run js-compile\"",
     "watch-js-docs": "nodemon --watch \"site/docs/**/assets/js/src/\" --ext js --exec \"npm run js-docs\"",
-    "smartloc-copy": "cross-env-shell \"shx cp dist/css/bootstrap-smartloc.min.css ../smartloc/css/ && shx cp dist/js/bootstrap.bundle.min.js ../smartloc/js/ && shx rm -rf ../smartloc/assets/* && shx cp -r site/docs/$npm_package_version_short/assets/img/smartloc/* ../smartloc/assets/\"",
+    "smartloc-copy": "cross-env-shell \"shx cp dist/css/bootstrap-smartloc.min.css ../smartloc/css/ && shx cp dist/js/bootstrap.bundle.min.js ../smartloc/js/ && shx rm -rf ../smartloc/assets/bootstrap/* && shx cp -r site/docs/$npm_package_version_short/assets/img/smartloc/* ../smartloc/assets/bootstrap/\"",
     "smartloc-dist": "npm-run-all dist smartloc-copy"
   },
   "style": "dist/css/bootstrap.css",
