@@ -376,20 +376,12 @@ textarea {
   border-width: 1px;
 }
 
-.barreRecherche__bouton {
-  width: 1rem;
-  height: 1rem;
+.barreRecherche .form-inline:after {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 1rem;
-  border: none;
-  background-color: transparent;
-  background-image: url(../../assets/img/smartloc/icons/search.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: 'Font Awesome 5 Pro';
+  top: 13px;
+  right: 17px;
+  content: "\f002";
 }
 
 /* BOUTONS OUI/NON VIOLETS */
