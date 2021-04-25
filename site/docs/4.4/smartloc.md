@@ -633,20 +633,28 @@ Cards standard
   <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Particulier</h3>
-        <h4 class="card-subtitle mb-2 text-muted">4,90€/mois (3 mois offerts)</h4>
-        <p class="card-text">Abonnement trimestriel par lot, annulable à tout moment</p>
-        <a href="/gestion-locative/creation" class="card-link">Démarrer</a>
-        <a href="/gestion-locative" class="card-link">En savoir</a>
+        <h4 class="card-title">ZEN</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Abonnement trimestriel</h5>
+        <p class="card-text">Bail complet avec assistant de gestion locative Smartloc. <br/>De 1 à 2 lots.</p>
+        <h4 class="mb-3">
+          6,50€ / mois 
+          <br/>(1 mois d'essai gratuit)
+        </h4>
+        <a href="/gestion-locative/creation#?gel=1" class="card-link">Démarrer</a>
+        <a href="/gestion-locative" class="card-link">En savoir plus</a>
       </div>
     </div>
   </div>
   <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Investisseur</h3>
-        <h4 class="card-subtitle mb-2 text-muted">19€/mois (1 mois offert)</h4>
-        <p class="card-text">Abonnement mensuel pour 4 à 9 lots, annulable à tout moment</p>
+        <h4 class="card-title">INVESTISSEUR</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Abonnement annuel</h5>
+        <p class="card-text">Bail complet avec assistant de gestion locative Smartloc. <br/>De 3 à 10 lots.</p>
+        <h4 class="mb-3">
+          12,5€ / mois 
+          <br/>(1 mois d'essai gratuit)
+        </h4>
         <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
         <a href="/gestion-locative" class="card-link">En savoir plus</a>
       </div>
@@ -655,14 +663,17 @@ Cards standard
   <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Gestionnaire</h3>
-        <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
-        <p class="card-text">Abonnement mensuel pour +10 lots, annulable à tout moment</p>
+        <h4 class="card-title">GESTIONNAIRE</h4>
+        <h5 class="card-subtitle mb-2 text-muted">Abonnement sur mesure</h5>
+        <p class="card-text">Bail complet avec assistant de gestion locative Smartloc. <br/>Plus de 10 lots/</p>
+        <h4 class="mb-3">
+          à partir de 89€/mois 
+        </h4>
         <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
         <a href="/gestion-locative" class="card-link">En savoir plus</a>
       </div>
     </div>
-  </div>            
+  </div>
 </div>
 {% endcapture %}
 {% include example.html content=example %}
