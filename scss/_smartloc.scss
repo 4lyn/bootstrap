@@ -1606,6 +1606,11 @@ ul.liste--check li::before {
 
 .sectionArticle__corps h3 {
   margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.sectionArticle__corps h2+h3 {
+  margin-top: 0px;
 }
 
 .sectionArticle__corps .card {
