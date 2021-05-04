@@ -1609,7 +1609,8 @@ ul.liste--check li::before {
   margin-top: 2.5rem;
 }
 
-.sectionArticle__corps h2+h3 {
+.sectionArticle__corps h2+h3, .sectionArticle__corps .alert-advice h3,
+.sectionArticle__corps .encadrementPromotion h3, .sectionArticle__corps .alert-notice h3{
   margin-top: 0px;
 }
 
