@@ -408,13 +408,97 @@ body_class: bg-grey
             <div id="echeances_index" class="menuSticky--sousElement__ancre"></div>
             <h3 class="card-title">Indexation du loyer	<br> <small><i class="fa fa-calendar-alt"></i> Avril</small></h3>
             <hr>
-            <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
-              pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
-            <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
-              de garantie (que vous pouvez encaisser dès la signature).</p> 
-            <hr> 
-            <h4>Bail de location</h4>
-            <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+            <div class="formulaire__sousElement">
+              <h3 class="formulaire__sousElement_titre">Paramètres à remplir</h3>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label>Loyer en cours</label>
+                  <div class="champSaisie--illustré">
+                    <input type="text" class="form-control">
+                    <span>€/mois</span>
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">Le loyer hors charges payé actuellement par le locataire</small>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label>Indice IRL du loyer en cours</label>
+                  <select class="custom-select">
+                    <option>4T 2019 valeur 130,26</option>
+                    <option>3T 2019 valeur 130,26</option>
+                    <option>2T 2019 valeur 130,26</option>
+                    <option>1T 2019 valeur 130,26</option>
+                  </select> 
+                  <small id="emailHelp" class="form-text text-muted">IRL utilisé lors de la dernière indexation (ou celle indiquée sur le bail si vous n'avez jamais indexé)</small>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label>
+                    Date de dernière indexation
+                  </label>
+                  <div class="champSaisie--illustré">
+                    <input type="text" class="form-control" placeholder="__/__/____">
+                    <span><i class="fal fa-calendar"></i></span>
+                  </div>
+                  <small class="form-text text-muted">
+                    JJ/MM/AAAA - Mettez la date d'effet si le loyer n'a jamais été indexé
+                  </small>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label>
+                    Date théorique à laquelle vous devez indexer
+                  </label>
+                  <div class="champSaisie--illustré">
+                    <input type="text" class="form-control" placeholder="__/__/____">
+                    <span><i class="fal fa-calendar"></i></span>
+                  </div>
+                  <small class="form-text text-muted">
+                    JJ/MM/AAAA - Par défaut 12 mois après la dernière indexation
+                  </small>
+                </div>
+              </div>
+              <button class="btn btn-dark">Calculer l'indexation</button>
+            </div>
+            <div class="formulaire__sousElement">
+              <h3 class="formulaire__sousElement_titre">Résultats</h3>
+              <dl class="row">
+                <dt class="col-sm-4">L'indexation est-elle possible ?</dt>
+                <dd class="col-sm-3"><span class="badge badge-success">OUI</span></dd>
+                <dd class="col-sm-5"></dd>
+
+                <dt class="col-sm-4">Etes-vous en retard sur l'indexation ?</dt>
+                <dd class="col-sm-3"><span class="badge badge-warning">OUI de moins de 12 mois</span></dd>
+                <dd class="col-sm-5">Vous allez pouvoir indexer normalement mais vous ne pourrez pas appliquer le nouveau loyer rétroactivement</dd>
+
+                <dt class="col-sm-4">IRL retenu pour le loyer en cours</dt>
+                <dd class="col-sm-3"><samp>4T2019 130.26</samp></dd>
+                <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
+
+                <dt class="col-sm-4">IRL du nouveau loyer</dt>
+                <dd class="col-sm-3"><samp>4T2020 130.52</samp></dd>
+                <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
+
+                
+                <dt class="col-sm-4">Calcul du nouveau loyer</dt>
+                <dd class="col-sm-3"><samp>1202.40€</samp></dd>
+                <dd class="col-sm-5">Détail du calcul : 1202€ X 130.52 / 130.26</dd>
+                
+                <dt class="col-sm-4">Date d'indexation retenue</dt>
+                <dd class="col-sm-3"><samp>13/03/2021</samp></dd>
+                <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
+
+                <dt class="col-sm-4">Echeance de prise en compte du nouveau loyer</dt>
+                <dd class="col-sm-3"><samp>Juillet 2021</samp></dd>
+                <dd class="col-sm-5">Pour simplifier l'indexation et éviter les proratas, nous recommandons d'appliquer le nouveau loyer sur la prochaine mensualité complète.</dd>
+              </dl>
+            </div>
+            <h3>Que devez-vous faire ?</h3>
+            <ol>
+              <li>Prévenir le locataire du changement de loyer en juillet avec notre modèle de courrier explicatif</li>
+              <li>Désactiver l'envoi automatique des quittances</li>
+              <li>Récupérer manuellement la quittance de juin à l'ancien loyer</li>
+              <li>Modifier le loyer dans le système pour prendre en compte le nouveau loyer</li>
+              <li>Récupérer l'avis d'échéance de juillet au nouveau loyer et le joindre au courrier explicatif</li>
+            </ol>
           </div>
         </div>
         <div class="card">
