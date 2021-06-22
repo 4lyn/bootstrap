@@ -462,11 +462,11 @@ body_class: bg-grey
               <h3 class="formulaire__sousElement_titre">Résultats</h3>
               <dl class="row">
                 <dt class="col-sm-4">L'indexation est-elle possible ?</dt>
-                <dd class="col-sm-3"><span class="badge badge-success">OUI</span></dd>
+                <dd class="col-sm-3"><span class="badge badge-success" style="font-size:14px">OUI</span></dd>
                 <dd class="col-sm-5"></dd>
 
                 <dt class="col-sm-4">Etes-vous en retard sur l'indexation ?</dt>
-                <dd class="col-sm-3"><span class="badge badge-warning">OUI de moins de 12 mois</span></dd>
+                <dd class="col-sm-3"><span class="badge badge-warning" style="font-size:14px">OUI de moins de 12 mois</span></dd>
                 <dd class="col-sm-5">Vous allez pouvoir indexer normalement mais vous ne pourrez pas appliquer le nouveau loyer rétroactivement</dd>
 
                 <dt class="col-sm-4">IRL retenu pour le loyer en cours</dt>
@@ -476,7 +476,6 @@ body_class: bg-grey
                 <dt class="col-sm-4">IRL du nouveau loyer</dt>
                 <dd class="col-sm-3"><samp>4T2020 130.52</samp></dd>
                 <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
-
                 
                 <dt class="col-sm-4">Calcul du nouveau loyer</dt>
                 <dd class="col-sm-3"><samp>1202.40€</samp></dd>
@@ -490,14 +489,21 @@ body_class: bg-grey
                 <dd class="col-sm-3"><samp>Juillet 2021</samp></dd>
                 <dd class="col-sm-5">Pour simplifier l'indexation et éviter les proratas, nous recommandons d'appliquer le nouveau loyer sur la prochaine mensualité complète.</dd>
               </dl>
+              <button class="btn btn-dark">Valider ces données pour l'indexation</button>
+              <a href="#" class="btn-link ml-3"><i class="fal fa-list-alt"></i> Historique des indexations</a>
             </div>
-            <h3>Que devez-vous faire ?</h3>
+            <h3>Que devez-vous faire ? (version actuelle)</h3>
             <ol>
               <li>Prévenir le locataire du changement de loyer en juillet avec notre modèle de courrier explicatif</li>
               <li>Désactiver l'envoi automatique des quittances</li>
               <li>Récupérer manuellement la quittance de juin à l'ancien loyer</li>
               <li>Modifier le loyer dans le système pour prendre en compte le nouveau loyer</li>
               <li>Récupérer l'avis d'échéance de juillet au nouveau loyer et le joindre au courrier explicatif</li>
+            </ol>
+            <h3>Que devez-vous faire ? (version idéale)</h3>
+            <ol>
+              <li>Prévenir le locataire du changement de loyer en juillet avec notre modèle de courrier explicatif</li>
+              <li>Le reste géré par Smartloc</li>
             </ol>
           </div>
         </div>
