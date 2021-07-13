@@ -87,7 +87,7 @@ body_class: bg-grey
       </div>
       <div class="row justify-content-end">
         <div class="col-sm-auto">
-          <button class="btn btn-link">Annuler la signature</button>
+          <button class="btn btn-link" data-toggle="modal" data-target="#modal_annulation">Annuler la signature</button>
         </div>
         <div class="col-sm-auto mt-3 mt-sm-0">
             <button class="btn btn-outline-dark">Relancer les invitations</button>
@@ -139,95 +139,28 @@ body_class: bg-grey
   </div>
 </main>
 
-
-
-
-<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="modal_annulation" tabindex="-1">
+  <div class="modal-dialog">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal">
-        <span>&times;</span>
-      </button>
-      <div class="modal-body">
-        <h3>2 moyens pour contacter nos équipes</h3>
-        <div class="row">
-          <div class="col-sm">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">Email</h3>
-                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
-                <p class="card-text">Un expert vous répond depuis Paris.</p>
-                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">Chat</h3>
-                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
-                <p class="card-text">Un expert vous répond depuis Paris.</p>
-                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="mt-4">
-          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
-          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
-        </p>
-        <p>
-          Si vous êtes déjà inscrit,
-          <a href="/login">connectez-vous</a>.
-        </p>
+      <div class="modal-header">
+        <h3 class="modal-title">Êtes-vous sûr de vouloir annuler la signature ?</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
       </div>
+      <div class="modal-body">
+        <p>Si vous souhaitez simplement modifier les coordonnées de signataires, cliquez sur "Modifier" en face du signataire, 
+          puis cliquer sur "Relancer les invitations".</p>
+        <p>Si vous avez fait une erreur sur le bail, vous pouvez effectivement annuler. Il faudra alors modifier le bail, 
+          réactiver une option de signature et relancer les signatures. Vous pourrez joindre notre équipe support 
+          pour vous faire rembourser le deuxième paiement.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Revenir à la signature</button>
+        <button type="submit" class="btn btn-dark">Confirmer l'annulation</button>
+      </div>        
     </div>
   </div>
 </div>
 
-<div class="modal fade " id="modalAboZen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Gestion locative par défaut</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>La gestion locative en ligne vous est proposée <strong>par défaut gratuitement</strong> avec le bail complet.</p>
-                <p>Vous pouvez annuler cette option à tout moment en ligne sans frais, même pendant les 3 mois gratuits, mais nous sommes persuadés que nos outils automatiques et notre espace de gestion vous convaincront.</p>
-                <p>Après 3 mois gratuis, l'abonnement de gestion locative en ligne passe à 4,90 €/mois, renouvelable tacitement chaque trimestre.</p>
-              </div>
-        </div>
-    </div>
-</div>
 
-
-<div class="modal fade" id="modal_bail_simple" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <h3>Attention votre bail limité ne contiendra pas :</h3>
-                <ul class="fa-ul my-4">
-                    <li><i class="fas fa-times-circle"></i> Clause sur les visites pour relouer</li>
-                    <li><i class="fas fa-times-circle"></i> Clause de paiement du loyer</li>
-                    <li><i class="fas fa-times-circle"></i> Clause de franchise de loyer</li>
-                    <li><i class="fas fa-times-circle"></i> Clause animaux domestiques</li>
-                    <hr>
-                    <li><i class="fas fa-times-circle"></i> Acte de caution solidaire</li>
-                    <li><i class="fas fa-times-circle"></i> Inventaire des meubles</li>
-                    <li><i class="fas fa-times-circle"></i> Liste des charges</li>
-                    <hr>
-                    <li><i class="fas fa-times-circle"></i> 3 mois de gestion en ligne offerts (checklist entrée dans les lieux, quittances, etc)</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Choisir la formule Bail Complet</button>
-                <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Je ne veux pas d'un bail complet</button>
-            </div>											
-        </div>
-    </div>
-</div>
 
 
