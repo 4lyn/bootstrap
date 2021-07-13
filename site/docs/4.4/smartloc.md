@@ -960,6 +960,43 @@ Alerte en indication de formulaire
 
 
 ## Modal
+
+Modal standard petite taille
+
+{% capture example %}
+<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#modal_save">Sauvegarder mes infos</button>
+<div class="modal fade" id="modal_save" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Sauvegardez vos informations !</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <form >
+        <div class="modal-body">
+          <p>Vous allez recevoir un email avec un lien vous permettant d'accéder à tout moment à votre projet de bail sauvegardé sur Smartloc</p>
+          <p>Indiquez-nous votre adresse email (<em>garanti sans spam ni démarchages</em>)</p>
+          <div class="form-group">
+            <input type="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="login.remember_me">
+              <label class="custom-control-label" for="login.remember_me">Se souvenir de moi sur cet appareil</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Pas maintenant</button>
+          <button type="submit" class="btn btn-dark">Sauvegarder</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
 ## Typographie
 ### Tableaux
 
