@@ -38,21 +38,51 @@ body_class: bg-grey
     <div class="col-lg-7">
       <div class="formulaire__section">
         <div class="formulaire__sousElement">
-          <h3 class="formulaire__sousElement_titre">Etat des signatures</h3>
+          <h3 class="formulaire__sousElement_titre">Etat des signatures <button class="btn btn-link"><i class="fal fa-sync"></i> Rafraîchir les états</button></h3>
+          <h5 class="mb-3">Bail envoyé en signature le XXXXXXXXXXXX</h5>
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center">
               Pascal Combescot (pascal@mail.com / 0678677777)
               <span class="badge badge-success badge-pill">signé</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Pascal Combescot (pascal@mail.com / 0678677777) <button class="btn btn-link"><i class="fal fa-edit"></i> modifier</button>
+              Pascal Combescot (pascal@mail.com / 0678677777) <button class="btn btn-link"><i class="fal fa-edit"></i> Modifier</button>
               <span class="badge badge-warning badge-pill">en attente</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Pascal Combescot (pascal@mail.com / 0678677777) <button class="btn btn-link"><i class="fal fa-edit"></i> modifier</button>
+              Pascal Combescot (pascal@mail.com / 0678677777) <button class="btn btn-link"><i class="fal fa-edit"></i> Modifier</button>
               <span class="badge badge-warning badge-pill">en attente</span>
             </li>
           </ul>
+          <div class="form-row mt-4">
+            <div class="form-group col-lg-3">
+              <label>Prénom</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-lg-3">
+              <label>Nom</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-lg-3">
+              <label>Email</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-lg-3">
+              <label>
+                Numéro de mobile 
+                <i class="fas fa-info-circle"></i>
+              </label>
+              <input type="text" class="form-control">
+            </div>                        
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-sm-auto">
+              <button class="btn btn-link">Annuler</button>
+            </div>
+            <div class="col-sm-auto mt-3 mt-sm-0">
+                <button class="btn btn-outline-dark">Valider</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row justify-content-end">
@@ -70,13 +100,39 @@ body_class: bg-grey
     <div class="col-lg-5">
       <div class="formulaire__section mt-3 mt-lg-0">
         <div class="formulaire__sousElement">
-          <h3 class="formulaire__sousElement_titre">Comment ça marche</h3>
+          <h3 class="formulaire__sousElement_titre">Annexes à signer séparément</h3>
+          <ul class="fa-ul">
+            <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+            État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
+            <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+            État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
+            <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
+            Inventaire des meubles</a></li>
+          </ul>                     
+        </div>
+      </div>      
+      <div class="formulaire__section mt-3 mt-lg-0">
+        <div class="formulaire__sousElement">
+          <h3 class="formulaire__sousElement_titre">Comment ça marche ?</h3>
           <p>Chaque signataire a reçu un email d'invitation pour signer le bail. Si un des signataires n'a toujours pas signé le bail en ligne, 
             nous vous conseillons de le contacter pour voir si l'email n'est pas dans ses spams ou s'il n'a pas eu un problème à la signature.</p>
           <p>Vous pouvez <strong></strong>modifier les coordonnées des signataires en cas d'erreur</strong> en cliquant sur "modifier" en face de chaque signataire.</p> 
           <p>Il n'est par contre pas possible de modifier le fichier qui a été envoyé en signature si vous vous êtes trompé sur un élément du bail. 
           Le cas échéant, cliquez sur "annuler la signature", il faudra alors modifier le bail, réactiver une option de signature et relancer les signatures. 
           Vous pourrez joindre notre équipe support pour vous faire rembourser le deuxième paiement.</p>                      
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="alert alert-success">
+        <div class="alert-heading"><i class="fal fa-check-circle icone_medium"></i> <span>Bail signé !</span></div>
+        <p>Le bail signé vous a été envoyé par mail. N'oubliez pas de récupérer le fichier PDF signé depuis le mail qui vous a 
+          été envoyé et de le sauvegarder précieusement avant de clore la signature.</p>
+        </p>
+        <div class="mt-3">
+          <button class="btn btn-dark">Clore la signature et revenir sur l'espace de gestion</button>
         </div>
       </div>
     </div>
