@@ -36,7 +36,7 @@ body_class: bg-grey
 <main class="container-fluid formulaire">
   <div class="row">
     <div class="col-lg-12">
-      <p>Cas 1 : Bail gratuit non connecté (avec ou sans signature)</p>
+      <p>Cas 1 : Bail gratuit non connecté (sans signature)</p>
       <div class="alert alert-danger">
         Votre bail simple ne comporte pas toutes les clauses et annexes recommandées // <a class="btn btn-link alert-link">Débloquez le bail zen complet</a>
       </div>
@@ -50,6 +50,7 @@ body_class: bg-grey
           <p class="mt-4">
             <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
             <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+            <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_activation_signature">Signer le bail en ligne</button>
           </p>
           <p>
             <a target="_blank" ng-href="/bail/docs/edl.pdf" download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl.pdf">
@@ -115,6 +116,7 @@ body_class: bg-grey
           <p class="mt-4">
             <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
             <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+            <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_activation_signature">Signer le bail en ligne</button>
           </p>
           <p>
             <a target="_blank" ng-href="/bail/docs/edl.pdf" download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl.pdf">
@@ -315,7 +317,7 @@ body_class: bg-grey
 <main class="container-fluid formulaire">
   <div class="row">
     <div class="col-lg-12">
-      <p>Cas 2 : Bail zen sans ou avec signature non connecté</p>
+      <p>Cas 2 : Bail zen sans signature non connecté</p>
     </div>
   </div>
   <div class="row">
@@ -326,6 +328,7 @@ body_class: bg-grey
           <p class="mt-4">
             <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
             <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+            <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_activation_signature">Signer le bail en ligne</button>
           </p>
           <p>
             <a target="_blank" ng-href="/bail/docs/edl.pdf" download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl.pdf">
@@ -379,7 +382,7 @@ body_class: bg-grey
 <main class="container-fluid formulaire">
   <div class="row">
     <div class="col-lg-12">
-      <p>Cas 3 : Bail non rattaché connecté (zen ou gratuit)</p>
+      <p>Cas 3 : Bail non rattaché connecté (zen ou gratuit) sans signature</p>
     </div>
   </div>
   <div class="row">
@@ -390,6 +393,7 @@ body_class: bg-grey
           <p class="mt-4">
             <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
             <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+            <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_activation_signature">Signer le bail en ligne</button>
           </p>
           <p>
             <a target="_blank" ng-href="/bail/docs/edl.pdf" download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl.pdf">
@@ -520,6 +524,28 @@ body_class: bg-grey
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_activation_signature" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Quels sont les avantages de la signature électronique ?</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <form >
+        <div class="modal-body">
+          <p>La signature électronique du bail est acceptée par les tribunaux et les assurances loyers impayés.</p>
+          <p>Propriétaires, locataires et éventuels garants signent le bail pdf avec un code SMS, avant verrouillage par un certificat cryptographique.</p>
+          <p>La signature électronique vous permet de signer rapidement avec une <strong>date d'effet dans le futur</strong>, et d'éviter ainsi que le locataire se désiste.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+          <a href="#" class="btn btn-dark">Activer l'option de signature</a>
         </div>
       </form>
     </div>
