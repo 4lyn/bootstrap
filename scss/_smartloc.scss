@@ -982,9 +982,7 @@ ul.liste--check li::before {
 /* SECTION DES PAGES HUB home et categories */
 .sectionHub {
   padding-top: 6.5rem;
-  /* padding de sections des pages hub home */
-  padding-bottom: 0;
-  /* et hub categorie qui sont differents des autres setions du site */
+  padding-bottom: 6.5rem;
 }
 
 .sectionHub:last-child {
