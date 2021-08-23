@@ -1392,4 +1392,42 @@ Photos de l'équipe d'experts
 {% include example.html content=example %}
 
 
+### Blockquote
 
+Citation complète pour le blog
+
+{% capture example %}
+<div class="card bg-light">
+  <div class="card-body">
+    <blockquote class="blockquote">
+      <p class="text-monospace">Paris SG, tout ensemble on chantera, cet amour qu'on a pour toi, qui ne cessera jamais.</p>
+      <div class="blockquote-footer">Source : <a href="#" rel="nofollow">Pascal Combescot</a></div>
+    </blockquote>
+  </div>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+Citation légère pour UX fonctionnelle
+
+{% capture example %}
+<div class="pl-2 my-3" style="border-left: 3px lightgrey solid">
+  <p class="text-monospace">Super efficace! Bail signé de manière électronique, très simple d'utilisation, très bien expliqué! Ca fait du bien d'avoir des outils qui facilitent la vie! Merci!<br/>
+  <small>-- Source : <a href="#" rel="nofollow">un client content</a></small></p>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+
+### Stabilo
+
+Mise en avant de texte en couleur
+
+{% capture example %}
+<p>
+  <span class="bg-success p-2"><i class="far fa-check-circle"></i> Satisfait ou remboursé</span>
+  <span class="bg-success p-2"><i class="far fa-check-circle"></i> Seulement 4€ / signataire</span>
+</p>
+{% endcapture %}
+{% include example.html content=example %}
