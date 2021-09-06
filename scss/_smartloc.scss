@@ -1779,3 +1779,9 @@ input[type=number] {
 .bootstrap-select.is-invalid .dropdown-toggle {
   border-color: $red !important;
 }
+
+/*********** blur ************/
+
+.blur {
+  opacity:0.4;
+}
