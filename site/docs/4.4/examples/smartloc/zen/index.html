@@ -128,7 +128,7 @@ body_class: bg-grey
                 <p>Vous avez reçu par mail les baux et les annexes signées. Nous vous affichons ci-dessous les 
                   fichiers que nous avons pu récupérés auprès de Yousign.</p>
                 <p>
-                  <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF signé</a>
+                  <a href="#"><i class="fa fa-file-pdf"></i> Bail Dupont signé</a>
                 </p>
                 <p>
                   <a href="#"><i class="fa fa-file-pdf"></i> Acte de caution A-B signé</a>
@@ -266,7 +266,12 @@ body_class: bg-grey
                   </div>
                 </p>
               </div>
-            </div>            
+            </div>
+            <div class="alert alert-success">
+              <div class="alert-heading"><i class="fal fa-check-circle icone_medium"></i> <span>Toutes les actions nécessaires ont été complétés !</span></div>
+              <p>Vous recevrez à l'avenir des mails de notifications pour les prochaines actions à mener.</p>
+              <p>Pour un aperçu exhaustif des échéances futures, rendez-vous dans la section suivante.</p>
+            </div>        
             <div class="row justify-content-between">
               <div class="col-sm-auto">
                 <button type="button" class="btn btn-link" data-toggle="tab" href="#tab_personnes" role="tab">
@@ -343,7 +348,11 @@ body_class: bg-grey
             <hr>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Bail de location</h4>
-              <p><a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button></p>
+              <p class="mt-4">
+                <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
+                <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+                <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Signer le bail en ligne</button>
+              </p>
               <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
                 pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
               <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
@@ -372,24 +381,32 @@ body_class: bg-grey
             </div>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Documents à remplir et à signer</h4>
-              <ul class="fa-ul">
-                <li><a href="/bail/docs/edl_3P.pdf" download="Smartloc - Etat des lieux 3P.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                État des lieux complet (10-15 pages avec entrée &amp; sortie)</a></li>
-                <li><a href="/bail/docs/edl_compact.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                État des lieux alternatif  (2 pages avec entrée ou sortie)</a></li>
-                <li><a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                Inventaire des meubles</a></li>
-                <li><span class="fa-li"><i class="fa fa-check-square"></i></span> Votre RIB pour virement bancaire</li>
-              </ul>
+              <p>
+                <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
+                  <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
+                </a>
+              </p>
+              <p>
+                <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
+                  <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
+                </a>								
+              </p>
+              <p>
+                <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank" >
+                  <i class="fa fa-file-pdf"></i> Inventaire des meubles
+                </a>
+              </p>
             </div>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Documents à transmettre au locataire</h4>
-              <ul class="fa-ul">
-                <li><a href="/bail/pdf/echeance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                Avis d'échéance Mars 2020</a></li>
-                <li><a href="/bail/pdf/quittance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><span class="fa-li"><i class="fa fa-file-pdf"></i></span>
-                Quittance de loyer Mars 2020</a></li>
-              </ul>
+              <p>
+                <a href="/bail/pdf/echeance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><i class="fa fa-file-pdf"></i>
+                  Avis d'échéance Mars 2020</a>
+              </p>
+              <p>
+                <a href="/bail/pdf/quittance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><i class="fa fa-file-pdf"></i>
+                  Quittance de loyer Mars 2020</a>
+              </p>
             </div>
           </div>
         </div>
@@ -505,6 +522,33 @@ body_class: bg-grey
             </div>
             <div class="section__sousElement">
               <p><a href="https://calendly.com/amarris-immo/smartloc" class="btn btn-dark btn-sm" target="_blank">Simulation avec notre comptable partenaire</a></p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Choix du régime fiscal en vide</h4>
+              <ul>
+                <li><strong>le régime micro-foncier</strong>: vous déduisez simplement un forfait de charges de 30%</li>
+                <li><strong>le régime réel</strong> : vous déduisez vos charges réelles</li>
+              </ul>
+              <p>Le régime réel est donc à privilégier si vos charges dépassent régulièrement 30% des loyers encaissés. 
+              Il vous sera automatiquement appliqué si vos revenus fonciers dépassent les 15 000€. Enfin vous ne pourrez plus rebasculer sur le micro-foncier avant 3 ans.</p>
+              <p>Pour vous aider nous à déclarer au réel nous avons créé un tableau de calcul et une fiche d'information :</p>
+            </div>
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/spreadsheets/d/12gk2o0EF-hdVDazCGfD2LM_whAr1dD-_0vL7w_RD-4U/edit#gid=0" class="stretched-link">
+                    Tableau de calcul pour calculer les charges déductibles</a>
+                  </span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/declaration-fiscale-en-location-vide-mode-demploi-complet" class="stretched-link">
+                    Fiche complète sur la déclaration des charges au réel</a></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
