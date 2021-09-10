@@ -826,7 +826,7 @@ ul.liste--check li::before {
 }
 
 /* cards sur fond de couleur */
-.bg-light .card, .bg-secondary .card, .bg-warning .card {
+.bg-light .card:not(.cardLigne), .bg-secondary .card:not(.cardLigne), .bg-warning .card:not(.cardLigne) {
   border: none;
 }
 
