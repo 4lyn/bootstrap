@@ -142,46 +142,50 @@ body_class: bg-grey
               <div class="card-body">
                 <h3 class="card-title">Préparez l'entrée dans les lieux</h3> 
                 <hr>
-                <h4>Mail au locataire pour préparer l'entrée dans les lieux</h4>
-                <p>Nous vous avons préparé un mail à envoyer un locataire pour qu'il vous fournisse lors de l'entrée dans les lieux :</p>
-                <ul>
-                  <li>le chèque de loyer</li>
-                  <li>le chèque de dépôt de garantie</li>
-                  <li>l'attestation d'assurance</li>
-                </ul>
-                <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
-                <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
-                <p class="mt-2">
-                  <a href="#" class="lien_annexe" style="color:red">
-                    <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour envoyer le mail
-                  </a>
-                </p>
-                <p><button class="btn btn-primary">Envoyer le mail au locataire</button></p>
-                <hr>
-                <h4>Documents à remplir lors de l'entrée dans les lieux</h4>
-                <p>
-                  <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
-                    <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
-                  </a>
-                </p>
-                <p>
-                  <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
-                    <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
-                  </a>								
-                </p>
-                <p>
-                  <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank" >
-                    <i class="fa fa-file-pdf"></i> Inventaire des meubles
-                  </a>
-                </p>
-                <hr>
-                <h4>Derniers conseils</h4>
-                <ul>
-                  <li>ne donnez pas les clefs au locataire s'il ne vous fournit pas les chèques et l'attestation d'assurance</li>
-                  <li>si le locataire vous paie par virement, ne donnez que les clefs qu'une fois le virement reçu, ne vous contentez pas de 
-                    promesse ou de preuves de virements</li>
-                  <li>vous devez en théorie installer un détecteur de fumée</li>
-                </ul>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Mail au locataire pour préparer l'entrée dans les lieux</h4>
+                  <p>Nous vous avons préparé un mail à envoyer un locataire pour qu'il vous fournisse lors de l'entrée dans les lieux :</p>
+                  <ul>
+                    <li>le chèque de loyer</li>
+                    <li>le chèque de dépôt de garantie</li>
+                    <li>l'attestation d'assurance</li>
+                  </ul>
+                  <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
+                  <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
+                  <p class="mt-2">
+                    <a href="#" class="lien_annexe" style="color:red">
+                      <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour envoyer le mail
+                    </a>
+                  </p>
+                  <p><button class="btn btn-primary">Envoyer le mail au locataire</button></p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Documents à remplir lors de l'entrée dans les lieux</h4>
+                  <p>
+                    <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
+                      <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
+                    </a>
+                  </p>
+                  <p>
+                    <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
+                      <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
+                    </a>								
+                  </p>
+                  <p>
+                    <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank" >
+                      <i class="fa fa-file-pdf"></i> Inventaire des meubles
+                    </a>
+                  </p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Derniers conseils</h4>
+                  <ul>
+                    <li>ne donnez pas les clefs au locataire s'il ne vous fournit pas les chèques et l'attestation d'assurance</li>
+                    <li>si le locataire vous paie par virement, ne donnez que les clefs qu'une fois le virement reçu, ne vous contentez pas de 
+                      promesse ou de preuves de virements</li>
+                    <li>vous devez en théorie installer un détecteur de fumée</li>
+                  </ul>
+                </div>
               </div>
             </div>            
             <div class="card mb-4">
@@ -219,7 +223,7 @@ body_class: bg-grey
                   </div>
                 </div>                
                 <div class="section__sousElement mt-4">
-                  <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
+                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
                   <div class="custom-control custom-switch mt-4 mb-4">
                     <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
                     <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
@@ -238,33 +242,36 @@ body_class: bg-grey
               <div class="card-body">
                 <h3 class="card-title">Souscrivez à votre assurance PNO</h3> 
                 <hr>
-                <h4>Pourquoi une assurance Propriétaire Non Occupant (PNO) ?</h4>
-                <p>Vous êtes obligé légalement de prendre une assurance habitation PNO en tant que bailleur d'un logement en location.</p>
-                Cette assurance couvre votre responsabilité civile (une tuile tombe du toit et blesse votre locataire), mais également couvre les sinistres (incendies, dégâts des eaux, etc.) non garantis 
-                par l'assurance du locataire ou de la copropriété.</p>
-                <div class="card cardLigne">
-                  <div class="card-body">
-                    <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
-                    <span><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/" class="stretched-link">Fiche complète sur la PNO</a></span>
-                  </div>
-                </div>
-                <hr>
-                <h4>Comment souscrire une assurance PNO ?</h4>
-                <p>La plupart des compagnies proposent ce type de contrat, si vous n'en avez pas encore vous pouvez souscrire en ligne en 
-                  2 minutes à l'assurance PNO Allianz que nous proposons.
-                </p>
-                <p class="mt-4">
-                  <a href="#"><i class="fa fa-file-pdf"></i> Conditions générales du contrat PNO Allianz</a>
-                  <a href="https://www.insured.fr/Secured/ParcourLeasePart1/EtapesDemarrer.aspx?cxa=GATE188601" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Souscrire à la PNO</a>
-                </p>
-                <p class="mt-4">
-                  <div class="form-group mt-3">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1"> Je confirme avoir souscrit à une assurance PNO (Smartloc ou autre)</label>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Pourquoi une assurance Propriétaire Non Occupant (PNO) ?</h4>
+                  <p>Vous êtes obligé légalement de prendre une assurance habitation PNO en tant que bailleur d'un logement en location.</p>
+                  Cette assurance couvre votre responsabilité civile (une tuile tombe du toit et blesse votre locataire), mais également couvre les sinistres (incendies, dégâts des eaux, etc.) non garantis 
+                  par l'assurance du locataire ou de la copropriété.</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/" class="stretched-link">Fiche complète sur la PNO</a></span>
                     </div>
                   </div>
-                </p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Comment souscrire une assurance PNO ?</h4>
+                  <p>La plupart des compagnies proposent ce type de contrat, si vous n'en avez pas encore vous pouvez souscrire en ligne en 
+                    2 minutes à l'assurance PNO Allianz que nous proposons.
+                  </p>
+                  <p class="mt-4">
+                    <a href="#"><i class="fa fa-file-pdf"></i> Conditions générales du contrat PNO Allianz</a>
+                    <a href="https://www.insured.fr/Secured/ParcourLeasePart1/EtapesDemarrer.aspx?cxa=GATE188601" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Souscrire à la PNO</a>
+                  </p>
+                  <p class="mt-4">
+                    <div class="form-group mt-3">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1"> Je confirme avoir souscrit à une assurance PNO (Smartloc ou autre)</label>
+                      </div>
+                    </div>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="alert alert-success">
@@ -403,11 +410,11 @@ body_class: bg-grey
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Documents à transmettre au locataire</h4>
               <p>
-                <a href="/bail/pdf/echeance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><i class="fa fa-file-pdf"></i>
+                <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
                   Avis d'échéance Mars 2020</a>
               </p>
               <p>
-                <a href="/bail/pdf/quittance?id=94975&amp;token=d21ec7d367240dbe237825a64296597a&amp;date=2020-03-01" target="_blank"><i class="fa fa-file-pdf"></i>
+                <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
                   Quittance de loyer Mars 2020</a>
               </p>
             </div>
@@ -451,10 +458,10 @@ body_class: bg-grey
           <h2>Quittances</h2>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#quittances_mois" class="menuSticky--sousElement__item">Echéance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2020</small></a></h4>
+              <h4 class="mb-4"><a href="#quittances_mois" class="menuSticky--sousElement__item">Quittance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2021</small></a></h4>
             </li>
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#quittances_prochain" class="menuSticky--sousElement__item">Echéance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2020</small></a></h4>
+              <h4 class="mb-4"><a href="#quittances_prochain" class="menuSticky--sousElement__item">Quittance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2021</small></a></h4>
             </li>
           </ul>
         </div>
@@ -463,30 +470,82 @@ body_class: bg-grey
         <div class="card">
           <div class="card-body">
             <div id="quittances_mois" class="menuSticky--sousElement__ancre"></div>
-            <h3 class="card-title">Echéance du mois	<br> <small><i class="fa fa-calendar-alt"></i> 5 avril 2020</small></h3>
+            <h3 class="card-title">Quittance du mois	<br> <small><i class="fa fa-calendar-alt"></i> 5 avril 2021</small></h3>
             <hr>
-            <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
-              pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
-            <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
-              de garantie (que vous pouvez encaisser dès la signature).</p> 
-            <hr> 
-            <h4>Bail de location</h4>
-            <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+            <div class="accordion" id="accordion_faq_home">
+              <div class="questionDeroulante objetDeroulant">
+                <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+                  <h5>Comment fonctionne l'envoi automatique des quittances ? <i class="fas fa-minus float-right mt-1"></i></h5>
+                </div>
+                <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
+                  <dl class="row">
+                    <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt>
+                    <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
+                    <dt class="col-sm-3 offset-sm-1">le 15 du mois</dt>
+                    <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
+                    <dt class="col-sm-3 offset-sm-1">le 25 du mois</dt>
+                    <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="questionDeroulante objetDeroulant">
+                <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+                  <h5>Pourquoi c'est important  d'envoyer les quittances ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                </div>
+                <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
+                  <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                  <ul>
+                    <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
+                    <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                    <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                  </ul>                      
+                </div>
+              </div>
+            </div>                
+            <div class="section__sousElement mt-4">
+              <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
+              <div class="custom-control custom-switch mt-4 mb-4">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+              </div>
+              <p class="mt-2">
+                <a href="#" class="lien_annexe" style="color:red">
+                  <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour activer cette étape
+                </a>
+              </p>
+              <p><button class="btn btn-primary">Sauvegarder</button>
+              </p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Quittances & avis d'échéance</h4>
+              <p>
+                <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+                  Avis d'échéance avril 2021</a>
+              </p>
+              <p>
+                <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+                  Quittance de loyer avril 2021</a>
+              </p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Documents spéciaux</h4>
+              <p>
+                <a href="https://docs.google.com/document/d/19Jg37EtCAU8VsY7AaocBnlE4zZlzDEbVwaF4RBVf5F8/edit" target="_blank"><i class="fa fa-file-pdf"></i>
+                  Modèle de reçu en cas d'impayé partiel</a>
+              </p>
+              <p>
+                <a href="https://docs.google.com/document/d/1Si6GNxUzRkLArMaTWJSFY3t1_dBR8C0dqz-sQXckuKE/edit" target="_blank"><i class="fa fa-file-pdf"></i>
+                  Modèle de quittance vierge</a>
+              </p>
+            </div>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
             <div id="quittances_prochain" class="menuSticky--sousElement__ancre"></div>
-
             <h3 class="card-title">Echéance du prochain mois	<br> <small><i class="fa fa-calendar-alt"></i> 5 mai 2020</small></h3>
             <hr>
-            <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
-              pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
-            <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
-              de garantie (que vous pouvez encaisser dès la signature).</p> 
-            <hr> 
-            <h4>Bail de location</h4>
-            <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+            Idem
           </div>
         </div>
       </div>
