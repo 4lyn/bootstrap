@@ -684,7 +684,7 @@ body_class: bg-grey
             <h3 class="card-title">Indexation du loyer	<br> <small><i class="fa fa-calendar-alt"></i> Avril</small></h3>
             <hr>
             <div class="formulaire__sousElement">
-              <h3 class="formulaire__sousElement_titre">Paramètres à remplir</h3>
+              <h4 class="formulaire__sousElement_titre">Paramètres à remplir</h4>
               <div class="form-row">
                 <div class="form-group col-lg-6">
                   <label>Loyer en cours</label>
@@ -734,7 +734,7 @@ body_class: bg-grey
               <button class="btn btn-dark">Calculer l'indexation</button>
             </div>
             <div class="formulaire__sousElement">
-              <h3 class="formulaire__sousElement_titre">Résultats</h3>
+              <h4 class="formulaire__sousElement_titre">Résultats</h4>
               <dl class="row">
                 <dt class="col-sm-4">L'indexation est-elle possible ?</dt>
                 <dd class="col-sm-3"><span class="badge badge-success" style="font-size:14px">OUI</span></dd>
@@ -783,13 +783,100 @@ body_class: bg-grey
             <div id="echeances_regul" class="menuSticky--sousElement__ancre"></div>
             <h3 class="card-title">Régularisation des charges 	<br> <small><i class="fa fa-calendar-alt"></i> Septembre</small></h3>
             <hr>
-            <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
-              pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
-            <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
-              de garantie (que vous pouvez encaisser dès la signature).</p> 
-            <hr> 
-            <h4>Bail de location</h4>
-            <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Quand faire la régularisation des charges ?</h4>
+              <p>Vous pouvez faire la régularisation des charges quand vous le souhaitez, idéalement juste après avoir reçu tous les justificatifs de dépense réelles.</p>
+              <p>Nous vous indiquons une date indicative à septembre car en général à cette date vous avez déjà reçu le relevé de charges communes de l'année précédente
+                si vous êtes en copropriété, mais également l'avis de taxe foncière précisant la Taxe d'Enlèvement des Ordures Ménagères (TEOM).</p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Comment calculer la régularisation ?</h4>
+              <p>La régularisation s'applique uniquement si vous avez opté pour une provision pour charges; le cas échéant cette provision demandée est forcément inférieure ou supérieure au montant réel, le solde (en votre faveur ou défaveur) va donc être régularisé.</p>
+              <p>Pour comprendre en détail comment régulariser les charges nous vous invitions à lire la fiche ci-dessous et à utiliser la feuille de calcul que vous pouvez télécharger au format excel (ou la copier sur google docs).</p>
+              <p>Par souci de clarté nous vous recommandons de régulariser les charges sur des années civiles pleines, même si votre budget de copropriété est décalé (d'octobre à octobre par exemple). 
+                Sur la feuille de calcul, vous trouverez deux onglets en fonction  du décalage éventuel de l'exercice de copropriété.</p>
+              <p><span class="bg-success p-2"><i class="far fa-check-circle"></i> Assistance Smartloc</span></p>
+              <p>Vous pouvez si nécessaire nous solliciter par mail en <strong>nous envoyant à equipe@smartloc.fr</strong> votre relevé de charges et votre avis de taxe foncière, 
+                  nous ferons le calcul pour vous.</p>
+            </div>
+            <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/regularisation-des-charges-locatives-mode-demploi/" class="stretched-link">
+                    Fiche technique sur la régularisation</a>
+                  </span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/spreadsheets/d/1jzFrkYz4mWkotYXR4meKRdAnWZ6sO9LAsLKnGq8HfOs/edit?usp=sharing" class="stretched-link">
+                    Feuille de calcul sur la régularisation</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Quels documents envoyer au locataire ?</h4>
+              <p>Une fois le montant de la régularisation calculée, il va falloir prévenir le locataire en justifiant votre calcul.</p>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/document/d/1B3Gi6ug0wKQpH-a_niauzc_LAAZj5ryYbrfkKu1Mg04/edit" class="stretched-link">
+                    Modèle de courrier pour liquidation de charges</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <p>Il faudra également lui fournir une quittance de régularisation que vous pouvez éditer via notre module ci-dessous.</p>
+            </div>
+            <div class="formulaire__sousElement">
+              <h4 class="formulaire__sousElement_titre">Quittance de régularisation</h4>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label>Montant de la régularisation</label>
+                  <div class="champSaisie--illustré">
+                    <input type="text" class="form-control">
+                    <span>€</span>
+                  </div>
+                  <small class="form-text text-muted">Si négatif indiqué une valeur avec un -</small>
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Mois de régularisation</label>
+                  <select class="custom-select">
+                    <option>Octobre</option>
+                    <option>Novembre</option>
+                    <option>Décembre</option>
+                  </select> 
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Année de régularisation</label>
+                  <select class="custom-select">
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                  </select> 
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <p>Si la régularisation est importante, il peut être judicieux de modifier la provision pour charges en conséquence, 
+                afin qu'à l'avenir elle corresponde plus précisément aux dépenses réelles.
+              </p>
+              <p>
+                <button class="btn btn-outline-dark btn-sm">Modifier les quittances</button>
+              </p>
+            </div>
+            <div class="section__sousElement">
+              <p>Si vous avez opté pour un envoi automatique des quittances vous pouvez désactiver cette option le temps de calculer la régularisation.</p>
+              <div class="custom-control custom-switch mt-4 mb-4">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+              </div>
+              <p><button class="btn btn-primary">Sauvegarder</button>
+              </p>
+            </div>
           </div>
         </div>
         <div class="card">
