@@ -91,12 +91,10 @@ body_class: bg-grey
                   <dt class="col-sm-3">Charges</dt>
                   <dd class="col-sm-9">Provision 100€</dd>
                   <dt class="col-sm-3">Début</dt>
-                  <!-- Todo modal modif quittances -->
-                  <dd class="col-sm-9"><a href="#" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
+                  <dd class="col-sm-9"><a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
                 </dl>
                 <p>
-                  <!-- Todo modal modif quittances -->
-                  <a href="#" class="btn btn-outline-dark btn-sm">Paramètres</a> 
+                  <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-outline-dark btn-sm">Paramètres</a> 
                   <!-- Todo modal modif bail reset -->
                   <a href="#" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
                 </p>
@@ -175,9 +173,8 @@ body_class: bg-grey
                   <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
                   <!-- Todo modal mail edl -->
                   <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
-                  <!-- Todo modal modif quittances -->                  
                   <p class="mt-2">
-                    <a href="#" class="lien_annexe" style="color:red">
+                    <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red">
                       <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour envoyer le mail
                     </a>
                   </p>
@@ -554,8 +551,7 @@ body_class: bg-grey
               </p>
               <!-- TODO modal anciennes quittances -->              
               <button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0">Anciennes quittances</button>
-              <!-- TODO modal modif quittances -->
-              <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button>              
+              <button data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button>              
             </div>
             <div class="section__sousElement conteneurCardLignes">
               <div class="card cardLigne">
@@ -1060,6 +1056,49 @@ body_class: bg-grey
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
         <button type="button" class="btn btn-dark" v-on:click="change($event, 'signe')">Activer l'option de signature</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_quittances" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Paramètres de la location</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire__section p-0">
+          <div class="formulaire__sousElement">
+            <h4 class="formulaire__sousElement_titre">Propriétaire</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <h4 class="formulaire__sousElement_titre">Locataire</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>                                 
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark">Sauvegarder les modifications</button>
       </div>
     </div>
   </div>
