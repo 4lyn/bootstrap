@@ -91,9 +91,15 @@ body_class: bg-grey
                   <dt class="col-sm-3">Charges</dt>
                   <dd class="col-sm-9">Provision 100€</dd>
                   <dt class="col-sm-3">Début</dt>
+                  <!-- Todo modal modif quittances -->
                   <dd class="col-sm-9"><a href="#" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
                 </dl>
-                <p><a href="/dossier" class="btn btn-outline-dark btn-sm">Paramètres</a> <a href="#" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a></p>
+                <p>
+                  <!-- Todo modal modif quittances -->
+                  <a href="#" class="btn btn-outline-dark btn-sm">Paramètres</a> 
+                  <!-- Todo modal modif bail reset -->
+                  <a href="#" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
+                </p>
               </div>
             </div>
           </div>
@@ -102,31 +108,47 @@ body_class: bg-grey
               <div class="card-body">
                 <h3 class="card-title">Signez votre bail de location</h3> 
                 <hr>
+                <hr>
+                <samp>Cas générique</samp>
                 <p>Nous vous recommandons de signer le bail le plus tôt possible pour éviter les désistements et les problèmes de dernière minute.</p>
                 <p>Vous pouvez sans problème signer le bail avant l'entrée dans les lieux.</p>
                 <p>La signature électronique vous permet de signer à distance à l'avance de manière sécurisée.</p>
+                <hr>
+                <samp>Si signature non payée</samp>
                 <p class="mt-4">
+                  <!-- Todo lien fichier pdf -->
                   <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
+                  <!-- Todo modal modif bail en cours OU redirection vers /modif si avant date d'effet (même si sur l'étape d'activation on sera forcément avant date d'effet)-->
                   <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
-                  <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Signer le bail en ligne</button>
+                  <!-- j'ai volontairement supprimé le changer de locataire --> 
+                  <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_signature_activation">Signer le bail en ligne</button>
                 </p>
+                <!-- Todo liens fichier annexes -->
                 <p><a href="#"><i class="fa fa-file-pdf"></i> Acte de caution vierge</a></p>
                 <a href="#"><i class="fa fa-file-pdf"></i> Bail parking séparé</a>
                 <hr>
+                <samp>Si signature payée non lancée</samp>
                 <p class="mt-4">
+                  <!-- Todo lien fichier pdf -->
                   <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
+                  <!-- Todo modal modif bail en cours OU redirection vers /modif si avant date d'effet (même si sur l'étape d'activation on sera forcément avant date d'effet)-->                  
                   <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+                  <!-- Todo modal signature --->
                   <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Lancer la signature en ligne</button>
                 </p>
                 <hr>
+                <samp>Si signature lancée</samp>
                 <p>Votre bail est en cours de signature, vous avez donc reçu un mail pour le signer électroniquement.</p>
                 <p class="mt-4">
+                  <!-- Todo lien page signature -->
                   <button class="btn btn-outline-dark btn-sm">Page de suivi de la signature</button>
                 </p>
                 <hr>
+                <samp>Si bail signé et clôturé</samp>
                 <h4>Archives des baux signés</h4>
                 <p>Vous avez reçu par mail les baux et les annexes signées. Nous vous affichons ci-dessous les 
                   fichiers que nous avons pu récupérés auprès de Yousign.</p>
+                <!-- Todo lien fichier pdf signés -->
                 <p>
                   <a href="#"><i class="fa fa-file-pdf"></i> Bail Dupont signé</a>
                 </p>
@@ -151,12 +173,15 @@ body_class: bg-grey
                     <li>l'attestation d'assurance</li>
                   </ul>
                   <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
+                  <!-- Todo modal mail edl -->
                   <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
+                  <!-- Todo modal modif quittances -->                  
                   <p class="mt-2">
                     <a href="#" class="lien_annexe" style="color:red">
                       <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour envoyer le mail
                     </a>
                   </p>
+                  <!-- Todo envoi du mail locataire en back -->
                   <p><button class="btn btn-primary">Envoyer le mail au locataire</button></p>
                 </div>
                 <div class="section__sousElement">
@@ -171,6 +196,7 @@ body_class: bg-grey
                       <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
                     </a>								
                   </p>
+                  <!-- Todo conditionnement meuble/vide -->
                   <p>
                     <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank" >
                       <i class="fa fa-file-pdf"></i> Inventaire des meubles
@@ -197,6 +223,7 @@ body_class: bg-grey
                     <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
                       <h5>Comment fonctionne l'envoi automatique des quittances ? <i class="fas fa-minus float-right mt-1"></i></h5>
                     </div>
+                    <!-- Todo conditionnement date -->
                     <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
                       <dl class="row">
                         <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt>
@@ -223,7 +250,8 @@ body_class: bg-grey
                   </div>
                 </div>                
                 <div class="section__sousElement mt-4">
-                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
+                  <!-- Todo modal mail quittance -->
+                  <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
                   <div class="custom-control custom-switch mt-4 mb-4">
                     <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
                     <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
@@ -358,6 +386,7 @@ body_class: bg-grey
             <hr>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Bail de location</h4>
+              <!-- TODO reprendre bloc activation signature -->
               <p class="mt-4">
                 <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
                 <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
@@ -394,11 +423,8 @@ body_class: bg-grey
             <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
             <hr>
             <div class="section__sousElement">
-              <p>Lorsque vous remettez les clefs au locataire vous perdez le contrôle sur le bien.</p>
-              <p>Il est donc crucial de bien signer et récupérer tous les documents listés ci-dessous (notamment dans le cadre d'une garantie loyer impayé) lors de l'état des lieux d'entrée.</p>
-            </div>
-            <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Documents à remplir et à signer</h4>
+              <!-- TODO reprendre bloc activation edl -->
               <p>
                 <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
                   <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
@@ -415,17 +441,7 @@ body_class: bg-grey
                 </a>
               </p>
             </div>
-            <div class="section__sousElement">
-              <h4 class="section__sousElement_titre">Documents à transmettre au locataire</h4>
-              <p>
-                <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
-                  Avis d'échéance Mars 2020</a>
-              </p>
-              <p>
-                <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
-                  Quittance de loyer Mars 2020</a>
-              </p>
-            </div>
+            <!-- J'ai volontairement supprimé la section Documents à transmettre au locataire, soit il passe par l'activation, soit par le panel quittances -->
           </div>
         </div>
         <div class="card">
@@ -480,6 +496,7 @@ body_class: bg-grey
             <div id="quittances_mois" class="menuSticky--sousElement__ancre"></div>
             <h3 class="card-title">Quittance du mois	<br> <small><i class="fa fa-calendar-alt"></i> 5 avril 2021</small></h3>
             <hr>
+            <!-- Reprendre le bloc de l'étape d'activation quittance -->
             <div class="accordion" id="accordion_faq_home">
               <div class="questionDeroulante objetDeroulant">
                 <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
@@ -526,6 +543,7 @@ body_class: bg-grey
             </div>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Quittances & avis d'échéance</h4>
+              <!-- Reprendre le bloc de l'étape d'activation quittance -->
               <p>
                 <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
                   Avis d'échéance avril 2021</a>
@@ -534,17 +552,28 @@ body_class: bg-grey
                 <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
                   Quittance de loyer avril 2021</a>
               </p>
+              <!-- TODO modal anciennes quittances -->              
+              <button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0">Anciennes quittances</button>
+              <!-- TODO modal modif quittances -->
+              <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button>              
             </div>
-            <div class="section__sousElement">
-              <h4 class="section__sousElement_titre">Documents spéciaux</h4>
-              <p>
-                <a href="https://docs.google.com/document/d/19Jg37EtCAU8VsY7AaocBnlE4zZlzDEbVwaF4RBVf5F8/edit" target="_blank"><i class="fa fa-file-pdf"></i>
-                  Modèle de reçu en cas d'impayé partiel</a>
-              </p>
-              <p>
-                <a href="https://docs.google.com/document/d/1Si6GNxUzRkLArMaTWJSFY3t1_dBR8C0dqz-sQXckuKE/edit" target="_blank"><i class="fa fa-file-pdf"></i>
-                  Modèle de quittance vierge</a>
-              </p>
+            <div class="section__sousElement conteneurCardLignes">
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/document/d/19Jg37EtCAU8VsY7AaocBnlE4zZlzDEbVwaF4RBVf5F8/edit" class="stretched-link">
+                    Modèle de reçu en cas d'impayé partiel</a>
+                  </span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/document/d/1Si6GNxUzRkLArMaTWJSFY3t1_dBR8C0dqz-sQXckuKE/edit" class="stretched-link">
+                    Modèle de quittance vierge</a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1004,6 +1033,33 @@ body_class: bg-grey
           Si vous êtes déjà inscrit,
           <a href="/login">connectez-vous</a>.
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---TODO duplicat de la modal de /pdf à factoriser eventuellement-->
+<div class="modal fade" id="modal_signature_activation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Quels sont les avantages de la signature électronique ?</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-success p-2"><i class="far fa-check-circle"></i> Satisfait ou remboursé</span>
+          <span class="bg-success p-2"><i class="far fa-check-circle"></i> Seulement 4€ / signataire</span>
+        </p>
+        <p>La signature électronique du bail est acceptée par les tribunaux et les assurances loyers impayés.</p>
+        <p>
+          Elle vous permet de signer rapidement avec une <strong>date d'effet dans le futur</strong>, 
+          et d'éviter ainsi que le locataire se désiste.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark" v-on:click="change($event, 'signe')">Activer l'option de signature</button>
       </div>
     </div>
   </div>
