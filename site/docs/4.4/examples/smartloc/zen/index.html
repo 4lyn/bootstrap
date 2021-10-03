@@ -115,8 +115,9 @@ body_class: bg-grey
                 <p class="mt-4">
                   <!-- Todo lien fichier pdf -->
                   <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
-                  <!-- Todo modal modif bail en cours OU redirection vers /modif si avant date d'effet (même si sur l'étape d'activation on sera forcément avant date d'effet)-->
-                  <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+                  <!--ici je te mets modal modif bail en cours même si sur l'étape d'activation on sera forcément avant date d'effet donc redirection vers /modif -->
+                  <!--TODO il faut conserver la logique du bloc de prod displayZenDocBail pour le bouton modifier le bail -->
+                  <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_modif_bail_en_cours">Modifier le bail</button>
                   <!-- j'ai volontairement supprimé le changer de locataire --> 
                   <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_signature_activation">Signer le bail en ligne</button>
                 </p>
@@ -128,8 +129,8 @@ body_class: bg-grey
                 <p class="mt-4">
                   <!-- Todo lien fichier pdf -->
                   <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
-                  <!-- Todo modal modif bail en cours OU redirection vers /modif si avant date d'effet (même si sur l'étape d'activation on sera forcément avant date d'effet)-->                  
-                  <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+                  <!--TODO il faut conserver la logique du bloc de prod displayZenDocBail pour le bouton modifier le bail -->
+                  <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_modif_bail_en_cours">Modifier le bail</button>
                   <!-- Todo modal signature --->
                   <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Lancer la signature en ligne</button>
                 </p>
@@ -1123,6 +1124,27 @@ body_class: bg-grey
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
         <!-- Todo bouton changer de locataire -->
         <button type="button" class="btn btn-dark">Changer de locataire</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_bail_en_cours" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modification du bail</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Que souhaitez-vous faire ?</h4>
+        <!-- Todo modal modif quittances -->
+        <p>Modifier les informations de la location en cours sans modifier le PDF du bail <a href="#" >Cliquez ici</a></p>
+        <!-- Todo redirection /modif -->
+        <p>Modifier le PDF du bail pour la location en cours <a href="#">Cliquez ici</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
       </div>
     </div>
   </div>
