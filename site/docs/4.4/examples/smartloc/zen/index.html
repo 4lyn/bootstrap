@@ -131,8 +131,7 @@ body_class: bg-grey
                   <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
                   <!--TODO il faut conserver la logique du bloc de prod displayZenDocBail pour le bouton modifier le bail -->
                   <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_modif_bail_en_cours">Modifier le bail</button>
-                  <!-- Todo modal signature --->
-                  <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Lancer la signature en ligne</button>
+                  <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_signature">Lancer la signature en ligne</button>
                 </p>
                 <hr>
                 <samp>Si signature lancée</samp>
@@ -1145,6 +1144,118 @@ body_class: bg-grey
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_signature" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Signature électronique</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <!-- Todo mutualisation bloc signature /pdf -->
+        <div class="formulaire__section p-0">
+          <div class="formulaire__sousElement">
+            <ul class="list-unstyled">
+              <li>Les numéros internationaux sont acceptés au format +33XXXX.</li>
+              <li>Pour les numéros ultra-marins utilisez l'indicatif du département et non pas l'alias commençant par 06.</li>
+              <li>Chaque signataire doit avoir un mail et un numéro de portable différents des autres signataires.</li>
+            </ul>
+            <div class="form-row mt-4">
+              <div class="form-group col-lg-3">
+                <label>Locataire 1 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <label>Locataire 2 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <label>Propriétaire 1 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter le propriétaire 2 en signataire</a>
+              <!-------<a href="#" class="ml-4 btn-link"><i class="fas fa-minus"></i> Supprimer le propriétaire 2</a> ----->
+            </div>
+            <fieldset disabled>
+              <div class="form-row">
+                <div class="form-group col-lg-3">
+                  <label>Propriétaire 2 : Prénom</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Nom</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-4">
+                  <label>Email</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-2">
+                  <label>Portable</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group mt-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Je confirme que toutes les parties - bailleur(s), locataire(s) et éventuel(s) garant(s) - <br/>ont bien relu le bail</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton démarrer la signature -->
+        <button type="button" class="btn btn-dark">Démarrer la signature</button>
       </div>
     </div>
   </div>
