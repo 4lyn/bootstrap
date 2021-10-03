@@ -170,7 +170,7 @@ body_class: bg-grey
                     <li>l'attestation d'assurance</li>
                   </ul>
                   <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
-                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_edl">Voir le mail de quittance envoyé au locataire</a></p>
+                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_edl">Voir le mail envoyé au locataire</a></p>
                   <p class="mt-2">
                     <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red">
                       <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour envoyer le mail
@@ -245,8 +245,7 @@ body_class: bg-grey
                   </div>
                 </div>                
                 <div class="section__sousElement mt-4">
-                  <!-- Todo modal mail quittance -->
-                  <p><a href="#">Voir le mail de quittance envoyé au locataire</a></p>
+                  <p><a href data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
                   <div class="custom-control custom-switch mt-4 mb-4">
                     <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
                     <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
@@ -1265,6 +1264,73 @@ body_class: bg-grey
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Modèle du mail d'entrée dans les lieux au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Entrée dans les lieux au 23 Nov. 2021
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          L'état des lieux d'entrée au 23 Nov. 2021 approche,
+          je me permets de vous rappeler les éléments que vous devrez nous fournir lors de ce rendez-vous :<br> <br> 
+          <ul>
+            <li>
+              une attestation d'assurance multi-risque habitation
+              (si vous n'en avez pas encore vous pouvez <a href="https://www.luko.eu/fr/?utm_source=partner&amp;utm_medium=RealEstate&amp;utm_campaign=Smartloc&amp;utm_term=HomeFR" target="_blank">souscrire en ligne ici</a>)
+            </li>
+            <li>
+              un chèque pour le dépôt de garantie
+            </li>
+            <li>
+              un chèque pour le premier loyer au prorata
+            </li>
+          </ul>
+          Vous trouverez l'avis d'échéance correspondant à ces deux chèques en pièce jointe.<br> <br>
+          Ces 3 documents (les 2 chèques et l'attestation d'assurance) doivent absolument être remis lors de l'état des lieux d'entrée.<br> <br>
+          Dans le cas où le paiement se fait par virement, je vous rappelle que les fonds doivent être reçus avant l'état des lieux d'entrée.<br> <br>
+          Cordialement<br> <br>
+          <br>
+          Envoyé via Smartloc
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_quittance" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail de quittance au locataire</h3>
         <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
       </div>
       <div class="modal-body">
