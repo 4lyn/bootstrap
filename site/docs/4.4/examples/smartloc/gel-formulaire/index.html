@@ -1,0 +1,1258 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+body_class: bg-grey
+---
+
+
+<!-- HEADER -->
+
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="../../../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-5" href="#" data-toggle="modal" data-target="#modalContact"><h5>Contact</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="/login"><h5>Mon compte</h5></a>
+                    </li>
+                </div>
+            </nav> 
+        </div>
+    </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main class="formulaire container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <ul class="nav formulaire__menuEtapes">
+                <li class="nav-item">
+                    <a class="nav-link active formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_type" >
+                        <i class="fas fa-list-alt"></i> <span>Typologie</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_bien" >
+                        <i class="fas fa-building"></i> <span>Location</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_personnes" >
+                        <i class="fas fa-users"></i> <span>Mensualités</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_download" >
+                        <i class="far fa-check-square"></i> <span>Activation</span>
+                    </a>
+                </li>                                                           
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab_type">
+              <div class="row">
+                <div class="col-xl-12">
+                  <p>
+                    Nous avons besoin de quelques informations sur votre location (2 minutes maximum).
+                  </p>
+                  <p>
+                    Si vous n'avez pas encore de bail laissez certains champs vides, vous pourrez les remplir dans un second temps.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-7">
+                  <div class="formulaire__section">
+                      <div class="formulaire__sousElement">
+                          <h3 class="formulaire__sousElement_titre d-inline-block">
+                            Type de location 
+                          </h3>
+                          <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="lien_annexe d-inline-block ml-3">
+                            <i class="fal fa-question-circle"></i> infos
+                          </a>
+                          <div class="form-group">
+                              <div class="boutonsRadioViolets__conteneur">
+                                  <label>
+                                      <input type="radio" checked="checked" name="radio1">
+                                      <div>Location vide</div>
+                                  </label>
+                                  <label class="mt-3 mt-sm-0 mr-3">
+                                      <input type="radio" name="radio1">
+                                      <div>Location meublée</div>
+                                  </label>
+                              </div>
+                          </div>                    
+                      </div>
+                      <div class="formulaire__sousElement">
+                          <h3 class="formulaire__sousElement_titre d-inline-block">Type de bail</h3>
+                          <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="lien_annexe d-inline-block ml-3">
+                            <i class="fal fa-question-circle"></i> infos
+                          </a>
+                          <div class="form-group">
+                            <div class="boutonsRadioViolets__conteneur">
+                              <label>
+                                  <input type="radio" checked="checked" name="radio2">
+                                  <div>Bail standard</div>
+                              </label>
+                              <label class="mt-3 mt-sm-0">
+                                <input type="radio" name="radio2">
+                                <div>Colocation bail unique</div>
+                              </label>
+                              <label class="mt-3 mt-sm-0 ml-3">
+                                <input type="radio" name="radio2">
+                                <div>Colocation bail individuel</div>
+                              </label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="formulaire__sousElement">
+                        <h3 class="formulaire__sousElement_titre d-inline-block">Type de propriétaire</h3>
+                        <a data-toggle="modal" data-target="#modal_choix_meuble" href="#" class="lien_annexe d-inline-block ml-3">
+                          <i class="fal fa-question-circle"></i> infos
+                        </a>
+                        <div class="form-group">
+                          <div class="boutonsRadioViolets__conteneur">
+                            <label>
+                                <input type="radio" checked="checked" name="radio33">
+                                <div>Personne physique ou SCI familiale</div>
+                            </label>
+                            <label>
+                              <input type="radio" checked="checked" name="radio33">
+                              <div>Personne morale hors SCI familiale</div>
+                            </label>                                          
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end">
+                    <div class="col-sm-auto">
+                        <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                    </div>
+                    <div class="col-sm-auto mt-3 mt-sm-0">
+                        <button class="btn btn-dark" data-toggle="tab" href="#tab_bien" >Etape suivante</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-5">
+                  <div class="formulaire__section">
+                    <div class="formulaire__sousElement">
+                      <div class="card cursor_pointer card_active mt-0">
+                        <div class="card-body">
+                          <h4 class="card-title">ASSISTANT GESTION LOCATIVE</h4>
+                          <h5 class="card-subtitle mb-2 text-muted">Annulable à tout moment</h5>
+                          <ul class="list-unstyled">
+                            <li>Bail de location avec signature électronique</li>
+                            <li><span class="bg-success p-1">Etat des lieux numérique</span></li>
+                            <li>Envoi automatique des quittances</li>
+                            <li>Calcul de l'indexation annuelle</li>
+                            <li>Régularisation des charges</li>
+                            <li>Relances en cas d'impayés</li>
+                            <li>Contrôle des obligations locataires</li>
+                          </ul>
+                          <h4 class="mb-3" style="position: relative;"><span id="prix_barre">
+                            6,50€ / mois
+                          </span> <br>
+                          30 jours d'essai gratuits
+                          </h4> <a href="/gestion-locative" target="_blank" class="card-link">En savoir plus</a>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mb-3">
+                      Recommandé par
+                      <img src="../../../assets/img/smartloc/logos/challenges_fonce.png" class="h-auto ml-1" style="width: 100px;"></p> <p class="mb-3">
+                    </p>
+                    <p class="mb-3">Plus de 120 000 bailleurs particuliers utilisent Smartloc depuis 2012.</p>
+                    <p class="mb-3">
+                      <a target="_blank" href="https://www.trustindex.io/reviews/www.smartloc.fr" class="lien_annexe">Avis clients 4,8/5</a> 
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="tab_bien">
+            <div class="row">
+              <div class="col-xl-7">
+                  <div class="formulaire__section">
+                      <div class="formulaire__sousElement">
+                          <h3 class="formulaire__sousElement_titre">Descriptif du bien</h3>
+                          <div class="form-group">
+                              <label>Adresse du logement</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-row">
+                              <div class="form-group col-lg-6">
+                                  <label>Surface habitable</label>
+                                  <div class="champSaisie--illustré">
+                                    <input type="text" class="form-control">
+                                    <span>m²</span>
+                                  </div>
+                              </div>
+                              <div class="form-group col-lg-6">
+                                  <label>Nombre de pièces</label>
+                                  <div class="champSaisie--illustré">
+                                    <input type="text" class="form-control">
+                                    <span>pièces</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label>Type d'habitat</label>
+                              <div class="boutonsRadioViolets__conteneur">
+                                  <label>
+                                      <input type="radio" checked="checked" name="radio3">
+                                      <div>Immeuble</div>
+                                  </label>
+                                  <label>
+                                      <input type="radio" name="radio3">
+                                      <div>Maison</div>
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label>Type de copropriété</label>
+                              <div class="boutonsRadioViolets__conteneur">
+                                  <label>
+                                      <input type="radio" name="radio4">
+                                      <div>Copropriété</div>
+                                  </label>
+                                  <label>
+                                      <input type="radio" checked="checked" name="radio4">
+                                      <div>Monopropriété</div>
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row justify-content-between">
+                      <div class="col-sm-auto">
+                          <button type="button" class="btn btn-link " data-toggle="tab" href="#tab_type" >
+                              < Etape précédente
+                          </button>
+                      </div>
+                      <div class="col-sm-auto">
+                          <div class="row justify-content-end">
+                              <div class="col-sm-auto">
+                                  <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                              </div>
+                              <div class="col-sm-auto mt-3 mt-sm-0">
+                                  <button class="btn btn-dark" data-toggle="tab" href="#tab_personnes" >Etape suivante</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="formulaire__section">
+                  <div class="formulaire__sousElement">
+                    <div class="card cursor_pointer card_active mt-0">
+                      <div class="card-body">
+                        <h4 class="card-title">ASSISTANT GESTION LOCATIVE</h4>
+                        <h5 class="card-subtitle mb-2 text-muted">Annulable à tout moment</h5>
+                        <ul class="list-unstyled">
+                          <li>Bail de location avec signature électronique</li>
+                          <li><span class="bg-success p-1">Etat des lieux numérique</span></li>
+                          <li>Envoi automatique des quittances</li>
+                          <li>Calcul de l'indexation annuelle</li>
+                          <li>Régularisation des charges</li>
+                          <li>Relances en cas d'impayés</li>
+                          <li>Contrôle des obligations locataires</li>
+                        </ul>
+                        <h4 class="mb-3" style="position: relative;"><span id="prix_barre">
+                          6,50€ / mois
+                        </span> <br>
+                        30 jours d'essai gratuits
+                        </h4> <a href="/gestion-locative" target="_blank" class="card-link">En savoir plus</a>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mb-3">
+                    Recommandé par
+                    <img src="../../../assets/img/smartloc/logos/challenges_fonce.png" class="h-auto ml-1" style="width: 100px;"></p> <p class="mb-3">
+                  </p>
+                  <p class="mb-3">Plus de 120 000 bailleurs particuliers utilisent Smartloc depuis 2012.</p>
+                  <p class="mb-3">
+                    <a target="_blank" href="https://www.trustindex.io/reviews/www.smartloc.fr" class="lien_annexe">Avis clients 4,8/5</a> 
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab_personnes">
+              <div class="row">
+                  <div class="col-xl-7">
+                      <div class="formulaire__section">
+                          <div class="formulaire__sousElement">
+                              <h3 class="formulaire__sousElement_titre">Propriétaire</h3>
+                              <div class="form-group">
+                                  <label>Type de propriétaire</label>
+                                  <div class="boutonsRadioViolets__conteneur">
+                                      <label>
+                                          <input type="radio" checked="checked" name="radio5">
+                                          <div>Personne physique</div>
+                                      </label>
+                                      <label class="mt-3 mt-sm-0">
+                                          <input type="radio" name="radio5">
+                                          <div>Personne morale</div>
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Prénom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Nom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Prénom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Nom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter un propriétaire</a>
+                                  <a href="#" class="ml-4 btn-link"><i class="fas fa-minus"></i> Supprimer un propriétaire</a>
+                              </div>
+                              <div class="form-group">
+                                  <label>Adresse</label>
+                                  <input type="text" class="form-control">
+                              </div>
+                          </div>
+                          <div class="formulaire__sousElement">
+                              <h3 class="formulaire__sousElement_titre">Locataire</h3>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Prénom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Nom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Prénom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Nom</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter un locataire</a>
+                                  <a href="#" class="ml-4 btn-link"><i class="fas fa-minus"></i> Supprimer un locataire</a>
+                                  <a href="#" class="ml-4 btn-link"><i class="fas fa-info"></i> Afficher les détails</a>
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row justify-content-between">
+                          <div class="col-sm-auto">
+                              <button type="button" class="btn btn-link " data-toggle="tab" href="#tab_bien" >
+                                  < Etape précédente
+                              </button>
+                          </div>
+                          <div class="col-sm-auto">
+                              <div class="row justify-content-end">
+                                  <div class="col-sm-auto">
+                                      <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                  </div>
+                                  <div class="col-sm-auto mt-3 mt-sm-0">
+                                      <button class="btn btn-dark" data-toggle="tab" href="#tab_loyer" >Etape suivante</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-5">
+                    <div class="formulaire__section">
+                      <div class="formulaire__sousElement">
+                        <div class="card cursor_pointer card_active mt-0">
+                          <div class="card-body">
+                            <h4 class="card-title">ASSISTANT GESTION LOCATIVE</h4>
+                            <h5 class="card-subtitle mb-2 text-muted">Annulable à tout moment</h5>
+                            <ul class="list-unstyled">
+                              <li>Bail de location avec signature électronique</li>
+                              <li><span class="bg-success p-1">Etat des lieux numérique</span></li>
+                              <li>Envoi automatique des quittances</li>
+                              <li>Calcul de l'indexation annuelle</li>
+                              <li>Régularisation des charges</li>
+                              <li>Relances en cas d'impayés</li>
+                              <li>Contrôle des obligations locataires</li>
+                            </ul>
+                            <h4 class="mb-3" style="position: relative;"><span id="prix_barre">
+                              6,50€ / mois
+                            </span> <br>
+                            30 jours d'essai gratuits
+                            </h4> <a href="/gestion-locative" target="_blank" class="card-link">En savoir plus</a>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mb-3">
+                        Recommandé par
+                        <img src="../../../assets/img/smartloc/logos/challenges_fonce.png" class="h-auto ml-1" style="width: 100px;"></p> <p class="mb-3">
+                      </p>
+                      <p class="mb-3">Plus de 120 000 bailleurs particuliers utilisent Smartloc depuis 2012.</p>
+                      <p class="mb-3">
+                        <a target="_blank" href="https://www.trustindex.io/reviews/www.smartloc.fr" class="lien_annexe">Avis clients 4,8/5</a> 
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </p>
+                    </div>                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="tab_loyer">
+              <div class="row">
+                  <div class="col-xl-7">
+                      <div class="formulaire__section">
+                          <div class="formulaire__sousElement">
+                              <h3 class="formulaire__sousElement_titre">Loyer</h3>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Loyer mensuel hors charges</label>
+                                      <div class="champSaisie--illustré">
+                                          <input type="text" class="form-control">
+                                          <span>€/mois</span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Dépôt de garantie</label>
+                                      <div class="champSaisie--illustré">
+                                          <input type="text" class="form-control">
+                                          <span>€</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group mt-3">
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Le logement est dans une zone où le loyer est encadré
+                                          (seulement à Paris et à Lille)</label>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                      <label class="custom-control-label" for="customCheck2"> Le logement est en zone tendue (l'évolution du loyer entre 2 locataires est plafonnée à l'IRL 
+                                          / <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027399823&fastPos=1&fastReqId=2020967123&categorieLien=cid&oldAction=rechTexte" target="_blank">liste des communes en zone tendue</a>)</label>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6 mt-3">
+                                      <label>Trimestre de référence pour l'IRL</label>
+                                      <select class="custom-select">
+                                          <option>4T 2019 valeur 130,26</option>
+                                          <option>3T 2019 valeur 130,26</option>
+                                          <option>2T 2019 valeur 130,26</option>
+                                          <option>1T 2019 valeur 130,26</option>
+                                      </select>                               
+                                  </div>
+                                  <div class="form-group col-lg-6 mt-3">
+                                      <label>Date de révision du loyer</label>
+                                      <select class="custom-select">
+                                          <option>1er mois suivant l'anniversaire</option>
+                                          <option>Date d'anniversaire du bail</option>
+                                          <option>1er janvier</option>
+                                          <option>AUtre</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Le précédent locataire a quitté le logement</label>
+                                      <select class="custom-select">
+                                          <option>-</option>
+                                          <option>depuis moins de 18 mois</option>
+                                          <option>depuis plus de 18 mois</option>
+                                          <option>1er location</option>
+                                      </select>                               
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Dernier loyer versé par l'ancien locataire</label>
+                                      <div class="champSaisie--illustré ">
+                                          <input type="text" class="form-control">
+                                          <span>€/mois</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Date de versement du dernier loyer</label>
+                                      <input type="text" class="form-control">                             
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Date de révision du dernier loyer</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="formulaire__sousElement">
+                            <h3 class="formulaire__sousElement_titre">Charges</h3>
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label>Type de charges</label>
+                                    <select class="custom-select">
+                                        <option>-</option>
+                                        <option>Provisions sur charges</option>
+                                        <option>Forfait de charges</option>
+                                        <option>Paiement périodique sans provisions</option>
+                                        <option>Absence de charges</option>
+                                    </select>                               
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label>Montant mensuel des charges</label>
+                                    <div class="champSaisie--illustré ">
+                                        <input type="text" class="form-control">
+                                        <span>€/mois</span>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="form-group">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                <label class="custom-control-label" for="customCheck12">
+                                  Le bailleur refacture une partie des dépenses privatives au locataire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Abonnements conservés par le propriétaire</label><br/>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_elec" class="custom-control-input">
+                                <label for="refac_elec" class="custom-control-label">
+                                   Electricité
+                                 </label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_internet" class="custom-control-input">
+                                <label for="refac_internet" class="custom-control-label">
+                                   Internet
+                                 </label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_gaz" class="custom-control-input">
+                                <label for="refac_gaz" class="custom-control-label">
+                                   Gaz
+                                 </label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" id="refac_eau" class="custom-control-input">
+                                <label for="refac_eau" class="custom-control-label">
+                                   Eau
+                                 </label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Ces dépenses privatives sont-elles incluses dans la provision/forfait de charges ?</label>
+                              <div class="boutonsRadioViolets__conteneur">
+                                <label>
+                                  <input type="radio" name="refac_inlus">
+                                  <div>Oui</div>
+                                </label>
+                                <label>
+                                  <input type="radio" checked="checked"  name="refac_inclus">
+                                  <div>Non</div>
+                                </label>
+                              </div>
+                            </div>                            
+                            <div class="form-row">
+                              <div class="form-group col-lg-6">
+                                <label>Montant récupérable</label>
+                                <div class="champSaisie--illustré">
+                                  <input type="text" class="form-control">
+                                  <span>€/an</span>
+                                </div>
+                              </div>
+                              <div class="form-group col-lg-6">
+                                <label>Fréquence de paiement</label>
+                                <div class="boutonsRadioViolets__conteneur">
+                                  <label><input type="radio"  name="refac_frequence">
+                                    <div>Annuellement</div>
+                                  </label>
+                                  <label><input type="radio"  checked="checked" name="refac_frequence">
+                                    <div>Mensuellement</div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-lg-6">
+                                <div class="form-group">
+                                  <label>Fréquence de régularisation</label>
+                                  <select class="custom-select">
+                                    <option>Forfait non régularisé</option>
+                                    <option>Mensuelle</option>
+                                    <option>Trimestrielle</option>
+                                    <option>Annuelle</option>
+                                  </select> 
+                                </div>
+                              </div>
+                            </div>                           
+                          </div>
+                          <div class="formulaire__sousElement">
+                              <h3 class="formulaire__sousElement_titre">Durée</h3>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Date d'effet'</label>
+                                      <div class="champSaisie--illustré">
+                                          <input class="form-control" type="text" placeholder="JJ/MM/AAAA">
+                                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0)">
+                                                  <path d="M14.5015 2.5H1.50146C0.94918 2.5 0.501465 2.94772 0.501465 3.5V14.5C0.501465 15.0523 0.94918 15.5 1.50146 15.5H14.5015C15.0538 15.5 15.5015 15.0523 15.5015 14.5V3.5C15.5015 2.94772 15.0538 2.5 14.5015 2.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M0.501465 6.5H15.5015" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M4.50146 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  <path d="M11.5015 4V0.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </g>
+                                              <defs>
+                                                  <clipPath id="clip0">
+                                                      <path d="M0 0H16V16H0V0Z" fill="white"/>
+                                                  </clipPath>
+                                              </defs>
+                                          </svg>                                        
+                                      </div>
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                      <label>Durée du contrat</label>
+                                      <input type="text" class="form-control">
+                                      <div class="custom-control custom-checkbox mt-3">
+                                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                          <label class="custom-control-label" for="customCheck1">Contrat inférieur à la durée légale</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Le loyer est payé</label>
+                                  <div class="boutonsRadioViolets__conteneur">
+                                      <label>
+                                          <input type="radio" checked="checked" name="radio45">
+                                          <div>en avance pour le mois à venir</div>
+                                      </label>
+                                      <label class="mt-3 mt-sm-0">
+                                          <input type="radio" name="radio45">
+                                          <div>une fois le mois écoulé</div>
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Jour de paiement du loyer</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row justify-content-between">
+                          <div class="col-sm-auto">
+                              <button type="button" class="btn btn-link " data-toggle="tab" href="#tab_personnes" >
+                                  < Etape précédente
+                              </button>
+                          </div>
+                          <div class="col-sm-auto">
+                              <div class="row justify-content-end">
+                                  <div class="col-sm-auto">
+                                      <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                                  </div>
+                                  <div class="col-sm-auto mt-3 mt-sm-0">
+                                      <button class="btn btn-dark" data-toggle="tab" href="#tab_clauses" >Etape suivante</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-5">
+                    <div class="formulaire__section">
+                      <div class="formulaire__sousElement">
+                        <div class="card cursor_pointer card_active mt-0">
+                          <div class="card-body">
+                            <h4 class="card-title">ASSISTANT GESTION LOCATIVE</h4>
+                            <h5 class="card-subtitle mb-2 text-muted">Annulable à tout moment</h5>
+                            <ul class="list-unstyled">
+                              <li>Bail de location avec signature électronique</li>
+                              <li><span class="bg-success p-1">Etat des lieux numérique</span></li>
+                              <li>Envoi automatique des quittances</li>
+                              <li>Calcul de l'indexation annuelle</li>
+                              <li>Régularisation des charges</li>
+                              <li>Relances en cas d'impayés</li>
+                              <li>Contrôle des obligations locataires</li>
+                            </ul>
+                            <h4 class="mb-3" style="position: relative;"><span id="prix_barre">
+                              6,50€ / mois
+                            </span> <br>
+                            30 jours d'essai gratuits
+                            </h4> <a href="/gestion-locative" target="_blank" class="card-link">En savoir plus</a>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mb-3">
+                        Recommandé par
+                        <img src="../../../assets/img/smartloc/logos/challenges_fonce.png" class="h-auto ml-1" style="width: 100px;"></p> <p class="mb-3">
+                      </p>
+                      <p class="mb-3">Plus de 120 000 bailleurs particuliers utilisent Smartloc depuis 2012.</p>
+                      <p class="mb-3">
+                        <a target="_blank" href="https://www.trustindex.io/reviews/www.smartloc.fr" class="lien_annexe">Avis clients 4,8/5</a> 
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                      </p>
+                    </div>                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="tab_download">
+            <div class="row">
+              <div class="col-xl-7">
+                <div class="formulaire__section">
+                  <div class="formulaire__sousElement">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div id="msg-email"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Email de sauvegarde</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="login.remember_me" class="custom-control-input">
+                        <label for="login.remember_me" class="custom-control-label">Se souvenir de moi sur cet appareil</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="is_cgu" class="custom-control-input">
+                        <label for="is_cgu" class="custom-control-label">
+                          Je valide les <a href="/cgu" target="_blank" class="lien_annexe">conditions générales d'utilisation</a>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row mt-4 mb-4">
+                      <div class="col-sm-auto mt-0 mt-lg-3">
+                        <button type="button" class="btn btn-dark">
+                          Activer la gestion
+                        </button>
+                      </div>
+                    </div>
+                    <h3>
+                      30 jours d'essai gratuits
+                    </h3>
+                    <p><small>
+                      Passé ce délai, abonnement trimestriel de
+                      19,50€
+                      (3 x 6,50€/mois),
+                      renouvelable tacitement, annulable à tout moment en ligne sans frais,
+                      y compris pendant la période d'essai.
+                    </small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="formulaire__section">
+                  <div class="formulaire__sousElement">
+                    <div class="card cursor_pointer card_active mt-0">
+                      <div class="card-body">
+                        <h4 class="card-title">ASSISTANT GESTION LOCATIVE</h4>
+                        <h5 class="card-subtitle mb-2 text-muted">Annulable à tout moment</h5>
+                        <ul class="list-unstyled">
+                          <li>Bail de location avec signature électronique</li>
+                          <li><span class="bg-success p-1">Etat des lieux numérique</span></li>
+                          <li>Envoi automatique des quittances</li>
+                          <li>Calcul de l'indexation annuelle</li>
+                          <li>Régularisation des charges</li>
+                          <li>Relances en cas d'impayés</li>
+                          <li>Contrôle des obligations locataires</li>
+                        </ul>
+                        <h4 class="mb-3" style="position: relative;"><span id="prix_barre">
+                          6,50€ / mois
+                        </span> <br>
+                        30 jours d'essai gratuits
+                        </h4> <a href="/gestion-locative" target="_blank" class="card-link">En savoir plus</a>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mb-3">
+                    Recommandé par
+                    <img src="../../../assets/img/smartloc/logos/challenges_fonce.png" class="h-auto ml-1" style="width: 100px;"></p> <p class="mb-3">
+                  </p>
+                  <p class="mb-3">Plus de 120 000 bailleurs particuliers utilisent Smartloc depuis 2012.</p>
+                  <p class="mb-3">
+                    <a target="_blank" href="https://www.trustindex.io/reviews/www.smartloc.fr" class="lien_annexe">Avis clients 4,8/5</a> 
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-sm-auto">
+                <button type="button" class="btn btn-link " data-toggle="tab" href="#tab_annexes" >
+                    < Etape précédente
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+<div class="modal fade " id="modalContact" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade " id="modalAboZen" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Gestion locative par défaut</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>La gestion locative en ligne vous est proposée <strong>par défaut gratuitement</strong> avec le bail complet.</p>
+                <p>Vous pouvez annuler cette option à tout moment en ligne sans frais, même pendant les 3 mois gratuits, mais nous sommes persuadés que nos outils automatiques et notre espace de gestion vous convaincront.</p>
+                <p>Après 3 mois gratuis, l'abonnement de gestion locative en ligne passe à 4,90 €/mois, renouvelable tacitement chaque trimestre.</p>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal_bail_simple" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Attention votre bail limité ne contiendra pas :</h3>
+                <ul class="fa-ul my-4">
+                    <li><i class="fas fa-times-circle"></i> Clause sur les visites pour relouer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause de paiement du loyer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause de franchise de loyer</li>
+                    <li><i class="fas fa-times-circle"></i> Clause animaux domestiques</li>
+                    <hr>
+                    <li><i class="fas fa-times-circle"></i> Acte de caution solidaire</li>
+                    <li><i class="fas fa-times-circle"></i> Inventaire des meubles</li>
+                    <li><i class="fas fa-times-circle"></i> Liste des charges</li>
+                    <hr>
+                    <li><i class="fas fa-times-circle"></i> 3 mois de gestion en ligne offerts (checklist entrée dans les lieux, quittances, etc)</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Choisir la formule Bail Complet</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Je ne veux pas d'un bail complet</button>
+            </div>											
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_choix_meuble">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Type de location</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Location vide</h4>
+        <p><strong>Définition</strong> : location d'un logement sans meubles ou avec des meubles insuffisants pour respecter le mobilier minimum fixé par décret.</p>
+        <p><strong>Conséquences</strong></p>
+        <ul>
+          <li>Dépôt de garantie : 1 mois de loyer hors charges maximum</li>
+          <li>Durée du bail : 3 ans reconductible tacitement</li>
+          <li>Provision pour charges par défaut si bail standard</li>
+        </ul>
+        <hr>
+        <h4>Location meublée</h4>
+        <p><strong>Définition</strong> : location d'un logement respectant la liste minimum des meubles.</p>
+        <p><strong>Conséquences</strong></p>
+        <ul>
+          <li>Dépôt de garantie : 2 mois de loyer hors charges maximum</li>
+          <li>Durée du bail :  1 an reconductible tacitement</li>
+          <li>Forfait de charges par défaut</li>
+          <li>Inventaire des meubles en annexe</li>
+        </ul>
+        <hr>
+        <h4>En savoir plus</h4>
+        <p><a href="/blog/louer-meuble-ou-vide/">Fiche complète sur le vide vs meublé</a></p>
+        <p><a href="/blog/liste-des-meubles-obligatoires-en-location-meublee/">Fiche sur le mobilier minimum</a></p>             
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_apercu_edl">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Etat des lieux</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+          <img src="https://www.smartloc.fr/blog/wp-content/uploads/2020/11/etat_des_lieux_complet-min.png" class="img-fluid">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal_annexes">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Diagnostics à fournir</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Durée de validité et obligation</h4>
+        <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>Diagnostic</th>
+                  <th>Validité</th>
+                  <th>Commentaires</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Surface habitable</td>
+                  <td>Illimité</td>
+                  <td>Facultatif, à refaire si travaux</td>
+              </tr>
+              <tr>
+                  <td>Diagnostic énergétique (DPE)</td>
+                  <td>10 ans</td>
+                  <td>Obligatoire</td>
+              </tr>
+              <tr>
+                  <td>Plomb</td>
+                  <td>6 ans si positif, illimité sinon</td>
+                  <td>Obligatoire pour les logements construits avant le 01/01/1949</td>
+              </tr>
+              <tr>
+                  <td>Amiante</td>
+                  <td>3 ans si positif, illimité sinon</td>
+                  <td>Optionnel mais obligatoire en cas de demande du locataire pour les logement construits avant le 01/07/1997</td>
+              </tr>
+              <tr>
+              </tr><tr>
+                  <td>Electricité</td>
+                  <td>6 ans </td>
+                  <td>Obligatoire si installation de plus de 15 ans</td>
+              </tr>
+              <tr>
+                  <td>Gaz</td>
+                  <td>6 ans </td>
+                  <td>Obligatoire si installation de plus de 15 ans</td>
+              </tr>
+              <tr>
+                  <td>État des risques et pollutions</td>
+                  <td>6 mois</td>
+                  <td>Obligatoire</td>
+              </tr>
+          </tbody>
+        </table>
+        <h4>Quels risques à ne pas fournir les diagnostics ?</h4>
+        <p>
+          Ces diagnostics sont en théorie obligatoires mais en pratique leur absence ne permet pas au locataire de remettre en cause le bail ou 
+          de demander des dommages. Ils n'ont qu'une <strong>valeur informative</strong> sauf l'état des risques naturels et technologiques qui 
+          permet au locataire de demander la résolution ou une <strong>diminution du loyer</strong>.
+        </p>
+        <p>Pour commander vos diagnostics vous pouvez passer par notre <a href="/diagnostics-location" target="_blank">partenaire Allodiagnostic</a>.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_resolutoire">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause résolutoire</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Cette clause vous permet de faire constater automatiquement la résiliation du bail devant un juge en cas de non respect par le locataire de ses obligations contractuelles. Cela vous permet notamment de gagner du temps et de poursuivre rapidement la procédure en vue de l'expulsion du locataire.</p>
+        <p><b>Attention</b> est réputée non écrite toute clause motivant la résiliation du bail par des motifs autre que ceux indiqués dans notre clause type.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_solidarite">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de solidarité</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p><b>En cas de colocation</b>, cette clause vous permet de demander à n'importe quel colocataire de payer pour les obligations (loyers, dégradations) de l'intégralité de la colocation.</p>
+        <p>Attention la loi ALUR promulguée en 2014 fait éteindre la solidarité d'un des colocataires à son remplacement par un nouveau colocataire, ou à défaut 6 mois après son congé.</p>
+        <p>Dernier point, les couples mariés ou pacsés sont automatiquement solidaires, mais nous vous conseillons de rajouter cette clause qui vous protégera notamment en cas de divorce ou de rupture du PACS.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_visite">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de visite</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>En pratique le locataire n'est pas obligé de vous laisser visiter une fois le congé envoyé (de son initiative ou de la vôtre). Dans tous les cas il est important de profiter du congé pour réaliser vos visites en vue d'une vente ou d'une location. Il est donc nécessaire de le spécifier explicitement dans le bail.</p>
+        <p>Nous proposons une clause avec la durée maximum de visite que vous pouvez demander. Vous pouvez par contre librement fixer le nombre de créneaux demandés par semaine en jours ouvrés.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal_paiement">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de paiement</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Il est interdit d'imposer le prélèvement automatique, mais rien ne vous empêche de contraindre le locataire de payer par prélèvement ou virement. Vous éviterez ainsi les chèques qui impliquent des démarches bancaires et souvent des retards, ou encore des paiements en espèces qui ne laissent aucune trace.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_dispo_meubles">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de mise à disposition des meubles</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p><b>En location vide</b>, si vous indiquez des équipements ou des meubles sur l'état des lieux ou sur le bail, le locataire pourrait vous demander de les réparer ou de les remplacer en cas de panne ou dysfonctionnement.</p>
+        <p>Si vous avez mis à disposition ses meubles par convenance (ou qu'ils ont été laissés par le précédent locataire), nous vous recommandons d'insérer cette clause. Elle vous permettra de décider si vous souhaitez ou non procéder au remplacement ou à la réparation.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_entretien">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause d'entretien annuel</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Le locataire a l'obligation de réaliser une visite de contrôle annuel de la chaudière et des éléments de production d'eau chaude par une professionnel agréé. La clause est optionelle car l'obligation est prévue dans la loi, certains bailleurs préfèrent néanmoins l'insérer pour la rappeler au locataire.</p>
+        <p>Attention vous pouvez rappeler cette obligation mais il est abusif de demander au locataire de souscrire à un contrat annuel.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_degradations">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause dégradations</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>La responsabilité du locataire en cas de dégradations est prévue par la loi donc en théorie il n'est pas nécessaire de la rappeler dans le bail.</p>
+        <p>Néanmoins cette clause est utile car elle introduit le concept de vétusté en se référant à la grille de vétusté que nous proposons en annexe dans la section suivante.</p>
+        <p>Le calcul des dégradations est LE point de contentieux à la fin du bail, la définition d'une grille de vétusté et d'un mode de calcul simplifié permet donc de désamorcer la plupart des contestations.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_renonciation">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de renonciation à la régularisation</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Au départ du locataire, les charges définitives de l'année en cours, et parfois de l'année précédente, ne sont pas encore connues.</p>
+        <p>Pour éviter de conserver 20% du dépôt de garantie et de faire une régularisation parfois 18 mois après la fin du bail, 
+          vous pouvez convenir avec le locataire de ne pas faire de régularisation a posteriori. 
+          Plus d'infos sur <a href="/blog/clause-renonciation-regularisation/" target="_blank">notre fiche concernant cette clause</a>.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_travaux_bailleur">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de travaux du bailleur en cours de bail</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Si vous vous engagez à réaliser des travaux d'amélioration du logement en cours de bail, vous pouvez prévoir une augmentation de loyer. 
+          Vous devez détailler la nature des travaux ou des acquisitions réalisées (il ne peut pas s'agir de travaux d'entretien ou de mise aux normes), 
+          les modalités d'exécution, le délai de réalisation ainsi que le montant de la majoration du loyer.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_travaux_locataire">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de travaux du locataire en cours de bail</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Si le locataire s'engage à réaliser des travaux d'embellissement et que vous acceptez en contrepartie une baisse de loyer, 
+          il est recommandé d'écrire une clause explicite. Vous devez préciser les travaux, la durée de cette diminution et, 
+          en cas de départ anticipé du locataire, les modalités de son dédommagement sur justification des dépenses effectuées.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_travaux_reloc">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Intérêt de la clause de travaux entre deux locataires</h3>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p><b>Dans les zones tendues</b> l'évolution du loyer entre deux locataires est plafonnée à l'IRL. Deux exceptions possibles</p>
+        <ul>
+          <li>le logement est libre depuis plus de 18 mois</li>
+          <li>vous avez réalisé des travaux d'amélioration ou de mise en conformité avec les caractéristiques de décence depuis le départ du dernier locataire</li>
+        </ul>
+        <p>Dans ce dernier cas, vous pouvez utiliser cette clause pour répercuter 15% de ces travaux en hausse de loyer s'ils représentent plus de 50% d'une année du dernier loyer hors charges, ou augmenter librement si les travaux réalisés depuis moins de six mois représentent plus d'une année du dernier loyer hors charges.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
