@@ -36,6 +36,7 @@
   &:disabled {
     opacity: $btn-disabled-opacity;
     @include box-shadow(none);
+    cursor: not-allowed;
   }
 
   &:not(:disabled):not(.disabled):active,
