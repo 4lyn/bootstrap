@@ -193,7 +193,7 @@ body_class: bg-grey
                   </p>
                   <!-- Todo conditionnement meuble/vide -->
                   <p>
-                    <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank" >
+                    <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit" target="_blank" >
                       <i class="fa fa-file-pdf"></i> Inventaire des meubles
                     </a>
                   </p>
@@ -433,7 +433,7 @@ body_class: bg-grey
                 </a>								
               </p>
               <p>
-                <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit?usp=sharing" target="_blank" >
+                <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit" target="_blank" >
                   <i class="fa fa-file-pdf"></i> Inventaire des meubles
                 </a>
               </p>
@@ -658,7 +658,7 @@ body_class: bg-grey
               <div class="card cardLigne">
                 <div class="card-body">
                   <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
-                  <span><a href="https://docs.google.com/spreadsheets/d/12gk2o0EF-hdVDazCGfD2LM_whAr1dD-_0vL7w_RD-4U/edit#gid=0" class="stretched-link">
+                  <span><a href="https://docs.google.com/spreadsheets/d/12gk2o0EF-hdVDazCGfD2LM_whAr1dD-_0vL7w_RD-4U/edit" class="stretched-link">
                     Tableau de calcul pour calculer les charges déductibles</a>
                   </span>
                 </div>
@@ -686,7 +686,7 @@ body_class: bg-grey
             <div class="section__sousElement conteneurCards--colonne conteneurCardLignes">
               <div class="card cardLigne">
                 <div class="card-body">
-                  <i class="fa fa-file-pdf cardLigne__icone icone_medium"></i>
+                  <i class="fa fa-file-word cardLigne__icone icone_medium"></i>
                   <span><a href="https://drive.google.com/open?id=13cCf6gM3uPlup5TPFdK_GuT2HcCvT3zIPh8eOpevVgA" class="stretched-link">
                     Courrier de demande de l'attestation d'assurance</a>
                   </span>
@@ -835,7 +835,7 @@ body_class: bg-grey
               <div class="card cardLigne">
                 <div class="card-body">
                   <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
-                  <span><a href="https://docs.google.com/spreadsheets/d/1jzFrkYz4mWkotYXR4meKRdAnWZ6sO9LAsLKnGq8HfOs/edit?usp=sharing" class="stretched-link">
+                  <span><a href="https://docs.google.com/spreadsheets/d/1jzFrkYz4mWkotYXR4meKRdAnWZ6sO9LAsLKnGq8HfOs/edit" class="stretched-link">
                     Feuille de calcul sur la régularisation</a></span>
                 </div>
               </div>
@@ -908,13 +908,51 @@ body_class: bg-grey
             <div id="echeances_conge" class="menuSticky--sousElement__ancre"></div>
             <h3 class="card-title">Congé propriétaire	<br> <small><i class="fa fa-calendar-alt"></i> Septembre 2022</small></h3>
             <hr>
-            <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
-              pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
-            <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
-              de garantie (que vous pouvez encaisser dès la signature).</p> 
-            <hr> 
-            <h4>Bail de location</h4>
-            <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a> <button class="btn btn-outline-dark btn-sm ml-3">Modifier le bail</button>
+            <div class="section__sousElement">
+              <p>Le locataire peut partir à tout moment du logement, on dit qu'il donne congé. 
+                Le bailleur quant à lui ne peut donner congé qu'à la date d'anniversaire du bail.</p>
+              <p>Donner congé revient donc à refuser le renouvellement, et ce refus est très encadré comme nous allons le voir.</p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Comment motiver son congé ?</h4>
+              <p>Trois raisons permettent de donner congé :</p>
+              <ul>
+                <li>vente du logement
+                <li>reprise pour habiter ou loger un proche
+                <li>motif légitime et sérieux, c'est à dire non respect du bail</li>
+              </ul>
+              <p>Ce sont les seules raisons possibles, vous ne pouvez pas refuser le renouvellement pour d'autres motifs. Ces motifs sont très éncadrés, nous vous invitons donc à lire notre fiche ci-dessous :</p>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/conge-du-bailleur-motifs-et-preavis/" class="stretched-link">
+                    Tout savoir sur le congé donné par le bailleur</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Quand donner congé à son locataire ?</h4>
+              <p>
+                Si vous souhaitez donner congé, la loi impose de respecter un préavis de {{ bail.bien.is_meuble ? '3' : '6' }} mois avant la date d'anniversaire du bail.
+              </p>
+              <p>Il est crucial de respecter ce délai, nous vous envoyons donc une notification X jours avant la date limite pour ne pas oublier d'envoyer le courrier au locataire.</p>
+              <p>En effet le locataire doit accuser réception de votre recommandé ou émarger le document physiquement pour que le préavis démarre, il est donc primordial de réaliser les démarches en avance.</p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Comment donner congé ?</h4>
+              <p>Vous devez envoyer un courrier précisant le motif du congé à tous les titulaires du bail.</p>
+              <p>Le courrier doit être envoyé en recommandé avec RAR, puisque c'est la date de réception qui fait foi pour le respect du préavis.</p>
+              <p>Le modèle que nous vous proposons prévoit également une notice d'information en annexe, elle est obligatoire depuis le 1er janvier 2018 sans quoi le congé n'est pas valide.</p>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/document/d/1Af-aFsmIAZZT92dHJUyngmQTVodwfKpmY12ITeaBn0s/edit" class="stretched-link">
+                    Modèle de courrier pour congé</a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
