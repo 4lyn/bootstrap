@@ -549,8 +549,7 @@ body_class: bg-grey
                 <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
                   Quittance de loyer avril 2021</a>
               </p>
-              <!-- TODO modal anciennes quittances -->              
-              <button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0">Anciennes quittances</button>
+              <button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_anciennes_quittances">Anciennes quittances</button>
               <button data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button>              
             </div>
             <div class="section__sousElement conteneurCardLignes">
@@ -1101,6 +1100,48 @@ body_class: bg-grey
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
         <!-- Todo bouton save -->
         <button type="button" class="btn btn-dark">Sauvegarder les modifications</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_anciennes_quittances" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Anciennes quittances</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire__sousElement">
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <label>Mois de la quittance</label>
+              <select class="custom-select">
+                <option>Janvier</option>
+                <option>Février</option>
+              </select> 
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Année de la quittance</label>
+              <select class="custom-select">
+                <option>2018</option>
+                <option>2019</option>
+              </select> 
+            </div>
+          </div>
+          <p>
+            <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+              Avis d'échéance avril 2021</a>
+          </p>
+          <p>
+            <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+              Quittance de loyer avril 2021</a>
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
       </div>
     </div>
   </div>
