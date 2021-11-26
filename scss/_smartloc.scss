@@ -834,6 +834,10 @@ ul.liste--check li::before {
   border: none;
 }
 
+.bg-warning .modal .card {
+  border: $card-border-width solid $card-border-color !important;
+}
+
 .card_active{
   border:6px solid #a896d8;
 }
