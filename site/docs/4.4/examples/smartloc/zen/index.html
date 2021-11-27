@@ -687,9 +687,9 @@ body_class: bg-grey
             <div class="section__sousElement conteneurCardLignes">
               <div class="card cardLigne">
                 <div class="card-body">
-                  <i class="fa fa-file-word cardLigne__icone icone_medium"></i>
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
                   <span><a href="https://drive.google.com/open?id=13cCf6gM3uPlup5TPFdK_GuT2HcCvT3zIPh8eOpevVgA" class="stretched-link">
-                    Courrier de demande de l'attestation d'assurance</a>
+                    Modèle de courrier de demande de l'attestation d'assurance</a>
                   </span>
                 </div>
               </div>
@@ -1070,13 +1070,13 @@ body_class: bg-grey
           <h2>Incidents</h2>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#assurances_impaye" class="menuSticky--sousElement__item">Impayés de loyer</a></h4>
+              <h4 class="mb-4"><a href="#incidents_impaye" class="menuSticky--sousElement__item">Impayés de loyer</a></h4>
             </li>
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#assurances_depannage" class="menuSticky--sousElement__item">Dépannage technique</a></h4>
+              <h4 class="mb-4"><a href="#incidents_depannage" class="menuSticky--sousElement__item">Dépannage technique</a></h4>
             </li>
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#assurances_refacturation" class="menuSticky--sousElement__item">Refacturation d'une dépense au locataire</a></h4>
+              <h4 class="mb-4"><a href="#incidents_refacturation" class="menuSticky--sousElement__item">Refacturation d'une dépense au locataire</a></h4>
             </li>            
           </ul>
         </div>
@@ -1084,7 +1084,7 @@ body_class: bg-grey
       <div class="col-lg-7">
         <div class="card">
           <div class="card-body">
-            <div id="assurances_impaye" class="menuSticky--sousElement__ancre"></div>
+            <div id="incidents_impaye" class="menuSticky--sousElement__ancre"></div>
             <h3 class="card-title">Impayés de loyer</h3>
             <hr>
             <div class="section__sousElement">
@@ -1158,7 +1158,7 @@ body_class: bg-grey
         </div>
         <div class="card">
           <div class="card-body">
-            <div id="assurances_pno" class="menuSticky--sousElement__ancre"></div>
+            <div id="incidents_depannage" class="menuSticky--sousElement__ancre"></div>
             <h3 class="card-title">Dépannage technique</h3>
             <hr>
             <div class="section__sousElement">
@@ -1179,7 +1179,87 @@ body_class: bg-grey
               </p>
             </div>
           </div>
-        </div>        
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div id="incidents_refacturation" class="menuSticky--sousElement__ancre"></div>
+            <h3 class="card-title">Refacturation d'une dépense au locataire</h3>
+            <hr>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Définition de la prise en charge</h4>
+              <p>Les charges et réparations payables par le locataires sont définies par décret. Les deux listes sont exhaustives, donc si la dépense que vous avez engagée n'y figure pas,
+                vous ne pourrez pas la refacturer au locataire.</p>
+            </div>
+            <div class="section__sousElement conteneurCardLignes">
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                  <span><a href="/bail/docs/reparation_locative_pdf.pdf" class="stretched-link">Liste des réparations locatives à la charge du locataire</a></span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="/bail/docs/charges_recuperables_pdf.pdf" class="stretched-link">Liste des charges récupérables auprès du locataire</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Courrier de refacturation au locataire</h4>
+              <p>Les réparations locatives sont donc refacturables au locataire, il suffit de lui envoyer un courrier avec la facture de l'intervention. 
+                Nous vous avons préparé un modèle de courrier ci-dessous. Il prévoit le cas particulier où la réparation est refacturable au locataire car trouvant sa source dans 
+                un manque d'entretien, une erreur ou une négligence du locataire. 
+              </p>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/document/d/1Q9xRgFE9VKVMpmi4K_5k3t4WcUvlFwMCDZRGMC5YHBE/edit" class="stretched-link">
+                    Modèle de courrier de refatcuration au locataire</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+              <p>En cas de doutes sur la prise en charge par le locataire ou le bailleur de la réparation vous pouvez demander conseil à un de nos experts.</p>
+              <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+            </div>
+            <div class="section__sousElement conteneurCardLignes">
+              <h4 class="section__sousElement_titre">Nos fiches pratiques sur les pannes courantes et leur prise en charge</h4>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/entretien-et-reparations-quels-elements-a-charge-du-locataire/" class="stretched-link">Règles générales pour savoir qui paie</a></span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/entretien-et-reparation-du-chauffe-ballon-proprietaire-ou-locataire-responsable/" class="stretched-link">Ballon d'eau chaude en panne : locataire ou propriétaire ?</a></span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/entretien-de-la-chaudiere-le-locataire-doit-il-payer/" class="stretched-link">Entretien de la chaudière : locataire ou propriétaire ?</a></span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/serrure-cassee-locataire-ou-proprietaire-responsable/" class="stretched-link">Serrure cassée : locataire ou propriétaire</a></span>
+                </div>
+              </div>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                  <span><a href="/blog/volet-ou-store-casse-qui-paie/" class="stretched-link">Volet bloqué : locataire ou propriétaire</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>    
   </div>
