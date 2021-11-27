@@ -346,7 +346,7 @@ body_class: bg-grey
         <a class="menuSticky--section__conteneurLiens_item" href="#incidents">Incidents</a>
       </li>
       <li class="nav-item">
-        <a class="menuSticky--section__conteneurLiens_item" href="#">Sortie du locataire</a>
+        <a class="menuSticky--section__conteneurLiens_item" href="#sortie">Sortie du locataire</a>
       </li>
       <li class="nav-item d-lg-none d-xl-inline-block">
         <a class="menuSticky--section__conteneurLiens_item" href="#">Bibliothèque</a>
@@ -1286,7 +1286,80 @@ body_class: bg-grey
           </div>
         </div>
       </div>
-    </div>    
+    </div>  
+    
+    <div class="row pt-5 pb-5">
+      <div class="col-lg-3 offset-lg-1">
+        <div class="menuSticky--section__ancre" id="sortie"></div>
+        <div class="menuSticky--sousElement" id="menuSticky_zen_sortie">
+          <h2>Sortie du locataire</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#sortie_edl" class="menuSticky--sousElement__item">État des lieux de sortie</a></h4>
+            </li>
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#sortie_dg" class="menuSticky--sousElement__item">Restitution du dépôt de garantie</a></h4>
+            </li>
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#sortie_resil" class="menuSticky--sousElement__item">Résiliation de l'assurance</a></h4>
+            </li> 
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#sortie_new" class="menuSticky--sousElement__item">Nouveau bail de location</a></h4>
+            </li>           
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="card">
+          <div class="card-body">
+            <div id="sortie_edl" class="menuSticky--sousElement__ancre"></div>
+            <h3 class="card-title">État des lieux de sortie</h3>
+            <hr>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Quand fixer la date de sortie ?</h4>
+              <p>En cas de résiliation du bail par le locataire, celui-ci doit respecter un préavis de <span v-if="bail.bien.is_meuble">1 mois</span>
+                <span v-else>3 mois (sauf exceptions voir notre <a href="/blog/preavis-conge-locataire/" target="_blank">fiche sur le congé locataire</a>)</span>.</p>
+              <p>La date théorique de fin de bail est la date d'anniversaire du bail; les loyers sont théoriquement dus jusqu'à cette date.</p>
+              <p>Pour des raisons pratiques vous pouvez fixer une date de sortie différente de la date de fin de bail.
+                Sachez que même si vous acceptez de faire l'état des lieux avant la date de fin de bail, les loyers sont dus jusqu'à cette date, sauf accord contraire de votre part.</p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Modèle d'état des lieux de sortie</h4>
+              <p>Nous vous fournissons un modèle d'état des lieux de sortie, ainsi que la quittance et l'avis d'échéance au prorata de la date de sortie.</p>
+              <p>Pensez à désactiver l'envoi automatique des quittances si vous avez opté pour cette option.</p>
+            </div>
+            <div class="formulaire__sousElement">
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label>Date de fin de bail</label>
+                  <div class="champSaisie--illustré">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <p>
+                <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
+                  <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
+                </a>
+              </p>
+              <p>
+                <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
+                  <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
+                </a>								
+              </p>
+              <p><a href="#"><i class="fa fa-file-pdf"></i> Avis d'échéance au prorata</a></p>
+              <p><a href="#"><i class="fa fa-file-pdf"></i> Quittance au prorata</a></p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+              <p>Si vous n'arrivez pas à trouver une date avec le locataire ou si vous souhaitez déléguer l'état des lieux de sortie à un professionnel, 
+                notre équipe peut vous proposer un partenaire spécialisé dans votre zone.</p>
+              <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 <!-- FOOTER -->
