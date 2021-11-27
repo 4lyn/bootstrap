@@ -1295,13 +1295,19 @@ body_class: bg-grey
           <h2>Sortie du locataire</h2>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#sortie_edl" class="menuSticky--sousElement__item">État des lieux de sortie</a></h4>
+              <h4 class="mb-4"><a href="#sortie_edl" class="menuSticky--sousElement__item">État des lieux de sortie
+                <br/><small><i class="far fa-calendar-alt"></i> date de fin de bail</small>
+              </a></h4>
             </li>
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#sortie_dg" class="menuSticky--sousElement__item">Restitution du dépôt de garantie</a></h4>
+              <h4 class="mb-4"><a href="#sortie_dg" class="menuSticky--sousElement__item">Restitution du dépôt de garantie
+                <br/><small><i class="far fa-calendar-alt"></i> date de fin de bail + 30 jours</small>
+              </a></h4>
             </li>
             <li class="nav-item">
-              <h4 class="mb-4"><a href="#sortie_resil" class="menuSticky--sousElement__item">Résiliation de l'assurance</a></h4>
+              <h4 class="mb-4"><a href="#sortie_resil" class="menuSticky--sousElement__item">Résiliation de l'assurance
+                <br/><small><i class="far fa-calendar-alt"></i> date de fin de bail + 30 jours</small>
+              </a></h4>
             </li> 
             <li class="nav-item">
               <h4 class="mb-4"><a href="#sortie_new" class="menuSticky--sousElement__item">Nouveau bail de location</a></h4>
@@ -1433,7 +1439,34 @@ body_class: bg-grey
               </div>
             </div>
           </div>
-        </div>        
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div id="sortie_resil" class="menuSticky--sousElement__ancre"></div>
+            <h3 class="card-title">Résiliation de l'assurance</h3>
+            <hr>
+            <div class="section__sousElement">
+              <p>Si vous avez choisie l'assurance loyer impayé, celle-ci est liée au bail en cours, il faudra donc la résilier et en souscrire une nouvelle sur le prochain bail.</p>
+              <p><a href="https://www.lesassures.fr/Identification/Authentification.aspx" target="_blank" class="btn btn-dark btn-sm">
+                Résilier l'assurance loyer impayé
+              </a></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div id="sortie_new" class="menuSticky--sousElement__ancre"></div>
+            <h3 class="card-title">Nouveau bail de location</h3>
+            <hr>
+            <div class="section__sousElement">
+              <p>Les modifications sont illimitées et gratuites dans le cadre de votre abonnement. 
+                Vous pouvez donc modifier le bail actuel pour préparer la prochaine location.</p>
+              <p><a href="#" data-toggle="modal" data-target="#modal_modif_bail_reset" class="btn btn-dark btn-sm">
+                Changer de locataire
+              </a></p>
+            </div>
+          </div>
+        </div>                
       </div>
     </div>
   </div>
