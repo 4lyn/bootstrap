@@ -793,6 +793,9 @@ body_class: bg-grey
             </div>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Résultats</h4>
+              <p><samp>Pour comprendre l'exemple, il se rend compte en juin 2021 qu'il a oublié d'indexer en mars 2021. Le simulateur d'indexation est au
+                 <a href="https://docs.google.com/spreadsheets/d/1_w3ZfNSZX_MBZ7qlEEppeqToX7X1qcC6LQbSY2J2Wvw/edit#gid=1569008530">lien Google Drive suivant</a>. 
+                 Les 3 onglets du spreadsheet sont identiques, j'avais séparé des cas types pour Anne-Sophie mais les dates ne collent plus.</samp></p>
               <dl class="row">
                 <dt class="col-sm-4">L'indexation est-elle possible ?</dt>
                 <dd class="col-sm-3"><span class="badge badge-success" style="font-size:14px">OUI</span></dd>
@@ -822,11 +825,34 @@ body_class: bg-grey
                 <dd class="col-sm-3"><samp>Juillet 2021</samp></dd>
                 <dd class="col-sm-5">Pour simplifier l'indexation et éviter les proratas, nous recommandons d'appliquer le nouveau loyer sur la prochaine mensualité complète.</dd>
               </dl>
-              <button class="btn btn-dark btn-sm">Valider ces données pour l'indexation</button>
-              <a href="#" class="btn-link ml-3"><i class="fal fa-list-alt"></i> Historique des indexations</a>
+              <p><button class="btn btn-dark btn-sm">Modifier les quittances avec le nouveau loyer</button></p>
             </div>
             <div class="section__sousElement">
-              <h4 class="section__sousElement_titre">Que devez-vous faire ? (version actuelle) TODO discuter de l'UX</h4>
+              <h4 class="section__sousElement_titre">Quels documents envoyer au locataire ?</h4>
+              <p>Une fois l'indexation calculée, il va falloir prévenir le locataire en justifiant votre calcul.</p>
+              <div class="card cardLigne">
+                <div class="card-body">
+                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                  <span><a href="https://docs.google.com/document/d/169FTZXamMTo1gvtTicfPrwP5LCnzi2750bhkYJKOq6E/edit" class="stretched-link">
+                    Modèle de courrier pour l'indexation du loyer</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="section__sousElement">
+              <p>Vous pouvez joindre à ce courrier l'avis d'échéance avec le nouveau loyer, pour qu'il puisse modifier son prochain paiement.</p>
+              <!-- todo mettre le lien et le label de la bonne échéance comme en prod -->
+              <p>
+                <a href="#"><i class="fa fa-file-pdf"></i>
+                  Avis d'échéance nouveau loyer [mois échéance]</a>
+              </p>
+            </div>
+            <hr>
+            <div class="section__sousElement">
+              <p><samp>Pour discussion sur le prochain sprint d'indexation auto. A voir ensemble ce qu'il est possible de faire simplement dès maintenant, 
+                comme conserver un historique des indexations, sans forcément toucher aux quittances. Ca permettrait a minima d'avoir la bonne valeur pour "IRL retenu pour le loyer en cours" 
+                sur les indexations suivantes, aujourd'hui c'est forcément l'index initial </samp></p>
+              <h4 class="section__sousElement_titre">Etapes du client version actuelle</h4>
               <ol>
                 <li>Désactiver l'envoi automatique des quittances (optionnelle)</li>
                 <li>Récupérer manuellement la quittance de juin à l'ancien loyer (si pas déjà envoyée)</li>
@@ -836,6 +862,19 @@ body_class: bg-grey
                 <li>Réactiver l'envoi automatique des quittances (optionnelle)</li>
               </ol>
             </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Etapes du client dans l'idéal</h4>
+              <p>Boutons disponibles sous le tableau de calcul</p>
+              <p><button class="btn btn-dark btn-sm">Valider ces données pour l'indexation</button>
+              <a href="#" class="btn-link ml-3"><i class="fal fa-list-alt"></i> Historique des indexations</a></p>
+              <p>On sauvegarde un historique avec i) une date d'indexation ii) un indice de référence iii) une nouvelle valeur de loyer.</p>
+              <p>Les quittances et avis d'échéances sont mis à jour avec respect de l'historique.</p>
+              <p>Pour le client qui n'aura pas validé pas l'option d'indexation automatique, il va devoir faire la manip dans la fenêtre de 30 jours avant l'échéance indexée, 
+                pour avoir les bonnes valeurs aux moments de l'envoi. Le client devra auss envoyer le courrier au locataire.</p>
+              <p>Pour le client qui aura validé l'option d'indexation automatique, les quittances seront mises à jour à jour automatiquement, 
+                et on enverra  un mail d'explication spécifique au locataire pour l'échéance concernée.</p>
+            </div>
+            <hr/>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
               <p>En cas de doutes sur le calcul de l'indexation, vous pouvez demander conseil à un de nos experts.</p>
