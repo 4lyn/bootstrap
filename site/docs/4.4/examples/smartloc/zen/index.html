@@ -352,7 +352,7 @@ body_class: bg-grey
         <a class="menuSticky--section__conteneurLiens_item" href="#biblio">Bibliothèque</a>
       </li>
       <li class="nav-item">
-        <a class="menuSticky--section__conteneurLiens_item" href="#">Compte</a>
+        <a class="menuSticky--section__conteneurLiens_item" href="#compte">Compte</a>
       </li>            
     </ul>
   </div>
@@ -1866,6 +1866,81 @@ body_class: bg-grey
       </div>
     </div>
 
+    <div class="row pt-5 pb-5">
+      <div class="col-lg-3 offset-lg-1">
+        <div class="menuSticky--section__ancre" id="compte"></div>
+        <div class="menuSticky--sousElement" id="menuSticky_zen_compte">
+          <h2>Compte</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#compte_profil" class="menuSticky--sousElement__item">Profil</a></h4>
+            </li>
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#compte_abo" class="menuSticky--sousElement__item">Abonnement</a></h4>
+            </li>
+            <li class="nav-item">
+              <h4 class="mb-4"><a href="#compte_factures" class="menuSticky--sousElement__item">Factures</a></h4>
+            </li>          
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="card">
+          <div class="card-body">
+            <div id="compte_profil" class="menuSticky--sousElement__ancre"></div>
+            <h3 class="card-title">Profil</h3>
+            <hr>
+            <div class="section__sousElement">
+              <!--TODO faire marcher les liens-->
+              <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier le mail recevant les quittances</a></p>
+              <p>Pour modifier le mail de connexion à votre compte, contactez notre équipe support.</p>
+              <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier le mot de passe du compte</a></p>
+              <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier la carte bancaire de l'abonnement</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div id="compte_abo" class="menuSticky--sousElement__ancre"></div>
+            <h3 class="card-title">Abonnement</h3>
+            <hr>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Conditions d'abonnement</h4>
+              <p><strong>Formule</strong> : Bail Zen (1 lot)</p>
+              <p><strong>Tarif</strong> : 4,90€/mois (3 premiers mois offerts)</p>
+              <p><strong>Facturation</strong> : trimestrielle</p>
+              <p><strong>Renouvellement</strong> : 12/02/2022</p>
+            </div>
+            <div class="section__sousElement">
+              <h4 class="section__sousElement_titre">Gestion des lots</h4>
+              <p>Chaque abonnement Bail zen est lié à un lot, c'est à dire à un logement ou à une chambre en colocation bail individuel.</p>
+              <p>
+                <a class="btn btn-dark btn-sm" href="/bail/creation">
+                  Créer un bail pour un nouveau lot
+                </a>
+              </p>
+              <p>Si vous souhaitez gérer 3 lots ou plus, nous proposons une formule dégressive Investisseur à 12,5€/mois, en engagement annuel.
+                Pour que nous puissions vous activer cette formule, validez le <a href="https://pay.gocardless.com/AL00034X9ZME3F" target="_blank">mandat de prélèvement SEPA</a>.
+              </p>
+              <p>Si vous souhaitez simplement changer de locataire sur un lot donné, vous pouvez le faire gratuitement dans le cadre de votre abonnement.</p>
+              <p>
+                <button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#modal_modif_bail_reset">
+                  Changer de locataire
+                </button>
+              </p>
+              <p>Si vous souhaitez résilier l'abonnement Bail Zen pour ce lot, cliquez simplement sur le lien suivant.
+              <p>Attention : en résiliant l'abonnement vous perdrez votre accès au bail, aux quittances et à toutes les informations de votre espace. 
+                Pensez donc à récupérer les fichiers avant de résilier.</p>
+              <p>
+                <a href="#" class="btn-link" data-toggle="modal" data-target="#modal_resiliation">
+                  <i class="fal fa-times-circle"></i> Résilier l'abonnement Bail Zen pour ce lot
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 <!-- FOOTER -->
