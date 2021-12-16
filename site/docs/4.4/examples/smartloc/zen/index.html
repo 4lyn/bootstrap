@@ -837,11 +837,41 @@ body_class: bg-grey
                 <dd class="col-sm-3"><samp>Juillet 2021</samp></dd>
                 <dd class="col-sm-5">Pour simplifier l'indexation et éviter les proratas, nous recommandons d'appliquer le nouveau loyer sur la prochaine mensualité complète.</dd>
               </dl>
-              <p><button class="btn btn-dark btn-sm">Modifier les quittances avec le nouveau loyer</button></p>
+              <div class="alert alert-primary">
+                <div class="row justify-content-between align-items-center mb-0">
+                  <div class="col-sm-auto">
+                    <div class="alert-heading">
+                      <i class="fal fa-exclamation-triangle icone_medium"></i>
+                      <span>Vérifiez que le calcul de l'indexation vous convient !</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-auto mt-3 mt-sm-0">
+                    <button class="btn btn-dark float-right">Valider l'indexation</button>
+                  </div>
+                </div>
+                <p>Une fois l'indexation validée, le loyer du prochain avis d'échéance sera modifié, ainsi que celui des quittances futures. 
+                  Vous pourrez toujours modifier les valeurs après validation.</p>
+              </div>
+              <div class="alert alert-success">
+                <div class="row justify-content-between align-items-center mb-0">
+                  <div class="col-sm-auto">
+                    <div class="alert-heading">
+                      <i class="fal fa-check-circle icone_medium"></i>
+                      <span>Le loyer a bien été indexé !</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-auto mt-3 mt-sm-0">
+                    <button class="btn btn-dark float-right" data-toggle="modal" data-target="#modal_historique">Consulter l'historique des loyers</button>
+                  </div>
+                </div>
+                <p>Le prochain avis d'échéance sera automatiquement mis à jour, ainsi que les quittances futures.</p>
+                <p>Nous vous recommandons de prévenir le locataire en lui envoyant le courrier et l'avis d'échéance que nous vous avons préparés ci-dessous.</p>
+              </div>
             </div>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Quels documents envoyer au locataire ?</h4>
-              <p>Une fois l'indexation calculée, il va falloir prévenir le locataire en justifiant votre calcul.</p>
+              <p>Nous vous recommandons d'envoyer au locataire le modèle de courrier ci-dessous (par mail ou par la Poste) 
+                pour le prévenir et lui expliquer le calcul du nouveau loyer indexé.</p>
               <div class="card cardLigne">
                 <div class="card-body">
                   <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
@@ -2038,6 +2068,52 @@ body_class: bg-grey
 
 
 </footer>
+
+<div class="modal fade" id="modal_historique" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Historique des loyers</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Évenement</th>
+              <th scope="col">Date</th>
+              <th scope="col">Loyer</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Début du bail</th>
+              <td>12/08/2018</td>
+              <td>1200 € <small>(IRL 3T2018 119,99)</small></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Indexation</th>
+              <td>01/09/2019</td>
+              <td>1203,23€ <small>(IRL 3T2019 121,90)</small></td>
+              <td><a href="#" class="btn-link"><i class="fal fa-trash"></i> Supprimer</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Indexation</th>
+              <td>01/09/2020</td>
+              <td>1205,25€ <small>(IRL 3T2020 123,34)</small></td>
+              <td><a href="#" class="btn-link"><i class="fal fa-trash"></i> Supprimer</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal fade" id="modal_resiliation" tabindex="-1">
   <div class="modal-dialog modal-lg">
