@@ -562,8 +562,9 @@ body_class: bg-grey
                 <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
                   Quittance de loyer avril 2021</a>
               </p>
-              <button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_anciennes_quittances">Anciennes quittances</button>
-              <button data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button>              
+              <p><button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_anciennes_quittances">Anciennes quittances</button>
+              <button data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button></p>
+              <p><a class="btn-link" href="#" data-toggle="modal" data-target="#modal_historique"><i class="far fa-history"></i> Consulter l'historique des loyers</a></p>            
             </div>
             <div class="section__sousElement conteneurCardLignes">
               <div class="card cardLigne">
@@ -802,6 +803,8 @@ body_class: bg-grey
                 </div>
               </div>
               <button class="btn btn-dark btn-sm">Calculer l'indexation</button>
+              <!---TODO ne faire apparaitre que si dejà indexé-->
+              <a class="btn-link ml-sm-3" href="#" data-toggle="modal" data-target="#modal_historique"><i class="far fa-history"></i> Consulter l'historique des loyers</a>
             </div>
             <div class="section__sousElement">
               <h4 class="section__sousElement_titre">Résultats</h4>
@@ -2235,6 +2238,23 @@ body_class: bg-grey
               </div>
               <div class="form-group col-lg-6">
                 <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <h4 class="formulaire__sousElement_titre">Loyer & charges</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Loyer</label>
+                <input type="text" class="form-control">
+                <small class="form-text text-muted">
+                  <!---TODO gérer la fermeture de la modal paramètres-->
+                  <a class="btn-link" href="#" data-toggle="modal" data-target="#modal_historique">
+                    <i class="far fa-history"></i> Consulter l'historique des loyers
+                  </a>            
+                </small>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Charges</label>
                 <input type="text" class="form-control">
               </div>
             </div>                                 
