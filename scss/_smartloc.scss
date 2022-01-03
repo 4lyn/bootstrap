@@ -809,7 +809,8 @@ ul.liste--check li::before {
   /* margin adapté aux petites cards */
 }
 
-.conteneurCardLignes .cardLigne {
+.conteneurCardLignes .cardLigne,
+p + .cardLigne {
   margin-top: 1rem;
 }
 
