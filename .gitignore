@@ -47,3 +47,5 @@ Thumbs.db
 /dist/
 /js/dist/
 /site/docs/**/assets/css/
+Gemfile.lock
+package-lock.json
