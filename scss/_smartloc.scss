@@ -420,13 +420,6 @@ textarea {
 /* INPUT ILLUSTRÉ avec icone ou texte */
 .champSaisie--illustré {
   position: relative;
-  height: 3rem;
-  display: block;
-}
-
-.champSaisie--illustré .form-control {
-  width: 100% !important;
-  position: absolute;
 }
 
 .champSaisie--illustré span,
@@ -436,6 +429,7 @@ textarea {
   line-height: 3rem;
   height: 3rem;
   right: 1rem;
+  top: 0;
 }
 
 .champSaisie--illustré .form-control.is-invalid~span {
