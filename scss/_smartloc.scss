@@ -1780,11 +1780,17 @@ input[type=number] {
 }
 
 .bootstrap-select.is-invalid .dropdown-toggle {
-  border-color: $red !important;
+  border-color: $smartloc-red-bg !important;
 }
 
 /*********** blur ************/
 
 .blur {
   opacity:0.4;
+}
+
+/*********** blur ************/
+
+.text-danger {
+  color: $smartloc-red !important;
 }
