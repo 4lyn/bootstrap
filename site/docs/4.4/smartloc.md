@@ -589,8 +589,8 @@ Banniere de CTA dans un article
   <h3>Gérez automatiquement vos <br> quittances et avis d’échéances</h3>
   <p>Pour seulement 4,90€/mois</p>
   <a href="" class="btn btn-dark btn-sm">Gestion locative automatisée avec Smartloc</a>
-  <img class="encadrementPromotion__imageBackground d-none d-sm-block" src="../assets/img/smartloc/illustrations/shapes/background_push_1.png" alt="">
-  <img class="encadrementPromotion__imageBackground d-none d-sm-block" src="../assets/img/smartloc/illustrations/shapes/background_push_2.png" alt="">
+  <img class="encadrementPromotion__imageBackground d-none d-sm-block" src="../assets/img/smartloc/illustrations/shapes/bg_push_1.png" alt="">
+  <img class="encadrementPromotion__imageBackground d-none d-sm-block" src="../assets/img/smartloc/illustrations/shapes/bg_push_2.png" alt="">
 </div>
 {% endcapture %}
 {% include example.html content=example %}
@@ -600,7 +600,7 @@ Banniere de CTA dans une landing
 {% capture example %}
 <section class="sectionSmartlocAide container-fluid">
   <img src="../assets/img/smartloc/illustrations/shapes/carre-jaune.png" alt="">
-  <img src="../assets/img/smartloc/illustrations/shapes/couronne-noire.png" alt="">
+  <img src="../assets/img/smartloc/illustrations/shapes/couronne-noire-t.png" alt="">
   <img src="../assets/img/smartloc/illustrations/shapes/rond-rose.png" alt="">
   <img src="../assets/img/smartloc/illustrations/shapes/carre-vert.png" alt="">
   <div class="row">
@@ -812,21 +812,21 @@ Cards services avec illustrations
     <div class="card cardAccompagnementExperts bail_card">
       <img class="cardAccompagnementExperts__illustration" src="../assets/img/smartloc/illustrations/notes.png" alt="">
       <h4><a href="/bail/" class="btn-link stretched-link">Bail de <br> location</a></h4>
-      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/background_card_1.png" alt="">
+      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/bg_card_1.png" alt="">
     </div>
   </div>
   <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
     <div class="card cardAccompagnementExperts gestion_card">
       <img class="cardAccompagnementExperts__illustration" src="../assets/img/smartloc/illustrations/immeuble.png" alt="">
       <h4><a href="/gestion-locative" class="btn-link stretched-link">Gestion locative <br> en ligne</a></h4>
-      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/background_card_2.png" alt="">
+      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/bg_card_2.png" alt="">
     </div>
   </div>
   <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
     <div class="card cardAccompagnementExperts assurance_card">
       <img class="cardAccompagnementExperts__illustration" src="../assets/img/smartloc/illustrations/bouclier.png" alt="">
       <h4><a href="/assurance-loyer-impaye" class="btn-link stretched-link">Assurance loyer <br> impayé</a></h4>
-      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/background_card_3.png" alt="">
+      <img class="cardAccompagnementExperts__background" src="../assets/img/smartloc/illustrations/shapes/bg_card_3.png" alt="">
     </div>
   </div>
 </div>
