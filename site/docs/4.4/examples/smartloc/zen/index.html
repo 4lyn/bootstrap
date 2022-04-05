@@ -1269,16 +1269,47 @@ body_class: bg-grey
               <h4 class="section__sousElement_titre">Quand et comment relancer le locataire ?</h4>
               <p>Les délais et modalités ci-dessous sont celles imposées par notre garantie loyer impayé, en pratique nous vous recommandons de les suivre même sans assurance.</p>
               <p><strong>Relance simple / échéance + 7 jours</strong></p>
-              <p>Vous devez relancer le locataire par courrier simple, doublé éventuellement d'un mail, dans les jours qui suivent la date d'échéance.</p>
+              <p>Vous devez relancer le locataire par courrier simple ou par mail, dans les jours qui suivent la date d'échéance.</p>
+              <p>Nous vous avons préparé un mail de relance qui <strong>maximisera vos chances d'être payé rapidement</strong> par le locataire et 
+                d'éviter ainsi que l'impayé s'installe :</p>
+              <ul>
+                <li>l'envoi par un tiers extérieur comme Smartloc renforce le caractère officiel de la relance</li>
+                <li>les messages ont été optimisés pour convaincre le locataire de régler rapidement</li>
+                <li>vous bénéficiez du suivi de nos équipes si la relance ne fonctionne pas</li>
+              </ul>
+              <p>Comme tous les mails envoyés aux locataires, vous serez en copie de l'email envoyé.</p>
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <label>Montant de l'impayé</label>
+                  <div class="champSaisie--illustré">
+                    <input type="text" class="form-control">
+                    <span>€</span>
+                  </div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label>Échéance concernée</label>
+                  <select class="custom-select">
+                    <option>Mars 2022</option>
+                    <option>Février 2022</option>
+                    <option>Janvier 2022</option>
+                    <option>Décembre 2021</option>
+                  </select> 
+                </div>
+              </div>
+              <div class="form-group">
+                <label>
+                  Votre IBAN
+                </label> 
+                <input type="text" class="form-control" placeholder="Optionnel">
+              </div>
+              <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_impayes">Voir le mail envoyé au locataire</a></p>
+              <p><button class="btn btn-primary">
+                Envoyer la relance au locataire
+              </button></p>
+              <p><samp>TODO module désactivation quittance</samp></p>
               <p>En cas d'impayé partiel vous devez quand même le relancer et vous devez lui fournir un reçu en lieu et place de la quittance.</p>
             </div>
             <div class="section__sousElement conteneurCardLignes">
-              <div class="card cardLigne">
-                <div class="card-body">
-                  <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
-                  <span><a href="/blog/loyer-impaye-lettre-de-relance-simple/" class="stretched-link">Modèle de courrier de relance simple</a></span>
-                </div>
-              </div>
               <div class="card cardLigne">
                 <div class="card-body">
                   <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
@@ -1287,9 +1318,6 @@ body_class: bg-grey
               </div>
             </div>
             <div class="section__sousElement">
-              <p><strong>Blocage de l'envoi automatique des quittances / échéance + 7 jours</strong> </p>
-              <p>Si vous avez opté pour un envoi automatique des quittances vous devez désactiver cette option tant que le locataire ne vous a pas intégralement payé.</p>
-              <p><samp>TODO module activation quittance</samp></p>
               <br/>
               <p><strong>Mise en demeure par RAR / Insured échéance + 35 jours / Garantme échéance + 45 jours</strong></p>
               <p>Si le locataire ne répond pas à vos relances simples, envoyez un courrier de mise en demeure par RAR, 
@@ -2591,6 +2619,63 @@ body_class: bg-grey
           <br>
           Josipa Deak
           Envoyé via Smartloc
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_impayes" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail de relance au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Incident : relance impayés de loyer mars 2022
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          A ce jour nous constatons un <strong>impayé de XXXX €</strong> de mars 2022. Cette échéance devait être payée intégralement au plus tard le 5 du mois. <br> <br> 
+          Je vous prie donc de bien vouloir régulariser votre situation au plus vite, en procédant au virement des sommes dues, 
+          afin d'éviter le démarrage d'une procédure contentieuse via Smartloc. <br> <br>
+          Vous trouverez de nouveau l'avis d'échéance en pièce jointe, ainsi que notre IBAN pour le virement : XXXXXXXXXXXXXXXXXXXXXXXXX. <br> <br>
+          Nous pensons qu'il s'agit d'un simple oubli de votre part, nous restons néanmoins disponible par mail ou téléphone si nécessaire.<br> <br>
+          Cordialement<br> <br>
+          Josipa Deak<br>
+          Envoyé via Smartloc
+          <br><br>
+          PS. Pour rappel les retards de paiement récurrents peuvent justifier d'une résiliation judiciaire du bail.
         </blockquote>
         <p style="margin-top: 30px;">
           <b>Pièces jointes du mail:</b>
