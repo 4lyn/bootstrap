@@ -101,66 +101,63 @@ body_class: bg-grey
             </div>
           </div>
           <div class="col-md-7">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3 class="card-title">Signez votre bail de location</h3> 
-                <hr>
-                <hr>
-                <samp>Cas générique</samp>
-                <p>Nous vous recommandons de signer le bail le plus tôt possible pour éviter les désistements et les problèmes de dernière minute.</p>
-                <p>Vous pouvez sans problème signer le bail avant l'entrée dans les lieux.</p>
-                <p>La signature électronique vous permet de signer à distance à l'avance de manière sécurisée.</p>
-                <hr>
-                <samp>Si signature non payée</samp>
-                <p class="mt-4">
-                  <!-- Todo lien fichier pdf -->
-                  <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
-                  <!--ici je te mets modal modif bail en cours même si sur l'étape d'activation on sera forcément avant date d'effet donc redirection vers /modif -->
-                  <!--TODO il faut conserver la logique du bloc de prod displayZenDocBail pour le bouton modifier le bail -->
-                  <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_modif_bail_en_cours">Modifier le bail</button>
-                  <!-- j'ai volontairement supprimé le changer de locataire --> 
-                  <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_signature_activation">Signer le bail en ligne</button>
-                </p>
-                <!-- Todo liens fichier annexes -->
-                <p><a href="#"><i class="fa fa-file-pdf"></i> Acte de caution vierge</a></p>
-                <a href="#"><i class="fa fa-file-pdf"></i> Bail parking séparé</a>
-                <hr>
-                <samp>Si signature payée non lancée</samp>
-                <p class="mt-4">
-                  <!-- Todo lien fichier pdf -->
-                  <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
-                  <!--TODO il faut conserver la logique du bloc de prod displayZenDocBail pour le bouton modifier le bail -->
-                  <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_modif_bail_en_cours">Modifier le bail</button>
-                  <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_signature">Lancer la signature en ligne</button>
-                </p>
-                <hr>
-                <samp>Si signature lancée</samp>
-                <p>Votre bail est en cours de signature, vous avez donc reçu un mail pour le signer électroniquement.</p>
-                <p class="mt-4">
-                  <!-- Todo lien page signature -->
-                  <button class="btn btn-outline-dark btn-sm">Page de suivi de la signature</button>
-                </p>
-                <hr>
-                <samp>Si bail signé et clôturé</samp>
-                <h4>Archives des baux signés</h4>
-                <p>Vous avez reçu par mail les baux et les annexes signées. Nous vous affichons ci-dessous les 
-                  fichiers que nous avons pu récupérés auprès de Yousign.</p>
-                <!-- Todo lien fichier pdf signés -->
+            <div class="card mb-4"><div class="card-body"><h3 class="card-title">
+              Préparez l'entrée dans les lieux
+              <br> <small><i aria-hidden="true" class="fa fa-calendar-alt"></i>
+                21 Juin 2022
+              </small></h3> <hr>
+              <div class="section__sousElement">
+                <h4 class="section__sousElement_titre">Archives des documents signés</h4>
                 <p>
-                  <a href="#"><i class="fa fa-file-pdf"></i> Bail Dupont signé</a>
-                </p>
-                <p>
-                  <a href="#"><i class="fa fa-file-pdf"></i> Acte de caution A-B signé</a>
-                </p>
-                <p>
-                  <a href="#"><i class="fa fa-file-pdf"></i> Acte de caution A-C signé</a>
-                </p>
+                  Vous avez reçu par mail les baux et les annexes signées.
+                </p> 
               </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3 class="card-title">Préparez l'entrée dans les lieux</h3> 
-                <hr>
+              <div class="section__sousElement">
+                <h4 class="section__sousElement_titre">Bail &amp; annexes</h4>
+                <p>
+                  Nous vous recommandons de signer le bail le plus tôt possible pour éviter les désistements.
+                  Vous pouvez signer le bail avant l'entrée dans les lieux.
+                </p>
+                <p class="mt-4">
+                  <a target="_blank" href="/bail/pdf/file/24/cc4a5d2752d2c96f5ef0cc2d79b212ff/1653640520/Smartloc%20-%20Bail%20complet%2024.pdf" download="Smartloc - Bail complet 24.pdf" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
+                    Bail limité
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#modal_onboarding_gratuit" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
+                    Bail complet
+                  </a>
+                  <br> 
+                  <button class="btn btn-outline-dark btn-sm mr-sm-3 mt-2">
+                    Modifier le bail
+                  </button>
+                  <button data-toggle="modal" data-target="#modal_sign_form" class="btn btn-dark btn-sm mr-sm-3 mt-2">
+                    Lancer la signature en ligne
+                  </button>
+                  <button type="button" data-toggle="modal" data-target="#modal_sign_etapes" class="btn btn-link pl-0 mt-2">
+                    Quelles sont les étapes de signature&nbsp;?
+                  </button>
+                </p>
+                <p>
+                  <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="#" data-toggle="modal" data-target="#modal_onboarding_gratuit"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
+                </p>
+                <p>
+                  <a target="_blank" href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit"><i class="fa fa-file-pdf" aria-hidden="true"></i>
+                    Inventaire des meubles
+                  </a>
+                </p>
+                <p>
+                  <a target="_blank" href="/bail/pdf/caution?id=24&amp;token=cc4a5d2752d2c96f5ef0cc2d79b212ff&amp;index=0&amp;loc=loc_0" download="Smartloc - Caution hébert_dupont.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> Acte de caution
+                      <span style="text-transform: capitalize;">
+                        hébert
+                      </span>
+                      -
+                      <span style="text-transform: capitalize;">
+                        dupont
+                      </span>
+                    </a>
+                  </p>
+                </div>
                 <div class="section__sousElement">
                   <h4 class="section__sousElement_titre">Mail au locataire pour préparer l'entrée dans les lieux</h4>
                   <p>Nous vous avons préparé un mail à envoyer un locataire pour qu'il vous fournisse lors de l'entrée dans les lieux :</p>
@@ -170,31 +167,36 @@ body_class: bg-grey
                     <li>l'attestation d'assurance</li>
                   </ul>
                   <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
-                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_edl">Voir le mail envoyé au locataire</a></p>
-                  <p class="mt-2">
-                    <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red">
-                      <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour envoyer le mail
-                    </a>
+                  <p>
+                    <a href="#" data-toggle="modal" data-target="#modal_mail_edl">Voir le mail envoyé au locataire</a>
                   </p>
-                  <!-- Todo envoi du mail locataire en back -->
-                  <p><button class="btn btn-primary">Envoyer le mail au locataire</button></p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="activation-edl-msg">
+
+                      </div>
+                    </div>
+                  </div>
+                  <div id="activation-edl-mail">
+                    <p>
+                      <button class="btn btn-primary">
+                        Envoyer le mail au locataire
+                      </button>
+                    </p>
+                  </div>
                 </div>
                 <div class="section__sousElement">
-                  <h4 class="section__sousElement_titre">Documents à remplir lors de l'entrée dans les lieux</h4>
+                  <h4 class="section__sousElement_titre">
+                    Documents à transmettre au locataire lors de l'entrée dans les lieux
+                  </h4>
                   <p>
-                    <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
-                      <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
-                    </a>
+                    <span><i aria-hidden="true" class="fa fa-file-alt"></i>
+                      Votre RIB pour virement bancaire
+                    </span>
                   </p>
                   <p>
-                    <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
-                      <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
-                    </a>								
-                  </p>
-                  <!-- Todo conditionnement meuble/vide -->
-                  <p>
-                    <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit" target="_blank" >
-                      <i class="fa fa-file-pdf"></i> Inventaire des meubles
+                    <a href="/bail/pdf/quittance?id=24&amp;token=cc4a5d2752d2c96f5ef0cc2d79b212ff&amp;date=2022-06-01" target="_blank"><i aria-hidden="true" class="fa fa-file-pdf"></i>
+                      Quittance de loyer Juin 2022
                     </a>
                   </p>
                 </div>
@@ -202,13 +204,16 @@ body_class: bg-grey
                   <h4 class="section__sousElement_titre">Derniers conseils</h4>
                   <ul>
                     <li>ne donnez pas les clefs au locataire s'il ne vous fournit pas les chèques et l'attestation d'assurance</li>
-                    <li>si le locataire vous paie par virement, ne donnez que les clefs qu'une fois le virement reçu, ne vous contentez pas de 
-                      promesse ou de preuves de virements</li>
+                    <li>si le locataire vous paie par virement, ne donnez que les clefs qu'une fois le virement reçu,
+                    ne vous contentez pas de promesse ou de preuves de virements</li>
                     <li>vous devez en théorie installer un détecteur de fumée</li>
                   </ul>
                 </div>
               </div>
-            </div>            
+            </div>
+           
+
+            
             <div class="card mb-4">
               <div class="card-body">
                 <h3 class="card-title">Envoyez vos quittances automatiquement</h3> 
@@ -2831,6 +2836,41 @@ body_class: bg-grey
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_onboarding_gratuit" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Fonctionnalité bloquée</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule bail limité. Pour bénéfier des fonctionnalités avancées, 
+          débloquez le bail complet avec 3 mois offerts d'assistant de gestion locative :</p>
+        <p><strong>Bail complet 14,70€</strong></p>
+        <ul class="fa-ul ml-0">
+          <li><i class="fal fa-check-circle"></i> Bail PDF avec clauses et annexes en modification illimité</li>
+          <li><i class="fal fa-check-circle"></i> Etat des lieux numérique avec signature électronique</li>
+        </ul>
+        <p><strong></strong></p>
+        <div class="mt-3 mb-3"><i class="far fa-plus-square fa-2x" aria-hidden="true"></i></div>
+        <p><strong>Assistant de gestion locative Zen <span style="position:relative" class="mr-2"><span id="prix_barre">4,90€ / mois</span></span> 3 premiers mois offerts</strong></p>
+        <ul class="fa-ul ml-0">
+          <li><i class="fal fa-check-circle"></i> Envoi des quittances au locataire</li>
+          <li><i class="fal fa-check-circle"></i> Support mail & chat en cas de questions/contentieux</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur calcul des retenues sur le dépôt de garantie</li>
+          <li><i class="fal fa-check-circle"></i> Réductions chez nos partenaires</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark">Activer le bail complet</button>
       </div>
     </div>
   </div>
