@@ -999,10 +999,10 @@ body_class: bg-grey
                               </div>
                               <div class="form-group">
                                   <label class="d-block">2. Ce fichier contient (plusieurs choix possibles)</label>
-                                  <select class="custom-select col-sm-8 col-lg-6">
+                                  <select id="selectAnnexe" class="custom-select col-sm-8 col-lg-6">
                                       <option>Extrait du règlement de copro</option>
                                       <option>Attestation surface habitable</option>
-                                      <option>Diagnostic énergétique</option>
+                                      <option value="dpe">Diagnostic énergétique</option>
                                       <option>Diagnostic amiante</option>
                                       <option>Diagnostic plomb</option>
                                       <option>Diagnostic électricité</option>
@@ -1011,6 +1011,56 @@ body_class: bg-grey
                                       <option>Annexe libre</option>
                                   </select>
                               </div>
+                              <div id="dpe" style="display: none;">
+                                <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Score de performance énergétique</label>
+                                      <select class="custom-select">
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>C</option>
+                                        <option>D</option>
+                                        <option>E</option>
+                                        <option>F</option>
+                                        <option>G</option>  
+                                    </select> 
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                    <label>Date de réalisation</label>
+                                    <div class="champSaisie--illustré">
+                                      <input type="text" class="form-control" placeholder="__/__/____">
+                                     <span>
+                                      <i aria-hidden="true" class="fal fa-calendar"></i>
+                                     </span>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-lg-6">
+                                      <label>Estimation dépenses énergétiques (annuelles)</label>
+                                      <div class="champSaisie--illustré">
+                                        <input type="text" class="form-control">
+                                        <span>€</span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group col-lg-6">
+                                    <label>Année de référence de l'estimation</label>
+                                    <select class="custom-select">
+                                      <option>2022</option>
+                                      <option>2021</option>
+                                      <option>2020</option>
+                                      <option>2019</option>
+                                      <option>2018</option>
+                                      <option>2017</option>
+                                      <option>2016</option>
+                                      <option>2015</option>
+                                      <option>2014</option>
+                                      <option>2013</option>
+                                      <option>2012</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>         
                               <div class="form-group">
                                   <label class="d-block">3. J’ajoute le fichier</label>
                                   <button class="btn btn-primary">Ajouter mon fichier</button>
@@ -1694,3 +1744,15 @@ body_class: bg-grey
 
 
 
+<script>
+  document.getElementById("selectAnnexe").onchange = function(e) { 
+    console.log(e.target.value)
+    if(e.target.value === "dpe"){
+      document.getElementById("dpe").style.display = "block";
+      console.log("block")
+    }else{
+      document.getElementById("dpe").style.display = "none";
+      console.log("hidden")
+    }
+ }
+</script>
