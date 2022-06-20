@@ -10,7 +10,7 @@ body_class: bg-grey
 
 <!-- MAIN -->
 <div class="row h-100 m-0 ">
-  <aside class="col-xl-2 col-lg-3 pl-2 pr-0 py-5 border-right">
+  <aside class="col-xl-2 col-lg-3 pl-2 pr-0 py-5">
     <a class="navbar-brand col-2 d-flex justify-content-between align-items-center" href="/">
       <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
       <span class="navbar-toggler-icon"></span>
@@ -23,31 +23,31 @@ body_class: bg-grey
         <a class="nav-link" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">Actions à valider</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Parametre du bail</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Paramètre du bail</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">Bail & Annexes</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">Bail & Annexes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">Quittances</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">Quittances</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">Echeances</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">Echeances</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">Assurances</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">Assurances</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">Incidents</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">Incidents</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">Sortie du locataire</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">Sortie du locataire</a>
       </li>
       <li class="nav-item d-lg-none d-xl-inline-block">
-        <a class="nav-link" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">Bibliothèque</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">Bibliothèque</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">Compte</a>
+        <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">Compte</a>
       </li>
     </ul>
   </aside>
@@ -102,45 +102,43 @@ body_class: bg-grey
     </header>
     <div class="tab-content">
       <section class="container-fluid bg-warning pt-0 pb-5 tab-pane fade show active" id="s-espace-gestion" role="tabpanel">
-        <div class="row pb-5">
+        <div class="row pt-2 pb-5">
           <div class="col-lg-10 offset-lg-1">
-            <div class="row pt-5 pb-5">
-              <div class="col-md-5">
+            <div class="card">
+              <div class="card-body">
+                <span>Bail Chantalat - 46 bld de l'Hôpital - 780€CC - démarrage 12/03/2021</span>
+                <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-5">Paramètres</a>
+                <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="card-link btn-link ml-3">
+                  <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
                 <div class="card">
                   <div class="card-body">
-                    <h2 class="card-title">Espace de gestion</h2>
-                    <dl class="row card-text mt-4">
-                      <dt class="col-sm-3">Locataires</dt>
-                      <dd class="col-sm-9">
-                          Pascal Combescot <small>pascal.combescot@gmail.com</small><br/>
-                          Vigdis Beaussier <small>vigdis4@hotmail.com</small>
-                        </dd>
-                      <dt class="col-sm-3">Adresse</dt>
-                      <dd class="col-sm-9">39 rue Taitbout</dd>
-                      <dt class="col-sm-3">Bailleur</dt>
-                      <dd class="col-sm-9">SCI Ginza <small>mchantalat@gmail.com</small></dd>
-                      <dt class="col-sm-3">Type</dt>
-                      <dd class="col-sm-9">Bail couple ou colocation Vide</dd>
-                      <dt class="col-sm-3">Loyer</dt>
-                      <dd class="col-sm-9">790€ payable le 5 du mois</dd>
-                      <dt class="col-sm-3">Charges</dt>
-                      <dd class="col-sm-9">Provision 100€</dd>
-                      <dt class="col-sm-3">Début</dt>
-                      <dd class="col-sm-9"><a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
-                    </dl>
-                    <p>
-                      <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-outline-dark btn-sm">Paramètres</a> 
-                      <a href="#" data-toggle="modal" data-target="#modal_modif_bail_reset" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
-                    </p>
+                    <h3 class="card-title">Actions à valider</h3>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Entrée dans les lieux</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link formulaire__menuEtapes_etape" href="#">Quittances au locataire</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link formulaire__menuEtapes_etape" href="#">Assurance PNO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link formulaire__menuEtapes_etape" href="#" tabindex="-1" aria-disabled="true">Formulaire POi</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-md-8">
                 <div class="card mb-4"><div class="card-body"><h3 class="card-title">
                   Préparez l'entrée dans les lieux
-                  <br> <small><i aria-hidden="true" class="fa fa-calendar-alt"></i>
-                    21 Juin 2022
-                  </small></h3> <hr>
+</h3> <hr>
                   <div class="section__sousElement">
                     <h4 class="section__sousElement_titre">Archives des documents signés</h4>
                     <p>
@@ -422,7 +420,6 @@ body_class: bg-grey
             </div>
           </div>
         </div>
-        <img class="sectionTemoignages__formesBackground couronneNoir d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/couronne-noire-b.png" alt="">
       </section>
       <section class="tab-pane fade container-fluid" id="s-bail-annexes" role="tabpanel">
         <div class="row pt-5 pb-5">
