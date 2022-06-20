@@ -1,0 +1,2891 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+body_class: bg-grey
+---
+
+<!-- HEADER -->
+
+<div class="vh-100 overflow-hidden">
+
+<!-- MAIN -->
+<div class="row h-100 m-0 ">
+  <aside class="col-xl-2 col-lg-3 pl-2 pr-0 py-5 border-right">
+    <a class="navbar-brand col-2 d-flex justify-content-between align-items-center" href="/">
+      <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
+      <span class="navbar-toggler-icon"></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <ul class="nav flex-column px-3 nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">Actions à valider</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">Parametre du bail</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">Bail & Annexes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">Quittances</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">Echeances</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">Assurances</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">Incidents</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">Sortie du locataire</a>
+      </li>
+      <li class="nav-item d-lg-none d-xl-inline-block">
+        <a class="nav-link" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">Bibliothèque</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">Compte</a>
+      </li>
+    </ul>
+  </aside>
+  <main class="col-xl-10 col-lg-9 overflow-auto h-100">
+    <header class="container-fluid bg-warning">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes baux</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item disabled" href="#">Combescot</a>
+                    <a class="dropdown-item" href="#">Dagher</a>
+                    <a class="dropdown-item" href="#">Dupont</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Ajouter un logement</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/dossier">Mes dossiers</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes assurances</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/assurance-loyer-impaye">Assurance loyer impayé</a>
+                    <a class="dropdown-item" href="/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://www.lesassures.fr/" target="_blank" rel="nofollow">Gérer vos contrats</a>
+                    <a class="dropdown-item" href="https://www.lesassures.fr/" target="_blank" rel="nofollow">Déclarer un sinistre</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog">Ressources</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/password/change">Mot de passe</a>
+                    <a class="dropdown-item" href="/logout">Déconnexion</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="tab-content">
+      <section class="container-fluid bg-warning pt-0 pb-5 tab-pane fade show active" id="s-espace-gestion" role="tabpanel">
+        <div class="row pb-5">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="row pt-5 pb-5">
+              <div class="col-md-5">
+                <div class="card">
+                  <div class="card-body">
+                    <h2 class="card-title">Espace de gestion</h2>
+                    <dl class="row card-text mt-4">
+                      <dt class="col-sm-3">Locataires</dt>
+                      <dd class="col-sm-9">
+                          Pascal Combescot <small>pascal.combescot@gmail.com</small><br/>
+                          Vigdis Beaussier <small>vigdis4@hotmail.com</small>
+                        </dd>
+                      <dt class="col-sm-3">Adresse</dt>
+                      <dd class="col-sm-9">39 rue Taitbout</dd>
+                      <dt class="col-sm-3">Bailleur</dt>
+                      <dd class="col-sm-9">SCI Ginza <small>mchantalat@gmail.com</small></dd>
+                      <dt class="col-sm-3">Type</dt>
+                      <dd class="col-sm-9">Bail couple ou colocation Vide</dd>
+                      <dt class="col-sm-3">Loyer</dt>
+                      <dd class="col-sm-9">790€ payable le 5 du mois</dd>
+                      <dt class="col-sm-3">Charges</dt>
+                      <dd class="col-sm-9">Provision 100€</dd>
+                      <dt class="col-sm-3">Début</dt>
+                      <dd class="col-sm-9"><a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
+                    </dl>
+                    <p>
+                      <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-outline-dark btn-sm">Paramètres</a> 
+                      <a href="#" data-toggle="modal" data-target="#modal_modif_bail_reset" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card mb-4"><div class="card-body"><h3 class="card-title">
+                  Préparez l'entrée dans les lieux
+                  <br> <small><i aria-hidden="true" class="fa fa-calendar-alt"></i>
+                    21 Juin 2022
+                  </small></h3> <hr>
+                  <div class="section__sousElement">
+                    <h4 class="section__sousElement_titre">Archives des documents signés</h4>
+                    <p>
+                      Vous avez reçu par mail les baux et les annexes signées.
+                    </p> 
+                  </div>
+                  <div class="section__sousElement">
+                    <h4 class="section__sousElement_titre">Bail &amp; annexes</h4>
+                    <p>
+                      Nous vous recommandons de signer le bail le plus tôt possible pour éviter les désistements.
+                      Vous pouvez signer le bail avant l'entrée dans les lieux.
+                    </p>
+                    <p class="mt-4">
+                      <a target="_blank" href="/bail/pdf/file/24/cc4a5d2752d2c96f5ef0cc2d79b212ff/1653640520/Smartloc%20-%20Bail%20complet%2024.pdf" download="Smartloc - Bail complet 24.pdf" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
+                        Bail limité
+                      </a>
+                      <a href="#" data-toggle="modal" data-target="#modal_onboarding_gratuit" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
+                        Bail complet
+                      </a>
+                      <br> 
+                      <button class="btn btn-outline-dark btn-sm mr-sm-3 mt-2">
+                        Modifier le bail
+                      </button>
+                      <button data-toggle="modal" data-target="#modal_sign_form" class="btn btn-dark btn-sm mr-sm-3 mt-2">
+                        Lancer la signature en ligne
+                      </button>
+                      <button type="button" data-toggle="modal" data-target="#modal_sign_etapes" class="btn btn-link pl-0 mt-2">
+                        Quelles sont les étapes de signature&nbsp;?
+                      </button>
+                    </p>
+                    <p>
+                      <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
+                      &nbsp;&nbsp;&nbsp;
+                      <a href="#" data-toggle="modal" data-target="#modal_onboarding_gratuit"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit"><i class="fa fa-file-pdf" aria-hidden="true"></i>
+                        Inventaire des meubles
+                      </a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="/bail/pdf/caution?id=24&amp;token=cc4a5d2752d2c96f5ef0cc2d79b212ff&amp;index=0&amp;loc=loc_0" download="Smartloc - Caution hébert_dupont.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> Acte de caution
+                          <span style="text-transform: capitalize;">
+                            hébert
+                          </span>
+                          -
+                          <span style="text-transform: capitalize;">
+                            dupont
+                          </span>
+                        </a>
+                      </p>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Mail au locataire pour préparer l'entrée dans les lieux</h4>
+                      <p>Nous vous avons préparé un mail à envoyer un locataire pour qu'il vous fournisse lors de l'entrée dans les lieux :</p>
+                      <ul>
+                        <li>le chèque de loyer</li>
+                        <li>le chèque de dépôt de garantie</li>
+                        <li>l'attestation d'assurance</li>
+                      </ul>
+                      <p>En pièce jointe du mail, nous avons ajouté un <strong>avis d'échéance au prorata</strong> avec le détail des sommes dues.</p>
+                      <p>
+                        <a href="#" data-toggle="modal" data-target="#modal_mail_edl">Voir le mail envoyé au locataire</a>
+                      </p>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div id="activation-edl-msg">
+    
+                          </div>
+                        </div>
+                      </div>
+                      <div id="activation-edl-mail">
+                        <p>
+                          <button class="btn btn-primary">
+                            Envoyer le mail au locataire
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">
+                        Documents à transmettre au locataire lors de l'entrée dans les lieux
+                      </h4>
+                      <p>
+                        <span><i aria-hidden="true" class="fa fa-file-alt"></i>
+                          Votre RIB pour virement bancaire
+                        </span>
+                      </p>
+                      <p>
+                        <a href="/bail/pdf/quittance?id=24&amp;token=cc4a5d2752d2c96f5ef0cc2d79b212ff&amp;date=2022-06-01" target="_blank"><i aria-hidden="true" class="fa fa-file-pdf"></i>
+                          Quittance de loyer Juin 2022
+                        </a>
+                      </p>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Derniers conseils</h4>
+                      <ul>
+                        <li>ne donnez pas les clefs au locataire s'il ne vous fournit pas les chèques et l'attestation d'assurance</li>
+                        <li>si le locataire vous paie par virement, ne donnez que les clefs qu'une fois le virement reçu,
+                        ne vous contentez pas de promesse ou de preuves de virements</li>
+                        <li>vous devez en théorie installer un détecteur de fumée</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
+    
+                
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Envoyez vos quittances automatiquement</h3> 
+                    <hr>
+                    <div class="accordion" id="accordion_faq_home">
+                      <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+                          <h5>Comment fonctionne l'envoi automatique des quittances ? <i class="fas fa-minus float-right mt-1"></i></h5>
+                        </div>
+                        <!-- Todo conditionnement date -->
+                        <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
+                          <dl class="row">
+                            <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt>
+                            <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
+                            <dt class="col-sm-3 offset-sm-1">le 15 du mois</dt>
+                            <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
+                            <dt class="col-sm-3 offset-sm-1">le 25 du mois</dt>
+                            <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="questionDeroulante objetDeroulant">
+                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+                          <h5>Pourquoi c'est important  d'envoyer les quittances ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                        </div>
+                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
+                          <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                          <ul>
+                            <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
+                            <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                            <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                          </ul>                      
+                        </div>
+                      </div>
+                    </div>                
+                    <div class="section__sousElement mt-4">
+                      <p><a href data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
+                      <div class="custom-control custom-switch mt-4 mb-4">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                        <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+                      </div>
+                      <p class="mt-2">
+                        <a href="#" class="lien_annexe" style="color:red">
+                          <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour activer cette étape
+                        </a>
+                      </p>
+                      <p><button class="btn btn-primary">Sauvegarder</button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Augmentez vos loyers automatiquement</h3> 
+                    <div class="section__sousElement">
+                      <div class="alert-notice alert-notice-warning">
+                        <div class="notice-info">
+                          <p><strong>Pourquoi est-ce important ?</strong></p>
+                          <p>Pour ne pas voir vos loyers rogner par l'inflation qui redémarre, il est important d'indexer vos loyers chaque année, 
+                            d'autant plus que toute indexation oubliée est maintenant perdue.</p>
+                          <p><strong>Pourquoi est-ce compliqué ?</strong></p>
+                          <p>Les calculs d'indexation sont compliqués à expliquer au locataire, entre les décalages d'indice, les dates de référence ou encore les proratas.</p>
+                          <p><strong>Comment Smartloc vous aide ?</strong></p>
+                          <p>Smartloc se positionne comme tiers de confiance indépendant qui applique l'augmentation légale et fournit les documents explicatifs. 
+                            Vous évitez ainsi les oublis et vous diminuez les contestations des locataires.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Comment fonctionne l'indexation automatique du loyer ?</h4>
+                      <dl class="row">
+                        <dt class="col-sm-3 offset-sm-1">1 mois avant l'échéance</dt>
+                        <dd class="col-sm-8">
+                          Smartloc vous rappelle que le loyer va être indexé, vous pouvez choisir d'annuler l'augmentation.
+                        </dd>
+                        <dt class="col-sm-3 offset-sm-1">15 jours avant l'échéance</dt>
+                        <dd class="col-sm-8">
+                          Le locataire reçoit l'avis d'échéance avec le nouveau loyer, accompagné d'un mail explicatif du calcul d'indexation.
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="section__sousElement mt-4">
+                      <p><a href data-toggle="modal" data-target="#modal_mail_indexation">Voir un exemple de courrier explicatif au locataire</a></p>
+                      <div class="custom-control custom-switch mt-4 mb-4">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                        <label class="custom-control-label" for="customSwitch1">Option indexation automatique du loyer</label>
+                      </div>
+                      <p class="mt-2">
+                        <a href="#" class="lien_annexe" style="color:red">
+                          <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour activer cette étape
+                        </a>
+                      </p>
+                      <p><button class="btn btn-primary">Sauvegarder</button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Souscrivez à votre assurance PNO</h3> 
+                    <hr>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Pourquoi une assurance propriétaire non occupant (PNO) ?</h4>
+                      <p>Vous êtes obligé légalement de prendre une assurance PNO en tant que bailleur d'un logement en location.</p>
+                      Cette assurance couvre votre responsabilité civile (une tuile tombe du toit et blesse votre locataire), mais également couvre les sinistres (incendies, dégâts des eaux, etc.) non garantis 
+                      par l'assurance du locataire ou de la copropriété.</p>
+                      <div class="card cardLigne">
+                        <div class="card-body">
+                          <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                          <span><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/" class="stretched-link">Fiche complète sur l'assurance PNO</a></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Comment souscrire une assurance PNO ?</h4>
+                      <p>La plupart des compagnies proposent ce type de contrat, si vous n'en avez pas encore vous pouvez souscrire en ligne en 
+                        2 minutes à l'assurance PNO Luko que nous avons sélectionnée, disponible <strong>à partir de 4,90€/mois</strong>, avec un service de déclaration de sinistre 100% en ligne par photos ou vidéos.
+                      </p>
+                      <p class="mt-4">
+                        <a href="https://www.luko.eu/fr/onboarding?utm_source=Partner&utm_medium=RealEstate&utm_campaign=Smartloc&pc=smlcxlk&product=mrh&utm_term=HomeFR" 
+                        class="btn btn-dark btn-sm mt-2 mt-sm-0" target="_blank">
+                          Souscrire à l'assurance PNO
+                        </a>
+                        <span class="bg-success p-2 ml-sm-3"><i class="far fa-check-circle"></i> 2 mois offerts via Smartloc</span>
+                      </p>
+                      <!-- Todo conditionnement clic -->
+                      <p class="mt-4">
+                        <div class="form-group mt-3">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"> Je confirme avoir souscrit à une assurance PNO (Smartloc ou autre)</label>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="alert alert-success">
+                  <div class="alert-heading"><i class="fal fa-check-circle icone_medium"></i> <span>Toutes les actions nécessaires ont été complétées !</span></div>
+                  <p>Vous recevrez à l'avenir des mails de notifications pour les prochaines actions à mener.</p>
+                  <p>Pour un aperçu exhaustif des échéances futures, rendez-vous dans la section suivante.</p>
+                </div>  
+                <div class="alert alert-primary">
+                  <div class="row justify-content-between align-items-center mb-0">
+                    <div class="col-sm-auto">
+                      <div class="alert-heading"><i class="fal fa-times-circle icone_medium"></i> <span>Votre abonnement est inactif !</span></div>
+                    </div>
+                    <div class="col-sm-auto mt-3 mt-sm-0">
+                      <button class="btn btn-dark float-right">Réactiver l'abonnement</button>
+                    </div>
+                  </div>
+                  <p>Vous avez annulé votre abonnement Bail Zen pour ce lot, ou nous n'avons pas pu le renouveler pour des raisons techniques.</p>
+                  <p>Dans tous les cas vous pouvez le réactiver et récupérer toutes les données en renseignant de nouveau votre carte bancaire.</p>
+                </div>      
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <button type="button" class="btn btn-link" data-toggle="tab" href="#tab_personnes" role="tab">
+                      < Etape précédente
+                    </button>
+                  </div>
+                  <div class="col-sm-auto mt-3 mt-sm-0">
+                    <button class="btn btn-dark float-right" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
+                    <p class="mt-2">
+                      <a href="#" class="lien_annexe" style="color:red">
+                        <i class="fal fa-exclamation-triangle"></i>  Compléter la date de début de bail pour passer cette étape
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="sectionTemoignages__formesBackground couronneNoir d-none d-lg-block" src="../../../assets/img/smartloc/illustrations/shapes/couronne-noire-b.png" alt="">
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-bail-annexes" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="bail"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_bail">
+              <h2>Bail & Annexes</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#bail_pdf" class="menuSticky--sousElement__item">Bail de location <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#bail_edl" class="menuSticky--sousElement__item">Entrée dans les lieux <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#bail_diag" class="menuSticky--sousElement__item">Diagnostics <br/><small><i class="far fa-calendar-alt"></i> 28 mai 2020</small></a></h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="bail_pdf" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Bail de location	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Bail de location</h4>
+                  <!-- TODO reprendre bloc activation signature -->
+                  <p class="mt-4">
+                    <a href="#"><i class="fa fa-file-pdf"></i> Bail PDF en cours</a>
+                    <button class="btn btn-outline-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modifier le bail</button>
+                    <button class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Signer le bail en ligne</button>
+                  </p>
+                  <p>Il n'est pas obligatoire d'attendre l'entrée dans les lieux (la date d'effet) pour signer le bail, vous 
+                    pouvez très bien signer en avance pour une date d'effet dans le futur.</p>
+                  <p>Cela évite un désistement de dernière minute du locataire ou encore un impayé sur le dépôt 
+                    de garantie (que vous pouvez encaisser dès la signature).</p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Signature électronique</h4>
+                  <p>La signature électronique du bail est acceptée par les compagnies d'assurance et les tribunaux en cas d'impayés. Depuis fin 2018 il est possible de signer électroniquement les actes de caution.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/signature-en-ligne-du-bail-de-location/" class="stretched-link">Fiche complète sur la signature électronique du bail</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/signature-electronique-acte-caution-garant/" class="stretched-link">Fiche complète sur la signature électronique de l'acte de caution</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="bail_edl" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Etat des lieux	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Documents à remplir et à signer</h4>
+                  <!-- TODO reprendre bloc activation edl -->
+                  <p>
+                    <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
+                      <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
+                    </a>
+                  </p>
+                  <p>
+                    <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
+                      <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
+                    </a>								
+                  </p>
+                  <p>
+                    <a href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit" target="_blank" >
+                      <i class="fa fa-file-pdf"></i> Inventaire des meubles
+                    </a>
+                  </p>
+                </div>
+                <!-- J'ai volontairement supprimé la section Documents à transmettre au locataire, soit il passe par l'activation, soit par le panel quittances -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="bail_diag" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Diagnostics	<br> <small><i class="fa fa-calendar-alt"></i> 28 Mars 2020</small></h3>
+                <div class="section__sousElement">
+                  <div class="alert-notice alert-notice-warning">
+                    <div class="notice-info">
+                      <p><strong>Pourquoi c'est important ?</strong></p>
+                      <p>Depuis le 01/07/2021 le diagnostic de performance énergétique (DPE) est opposable par le locataire. 
+                        Cela veut dire concrètement que le locataire peut utiliser l'absence de DPE pour demander une diminution de loyer.</p>
+                      <p><strong>Pourquoi c'est compliqué ?</strong></p>
+                      <p>Les diagnostics demandés sont de plus en plus nombreux et leurs durées de validité fluctuent en fonction des réformes et des travaux que vous réalisez.</p>
+                      <p><strong>Comment Smartloc vous aide ?</strong></p>
+                      <p>Smartloc vous donne accès à un réseau national de diagnostiqueurs avec un code réduction exclusif.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="formulaire__sousElement_titre">Durée de validité des diagnostics</h4>
+                  <table class="table table-bordered" style="margin-top:30px;margin-bottom:30px">
+                    <thead>
+                    <tr>
+                    <th style="min-width:150px">Diagnostic</th>
+                    <th style="min-width:150px">Validité</th>
+                    <th>Commentaires</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Surface habitable</td>
+                    <td>Illimité</td>
+                    <td>Facultatif, à refaire si travaux</td>
+                    </tr>
+                    <tr>
+                    <td>DPE</td>
+                    <td>10 ans</td>
+                    <td>Obligatoire</td>
+                    </tr>
+                    <tr>
+                    <td>Plomb</td>
+                    <td>6 ans si positif, illimité sinon</td>
+                    <td>Obligatoire pour les logements construits avant le 01/01/1949</td>
+                    </tr>
+                    <tr>
+                    <td>Amiante</td>
+                    <td>3 ans si positif, illimité sinon</td>
+                    <td>Optionnel mais obligatoire en cas de demande du locataire pour les logement construits avant le 01/07/1997</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                    <td>Electricité</td>
+                    <td>6 ans</td>
+                    <td>Obligatoire si installation de plus de 15 ans</td>
+                    </tr>
+                    <tr>
+                    <td>Gaz</td>
+                    <td>6 ans</td>
+                    <td>Obligatoire si installation de plus de 15 ans</td>
+                    </tr>
+                    <tr>
+                    <td>ERP</td>
+                    <td>6 mois</td>
+                    <td>Obligatoire</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="formulaire__sousElement_titre">Comment commander vos diagnostics ?</h4>
+                  <p>Nous vous recommandons notre partenaire Allodiagnostic, leader national sur le diagnostic, avec un module en ligne qui 
+                    vous confirmera les diagnostics nécessaires.</p>
+                  <p>
+                    <a href="https://www.allodiagnostic.com/commander/?layout=no-iframe&p=smartloc" target="_blank" rel="nofollow" class="btn btn-dark btn-sm">
+                      Module de commande en ligne des diagnostics
+                    </a>
+                    <span class="bg-success p-2 ml-sm-3"><i class="far fa-check-circle"></i> 7% de réduction via Smartloc</span>
+                  </p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/diagnostics-location/" class="stretched-link">
+                        Fiche complète sur les diagnostics obligatoires en location</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-quittance" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="quittances"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_quittances">
+              <h2>Quittances</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#quittances_mois" class="menuSticky--sousElement__item">Quittance du mois<br/><small><i class="far fa-calendar-alt"></i> 5 avril 2021</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#quittances_prochain" class="menuSticky--sousElement__item">Quittance du prochain mois <br/><small><i class="far fa-calendar-alt"></i> 5 mai 2021</small></a></h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="quittances_mois" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Quittance du mois	<br> <small><i class="fa fa-calendar-alt"></i> 5 avril 2021</small></h3>
+                <hr>
+                <!-- Reprendre le bloc de l'étape d'activation quittance -->
+                <div class="accordion" id="accordion_faq_home">
+                  <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
+                      <h5>Comment fonctionne l'envoi automatique des quittances ? <i class="fas fa-minus float-right mt-1"></i></h5>
+                    </div>
+                    <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
+                      <dl class="row">
+                        <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt>
+                        <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
+                        <dt class="col-sm-3 offset-sm-1">le 15 du mois</dt>
+                        <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
+                        <dt class="col-sm-3 offset-sm-1">le 25 du mois</dt>
+                        <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="questionDeroulante objetDeroulant">
+                    <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
+                      <h5>Pourquoi c'est important  d'envoyer les quittances ? <i class="fas fa-plus float-right mt-1"></i></h5>
+                    </div>
+                    <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
+                      <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                      <ul>
+                        <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
+                        <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                        <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                      </ul>                      
+                    </div>
+                  </div>
+                </div>                
+                <div class="section__sousElement mt-4">
+                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
+                  <div class="custom-control custom-switch mt-4 mb-4">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                    <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+                  </div>
+                  <p class="mt-2">
+                    <a href="#" class="lien_annexe" style="color:red">
+                      <i class="fal fa-exclamation-triangle"></i>  Compléter les informations sur le locataire pour activer cette étape
+                    </a>
+                  </p>
+                  <p><button class="btn btn-primary">Sauvegarder</button>
+                  </p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quittances & avis d'échéance</h4>
+                  <!-- Reprendre le bloc de l'étape d'activation quittance -->
+                  <p>
+                    <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+                      Avis d'échéance avril 2021</a>
+                  </p>
+                  <p>
+                    <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+                      Quittance de loyer avril 2021</a>
+                  </p>
+                  <p><button class="btn btn-outline-dark btn-sm mt-2 mt-sm-0" data-toggle="modal" data-target="#modal_anciennes_quittances">Anciennes quittances</button>
+                  <button data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-dark btn-sm ml-sm-3 mt-2 mt-sm-0">Modification des quittances</button></p>
+                  <p><a class="btn-link" href="#" data-toggle="modal" data-target="#modal_historique"><i class="far fa-history"></i> Consulter l'historique des loyers</a></p>            
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/19Jg37EtCAU8VsY7AaocBnlE4zZlzDEbVwaF4RBVf5F8/edit" class="stretched-link">
+                        Modèle de reçu en cas d'impayé partiel</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1Si6GNxUzRkLArMaTWJSFY3t1_dBR8C0dqz-sQXckuKE/edit" class="stretched-link">
+                        Modèle de quittance vierge</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="quittances_prochain" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Quittance du prochain mois	<br> <small><i class="fa fa-calendar-alt"></i> 5 mai 2020</small></h3>
+                <hr>
+                Idem
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-echeance" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="echeances"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_echeances">
+              <h2>Echeances</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#echeances_fisca" class="menuSticky--sousElement__item">Déclaration fiscale<br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#echeances_attestation" class="menuSticky--sousElement__item">Attestation assurance locataire <br/><small><i class="far fa-calendar-alt"></i> Mars</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#echeances_index" class="menuSticky--sousElement__item">Indexation du loyer <br/><small><i class="far fa-calendar-alt"></i> Avril</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#echeances_regul" class="menuSticky--sousElement__item">Régularisation des charges <br/><small><i class="far fa-calendar-alt"></i> Septembre</small></a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#echeances_conge" class="menuSticky--sousElement__item">Congé propriétaire <br/><small><i class="far fa-calendar-alt"></i> Septembre 2022</small></a></h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="echeances_fisca" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Déclaration fiscale	<br> <small><i class="fa fa-calendar-alt"></i> Avril</small></h3>
+                <hr>
+                <samp>Si meublé</samp>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Choix du régime fiscal en meublé</h4>
+                  <p>Si vous louez en meublé, vous êtes par défaut en régime LMNP (Loueur meublé non professionnel), à condition de remplir UNE des deux conditions suivantes:</p>
+                  <ul>
+                    <li>soit les loyers annuels tirés de la location meublée ne dépassent pas 23 000€</li>
+                    <li>soit les loyers annuels tirés de la location meublée ne dépassent pas les autres revenus du foyer</li>
+                  </ul>
+                  <p>Une fois que vous avez confirmé que vous êtes bien en LMNP, deux régimes s'offrent à vous:</p>
+                  <ul>
+                    <li><strong>le régime micro-BIC</strong>: vous déduisez simplement un forfait de charges représentant 50% des loyers; 
+                      vous êtes donc imposé sur 50% des loyers perçus</li>
+                    <li><strong>le régime réel</strong> : vous déduisez vos charges au réel, avec en plus des amortissements qui constituent un énorme avantage fiscal</li>
+                  </ul>
+                  <p>Les amortissements au régime réel LMNP vous permettent de réduire votre base imposable et donc vos impôts, <strong>de 50 à 100%</strong> dans les grandes agglomérations.</p>
+                  <p>C'est un des meilleurs montages de défiscalisation car il est sans conditions sur la zone, le loyer ou les locataires, contrairement au Pinel.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/" class="stretched-link">Fiche complète sur le régime réel en LMNP</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/simulation-desfiscalisation-immobiliere" class="stretched-link">Simulateur de réduction d'impôts en LMNP réel</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Comment opter pour le régime réel en LMNP ?</h4>
+                  <p>Le choix du régime réel doit se faire au plus tard le 1er février de l'année en cours si vous aviez opté pour le micro-BIC lors de votre déclaration de début d'activité P0i.</p> 
+                  <p><strong>Si vous n'avez jamais fait cette déclaration P0i</strong>, notre comptable nous a confirmé que vous pouvez opter pour le régime réel à n'importe quel moment en régularisation votre situation a posteriori.</p>
+                  <p>Dans tous les cas nous vous recommandons de vous faire accompagner d'un comptable pour basculer au régime réel.
+                    La comptabilité du régime réel (bilan et liasse fiscale) s'avère en effet complexe et le service vous coûte in fine 180€ une fois les crédits d'impôts déduits.</p>
+                  <p><a href="https://calendly.com/contablimo/contablimo-smartloc" class="btn btn-dark btn-sm" target="_blank">Prendre RDV avec notre comptable partenaire</a></p>
+                </div>
+                <hr>
+                <samp>Si vide</samp>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Choix du régime fiscal en vide</h4>
+                  <ul>
+                    <li><strong>le régime micro-foncier</strong>: vous déduisez simplement un forfait de charges de 30%</li>
+                    <li><strong>le régime réel</strong> : vous déduisez vos charges réelles</li>
+                  </ul>
+                  <p>Le régime réel est donc à privilégier si vos charges dépassent régulièrement 30% des loyers encaissés. 
+                  Il vous sera automatiquement appliqué si vos revenus fonciers dépassent les 15 000€. Enfin vous ne pourrez plus rebasculer sur le micro-foncier avant 3 ans.</p>
+                  <p>Pour vous aider nous à déclarer au réel nous avons créé un tableau de calcul et une fiche d'information :</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/spreadsheets/d/12gk2o0EF-hdVDazCGfD2LM_whAr1dD-_0vL7w_RD-4U/edit" class="stretched-link">
+                        Tableau de calcul pour calculer les charges déductibles</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/declaration-fiscale-en-location-vide-mode-demploi-complet" class="stretched-link">
+                        Fiche complète sur la déclaration des charges au réel</a></span>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+                  <p>Notre équipe peut vous renseigner sur les différentes modalités de déclaration de vos revenus fonciers, et vous proposer les solutions les plus adaptées à vos besoins.</p>
+                  <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="echeances_attestation" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Attestation assurance locataire	<br> <small><i class="fa fa-calendar-alt"></i> Mars</small></h3>
+                <hr>
+                <div class="section__sousElement">
+                  <p>À chaque date d'anniversaire du bail vous devez demander au locataire son attestation d'assurance habitation.</p>
+                  <p>C'est une assurance cruciale en cas de sinistres (incendies, inondations par exemple).</p>
+                  <p>La loi prévoit donc que la non-communication de l'attestation peut justifier une résiliation du bail selon des modalités que nous vous détaillons dans la fiche ci-dessous.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://drive.google.com/open?id=13cCf6gM3uPlup5TPFdK_GuT2HcCvT3zIPh8eOpevVgA" class="stretched-link">
+                        Modèle de courrier de demande de l'attestation d'assurance</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/demander-lattestation-dassurance-du-locataire-mode-demploi/" class="stretched-link">
+                        Que faire si le locataire ne transmet pas l'attestation ?</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="echeances_index" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Indexation du loyer	<br> <small><i class="fa fa-calendar-alt"></i> Avril</small></h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="formulaire__sousElement_titre">Pourquoi il est important d'indexer son loyer ?</h4>
+                  <p>Vous avez la possibilité (mais pas l'obligation) d'indexer le loyer chaque année en fonction de l'indice IRL qui dépend grosso modo de l'inflation. 
+                    L'index IRL servant au calcul est reparti à la hausse fin 2021 donc nous vous recommandons de ne pas oublier l'indexation.</p>
+                  <p>Si vous n'indexez pas le loyer, il n'est plus possible de récupérer les indexations a posteriori. 
+                    Pire si le retard dépasse 12 mois, l'indexation précédente est complètement perdue.</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/indexation-du-loyer/" class="stretched-link">
+                        Fiche complète sur l'indexation des loyers</a>
+                      </span>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="formulaire__sousElement">
+                  <h4 class="formulaire__sousElement_titre">Paramètres à remplir</h4>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label>Loyer en cours</label>
+                      <div class="champSaisie--illustré">
+                        <input type="text" class="form-control">
+                        <span>€/mois</span>
+                      </div>
+                      <small id="emailHelp" class="form-text text-muted">Le loyer hors charges payé actuellement par le locataire</small>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label>Indice IRL du loyer en cours</label>
+                      <select class="custom-select">
+                        <option>4T 2019 valeur 130,26</option>
+                        <option>3T 2019 valeur 130,26</option>
+                        <option>2T 2019 valeur 130,26</option>
+                        <option>1T 2019 valeur 130,26</option>
+                      </select> 
+                      <small id="emailHelp" class="form-text text-muted">IRL utilisé lors de la dernière indexation (ou celle indiquée sur le bail si vous n'avez jamais indexé)</small>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label>
+                        Date de dernière indexation
+                      </label>
+                      <div class="champSaisie--illustré">
+                        <input type="text" class="form-control" placeholder="__/__/____">
+                        <span><i class="fal fa-calendar"></i></span>
+                      </div>
+                      <small class="form-text text-muted">
+                        JJ/MM/AAAA - Mettez la date d'effet si le loyer n'a jamais été indexé
+                      </small>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label>
+                        Date théorique à laquelle vous devez indexer
+                      </label>
+                      <div class="champSaisie--illustré">
+                        <input type="text" class="form-control" placeholder="__/__/____">
+                        <span><i class="fal fa-calendar"></i></span>
+                      </div>
+                      <small class="form-text text-muted">
+                        JJ/MM/AAAA - Par défaut 12 mois après la dernière indexation
+                      </small>
+                    </div>
+                  </div>
+                  <button class="btn btn-dark btn-sm">Calculer l'indexation</button>
+                  <!---TODO ne faire apparaitre que si dejà indexé-->
+                  <a class="btn-link ml-sm-3" href="#" data-toggle="modal" data-target="#modal_historique"><i class="far fa-history"></i> Consulter l'historique des loyers</a>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Résultats</h4>
+                  <p><samp>Pour comprendre l'exemple, il se rend compte en juin 2021 qu'il a oublié d'indexer en mars 2021. Le simulateur d'indexation est au
+                    <a href="https://docs.google.com/spreadsheets/d/1_w3ZfNSZX_MBZ7qlEEppeqToX7X1qcC6LQbSY2J2Wvw/edit#gid=1569008530">lien Google Drive suivant</a>. 
+                    Les 3 onglets du spreadsheet sont identiques, j'avais séparé des cas types pour Anne-Sophie mais les dates ne collent plus.</samp></p>
+                  <dl class="row">
+                    <dt class="col-sm-4">L'indexation est-elle possible ?</dt>
+                    <dd class="col-sm-3"><span class="badge badge-success" style="font-size:14px">OUI</span></dd>
+                    <dd class="col-sm-5"></dd>
+    
+                    <dt class="col-sm-4">Etes-vous en retard sur l'indexation ?</dt>
+                    <dd class="col-sm-3"><span class="badge badge-warning" style="font-size:14px">OUI de moins de 12 mois</span></dd>
+                    <dd class="col-sm-5">Vous allez pouvoir indexer normalement mais vous ne pourrez pas appliquer le nouveau loyer rétroactivement</dd>
+    
+                    <dt class="col-sm-4">IRL retenu pour le loyer en cours</dt>
+                    <dd class="col-sm-3"><samp>4T2019 130.26</samp></dd>
+                    <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
+    
+                    <dt class="col-sm-4">IRL du nouveau loyer</dt>
+                    <dd class="col-sm-3"><samp>4T2020 130.52</samp></dd>
+                    <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
+                    
+                    <dt class="col-sm-4">Calcul du nouveau loyer</dt>
+                    <dd class="col-sm-3"><samp>1202.40€</samp></dd>
+                    <dd class="col-sm-5">Détail du calcul : 1202€ X 130.52 / 130.26</dd>
+                    
+                    <dt class="col-sm-4">Date d'indexation retenue</dt>
+                    <dd class="col-sm-3"><samp>13/03/2021</samp></dd>
+                    <dd class="col-sm-5"><button class="btn btn-link p-0"><i class="fal fa-edit"></i> modifier</button></dd>
+    
+                    <dt class="col-sm-4">Echeance de prise en compte du nouveau loyer</dt>
+                    <dd class="col-sm-3"><samp>Juillet 2021</samp></dd>
+                    <dd class="col-sm-5">Pour simplifier l'indexation et éviter les proratas, nous recommandons d'appliquer le nouveau loyer sur la prochaine mensualité complète.</dd>
+                  </dl>
+                  <div class="alert alert-primary">
+                    <div class="row justify-content-between align-items-center mb-0">
+                      <div class="col-sm-auto">
+                        <div class="alert-heading">
+                          <i class="fal fa-exclamation-triangle icone_medium"></i>
+                          <span>Vérifiez que le calcul de l'indexation vous convient !</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-auto mt-3 mt-sm-0">
+                        <button class="btn btn-dark float-right">Valider l'indexation</button>
+                      </div>
+                    </div>
+                    <p>Une fois l'indexation validée, le loyer du prochain avis d'échéance sera modifié, ainsi que celui des quittances futures. 
+                      Vous pourrez toujours modifier les valeurs après validation.</p>
+                  </div>
+                  <div class="alert alert-success">
+                    <div class="row justify-content-between align-items-center mb-0">
+                      <div class="col-sm-auto">
+                        <div class="alert-heading">
+                          <i class="fal fa-check-circle icone_medium"></i>
+                          <span>Le loyer a bien été indexé !</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-auto mt-3 mt-sm-0">
+                        <button class="btn btn-dark float-right" data-toggle="modal" data-target="#modal_historique">Consulter l'historique des loyers</button>
+                      </div>
+                    </div>
+                    <p>Le prochain avis d'échéance sera automatiquement mis à jour, ainsi que les quittances futures.</p>
+                    <p>Nous vous recommandons de prévenir le locataire en lui envoyant le courrier et l'avis d'échéance que nous vous avons préparés ci-dessous.</p>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quels documents envoyer au locataire ?</h4>
+                  <p>Nous vous recommandons d'envoyer au locataire le modèle de courrier ci-dessous (par mail ou par la Poste) 
+                    pour le prévenir et lui expliquer le calcul du nouveau loyer indexé.</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/169FTZXamMTo1gvtTicfPrwP5LCnzi2750bhkYJKOq6E/edit" class="stretched-link">
+                        Modèle de courrier pour l'indexation du loyer</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <p>Vous pouvez joindre à ce courrier l'avis d'échéance avec le nouveau loyer, pour qu'il puisse modifier son prochain paiement.</p>
+                  <!-- todo mettre le lien et le label de la bonne échéance comme en prod -->
+                  <p>
+                    <a href="#"><i class="fa fa-file-pdf"></i>
+                      Avis d'échéance nouveau loyer [mois échéance]</a>
+                  </p>
+                </div>
+                <hr>
+                <div class="section__sousElement">
+                  <p><samp>Pour discussion sur le prochain sprint d'indexation auto. A voir ensemble ce qu'il est possible de faire simplement dès maintenant, 
+                    comme conserver un historique des indexations, sans forcément toucher aux quittances. Ca permettrait a minima d'avoir la bonne valeur pour "IRL retenu pour le loyer en cours" 
+                    sur les indexations suivantes, aujourd'hui c'est forcément l'index initial </samp></p>
+                  <h4 class="section__sousElement_titre">Etapes du client version actuelle</h4>
+                  <ol>
+                    <li>Désactiver l'envoi automatique des quittances (optionnelle)</li>
+                    <li>Récupérer manuellement la quittance de juin à l'ancien loyer (si pas déjà envoyée)</li>
+                    <li>Modifier le loyer dans le système pour prendre en compte le nouveau loyer</li>
+                    <li>Récupérer l'avis d'échéance de juillet au nouveau loyer et le joindre au courrier explicatif</li>
+                    <li>Prévenir le locataire du changement de loyer en juillet avec notre modèle de courrier explicatif</li>
+                    <li>Réactiver l'envoi automatique des quittances (optionnelle)</li>
+                  </ol>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Etapes du client dans l'idéal</h4>
+                  <p>Boutons disponibles sous le tableau de calcul</p>
+                  <p><button class="btn btn-dark btn-sm">Valider ces données pour l'indexation</button>
+                  <a href="#" class="btn-link ml-3"><i class="fal fa-list-alt"></i> Historique des indexations</a></p>
+                  <p>On sauvegarde un historique avec i) une date d'indexation ii) un indice de référence iii) une nouvelle valeur de loyer.</p>
+                  <p>Les quittances et avis d'échéances sont mis à jour avec respect de l'historique.</p>
+                  <p>Pour le client qui n'aura pas validé pas l'option d'indexation automatique, il va devoir faire la manip dans la fenêtre de 30 jours avant l'échéance indexée, 
+                    pour avoir les bonnes valeurs aux moments de l'envoi. Le client devra auss envoyer le courrier au locataire.</p>
+                  <p>Pour le client qui aura validé l'option d'indexation automatique, les quittances seront mises à jour à jour automatiquement, 
+                    et on enverra  un mail d'explication spécifique au locataire pour l'échéance concernée.</p>
+                </div>
+                <hr/>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+                  <p>En cas de doutes sur le calcul de l'indexation, vous pouvez demander conseil à un de nos experts.</p>
+                  <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="echeances_regul" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Régularisation des charges 	<br> <small><i class="fa fa-calendar-alt"></i> Septembre</small></h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quand faire la régularisation des charges ?</h4>
+                  <p>Vous pouvez faire la régularisation des charges quand vous le souhaitez, idéalement juste après avoir reçu tous les justificatifs de dépense réelles.</p>
+                  <p>Nous vous indiquons une date indicative à septembre car en général à cette date vous avez déjà reçu le relevé de charges communes de l'année précédente
+                    si vous êtes en copropriété, mais également l'avis de taxe foncière précisant la Taxe d'Enlèvement des Ordures Ménagères (TEOM).</p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Comment calculer la régularisation ?</h4>
+                  <p>La régularisation s'applique uniquement si vous avez opté pour une provision pour charges; le cas échéant cette provision demandée est forcément inférieure ou supérieure au montant réel, le solde (en votre faveur ou défaveur) va donc être régularisé.</p>
+                  <p>Pour comprendre en détail comment régulariser les charges nous vous invitions à lire la fiche ci-dessous et à utiliser la feuille de calcul que vous pouvez télécharger au format excel (ou la copier sur google docs).</p>
+                  <p>Par souci de clarté nous vous recommandons de régulariser les charges sur des années civiles pleines, même si votre budget de copropriété est décalé (d'octobre à octobre par exemple). 
+                    Sur la feuille de calcul, vous trouverez deux onglets en fonction  du décalage éventuel de l'exercice de copropriété.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/regularisation-des-charges-locatives-mode-demploi/" class="stretched-link">
+                        Fiche technique sur la régularisation</a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/spreadsheets/d/1jzFrkYz4mWkotYXR4meKRdAnWZ6sO9LAsLKnGq8HfOs/edit" class="stretched-link">
+                        Feuille de calcul sur la régularisation</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+                  <p>En cas de doutes sur la prise en charge par le locataire ou le bailleur de la réparation, vous pouvez demander conseil à un de nos experts.</p>
+                  <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quels documents envoyer au locataire ?</h4>
+                  <p>Une fois le montant de la régularisation calculée, il va falloir prévenir le locataire en justifiant votre calcul.</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1B3Gi6ug0wKQpH-a_niauzc_LAAZj5ryYbrfkKu1Mg04/edit" class="stretched-link">
+                        Modèle de courrier pour liquidation de charges</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <p>Il faudra également lui fournir une quittance de régularisation que vous pouvez éditer via notre module ci-dessous.</p>
+                </div>
+                <div class="formulaire__sousElement">
+                  <h4 class="formulaire__sousElement_titre">Quittance de régularisation</h4>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label>Montant de la régularisation</label>
+                      <div class="champSaisie--illustré">
+                        <input type="text" class="form-control">
+                        <span>€</span>
+                      </div>
+                      <small class="form-text text-muted">Si négatif indiqué une valeur avec un -</small>
+                    </div>
+                    <div class="form-group col-lg-3">
+                      <label>Mois de régularisation</label>
+                      <select class="custom-select">
+                        <option>Octobre</option>
+                        <option>Novembre</option>
+                        <option>Décembre</option>
+                      </select> 
+                    </div>
+                    <div class="form-group col-lg-3">
+                      <label>Année de régularisation</label>
+                      <select class="custom-select">
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                      </select> 
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <p>Si la régularisation est importante, il peut être judicieux de modifier la provision pour charges en conséquence, 
+                    afin qu'à l'avenir elle corresponde plus précisément aux dépenses réelles.
+                  </p>
+                  <p>
+                    <button class="btn btn-outline-dark btn-sm">Modifier les quittances</button>
+                  </p>
+                </div>
+                <div class="section__sousElement">
+                  <p>Si vous avez opté pour un envoi automatique des quittances vous pouvez désactiver cette option le temps de calculer la régularisation.</p>
+                  <div class="custom-control custom-switch mt-4 mb-4">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                    <label class="custom-control-label" for="customSwitch1">Option envoi automatique des quittances</label>
+                  </div>
+                  <p><button class="btn btn-primary">Sauvegarder</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="echeances_conge" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Congé propriétaire	<br> <small><i class="fa fa-calendar-alt"></i> Septembre 2022</small></h3>
+                <div class="section__sousElement">
+                  <div class="alert-notice alert-notice-warning">
+                    <div class="notice-info">
+                      <p><strong>Pourquoi c'est important ?</strong></p>
+                      <p>Si vous n'envoyez pas le congé selon les règles, il ne sera plus possible de faire partir locataire pendant 3 ans en location vide (1 an en meublé).</p>
+                      <p><strong>Pourquoi c'est compliqué ?</strong></p>
+                      <p>Les motifs de résiliation sont très encadrés, tout comme la forme du courrier à envoyer et le timing à respecter. 
+                        Une petite erreur et le locataire peut annuler votre congé.</p>
+                      <p><strong>Comment Smartloc vous aide ?</strong></p>
+                      <p>Smartloc vous prévient en avance pour envoyer le congé au locataire à temps. Nous vous préparons le modèle de courrier de congé et nous vous 
+                        assistons dans sa rédaction.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <p>Le locataire peut partir à tout moment du logement, on dit qu'il donne congé. 
+                    Le bailleur quant à lui ne peut donner congé qu'à la date d'anniversaire du bail.</p>
+                  <p>Donner congé revient donc à refuser le renouvellement, et ce refus est très encadré comme nous allons le voir.</p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Comment motiver son congé ?</h4>
+                  <p>Trois raisons permettent de donner congé :</p>
+                  <ul>
+                    <li>vente du logement
+                    <li>reprise pour habiter ou loger un proche
+                    <li>motif légitime et sérieux, c'est à dire non respect du bail</li>
+                  </ul>
+                  <p>Ce sont les seules raisons possibles, vous ne pouvez pas refuser le renouvellement pour d'autres motifs. Ces motifs sont très éncadrés, nous vous invitons donc à lire notre fiche ci-dessous :</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/conge-du-bailleur-motifs-et-preavis/" class="stretched-link">
+                        Tout savoir sur le congé donné par le bailleur</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quand donner congé à son locataire ?</h4>
+                  <!-- TODO 3 mois si meuble -->
+                  <p>
+                    Si vous souhaitez donner congé, la loi impose de respecter un préavis de 6 mois avant la date d'anniversaire du bail.
+                  </p>
+                  <p>Il est crucial de respecter ce délai, nous vous envoyons donc une notification X jours avant la date limite pour ne pas oublier d'envoyer le courrier au locataire.</p>
+                  <p>En effet le locataire doit accuser réception de votre recommandé ou émarger le document physiquement pour que le préavis démarre, il est donc primordial de réaliser les démarches en avance.</p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Comment donner congé ?</h4>
+                  <p>Vous devez envoyer un courrier précisant le motif du congé à tous les titulaires du bail.</p>
+                  <p>Le courrier doit être envoyé en recommandé avec RAR, puisque c'est la date de réception qui fait foi pour le respect du préavis.</p>
+                  <p>Le modèle que nous vous proposons prévoit également une notice d'information en annexe, elle est obligatoire depuis le 1er janvier 2018 sans quoi le congé n'est pas valide.</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1Af-aFsmIAZZT92dHJUyngmQTVodwfKpmY12ITeaBn0s/edit" class="stretched-link">
+                        Modèle de courrier pour congé</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div> 
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-assurance" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="assurances"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_assurances">
+              <h2>Assurances</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#assurances_gli" class="menuSticky--sousElement__item">Assurance loyer impayé (GLI)</a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#assurances_pno" class="menuSticky--sousElement__item">Assurance propriétaire non occupant (PNO)</a></h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="assurances_gli" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Assurance loyer impayé (GLI)</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Critères en fonction de la date d'entrée</h4>
+                  <p>Les critères et les conditions varient en fonction de la date de souscription.</p>
+                  <ul>
+                    <li><strong>Locataire entrant ou en place depuis moins de 14 jours</strong> : critères de solvabilité à respecter / pas de période probatoire</li>
+                    <li><strong>Locataire en place depuis plus de 14 jours et moins de 6 mois</strong> : critères de solvabilité à respecter / période probatoire de 3 mois</li>
+                    <li><strong>Locataire en place depuis plus de  6 mois</strong> : pas de critères de solvabilité à respecter / période probatoire de 3 mois</li>
+                  </ul>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Souscription</h4>
+                  <p>Avant souscription, nous vous fournissons un agrément de l'assureur sous 8 heures. Cela vous garantit une prise en charge en cas d'impayés.</p>
+                  <p><a href="https://form.jotform.com/213413916429052" target="_blank" class="btn btn-sm btn-dark">Tester un dossier locataire</a></p>              
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/comparateur-assurance-loyer-impaye" class="stretched-link">
+                        En savoir plus sur l'assurance loyer impayé</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--dupliquer l'activation PNO sans la checkbox -->
+            <div class="card">
+              <div class="card-body">
+                <div id="assurances_pno" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Assurance propriétaire non occupant (PNO)</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Pourquoi une assurance propriétaire non occupant (PNO) ?</h4>
+                  <p>Vous êtes obligé légalement de prendre une assurance propriétaire non occupant en tant que bailleur d'un logement en location.</p>
+                  Cette assurance couvre votre responsabilité civile (une tuile tombe du toit et blesse votre locataire), mais également couvre les sinistres (incendies, dégâts des eaux, etc.) non garantis 
+                  par l'assurance du locataire ou de la copropriété.</p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/" class="stretched-link">Fiche complète sur l'assurance PNO</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Comment souscrire une assurance PNO ?</h4>
+                  <p>La plupart des compagnies proposent ce type de contrat, si vous n'en avez pas encore vous pouvez souscrire en ligne en 
+                    2 minutes à l'assurance PNO Luko que nous avons sélectionnée, disponible <strong>à partir de 4,90€/mois</strong>, avec un service de déclaration de sinistre 100% en ligne par photos ou vidéos.
+                  </p>
+                  <p class="mt-4">
+                    <a href="https://www.luko.eu/fr/onboarding?utm_source=Partner&utm_medium=RealEstate&utm_campaign=Smartloc&pc=smlcxlk&product=mrh&utm_term=HomeFR" 
+                    class="btn btn-dark btn-sm mt-2 mt-sm-0" target="_blank">
+                      Souscrire à l'assurance PNO
+                    </a>
+                    <span class="bg-success p-2 ml-sm-3"><i class="far fa-check-circle"></i> 2 mois offerts via Smartloc</span>
+                  </p>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-incident" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="incidents"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_incidents">
+              <h2>Incidents</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#incidents_impaye" class="menuSticky--sousElement__item">Impayés de loyer</a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#incidents_depannage" class="menuSticky--sousElement__item">Dépannage technique</a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#incidents_refacturation" class="menuSticky--sousElement__item">Refacturation d'une dépense au locataire</a></h4>
+                </li>            
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="incidents_impaye" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Impayés de loyer</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quand et comment relancer le locataire ?</h4>
+                  <p>Les délais et modalités ci-dessous sont celles imposées par notre garantie loyer impayé, en pratique nous vous recommandons de les suivre même sans assurance.</p>
+                  <p><strong>Relance simple / échéance + 7 jours</strong></p>
+                  <p>Vous devez relancer le locataire par courrier simple ou par mail, dans les jours qui suivent la date d'échéance.</p>
+                  <p>Nous vous avons préparé un mail de relance qui <strong>maximisera vos chances d'être payé rapidement</strong> par le locataire et 
+                    d'éviter ainsi que l'impayé s'installe :</p>
+                  <ul>
+                    <li>l'envoi par un tiers extérieur comme Smartloc renforce le caractère officiel de la relance</li>
+                    <li>les messages ont été optimisés pour convaincre le locataire de régler rapidement</li>
+                    <li>vous bénéficiez du suivi de nos équipes si la relance ne fonctionne pas</li>
+                  </ul>
+                  <p>Comme tous les mails envoyés aux locataires, vous serez en copie de l'email envoyé.</p>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label>Montant de l'impayé</label>
+                      <div class="champSaisie--illustré">
+                        <input type="text" class="form-control">
+                        <span>€</span>
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label>Échéance concernée</label>
+                      <select class="custom-select">
+                        <option>Mars 2022</option>
+                        <option>Février 2022</option>
+                        <option>Janvier 2022</option>
+                        <option>Décembre 2021</option>
+                      </select> 
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Votre IBAN
+                    </label> 
+                    <input type="text" class="form-control" placeholder="Optionnel">
+                  </div>
+                  <p><a href="#" data-toggle="modal" data-target="#modal_modele_mail_impayes">Voir le mail envoyé au locataire</a></p>
+                  <p><button class="btn btn-primary">
+                    Envoyer la relance au locataire
+                  </button></p>
+                  <p><samp>TODO module désactivation quittance</samp></p>
+                  <p>En cas d'impayé partiel vous devez quand même le relancer et vous devez lui fournir un reçu en lieu et place de la quittance.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/19Jg37EtCAU8VsY7AaocBnlE4zZlzDEbVwaF4RBVf5F8/edit" class="stretched-link">Modèle de reçu en cas d'impayé partiel</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <br/>
+                  <p><strong>Mise en demeure par RAR / Insured échéance + 35 jours / Garantme échéance + 45 jours</strong></p>
+                  <p>Si le locataire ne répond pas à vos relances simples, envoyez un courrier de mise en demeure par RAR, 
+                    ainsi qu'au garant le cas échéant, idéalement 15 jours après la date d'échéance.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1kxm3aPO4jcXtwgn-P2Nht07a0ZdSIxa0OazdE3vWSRw/edit" class="stretched-link">Modèle de courrier de mise en demeure locataire</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1x31b1wPCGeX4u_4pKcPKRQWTWqsn9iluBek8ZT-JqwY/edit" class="stretched-link">Modèle de courrier de mise en demeure garant</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Lancement de la procédure d'expulsion</h4>
+                  <p><strong>Vous avez souscrit à notre garantie loyer impayé</strong></p>
+                  <p>Si vous avez pris notre garantie loyer impayé c'est l'assurance qui va se charger de la procédure d'expulsion.</p>
+                  <p>Vous devez déclarer le sinistre au plus tard 40 jours après la première échéance impayée pour la garantie Insured, 60 jours pour Garantme.</p>
+                  <p>
+                    <a href="https://www.lesassures.fr/Identification/Authentification.aspx" target="_blank" class="btn btn-dark btn-sm">
+                      Déclarer un impayé à Insured
+                    </a>
+                    <a href="https://recouvrement.garantme.fr/agence/declarer-un-impaye/gli?" target="_blank" class="btn btn-dark btn-sm">
+                      Déclarer un impayé à Garantme
+                    </a>
+                  </p>
+                  <br/>
+                  <p><strong>Vous n'avez pas souscrit à notre garantie loyer impayé</strong></p>
+                  <p>Si vous n'avez pas pris d'assurance, vous allez devoir mener la procédure d'expulsion en direct, en commençant par le commandement de payer par huissier.</p>
+                  <p>Vous pouvez bénéficier de l'assistance de notre avocat partenaire et de son réseau national d'huissiers. 
+                    Il est spécialisé en impayés et vous propose un forfait très intéresssant à 600€ TTC pour toute la procédure (hors frais d'huissiers).</p>
+                  <p><a href="https://recouvrimmo.com/" target="_blank" class="btn btn-sm btn-dark"> Se faire accompagner par notre avocat partenaire</a></p>              
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/loyer-impaye-comment-se-deroule-la-procedure-dexpulsion/" class="stretched-link">
+                        Fiche complète sur la procédure d'expulsion</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="incidents_depannage" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Dépannage technique</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <p>Vous pouvez utiliser les services de notre réseau d'artisans partenaire pour commander des prestations :</p>
+                  <ul>
+                    <li>en ligne rapidement (même en urgence)</li>
+                    <li>à tarifs négociés</li>
+                    <li>avec des garanties sur la bonne réalisation des travaux</li>
+                    <li>partout en France</li>
+                  </ul>
+                  <p>Demandez votre devis gratuit au <a href="tel:+33170965077">01 70 96 50 77</a> ou en cliquant sur le bouton suivant</p>
+                  <p>
+                    <a href="https://depannage.homeserve.fr/?utm_source=affiliation&utm_medium=Smartloc&utm_campaign=espace_client&affiliationCode=ae24ff50-6446-11ea-a917-2f990b2efaf9" 
+                    target="_blank" class="btn btn-dark btn-sm">
+                      Commander une réparation
+                    </a>
+                    <span class="bg-success p-2 ml-sm-3"><i class="far fa-check-circle"></i> 10% de réduction avec le code SMARTLOC10</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card">
+              <div class="card-body">
+                <div id="incidents_refacturation" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Refacturation d'une dépense au locataire</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Définition de la prise en charge</h4>
+                  <p>Les charges et réparations payables par le locataires sont définies par décret. Les deux listes sont exhaustives, donc si la dépense que vous avez engagée n'y figure pas,
+                    vous ne pourrez pas la refacturer au locataire.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                      <span><a href="/bail/docs/reparation_locative_pdf.pdf" class="stretched-link">Liste des réparations locatives à la charge du locataire</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="/bail/docs/charges_recuperables_pdf.pdf" class="stretched-link">Liste des charges récupérables auprès du locataire</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Courrier de refacturation au locataire</h4>
+                  <p>Les réparations locatives sont donc refacturables au locataire, il suffit de lui envoyer un courrier avec la facture de l'intervention. 
+                    Nous vous avons préparé un modèle de courrier ci-dessous. Il prévoit le cas particulier où la réparation est refacturable au locataire car trouvant sa source dans 
+                    un manque d'entretien, une erreur ou une négligence du locataire. 
+                  </p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1Q9xRgFE9VKVMpmi4K_5k3t4WcUvlFwMCDZRGMC5YHBE/edit" class="stretched-link">
+                        Modèle de courrier de refacturation au locataire</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+                  <p>En cas de doutes sur la prise en charge par le locataire ou le bailleur de la réparation, vous pouvez demander conseil à un de nos experts.</p>
+                  <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <h4 class="section__sousElement_titre">Nos fiches pratiques sur les pannes courantes et leur prise en charge</h4>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/entretien-et-reparations-quels-elements-a-charge-du-locataire/" class="stretched-link">Règles générales pour savoir qui paie</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/entretien-et-reparation-du-chauffe-ballon-proprietaire-ou-locataire-responsable/" class="stretched-link">Ballon d'eau chaude en panne : locataire ou propriétaire ?</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/entretien-de-la-chaudiere-le-locataire-doit-il-payer/" class="stretched-link">Entretien de la chaudière : locataire ou propriétaire ?</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/serrure-cassee-locataire-ou-proprietaire-responsable/" class="stretched-link">Serrure cassée : locataire ou propriétaire</a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/volet-ou-store-casse-qui-paie/" class="stretched-link">Volet bloqué : locataire ou propriétaire</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-sortie" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="sortie"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_sortie">
+              <h2>Sortie du locataire</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#sortie_edl" class="menuSticky--sousElement__item">État des lieux de sortie
+                    <br/><small><i class="far fa-calendar-alt"></i> date de fin de bail</small>
+                  </a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#sortie_dg" class="menuSticky--sousElement__item">Restitution du dépôt de garantie
+                    <br/><small><i class="far fa-calendar-alt"></i> date de fin de bail + 30 jours</small>
+                  </a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#sortie_resil" class="menuSticky--sousElement__item">Résiliation de l'assurance
+                    <br/><small><i class="far fa-calendar-alt"></i> date de fin de bail + 30 jours</small>
+                  </a></h4>
+                </li> 
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#sortie_new" class="menuSticky--sousElement__item">Nouveau bail de location</a></h4>
+                </li>           
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="sortie_edl" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">État des lieux de sortie</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Quand fixer la date de sortie ?</h4>
+                  <p>En cas de résiliation du bail par le locataire, celui-ci doit respecter un préavis de <span v-if="bail.bien.is_meuble">1 mois</span>
+                    <span v-else>3 mois (sauf exceptions voir notre <a href="/blog/preavis-conge-locataire/" target="_blank">fiche sur le congé locataire</a>)</span>.</p>
+                  <p>La date théorique de fin de bail est la date d'anniversaire du bail; les loyers sont théoriquement dus jusqu'à cette date.</p>
+                  <p>Pour des raisons pratiques vous pouvez fixer une date de sortie différente de la date de fin de bail.
+                    Sachez que même si vous acceptez de faire l'état des lieux avant la date de fin de bail, les loyers sont dus jusqu'à cette date, sauf accord contraire de votre part.</p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Modèle d'état des lieux de sortie</h4>
+                  <p>Nous vous fournissons un modèle d'état des lieux de sortie, ainsi que la quittance et l'avis d'échéance au prorata de la date de sortie.</p>
+                  <p>Pensez à désactiver l'envoi automatique des quittances si vous avez opté pour cette option.</p>
+                </div>
+                <div class="formulaire__sousElement">
+                  <div class="form-row">
+                    <div class="form-group col-lg-6">
+                      <label>Date de fin de bail</label>
+                      <div class="champSaisie--illustré">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <a href="/bail/docs/edl_compact.pdf" target="_blank"  download="Smartloc - Etat des lieux .pdf" href="/bail/docs/edl_compact.pdf">
+                      <i class="fa fa-file-pdf"></i> État des lieux PDF (signature manuscrite)
+                    </a>
+                  </p>
+                  <p>
+                    <a href="https://form.jotform.com/211815918670359" target="_blank" rel="nofollow">
+                      <i class="fad fa-file-signature"></i> État des lieux numérique (signature électronique)
+                    </a>								
+                  </p>
+                  <p><a href="#"><i class="fa fa-file-pdf"></i> Avis d'échéance au prorata</a></p>
+                  <p><a href="#"><i class="fa fa-file-pdf"></i> Quittance au prorata</a></p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+                  <p>Si vous n'arrivez pas à trouver une date avec le locataire ou si vous souhaitez déléguer l'état des lieux de sortie à un professionnel, 
+                    notre équipe peut vous proposer un partenaire spécialisé dans votre zone.</p>
+                  <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="sortie_dg" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Restitution du dépôt de garantie</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Délai de restitution du dépôt de garantie</h4>
+                  <p>Pour restituer le dépôt de garantie vous disposez en théorie de :</p>
+                  <ul>
+                    <li><strong>1 mois</strong> si l'état des lieux de sortie est identique à celui d'entrée</li>
+                    <li><strong>2 mois</strong> si l'état des lieux de sortie n'est pas identique à celui d'entrée</li>
+                  </ul>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Retenue sur le dépôt de garantie</h4>
+                  <p>L'imputation des éventuelles dégradations du locataire est un sujet complexe car le principe de vétusté normale (ou d'usure des équipements) rentre en jeu.</p>
+                  <p>Nous avons préparé un tableau de calcul pour tenir compte de cette vétusté, ainsi qu'un modèle de courrier pour justifier des retenues.</p>
+                </div>
+                <div class="section__sousElement conteneurCardLignes">
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="far fa-file-excel cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/spreadsheets/d/1_MWobqOC1J7ak0PuPKPLATQ5pHbRCvptV_eknHdAWQg/edit" class="stretched-link">
+                        Feuille de calcul pour les retenues
+                      </a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1ditRW9IS1iqW4XHY3gtjW5Z81ji2xGKfV-bTF1PX4Q8/edit" class="stretched-link">
+                        Courrier pour retenues après dégradations
+                      </a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                      <span><a href="https://docs.google.com/document/d/1oKARieV2ZxW8Vy0dEyQZK7i0iEk05iSoJxwbGMlyL6Y/edit" class="stretched-link">
+                        Courrier pour retenues après impayés de loyer
+                      </a></span>
+                    </div>
+                  </div>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/depot-de-garantie-du-bail-de-location-definition-et-limite/" class="stretched-link">
+                        Fiche complète sur le dépôt de garantie
+                      </a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Assistance de nos équipes</h4>
+                  <p>Si vous avez besoin d'aide pour calculer les retenues sur le dépôt de garantie, notre équipe peut vous assister dans le calcul.</p>          
+                  <p><a href="#" class="btn btn-outline-dark btn-sm">Parlez à un gestionnaire</a></p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Impayés suite à des dégradations supérieures au dépôt de garantie</h4>
+                  <p>Si vous avez pris notre garantie loyer impayé avec option dégradations, vous êtes couvert contre les dégradations non remboursées par le locataire.</p>
+                  <p>Vous devez envoyer le courrier de mise en demeure décrit dans la section précédente dans les 30 jours suivants l'état des lieux de sortie.</p>
+                  <p>Vous devez déclarer le sinistre à Insured dans les 8 jours suivants la mise en demeure si celle-ci se révèle infructueuse, 
+                    le délai étant porté à 20 jours si vous avez opté pour le contrat Garantme :</p>
+                  <p>
+                    <a href="https://www.lesassures.fr/Identification/Authentification.aspx" target="_blank" class="btn btn-dark btn-sm">
+                      Déclarer un impayé à Insured
+                    </a>
+                    <a href="https://recouvrement.garantme.fr/agence/declarer-un-impaye/gli?" target="_blank" class="btn btn-dark btn-sm">
+                      Déclarer un impayé à Garantme
+                    </a>
+                  </p>
+                  <div class="card cardLigne">
+                    <div class="card-body">
+                      <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                      <span><a href="/blog/assurance-loyer-impaye-degradations-immobilieres-du-locataire/" class="stretched-link">
+                        Fiche complète sur l'assurance dégradations</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="sortie_resil" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Résiliation de l'assurance</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <p>Le contrat de garantie loyer impayé Insured est lié au bail en cours, il faudra donc résilier le contrat et en souscrire un nouveau sur le prochain bail.</p>
+                  <p><a href="https://www.lesassures.fr/Identification/Authentification.aspx" class="btn btn-default" target="_blank">Résilier le contrat Insured</a></p>
+                  <p>Le contrat de garantie loyer impayé Garantme se poursuit quand à lui au changement de locataire, si vous décidez de garantir de nouveau un dossier éligible.</p>
+                  <p style="margin-top:30px">
+                    <a href="https://form.jotform.com/213413916429052" class="btn btn-cta btn-lg" target="_blank">Tester le dossier du nouveau locataire</a>
+                  </p>
+                  <p style="margin-top:30px">
+                    <a href="/comparateur-assurance-loyer-impaye">En savoir plus sur le contrat d'assurance loyer immpayé</a>
+                  </p>
+                  <p>Vous pouvez aussi choisir de résilier le contrat au changement du locataire, il faudra simplement envoyer un mail à gli@garantme.fr 
+                    avec l'état des lieux de sortie.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="sortie_new" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Nouveau bail de location</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <p>Les modifications sont illimitées et gratuites dans le cadre de votre abonnement. 
+                    Vous pouvez donc modifier le bail actuel pour préparer la prochaine location.</p>
+                  <p><a href="#" data-toggle="modal" data-target="#modal_modif_bail_reset" class="btn btn-dark btn-sm">
+                    Changer de locataire
+                  </a></p>
+                </div>
+              </div>
+            </div>                
+          </div>
+        </div>
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-biblio" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="biblio"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_biblio">
+              <h2>Bibliothèque</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#biblio_modeles" class="menuSticky--sousElement__item">Modèles de contrats & courriers</a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#biblio_fisca" class="menuSticky--sousElement__item">Fiches pour optimiser sa fiscalité</a></h4>
+                </li>           
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="biblio_modeles" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Modèles de contrats & courriers</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Bail & annexes</h4>
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="conteneurCardLignes">
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                            <span><a href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux compact.pdf" target="_blank" class="stretched-link">État des lieux PDF</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-signature cardLigne__icone icone_medium"></i>
+                            <span><a href="https://form.jotform.com/211815918670359"  rel="nofollow" target="_blank" class="stretched-link">État des lieux numérique</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1_-tA1JV9Ay4mO7w2BpB-y5vnXvsRGE4ZYOKWKgDcPGw/edit" class="stretched-link">Bail mobilité</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/13j9eH6hY1BiRTrjFEVe6DIlyAdvOapSIrx1c9Hxcs9o/edit" class="stretched-link">Bail résidence secondaire</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="conteneurCardLignes">
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1huw_OgS6cfASOu_V6eQz1i2qA2h7quKwaHe_3S0ykSM/edit" class="stretched-link">Bail logement de fonction</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1lzn95ipE-r9LNyjAdBFWxZZav0OPiOTQtFMKLFvLX5I/edit"  class="stretched-link">Bail parking séparé</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1dh5_5Ky7J9FO-yGj1ZryrKJY0XhorOUWG_skILfTAVc/edit" class="stretched-link">Acte de caution solidaire</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1d4werCZu2G3_ogSXlS38-m7c0_U3WMfCfZw5Q1AzfiE/edit" class="stretched-link">Bail de sous-location</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Courriers</h4>
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="conteneurCardLignes">
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/169FTZXamMTo1gvtTicfPrwP5LCnzi2750bhkYJKOq6E/edit" class="stretched-link">Courrier pour indexation</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1Af-aFsmIAZZT92dHJUyngmQTVodwfKpmY12ITeaBn0s/edit" class="stretched-link">Courrier congé bailleur</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                            <span><a href="/blog/wp-content/uploads/2018/01/Notice-cong%C3%A9-bailleur.pdf" class="stretched-link">Notice congé bailleur</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/13cCf6gM3uPlup5TPFdK_GuT2HcCvT3zIPh8eOpevVgA/edit" class="stretched-link">Courrier simple attestation assurance</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1izQjXMp1acCJQA5WqeXI3rv4F1WFKGSn5x1bVjK7iEo/edit" class="stretched-link">Mise en demeure attestation assurance</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1B3Gi6ug0wKQpH-a_niauzc_LAAZj5ryYbrfkKu1Mg04/edit" class="stretched-link">Courrier régularisation des charges</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1LlnYtA9PZi1ZgcFXtb4w-FMFOs9DW8GBRrKVsGEebiE/edit" class="stretched-link">Courrier refacturation TEOM</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1Zlh3DTOuugraFJ2iyko-jYSGduQuy0LI0PUwGJ45mRk/edit" class="stretched-link">Mise en demeure troubles de voisinage</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="conteneurCardLignes">
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1kxm3aPO4jcXtwgn-P2Nht07a0ZdSIxa0OazdE3vWSRw/edit" class="stretched-link">Mise en demeure impayés</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1ditRW9IS1iqW4XHY3gtjW5Z81ji2xGKfV-bTF1PX4Q8/edit" class="stretched-link">Retenues suite à dégradations</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1oKARieV2ZxW8Vy0dEyQZK7i0iEk05iSoJxwbGMlyL6Y/edit" class="stretched-link">Retenues suite à impayés</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1Q9xRgFE9VKVMpmi4K_5k3t4WcUvlFwMCDZRGMC5YHBE/edit" class="stretched-link">Courrier refacturation intervention</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1dshrFUQOfyzUDfVsAWX3NvtR9rMgDdDsYffFZs2tN3M/edit" class="stretched-link">Mise en demeure déclaration sinistre</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/182F_Dsr9V5YXeiyu9Wzvg_iLi5-gyNEs_-Fdt3Cjjrk/edit" class="stretched-link">Mise en demeure entretien du logement</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1anx81-cWljUks0TxccqJjk37UQTpQfFdLOGr68PKcig/edit" class="stretched-link">Mise en demeure respect du bail</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1iNNy91SL0TZugbYIL7DFdLhY_WX9ZZWVQCFDfpQbkFk/edit" class="stretched-link">Mise en demeure entretien chaudière</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Autres modèles</h4>
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="conteneurCardLignes">
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1y9DvYiI78xH0Pqoly59dmc2NeQlkQ_HlgIIghAapHWA/edit" class="stretched-link">Avenant au bail</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/19Jg37EtCAU8VsY7AaocBnlE4zZlzDEbVwaF4RBVf5F8/edit" class="stretched-link">Reçu en cas d'impayé partiel</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                            <span><a href="/bail/docs/reparation_locative_pdf.pdf" class="stretched-link">Liste des réparations locatives</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="conteneurCardLignes">
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                            <span><a href="/bail/docs/charges_recuperables_pdf.pdf" class="stretched-link">Liste des charges récupérables</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-word cardLigne__icone icone_medium"></i>
+                            <span><a href="https://docs.google.com/document/d/1XUb8l5lEgNCRszax15Px_xog07Y7CdwUbOgk0pWFAf0/edit" class="stretched-link">Résiliation mandat agence</a></span>
+                          </div>
+                        </div>
+                        <div class="card cardLigne">
+                          <div class="card-body">
+                            <i class="fal fa-file-pdf cardLigne__icone icone_medium"></i>
+                            <span><a href="/blog/wp-content/uploads/2020/10/attestation_de_loyer-3.pdf" class="stretched-link">Attestation loyer CAF</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card">
+              <div class="card-body">
+                <div id="biblio_fisca" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Fiches pour optimiser sa fiscalité</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Déclaration des revenus fonciers et plus-value</h4>
+                  <div class="conteneurCardLignes mt-2">
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/declaration-fiscale-en-location-vide-mode-demploi-complet" class="stretched-link">Déclaration des charges au réel en location vide</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/fiscalite-de-location-meublee-regime-reel-en-lmnp/"  class="stretched-link">Pourquoi choisir le régime réel en location meublée ?</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/impots-et-fiscalite-de-la-location-saisonniere" class="stretched-link">Fiscalité de la location saisonnière</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/fiscalite-plus-value-immobiliere/" class="stretched-link">Comprendre la fiscalité de la plus-value immobilière en 4 étapes</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Investir à plusieurs, transmettre son patrimoine</h4>
+                  <div class="conteneurCardLignes mt-2">
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/sarl-de-famille-investir-a-plusieurs-en-location-meublee-lmnp/" class="stretched-link">SARL de famille : investir à plusieurs en location meublée</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/demembrement-usufruit-location/"  class="stretched-link">Démembrement et usufruit pour une location</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/donation-demembrement-sci-usufruit/" class="stretched-link">Optimiser la donation avec le démembrement d’une SCI</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/sci-familiale-definitions-et-implications-sur-la-location/" class="stretched-link">SCI familiale : définitions et implications sur la location</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/fiscalite-sci-is-ir-flat-tax/" class="stretched-link">Fiscalité de la SCI : IS, IR et flat tax</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Dispositifs permettant de défiscaliser</h4>
+                  <div class="conteneurCardLignes mt-2">
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/dispositif-loi-pinel-est-ce-une-bonne-affaire/" class="stretched-link">Dispositif loi PINEL : est-ce une bonne affaire ?</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/convention-anah-louer-abordable-cosse-ancien/"  class="stretched-link">Convention ANAH : louer abordable (et rentable) avec le Cosse ancien</a></span>
+                      </div>
+                    </div>
+                    <div class="card cardLigne">
+                      <div class="card-body">
+                        <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                        <span><a href="/blog/loi-censi-bouvard-defiscalisez-en-lmnp-via-une-residence-service/" class="stretched-link">LMNP Censi Bouvard : défiscalisez via une résidence service</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-compte" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="compte"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_compte">
+              <h2>Compte</h2>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#compte_profil" class="menuSticky--sousElement__item">Profil</a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#compte_abo" class="menuSticky--sousElement__item">Abonnement</a></h4>
+                </li>
+                <li class="nav-item">
+                  <h4 class="mb-4"><a href="#compte_factures" class="menuSticky--sousElement__item">Factures</a></h4>
+                </li>          
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="compte_profil" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Profil</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <!--TODO faire marcher les liens-->
+                  <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier le mail recevant les quittances</a></p>
+                  <p>Pour modifier le mail de connexion à votre compte, contactez notre équipe support.</p>
+                  <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier le mot de passe du compte</a></p>
+                  <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier la carte bancaire de l'abonnement</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="compte_abo" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Abonnement</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Conditions d'abonnement</h4>
+                  <p><strong>Formule</strong> : Bail Zen (1 lot)</p>
+                  <p><strong>Tarif</strong> : 4,90€/mois (3 premiers mois offerts)</p>
+                  <p><strong>Facturation</strong> : trimestrielle</p>
+                  <p><strong>Renouvellement</strong> : 12/02/2022</p>
+                </div>
+                <div class="section__sousElement">
+                  <h4 class="section__sousElement_titre">Gestion des lots</h4>
+                  <p>Chaque abonnement Bail zen est lié à un lot, c'est à dire à un logement ou à une chambre en colocation bail individuel.</p>
+                  <p>
+                    <a class="btn btn-dark btn-sm" href="/bail/creation">
+                      Créer un bail pour un nouveau lot
+                    </a>
+                  </p>
+                  <p>Si vous souhaitez gérer 3 lots ou plus, nous proposons une formule dégressive Investisseur à 12,5€/mois, en engagement annuel.
+                    Pour que nous puissions vous activer cette formule, validez le <a href="https://pay.gocardless.com/AL00034X9ZME3F" target="_blank">mandat de prélèvement SEPA</a>.
+                  </p>
+                  <p>Si vous souhaitez simplement changer de locataire sur un lot donné, vous pouvez le faire gratuitement dans le cadre de votre abonnement.</p>
+                  <p>
+                    <button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#modal_modif_bail_reset">
+                      Changer de locataire
+                    </button>
+                  </p>
+                  <p>Si vous souhaitez résilier l'abonnement Bail Zen pour ce lot, cliquez simplement sur le lien suivant.
+                  <p>Attention : en résiliant l'abonnement vous perdrez votre accès au bail, aux quittances et à toutes les informations de votre espace. 
+                    Pensez donc à récupérer les fichiers avant de résilier.</p>
+                  <p>
+                    <a href="#" class="btn-link" data-toggle="modal" data-target="#modal_resiliation">
+                      <i class="fal fa-times-circle"></i> Résilier l'abonnement Bail Zen pour ce lot
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div id="compte_factures" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Factures</h3>
+                <hr>
+                <div class="section__sousElement">
+                  <p>
+                    <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+                      Facture xxxxx</a>
+                  </p>
+                  <p>
+                    <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+                      Facture xxxxx</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    
+    <!-- FOOTER -->
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+          <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/smartloc_white.png" alt=""></p>
+          <p><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+          <p>
+            <a href="https://twitter.com/smartloc" rel="nofollow">
+              <i class="fab fa-twitter footer__logoReseauxSociaux"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+              <i class="fab fa-linkedin-in footer__logoReseauxSociaux"></i>
+            </a>
+          </p>
+          <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+          <div class="row mt-4 mt-lg-0">
+            <div class="col-lg-2">
+              <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+              <a href="/bail/"><h5>Bail</h5></a>
+              <a href="/assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+              <a href="/blog"><h5>Ressources</h5></a>
+              <a href="/tarifs"><h5>Tarifs</h5></a>
+              <a href="/cgu"><h5>Mentions légales</h5></a>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <a href="/a-propos"><h5>A propos</h5></a>
+              <h5>Partenaires</h5>
+              <div class="row mt-3">
+                <div class="col-lg-auto">
+                  <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="../../../assets/img/smartloc/logos/lemonway.png" class="float-left"></a>
+                </div>
+                <div class="col-lg-auto">
+                  <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <ul class="list-unstyled">
+                <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+                <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+                <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+                <li><a href="/dossier">Validation dossier locataire</a></li>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled">
+                <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+                <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+                <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+                <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </footer>
+  </main>
+</div>
+</div>
+
+<div class="modal fade" id="modal_historique" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Historique des loyers</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Évenement</th>
+              <th scope="col">Date</th>
+              <th scope="col">Loyer</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Début du bail</th>
+              <td>12/08/2018</td>
+              <td>1200 € <small>(IRL 3T2018 119,99)</small></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Indexation</th>
+              <td>01/09/2019</td>
+              <td>1203,23€ <small>(IRL 3T2019 121,90)</small></td>
+              <td><a href="#" class="btn-link"><i class="fal fa-trash"></i> Supprimer</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Indexation</th>
+              <td>01/09/2020</td>
+              <td>1205,25€ <small>(IRL 3T2020 123,34)</small></td>
+              <td><a href="#" class="btn-link"><i class="fal fa-trash"></i> Supprimer</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_resiliation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Résiliation de l'abonnement</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-danger p-2"><i class="fal fa-exclamation-triangle"></i> Attention</span>
+        </p>
+        <p>Vous allez résilier votre abonnement, vous perdrez votre accès au bail et à tous les documents, pensez à faire les sauvegardes nécessaires.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton resilier -->
+        <button type="button" class="btn btn-dark">Résilier</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---TODO duplicat de la modal de /pdf à factoriser eventuellement-->
+<div class="modal fade" id="modal_signature_activation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Quels sont les avantages de la signature électronique ?</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-success p-2"><i class="far fa-check-circle"></i> Satisfait ou remboursé</span>
+          <span class="bg-success p-2"><i class="far fa-check-circle"></i> Seulement 4€ / signataire</span>
+        </p>
+        <p>La signature électronique du bail est acceptée par les tribunaux et les assurances loyers impayés.</p>
+        <p>
+          Elle vous permet de signer rapidement avec une <strong>date d'effet dans le futur</strong>, 
+          et d'éviter ainsi que le locataire se désiste.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton activation signature -->
+        <button type="button" class="btn btn-dark">Activer l'option de signature</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_quittances" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Paramètres de la location</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire__section p-0">
+          <div class="formulaire__sousElement">
+            <h4 class="formulaire__sousElement_titre">Propriétaire</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <h4 class="formulaire__sousElement_titre">Locataire</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <h4 class="formulaire__sousElement_titre">Loyer & charges</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Loyer</label>
+                <input type="text" class="form-control">
+                <small class="form-text text-muted">
+                  <!---TODO gérer la fermeture de la modal paramètres-->
+                  <a class="btn-link" href="#" data-toggle="modal" data-target="#modal_historique">
+                    <i class="far fa-history"></i> Consulter l'historique des loyers
+                  </a>            
+                </small>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Charges</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>                                 
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton save -->
+        <button type="button" class="btn btn-dark">Sauvegarder les modifications</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_anciennes_quittances" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Anciennes quittances</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire__sousElement">
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <label>Mois de la quittance</label>
+              <select class="custom-select">
+                <option>Janvier</option>
+                <option>Février</option>
+              </select> 
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Année de la quittance</label>
+              <select class="custom-select">
+                <option>2018</option>
+                <option>2019</option>
+              </select> 
+            </div>
+          </div>
+          <p>
+            <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+              Avis d'échéance avril 2021</a>
+          </p>
+          <p>
+            <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+              Quittance de loyer avril 2021</a>
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_bail_reset" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Changement de locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-danger p-2"><i class="fal fa-exclamation-triangle"></i> Attention</span>
+        </p>
+        <p>Lors du changement de locataire certaines données du bail en cours seront écrasées, notamment les noms des locataires, leurs garants, l'indice IRL, etc.</p>
+        <p>Pensez donc à récupérer les documents de l'ancien locataire, notamment les quittances de sortie au prorata dans la section "Sortie du locataire".</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton changer de locataire -->
+        <button type="button" class="btn btn-dark">Changer de locataire</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_bail_en_cours" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modification du bail</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Que souhaitez-vous faire ?</h4>
+        <!-- Todo modal modif quittances -->
+        <p>Modifier les informations de la location en cours sans modifier le PDF du bail <a href="#" >Cliquez ici</a></p>
+        <!-- Todo redirection /modif -->
+        <p>Modifier le PDF du bail pour la location en cours <a href="#">Cliquez ici</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_signature" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Signature électronique</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <!-- Todo mutualisation bloc signature /pdf -->
+        <div class="formulaire__section p-0">
+          <div class="formulaire__sousElement">
+            <ul class="list-unstyled">
+              <li>Les numéros internationaux sont acceptés au format +33XXXX.</li>
+              <li>Pour les numéros ultra-marins utilisez l'indicatif du département et non pas l'alias commençant par 06.</li>
+              <li>Chaque signataire doit avoir un mail et un numéro de portable différents des autres signataires.</li>
+            </ul>
+            <div class="form-row mt-4">
+              <div class="form-group col-lg-3">
+                <label>Locataire 1 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <label>Locataire 2 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <label>Propriétaire 1 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter le propriétaire 2 en signataire</a>
+              <!-------<a href="#" class="ml-4 btn-link"><i class="fas fa-minus"></i> Supprimer le propriétaire 2</a> ----->
+            </div>
+            <fieldset disabled>
+              <div class="form-row">
+                <div class="form-group col-lg-3">
+                  <label>Propriétaire 2 : Prénom</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Nom</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-4">
+                  <label>Email</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-2">
+                  <label>Portable</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group mt-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Je confirme que toutes les parties - bailleur(s), locataire(s) et éventuel(s) garant(s) - <br/>ont bien relu le bail</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton démarrer la signature -->
+        <button type="button" class="btn btn-dark">Démarrer la signature</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_edl" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail d'entrée dans les lieux au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Entrée dans les lieux au 23 Nov. 2021
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          L'état des lieux d'entrée au 23 Nov. 2021 approche,
+          je me permets de vous rappeler les éléments que vous devrez nous fournir lors de ce rendez-vous :<br> <br> 
+          <ul>
+            <li>
+              une attestation d'assurance multi-risque habitation
+              (si vous n'en avez pas encore vous pouvez <a href="https://www.luko.eu/fr/?utm_source=partner&amp;utm_medium=RealEstate&amp;utm_campaign=Smartloc&amp;utm_term=HomeFR" target="_blank">souscrire en ligne ici</a>)
+            </li>
+            <li>
+              un chèque pour le dépôt de garantie
+            </li>
+            <li>
+              un chèque pour le premier loyer au prorata
+            </li>
+          </ul>
+          Vous trouverez l'avis d'échéance correspondant à ces deux chèques en pièce jointe.<br> <br>
+          Ces 3 documents (les 2 chèques et l'attestation d'assurance) doivent absolument être remis lors de l'état des lieux d'entrée.<br> <br>
+          Dans le cas où le paiement se fait par virement, je vous rappelle que les fonds doivent être reçus avant l'état des lieux d'entrée.<br> <br>
+          Cordialement<br> <br>
+          <br>
+          Josipa Deak
+          Envoyé via Smartloc
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_impayes" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail de relance au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Incident : relance impayés de loyer mars 2022
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          A ce jour nous constatons un <strong>impayé de XXXX €</strong> de mars 2022. Cette échéance devait être payée intégralement au plus tard le 5 du mois. <br> <br> 
+          Je vous prie donc de bien vouloir régulariser votre situation au plus vite, en procédant au virement des sommes dues, 
+          afin d'éviter le démarrage d'une procédure contentieuse via Smartloc. <br> <br>
+          Vous trouverez de nouveau l'avis d'échéance en pièce jointe, ainsi que notre IBAN pour le virement : XXXXXXXXXXXXXXXXXXXXXXXXX. <br> <br>
+          Nous pensons qu'il s'agit d'un simple oubli de votre part, nous restons néanmoins disponible par mail ou téléphone si nécessaire.<br> <br>
+          Cordialement<br> <br>
+          Josipa Deak<br>
+          Envoyé via Smartloc
+          <br><br>
+          PS. Pour rappel les retards de paiement récurrents peuvent justifier d'une résiliation judiciaire du bail.
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_quittance" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail de quittance au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Quittance de loyer Septembre 2021
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          Votre propriétaire (en copie) a validé votre quittance pour le loyer de Septembre 2021, vous la trouverez en pièce jointe.<br> <br>
+          Nous vous avons également préparé l'avis d'échéance pour le paiement du prochain mois.<br> <br>
+          Cordialement<br>
+          L'équipe Smartloc
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Quittance de loyer Septembre 2021
+          </a>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_mail_indexation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail d'indexation au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <strong>Sujet :</strong>
+          Indexation annuelle IRL : augmentation du loyer à compter du 5 avril 2022
+        </p>
+        <p>
+          <strong>Contenu du mail</strong>
+        </p>
+        <blockquote>
+          Bonjour,<br/>
+          <br/>
+          Conformément au bail que vous avez signé avec le propriétaire en copie, le loyer de votre location [adresse du bien] sera indexé 
+          selon la variation de l’indice IRL publié par l’INSEE à compter de l’échéance du [date de l’échéance].
+          <br/><br/>
+          La nouvelle valeur du loyer hors charges est de [nouvelle valeur loyer] (calcul : [ancien loyer] x [dernier indice connu]/[indice -12 mois]).
+          <br/><br/>
+          A la prochaine échéance, vous devrez donc réaliser un virement de [nouvelle valeur loyer + charges] (loyer + charges). Cette nouvelle valeur est intégrée 
+          à l'avis d'échéance que vous trouverez en pièce jointe.
+          <br/><br/>
+          Cordialement<br/>
+          L'équipe Smartloc
+        </blockquote>
+        <p class="mt-4">
+          <strong>Pièces jointes du mail</strong>
+        </p>
+        <p><i class="fa fa-file-pdf"></i> Avis d'échéance avril 2022</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_onboarding_gratuit" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Fonctionnalité bloquée</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule bail limité. Pour bénéfier des fonctionnalités avancées, 
+          débloquez le bail complet avec 3 mois offerts d'assistant de gestion locative :</p>
+        <p><strong>Bail complet 14,70€</strong></p>
+        <ul class="fa-ul ml-0">
+          <li><i class="fal fa-check-circle"></i> Bail PDF avec clauses et annexes en modification illimité</li>
+          <li><i class="fal fa-check-circle"></i> Etat des lieux numérique avec signature électronique</li>
+        </ul>
+        <p><strong></strong></p>
+        <div class="mt-3 mb-3"><i class="far fa-plus-square fa-2x" aria-hidden="true"></i></div>
+        <p><strong>Assistant de gestion locative Zen <span style="position:relative" class="mr-2"><span id="prix_barre">4,90€ / mois</span></span> 3 premiers mois offerts</strong></p>
+        <ul class="fa-ul ml-0">
+          <li><i class="fal fa-check-circle"></i> Envoi des quittances au locataire</li>
+          <li><i class="fal fa-check-circle"></i> Support mail & chat en cas de questions/contentieux</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur calcul des retenues sur le dépôt de garantie</li>
+          <li><i class="fal fa-check-circle"></i> Réductions chez nos partenaires</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark">Activer le bail complet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
