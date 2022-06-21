@@ -190,36 +190,43 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
             <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">Particulier</h3>
-                  <h4 class="card-subtitle mb-2 text-muted">4,90€/mois (3 mois offerts)</h4>
-                  <p class="card-text">Abonnement trimestriel<br/>par lot</p>
-                  <a href="https://smartloc.typeform.com/to/mYYucI" class="card-link">Démarrer</a>
-                  <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
+                  <h4 class="card-title">ZEN</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">Abonnement trimestriel</h5>
+                  <p class="card-text">Bail complet avec assistant de gestion locative Smartloc. <br/>1 bien inclus.</p>
+                  <h4 class="mb-3">
+                    6,50€ / mois 
+                    <br/>(1 mois d'essai gratuit)
+                  </h4>
+                  <a href="/gestion-locative/creation" class="card-link">Démarrer</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">Investisseur</h3>
-                  <h4 class="card-subtitle mb-2 text-muted">19€/mois (1 mois offert)</h4>
-                  <p class="card-text">Abonnement mensuel<br/>pour 4 à lots</p>
-                  <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
-                  <a href="#/tarifs" class="card-link">Voir tous les tarifs</a>
+                  <h4 class="card-title">MULTI</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">Abonnement annuel</h5>
+                  <p class="card-text">Bail complet avec assistant de gestion locative Smartloc. <br/>Jusqu'à 3 biens inclus.</p>
+                  <h4 class="mb-3">
+                    7,50€ / mois 
+                  </h4>
+                  <a href="#" data-toggle="modal" data-target="#modalMulti" class="card-link">Démarrer</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">Gestionnaire</h3>
-                  <h4 class="card-subtitle mb-2 text-muted">nous contacter</h4>
-                  <p class="card-text">Abonnement mensuel<br/>pour +10 lots</p>
+                  <h4 class="card-title">INVESTISSEUR</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">Abonnement annuel</h5>
+                  <p class="card-text">Bail complet avec assistant de gestion locative Smartloc. <br/>Jusqu'à 15 biens inclus.</p>
+                  <h4 class="mb-3">
+                    12,50€ / mois 
+                  </h4>
                   <a href="#" data-toggle="modal" data-target="#modalInvestisseur" class="card-link">Démarrer</a>
-                  <a href="/tarifs" class="card-link">Voir tous les tarifs</a>
                 </div>
               </div>
-            </div>            
+            </div>          
           </div> 
         </div>
         <div class="section__sousElement alert-notice border-0">
@@ -697,16 +704,37 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
   </div>
 </div>
 
-<div class="modal fade " id="modalInvestisseur" tabindex="-1">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="modalMulti" tabindex="-1">
+  <div class="modal-dialog">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal">
-        <span>&times;</span>
-      </button>
+      <div class="modal-header">
+        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
       <div class="modal-body">
-        <h3>Activation sur demande</h3>
-        <p>Pour activer les formules Investisseur ou Gestionnaire, contactez notre équipe.</p>
-        <h5 class="mt-3"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></h5>
+        <p>Pour activer la formule Multi en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
+        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
+        <p><a href="https://pay.gocardless.com/AL0005ED0NBGB2" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalZenAnnuel" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation sur votre espace de gestion</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Zen+ sur un logement, vous devez vous rendre sur l'espace de gestion du bien concerné.</p>
+        <p><a href="/login" rel="nofollow" class="btn btn-dark">Accéder à votre compte</a></p>
+        <p><a href="/login" rel="nofollow" class="btn btn-outline-dark">Créer un compte</a></p>
       </div>
     </div>
   </div>
