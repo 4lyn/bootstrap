@@ -1806,3 +1806,12 @@ input[type=number] {
 .text-danger {
   color: $smartloc-red !important;
 }
+
+.zen_navbarButton.active {
+  background-color: #EEE;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.zen_navbarButton i{
+  padding-right: 1em;
+}
