@@ -10,68 +10,93 @@ body_class: bg-grey
 
 <!-- MAIN -->
 <div class="row h-100 m-0 ">
-  <aside class="col-xl-2 col-lg-3 pl-2 pr-0 py-5">
-    <a class="navbar-brand col-2 d-flex justify-content-between align-items-center" href="/">
-      <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
-      <span class="navbar-toggler-icon"></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button> 
-    <ul class="nav flex-column px-3 " role="tablist">
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
-          <i class="far fa-tasks"></i> Actions à valider
+  <aside class="navbar navbar-expand-lg col-xl-2 col-lg-3 p-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="far fa-bars h3 p-1"></i>
+    </button>
+    <div class="collapse navbar-collapse flex-column justify-content-between h-100 "  id="navbarSupportedContent">
+      <div class="pl-2 pr-0 pt-5 pb-1">
+        <a class="navbar-brand col-2 d-flex justify-content-between align-items-center" href="/">
+          <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
+          <span class="navbar-toggler-icon"></span>
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
-          <i class="far fa-cog"></i> Paramètres
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
-          <i class="far fa-file-signature"></i> Bail & Annexes
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">
-          <i class="far fa-receipt"></i> Quittances
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">
-          <i class="far fa-calendar-check"></i> Écheances</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">
-          <i class="far fa-shield-check"></i> Assurances</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">
-          <i class="far fa-times-octagon"></i> Incidents</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">
-          <i class="far fa-sign-out-alt"></i> Sortie du locataire</a>
-      </li>
-      <li class="nav-item d-lg-none d-xl-inline-block">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">
-          <i class="far fa-books"></i> Bibliothèque</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">
-          <i class="far fa-user-circle"></i> Profil bailleur</a>
-      </li>
-    </ul>
+        <div class="px-3 py-3"> <hr/> </div>
+        <ul class="nav flex-column px-3 " role="tablist">
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
+              <i class="far fa-tasks"></i> Actions à valider <span class="badge badge-light  badge-pill p-2 ml-4">+3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
+              <i class="far fa-cog"></i> Paramètres
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
+              <i class="far fa-file-signature"></i> Bail & Annexes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">
+              <i class="far fa-receipt"></i> Quittances
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">
+              <i class="far fa-calendar-check"></i> Écheances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">
+              <i class="far fa-shield-check"></i> Assurances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">
+              <i class="far fa-times-octagon"></i> Incidents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">
+              <i class="far fa-sign-out-alt"></i> Sortie du locataire</a>
+          </li>
+          <li class="nav-item d-lg-none d-xl-inline-block">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">
+              <i class="far fa-books"></i> Bibliothèque</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">
+              <i class="far fa-user-circle"></i> Profil bailleur</a>
+          </li>
+        </ul>
+      </div>
+      <div class="pl-2 pr-0 pt-5 pb-1 px-3 w-100">
+        <div class="px-3"> <hr/> </div>
+        <div class="nav-item dropright ">
+          <a class="nav-link dropdown-toggle h5 text-right" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Bail Chantalat
+          </a>
+          <div class="dropdown-menu ml-4 b-0 w-100">
+            <a class="dropdown-item disabled" href="#">Combescot</a>
+            <a class="dropdown-item" href="#">Dagher</a>
+            <a class="dropdown-item" href="#">Dupont</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Ajouter un logement</a>
+          </div>
+        </div>  
+           
+      </div>
+    </div>
   </aside>
   <main class="col-xl-10 col-lg-9 overflow-auto h-100 p-0">
-    <header class="container-fluid bg-warning">
+   
+    <header class="container-fluid bg-warning py-3" id="header_homepage">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="far fa-bars h3 p-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+              <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes baux</a>
                   <div class="dropdown-menu">
@@ -111,22 +136,24 @@ body_class: bg-grey
               </ul>
             </div>
           </nav>
+          <div class="card mb-5">
+            <div class="card-body">
+              <span>Bail Chantalat - 46 bld de l'Hôpital - 780€CC - démarrage 12/03/2021</span>
+              <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-5">Paramètres</a>
+              <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="card-link btn-link ml-3">
+                <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <div class="tab-content bg-grey">
-      <section class="container-fluid bg-warning pt-0 pb-5 tab-pane fade show active" id="s-espace-gestion" role="tabpanel">
+      <section class="container-fluid pt-0 pb-5 tab-pane fade show active" id="s-espace-gestion" role="tabpanel">
         <div class="row pt-2 pb-5">
           <div class="col-lg-12 px-5">
-            <div class="card">
-              <div class="card-body">
-                <span>Bail Chantalat - 46 bld de l'Hôpital - 780€CC - démarrage 12/03/2021</span>
-                <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-5">Paramètres</a>
-                <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="card-link btn-link ml-3">
-                  <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
-                </a>
-              </div>
-            </div>
+            
+           
             <div class="row">
               <div class="col-md-4">
                 <div class="card">
