@@ -1808,10 +1808,14 @@ input[type=number] {
 }
 
 .zen_navbarButton.active {
-  background-color: #EEE;
-  border-radius: 5px;
+  border-left: 2px solid black;
   font-weight: bold;
 }
+
 .zen_navbarButton i{
   padding-right: 1em;
+}
+
+.card_zen{
+  border:none;
 }
