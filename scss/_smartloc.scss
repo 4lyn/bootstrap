@@ -1806,14 +1806,17 @@ input[type=number] {
 .text-danger {
   color: $smartloc-red !important;
 }
-
+.zen_navbarButton:hover {
+  background-color: rgba(255,255,255, 0.3);
+}
 .zen_navbarButton.active {
-  border-left: 2px solid black;
+  border-right: 3px solid black;
   font-weight: bold;
 }
 
 .zen_navbarButton i{
   padding-right: 1em;
+  padding-left: 1em;
 }
 
 .card_zen{
