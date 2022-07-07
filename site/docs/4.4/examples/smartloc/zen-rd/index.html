@@ -12,23 +12,55 @@ body_class: bg-grey
 <div class="row h-100 m-0 ">
 
   <aside class="navbar navbar-expand-lg col-xl-2 col-lg-3 p-0 bg-warning">
+    <a class="navbar-brand d-bloc d-lg-none row align-items-center justify-content-center p-1">
+      <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc ml-4">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="far fa-bars p-1"></i>
     </button>
-    <a class="navbar-brand d-block d-lg-none" href="/">
-      <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc pt-2">
-      <span class="navbar-toggler-icon"></span>
-    </a>
-    <div class="nav-item dropdown  d-block d-lg-none">
-      <a class="nav-link dropdown-toggle pl-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-        <i class="fa fa-house mr-3"></i> Bail Chantalat
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item disabled" href="#">Combescot</a>
-        <a class="dropdown-item" href="#">Dagher</a>
-        <a class="dropdown-item" href="#">Dupont</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Ajouter un logement</a>
+   
+    <div class="d-block d-lg-none">
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Actions à valider
+        </a>
+        <div class="dropdown-menu">
+          
+            <a class="dropdown-item" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
+              <i class="far fa-tasks"></i> Actions à valider
+            </a>
+
+          <div class="dropdown-divider"></div>
+          
+            <a class="dropdown-item" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
+              <i class="far fa-cog"></i> Infos de la location
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
+              <i class="far fa-file-signature"></i> Bail & Annexes
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">
+              <i class="far fa-receipt"></i> Quittances
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">
+              <i class="far fa-calendar-check"></i> Écheances
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">
+              <i class="far fa-shield-check"></i> Assurances
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">
+              <i class="far fa-times-octagon"></i> Incidents
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">
+              <i class="far fa-sign-out-alt"></i> Sortie du locataire
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">
+              <i class="far fa-books"></i> Bibliothèque
+            </a>
+            <a class="dropdown-item" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">
+              <i class="far fa-user-circle"></i> Profil bailleur
+            </a>
+       
+        </div>
       </div>
     </div>
     <div class="collapse navbar-collapse flex-column justify-content-between h-100"  id="navbarSupportedContent">
@@ -99,7 +131,8 @@ body_class: bg-grey
               <i class="far fa-user-circle"></i> Profil bailleur</a>
           </li>
         </ul>
-        <ul class="nav flex-column px-3 d-block d-lg-none">
+        <ul class="nav flex-column px-3 d-block d-lg-none pt-2">
+          <hr>
           <li class="nav-item">
             <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
           </li>
@@ -108,6 +141,18 @@ body_class: bg-grey
             <div class="dropdown-menu">
               <a class="dropdown-item" href="/password/change">Mot de passe</a>
               <a class="dropdown-item" href="/logout">Déconnexion</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Changer de bail <br/> Bail Chantalat
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item disabled" href="#">Combescot</a>
+              <a class="dropdown-item" href="#">Dagher</a>
+              <a class="dropdown-item" href="#">Dupont</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ajouter un logement</a>
             </div>
           </li>
         </ul>
