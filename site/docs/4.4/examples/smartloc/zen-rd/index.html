@@ -11,59 +11,16 @@ body_class: bg-grey
 <!-- MAIN -->
 <div class="row h-100 m-0 ">
 
-  <aside class="navbar navbar-expand-lg col-xl-2 col-lg-3 p-0 bg-warning">
-    <a class="navbar-brand d-bloc d-lg-none row align-items-center justify-content-center p-1">
+  <aside class="navbar navbar-expand-lg col-xl-2 col-lg-3 align-items-start p-0 bg-warning">
+    <a class="navbar-brand d-bloc my-2 d-lg-none row align-items-center justify-content-center p-1">
       <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc ml-4">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="far fa-bars p-1"></i>
+    <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="far fa-bars p-1 fa-2x"></i>
     </button>
    
-    <div class="d-block d-lg-none">
-      <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          Actions à valider
-        </a>
-        <div class="dropdown-menu">
-          
-            <a class="dropdown-item" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
-              <i class="far fa-tasks"></i> Actions à valider
-            </a>
-
-          <div class="dropdown-divider"></div>
-          
-            <a class="dropdown-item" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
-              <i class="far fa-cog"></i> Infos de la location
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
-              <i class="far fa-file-signature"></i> Bail & Annexes
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">
-              <i class="far fa-receipt"></i> Quittances
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">
-              <i class="far fa-calendar-check"></i> Écheances
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">
-              <i class="far fa-shield-check"></i> Assurances
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">
-              <i class="far fa-times-octagon"></i> Incidents
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">
-              <i class="far fa-sign-out-alt"></i> Sortie du locataire
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">
-              <i class="far fa-books"></i> Bibliothèque
-            </a>
-            <a class="dropdown-item" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">
-              <i class="far fa-user-circle"></i> Profil bailleur
-            </a>
-       
-        </div>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse flex-column justify-content-between h-100"  id="navbarSupportedContent">
+  
+    <div class="collapse navbar-collapse flex-column justify-content-between"  id="navbarSupportedContent">
       <div class="pr-0 pt-lg-5 pb-1 w-100">
         <a class="navbar-brand d-none d-lg-flex justify-content-center align-items-center" href="/">
           <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
@@ -73,7 +30,7 @@ body_class: bg-grey
           <hr>
           <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle pl-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-house mr-3"></i> Bail Chantalat
+              <i class="fa fa-house mr-3"></i> Mes baux
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item disabled" href="#">Combescot</a>
@@ -83,6 +40,7 @@ body_class: bg-grey
               <a class="dropdown-item" href="#">Ajouter un logement</a>
             </div>
           </div>
+          <small style="margin-top: -1rem; position: absolute; padding-left: 3rem;">Chantalat</small>
           <hr>  
         </div>
         <ul class="nav flex-column d-none d-lg-block" role="tablist">
@@ -131,21 +89,11 @@ body_class: bg-grey
               <i class="far fa-user-circle"></i> Profil bailleur</a>
           </li>
         </ul>
-        <ul class="nav flex-column px-3 d-block d-lg-none pt-2">
+        <nav class="nav px-3 d-block d-lg-none pt-2">
           <hr>
-          <li class="nav-item">
-            <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/password/change">Mot de passe</a>
-              <a class="dropdown-item" href="/logout">Déconnexion</a>
-            </div>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Changer de bail <br/> Bail Chantalat
+              Bail selectionné: Chantalat
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item disabled" href="#">Combescot</a>
@@ -155,7 +103,68 @@ body_class: bg-grey
               <a class="dropdown-item" href="#">Ajouter un logement</a>
             </div>
           </li>
-        </ul>
+          <ul class="nav flex-column" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
+                <i class="far fa-tasks"></i> Actions à valider
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
+                <i class="far fa-cog"></i> Infos de la location
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
+                <i class="far fa-file-signature"></i> Bail & Annexes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-quittance" role="tab" aria-controls="s-quittance" aria-selected="false">
+                <i class="far fa-receipt"></i> Quittances
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-echeance" role="tab" aria-controls="s-echeance" aria-selected="false">
+                <i class="far fa-calendar-check"></i> Écheances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-assurance" role="tab" aria-controls="s-assurance" aria-selected="false">
+                <i class="far fa-shield-check"></i> Assurances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-incident" role="tab" aria-controls="s-incident" aria-selected="false">
+                <i class="far fa-times-octagon"></i> Incidents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-sortie" role="tab" aria-controls="s-sortie" aria-selected="false">
+                <i class="far fa-sign-out-alt"></i> Sortie du locataire</a>
+            </li>
+            <li class="nav-item zen_navbarButton">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-biblio" role="tab" aria-controls="s-biblio" aria-selected="false">
+                <i class="far fa-books"></i> Bibliothèque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-compte" role="tab" aria-controls="s-compte" aria-selected="false">
+                <i class="far fa-user-circle"></i> Profil bailleur</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="nav flex-row justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
+            </li>
+            <li class="nav-item dropup">
+              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/password/change">Mot de passe</a>
+                <a class="dropdown-item" href="/logout">Déconnexion</a>
+              </div>
+            </li>
+         
+          </ul>
+        </nav>
+      
       </div>
       <img style="position:absolute;bottom:0px;left:0px;height:15%" class="d-none d-lg-block" src="//www.smartloc.fr/assets/bootstrap/illustrations/shapes/bg_card_1.png">
     </div>
@@ -1818,7 +1827,7 @@ body_class: bg-grey
       </section>
       <section class="tab-pane fade container-fluid" id="s-biblio" role="tabpanel">
         <div class="row pt-5 pb-5">
-          <div class="col-lg-3 offset-lg-1">
+          <div class="col-lg-3 offset-lg-1 d-lg-block d-none">
             <div class="menuSticky--section__ancre" id="biblio"></div>
             <div class="menuSticky--sousElement" id="menuSticky_zen_biblio">
               <h2>Bibliothèque</h2>
@@ -1830,6 +1839,16 @@ body_class: bg-grey
                   <h4 class="mb-4"><a href="#biblio_fisca" class="menuSticky--sousElement__item">Fiches pour optimiser sa fiscalité</a></h4>
                 </li>           
               </ul>
+            </div>
+          </div>
+          <div class="d-block d-lg-none px-3 w-100">
+            <div class="form-group">
+              <select class="form-control  form-control-lg" id="exampleFormControlSelect1">
+                <option>Navigation rapide</option>
+                <option> <a class="dropdown-item " href="#biblio_modeles">Modèles de contrats & courriers</a></option>
+                <option><a class="dropdown-item" href="#biblio_fisca">Fiches pour optimiser sa fiscalité</a>
+                </option>
+              </select>
             </div>
           </div>
           <div class="col-lg-7">
