@@ -50,7 +50,7 @@ body_class: bg-grey
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
+            <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-infos-location" role="tab" aria-controls="s-infos-location" aria-selected="false">
               <i class="far fa-cog"></i> Infos de la location
             </a>
           </li>
@@ -110,7 +110,7 @@ body_class: bg-grey
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#" role="tab" aria-controls="" aria-selected="false">
+              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-infos-location" role="tab" aria-controls="s-infos-location" aria-selected="false">
                 <i class="far fa-cog"></i> Infos de la location
               </a>
             </li>
@@ -516,6 +516,190 @@ body_class: bg-grey
                         <i class="fal fa-exclamation-triangle"></i>  Compléter la date de début de bail pour passer cette étape
                       </a>
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tab-pane fade container-fluid" id="s-infos-location" role="tabpanel">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="menuSticky--section__ancre" id="bail"></div>
+            <div class="menuSticky--sousElement" id="menuSticky_zen_bail">
+              <div class="alert alert-danger">
+                <div class="alert-heading ">
+                  <i class="fal fa-times-circle icone_medium"></i>
+                  <span class="d-block">
+                    Certaines informations sont nécessaires au fonctionnement de votre espace :
+                    <dl class="mb-0">
+                      <li>Date d'entrée</li>
+                      <li>Montant du loyer</li>
+                      <li>Email du locataire</li>
+                    </dl>
+                  </span>
+                </div>
+                <p>Vous pouvez mettre des valeurs indicatives et les changer plus tard.</p>
+              </div>
+              <button type="button" class="btn btn-dark w-100">
+                Sauvegarder les modifications
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body">
+                <div id="bail_pdf" class="menuSticky--sousElement__ancre"></div>
+                <h3 class="card-title">Info de la location</h3>
+                <hr>
+                <div class="modal-body">
+                  <div class="formulaire__section p-0">
+                    <div class="formulaire__sousElement">
+                      <h4 class="formulaire__sousElement_titre">
+                        Modèle de bail
+                        <small><a href="#">Modifier</a></small>
+                      </h4>
+                      <div class="form-row mb-n3">
+                        <div class="form-group col-lg-4"><label>Type de location</label> <select disabled="disabled"
+                            class="custom-select">
+                            <option>Vide</option>
+                          </select></div>
+                        <div class="form-group col-lg-4"><label>Type de bail</label> <select disabled="disabled"
+                            class="custom-select">
+                            <option>
+                              Locataire seul
+                            </option>
+                          </select></div>
+                        <div class="form-group col-lg-4"><label>Type de propriétaire</label> <select disabled="disabled"
+                            class="custom-select">
+                            <option>
+                              Personne physique
+                            </option>
+                          </select></div>
+                      </div>
+                    </div>
+                    <div class="formulaire__sousElement">
+                      <h4 class="formulaire__sousElement_titre">
+                        Bien
+                      </h4>
+                      <div class="form-group"><label>Adresse du logement</label> <input type="text"
+                          class="form-control pac-target-input" placeholder="Indiquez un lieu" autocomplete="off"></div>
+                    </div>
+                    <div class="formulaire__sousElement">
+                      <h4 class="formulaire__sousElement_titre">
+                        Propriétaire
+                      </h4>
+                      <div class="form-row">
+                        <div class="form-group col-lg-3"><label>Prénom</label> <input type="text" class="form-control"></div>
+                        <div class="form-group col-lg-3"><label>Nom</label> <input type="text" class="form-control"></div>
+                        <div class="form-group col-lg-6 was-validated"><label>Email</label> <input type="email"
+                            class="form-control"></div>
+                      </div>
+                      <div class="form-group"><label>
+                          Adresse
+                        </label> <input type="text" class="form-control pac-target-input" placeholder="Indiquez un lieu"
+                          autocomplete="off"></div>
+                    </div>
+                    <div class="formulaire__sousElement">
+                      <h4 class="formulaire__sousElement_titre">
+                        Locataire
+                      </h4>
+                      <div class="form-row">
+                        <div class="form-group col-lg-3"><label>Prénom</label> <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-3"><label>Nom</label> <input type="text" class="form-control"></div>
+                        <div class="form-group col-lg-6"><label>Email</label> <input type="email"
+                            class="form-control is-invalid"></div>
+                      </div>
+                      <div class="row mb-n3">
+                        <div class="col-md-12"><button type="button" class="btn btn-link pl-0 pt-0"><i
+                              class="fas fa-plus"></i> Ajouter un locataire
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formulaire__sousElement">
+                      <h4 class="formulaire__sousElement_titre">Loyer &amp; charges</h4>
+                      <div class="form-row">
+                        <div class="form-group col-lg-6"><label>Loyer mensuel hors charges</label>
+                          <div class="champSaisie--illustré"><input type="text" class="form-control is-invalid">
+                            <span>€/mois</span></div>
+                        </div>
+                        <div class="form-group col-lg-6"><label>Dépôt de garantie</label>
+                          <div class="champSaisie--illustré"><input type="text" class="form-control"> <span>€</span></div>
+                        </div>
+                      </div>
+                      <div class="form-row mb-n3">
+                        <div class="form-group col-lg-6"><label>
+                            Type de charges
+                            <small><a href="#">Modifier</a></small></label> <select disabled="disabled" class="custom-select">
+                            <option value="provisions">
+                              Provisions sur charges
+                            </option>
+                            <option value="sans-provisions">
+                              Paiement périodique sans provisions
+                            </option>
+                            <!---->
+                            <option value="pas-charges">
+                              Absence de charges
+                            </option>
+                          </select> <small class="form-text text-muted">
+                            Avec régularisation annuelle.
+                          </small></div>
+                        <div class="form-group col-lg-6"><label>Montant mensuel des charges</label>
+                          <div class="champSaisie--illustré "><input type="text" class="form-control"> <span>€/mois</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formulaire__sousElement">
+                      <h4 class="formulaire__sousElement_titre">Dates</h4>
+                      <div class="form-row mb-n3">
+                        <div class="form-group col-lg-6"><label>
+                            Date d'entrée
+                          </label>
+                          <div class="champSaisie--illustré"><input type="text" placeholder="__/__/____"
+                              class="form-control is-invalid"> <span><i class="fal fa-calendar"></i></span></div> <small
+                            class="form-text text-muted">
+                            JJ/MM/AAAA
+                          </small>
+                        </div>
+                        <div class="form-group col-lg-6"><label>Le loyer est payé</label> <select class="custom-select">
+                            <option value="1">le 1e du mois</option>
+                            <option value="2">le 2 du mois</option>
+                            <option value="3">le 3 du mois</option>
+                            <option value="4">le 4 du mois</option>
+                            <option value="5">le 5 du mois</option>
+                            <option value="6">le 6 du mois</option>
+                            <option value="7">le 7 du mois</option>
+                            <option value="8">le 8 du mois</option>
+                            <option value="9">le 9 du mois</option>
+                            <option value="10">le 10 du mois</option>
+                            <option value="11">le 11 du mois</option>
+                            <option value="12">le 12 du mois</option>
+                            <option value="13">le 13 du mois</option>
+                            <option value="14">le 14 du mois</option>
+                            <option value="15">le 15 du mois</option>
+                            <option value="16">le 16 du mois</option>
+                            <option value="17">le 17 du mois</option>
+                            <option value="18">le 18 du mois</option>
+                            <option value="19">le 19 du mois</option>
+                            <option value="20">le 20 du mois</option>
+                            <option value="21">le 21 du mois</option>
+                            <option value="22">le 22 du mois</option>
+                            <option value="23">le 23 du mois</option>
+                            <option value="24">le 24 du mois</option>
+                            <option value="25">le 25 du mois</option>
+                            <option value="26">le 26 du mois</option>
+                            <option value="27">le 27 du mois</option>
+                            <option value="28">le 28 du mois</option>
+                            <option value="29">le 29 du mois</option>
+                            <option value="30">le 30 du mois</option>
+                            <option value="31">le 31 du mois</option>
+                          </select></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
