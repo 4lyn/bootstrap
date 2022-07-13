@@ -67,9 +67,26 @@ body_class: bg-grey
 
 <main>
   <section class="container-fluid bg-warning pt-0 pb-5">
-    <div class="row pb-5">
+    <div class="row pb-5 pt-5">
       <div class="col-lg-10 offset-lg-1">
-        <div class="row pt-5 pb-5">
+        <div class="alert alert-primary">
+          <div class="row justify-content-between align-items-center mb-0">
+            <div class="col-sm-auto">
+              <div class="alert-heading">
+                <h3><i class="fal fa-exclamation-triangle icone_medium"></i>
+                <span>Accès restreint à l'espace de gestion</span></h3>
+              </div>
+            </div>
+            <div class="col-sm-auto mt-3 mt-sm-0">
+              <button class="btn btn-dark float-right">Débloquer le Bail Complet</button>
+            </div>
+          </div>
+          <p>Vous avez choisi le Bail limité, certaines fonctionnalités de l'espace de gestion sont donc bloquées 
+            (bail complet, état des lieux numérique, envoi des quittances au locataire, assistance mail & chat, indexation du loyer, accès aux partenaires avec codes de réduction, accès aux simulateurs).</p>
+          <p>Vous allez par contre recevoir nos mails de rappels pour les échéances importantes en cours de bail, <strong>si vous souhaitez vous désabonner des notifications mail</strong> <a href="#" class="alert-link">cliquez ici</a>.</p>
+          </p>
+        </div>
+        <div class="row pb-5">
           <div class="col-md-5">
             <div class="card">
               <div class="card-body">
@@ -3010,6 +3027,7 @@ body_class: bg-grey
         <p><strong>Assistant de gestion locative Zen <span style="position:relative" class="mr-2"><span id="prix_barre">4,90€ / mois</span></span> 3 premiers mois offerts</strong></p>
         <ul class="fa-ul ml-0">
           <li><i class="fal fa-check-circle"></i> Envoi des quittances au locataire</li>
+          <li><i class="fal fa-check-circle"></i> Augmentation du loyer via l'indexation annuelle</li>
           <li><i class="fal fa-check-circle"></i> Support mail & chat en cas de questions/contentieux</li>
           <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
           <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
