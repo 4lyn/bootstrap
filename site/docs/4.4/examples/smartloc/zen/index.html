@@ -139,7 +139,7 @@ body_class: bg-grey
                   <a target="_blank" href="/bail/pdf/file/24/cc4a5d2752d2c96f5ef0cc2d79b212ff/1653640520/Smartloc%20-%20Bail%20complet%2024.pdf" download="Smartloc - Bail complet 24.pdf" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
                     Bail limité
                   </a>
-                  <a href="#" data-toggle="modal" data-target="#modal_onboarding_gratuit" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
+                  <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
                     Bail complet
                   </a>
                   <br> 
@@ -156,7 +156,7 @@ body_class: bg-grey
                 <p>
                   <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
                   &nbsp;&nbsp;&nbsp;
-                  <a href="#" data-toggle="modal" data-target="#modal_onboarding_gratuit"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_gratuit_gel"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
                 </p>
                 <p>
                   <a target="_blank" href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit"><i class="fa fa-file-pdf" aria-hidden="true"></i>
@@ -3007,7 +3007,7 @@ body_class: bg-grey
   </div>
 </div>
 
-<div class="modal fade" id="modal_onboarding_gratuit" tabindex="-1">
+<div class="modal fade" id="modal_gratuit_bail" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -3015,7 +3015,7 @@ body_class: bg-grey
         <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
       </div>
       <div class="modal-body">
-        <p>Cette fonctionnalité est bloquée car vous êtes en formule bail limité. Pour bénéfier des fonctionnalités avancées, 
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule Bail Limité. Pour bénéfier des fonctionnalités avancées, 
           débloquez le bail complet avec 3 mois offerts d'assistant de gestion locative :</p>
         <p><strong>Bail complet 14,70€</strong></p>
         <ul class="fa-ul ml-0">
@@ -3032,12 +3032,40 @@ body_class: bg-grey
           <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
           <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
           <li><i class="fal fa-check-circle"></i> Simulateur calcul des retenues sur le dépôt de garantie</li>
-          <li><i class="fal fa-check-circle"></i> Réductions chez nos partenaires</li>
         </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
         <button type="button" class="btn btn-dark">Activer le bail complet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_gratuit_gel" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Fonctionnalité bloquée</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule Bail Limité. Pour bénéfier des fonctionnalités avancées, 
+          débloquez la gestion Zen :</p>
+          <p><strong>Assistant de gestion locative Zen <span style="position:relative" class="mr-2"><span id="prix_barre">6,50€ / mois</span></span> 30 jours d'essai gratuits</strong></p>
+          <ul class="fa-ul ml-0">
+          <li><i class="fal fa-check-circle"></i> Envoi des quittances au locataire</li>
+          <li><i class="fal fa-check-circle"></i> Support mail & chat en cas de questions/contentieux</li>
+          <li><i class="fal fa-check-circle"></i> Augmentation du loyer via l'indexation annuelle</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur calcul des retenues sur le dépôt de garantie</li>
+          <li><i class="fal fa-check-circle"></i> Bail complet au prochain locataire</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark">Activer la gestion Zen</button>
       </div>
     </div>
   </div>
