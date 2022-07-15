@@ -73,47 +73,48 @@ body_class: bg-grey
           <div class="row justify-content-between align-items-center mb-0">
             <div class="col-sm-auto">
               <div class="alert-heading">
-                <h3><i class="fal fa-exclamation-triangle icone_medium"></i>
-                <span>Accès restreint à l'espace de gestion</span></h3>
+                <i class="fal fa-exclamation-triangle icone_medium"></i>
+                <span>Votre bail limité ne comporte pas toutes les clauses et annexes recommandées !</span>
               </div>
             </div>
             <div class="col-sm-auto mt-3 mt-sm-0">
-              <button class="btn btn-dark float-right">Débloquer le Bail Complet</button>
+              <button class="btn btn-dark float-right">Débloquer le bail complet</button>
             </div>
           </div>
-          <p>Vous avez choisi le Bail limité, certaines fonctionnalités de l'espace de gestion sont donc bloquées 
-            (bail complet, état des lieux numérique, envoi des quittances au locataire, assistance mail & chat, indexation du loyer, accès aux partenaires avec codes de réduction, accès aux simulateurs).</p>
-          <p>Vous allez par contre recevoir nos mails de rappels pour les échéances importantes en cours de bail, <strong>si vous souhaitez vous désabonner des notifications mail</strong> <a href="#" class="alert-link">cliquez ici</a>.</p>
-          </p>
         </div>
+        <!---           <p>Vous allez par contre recevoir nos mails de rappels pour les échéances importantes en cours de bail, <strong>si vous souhaitez vous désabonner des notifications mail</strong> <a href="#" class="alert-link">cliquez ici</a>.</p>
+-->
         <div class="row pb-5">
           <div class="col-md-5">
-            <div class="card">
+            <div class="card mb-4">
               <div class="card-body">
-                <h2 class="card-title">Espace de gestion</h2>
-                <dl class="row card-text mt-4">
-                  <dt class="col-sm-3">Locataires</dt>
-                  <dd class="col-sm-9">
-                      Pascal Combescot <small>pascal.combescot@gmail.com</small><br/>
-                      Vigdis Beaussier <small>vigdis4@hotmail.com</small>
-                    </dd>
-                  <dt class="col-sm-3">Adresse</dt>
-                  <dd class="col-sm-9">39 rue Taitbout</dd>
-                  <dt class="col-sm-3">Bailleur</dt>
-                  <dd class="col-sm-9">SCI Ginza <small>mchantalat@gmail.com</small></dd>
-                  <dt class="col-sm-3">Type</dt>
-                  <dd class="col-sm-9">Bail couple ou colocation Vide</dd>
-                  <dt class="col-sm-3">Loyer</dt>
-                  <dd class="col-sm-9">790€ payable le 5 du mois</dd>
-                  <dt class="col-sm-3">Charges</dt>
-                  <dd class="col-sm-9">Provision 100€</dd>
-                  <dt class="col-sm-3">Début</dt>
-                  <dd class="col-sm-9"><a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="lien_annexe" style="color:red"><i class="fal fa-exclamation-triangle"></i>  Compléter</a></dd>
-                </dl>
-                <p>
-                  <a href="#" data-toggle="modal" data-target="#modal_modif_quittances" class="btn btn-outline-dark btn-sm">Paramètres</a> 
-                  <a href="#" data-toggle="modal" data-target="#modal_modif_bail_reset" class="card-link btn-link ml-3"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
+                <h3 class="card-title">Débloquez le bail complet avec clauses et annexes</h3>
+                <p>Avec la formule bail complet vous bénéficiez :</p>
+                <ul>
+                  <li><strong>de toutes les clauses essentielles</strong> du bail pour vous protéger en cas de contentieux</li>
+                  <li><strong>des annexes importantes</strong> comme les actes de caution ou l'état des lieux numérique</li>
+                  <li><strong>de 3 mois offerts sur la gestion Zen</strong> qui inclut notamment l'envoi des quittances au locataire</li>
+                </ul>
+                <button class="btn btn-dark">Débloquer le bail complet</button></p>
+                <p>Plus de <strong>120 000 particuliers</strong> comme vous gèrent leurs locations avec Smartloc depuis 2012.</p>
+                <p><a href="https://g.page/smartloc-support" target="_blank" class="lien_annexe">
+                  Avis clients 4,8/5</a> 
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                 </p>
+                <div class="card cardTemoignage">
+                  <p>“Excellente société de gestion immobilière. Alors là pour une fois je suis très très bien tombée !! 
+                    Réponse immédiate à vos questions ou problèmes. Interface parfaite pour la rédaction des baux, 
+                    quittances etc ..(moi qui ne suit pas toujours intuitive dans ce genre de manipulations). Je recommande vivement.”
+                  </p>
+                  <div class="cardTemoignage__conteneurInfos">
+                    <h6>Isabelle L.</h6>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>                    
               </div>
             </div>
           </div>
@@ -123,12 +124,6 @@ body_class: bg-grey
               <br> <small><i aria-hidden="true" class="fa fa-calendar-alt"></i>
                 21 Juin 2022
               </small></h3> <hr>
-              <div class="section__sousElement">
-                <h4 class="section__sousElement_titre">Archives des documents signés</h4>
-                <p>
-                  Vous avez reçu par mail les baux et les annexes signées.
-                </p> 
-              </div>
               <div class="section__sousElement">
                 <h4 class="section__sousElement_titre">Bail &amp; annexes</h4>
                 <p>
@@ -149,22 +144,19 @@ body_class: bg-grey
                   <button data-toggle="modal" data-target="#modal_sign_form" class="btn btn-dark btn-sm mr-sm-3 mt-2">
                     Lancer la signature en ligne
                   </button>
-                  <button type="button" data-toggle="modal" data-target="#modal_sign_etapes" class="btn btn-link pl-0 mt-2">
-                    Quelles sont les étapes de signature&nbsp;?
-                  </button>
                 </p>
                 <p>
                   <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
                   &nbsp;&nbsp;&nbsp;
-                  <a href="#" data-toggle="modal" data-target="#modal_gratuit_gel"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
                 </p>
                 <p>
-                  <a target="_blank" href="https://docs.google.com/document/d/16iQ5_Nz14KN9qXNOQRF-UQQSUZhU8GBRl_GhA3L1qyQ/edit"><i class="fa fa-file-pdf" aria-hidden="true"></i>
+                  <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-pdf" aria-hidden="true"></i>
                     Inventaire des meubles
                   </a>
                 </p>
                 <p>
-                  <a target="_blank" href="/bail/pdf/caution?id=24&amp;token=cc4a5d2752d2c96f5ef0cc2d79b212ff&amp;index=0&amp;loc=loc_0" download="Smartloc - Caution hébert_dupont.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> Acte de caution
+                  <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-pdf" aria-hidden="true"></i> Acte de caution
                       <span style="text-transform: capitalize;">
                         hébert
                       </span>
@@ -3015,28 +3007,17 @@ body_class: bg-grey
         <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
       </div>
       <div class="modal-body">
-        <p>Cette fonctionnalité est bloquée car vous êtes en formule Bail Limité. Pour bénéfier des fonctionnalités avancées, 
-          débloquez le bail complet avec 3 mois offerts d'assistant de gestion locative :</p>
-        <p><strong>Bail complet 14,70€</strong></p>
-        <ul class="fa-ul ml-0">
-          <li><i class="fal fa-check-circle"></i> Bail PDF avec clauses et annexes en modification illimité</li>
-          <li><i class="fal fa-check-circle"></i> Etat des lieux numérique avec signature électronique</li>
-        </ul>
-        <p><strong></strong></p>
-        <div class="mt-3 mb-3"><i class="far fa-plus-square fa-2x" aria-hidden="true"></i></div>
-        <p><strong>Assistant de gestion locative Zen <span style="position:relative" class="mr-2"><span id="prix_barre">4,90€ / mois</span></span> 3 premiers mois offerts</strong></p>
-        <ul class="fa-ul ml-0">
-          <li><i class="fal fa-check-circle"></i> Envoi des quittances au locataire</li>
-          <li><i class="fal fa-check-circle"></i> Augmentation du loyer via l'indexation annuelle</li>
-          <li><i class="fal fa-check-circle"></i> Support mail & chat en cas de questions/contentieux</li>
-          <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
-          <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
-          <li><i class="fal fa-check-circle"></i> Simulateur calcul des retenues sur le dépôt de garantie</li>
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule bail limité. Débloquez le bail complet pour bénéfier des fonctionnalités avancées :</p>
+        <ul>
+          <li><strong>toutes les clauses essentielles</strong> du bail pour vous protéger en cas de contentieux</li>
+          <li><strong>les annexes importantes</strong> comme les actes de caution ou l'état des lieux numérique</li>
+          <li><strong>
+            3 mois offerts sur la gestion Zen</strong> qui inclut notamment l'envoi des quittances au locataire</li>
         </ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-dark">Activer le bail complet</button>
+        <button type="button" class="btn btn-dark">Débloquer le bail complet</button>
       </div>
     </div>
   </div>
