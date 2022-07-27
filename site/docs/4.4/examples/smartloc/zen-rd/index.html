@@ -34,9 +34,11 @@ body_class: bg-grey
               <i class="fa fa-house mr-3"></i> Mes baux
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item disabled" href="#">Combescot</a>
+              <a class="dropdown-item active" href="#">Combescot</a>
               <a class="dropdown-item" href="#">Dagher</a>
               <a class="dropdown-item" href="#">Dupont</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item disabled" href="#">Chantalat</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Ajouter un logement</a>
             </div>
@@ -201,10 +203,17 @@ body_class: bg-grey
             <div class="card card_zen mt-0">
               <div class="card-body">
                 <span>Bail Chantalat - 46 bld de l'Hôpital - 780€CC - démarrage 12/03/2021</span>
-                <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-5">Paramètres</a>
-                <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="card-link btn-link ml-3">
-                  <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
-                </a>
+                <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-dark btn-sm ml-5">Paramètres</a>
+                <div class="btn-group">
+                  <button class="btn btn-outline-dark dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions sur le bail
+                  </button>
+                  <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-copy"></i> Dupliquer</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-archive"></i> Archiver</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="alert alert-primary mt-4">
