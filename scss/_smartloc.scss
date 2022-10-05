@@ -1753,6 +1753,13 @@ p + .cardLigne {
 
 }
 
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
   .headerHub .barreRecherche {
     padding: 0 3rem;
