@@ -1,0 +1,478 @@
+---
+layout: examples
+body_class: bg-grey
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+---
+
+
+<!-- HEADER -->
+
+<header class="container-fluid bg-warning">
+  <div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+      <img src="../../../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/bail/">Bail</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/assurance-loyer-impaye">Assurance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Ressources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/tarifs">Tarifs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-lg-5" href="/login">
+        <h5>Mon compte</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact">
+        <h5>Contact</h5>
+        </a>
+      </li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+  </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main>
+  <section class="container-fluid headerHub">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="headerHub__titrage">
+          <h1 class="headerArticle__titrage_titre mt-2">Comparatif assurance <br/>loyer impayé</h1>
+          <span class="headerClassique__titrage_sousTitre">Testez votre dossier locataire et comparez plus de 10 garanties possibles</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <a href="#app" class="btn btn-dark headerClassique__titrage_bouton bouton_float js-scrollTo">Démarrer la simulation</a>
+      </div>
+    </div>
+    <img src="../../../assets/img/smartloc/illustrations/bouclier_illustrated_grisclair.png" class="headerHub_illustration d-none d-lg-block">
+  </section>
+  <section class="container-fluid bg-light pb-0">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="alert-notice border-0">
+              <div class="notice-illustration d-none d-sm-block">
+                <img src="https://www.smartloc.fr/assets/bootstrap/photos/photo_mathieu.jpg" class="img-fluid" alt="photo mathieu">
+              </div>
+              <div class="notice-info">
+                <h3 class="notice-title">Bienvenue sur notre comparateur exclusif !</h3>
+                <p>Les critères des garanties loyers impayés disponibles sur le marché sont de plus en plus complexes. Ce simulateur va vous permettre de 
+                  tester le dossier d'un candidat potentiel par rapport à plus de 10 solutions disponibles.</p>
+                  <p><strong>Smartloc n'est pas courtier distributeur de ces contrats</strong>, 
+                  donc nous vous les présentons de manière objective, y compris Visale la garantie publiqe d'Etat.
+                </p>
+                <p>- Mathieu Chantalat, Directeur immobilier</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="alert alert-success">
+              <div class="alert-heading">
+                <i class="fal fa-check-circle icone_medium"></i>
+                <span>Filtre automatique de vos candidats</span>
+              </div>
+              <p>Vous pouvez créer <strong>gratuitement</strong> un lien pour filtrer et collecter les candidatures.</p>
+              <p>Ce lien vous permettra de qualifier chaque candidat en fonction des 10 garanties loyers impayés du marché, de la garantie Visale, 
+                ainsi que des dispositifs fiscaux.</p>
+              <p>Il vous permettra également de centraliser et de vérifier les dossiers de location.</p>
+              <p class="mt-4"><button class="btn btn-dark">Créer votre lien de sélection</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid mt-5" id="app">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="formulaire__section">
+          <div class="formulaire__sousElement">
+            <h3 class="formulaire__sousElement_titre">Logement</h3>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Type de bail</label>
+                <div class="boutonsRadioViolets__conteneur">
+                  <label>
+                    <input type="radio" checked="checked" name="radio3">
+                    <div>Meublé</div>
+                  </label>
+                  <label>
+                    <input type="radio" name="radio3">
+                    <div>Vide</div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Type d'occupants</label>
+                <select class="custom-select">
+                  <option>Locataire seul</option>
+                  <option>Couple marié ou pacsé</option>
+                  <option>Colocation bail unique solidaire</option>
+                  <option>Autres colocations (non solidaire, bail individuel)</option>
+                </select> 
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Loyer charges comprises</label>
+                <div class="champSaisie--illustré">
+                  <input type="text" class="form-control">
+                  <span>€/mois</span>
+                </div>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Entrée du locataire</label>
+                <select class="custom-select">
+                  <option>à venir</option>
+                  <option>en place depuis moins de 6 mois</option>
+                  <option>en place depuis plus de 6 mois</option>
+                </select> 
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="mt-3">Adresse du logement</label>
+              <input type="text" class="form-control">
+            </div>                                 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="formulaire__section">
+          <h3 class="formulaire__sousElement_titre">Locataires</h3>
+          <ul class="nav formulaire__menuDossier">
+            <li class="nav-item">
+              <a class="nav-link active formulaire__menuDossier_lien" href="#">Locataire 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link formulaire__menuDossier_lien" href="#">+ Ajouter un locataire</a>
+            </li>
+          </ul>
+          <div class="formulaire__sousElement">
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Statut du locataire</label>
+                <select class="custom-select">
+                  <option>Étudiant / Alternant</option>
+                  <option>Salarié</option>
+                  <option>Entrepreneur</option>
+                  <option>Retraité</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Revenus mensuels du locataire</label>
+                <div class="champSaisie--illustré ">
+                  <input class="form-control" type="text">
+                  <span>€/mois</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                <label class="custom-control-label" for="customCheck1">Le locataire a un garant</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Statut du garant</label>
+                <select class="custom-select">
+                  <option>Étudiant / Alternant</option>
+                  <option>Salarié</option>
+                  <option>Entrepreneur</option>
+                  <option>Retraité</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Revenus mensuels du garant</label>
+                <div class="champSaisie--illustré ">
+                  <input class="form-control" type="text">
+                  <span>€/mois</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <button type="button" class="btn btn-dark">Tester ce dossier</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="formulaire__section">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Contrat</th>
+                <th>Montant <br/>garanti</th>
+                <th>Durée <br/> de couverture</th>
+                <th>Dégradations <br>immobilières</th>
+                <th>Protection<br/> juridique</th>
+                <th>Délai<br/> d'indemnisation</th>
+                <th>Tarifs<br><small>(% du loyer CC + frais de courtage annuels)</small></th>
+                <th>Souscription<br>en ligne</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Insured - Basic</td>
+                <td>70 000€</td>
+                <td>illimitée</td>
+                <td>-</td>
+                <td>-</td>
+                <td>3 mois</td>
+                <td>2,14% + 12€ = 259€</td>
+                <td><a href="#" class="btn btn-outline-dark">Souscrire via Jelouebien</a></td>
+              </tr>
+              <tr>
+                <td>Insured - Classic</td>
+                <td>70 000€</td>
+                <td>illimitée</td>
+                <td>10 000€</td>
+                <td>-</td>
+                <td>3 mois</td>
+                <td>2,55% + 12€ = 318€</td>
+                <td><a href="#" class="btn btn-outline-dark">Souscrire via Jelouebien</a></td>
+              </tr>
+              <tr>
+                <td>Insured - Premium</td>
+                <td>70 000€</td>
+                <td>illimitée</td>
+                <td>10 000€</td>
+                <td>20 000€</td>
+                <td>3 mois</td>
+                <td>2,65% + 12€ = 330€</td>
+                <td><a href="#" class="btn btn-outline-dark">Souscrire via Jelouebien</a></td>
+              </tr>
+              <tr>
+                <td>Protection loyer</td>
+                <td>90 000€</td>
+                <td>illimitée</td>
+                <td>10 000€</td>
+                <td>20 000€</td>
+                <td>3 mois</td>
+                <td>2,5% + 25€ = 325€</td>
+                <td><a href="#" class="btn btn-link">Souscrire via Protection Loyer</a></td>
+              </tr>
+              <tr>
+                <td>MAIF</td>
+                <td>30 mois de loyers</td>
+                <td>illimitée</td>
+                <td>4 mois de loyers</td>
+                <td>-</td>
+                <td>3 mois</td>
+                <td>2,7% = 325%</td>
+                <td><a href="#" class="btn btn-link">Souscrire via MAIF</a></td>
+              </tr>
+              <tr>
+                <td>Unkle - Essentiel</td>
+                <td>100 000€</td>
+                <td>illimitée</td>
+                <td>-</td>
+                <td>-</td>
+                <td>1 mois</td>
+                <td>2,55% = 306€</td>
+                <td><a href="#" class="btn btn-link">Souscrire via Unkle</a></td>
+              </tr>
+            </tbody>
+            </table> 
+        </div>
+      </div>
+    </div>
+  </div>   
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 offset-lg-1">
+      <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/smartloc_white.png" alt=""></p>
+      <p><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+      <p>
+        <a href="https://twitter.com/smartloc" rel="nofollow">
+          <i class="fab fa-twitter footer__logoReseauxSociaux"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+          <i class="fab fa-linkedin-in footer__logoReseauxSociaux"></i>
+        </a>
+      </p>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+    </div>
+    <div class="col-lg-8 offset-lg-1">
+      <div class="row mt-4 mt-lg-0">
+        <div class="col-lg-2">
+          <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+          <a href="/bail/"><h5>Bail</h5></a>
+          <a href="/assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <a href="/blog"><h5>Ressources</h5></a>
+          <a href="/tarifs"><h5>Tarifs</h5></a>
+          <a href="/cgu"><h5>Mentions légales</h5></a>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+          <a href="/a-propos"><h5>A propos</h5></a>
+          <h5>Partenaires</h5>
+          <div class="row mt-3">
+            <div class="col-lg-auto">
+              <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="../../../assets/img/smartloc/logos/lemonway.png" class="float-left"></a>
+            </div>
+            <div class="col-lg-auto">
+              <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+            <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+            <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+            <li><a href="/dossier">Validation dossier locataire</a></li>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+            <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+            <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+            <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="modalInvestisseur" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Investisseur en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
+        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
+        <p><a href="https://pay.gocardless.com/AL00034X9ZME3F" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMulti" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Multi en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
+        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
+        <p><a href="https://pay.gocardless.com/AL0005ED0NBGB2" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalZenAnnuel" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation sur votre espace de gestion</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Zen+ sur un logement, vous devez vous rendre sur l'espace de gestion du bien concerné.</p>
+        <p><a href="/login" rel="nofollow" class="btn btn-dark">Accéder à votre compte</a></p>
+        <p><a href="/login" rel="nofollow" class="btn btn-outline-dark">Créer un compte</a></p>
+      </div>
+    </div>
+  </div>
+</div>
