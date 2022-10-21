@@ -78,14 +78,14 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
           <div class="col-lg-8">
             <div class="alert-notice border-0">
               <div class="notice-illustration d-none d-sm-block">
-                <img src="https://www.smartloc.fr/assets/bootstrap/photos/photo_mathieu.jpg" class="img-fluid" alt="photo mathieu">
+                <img src="../../../assets/img/smartloc/photos/photo_mathieu.jpg" class="img-fluid" alt="photo mathieu">
               </div>
               <div class="notice-info">
                 <h3 class="notice-title">Bienvenue sur notre comparateur exclusif !</h3>
                 <p>Les critères des garanties loyers impayés disponibles sur le marché sont de plus en plus complexes. Ce simulateur va vous permettre de 
                   tester le dossier d'un candidat potentiel par rapport à plus de 10 solutions disponibles.</p>
-                  <p><strong>Smartloc n'est pas courtier distributeur de ces contrats</strong>, 
-                  donc nous vous les présentons de manière objective, y compris Visale la garantie publiqe d'Etat.
+                  <p><strong>Smartloc n'est pas courtier distributeur de ces contrats</strong>, nous vous les présentons de manière objective, 
+                    y compris Visale la garantie publiqe d'Etat.
                 </p>
                 <p>- Mathieu Chantalat, Directeur immobilier</p>
               </div>
@@ -97,7 +97,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <i class="fal fa-check-circle icone_medium"></i>
                 <span>Filtre automatique de vos candidats</span>
               </div>
-              <p>Vous pouvez créer <strong>gratuitement</strong> un lien pour filtrer et collecter les candidatures.</p>
+              <p>Vous pouvez créer <strong>gratuitement</strong> un lien pour filtrer et collecter toutes les candidatures que vous recevez.</p>
               <p>Ce lien vous permettra de qualifier chaque candidat en fonction des 10 garanties loyers impayés du marché, de la garantie Visale, 
                 ainsi que des dispositifs fiscaux.</p>
               <p>Il vous permettra également de centraliser et de vérifier les dossiers de location.</p>
@@ -178,9 +178,13 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
               <div class="form-group col-lg-6">
                 <label>Statut du locataire</label>
                 <select class="custom-select">
+                  <option>CDI hors période d'essai</option>
+                  <option>CDI en période d'essai</option>
+                  <option>CDD</option>
+                  <option>Fonctionnaire</option>
+                  <option>Indépendant</option>
+                  <option>Profession libérale</option>
                   <option>Étudiant / Alternant</option>
-                  <option>Salarié</option>
-                  <option>Entrepreneur</option>
                   <option>Retraité</option>
                 </select>
               </div>
@@ -190,6 +194,20 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                   <input class="form-control" type="text">
                   <span>€/mois</span>
                 </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Date de naissance</label>
+                <input class="form-control" type="date">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Embauche</label>
+                <select class="custom-select">
+                  <option>En poste depuis plus de 6 mois</option>
+                  <option>En poste depuis moins de 6 mois</option>
+                  <option>Promesse d'embauche signée</option>
+                </select>
               </div>
             </div>
             <div class="form-group mt-3">
@@ -202,9 +220,13 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
               <div class="form-group col-lg-6">
                 <label>Statut du garant</label>
                 <select class="custom-select">
+                  <option>CDI hors période d'essai</option>
+                  <option>CDI en période d'essai</option>
+                  <option>CDD</option>
+                  <option>Fonctionnaire</option>
+                  <option>Indépendant</option>
+                  <option>Profession libérale</option>
                   <option>Étudiant / Alternant</option>
-                  <option>Salarié</option>
-                  <option>Entrepreneur</option>
                   <option>Retraité</option>
                 </select>
               </div>
@@ -229,6 +251,9 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
         <div class="formulaire__section">
           <table class="table">
             <thead>
+              <tr class="bg-success">
+                <td colspan="8" class="text-center">Filtrez vos candidatures et vérifiez vos dossiers avec Smartloc <a class="btn btn-sm btn-dark ml-3" href="#">Créer votre lien à partager</a></td>
+              </tr>
               <tr>
                 <th>Contrat</th>
                 <th>Montant <br/>garanti</th>
@@ -237,7 +262,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <th>Protection<br/> juridique</th>
                 <th>Délai<br/> d'indemnisation</th>
                 <th>Tarifs<br><small>(% du loyer CC + frais de courtage annuels)</small></th>
-                <th>Souscription<br>en ligne</th>
+                <th>Souscription</th>
               </tr>
             </thead>
             <tbody>
@@ -249,7 +274,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>-</td>
                 <td>3 mois</td>
                 <td>2,14% + 12€ = 259€</td>
-                <td><a href="#" class="btn btn-outline-dark">Souscrire via Jelouebien</a></td>
+                <td><a href="#" class="btn btn-dark">Souscrire</a> <a href="#" class="btn btn-outline-dark">Bail de location</a></td>
               </tr>
               <tr>
                 <td>Insured - Classic</td>
@@ -259,7 +284,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>-</td>
                 <td>3 mois</td>
                 <td>2,55% + 12€ = 318€</td>
-                <td><a href="#" class="btn btn-outline-dark">Souscrire via Jelouebien</a></td>
+                <td><a href="#" class="btn btn-dark">Souscrire</a> <a href="#" class="btn btn-outline-dark">Bail de location</a></td>
               </tr>
               <tr>
                 <td>Insured - Premium</td>
@@ -269,7 +294,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>20 000€</td>
                 <td>3 mois</td>
                 <td>2,65% + 12€ = 330€</td>
-                <td><a href="#" class="btn btn-outline-dark">Souscrire via Jelouebien</a></td>
+                <td><a href="#" class="btn btn-dark">Souscrire</a> <a href="#" class="btn btn-outline-dark">Bail de location</a></td>
               </tr>
               <tr>
                 <td>Protection loyer</td>
@@ -279,17 +304,17 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>20 000€</td>
                 <td>3 mois</td>
                 <td>2,5% + 25€ = 325€</td>
-                <td><a href="#" class="btn btn-link">Souscrire via Protection Loyer</a></td>
+                <td><a href="#" class="btn btn-dark">Souscrire</a> <a href="#" class="btn btn-outline-dark">Bail de location</a></td>
               </tr>
               <tr>
                 <td>MAIF</td>
-                <td>30 mois de loyers</td>
-                <td>illimitée</td>
+                <td>90 000€</td>
+                <td>30 mois</td>
                 <td>4 mois de loyers</td>
                 <td>-</td>
                 <td>3 mois</td>
-                <td>2,7% = 325%</td>
-                <td><a href="#" class="btn btn-link">Souscrire via MAIF</a></td>
+                <td>2,7% = 324€</td>
+                <td><a href="#" class="btn btn-dark">Souscrire</a> <a href="#" class="btn btn-outline-dark">Bail de location</a></td>
               </tr>
               <tr>
                 <td>Unkle - Essentiel</td>
@@ -299,7 +324,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>-</td>
                 <td>1 mois</td>
                 <td>2,55% = 306€</td>
-                <td><a href="#" class="btn btn-link">Souscrire via Unkle</a></td>
+                <td><a href="#" class="btn btn-dark">Souscrire</a> <a href="#" class="btn btn-outline-dark">Bail de location</a></td>
               </tr>
             </tbody>
             </table> 
