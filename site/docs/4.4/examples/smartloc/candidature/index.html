@@ -1,0 +1,463 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+extra_js: https://www.smartloc.fr/js/bootstrap.bundle.min.js
+body_class: bg-grey
+---
+
+
+<!-- HEADER -->
+
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+          <img src="../../../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link ml-lg-5" href="/login">
+                <h5>Mon compte</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact">
+                <h5>Contact</h5>
+              </a>
+            </li>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main class="formulaire container-fluid">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <h2 class="mb-5">Boulevard de l'Hôpital / 3P / 50m² / Meublé <small><a href="#" class="alert-link">voir l'annonce</a></small></h2>
+      <ul class="nav formulaire__menuEtapes">
+        <li class="nav-item">
+          <a class="nav-link active formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_infos"
+             role="tab">
+             <i class="fal fa-user-alt cardLigne__icone icone_medium"></i>
+            <span>1. Information</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_depot" role="tab">
+            <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+            <span>2. Justificatifs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link formulaire__menuEtapes_etape" data-toggle="tab" href="#tab_dossier" role="tab">
+            <i class="fal fa-folder-open cardLigne__icone icone_medium"></i>
+            <span>3. Validation</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab_infos" role="tabpanel" aria-labelledby="home-tab">
+
+
+          <div class="row">
+            <div class="col-lg-8">
+              <form>
+                <!-- DEUXIEME SECTION -->
+                <div class="formulaire__section">
+                  <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">Locataire 1</h3>
+                    <div class="form-group">
+                      <label>Statut du locataire</label>
+                      <select class="custom-select col-sm-8 col-lg-6">
+                        <option>Étudiant / Alternant</option>
+                        <option>Salarié</option>
+                        <option>Entrepreneur</option>
+                        <option>Retraité</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">Garant 1</h3>
+                    <div class="form-group">
+                      <label>Statut du locataire</label>
+                      <select class="custom-select col-sm-8 col-lg-6">
+                        <option>Étudiant / Alternant</option>
+                        <option>Salarié</option>
+                        <option>Entrepreneur</option>
+                        <option>Retraité</option>
+                      </select>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-sm-8 col-lg-6">
+                        <label>Revenu du garant net AVANT retenu à la source</label>
+                        <div class="champSaisie--illustré ">
+                          <input class="form-control" type="text">
+                          <span>€/mois</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-link pl-0">+ Ajouter un locataire</button>
+                </div>
+
+                <div class="formulaire__section">
+                  <div class="form-row">
+                    <div class="form-group col-sm-8 col-lg-6">
+                      <label>Revenus complémentaires du foyer</label> 
+                      <div class="champSaisie--illustré">
+                        <input type="number" class="form-control optional"> <span>€/mois</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Le locataire a validé un visa Visale</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FORM BUTTONS -->
+                <div class="row justify-content-end">
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                  </div>
+                  <div class="col-sm-auto mt-3 mt-sm-0">
+                    <button class="btn btn-dark">Étape suivante</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-4">
+              <aside class="formulaire__astuces">
+                <div class="alert alert-success">
+                  <div class="alert-heading">
+                    <i class="fal fa-info-circle icone_medium"></i>
+                    <span>Définition revenus fonctionnaires</span>
+                  </div>
+                  <p>Retenez le salaire net à payer <strong>AVANT retenue à la source</strong> pour l'impôt sur le revenu.</p>
+                  <p>
+                    Si le salaire net à payer varie en fonction de primes,
+                    retenez le <strong>salaire net imposable moyen</strong>
+                    à partir du cumul annuel (en bas de la fiche de paie en général).
+                    Il doit être cohérent avec le dernier avis d'impôts.
+                  </p>
+                </div>
+
+              </aside>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab_depot" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row">
+            <div class="col-lg-8">
+              <form>
+                <div class="formulaire__section">
+                  <div data-toggle="collapse" href="#justifs_loc0" aria-expanded="true" class="">
+                    <h3 class="collapse_header">
+                      Justificatifs locataire 1
+                      <i class="fas float-right mt-1 fa-chevron-up" aria-hidden="true"></i>
+                    </h3> 
+                    <span>CDI hors période d'essai</span>
+                  </div> 
+                  <div data-parent="#collapse-justifs" id="justifs_loc0" data-index="loc_0" class="collapse show" style="">
+                    <div class="collapse_body">
+                      <div class="formulaire__sousElement">
+                        <div class="form-row">
+                          <div class="form-group col-lg-6">
+                            <label>Prénom</label> 
+                            <input type="text" class="form-control col-md-8 col-lg-12">
+                          </div> 
+                          <div class="form-group col-lg-6">
+                            <label>Nom</label> 
+                            <input type="email" class="form-control col-md-8 col-lg-12">
+                          </div>
+                        </div> 
+                        <div class="form-row">
+                          <div class="form-group col-lg-6">
+                            <label>Email</label> 
+                            <input type="email" class="form-control col-md-8 col-lg-12"> 
+                            <small class="form-text text-muted">Les coordonnées d'au moins un locataire sont nécessaires</small>
+                          </div> 
+                          <div class="form-group col-lg-6">
+                            <label>Numéro de mobile</label> 
+                            <input type="text" class="form-control col-md-8 col-lg-12">
+                          </div>
+                        </div> 
+                        <div class="form-group">
+                          <label>Commentaires</label> 
+                          <textarea rows="5" placeholder="Optionel" class="form-control col-sm-8 col-lg-6"></textarea>
+                        </div>
+                      </div> 
+                      <div class="formulaire__sousElement conteneurCheckbox">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h5>Justificatifs à fournir</h5> 
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Pièce d'identité
+                            </div>
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Contrat de travail ou attestation employeur
+                            </div>
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Bulletin de salaire septembre
+                            </div>
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Bulletin de salaire août
+                            </div>
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Bulletin de salaire juillet
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h5>Justificatifs optionnels</h5> 
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Dernier avis d'impôts
+                            </div>
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Bulletin de salaire juin
+                            </div>
+                            <div class="custom-control">
+                              <i class="mr-1 far fa-check-square text-muted" aria-hidden="true"></i> Quittances, taxe foncière ou attestation d'hébergement
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="formulaire__sousElement zoneUploads">
+                        <h5>Ajouter un nouveau justificatif</h5> 
+                        <form enctype="multipart/form-data">
+                          <div class="form-group">
+                            <label class="d-block">1. Choisir un fichier (.pdf ou .jpg)</label> 
+                            <div class="custom-file col-sm-8 col-lg-6">
+                              <input type="file" multiple="multiple" id="files_loc0" lang="fr" class="custom-file-input"> 
+                              <label for="files_loc0" class="custom-file-label"> 
+                                <span>--</span>
+                              </label>
+                            </div>
+                          </div> 
+                          <div class="form-group">
+                            <label class="d-block">2. Ce fichier contient (plusieurs choix possibles)</label> 
+                            <select class="custom-select col-sm-8 col-lg-6">
+                              <option>Contrat de travail</option>
+                              <option>Pièce d'identité</option>
+                              <option>Avis d'impôts</option>
+                              <option>Quittances de loyer</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" id="autre_loc0" class="custom-control-input"> 
+                              <label for="autre_loc0" class="custom-control-label">Autre</label>
+                            </div>
+                          </div> 
+                          <div class="form-group" style="display: none;">
+                            <input type="text" placeholder="Description" class="form-control col-sm-8 col-lg-6">
+                          </div>
+                          <div class="form-group">
+                            <label class="d-block">3. J'ajoute le fichier</label> 
+                            <button type="button" class="btn btn-outline-dark">Ajouter mon fichier</button> 
+                            <span style="display: none;">Ajout en cours <span class="fas fa-cog fa-spin" aria-hidden="true"></span> 
+                              <div class="progress col-sm-8 col-lg-6 px-0">
+                                <div class="progress-bar" style="width: 0%;">
+                                </div>
+                              </div>
+                            </span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="formulaire__section">
+                  <div data-toggle="collapse" href="#justifs_complementaires" role="button" aria-expanded="false"
+                       aria-controls="collapseExample">
+                    <h3 class="collapse_header">Justificatifs complémentaires <i
+                         class="fas fa-chevron-down float-right mt-1"></i></h3>
+                  </div>
+                  <div class="collapse" id="justifs_complementaires">
+                    <div class="collapse_body">
+                      <div class="formulaire__sousElement">
+                        <p>Test </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FORM BUTTONS -->
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <button type="button" class="btn btn-link ">
+                      < Etape précédente</button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="row justify-content-end">
+                      <div class="col-sm-auto">
+                        <button class="btn btn-outline-dark" type="submit">Sauvegarder mes infos</button>
+                      </div>
+                      <div class="col-sm-auto mt-3 mt-sm-0">
+                        <button class="btn btn-dark">Étape suivante</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="col-lg-4">
+              <aside class="formulaire__astuces">
+                <div class="alert alert-warning">
+                  <div class="alert-heading">
+                    <i class="fal fa-exclamation-triangle icone_medium"></i>
+                    <span>Sécurité du dossier</span>
+                  </div>
+                  <p>Afin d'éviter les usurpations d'identité et l'utilisation frauduleuse de votre dossier de location, 
+                    transmettez vos justificatifs <strong>uniquement pour les logements que vous avez visités</strong>.</p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab_dossier" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="formulaire__section">
+                <h3>Envoi au propriétaire</h3>
+                <p>Vous pouvez transmettre d'un clic votre candidature au propriétaire. Il recevra un mail de notification automatique.</p>
+                <p><button class="btn btn-primary btn-lg">Envoyer la candidature</button></p>
+                <p><i class="fal fa-check-circle icone_medium"></i> Votre candidature a bien été transmise, le propriétaire va maintenant vous contacter directement.</p>
+                <p>Vous avez reçu un lien de sauvegarde par mail pour revenir sur cette candidature et la compléter ou la modifier plus tard.</p>
+                <p>Le propriétaire sera notifié dès que vous sauvegarderez des modifications de votre dossier.</p>
+                <p></p>
+              </div>
+              <div class="formulaire__section">
+                <h3>Suppression de votre candidature</h3>
+                <p>Vous pouvez supprimer votre candidature pour ce logement ce enlèvera l'accès de votre dossier au propriétaire concerné. 
+                  Pour supprimer intégralement vos données de Smartloc, contactez nos équipes support.</p>
+                <button class="btn btn-outline-dark btn-lg mb-4 mt-2">Supprimer la candidature</button>
+              </div>
+
+              <!-- FORM BUTTONS -->
+              <div class="row justify-content-between">
+                <div class="col-sm-auto">
+                  <button type="button" class="btn btn-link ">
+                    < Etape précédente</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <aside class="formulaire__astuces">
+                <div class="alert alert-success">
+                  <div class="alert-heading">
+                    <i class="far fa-file-check icone_medium"></i>
+                    <span>Dossier de location</span>
+                  </div>
+                  <p>Vous pouvez accéder au dossier de location mis en forme ci-dessous et le partager à d'autres propriétaires. 
+                    C'est un gage de sérieux qui augmentera vos chances de trouver un logement.</p>
+                  <p class="mt-4"><button class="btn btn-dark">Récupérer votre dossier de location</button></p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Veuillez vérifier les points suivants</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>Pour finir nous vous rappelons que votre dossier doit respecter certains points généraux :</p>
+        <div class="mt-4 mb-2">
+          <div class="custom-control custom-checkbox mt-3">
+            <input type="checkbox" class="custom-control-input" id="modalCheck1">
+            <label class="custom-control-label" for="modalCheck1">aucun candidat n'est diplomate </label>
+          </div>
+          <div class="custom-control custom-checkbox mt-3">
+            <input type="checkbox" class="custom-control-input" id="modalCheck2">
+            <label class="custom-control-label" for="modalCheck2">aucun candidat ou garant n'est domicilié fiscalement à
+              l'étranger ni dans les DOM</label>
+          </div>
+          <div class="custom-control custom-checkbox mt-3">
+            <input type="checkbox" class="custom-control-input" id="modalCheck3">
+            <label class="custom-control-label" for="modalCheck3">le bail envisagé n'est pas un bail de colocation non
+              solidaire, un bail de résidence secondaire ou un bail de logement de fonction</label>
+          </div>
+        </div>
+        <p class="my-4">Les candidats transfrontaliers sont acceptés à condition d'avoir un avis d'impôts et un IBAN
+          français.</p>
+        <button class="btn btn-dark" data-dismiss="modal">Valider</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
