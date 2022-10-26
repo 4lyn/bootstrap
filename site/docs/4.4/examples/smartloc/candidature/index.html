@@ -70,37 +70,96 @@ body_class: bg-grey
 
 
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-xl-8">
               <form>
                 <!-- DEUXIEME SECTION -->
                 <div class="formulaire__section">
+                  <h3 class="formulaire__sousElement_titre">Locataires du dossier</h3>
+                  <ul class="nav formulaire__menuDossier">
+                    <li class="nav-item">
+                      <a class="nav-link formulaire__menuDossier_lien" href="#">Locataire 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active formulaire__menuDossier_lien" href="#">Locataire 2</a>
+                    </li>
+                    <li class="nav-item"><button type="button" class="btn btn-link nav-link formulaire__menuDossier_lien">
+                      <i aria-hidden="true" class="fas fa-minus"></i> Supprimer
+                    </button></li>
+                    <li class="nav-item">
+                      <a class="nav-link formulaire__menuDossier_lien" href="#">
+                        <i aria-hidden="true" class="fas fa-plus"></i> Ajouter
+                      </a>
+                    </li>
+                  </ul>
                   <div class="formulaire__sousElement">
-                    <h3 class="formulaire__sousElement_titre">Locataire 1</h3>
-                    <div class="form-group">
-                      <label>Statut du locataire</label>
-                      <select class="custom-select col-sm-8 col-lg-6">
-                        <option>Étudiant / Alternant</option>
-                        <option>Salarié</option>
-                        <option>Entrepreneur</option>
-                        <option>Retraité</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="formulaire__sousElement">
-                    <h3 class="formulaire__sousElement_titre">Garant 1</h3>
-                    <div class="form-group">
-                      <label>Statut du locataire</label>
-                      <select class="custom-select col-sm-8 col-lg-6">
-                        <option>Étudiant / Alternant</option>
-                        <option>Salarié</option>
-                        <option>Entrepreneur</option>
-                        <option>Retraité</option>
-                      </select>
+                    <div class="form-row">
+                      <div class="form-group col-sm-6">
+                        <label>Statut du locataire</label>
+                        <select class="custom-select">
+                          <option>CDI hors période d'essai</option>
+                          <option>CDI en période d'essai</option>
+                          <option>CDD</option>
+                          <option>Fonctionnaire</option>
+                          <option>Indépendant</option>
+                          <option>Profession libérale</option>
+                          <option>Étudiant / Alternant</option>
+                          <option>Retraité</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label>Revenus mensuels du locataire</label>
+                        <div class="champSaisie--illustré ">
+                          <input class="form-control" type="text">
+                          <span>€/mois</span>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-sm-8 col-lg-6">
-                        <label>Revenu du garant net AVANT retenu à la source</label>
+                      <div class="form-group col-sm-6">
+                        <label>Embauche</label>
+                        <select class="custom-select">
+                          <option>En poste depuis plus de 6 mois</option>
+                          <option>En poste depuis moins de 6 mois</option>
+                          <option>Promesse d'embauche signée</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label>Le locataire a</label>
+                        <div class="boutonsRadioViolets__conteneur">
+                          <label>
+                            <input type="radio" checked="checked" name="radio4">
+                            <div>+ 30 ans</div>
+                          </label>
+                          <label>
+                            <input type="radio" name="radio4">
+                            <div>30 ans ou -</div>
+                          </label>
+                        </div>
+                        <small class="form-text text-muted">Les locataires de 30 ans ou - sont nés après le 24/10/1991</small>
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                        <label class="custom-control-label" for="customCheck1">Le locataire a un garant</label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-sm-6">
+                        <label>Statut du garant</label>
+                        <select class="custom-select">
+                          <option>CDI hors période d'essai</option>
+                          <option>CDI en période d'essai</option>
+                          <option>CDD</option>
+                          <option>Fonctionnaire</option>
+                          <option>Indépendant</option>
+                          <option>Profession libérale</option>
+                          <option>Étudiant / Alternant</option>
+                          <option>Retraité</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label>Revenus mensuels du garant</label>
                         <div class="champSaisie--illustré ">
                           <input class="form-control" type="text">
                           <span>€/mois</span>
@@ -108,23 +167,42 @@ body_class: bg-grey
                       </div>
                     </div>
                   </div>
-
-                  <button type="button" class="btn btn-link pl-0">+ Ajouter un locataire</button>
                 </div>
 
                 <div class="formulaire__section">
-                  <div class="form-row">
-                    <div class="form-group col-sm-8 col-lg-6">
-                      <label>Revenus complémentaires du foyer</label> 
-                      <div class="champSaisie--illustré">
-                        <input type="number" class="form-control optional"> <span>€/mois</span>
+                  <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">Informations complémentaires</h3>
+                    <div class="form-row">
+                      <div class="form-group col-sm-8 col-lg-6">
+                        <label>Revenus annexes de l'ensemble des locataires</label> 
+                        <div class="champSaisie--illustré">
+                          <input type="number" class="form-control optional"> <span>€/mois</span>
+                        </div>
+                        <small class="form-text text-muted">APL, allocations, revenus fonciers, pensions, etc.</small>
                       </div>
                     </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                      <label class="custom-control-label" for="customCheck1">Le locataire a validé un visa Visale</label>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Ce dossier a déjà reçu un agrément Visale
+                          (<a href="https://www.visale.fr/" class="lien_annexe" target="_blank" rel="follow">en savoir plus</a>)
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Ce dossier a déjà reçu un agrément d'un garant payant (Garantme, Unkle, Cautioneo, etc)
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Ce dossier a déjà été constitué sur DossierFacile
+                          (<a href="https://www.dossierfacile.fr/" class="lien_annexe" target="_blank" rel="follow">en savoir plus</a>)  
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -141,7 +219,7 @@ body_class: bg-grey
               </form>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-xl-4">
               <aside class="formulaire__astuces">
                 <div class="alert alert-success">
                   <div class="alert-heading">
@@ -163,8 +241,21 @@ body_class: bg-grey
         </div>
         <div class="tab-pane fade" id="tab_depot" role="tabpanel" aria-labelledby="profile-tab">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-xl-8">
               <form>
+                <div class="formulaire__section">
+                  <div class="formulaire__sousElement">
+                    <h3 class="formulaire__sousElement_titre">DossierFacile</h3>
+                    <p>Pour vous éviter de devoir ajouter vos justificatifs sur plusieurs sites, 
+                      nous vous proposons simplement de nous transmettre le lien DossierFacile.</p>
+                    <p>Ce lien sera affichée au propriétaire en lieu et place du dossier Smartloc, aucun fichier ne sera conservé sur nos serveurs.</p>
+                    <div class="form-group">
+                      <label>Lien DossierFacile</label> 
+                      <input type="text" class="form-control"></span>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="formulaire__section">
                   <div data-toggle="collapse" href="#justifs_loc0" aria-expanded="true" class="">
                     <h3 class="collapse_header">
@@ -177,22 +268,22 @@ body_class: bg-grey
                     <div class="collapse_body">
                       <div class="formulaire__sousElement">
                         <div class="form-row">
-                          <div class="form-group col-lg-6">
+                          <div class="form-group col-sm-6">
                             <label>Prénom</label> 
                             <input type="text" class="form-control col-md-8 col-lg-12">
                           </div> 
-                          <div class="form-group col-lg-6">
+                          <div class="form-group col-sm-6">
                             <label>Nom</label> 
                             <input type="email" class="form-control col-md-8 col-lg-12">
                           </div>
                         </div> 
                         <div class="form-row">
-                          <div class="form-group col-lg-6">
+                          <div class="form-group col-sm-6">
                             <label>Email</label> 
                             <input type="email" class="form-control col-md-8 col-lg-12"> 
                             <small class="form-text text-muted">Les coordonnées d'au moins un locataire sont nécessaires</small>
                           </div> 
-                          <div class="form-group col-lg-6">
+                          <div class="form-group col-sm-6">
                             <label>Numéro de mobile</label> 
                             <input type="text" class="form-control col-md-8 col-lg-12">
                           </div>
@@ -317,7 +408,7 @@ body_class: bg-grey
 
               </form>
             </div>
-            <div class="col-lg-4">
+            <div class="col-xl-4">
               <aside class="formulaire__astuces">
                 <div class="alert alert-warning">
                   <div class="alert-heading">
@@ -325,7 +416,7 @@ body_class: bg-grey
                     <span>Sécurité du dossier</span>
                   </div>
                   <p>Afin d'éviter les usurpations d'identité et l'utilisation frauduleuse de votre dossier de location, 
-                    transmettez vos justificatifs <strong>uniquement pour les logements que vous avez visités</strong>.</p>
+                    ne transmettez vos justificatifs <strong>que pour les logements que vous avez visités</strong>.</p>
                 </div>
               </aside>
             </div>
@@ -345,7 +436,7 @@ body_class: bg-grey
               </div>
               <div class="formulaire__section">
                 <h3>Suppression de votre candidature</h3>
-                <p>Vous pouvez supprimer votre candidature pour ce logement ce enlèvera l'accès de votre dossier au propriétaire concerné. 
+                <p>Vous pouvez supprimer votre candidature pour ce logement ce qui enlèvera l'accès de votre dossier au propriétaire concerné. 
                   Pour supprimer intégralement vos données de Smartloc, contactez nos équipes support.</p>
                 <button class="btn btn-outline-dark btn-lg mb-4 mt-2">Supprimer la candidature</button>
               </div>

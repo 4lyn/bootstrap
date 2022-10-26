@@ -68,30 +68,53 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
             </div>
           </div>
           <div class="formulaire__sousElement mt-5">
-            <h3 class="formulaire__sousElement_titre">Filtrez vos candidats</h3>
             <div class="row">
-              <div class="col-sm-auto">
-                <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                  <label class="custom-control-label" for="customSwitch1">avec garants</label>
+              <div class="col-sm-4">
+                <h3 class="formulaire__sousElement_titre">Filtrez vos candidats</h3>
+                <div class="row">
+                  <div class="col-sm-auto">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">avec garants</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2">éligibles à la GLI</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3">éligibles Visale</label>
+                    </div> 
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-auto">
-                <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                  <label class="custom-control-label" for="customSwitch2">éligibles à la GLI</label>
+              <div class="col-sm-8">
+                <h3 class="formulaire__sousElement_titre">
+                  <span class="mr-sm-3">Trouvez plus de candidats</span>
+                  <a href="#" data-toggle="modal" data-target="#modal_template_location" class="lien_annexe" style="font-size: initial; line-height: initial; font-weight: initial;">
+                    <i class="fal fa-question-circle" aria-hidden="true"></i> en savoir plus
+                  </a>
+                </h3>
+                <div class="row">
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark btn-sm">Diffuser sur Jinka</button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark btn-sm">Diffuser sur PAP</button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark btn-sm">Afficher les candidats Locservice</button>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-auto">
-                <div class="custom-control custom-switch">
-                  <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                  <label class="custom-control-label" for="customSwitch3">éligibles Visale</label>
-                </div> 
               </div>
             </div>                  
           </div>
         </div>
-        <div class="formulaire__section pt-2">
+        <div class="formulaire__section pt-2 mt-3">
           <table class="table">
             <thead>
               <tr>
@@ -106,16 +129,48 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
             <tbody>
               <tr>
                 <td>Mathieu Chantalat <br/>
-                Pascal Combescot</td>
+                Pascal Combescot <br/>
+                <a href="#" data-toggle="modal" data-target="#modal_contact" class="lien_annexe pb-1">
+                  <i class="fal fa-address-book"></i> contact</a>
+                </td>
                 <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
                 <td>Bruno Chantalat</td>
                 <td>Profession libérale 3000€/mois</td>
                 <td>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot</td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois<br/>Revenus annexes 300€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
                 </td>
                 <td>
@@ -142,9 +197,9 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
                 </td>
                 <td>
@@ -171,9 +226,9 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
                 </td>
                 <td>
@@ -200,9 +255,9 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
                 </td>
                 <td>
@@ -229,38 +284,9 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                 <td>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Pinel</span>
-                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
-                </td>
-                <td>
-                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
-                  <div class="dropdown mt-2">
-                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                      Avancer avec ce locataire
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
-                      <a class="dropdown-item" href="#">Visale</a>
-                      <a class="dropdown-item" href="#">Bail de location</a>
-                      <a class="dropdown-item" href="#">LMNP réel</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Mathieu Chantalat <br/>
-                Pascal Combescot</td>
-                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
-                <td>Bruno Chantalat</td>
-                <td>Profession libérale 3000€/mois</td>
-                <td>
-                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
-                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
-                  <span class="badge badge-pill badge-danger text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
                   <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
                 </td>
                 <td>
@@ -400,56 +426,20 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
 
 
 
-<div class="modal fade" id="modalInvestisseur" tabindex="-1">
-  <div class="modal-dialog">
+<div class="modal fade" id="modal_contact" tabindex="-1">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <h3 class="modal-title">Contacts des candidats</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span>&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Pour activer la formule Investisseur en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
-        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
-        <p><a href="https://pay.gocardless.com/AL00034X9ZME3F" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+        <p>Mathieu Chantalat : mchantalat@gmail.com 0652228762</p>
+        <p>Pascal Combescot : mchantalat@gmail.com 0652228762</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="modalMulti" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Activation via mandat SEPA</h3>
-        <button type="button" class="close" data-dismiss="modal">
-          <span>&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Pour activer la formule Multi en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
-        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
-        <p><a href="https://pay.gocardless.com/AL0005ED0NBGB2" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="modalZenAnnuel" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Activation sur votre espace de gestion</h3>
-        <button type="button" class="close" data-dismiss="modal">
-          <span>&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Pour activer la formule Zen+ sur un logement, vous devez vous rendre sur l'espace de gestion du bien concerné.</p>
-        <p><a href="/login" rel="nofollow" class="btn btn-dark">Accéder à votre compte</a></p>
-        <p><a href="/login" rel="nofollow" class="btn btn-outline-dark">Créer un compte</a></p>
-      </div>
-    </div>
-  </div>
-</div>

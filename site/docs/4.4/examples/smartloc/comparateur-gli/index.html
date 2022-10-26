@@ -75,7 +75,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-xl-8">
             <div class="alert-notice border-0">
               <div class="notice-illustration d-none d-sm-block">
                 <img src="../../../assets/img/smartloc/photos/photo_mathieu.jpg" class="img-fluid" alt="photo mathieu">
@@ -91,8 +91,8 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="alert alert-success">
+          <div class="col-xl-4">
+            <div class="alert alert-success mt-3 mt-xl-0">
               <div class="alert-heading">
                 <i class="fal fa-check-circle icone_medium"></i>
                 <span>Filtre automatique de vos candidats</span>
@@ -110,12 +110,12 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
   </section>
   <div class="container-fluid mt-5" id="app">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="formulaire__section">
           <div class="formulaire__sousElement">
             <h3 class="formulaire__sousElement_titre">Logement</h3>
             <div class="form-row">
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Type de bail</label>
                 <div class="boutonsRadioViolets__conteneur">
                   <label>
@@ -128,7 +128,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                   </label>
                 </div>
               </div>
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Type d'occupants</label>
                 <select class="custom-select">
                   <option>Locataire seul</option>
@@ -139,14 +139,14 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Loyer charges comprises</label>
                 <div class="champSaisie--illustré">
                   <input type="text" class="form-control">
                   <span>€/mois</span>
                 </div>
               </div>
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Entrée du locataire</label>
                 <select class="custom-select">
                   <option>à venir</option>
@@ -162,9 +162,9 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="formulaire__section">
-          <h3 class="formulaire__sousElement_titre">Locataires</h3>
+          <h3 class="formulaire__sousElement_titre">Locataires du dossier</h3>
           <ul class="nav formulaire__menuDossier">
             <li class="nav-item">
               <a class="nav-link active formulaire__menuDossier_lien" href="#">Locataire 1</a>
@@ -175,7 +175,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
           </ul>
           <div class="formulaire__sousElement">
             <div class="form-row">
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Statut du locataire</label>
                 <select class="custom-select">
                   <option>CDI hors période d'essai</option>
@@ -188,7 +188,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                   <option>Retraité</option>
                 </select>
               </div>
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Revenus mensuels du locataire</label>
                 <div class="champSaisie--illustré ">
                   <input class="form-control" type="text">
@@ -197,17 +197,27 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-lg-6">
-                <label>Date de naissance</label>
-                <input class="form-control" type="date">
-              </div>
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Embauche</label>
                 <select class="custom-select">
                   <option>En poste depuis plus de 6 mois</option>
                   <option>En poste depuis moins de 6 mois</option>
                   <option>Promesse d'embauche signée</option>
                 </select>
+              </div>
+              <div class="form-group col-sm-6">
+                <label>Le locataire a</label>
+                <div class="boutonsRadioViolets__conteneur">
+                  <label>
+                    <input type="radio" checked="checked" name="radio4">
+                    <div>+ 30 ans</div>
+                  </label>
+                  <label>
+                    <input type="radio" name="radio4">
+                    <div>30 ans ou -</div>
+                  </label>
+                </div>
+                <small class="form-text text-muted">Les locataires de 30 ans ou - sont nés après le 24/10/1991</small>
               </div>
             </div>
             <div class="form-group mt-3">
@@ -217,7 +227,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Statut du garant</label>
                 <select class="custom-select">
                   <option>CDI hors période d'essai</option>
@@ -230,7 +240,7 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
                   <option>Retraité</option>
                 </select>
               </div>
-              <div class="form-group col-lg-6">
+              <div class="form-group col-sm-6">
                 <label>Revenus mensuels du garant</label>
                 <div class="champSaisie--illustré ">
                   <input class="form-control" type="text">
@@ -240,13 +250,25 @@ extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
             </div>
             
           </div>
-
-          <button type="button" class="btn btn-dark">Tester ce dossier</button>
         </div>
+        <div class="formulaire__section">
+          <div class="formulaire__sousElement">
+            <h3 class="formulaire__sousElement_titre">Informations complémentaires</h3>
+            <div class="form-row">
+              <div class="form-group col-sm-8 col-lg-6">
+                <label>Revenus annexes de l'ensemble des locataires</label> 
+                <div class="champSaisie--illustré">
+                  <input type="number" class="form-control optional"> <span>€/mois</span>
+                </div>
+                <small class="form-text text-muted">APL, allocations, revenus fonciers, pensions, etc.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-dark">Tester ce dossier</button>
       </div>
     </div>
-
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-lg-12">
         <div class="formulaire__section">
           <table class="table">
