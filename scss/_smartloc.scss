@@ -829,6 +829,10 @@ p + .cardLigne {
   border: none;
 }
 
+.card .card {
+  border: $card-border-width solid $card-border-color !important;
+}
+
 .bg-warning .modal .card {
   border: $card-border-width solid $card-border-color !important;
 }
