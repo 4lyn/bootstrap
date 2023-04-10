@@ -1,0 +1,991 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+body_class: bg-grey
+---
+
+
+<!-- HEADER -->
+
+<header class="container-fluid bg-warning">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+          <img src="../../../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes baux</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item disabled" href="#">Combescot</a>
+                <a class="dropdown-item" href="#">Dagher</a>
+                <a class="dropdown-item" href="#">Dupont</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ajouter un logement</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/dossier">Mes dossiers</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes assurances</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/assurance-loyer-impaye">Assurance loyer impayé</a>
+                <a class="dropdown-item" href="/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.lesassures.fr/" target="_blank" rel="nofollow">Gérer vos contrats</a>
+                <a class="dropdown-item" href="https://www.lesassures.fr/" target="_blank" rel="nofollow">Déclarer un sinistre</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Ressources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/password/change">Mot de passe</a>
+                <a class="dropdown-item" href="/logout">Déconnexion</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main>
+  <section class="container-fluid bg-warning pt-0 pb-5">
+    <div class="row pt-5">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Contrats de location actifs</h3>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Propriétaire</th>
+                      <th>Locataire</th>
+                      <th>Adresse</th>
+                      <th>Début - Fin</th>
+                      <th>Loyer cc</th>
+                      <th>Statut / Abonnement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Espace de gestion</a></td>
+                      <td>SCI Dubois</td>
+                      <td>Chantalat<br/>Combescot</td>
+                      <td>46 bld de l'Hôpital<br></td>
+                      <td>12/03/2021 - </td>
+                      <td>1290€ CC</td>
+                      <td><i class="fas fa-check-circle" style="color:darkgreen"></i> Actif<br/>Zen trimestriel 6,50€/mois</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Espace de gestion</a></td>
+                      <td>SCI Dubois</td>
+                      <td>Chantalat<br/>Combescot</td>
+                      <td>46 bld de l'Hôpital<br></td>
+                      <td>12/03/2021 - </td>
+                      <td>1290€ CC</td>
+                      <td><i class="fas fa-exclamation-circle" style="color:orangered"></i> Echec renouvellement<br/>Zen trimestriel 6,50€/mois</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Espace de gestion</a></td>
+                      <td>Michel Moulin</td>
+                      <td>Deak</td>
+                      <td>46 bld de l'Hôpital<br></td>
+                      <td>23/12/2021 - </td>
+                      <td>760€ CC</td>
+                      <td><i class="fas fa-check-circle" style="color:darkgreen"></i> Actif<br/>Gratuit</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Espace de gestion</a></td>
+                      <td>Touafilou Maoulida</td>
+                      <td>Ezekiel</td>
+                      <td>46 bld de l'Hôpital<br></td>
+                      <td>11/11/2012-12/12/2022 </td>
+                      <td>760€ CC</td>
+                      <td><i class="fas fa-archive" style="color:grey"></i> Archivé</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Profil client</h3>
+                <hr>
+                <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier l'email de connexion</a></p>
+                <p><a href="#" class="btn-link"><i class="fas fa-exchange-alt"></i> Modifier le mot de passe du compte</a></p>
+                <p><a href="#" class="btn-link"><i class="fas fa-user-plus"></i> Parrainer un proche</a></p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Factures</h3>
+                <hr>
+                <p>Bail Chantalat - 46 bld de l'Hôpital - 780€CC - 12/03/2021</p>
+                <p><a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Facture xxxxx</a></p>
+                <p><a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Facture xxxxx</a></p>
+                <p>Bail Deak - 33 rue Duhesme - 780€CC - 23/06/2018</p>
+                <p><a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Facture xxxxx</a></p>
+                <p><a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Facture xxxxx</a></p>
+                <p>Bail Amiens - 22 rue de Vaugirard - 1720€CC - 01/01/2022</p>
+                <p><a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Facture xxxxx</a></p>
+                <p><a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Facture xxxxx</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Gestion des logements</h3>
+                <hr>
+                <p><a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter un nouveau logement </a></p>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Abonnement annuel en prélèvement automatique</h4> 
+                        <p class="card-text">Pour bénéficier de tarifs dégressifs et d'un support téléphonique, nous vous recommandons nos formules annuelles ci-dessous.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-xl-4 col-sm-8">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">ZEN+</h4> 
+                        <h5 class="card-subtitle mb-2 text-muted">1 logement</h5> 
+                        <h4 class="mb-3">5,00€ / mois<br>(60,00€ / an)
+                </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_zen" class="card-link">Choisir cette formule</a></div></div></div> <div class="col-xl-4 col-sm-8"><div class="card"><div class="card-body"><h4 class="card-title">MULTI</h4> <h5 class="card-subtitle mb-2 text-muted">2-3 logements</h5> <h4 class="mb-3">
+                  9,00€ /
+                  mois<br>(108,00€ / an)
+                </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_multi" class="card-link">Choisir cette formule</a></div></div></div> <div class="col-xl-4 col-sm-8"><div class="card"><div class="card-body"><h4 class="card-title">INVESTISSEUR</h4> <h5 class="card-subtitle mb-2 text-muted">4-15 logements</h5> <h4 class="mb-3">
+                  12,50€ /
+                  mois<br>(150,00€ / an)
+                </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_invest" class="card-link">Choisir cette formule</a></div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 offset-lg-1">
+      <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/smartloc_white.png" alt=""></p>
+      <p><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+      <p>
+        <a href="https://twitter.com/smartloc" rel="nofollow">
+          <i class="fab fa-twitter footer__logoReseauxSociaux"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+          <i class="fab fa-linkedin-in footer__logoReseauxSociaux"></i>
+        </a>
+      </p>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+    </div>
+    <div class="col-lg-8 offset-lg-1">
+      <div class="row mt-4 mt-lg-0">
+        <div class="col-lg-2">
+          <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+          <a href="/bail/"><h5>Bail</h5></a>
+          <a href="/assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <a href="/blog"><h5>Ressources</h5></a>
+          <a href="/tarifs"><h5>Tarifs</h5></a>
+          <a href="/cgu"><h5>Mentions légales</h5></a>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+          <a href="/a-propos"><h5>A propos</h5></a>
+          <h5>Partenaires</h5>
+          <div class="row mt-3">
+            <div class="col-lg-auto">
+              <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="../../../assets/img/smartloc/logos/lemonway.png" class="float-left"></a>
+            </div>
+            <div class="col-lg-auto">
+              <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+            <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+            <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+            <li><a href="/dossier">Validation dossier locataire</a></li>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+            <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+            <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+            <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+<div class="modal fade" id="modal_historique" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Historique des loyers</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Évenement</th>
+              <th scope="col">Date</th>
+              <th scope="col">Loyer</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Début du bail</th>
+              <td>12/08/2018</td>
+              <td>1200 € <small>(IRL 3T2018 119,99)</small></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Indexation</th>
+              <td>01/09/2019</td>
+              <td>1203,23€ <small>(IRL 3T2019 121,90)</small></td>
+              <td><a href="#" class="btn-link"><i class="fal fa-trash"></i> Supprimer</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Indexation</th>
+              <td>01/09/2020</td>
+              <td>1205,25€ <small>(IRL 3T2020 123,34)</small></td>
+              <td><a href="#" class="btn-link"><i class="fal fa-trash"></i> Supprimer</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_resiliation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Résiliation de l'abonnement</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-danger p-2"><i class="fal fa-exclamation-triangle"></i> Attention</span>
+        </p>
+        <p>Vous allez résilier votre abonnement, vous perdrez votre accès au bail et à tous les documents, pensez à faire les sauvegardes nécessaires.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton resilier -->
+        <button type="button" class="btn btn-dark">Résilier</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---TODO duplicat de la modal de /pdf à factoriser eventuellement-->
+<div class="modal fade" id="modal_signature_activation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Quels sont les avantages de la signature électronique ?</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-success p-2"><i class="far fa-check-circle"></i> Satisfait ou remboursé</span>
+          <span class="bg-success p-2"><i class="far fa-check-circle"></i> Seulement 4€ / signataire</span>
+        </p>
+        <p>La signature électronique du bail est acceptée par les tribunaux et les assurances loyers impayés.</p>
+        <p>
+          Elle vous permet de signer rapidement avec une <strong>date d'effet dans le futur</strong>, 
+          et d'éviter ainsi que le locataire se désiste.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton activation signature -->
+        <button type="button" class="btn btn-dark">Activer l'option de signature</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_quittances" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Paramètres de la location</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire__section p-0">
+          <div class="formulaire__sousElement">
+            <h4 class="formulaire__sousElement_titre">Propriétaire</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <h4 class="formulaire__sousElement_titre">Locataire</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <h4 class="formulaire__sousElement_titre">Loyer & charges</h4>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>Loyer</label>
+                <input type="text" class="form-control">
+                <small class="form-text text-muted">
+                  <!---TODO gérer la fermeture de la modal paramètres-->
+                  <a class="btn-link" href="#" data-toggle="modal" data-target="#modal_historique">
+                    <i class="far fa-history"></i> Consulter l'historique des loyers
+                  </a>            
+                </small>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Charges</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>                                 
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton save -->
+        <button type="button" class="btn btn-dark">Sauvegarder les modifications</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_anciennes_quittances" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Anciennes quittances</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire__sousElement">
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <label>Mois de la quittance</label>
+              <select class="custom-select">
+                <option>Janvier</option>
+                <option>Février</option>
+              </select> 
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Année de la quittance</label>
+              <select class="custom-select">
+                <option>2018</option>
+                <option>2019</option>
+              </select> 
+            </div>
+          </div>
+          <p>
+            <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+              Avis d'échéance avril 2021</a>
+          </p>
+          <p>
+            <a href="#" target="_blank"><i class="fa fa-file-pdf"></i>
+              Quittance de loyer avril 2021</a>
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_bail_reset" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Changement de locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="bg-danger p-2"><i class="fal fa-exclamation-triangle"></i> Attention</span>
+        </p>
+        <p>Lors du changement de locataire certaines données du bail en cours seront écrasées, notamment les noms des locataires, leurs garants, l'indice IRL, etc.</p>
+        <p>Pensez donc à récupérer les documents de l'ancien locataire, notamment les quittances de sortie au prorata dans la section "Sortie du locataire".</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton changer de locataire -->
+        <button type="button" class="btn btn-dark">Changer de locataire</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modif_bail_en_cours" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modification du bail</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4>Que souhaitez-vous faire ?</h4>
+        <!-- Todo modal modif quittances -->
+        <p>Modifier les informations de la location en cours sans modifier le PDF du bail <a href="#" >Cliquez ici</a></p>
+        <!-- Todo redirection /modif -->
+        <p>Modifier le PDF du bail pour la location en cours <a href="#">Cliquez ici</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_signature" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Signature électronique</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <!-- Todo mutualisation bloc signature /pdf -->
+        <div class="formulaire__section p-0">
+          <div class="formulaire__sousElement">
+            <ul class="list-unstyled">
+              <li>Les numéros internationaux sont acceptés au format +33XXXX.</li>
+              <li>Pour les numéros ultra-marins utilisez l'indicatif du département et non pas l'alias commençant par 06.</li>
+              <li>Chaque signataire doit avoir un mail et un numéro de portable différents des autres signataires.</li>
+            </ul>
+            <div class="form-row mt-4">
+              <div class="form-group col-lg-3">
+                <label>Locataire 1 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <label>Locataire 2 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-3">
+                <label>Propriétaire 1 : Prénom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-3">
+                <label>Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-lg-2">
+                <label>Portable</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter le propriétaire 2 en signataire</a>
+              <!-------<a href="#" class="ml-4 btn-link"><i class="fas fa-minus"></i> Supprimer le propriétaire 2</a> ----->
+            </div>
+            <fieldset disabled>
+              <div class="form-row">
+                <div class="form-group col-lg-3">
+                  <label>Propriétaire 2 : Prénom</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-3">
+                  <label>Nom</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-4">
+                  <label>Email</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-lg-2">
+                  <label>Portable</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group mt-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Je confirme que toutes les parties - bailleur(s), locataire(s) et éventuel(s) garant(s) - <br/>ont bien relu le bail</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo bouton démarrer la signature -->
+        <button type="button" class="btn btn-dark">Démarrer la signature</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_edl" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail d'entrée dans les lieux au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Entrée dans les lieux au 23 Nov. 2021
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          L'état des lieux d'entrée au 23 Nov. 2021 approche,
+          je me permets de vous rappeler les éléments que vous devrez nous fournir lors de ce rendez-vous :<br> <br> 
+          <ul>
+            <li>
+              une attestation d'assurance multi-risque habitation
+              (si vous n'en avez pas encore vous pouvez <a href="https://www.luko.eu/fr/?utm_source=partner&amp;utm_medium=RealEstate&amp;utm_campaign=Smartloc&amp;utm_term=HomeFR" target="_blank">souscrire en ligne ici</a>)
+            </li>
+            <li>
+              un chèque pour le dépôt de garantie
+            </li>
+            <li>
+              un chèque pour le premier loyer au prorata
+            </li>
+          </ul>
+          Vous trouverez l'avis d'échéance correspondant à ces deux chèques en pièce jointe.<br> <br>
+          Ces 3 documents (les 2 chèques et l'attestation d'assurance) doivent absolument être remis lors de l'état des lieux d'entrée.<br> <br>
+          Dans le cas où le paiement se fait par virement, je vous rappelle que les fonds doivent être reçus avant l'état des lieux d'entrée.<br> <br>
+          Cordialement<br> <br>
+          <br>
+          Josipa Deak
+          Envoyé via Smartloc
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_impayes" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail de relance au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Incident : relance impayés de loyer mars 2022
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          A ce jour nous constatons un <strong>impayé de XXXX €</strong> de mars 2022. Cette échéance devait être payée intégralement au plus tard le 5 du mois. <br> <br> 
+          Je vous prie donc de bien vouloir régulariser votre situation au plus vite, en procédant au virement des sommes dues, 
+          afin d'éviter le démarrage d'une procédure contentieuse via Smartloc. <br> <br>
+          Vous trouverez de nouveau l'avis d'échéance en pièce jointe, ainsi que notre IBAN pour le virement : XXXXXXXXXXXXXXXXXXXXXXXXX. <br> <br>
+          Nous pensons qu'il s'agit d'un simple oubli de votre part, nous restons néanmoins disponible par mail ou téléphone si nécessaire.<br> <br>
+          Cordialement<br> <br>
+          Josipa Deak<br>
+          Envoyé via Smartloc
+          <br><br>
+          PS. Pour rappel les retards de paiement récurrents peuvent justifier d'une résiliation judiciaire du bail.
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_modele_mail_quittance" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail de quittance au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Expéditeur :</b> Smartloc test@smartloc.fr
+        </p>
+        <p>
+          <b>Destinataire :</b> <a href="#" style="margin-left: 10px;">
+          <!-- Todo modal modif quittances -->
+          Ajouter l'email du locataire <i class="fas fa-exclamation-circle" style="color: red;"></i></a>
+        </p>
+        <p>
+          <b>En copie :</b> <span>
+          mchantalat+z@gmail.com
+        </span>
+        </p>
+        <p><b>Sujet :</b> <span>
+          Quittance de loyer Septembre 2021
+        </span></p>
+        <p>
+          <b>Contenu du mail</b><br>
+        </p>
+        <blockquote>
+          Bonjour,<br> <br>
+          Votre propriétaire (en copie) a validé votre quittance pour le loyer de Septembre 2021, vous la trouverez en pièce jointe.<br> <br>
+          Nous vous avons également préparé l'avis d'échéance pour le paiement du prochain mois.<br> <br>
+          Cordialement<br>
+          L'équipe Smartloc
+        </blockquote>
+        <p style="margin-top: 30px;">
+          <b>Pièces jointes du mail:</b>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Quittance de loyer Septembre 2021
+          </a>
+        </p>
+        <p>
+          <a href="#" target="_blank"><i class="fa fa-file-pdf"></i> Avis d'échéance Octobre 2021
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <!-- Todo modal modif quittances   -->
+        <button type="button" class="btn btn-dark">Modifier les informations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_mail_indexation" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Modèle du mail d'indexation au locataire</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <strong>Sujet :</strong>
+          Indexation annuelle IRL : augmentation du loyer à compter du 5 avril 2022
+        </p>
+        <p>
+          <strong>Contenu du mail</strong>
+        </p>
+        <blockquote>
+          Bonjour,<br/>
+          <br/>
+          Conformément au bail que vous avez signé avec le propriétaire en copie, le loyer de votre location [adresse du bien] sera indexé 
+          selon la variation de l’indice IRL publié par l’INSEE à compter de l’échéance du [date de l’échéance].
+          <br/><br/>
+          La nouvelle valeur du loyer hors charges est de [nouvelle valeur loyer] (calcul : [ancien loyer] x [dernier indice connu]/[indice -12 mois]).
+          <br/><br/>
+          A la prochaine échéance, vous devrez donc réaliser un virement de [nouvelle valeur loyer + charges] (loyer + charges). Cette nouvelle valeur est intégrée 
+          à l'avis d'échéance que vous trouverez en pièce jointe.
+          <br/><br/>
+          Cordialement<br/>
+          L'équipe Smartloc
+        </blockquote>
+        <p class="mt-4">
+          <strong>Pièces jointes du mail</strong>
+        </p>
+        <p><i class="fa fa-file-pdf"></i> Avis d'échéance avril 2022</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalInvestisseur" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Investisseur en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
+        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
+        <p><a href="https://pay.gocardless.com/AL00034X9ZME3F" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMulti" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Multi en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
+        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
+        <p><a href="https://pay.gocardless.com/AL0005ED0NBGB2" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalZenAnnuel" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Activation via mandat SEPA</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pour activer la formule Multi en engagement annuel, vous devez remplir un mandat de prélèvement SEPA.</p>
+        <p>L'équipe vous débloquera manuellement la formule dans la foulée.</p>
+        <p><a href="https://pay.gocardless.com/AL0004K23637K3" rel="nofollow" class="btn btn-dark">Valider le mandat SEPA annuel</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_gratuit_bail" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Fonctionnalité bloquée</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule bail limité. Débloquez le bail complet pour bénéfier des fonctionnalités avancées :</p>
+        <ul>
+          <li><strong>toutes les clauses essentielles</strong> du bail pour vous protéger en cas de contentieux</li>
+          <li><strong>les annexes importantes</strong> comme les actes de caution ou l'état des lieux numérique</li>
+          <li><strong>
+            3 mois offerts sur la gestion Zen</strong> qui inclut notamment l'envoi des quittances au locataire</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark">Débloquer le bail complet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_gratuit_gel" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Fonctionnalité bloquée</h3>
+        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Cette fonctionnalité est bloquée car vous êtes en formule bail limité. Pour bénéfier des fonctionnalités avancées, 
+          débloquez la gestion Zen :</p>
+          <p><strong>Assistant de gestion locative Zen <span style="position:relative" class="mr-2"><span id="prix_barre">6,50€ / mois</span></span> 30 jours d'essai gratuits</strong></p>
+          <ul class="fa-ul ml-0">
+          <li><i class="fal fa-check-circle"></i> Envoi des quittances au locataire</li>
+          <li><i class="fal fa-check-circle"></i> Support mail & chat en cas de questions/contentieux</li>
+          <li><i class="fal fa-check-circle"></i> Augmentation du loyer via l'indexation annuelle</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur déclaration d'impôts</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur régularisation des charges</li>
+          <li><i class="fal fa-check-circle"></i> Simulateur calcul des retenues sur le dépôt de garantie</li>
+          <li><i class="fal fa-check-circle"></i> Bail complet au prochain locataire</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-dark">Activer la gestion Zen</button>
+      </div>
+    </div>
+  </div>
+</div>
