@@ -27,27 +27,7 @@ body_class: bg-grey
           <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
           <span class="navbar-toggler-icon"></span>
         </a>
-        <div class="pb-1 px-4 w-100 d-none d-lg-block">
-          <hr>
-          <a class="nav-link pl-2" href="#">
-            <i class="far fa-home mr-3"></i> Compte client
-          </a>
-          <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle pl-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="far fa-list mr-3"></i> Mes baux
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item active" href="#">Combescot</a>
-              <a class="dropdown-item" href="#">Dagher</a>
-              <a class="dropdown-item" href="#">Dupont</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item disabled" href="#">Chantalat</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Ajouter un logement</a>
-            </div>
-          </div>
-          <hr>  
-        </div>
+        <hr>  
         <ul class="nav flex-column d-none d-lg-block" role="tablist">
           <li class="nav-item">
             <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
@@ -110,11 +90,6 @@ body_class: bg-grey
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-infos-location" role="tab" aria-controls="s-infos-location" aria-selected="false">
-                <i class="far fa-cog"></i> Infos de la location
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link zen_navbarButton" data-toggle="tab" href="#s-bail-annexes" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
                 <i class="far fa-file-signature"></i> Bail & Annexes
               </a>
@@ -149,20 +124,6 @@ body_class: bg-grey
                 <i class="far fa-user-circle"></i> Profil bailleur</a>
             </li>
           </ul>
-          <hr>
-          <ul class="nav flex-row justify-content-between">
-            <li class="nav-item">
-              <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
-            </li>
-            <li class="nav-item dropup">
-              <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="/password/change">Mot de passe</a>
-                <a class="dropdown-item" href="/logout">Déconnexion</a>
-              </div>
-            </li>
-         
-          </ul>
         </nav>
       
       </div>
@@ -173,16 +134,17 @@ body_class: bg-grey
   <main class="col-xl-10 col-lg-9 overflow-auto h-100 p-0">
     <header class="container-fluid d-none d-lg-block">
       <div class="row">
-        <div class="col-lg-10 offset-lg-1">
+        <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">              
+              <ul class="navbar-nav ml-auto">              
                 <li class="nav-item">
                   <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
                   <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Tableau de bord</a>
                     <a class="dropdown-item" href="/password/change">Mot de passe</a>
                     <a class="dropdown-item" href="/logout">Déconnexion</a>
                   </div>
@@ -190,111 +152,95 @@ body_class: bg-grey
               </ul>
             </div>
           </nav>
+          <div class="row pt-3">
+            <div class="col-sm-12">
+              <h5><span>Chantalat / 46 boulevard de l'Hôpital / 760€ CC / Démarrage 07 juillet 2023</span>
+              <div class="dropdown d-inline-block ml-3">
+                <button type="button" data-toggle="dropdown" class="btn btn-dark btn-sm dropdown-toggle">
+                  Gestion du bail
+                </button> 
+                <div class="dropdown-menu">
+                  <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="dropdown-item">
+                    <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
+                  </a> 
+                  <a href="#" data-toggle="modal" data-target="#modal_bail_supprime" class="dropdown-item">
+                    Supprimer le bail
+                  </a>
+                </div>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-2">Paramètres</a>
+              <div class="dropdown d-inline-block">
+                <a data-toggle="dropdown" href="#" class="btn-link btn btn-sm dropdown-toggle">
+                  Locations actives
+                </a> 
+                <div class="dropdown-menu">
+                  <a class="dropdown-item active" href="#">Combescot</a>
+                  <a class="dropdown-item" href="#">Dagher</a>
+                  <a class="dropdown-item" href="#">Dupont</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Ajouter une location</a>
+                </div>
+              </div>
+            </h5>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <div class="tab-content bg-grey">
-      <section class="container-fluid pt-0 pb-5 tab-pane fade show active" id="s-espace-gestion" role="tabpanel">
-        <div class="row pt-2 pb-5">
-          <div class="col-lg-12 px-5">
-            <div class="card card_zen mt-0">
-              <div class="card-body">
-                <span>Bail Chantalat - 46 bld de l'Hôpital - 780€CC - démarrage 12/03/2021</span>
-                <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-dark btn-sm ml-5">Paramètres</a>
-                <div class="btn-group">
-                  <button class="btn btn-outline-dark dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Actions sur le bail
-                  </button>
-                  <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#"><i class="fas fa-exchange-alt"></i> Changer de locataire</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-copy"></i> Dupliquer</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-archive"></i> Archiver</a>
-                  </div>
-                </div>
-              </div>
+      <section class="container-fluid pt-0 pb-5 tab-pane fade show active" id="s-espace-gestion" role="tabpanel">     
+        <div class="row">
+          <div class="col-md-3">
+            <div class="mt-4 py-2">
+              <ul class="nav flex-column" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#d-signature-bail" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
+                    Signature du bail <i class="fal fa-check-circle"></i></a>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link zen_navbarButton" data-toggle="tab" href="#d-entree" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
+                    Entrée dans les lieux <i class="fal fa-check-circle"></i></a>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link zen_navbarButton" data-toggle="tab" href="#d-quittance-auto" role="tab" aria-controls="s-bail-annexes" aria-selected="false">
+                    Quittances au locataire <i class="fal fa-spinner"></i></a>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link zen_navbarButton" data-toggle="tab" href="#d-pno" role="tab" aria-controls="s-quittance" aria-selected="false">
+                    Assurance PNO <i class="fal fa-spinner"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link zen_navbarButton" data-toggle="tab" href="#d-p0i" role="tab" aria-controls="s-echeance" aria-selected="false">
+                    Formulaire POi <i class="fal fa-spinner"></i></a>
+                </li>
+              </ul>
             </div>
-            <div class="alert alert-primary mt-4">
-              <div class="row justify-content-between align-items-center mb-0">
-                <div class="col-sm-auto">
-                  <div class="alert-heading">
-                    <i class="fal fa-exclamation-triangle icone_medium"></i>
-                    <span>Votre bail limité ne comporte pas toutes les clauses et annexes recommandées !</span>
-                  </div>
-                </div>
-                <div class="col-sm-auto mt-3">
-                  <button class="btn btn-dark float-right">Débloquer le bail complet</button>
-                </div>
-              </div>
-            </div>       
-           
-            <div class="row">
-              <div class="col-md-3">
-                <div class="card card_zen mb-3">
-                  <div class="card-body">
-                    <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Entrée dans les lieux</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link formulaire__menuEtapes_etape" href="#">Quittances au locataire</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link formulaire__menuEtapes_etape" href="#">Assurance PNO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link formulaire__menuEtapes_etape" href="#" tabindex="-1" aria-disabled="true">Formulaire POi</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-9">
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content bg-grey">
+              <section class="container-fluid pt-0 pb-5 tab-pane fade show active" id="d-signature-bail" role="tabpanel">  
                 <div class="card mb-4 card_zen">
                   <div class="card-body">
                     <!---TODO créer un composant équivalent à v-h3 de bail.rd-->
                     <h3 class="card-title">
-                      Préparez l'entrée dans les lieux
-                      <span class="float-right">
-                        <a href="#" class="lien_annexe" data-toggle="modal" data-target="#modal_tldr_edl" style="font-size: initial; line-height: initial; font-weight: initial">
-                          <i class="fal fa-question-circle" aria-hidden="true"></i> infos
-                        </a>
-                      </span>
-                    </h3>
-                    <p><span><i class="fa fa-calendar-alt" aria-hidden="true"></i> Sept. 2022</span>
-                      <span><i class="fa fa-bell" aria-hidden="true"></i> 15 jours avant</span></p> <hr>
+                      Signez votre bail de location rapidement
+                    </h3><hr>
                     <div class="section__sousElement">
-                      <h4 class="section__sousElement_titre">Bail &amp; annexes</h4>
                       <p>
                         Nous vous recommandons de signer le bail le plus tôt possible pour éviter les désistements.
                         Vous pouvez signer le bail avant l'entrée dans les lieux.
                       </p>
                       <div class="row">
-                        <div class="col-xl-5">
+                        <div class="col-xl-6">
                           <p class="mt-4">
                             <a target="_blank" href="/bail/pdf/file/24/cc4a5d2752d2c96f5ef0cc2d79b212ff/1653640520/Smartloc%20-%20Bail%20complet%2024.pdf" download="Smartloc - Bail complet 24.pdf" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
                               Bail limité
                             </a>
                             <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail" class="mr-sm-3"><i class="fa fa-file-pdf" aria-hidden="true"></i> 
                               Bail complet
-                            </a>
-                            <br> 
-                            <button class="btn btn-outline-dark btn-sm mr-sm-3 mt-2">
-                              Modifier le bail
-                            </button>
-                            <button data-toggle="modal" data-target="#modal_sign_form" class="btn btn-dark btn-sm mr-sm-3 mt-2">
-                              Lancer la signature en ligne
-                            </button>
-                          </p>
-                          <p>
-                            <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
-                            &nbsp;&nbsp;&nbsp;
-                          </p>
-                          <p>
-                            <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
-                          </p>
-                          <p>
-                            <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-pdf" aria-hidden="true"></i>
-                              Inventaire des meubles
                             </a>
                           </p>
                           <p>
@@ -308,8 +254,32 @@ body_class: bg-grey
                                 </span>
                             </a>
                           </p>
+                          <p>
+                            <button class="btn btn-outline-dark btn-sm mr-sm-3 mt-2">
+                              Modifier le bail
+                            </button>
+                            <button data-toggle="modal" data-target="#modal_sign_form" class="btn btn-dark btn-sm mr-sm-3 mt-2">
+                              Lancer la signature en ligne
+                            </button>
+                          </p>
                         </div>
-                        <div class="col-xl-7">
+                        <div class="col-xl-6">
+                          <p class="mt-4">
+                            <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
+                            &nbsp;&nbsp;&nbsp;
+                          </p>
+                          <p>
+                            <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
+                          </p>
+                          <p>
+                            <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-pdf" aria-hidden="true"></i>
+                              Inventaire des meubles
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-12">
                           <div class="card mt-3">
                             <div class="card-body">
                               <p>Débloquez le bail complet pour bénéficier :</p>
@@ -318,7 +288,7 @@ body_class: bg-grey
                                 <li><strong>des annexes importantes</strong> comme les actes de caution ou l'état des lieux numérique</li>
                                 <li><strong>de 3 mois offerts sur la gestion Zen</strong> qui inclut notamment l'envoi des quittances au locataire</li>
                               </ul>
-                              <button class="btn btn-dark">Débloquer le bail complet</button><p></p>
+                              <button class="btn btn-primary">Débloquer le bail complet</button><p></p>
                               <p>Plus de <strong>120 000 particuliers</strong> comme vous gèrent leurs locations avec Smartloc depuis 2012.</p>
                               <p><a href="https://g.page/smartloc-support" target="_blank" class="lien_annexe">
                                 Avis clients 4,8/5</a> 
@@ -329,8 +299,26 @@ body_class: bg-grey
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto"></div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-dark float-right ml-3">
+                      Étape suivante
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="container-fluid pt-0 pb-5 tab-pane fade" id="d-entree" role="tabpanel">  
+                <div class="card mb-4 card_zen">
+                  <div class="card-body">
+                    <!---TODO créer un composant équivalent à v-h3 de bail.rd-->
+                    <h3 class="card-title">
+                      Préparez votre entrée dans les lieux
+                    </h3><hr>
                     <div class="section__sousElement">
-                      <h4 class="section__sousElement_titre">Mail au locataire pour préparer l'entrée dans les lieux</h4>
+                      <h4 class="section__sousElement_titre">Mail au locataire pour ne rien oublier</h4>
                       <p>Nous vous avons préparé un mail à envoyer un locataire pour qu'il vous fournisse lors de l'entrée dans les lieux :</p>
                       <ul>
                         <li>le chèque de loyer</li>
@@ -344,7 +332,7 @@ body_class: bg-grey
                       <div class="row">
                         <div class="col-md-12">
                           <div id="activation-edl-msg">
-    
+
                           </div>
                         </div>
                       </div>
@@ -355,6 +343,23 @@ body_class: bg-grey
                           </button>
                         </p>
                       </div>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">
+                        Documents à remplir lors de l'entrée dans les lieux
+                      </h4>
+                      <p>
+                        <a target="_blank" href="/bail/docs/etat_des_lieux.pdf" download="Smartloc - Etat des lieux.pdf"><i class="fa fa-file-pdf" aria-hidden="true"></i> État des lieux PDF</a>
+                        &nbsp;&nbsp;&nbsp;
+                      </p>
+                      <p>
+                        <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-signature" aria-hidden="true"></i> État des lieux numérique</a>
+                      </p>
+                      <p>
+                        <a href="#" data-toggle="modal" data-target="#modal_gratuit_bail"><i class="fa fa-file-pdf" aria-hidden="true"></i>
+                          Inventaire des meubles
+                        </a>
+                      </p>
                     </div>
                     <div class="section__sousElement">
                       <h4 class="section__sousElement_titre">
@@ -382,42 +387,43 @@ body_class: bg-grey
                     </div>
                   </div>
                 </div>
-                
-                <div class="card mb-4">
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <button type="button" class="btn btn-link">
+                    < Étape précédente 
+                    </button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-dark float-right ml-3">
+                      Étape suivante
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="container-fluid pt-0 pb-5 tab-pane fade" id="d-quittance-auto" role="tabpanel">  
+                <div class="card mb-4 card_zen">
                   <div class="card-body">
                     <h3 class="card-title">Envoyez vos quittances automatiquement</h3> 
                     <hr>
-                    <div class="accordion" id="accordion_faq_home">
-                      <div class="questionDeroulante objetDeroulant">
-                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_1">
-                          <h5>Comment fonctionne l'envoi automatique des quittances ? <i class="fas fa-minus float-right mt-1"></i></h5>
-                        </div>
-                        <!-- Todo conditionnement date -->
-                        <div class="objetDeroulant__contenu collapse show" id="faq_contenu_1" data-parent="#accordion_faq_home">
-                          <dl class="row">
-                            <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt>
-                            <dd class="col-sm-8">Le locataire vous verse le loyer à la date d'échéance prévue au bail</dd>
-                            <dt class="col-sm-3 offset-sm-1">le 15 du mois</dt>
-                            <dd class="col-sm-8">Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé, et pour vous permettre de gérer un éventuel retard</dd>
-                            <dt class="col-sm-3 offset-sm-1">le 25 du mois</dt>
-                            <dd class="col-sm-8">Smartloc envoie par mail au locataire la quittance de loyer du mois en cours et l'avis d'échéance du prochain mois, vous êtes en copie</dd>
-                          </dl>
-                        </div>
-                      </div>
-                      <div class="questionDeroulante objetDeroulant">
-                        <div class="objetDeroulant__entete" data-toggle="collapse" data-target="#faq_contenu_2">
-                          <h5>Pourquoi c'est important  d'envoyer les quittances ? <i class="fas fa-plus float-right mt-1"></i></h5>
-                        </div>
-                        <div class="objetDeroulant__contenu collapse" id="faq_contenu_2" data-parent="#accordion_faq_home">
-                          <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
-                          <ul>
-                            <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (indexation, régularisation)</li>
-                            <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
-                            <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
-                          </ul>                      
-                        </div>
-                      </div>
-                    </div>                
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Pourquoi c'est important  d'envoyer les quittances ?</h4>
+                      <p>Il est important d'envoyer les quittances et avis d'échéance aux locataires chaque mois pour :</p>
+                      <ul>
+                        <li><strong>prévenir le locataire</strong> : vous évitez les "oublis" de paiement des locataires qui ne sont pas en virement automatique; vous leur indiquez les changements de loyer (prorata d'entrée ou de sortie, indexation, régularisation)</li>
+                        <li><strong>vérifier vos paiements et relancer</strong> : vous réagissez rapidement via Smartloc pour relancer le locataire avec des mises en demeure préparées</li>
+                        <li><strong>respecter vos obligations</strong> :  vous devez légalement envoyer les quittances si le locataire le demande, elles sont par ailleurs nécessaires pour les APL et votre comptabilité</li>
+                      </ul>                      
+                    </div>
+                    <div class="section__sousElement"><h4 class="section__sousElement_titre">Comment fonctionne l'envoi automatique des quittances ?</h4> <dl class="row"><dd class="col-sm-8 offset-sm-4"><em>
+                      à partir de Octobre 2023
+                    </em><br> <a href="#" data-toggle="modal" data-target="#modal_params">Modifier la date d'entrée</a></dd> <dt class="col-sm-3 offset-sm-1">le 5 du mois</dt> <dd class="col-sm-8">
+                    Le locataire vous verse le loyer à la date d'échéance prévue au bail<br> <a href="#" data-toggle="modal" data-target="#modal_params">Modifier le jour d'échéance</a></dd> <dt class="col-sm-3 offset-sm-1">le 15 du mois</dt> <dd class="col-sm-8">
+                    Smartloc vous envoie un rappel pour vérifier que le locataire a bien payé,
+                    et pour vous permettre de gérer un éventuel retard
+                  </dd> <dt class="col-sm-3 offset-sm-1">le 25 du mois</dt> <dd class="col-sm-8">
+                    Smartloc envoie par mail au locataire la quittance de loyer du mois en cours
+                    et l'avis d'échéance du prochain mois; vous êtes en copie
+                  </dd></dl></div>  
                     <div class="section__sousElement mt-4">
                       <p><a href data-toggle="modal" data-target="#modal_modele_mail_quittance">Voir le mail de quittance envoyé au locataire</a></p>
                       <div class="custom-control custom-switch mt-4 mb-4">
@@ -434,7 +440,21 @@ body_class: bg-grey
                     </div>
                   </div>
                 </div>
-                <div class="card mb-4">
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <button type="button" class="btn btn-link">
+                    < Étape précédente 
+                    </button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-dark float-right ml-3">
+                      Étape suivante
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="container-fluid pt-0 pb-5 tab-pane fade" id="d-index-auto" role="tabpanel">  
+                <div class="card mb-4 card_zen">
                   <div class="card-body">
                     <h3 class="card-title">Augmentez vos loyers automatiquement</h3> 
                     <div class="section__sousElement">
@@ -480,9 +500,69 @@ body_class: bg-grey
                     </div>
                   </div>
                 </div>
-                <div class="card mb-4">
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <button type="button" class="btn btn-link">
+                    < Étape précédente 
+                    </button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-dark float-right ml-3">
+                      Étape suivante
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="container-fluid pt-0 pb-5 tab-pane fade" id="d-pno" role="tabpanel">  
+                <div class="card mb-4 card_zen">
                   <div class="card-body">
                     <h3 class="card-title">Souscrivez à votre assurance PNO</h3> 
+                    <hr>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Pourquoi une assurance propriétaire non occupant (PNO) ?</h4>
+                      <p>Vous êtes obligé légalement de prendre une assurance PNO en tant que bailleur d'un logement en location <strong>dans une copropriété</strong>. Si vous louez une 
+                        maison individuelle, la PNO n'est pas obligatoire mais reste recommandée.</p>
+                      <p>Cette assurance couvre votre responsabilité civile (une tuile tombe du toit et blesse votre locataire), mais également couvre les sinistres (incendies, dégâts des eaux, etc.) non garantis 
+                      par l'assurance du locataire ou de la copropriété.</p>
+                      <div class="card cardLigne">
+                        <div class="card-body">
+                          <i class="fal fa-file-alt cardLigne__icone icone_medium"></i>
+                          <span><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/" class="stretched-link">Fiche complète sur l'assurance PNO</a></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section__sousElement">
+                      <h4 class="section__sousElement_titre">Comment souscrire une assurance PNO ?</h4>
+                      <p>La plupart des compagnies proposent ce type de contrat, si vous n'en avez pas encore vous pouvez souscrire en ligne en 
+                        2 minutes à l'assurance PNO Luko que nous avons sélectionnée, disponible <strong>à partir de 4,90€/mois</strong>, avec un service de déclaration de sinistre 100% en ligne par photos ou vidéos.
+                      </p>
+                      <p class="mt-4">
+                        <a href="https://www.luko.eu/fr/onboarding?utm_source=Partner&utm_medium=RealEstate&utm_campaign=Smartloc&pc=smlcxlk&product=mrh&utm_term=HomeFR" 
+                        class="btn btn-dark btn-sm mt-2 mt-sm-0" target="_blank">
+                          Souscrire à l'assurance PNO
+                        </a>
+                        <span class="bg-success p-2 ml-sm-3"><i class="far fa-check-circle"></i> 2 mois offerts via Smartloc</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-sm-auto">
+                    <button type="button" class="btn btn-link">
+                    < Étape précédente 
+                    </button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-dark float-right ml-3">
+                      Étape suivante
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="container-fluid pt-0 pb-5 tab-pane fade" id="d-p0i" role="tabpanel">  
+                <div class="card mb-4 card_zen">
+                  <div class="card-body">
+                    <h3 class="card-title">Enregistrez votre activité meublée</h3> 
                     <hr>
                     <div class="section__sousElement">
                       <h4 class="section__sousElement_titre">Pourquoi une assurance propriétaire non occupant (PNO) ?</h4>
@@ -520,226 +600,16 @@ body_class: bg-grey
                     </div>
                   </div>
                 </div>
-                <div class="alert alert-success">
-                  <div class="alert-heading"><i class="fal fa-check-circle icone_medium"></i> <span>Toutes les actions nécessaires ont été complétées !</span></div>
-                  <p>Vous recevrez à l'avenir des mails de notifications pour les prochaines actions à mener.</p>
-                  <p>Pour un aperçu exhaustif des échéances futures, rendez-vous dans la section suivante.</p>
-                </div>  
-                <div class="alert alert-primary">
-                  <div class="row justify-content-between align-items-center mb-0">
-                    <div class="col-sm-auto">
-                      <div class="alert-heading"><i class="fal fa-times-circle icone_medium"></i> <span>Votre abonnement est inactif !</span></div>
-                    </div>
-                    <div class="col-sm-auto mt-3 mt-sm-0">
-                      <button class="btn btn-dark float-right">Réactiver l'abonnement</button>
-                    </div>
-                  </div>
-                  <p>Vous avez annulé votre abonnement Bail Zen pour ce lot, ou nous n'avons pas pu le renouveler pour des raisons techniques.</p>
-                  <p>Dans tous les cas vous pouvez le réactiver et récupérer toutes les données en renseignant de nouveau votre carte bancaire.</p>
-                </div>      
                 <div class="row justify-content-between">
                   <div class="col-sm-auto">
-                    <button type="button" class="btn btn-link" data-toggle="tab" href="#tab_personnes" role="tab">
-                      < Etape précédente
+                    <button type="button" class="btn btn-link">
+                    < Étape précédente 
                     </button>
                   </div>
-                  <div class="col-sm-auto mt-3 mt-sm-0">
-                    <button class="btn btn-dark float-right" data-toggle="tab" href="#tab_clauses" role="tab">Etape suivante</button>
-                    <p class="mt-2">
-                      <a href="#" class="lien_annexe" style="color:red">
-                        <i class="fal fa-exclamation-triangle"></i>  Compléter la date de début de bail pour passer cette étape
-                      </a>
-                    </p>
+                  <div class="col-sm-auto">
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="tab-pane fade container-fluid" id="s-infos-location" role="tabpanel">
-        <div class="row pt-5 pb-5">
-          <div class="col-lg-3 offset-lg-1">
-            <div class="menuSticky--section__ancre" id="bail"></div>
-            <div class="menuSticky--sousElement" id="menuSticky_zen_bail">
-              <div class="alert alert-danger">
-                <div class="alert-heading align-items-start">
-                  <i class="fal fa-times-circle icone_medium"></i>
-                  <span class="d-block">
-                    Certaines informations sont nécessaires au fonctionnement de votre espace :
-                    <ul>
-                      <li>Date d'entrée</li>
-                      <li>Montant du loyer</li>
-                      <li>Email du locataire</li>
-                    </ul>
-                  </span>
-                </div>
-                <p>Vous pouvez mettre des valeurs indicatives et les changer plus tard.</p>
-              </div>
-              <button type="button" class="btn btn-dark w-100">
-                Sauvegarder les modifications
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="card">
-              <div class="card-body">
-                <div id="bail_pdf" class="menuSticky--sousElement__ancre"></div>
-                <h3 class="card-title">Info de la location</h3>
-                <hr>
-                <div class="modal-body">
-                  <div class="formulaire__section p-0">
-                    <div class="formulaire__sousElement">
-                      <h4 class="formulaire__sousElement_titre">
-                        Modèle de bail
-                        <small><a href="#">Modifier</a></small>
-                      </h4>
-                      <div class="form-row mb-n3">
-                        <div class="form-group col-lg-4"><label>Type de location</label> <select disabled="disabled"
-                            class="custom-select">
-                            <option>Vide</option>
-                          </select></div>
-                        <div class="form-group col-lg-4"><label>Type de bail</label> <select disabled="disabled"
-                            class="custom-select">
-                            <option>
-                              Locataire seul
-                            </option>
-                          </select></div>
-                        <div class="form-group col-lg-4"><label>Type de propriétaire</label> <select disabled="disabled"
-                            class="custom-select">
-                            <option>
-                              Personne physique
-                            </option>
-                          </select></div>
-                      </div>
-                    </div>
-                    <div class="formulaire__sousElement">
-                      <h4 class="formulaire__sousElement_titre">
-                        Bien
-                      </h4>
-                      <div class="form-group"><label>Adresse du logement</label> <input type="text"
-                          class="form-control pac-target-input" placeholder="Indiquez un lieu" autocomplete="off"></div>
-                    </div>
-                    <div class="formulaire__sousElement">
-                      <h4 class="formulaire__sousElement_titre">
-                        Propriétaire
-                      </h4>
-                      <div class="form-row">
-                        <div class="form-group col-lg-3"><label>Prénom</label> <input type="text" class="form-control"></div>
-                        <div class="form-group col-lg-3"><label>Nom</label> <input type="text" class="form-control"></div>
-                        <div class="form-group col-lg-6 was-validated"><label>Email</label> <input type="email"
-                            class="form-control"></div>
-                      </div>
-                      <div class="form-group"><label>
-                          Adresse
-                        </label> <input type="text" class="form-control pac-target-input" placeholder="Indiquez un lieu"
-                          autocomplete="off"></div>
-                    </div>
-                    <div class="formulaire__sousElement">
-                      <h4 class="formulaire__sousElement_titre">
-                        Locataire
-                      </h4>
-                      <div class="form-row">
-                        <div class="form-group col-lg-3"><label>Prénom</label> <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-lg-3"><label>Nom</label> <input type="text" class="form-control"></div>
-                        <div class="form-group col-lg-6"><label>Email</label> <input type="email"
-                            class="form-control is-invalid"></div>
-                      </div>
-                      <div class="row mb-n3">
-                        <div class="col-md-12"><button type="button" class="btn btn-link pl-0 pt-0"><i
-                              class="fas fa-plus"></i> Ajouter un locataire
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="formulaire__sousElement">
-                      <h4 class="formulaire__sousElement_titre">Loyer &amp; charges</h4>
-                      <div class="form-row">
-                        <div class="form-group col-lg-6"><label>Loyer mensuel hors charges</label>
-                          <div class="champSaisie--illustré"><input type="text" class="form-control is-invalid">
-                            <span>€/mois</span></div>
-                        </div>
-                        <div class="form-group col-lg-6"><label>Dépôt de garantie</label>
-                          <div class="champSaisie--illustré"><input type="text" class="form-control"> <span>€</span></div>
-                        </div>
-                      </div>
-                      <div class="form-row mb-n3">
-                        <div class="form-group col-lg-6"><label>
-                            Type de charges
-                            <small><a href="#">Modifier</a></small></label> <select disabled="disabled" class="custom-select">
-                            <option value="provisions">
-                              Provisions sur charges
-                            </option>
-                            <option value="sans-provisions">
-                              Paiement périodique sans provisions
-                            </option>
-                            <!---->
-                            <option value="pas-charges">
-                              Absence de charges
-                            </option>
-                          </select> <small class="form-text text-muted">
-                            Avec régularisation annuelle.
-                          </small></div>
-                        <div class="form-group col-lg-6"><label>Montant mensuel des charges</label>
-                          <div class="champSaisie--illustré "><input type="text" class="form-control"> <span>€/mois</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="formulaire__sousElement">
-                      <h4 class="formulaire__sousElement_titre">Dates</h4>
-                      <div class="form-row mb-n3">
-                        <div class="form-group col-lg-6"><label>
-                            Date d'entrée
-                          </label>
-                          <div class="champSaisie--illustré"><input type="text" placeholder="__/__/____"
-                              class="form-control is-invalid"> <span><i class="fal fa-calendar"></i></span></div> <small
-                            class="form-text text-muted">
-                            JJ/MM/AAAA
-                          </small>
-                        </div>
-                        <div class="form-group col-lg-6"><label>Le loyer est payé</label> <select class="custom-select">
-                            <option value="1">le 1e du mois</option>
-                            <option value="2">le 2 du mois</option>
-                            <option value="3">le 3 du mois</option>
-                            <option value="4">le 4 du mois</option>
-                            <option value="5">le 5 du mois</option>
-                            <option value="6">le 6 du mois</option>
-                            <option value="7">le 7 du mois</option>
-                            <option value="8">le 8 du mois</option>
-                            <option value="9">le 9 du mois</option>
-                            <option value="10">le 10 du mois</option>
-                            <option value="11">le 11 du mois</option>
-                            <option value="12">le 12 du mois</option>
-                            <option value="13">le 13 du mois</option>
-                            <option value="14">le 14 du mois</option>
-                            <option value="15">le 15 du mois</option>
-                            <option value="16">le 16 du mois</option>
-                            <option value="17">le 17 du mois</option>
-                            <option value="18">le 18 du mois</option>
-                            <option value="19">le 19 du mois</option>
-                            <option value="20">le 20 du mois</option>
-                            <option value="21">le 21 du mois</option>
-                            <option value="22">le 22 du mois</option>
-                            <option value="23">le 23 du mois</option>
-                            <option value="24">le 24 du mois</option>
-                            <option value="25">le 25 du mois</option>
-                            <option value="26">le 26 du mois</option>
-                            <option value="27">le 27 du mois</option>
-                            <option value="28">le 28 du mois</option>
-                            <option value="29">le 29 du mois</option>
-                            <option value="30">le 30 du mois</option>
-                            <option value="31">le 31 du mois</option>
-                          </select></div>
-                      </div>
-                    </div>
-                    <button type="button" class="btn btn-dark w-100">
-                      Sauvegarder les modifications
-                    </button>
-                  </div>
-                </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -1171,7 +1041,9 @@ body_class: bg-grey
             <div class="card">
               <div class="card-body">
                 <div id="echeances_index" class="menuSticky--sousElement__ancre"></div>
-                <h3 class="card-title">Indexation du loyer	<br> <small><i class="fa fa-calendar-alt"></i> Avril</small></h3>
+                <h3 class="card-title">Indexation du loyer</h3>
+                <p><span><i class="fa fa-calendar-alt" aria-hidden="true"></i> Sept. 2022</span>
+                  <span><i class="fa fa-bell" aria-hidden="true"></i> 15 jours avant</span></p>
                 <hr>
                 <div class="section__sousElement">
                   <h4 class="formulaire__sousElement_titre">Pourquoi il est important d'indexer son loyer ?</h4>
@@ -3208,27 +3080,4 @@ body_class: bg-grey
   </div>
 </div>
 
-<div class="modal fade" id="modal_tldr_edl" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title">Comprendre l'entrée dans les lieux</h3>
-        <button type="button" class="close" data-dismiss="modal" tabindex="-1"><span>&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Pourquoi est-ce important ?</strong></p>
-        <p>Depuis le 01/07/2021 le diagnostic de performance énergétique (DPE) est opposable par le locataire, 
-          c'est-à-dire que le locataire peut utiliser l'absence de DPE pour demander une diminution de loyer.</p>
-        <p><strong>Pourquoi est-ce compliqué ?</strong></p>
-        <p>Les diagnostics demandés sont de plus en plus nombreux et leurs durées de validité fluctuent en fonction 
-            des réformes et des travaux que vous réalisez.</p>
-        <p><strong>Comment Smartloc vous aide ?</strong></p>
-        <p>Smartloc vous donne accès à un réseau national de diagnostiqueurs avec un code de réduction exclusif.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
 
