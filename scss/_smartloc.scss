@@ -1817,7 +1817,7 @@ input[type=number] {
   background-color: rgba(255,255,255, 0.3);
 }
 .zen_navbarButton.active {
-  border-right: 3px solid black;
+  border-left: 3px solid black;
   font-weight: bold;
 }
 
@@ -1828,4 +1828,5 @@ input[type=number] {
 
 .card_zen{
   border:none;
+  background-color: none;
 }

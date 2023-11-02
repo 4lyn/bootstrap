@@ -22,14 +22,25 @@ body_class: bg-grey
    
   
     <div class="collapse navbar-collapse flex-column justify-content-between"  id="navbarSupportedContent">
-      <div class="pr-0 pt-lg-5 pb-1 w-100">
+      <div class="pr-0 pt-lg-4 pb-1 w-100">
         <a class="navbar-brand d-none d-lg-flex justify-content-center align-items-center" href="/">
           <img src="//smartloc.fr/assets/bootstrap/logos/smartloc_black.png" class="logoSmartloc">
           <span class="navbar-toggler-icon"></span>
         </a>
-        <hr>  
         <ul class="nav flex-column d-none d-lg-block" role="tablist">
-          <li class="nav-item">
+          <li class="nav-item dropdown pl-3">
+            <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Bail Chantalat
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-right">
+              <a class="dropdown-item disabled" href="#">Combescot</a>
+              <a class="dropdown-item" href="#">Dagher</a>
+              <a class="dropdown-item" href="#">Dupont</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ajouter un logement</a>
+            </div>
+          </li>
+          <li class="nav-item mt-4">
             <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
               <i class="far fa-tasks"></i> Actions à valider
             </a>
@@ -136,11 +147,27 @@ body_class: bg-grey
       <div class="row">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">              
-              <ul class="navbar-nav ml-auto">              
-                <li class="nav-item">
-                  <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="row pt-3">
+                <div class="col-sm-12">
+                  <span>46 boulevard de l'Hôpital - 760€ CC - 07/07/2023</span>
+                  <div class="dropdown d-inline-block ml-3">
+                    <button type="button" data-toggle="dropdown" class="btn btn-dark btn-sm dropdown-toggle">
+                      Gestion du bail
+                    </button> 
+                    <div class="dropdown-menu">
+                      <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="dropdown-item">
+                        <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
+                      </a> 
+                      <a href="#" data-toggle="modal" data-target="#modal_bail_supprime" class="dropdown-item">
+                        Supprimer le bail
+                      </a>
+                    </div>
+                  </div>
+                  <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-2">Paramètres</a>
+                </div>
+              </div>            
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
                   <div class="dropdown-menu">
@@ -149,41 +176,12 @@ body_class: bg-grey
                     <a class="dropdown-item" href="/logout">Déconnexion</a>
                   </div>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
+                </li>
               </ul>
             </div>
           </nav>
-          <div class="row pt-3">
-            <div class="col-sm-12">
-              <h5><span>Chantalat / 46 boulevard de l'Hôpital / 760€ CC / Démarrage 07 juillet 2023</span>
-              <div class="dropdown d-inline-block ml-3">
-                <button type="button" data-toggle="dropdown" class="btn btn-dark btn-sm dropdown-toggle">
-                  Gestion du bail
-                </button> 
-                <div class="dropdown-menu">
-                  <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="dropdown-item">
-                    <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
-                  </a> 
-                  <a href="#" data-toggle="modal" data-target="#modal_bail_supprime" class="dropdown-item">
-                    Supprimer le bail
-                  </a>
-                </div>
-              </div>
-              <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-2">Paramètres</a>
-              <div class="dropdown d-inline-block">
-                <a data-toggle="dropdown" href="#" class="btn-link btn btn-sm dropdown-toggle">
-                  Locations actives
-                </a> 
-                <div class="dropdown-menu">
-                  <a class="dropdown-item active" href="#">Combescot</a>
-                  <a class="dropdown-item" href="#">Dagher</a>
-                  <a class="dropdown-item" href="#">Dupont</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Ajouter une location</a>
-                </div>
-              </div>
-            </h5>
-            </div>
-          </div>
         </div>
       </div>
     </header>
