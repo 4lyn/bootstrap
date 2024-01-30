@@ -19,38 +19,13 @@ body_class: bg-grey
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes baux</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item disabled" href="#">Combescot</a>
-                <a class="dropdown-item" href="#">Dagher</a>
-                <a class="dropdown-item" href="#">Dupont</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Ajouter un logement</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/dossier">Mes dossiers</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mes assurances</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="/assurance-loyer-impaye">Assurance loyer impayé</a>
-                <a class="dropdown-item" href="/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://www.lesassures.fr/" target="_blank" rel="nofollow">Gérer vos contrats</a>
-                <a class="dropdown-item" href="https://www.lesassures.fr/" target="_blank" rel="nofollow">Déclarer un sinistre</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blog">Ressources</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link ml-lg-5 font-weight-bold"  href="#" data-toggle="modal" data-target="#modalContact">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0 dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#">Mon Compte</a>
               <div class="dropdown-menu">
+                <a class="dropdown-item" href="/password/change">Espace client</a>
                 <a class="dropdown-item" href="/password/change">Mot de passe</a>
                 <a class="dropdown-item" href="/logout">Déconnexion</a>
               </div>
@@ -73,7 +48,7 @@ body_class: bg-grey
           <div class="col-md-12">
             <div class="card mb-4">
               <div class="card-body">
-                <h3 class="card-title">Contrats de location actifs</h3>
+                <h3 class="card-title">Mes locations</h3>
                 <table class="table table-striped">
                   <thead>
                     <tr>
@@ -91,7 +66,7 @@ body_class: bg-grey
                       <td><a href="#">Espace de gestion</a></td>
                       <td>SCI Dubois</td>
                       <td>Chantalat<br/>Combescot</td>
-                      <td>46 bld de l'Hôpital<br></td>
+                      <td>46 bld de l'Hôpital<br>2P 43m² Etage 1</td>
                       <td>12/03/2021 - </td>
                       <td>1290€ CC</td>
                       <td><i class="fas fa-check-circle" style="color:darkgreen"></i> Actif<br/>Zen trimestriel 6,50€/mois</td>
@@ -100,7 +75,7 @@ body_class: bg-grey
                       <td><a href="#">Espace de gestion</a></td>
                       <td>SCI Dubois</td>
                       <td>Chantalat<br/>Combescot</td>
-                      <td>46 bld de l'Hôpital<br></td>
+                      <td>46 bld de l'Hôpital<br>3P 49m² Etage 6</td>
                       <td>12/03/2021 - </td>
                       <td>1290€ CC</td>
                       <td><i class="fas fa-exclamation-circle" style="color:orangered"></i> Echec renouvellement<br/>Zen trimestriel 6,50€/mois</td>
@@ -109,7 +84,7 @@ body_class: bg-grey
                       <td><a href="#">Espace de gestion</a></td>
                       <td>Michel Moulin</td>
                       <td>Deak</td>
-                      <td>46 bld de l'Hôpital<br></td>
+                      <td>46 bld de l'Hôpital<br>5P 78m² Etage 3</td>
                       <td>23/12/2021 - </td>
                       <td>760€ CC</td>
                       <td><i class="fas fa-check-circle" style="color:darkgreen"></i> Actif<br/>Gratuit</td>
@@ -118,13 +93,14 @@ body_class: bg-grey
                       <td><a href="#">Espace de gestion</a></td>
                       <td>Touafilou Maoulida</td>
                       <td>Ezekiel</td>
-                      <td>46 bld de l'Hôpital<br></td>
+                      <td>46 bld de l'Hôpital<br>2P 22m² Etage 4</td>
                       <td>11/11/2012-12/12/2022 </td>
                       <td>760€ CC</td>
                       <td><i class="fas fa-archive" style="color:grey"></i> Archivé</td>
                     </tr>
                   </tbody>
                 </table>
+                <p class="text-center my-4"><a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter un nouveau bail</a></p>
               </div>
             </div>
           </div>
@@ -157,35 +133,52 @@ body_class: bg-grey
             </div>
           </div>
           <div class="col-md-7">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3 class="card-title">Gestion des logements</h3>
-                <hr>
-                <p><a href="#" class="btn-link"><i class="fas fa-plus"></i> Ajouter un nouveau logement </a></p>
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">Abonnement annuel en prélèvement automatique</h4> 
-                        <p class="card-text">Pour bénéficier de tarifs dégressifs et d'un support téléphonique, nous vous recommandons nos formules annuelles ci-dessous.</p>
-                      </div>
-                    </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Abonnement annuel en prélèvement automatique</h4> 
+                    <p class="card-text">Pour bénéficier de tarifs dégressifs et d'un support téléphonique, nous vous recommandons nos formules annuelles ci-dessous.</p>
                   </div>
                 </div>
-                <div class="row mb-5">
-                  <div class="col-xl-4 col-sm-8">
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">ZEN+</h4> 
-                        <h5 class="card-subtitle mb-2 text-muted">1 logement</h5> 
-                        <h4 class="mb-3">5,00€ / mois<br>(60,00€ / an)
-                </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_zen" class="card-link">Choisir cette formule</a></div></div></div> <div class="col-xl-4 col-sm-8"><div class="card"><div class="card-body"><h4 class="card-title">MULTI</h4> <h5 class="card-subtitle mb-2 text-muted">2-3 logements</h5> <h4 class="mb-3">
-                  9,00€ /
-                  mois<br>(108,00€ / an)
-                </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_multi" class="card-link">Choisir cette formule</a></div></div></div> <div class="col-xl-4 col-sm-8"><div class="card"><div class="card-body"><h4 class="card-title">INVESTISSEUR</h4> <h5 class="card-subtitle mb-2 text-muted">4-15 logements</h5> <h4 class="mb-3">
-                  12,50€ /
-                  mois<br>(150,00€ / an)
-                </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_invest" class="card-link">Choisir cette formule</a></div></div></div></div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-xl-4 col-sm-8">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">ZEN+</h4> 
+                    <h5 class="card-subtitle mb-2 text-muted">1 location</h5> 
+                    <h4 class="mb-3">5,00€ / mois<br>(60,00€ / an)
+                    </h4> <a href="#" data-toggle="modal" data-target="#modal_sepa_zen" class="card-link">Choisir cette formule</a>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-xl-4 col-sm-8">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">MULTI</h4> 
+                    <h5 class="card-subtitle mb-2 text-muted">2-3 locations</h5> 
+                    <h4 class="mb-3">
+                      9,00€ /
+                      mois<br>(108,00€ / an)
+                    </h4> 
+                    <a href="#" data-toggle="modal" data-target="#modal_sepa_multi" class="card-link">Choisir cette formule</a>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-xl-4 col-sm-8">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">INVESTISSEUR</h4> 
+                    <h5 class="card-subtitle mb-2 text-muted">4-15 locations</h5> 
+                    <h4 class="mb-3">
+                      12,50€ /
+                      mois<br>(150,00€ / an)
+                    </h4> 
+                    <a href="#" data-toggle="modal" data-target="#modal_sepa_invest" class="card-link">Choisir cette formule</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
