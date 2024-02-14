@@ -1816,12 +1816,20 @@ input[type=number] {
 .zen_navbarButton:hover {
   background-color: rgba(255,255,255, 0.3);
 }
+.zen_navbarButton {
+  color: #222;
+};
+
 .zen_navbarButton.active {
-  border-left: 3px solid black;
+  color: black;
   font-weight: bold;
 }
 
-.zen_navbarButton i{
+.zen_navbarButton.active i{
+  font-weight: 700;
+}
+
+aside .zen_navbarButton i{
   padding-right: 1em;
   padding-left: 1em;
 }
