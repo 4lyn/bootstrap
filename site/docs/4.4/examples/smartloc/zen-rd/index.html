@@ -82,18 +82,41 @@ body_class: bg-grey
         </ul>
         <nav class="nav px-3 d-block d-lg-none pt-2">
           <hr>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Bail selectionné: Chantalat
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item disabled" href="#">Combescot</a>
-              <a class="dropdown-item" href="#">Dagher</a>
-              <a class="dropdown-item" href="#">Dupont</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Ajouter un logement</a>
+          <div class="text-center">
+            <li class="nav-item dropdown pl-0">
+              <a class="nav-link dropdown-toggle font-weight-bold pl-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <h4 class="d-inline">Bail selectionné: Chantalat</h4>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item disabled" href="#">Combescot</a>
+                <a class="dropdown-item" href="#">Dagher</a>
+                <a class="dropdown-item" href="#">Dupont</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ajouter un logement</a>
+              </div>
+            </li>
+            <span>Chantalat & Deak - 760€ CC - 07/07/2023</span><br/>
+            <span>46 boulevard de l'Hôpital - 2ième étage porte gauche</span>
+            <div class="navbar-toggler my-1 col-sm-12 d-lg-none">
+              <div class="dropdown d-inline-block ml-3">
+                <button type="button" data-toggle="dropdown" class="btn btn-dark btn-sm dropdown-toggle">
+                  Gestion du bail
+                </button> 
+                <div class="dropdown-menu">
+                  <a href="#" data-toggle="modal" data-target="#modal_bail_reset" class="dropdown-item">
+                    <i aria-hidden="true" class="fas fa-exchange-alt"></i> Changer de locataire
+                  </a> 
+                  <a href="#" data-toggle="modal" data-target="#modal_bail_supprime" class="dropdown-item">
+                    Supprimer le bail
+                  </a>
+                </div>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#modal_params" class="btn btn-outline-dark btn-sm ml-2">Paramètres</a>
             </div>
-          </li>
+          </div>
+          
+         
+          <hr/>
           <ul class="nav flex-column" role="tablist">
             <li class="nav-item">
               <a class="nav-link zen_navbarButton active" data-toggle="tab" href="#s-espace-gestion" role="tab" aria-controls="s-espace-gestion" aria-selected="true">
