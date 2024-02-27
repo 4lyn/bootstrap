@@ -1838,3 +1838,8 @@ aside .zen_navbarButton i{
   border:none;
   background-color: none;
 }
+
+.aside-zen{
+  max-height: 100vh;
+  overflow: scroll;
+}
