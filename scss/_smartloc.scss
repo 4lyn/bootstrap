@@ -466,8 +466,8 @@ ul.liste--check li::before {
   margin-right: .25rem;
 }
 
-/* ALERTE ADVICE, messages de conseil du même style que les alertes 
-- coeur du composant ajouté au code source de bootstrap sous le nom de alerte-advice, 
+/* ALERTE ADVICE, messages de conseil du même style que les alertes
+- coeur du composant ajouté au code source de bootstrap sous le nom de alerte-advice,
 étant une alerte modifée, au côté de alerte-notice qui en est une variante */
 .alert-advice__italicText {
   font-size: 1.125rem;
@@ -1250,7 +1250,7 @@ p + .cardLigne {
 }
 
 .formulaire__menuEtapes_etape {
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
 }
 
 .formulaire__menuEtapes_etape.active {
@@ -1623,7 +1623,7 @@ p + .cardLigne {
 }
 
 .sectionArticle__corps h2+h3, .sectionArticle__corps .alert-advice h3,
-.sectionArticle__corps .encadrementPromotion h3, .sectionArticle__corps .alert-notice h3, 
+.sectionArticle__corps .encadrementPromotion h3, .sectionArticle__corps .alert-notice h3,
 .sectionArticle__corps .card-body h3{
   margin-top: 0px;
 }
@@ -1816,4 +1816,34 @@ input[type=number] {
 
 .text-danger {
   color: $smartloc-red !important;
+}
+.zen_navbarButton:hover {
+  background-color: rgba(255,255,255, 0.3);
+}
+.zen_navbarButton {
+  color: #222;
+};
+
+.zen_navbarButton.active {
+  color: black;
+  font-weight: bold;
+}
+
+.zen_navbarButton.active i{
+  font-weight: 700;
+}
+
+aside .zen_navbarButton i{
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.card_zen{
+  border:none;
+  background-color: none;
+}
+
+.aside-zen{
+  max-height: 100vh;
+  overflow: scroll;
 }
