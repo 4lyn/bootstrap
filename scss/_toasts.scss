@@ -1,4 +1,9 @@
 .toast {
+  position:fixed;
+  top: 30px;
+  right: 100px;
+  z-index: 2;
+  cursor: pointer;
   max-width: $toast-max-width;
   overflow: hidden; // cheap rounded corners on nested items
   @include font-size($toast-font-size);

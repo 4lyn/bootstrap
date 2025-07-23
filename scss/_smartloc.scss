@@ -837,8 +837,12 @@ p + .cardLigne {
   border: $card-border-width solid $card-border-color !important;
 }
 
-.card_active{
+.card_active:not(.outline){
   border:6px solid #a896d8;
+}
+
+.card_active.outline{
+  outline:6px solid #a896d8;
 }
 
 /************* ICONES *************/
