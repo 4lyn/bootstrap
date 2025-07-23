@@ -1,0 +1,445 @@
+---
+layout: examples
+extra_css: https://pro.fontawesome.com/releases/v5.13.0/css/all.css
+---
+
+
+<!-- HEADER -->
+
+<header class="container-fluid">
+  <div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">
+      <img src="../../../assets/img/smartloc/logos/smartloc_black.png" class="logoSmartloc">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/gestion-locative">Gestion locative</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/bail/">Bail</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/assurance-loyer-impaye">Assurance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Ressources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/tarifs">Tarifs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-lg-5" href="/login">
+        <h5>Mon compte</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-lg-0 mr-lg-0 pr-lg-0" href="#" data-toggle="modal" data-target="#modalContact">
+        <h5>Contact</h5>
+        </a>
+      </li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+  </div>
+</header>
+
+
+<!-- MAIN -->
+
+<main>
+
+  <div class="container-fluid mt-5">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="formulaire__section mb-0 pb-2">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="headerHub__titrage_arboresence">
+                <a href="#" class="btn-link">Dashboard</a> > <a href="#" class="btn-link">Annonces</a> > 46 boulevard de l'Hôpital / 3P / 50m2
+              </div>
+            </div>
+          </div>
+          <div class="formulaire__sousElement mt-5">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3 class="formulaire__sousElement_titre">Filtrez vos candidats</h3>
+                <div class="row">
+                  <div class="col-sm-auto">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">avec garants</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2">éligibles à la GLI</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3">éligibles Visale</label>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <h3 class="formulaire__sousElement_titre">
+                  <span class="mr-sm-3">Trouvez plus de candidats</span>
+                  <a href="#" data-toggle="modal" data-target="#modal_template_location" class="lien_annexe" style="font-size: initial; line-height: initial; font-weight: initial;">
+                    <i class="fal fa-question-circle" aria-hidden="true"></i> en savoir plus
+                  </a>
+                </h3>
+                <div class="row">
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark btn-sm">Diffuser sur Jinka</button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark btn-sm">Diffuser sur PAP</button>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-outline-dark btn-sm">Afficher les candidats Locservice</button>
+                  </div>
+                </div>
+              </div>
+            </div>                  
+          </div>
+        </div>
+        <div class="formulaire__section pt-2 mt-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Candidats</th>
+                <th>Revenus</th>
+                <th>Garants</th>
+                <th>Revenus</th>
+                <th>Dispositifs éligibles</th>
+                <th>Souscription</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot <br/>
+                <a href="#" data-toggle="modal" data-target="#modal_contact" class="lien_annexe pb-1">
+                  <i class="fal fa-address-book"></i> contact</a>
+                </td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot</td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois<br/>Revenus annexes 300€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot</td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot</td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot</td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mathieu Chantalat <br/>
+                Pascal Combescot</td>
+                <td>Indépendant 1000€/mois <br/>CDI 1200€/mois</td>
+                <td>Bruno Chantalat</td>
+                <td>Profession libérale 3000€/mois</td>
+                <td>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> Visale</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> GLI insured</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> GLI Maif</span><br/>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Loc'avantages</span>
+                  <span class="badge badge-pill badge-light text-uppercase"><i class="far fa-times"></i> Pinel</span>
+                  <span class="badge badge-pill badge-success text-uppercase"><i class="far fa-check"></i> LMNP réel</span>
+                </td>
+                <td>
+                  <a href="#" class="btn-link"><i class="far fa-file-pdf"></i> Dossier de location PDF</a>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                      Avancer avec ce locataire
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Garantie loyer impayé (GLI)</a>
+                      <a class="dropdown-item" href="#">Visale</a>
+                      <a class="dropdown-item" href="#">Bail de location</a>
+                      <a class="dropdown-item" href="#">LMNP réel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+      </div>
+    </div>
+  </div>   
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 offset-lg-1">
+      <p><img class="logoSmartloc" src="../../../assets/img/smartloc/logos/smartloc_white.png" alt=""></p>
+      <p><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+      <p>
+        <a href="https://twitter.com/smartloc" rel="nofollow">
+          <i class="fab fa-twitter footer__logoReseauxSociaux"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mchantalat/" rel="nofollow">
+          <i class="fab fa-linkedin-in footer__logoReseauxSociaux"></i>
+        </a>
+      </p>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5 d-block d-lg-none">
+    </div>
+    <div class="col-lg-8 offset-lg-1">
+      <div class="row mt-4 mt-lg-0">
+        <div class="col-lg-2">
+          <a href="/gestion-locative"><h5>Gestion locative</h5></a>
+          <a href="/bail/"><h5>Bail</h5></a>
+          <a href="/assurance-loyer-impaye"><h5>Assurance</h5></a>
+
+        </div>
+        <div class="col-lg-2 offset-lg-1">
+          <a href="/blog"><h5>Ressources</h5></a>
+          <a href="/tarifs"><h5>Tarifs</h5></a>
+          <a href="/cgu"><h5>Mentions légales</h5></a>
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+          <a href="/a-propos"><h5>A propos</h5></a>
+          <h5>Partenaires</h5>
+          <div class="row mt-3">
+            <div class="col-lg-auto">
+              <a href="https://www.lemonway.com" rel="nofollow"><img style="width:100px;height:auto" src="../../../assets/img/smartloc/logos/lemonway.png" class="float-left"></a>
+            </div>
+            <div class="col-lg-auto">
+              <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badge.png" class="float-left" alt="Heap | Mobile and Web Analytics"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/blog/signature-en-ligne-du-bail-de-location/">Signature électronique</a></li>
+            <li><a href="/blog/modele-type-etat-des-lieux-loi-alur/">Etat des lieux</a></li>
+            <li><a href="/blog/modele-gratuit-dacte-de-caution-solidaire/">Acte de caution</a></li>
+            <li><a href="/dossier">Validation dossier locataire</a></li>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><a href="/caution-bancaire-location">Caution bancaire</a></li>
+            <li><a href="/blog/recouvrement-expulsion-locataire/">Recouvrement et expulsion locataire</a></li>
+            <li><a href="/investissement-locatif">Fiscalité immobilière</a></li>
+            <li><a href="/blog/assurance-proprietaire-non-occupant-pno-devis-en-ligne/">Assurance PNO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
+
+<div class="modal fade " id="modalContact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">
+        <span>&times;</span>
+      </button>
+      <div class="modal-body">
+        <h3>2 moyens pour contacter nos équipes</h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Email</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse dans la demi-journée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <p class="mt-2 pt-1 mb-2"><a href="mailto:equipe@smartloc.fr">equipe@smartloc.fr</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Chat</h3>
+                <h4 class="card-subtitle mb-2 text-muted">réponse instantanée</h4>
+                <p class="card-text">Un expert vous répond depuis Paris.</p>
+                <a class="btn btn-dark btn-sm disabled" href="#">Démarrer le chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Le chat est réservé à nos clients inscrits, vous pouvez vous inscrire sans engagement au
+          <a href="https://smartloc.typeform.com/to/mYYucI">lien suivant</a>.
+        </p>
+        <p>
+          Si vous êtes déjà inscrit,
+          <a href="/login">connectez-vous</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="modal_contact" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Contacts des candidats</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Mathieu Chantalat : mchantalat@gmail.com 0652228762</p>
+        <p>Pascal Combescot : mchantalat@gmail.com 0652228762</p>
+      </div>
+    </div>
+  </div>
+</div>
+
