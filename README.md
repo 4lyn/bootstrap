@@ -21,8 +21,28 @@
   <a href="https://blog.getbootstrap.com/">Blog</a>
 </p>
 
+## Smartloc usage
 
-## Table of contents
+### Build
+
+Compilation & build des fichiers css
+```shell
+npm run smartloc-dist
+```
+
+Copie des fichiers résultant dans le repo Smartloc (doit être au même niveau que le repo Boostrap)
+```shell
+npm run smartloc-copy
+```
+
+Pour comparer le fichier minifié résultant : `bootstrap-smartloc.min.css` on peut utiliser l'outil suivant :
+https://platform.text.com/tools/diff-checker
+
+L'outil ne collapse pas les lignes identiques, il faut faire une rehcerhce dans le HTML de la page pour trouver les éléments ajoutés ou supprimés : 
+- ajoutés  :ctrl+F : rgb(53, 229, 113)
+- supprimés : ctrl+F : rgb(229, 53, 53)
+
+## Bootstrap - Table of contents
 
 - [Quick start](#quick-start)
 - [Status](#status)
