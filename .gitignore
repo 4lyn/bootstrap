@@ -8,7 +8,6 @@
 # Ignore ruby/bundler files
 /.bundle/
 /vendor/
-/.ruby-version
 
 # Numerous always-ignore extensions
 *.diff
@@ -47,5 +46,3 @@ Thumbs.db
 /dist/
 /js/dist/
 /site/docs/**/assets/css/
-Gemfile.lock
-package-lock.json
