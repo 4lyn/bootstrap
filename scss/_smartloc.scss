@@ -1856,3 +1856,7 @@ aside .zen_navbarButton i{
   transition: filter 0.3s ease;
   -webkit-transition: -webkit-filter 0.3s ease;
 }
+
+.alert-info {
+  @include alert-variant($info, $smartloc-info-bd, theme-color-level("info", $alert-color-level));
+}

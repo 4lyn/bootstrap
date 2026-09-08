@@ -47,6 +47,8 @@ $cyan:    #17a2b8 !default;
 
 $smartloc-gray:    #f4f4f4 !default;
 $smartloc-purple:  #a896d8 !default;
+$smartloc-info-bg: #f7f4fd !default;
+$smartloc-info-bd: #d9cef0 !default;
 $smartloc-yellow:  #f9dca5 !default;
 $smartloc-pink:    #ebb9c2 !default;
 $smartloc-green:   #7ecd82 !default;
@@ -77,7 +79,7 @@ $colors: map-merge(
 $primary:       $smartloc-purple !default;
 $secondary:     $smartloc-pink !default;
 $success:       $smartloc-green !default;
-$info:          $cyan !default;
+$info:          $smartloc-info-bg !default;
 $warning:       $smartloc-yellow !default;
 $danger:        $smartloc-red-bg !default;
 $light:         $smartloc-gray !default;
